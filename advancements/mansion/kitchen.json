@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dark_prismarine"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.kitchen"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.kitchen.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/dining_room",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

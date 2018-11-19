@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:acacia_planks"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.washroom"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.washroom_1.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/main_hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

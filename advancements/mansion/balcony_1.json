@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:mossy_cobblestone_wall"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.balcony"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.balcony_1.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/wardrobe_room",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+execute if entity @s[scores={SpawnedTime=2}] run playsound luigis_mansion:entity.waiter.spawn hostile @a ~ ~ ~ 1

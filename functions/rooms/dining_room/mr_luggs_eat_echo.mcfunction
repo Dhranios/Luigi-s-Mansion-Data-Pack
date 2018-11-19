@@ -1,0 +1,35 @@
+scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=2..}] run kill @e[type=minecraft:area_effect_cloud,tag=mr_luggs_eat,scores={Dialog=1}]
+execute if entity @s[scores={Dialog=3}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=8}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=13}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=18}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=23}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=28}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=33}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=38}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=43}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=48}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=53}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=58}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=63}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=68}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=73}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=78}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=83}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=88}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=93}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=98}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=103}] run playsound luigis_mansion:entity.mr_luggs.eat_1 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=108}] run playsound luigis_mansion:entity.mr_luggs.eat_2 hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=113}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=133}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=153}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=173}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=193}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=213}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=233}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=253}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=273}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=293}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5
+execute if entity @s[scores={Dialog=313}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ~ ~ ~ 0.5

@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.tea_room_random_gold_mouse"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.tea_room_random_gold_mouse.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/tea_room",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

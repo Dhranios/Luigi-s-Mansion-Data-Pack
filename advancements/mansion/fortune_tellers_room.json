@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brown_terracotta"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.fortune_tellers_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.fortune_tellers_room.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/main_hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

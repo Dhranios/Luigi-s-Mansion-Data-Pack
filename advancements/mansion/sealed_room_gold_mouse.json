@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.sealed_room_gold_mouse"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.sealed_room_gold_mouse.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/sealed_room",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

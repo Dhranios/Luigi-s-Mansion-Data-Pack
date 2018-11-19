@@ -1,0 +1,1 @@
+teleport @e[tag=washroom_1,tag=normal_enemy] ~ -4096 ~

@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:polished_andesite"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.balcony"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.balcony_2.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/attic_hallway_1",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+scoreboard players add @s[scores={Dialog=..72}] Dialog 1
+execute if entity @a[scores={e_gadd=1},limit=1] run function luigis_mansion:dialog/e_gadd/gallery/where
+execute if entity @a[scores={e_gadd=2},limit=1] run function luigis_mansion:dialog/e_gadd/gallery/game_boy_horror
+execute if entity @a[scores={e_gadd=3},limit=1] run function luigis_mansion:dialog/e_gadd/gallery/back
+execute if entity @a[scores={e_gadd=4},limit=1] run function luigis_mansion:dialog/e_gadd/gallery/no
+execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.gallery.e_gadd.re.1","with":[{"selector":"@a[gamemode=adventure]"}]}]}
+execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.gallery.e_gadd.re.1.more"}]}
+execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.gallery.e_gadd.re.1.more"}]}
+execute if entity @s[scores={Dialog=72}] run tellraw @a {"translate":"luigis_mansion:message.gallery.e_gadd.re.click","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:message.gallery.e_gadd.re.where","clickEvent":{"action":"run_command","value":"/trigger EGadd set 1"}},{"text":"\n"},{"translate":"luigis_mansion:message.gallery.e_gadd.re.what","clickEvent":{"action":"run_command","value":"/trigger Toad1 set 2"}},{"text":"\n"},{"translate":"luigis_mansion:message.gallery.e_gadd.re.yes","clickEvent":{"action":"run_command","value":"/trigger Toad1 set 3"}},{"text":"\n"},{"translate":"luigis_mansion:message.gallery.e_gadd.re.no","clickEvent":{"action":"run_command","value":"/trigger Toad1 set 4"}}]}
+execute if entity @s[scores={Dialog=72}] run scoreboard players enable @a[gamemode=adventure] EGadd

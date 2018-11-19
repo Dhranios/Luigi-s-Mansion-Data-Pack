@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wither_skeleton_skull"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.telephone_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.telephone_room.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/attic_hallway_2",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

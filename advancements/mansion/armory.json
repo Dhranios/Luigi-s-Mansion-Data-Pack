@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:andesite"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.armory"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.armory.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/attic_hallway_2",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

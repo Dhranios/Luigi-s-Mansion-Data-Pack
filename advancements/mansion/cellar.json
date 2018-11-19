@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:soul_sand"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.cellar"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.cellar.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/basement_stairs",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

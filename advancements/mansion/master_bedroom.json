@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:purpur_pillar"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.master_bedroom"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.master_bedroom.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/small_hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

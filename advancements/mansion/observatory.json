@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:quartz_block"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.observatory"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.observatory.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/astral_hall",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

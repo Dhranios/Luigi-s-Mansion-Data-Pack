@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:mycelium"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.courtyard"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.courtyard.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/main_hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

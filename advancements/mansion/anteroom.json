@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:purple_terracotta"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.anteroom"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.anteroom.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/parlor",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

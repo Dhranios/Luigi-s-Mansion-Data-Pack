@@ -1,0 +1,3 @@
+tag @a add toad_2
+summon minecraft:villager 677 112 44 {CustomName:"{\"translate\":\"luigis_mansion:entity.toad\"}",CustomNameVisible:1b,Invulnerable:1b,Silent:1b,DeathLootTable:"luigis_mansion:entities/toad",Profession:2,CareerLevel:100,Offers:{},Health:1.0f,Attributes:[{Name:"generic.maxHealth",Base:1.0d},{Name:"generic.movementSpeed",Base:0.0d},{Name:"generic.followRange",Base:20.0d},{Name:"generic.knockbackResistance",Base:0.0d},{Name:"generic.armor",Base:0.0d},{Name:"generic.armorToughness",Base:0.0d}],HandDropChances:[1.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:1b,Team:"Passive",Tags:["toad","balcony_1"]}
+scoreboard players set @e[tag=balcony_1,type=minecraft:villager] Dialog 0

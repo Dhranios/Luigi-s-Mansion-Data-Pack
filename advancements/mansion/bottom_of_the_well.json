@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_bricks"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.bottom_of_the_well"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.bottom_of_the_well.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/courtyard",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

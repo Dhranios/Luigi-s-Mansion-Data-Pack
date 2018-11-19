@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:birch_fence"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.hallway"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.hallway.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/main_stairs",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

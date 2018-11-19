@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dropper"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.safari_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.safari_room.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

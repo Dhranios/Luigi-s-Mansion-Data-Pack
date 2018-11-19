@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:quartz_pillar"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.bathroom"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.bathroom_2.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

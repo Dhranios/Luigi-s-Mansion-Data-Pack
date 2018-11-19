@@ -1,0 +1,1 @@
+replaceitem entity @s armor.feet minecraft:stone_button{AttributeModifiers:[{AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:-1.0f,Operation:0,UUIDMost:93175l,UUIDLeast:132111l,Slot:"feet"}]}

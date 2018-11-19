@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_planks"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.attic_hallway"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.attic_hallway_2.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/balcony_2",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

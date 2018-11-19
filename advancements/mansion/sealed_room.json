@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:smooth_sandstone"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.sealed_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.sealed_room.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:heavy_weighted_pressure_plate"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.dining_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.dining_room.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/main_hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

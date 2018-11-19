@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.study_gold_mouse"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.study_gold_mouse.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/study",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

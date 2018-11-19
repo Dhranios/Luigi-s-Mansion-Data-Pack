@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_planks"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.attic_hallway"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.attic_hallway_1.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/safari_room",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

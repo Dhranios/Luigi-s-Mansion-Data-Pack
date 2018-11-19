@@ -1,0 +1,1 @@
+teleport @e[tag=attic_hallway_2,tag=normal_enemy] ~ -4096 ~

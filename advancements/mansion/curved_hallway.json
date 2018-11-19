@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:acacia_door"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.curved_hallway"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.curved_hallway.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/basement_hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:smooth_sandstone"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.hidden_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.hidden_room.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/butlers_room",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+teleport @e[tag=secret_altar,tag=normal_enemy] ~ -4096 ~

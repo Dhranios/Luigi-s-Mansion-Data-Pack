@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick_slab"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.main_stairs"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.main_stairs.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/main_hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

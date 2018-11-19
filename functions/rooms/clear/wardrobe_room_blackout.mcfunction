@@ -1,0 +1,2 @@
+setblock 678 112 33 minecraft:chest[facing=east,type=single]{id:"minecraft:chest",CustomName:"{\"translate\":\"luigis_mansion:block.chest.chest\"}",Items:[{Slot:13b,id:"minecraft:brick",Count:1b,tag:{luigis_mansion:{id:"luigis_mansion:key",key:"breaker_room"},display:{Name:"{\"translate\":\"luigis_mansion:item.key\",\"with\":[{\"translate\":\"luigis_mansion:location.breaker_room\"}]}"}}}]}
+kill @s

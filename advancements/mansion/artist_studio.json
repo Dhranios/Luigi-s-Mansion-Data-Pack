@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:item_frame"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.artist_studio"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.artist_studio.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/attic_hallway_1",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

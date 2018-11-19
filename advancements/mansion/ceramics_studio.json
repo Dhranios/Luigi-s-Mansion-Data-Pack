@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:hopper"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.ceramics_studio"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.ceramics_studio.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/armory",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

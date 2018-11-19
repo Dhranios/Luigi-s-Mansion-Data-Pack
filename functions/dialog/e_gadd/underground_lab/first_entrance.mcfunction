@@ -1,0 +1,50 @@
+scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.1","with":[{"selector":"@a[gamemode=adventure]"},{"selector":"@a[gamemode=adventure]"}]}]}
+execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.1.more"}]}
+execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.1.even_more"}]}
+execute if entity @s[scores={Dialog=136}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.2"}]}
+execute if entity @s[scores={Dialog=136}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.2.more"}]}
+execute if entity @s[scores={Dialog=136}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.2.more"}]}
+execute if entity @s[scores={Dialog=176}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.3"}]}
+execute if entity @s[scores={Dialog=264}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.4"}]}
+execute if entity @s[scores={Dialog=264}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.4.more"}]}
+execute if entity @s[scores={Dialog=264}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.4.more"}]}
+execute if entity @s[scores={Dialog=376}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.5"}]}
+execute if entity @s[scores={Dialog=376}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.5.more"}]}
+execute if entity @s[scores={Dialog=376}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.5.more"}]}
+execute if entity @s[scores={Dialog=504}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.6"}]}
+execute if entity @s[scores={Dialog=504}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.6.more"}]}
+execute if entity @s[scores={Dialog=504}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.6.more"}]}
+execute if entity @s[scores={Dialog=576}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.7"}]}
+execute if entity @s[scores={Dialog=576}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.7.more"}]}
+execute if entity @s[scores={Dialog=576}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.7.more"}]}
+execute if entity @s[scores={Dialog=816}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.8"}]}
+execute if entity @s[scores={Dialog=1000}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.9"}]}
+execute if entity @s[scores={Dialog=1000}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.9.more"}]}
+execute if entity @s[scores={Dialog=1000}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.9.more"}]}
+execute if entity @s[scores={Dialog=1288}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.10"}]}
+execute if entity @s[scores={Dialog=1296}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.11"}]}
+execute if entity @s[scores={Dialog=1368}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.12"}]}
+execute if entity @s[scores={Dialog=1368}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.12.more"}]}
+execute if entity @s[scores={Dialog=1368}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.12.more"}]}
+execute if entity @s[scores={Dialog=1504}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.13","with":[{"selector":"@a[gamemode=adventure]"}]}]}
+execute if entity @s[scores={Dialog=1504}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.13.more"}]}
+execute if entity @s[scores={Dialog=1504}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.underground_lab.e_gadd.13.more"}]}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:wooden_sword{luigis_mansion:{id:"luigis_mansion:poltergust_3000"},Unbreakable:1b,HideFlags:1,display:{Name:"{\"translate\":\"luigis_mansion:item.poltergust_3000\"}"}}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:quartz{luigis_mansion:{id:"luigis_mansion:game_boy_horror"},display:{Name:"{\"translate\":\"luigis_mansion:item.game_boy_horror\"}"}}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:written_book{luigis_mansion:{id:"luigis_mansion:game_boy_horror_manual"},pages:["{\"translate\":\"luigis_mansion:item.game_boy_horror_manual.page.1\"}","{\"translate\":\"luigis_mansion:item.game_boy_horror_manual.page.2\"}","{\"translate\":\"luigis_mansion:item.game_boy_horror_manual.page.3\"}"],author:"E. Gadd",title:"Game Boy Horror Manual",display:{Name:"{\"translate\":\"luigis_mansion:item.game_boy_horror_manual\"}"}}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:filled_map{luigis_mansion:{id:"luigis_mansion:e_gadds_lab_map"},map:1,display:{Name:"{\"translate\":\"luigis_mansion:item.e_gadds_lab_map\"}"}}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:filled_map{luigis_mansion:{id:"luigis_mansion:mansion_basement_map"},map:2,display:{Name:"{\"translate\":\"luigis_mansion:item.mansion_basement_map\"}"}}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:filled_map{luigis_mansion:{id:"luigis_mansion:mansion_ground_floor_map"},map:3,display:{Name:"{\"translate\":\"luigis_mansion:item.mansion_ground_floor_map\"}"}}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:filled_map{luigis_mansion:{id:"luigis_mansion:mansion_second_floor_map"},map:4,display:{Name:"{\"translate\":\"luigis_mansion:item.mansion_second_floor_map\"}"}}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:filled_map{luigis_mansion:{id:"luigis_mansion:mansion_attic_map"},map:5,display:{Name:"{\"translate\":\"luigis_mansion:item.mansion_attic_map\"}"}}
+execute if entity @s[scores={Dialog=1648}] run give @a minecraft:filled_map{luigis_mansion:{id:"luigis_mansion:mansion_roof_map"},map:6,display:{Name:"{\"translate\":\"luigis_mansion:item.mansion_roof_map\"}"}}
+execute if entity @s[scores={Dialog=1648}] run advancement grant @a only luigis_mansion:mansion/mansion
+execute if entity @s[scores={Dialog=1648}] run advancement grant @a only luigis_mansion:lab/lab
+execute if entity @s[scores={Dialog=1648}] run advancement grant @a only luigis_mansion:lab/underground_lab
+execute if entity @s[scores={Dialog=1648}] run tag @a remove room_name
+execute if entity @s[scores={Dialog=1648}] run teleport @a 796 77 -10 90 0
+tag @s[scores={Dialog=1648}] remove talk
+tag @s[scores={Dialog=1648}] remove underground_lab
+tag @s[scores={Dialog=1648}] add training_room
+scoreboard players set @s[scores={Dialog=1648}] Dialog 0

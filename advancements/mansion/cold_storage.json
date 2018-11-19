@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:packed_ice"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.cold_storage"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.cold_storage.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/basement_hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

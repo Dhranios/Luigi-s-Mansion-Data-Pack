@@ -1,0 +1,1 @@
+teleport @e[tag=curved_hallway,tag=normal_enemy] ~ -4096 ~

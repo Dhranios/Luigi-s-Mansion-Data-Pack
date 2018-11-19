@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wooden_sword"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.training_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.training_room.description"
+        }
+    },
+	"parent": "luigis_mansion:lab/lab",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+teleport @e[tag=hallway_1,tag=normal_enemy] ~ -4096 ~

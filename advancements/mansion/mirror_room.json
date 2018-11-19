@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass_pane"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.mirror_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.mirror_room.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/fortune_tellers_room",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

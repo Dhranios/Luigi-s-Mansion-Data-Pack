@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:terracotta"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.underground_lab"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.underground_lab.description"
+        }
+    },
+	"parent": "luigis_mansion:lab/lab",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

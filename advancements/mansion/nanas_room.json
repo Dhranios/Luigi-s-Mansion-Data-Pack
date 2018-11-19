@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dark_oak_planks"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.nanas_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.nanas_room.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

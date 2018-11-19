@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brewing_stand"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.astral_hall"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.astral_hall.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/hallway",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
