@@ -9,9 +9,7 @@ scoreboard players set @s[advancements={luigis_mansion:mansion/nursery=false},sc
 scoreboard players set @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,scores={MusicType=0,Music=0}] MusicType 4
 scoreboard players set @s[advancements={luigis_mansion:mansion/nursery=true},tag=!blackout,scores={MusicType=0,Music=0}] MusicType 3
 scoreboard players set @s[advancements={luigis_mansion:mansion/nursery=true,luigis_mansion:mansion/breaker_room=true},scores={MusicType=0,Music=0}] MusicType 3
-execute if entity @s[advancements={luigis_mansion:mansion/nursery=false}] if block 713 117 49 minecraft:stone_button run setblock 713 117 49 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/nursery=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 713 117 49 minecraft:air run setblock 713 117 49 minecraft:stone_button[face=floor,powered=true,facing=north]
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 713 117 49 minecraft:stone_button run setblock 713 117 49 minecraft:air
 execute if entity @e[x=709,y=112,z=52,dx=2,dy=2,dz=4,tag=poltergust,limit=1] if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] run data merge block 713 110 49 {auto:1b}
 execute if entity @e[x=709,y=112,z=52,dx=2,dy=2,dz=4,tag=poltergust,limit=1] run data merge block 710 110 52 {auto:1b}
 execute if entity @e[x=712,y=116,z=48,dx=3,dy=2,dz=3,tag=poltergust,limit=1] run data merge block 712 110 49 {auto:1b}

@@ -11,3 +11,4 @@ data merge block 708 110 41 {auto:0b}
 data merge block 708 110 47 {auto:0b}
 data merge block 712 110 41 {auto:0b}
 data merge block 714 110 41 {auto:0b}
+setblock 713 117 49 minecraft:air

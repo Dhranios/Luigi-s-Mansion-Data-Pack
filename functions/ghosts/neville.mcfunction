@@ -17,6 +17,8 @@ scoreboard players reset @s[scores={VulnerableTime=1},nbt={NoAI:1b}] VulnerableT
 data merge entity @s[scores={VulnerableTime=1}] {NoAI:1b,NoGravity:1b}
 execute if entity @s[scores={VulnerableTime=1}] run scoreboard players add @a Neville 1
 scoreboard players reset @s[scores={VulnerableTime=1}] VulnerableTime
-execute as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville"},{"translate":"luigis_mansion:message.study.neville.scan"}]}
-execute as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville"},{"translate":"luigis_mansion:message.study.neville.scan.more"}]}
-execute as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville"},{"translate":"luigis_mansion:message.study.neville.scan.more"}]}
+execute as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville"},{"translate":"luigis_mansion:message.neville.scan"}]}
+execute as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville"},{"translate":"luigis_mansion:message.neville.scan.more"}]}
+execute as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.neville"},{"translate":"luigis_mansion:message.neville.scan.more"}]}
+execute if entity @s[tag=dead] run playsound luigis_mansion:entity.neville.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=hurt] run playsound luigis_mansion:entity.neville.hurt hostile @a ~ ~ ~ 1

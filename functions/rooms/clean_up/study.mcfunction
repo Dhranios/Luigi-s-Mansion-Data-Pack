@@ -18,3 +18,6 @@ data merge block 691 110 37 {auto:0b}
 data merge block 694 110 37 {auto:0b}
 data merge block 696 110 28 {auto:0b}
 data merge block 693 110 20 {auto:0b}
+fill 691 118 28 692 118 29 minecraft:air
+setblock 696 116 37 minecraft:air
+setblock 690 114 26 minecraft:air

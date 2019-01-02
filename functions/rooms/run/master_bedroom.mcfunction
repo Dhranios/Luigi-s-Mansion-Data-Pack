@@ -8,9 +8,7 @@ scoreboard players set @s[advancements={luigis_mansion:mansion/master_bedroom=fa
 scoreboard players set @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,scores={MusicType=0,Music=0}] MusicType 4
 scoreboard players set @s[advancements={luigis_mansion:mansion/master_bedroom=false},tag=!blackout,scores={MusicType=0,Music=0}] MusicType 3
 scoreboard players set @s[advancements={luigis_mansion:mansion/master_bedroom=true,luigis_mansion:mansion/breaker_room=true},scores={MusicType=0,Music=0}] MusicType 3
-execute if entity @s[advancements={luigis_mansion:mansion/master_bedroom=false}] if block 691 118 48 minecraft:stone_button run fill 691 118 48 692 118 49 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/master_bedroom=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 691 118 48 minecraft:air run fill 691 118 48 692 118 49 minecraft:stone_button[face=floor,powered=true,facing=north]
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 691 118 48 minecraft:stone_button run fill 691 118 48 692 118 49 minecraft:air
 execute if entity @s[x=687,y=112,z=51,dx=1,dy=4,dz=4,tag=vacuuming] if block 686 113 ~-1 minecraft:white_wool run clone 686 113 ~-2 686 116 ~-2 686 113 ~-1 replace move
 execute if entity @s[x=687,y=112,z=49,dx=1,dy=4,dz=4,tag=vacuuming] if block 686 113 ~1 minecraft:air run clone 686 113 ~2 686 116 ~2 686 113 ~1 replace move
 execute if entity @s[x=687,y=112,z=45,dx=1,dy=4,dz=4,tag=vacuuming] if block 686 113 ~-1 minecraft:air run clone 686 113 ~-2 686 116 ~-2 686 113 ~-1 replace move

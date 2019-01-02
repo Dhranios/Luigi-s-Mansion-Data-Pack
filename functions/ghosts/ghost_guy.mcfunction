@@ -27,5 +27,7 @@ replaceitem entity @s[tag=!lost_mask] armor.head minecraft:crafting_table
 replaceitem entity @s[tag=lost_mask] armor.head minecraft:leather_helmet{AttributeModifiers:[],Unbreakable:1b,display:{color:16711680}}
 scoreboard players set @s[scores={NotLookedAt=100,VulnerableTime=0}] VulnerableTime 1
 scoreboard players set @s[scores={NotLookedAt=100}] NotLookedAt 0
+execute if entity @s[tag=dead] run playsound luigis_mansion:entity.ghost_guy.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=hurt] run playsound luigis_mansion:entity.ghost_guy.hurt hostile @a ~ ~ ~ 1
 
 execute if entity @s[tag=ball_room] run function luigis_mansion:rooms/ghosts/ball_room/ghost_guys

@@ -6,9 +6,7 @@ scoreboard players set @s[advancements={luigis_mansion:mansion/nursery=false},sc
 scoreboard players set @s[advancements={luigis_mansion:mansion/nursery=true},tag=!blackout,scores={MusicType=0,Music=0}] MusicType 3
 scoreboard players set @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,scores={MusicType=0,Music=0}] MusicType 5
 scoreboard players set @s[advancements={luigis_mansion:mansion/nursery=true,luigis_mansion:mansion/breaker_room=true},scores={MusicType=0,Music=0}] MusicType 3
-execute if entity @s[advancements={luigis_mansion:mansion/nursery=false}] if block 702 118 39 minecraft:stone_button run setblock 702 118 39 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/nursery=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 702 118 39 minecraft:air run setblock 702 118 39 minecraft:stone_button[face=floor,powered=true,facing=north]
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 702 118 39 minecraft:stone_button run setblock 702 118 39 minecraft:air
 execute if entity @s[x=700,y=112,z=55,distance=..1,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",key:"master_bedroom"}}}]}] run function luigis_mansion:items/key/master_bedroom
 execute if entity @s[x=704,y=112,z=44,distance=..1,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",key:"nursery"}}}]}] run function luigis_mansion:items/key/nursery
 execute if entity @s[x=704,y=112,z=33,distance=..1,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",key:"twins_room"}}}]}] run function luigis_mansion:items/key/twins_room

@@ -17,4 +17,6 @@ scoreboard players reset @s[scores={VulnerableTime=1},nbt={NoAI:1b}] VulnerableT
 data merge entity @s[scores={VulnerableTime=1}] {NoAI:1b,NoGravity:1b}
 execute if entity @s[scores={VulnerableTime=1}] run scoreboard players add @a UncleGrimmly 1
 scoreboard players reset @s[scores={VulnerableTime=1}] VulnerableTime
-execute as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.uncle_grimmly"},{"translate":"luigis_mansion:message.wardrobe_room.uncle_grimmly.scan"}]}
+execute as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.uncle_grimmly"},{"translate":"luigis_mansion:message.uncle_grimmly.scan"}]}
+execute if entity @s[tag=dead] run playsound luigis_mansion:entity.uncle_grimmly.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=hurt] run playsound luigis_mansion:entity.uncle_grimmly.hurt hostile @a ~ ~ ~ 1

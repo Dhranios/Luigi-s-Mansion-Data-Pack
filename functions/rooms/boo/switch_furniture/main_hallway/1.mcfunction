@@ -1,0 +1,1 @@
+data merge entity @s {NoAI:0b,NoGravity:0b,Invulnerable:0b,Silent:0b}

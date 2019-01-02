@@ -9,3 +9,5 @@ effect give @s[scores={VulnerableTime=0}] minecraft:slowness 1 9 true
 effect clear @s[scores={VulnerableTime=1..}] minecraft:slowness
 effect clear @s[scores={SpawnedTime=..-1}] minecraft:slowness
 execute at @a[gamemode=adventure] run scoreboard players set @s[distance=..2] SpawnedTime 81
+execute if entity @s[tag=dead] run playsound luigis_mansion:entity.garbage_can_ghost.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=hurt] run playsound luigis_mansion:entity.garbage_can_ghost.hurt hostile @a ~ ~ ~ 1

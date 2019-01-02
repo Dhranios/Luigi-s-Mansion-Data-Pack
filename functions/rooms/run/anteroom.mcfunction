@@ -7,12 +7,8 @@ scoreboard players set @s[advancements={luigis_mansion:mansion/anteroom=false},s
 scoreboard players set @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,scores={MusicType=0,Music=0}] MusicType 4
 scoreboard players set @s[advancements={luigis_mansion:mansion/anteroom=true},tag=!blackout,scores={MusicType=0,Music=0}] MusicType 3
 scoreboard players set @s[advancements={luigis_mansion:mansion/anteroom=true,luigis_mansion:mansion/breaker_room=true},scores={MusicType=0,Music=0}] MusicType 3
-execute if entity @s[advancements={luigis_mansion:mansion/anteroom=false}] if block 678 117 4 minecraft:stone_button run setblock 678 117 4 minecraft:air
-execute if entity @s[advancements={luigis_mansion:mansion/anteroom=false}] if block 678 117 11 minecraft:stone_button run setblock 678 117 11 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/anteroom=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 678 117 4 minecraft:air run setblock 678 117 4 minecraft:stone_button[face=floor,powered=true,facing=north]
 execute if entity @s[advancements={luigis_mansion:mansion/anteroom=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 678 117 11 minecraft:air run setblock 678 117 11 minecraft:stone_button[face=floor,powered=true,facing=north]
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 678 117 4 minecraft:stone_button run setblock 678 117 4 minecraft:air
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 678 117 11 minecraft:stone_button run setblock 678 117 11 minecraft:air
 execute if entity @e[x=677,y=116,z=3,dx=3,dy=2,dz=3,tag=poltergust,limit=1] run data merge block 678 110 3 {auto:1b}
 execute if entity @e[x=677,y=116,z=10,dx=3,dy=2,dz=3,tag=poltergust,limit=1] run data merge block 678 110 10 {auto:1b}
 execute if entity @e[x=674,y=113,z=-1,dx=2,dy=1,dz=2,tag=poltergust,limit=1] run data merge block 675 110 0 {auto:1b}

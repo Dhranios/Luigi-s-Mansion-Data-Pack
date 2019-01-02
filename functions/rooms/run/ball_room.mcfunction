@@ -12,12 +12,8 @@ execute unless entity @e[tag=floating_whirlindas] run playsound luigis_mansion:m
 execute unless entity @e[tag=floating_whirlindas] run scoreboard players set @s[scores={Music=0,MusicType=-1}] Music 320
 execute if entity @e[tag=floating_whirlindas] run playsound luigis_mansion:music.mansion.room.whirlindas music @s[scores={Music=0,MusicType=-1}] ~ ~ ~ 10
 execute if entity @e[tag=floating_whirlindas] run scoreboard players set @s[scores={Music=0,MusicType=-1}] Music 510
-execute if entity @s[advancements={luigis_mansion:mansion/ball_room=false}] if block 690 107 -21 minecraft:stone_button run fill 690 107 -21 691 107 -20 minecraft:air
-execute if entity @s[advancements={luigis_mansion:mansion/ball_room=false}] if block 690 107 -35 minecraft:stone_button run fill 690 107 -35 691 107 -34 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/ball_room=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 690 107 -21 minecraft:air run fill 690 107 -21 691 107 -20 minecraft:stone_button[face=floor,powered=true,facing=north]
 execute if entity @s[advancements={luigis_mansion:mansion/ball_room=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 690 107 -35 minecraft:air run fill 690 107 -35 691 107 -34 minecraft:stone_button[face=floor,powered=true,facing=north]
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 690 107 -21 minecraft:stone_button run fill 690 107 -21 691 107 -20 minecraft:air
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 690 107 -35 minecraft:stone_button run fill 690 107 -35 691 107 -34 minecraft:air
 execute if entity @s[x=685,y=102,z=-38,distance=..1,nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",key:"storage_room"}}}]}] run function luigis_mansion:items/key/storage_room
 execute if entity @e[x=689,y=106,z=-22,dx=4,dy=2,dz=4,tag=poltergust,limit=1] run data merge block 691 100 -20 {auto:1b}
 execute if entity @e[x=689,y=106,z=-36,dx=4,dy=2,dz=4,tag=poltergust,limit=1] run data merge block 691 100 -34 {auto:1b}

@@ -8,15 +8,9 @@ scoreboard players set @s[advancements={luigis_mansion:mansion/study=false},scor
 scoreboard players set @s[tag=blackout,tag=!breaker_room,scores={MusicType=0,Music=0}] MusicType 4
 scoreboard players set @s[advancements={luigis_mansion:mansion/study=true},tag=!blackout,scores={MusicType=0,Music=0}] MusicType 3
 scoreboard players set @s[advancements={luigis_mansion:mansion/study=true,luigis_mansion:mansion/breaker_room=true},scores={MusicType=0,Music=0}] MusicType 3
-execute if entity @s[advancements={luigis_mansion:mansion/study=false}] if block 692 118 29 minecraft:stone_button run fill 691 118 28 692 118 29 minecraft:air
-execute if entity @s[advancements={luigis_mansion:mansion/study=false}] if block 696 116 37 minecraft:stone_button run setblock 696 116 37 minecraft:air
-execute if entity @s[advancements={luigis_mansion:mansion/study=false}] if block 690 114 26 minecraft:stone_button run setblock 690 114 26 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/study=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 692 118 29 minecraft:air run fill 691 118 28 692 118 29 minecraft:stone_button[face=floor,powered=true,facing=north]
 execute if entity @s[advancements={luigis_mansion:mansion/study=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 696 116 37 minecraft:air run setblock 696 116 37 minecraft:stone_button[face=floor,powered=true,facing=north]
 execute if entity @s[advancements={luigis_mansion:mansion/study=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 690 114 26 minecraft:air run setblock 690 114 26 minecraft:stone_button[face=floor,powered=true,facing=north]
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 692 118 29 minecraft:stone_button run fill 691 118 28 692 118 29 minecraft:air
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 696 116 37 minecraft:stone_button run setblock 696 116 37 minecraft:air
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 690 114 26 minecraft:stone_button run setblock 690 114 26 minecraft:air
 execute if entity @e[x=688,y=112,z=30,distance=..4,tag=Vacuuming] run summon minecraft:item 686 112 30 {Item:{id:"minecraft:blaze_powder",Count:1b,tag:{luigis_mansion:{id:"luigis_mansion:fire_ghost"},display:{Name:"{\"translate\":\"luigis_mansion:item.fire_ghost\"}"}}},Age:-32768s,Invulnerable:1b,CustomName:"{\"translate\":\"luigis_mansion:item.fire_ghost\"}",Silent:1b}
 execute if entity @e[x=689,y=112,z=24,dx=1,dy=1,dz=1,tag=poltergust,limit=1] unless entity @s[advancements={luigis_mansion:mansion/study=true},tag=!blackout] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=true}] run data merge block 689 110 24 {auto:1b}
 execute if entity @e[x=689,y=112,z=24,dx=1,dy=1,dz=1,tag=poltergust,limit=1] run data merge block 691 110 24 {auto:1b}

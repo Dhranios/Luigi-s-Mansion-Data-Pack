@@ -7,7 +7,7 @@ execute positioned ~ ~ ~8 as @a[distance=..8,gamemode=adventure,y_rotation=90..-
 execute positioned ~ ~ ~-8 as @a[distance=..8,gamemode=adventure,y_rotation=-90..90] if entity @s[x=686,y=112,z=20,dx=10,dy=7,dz=17] run tag @e[tag=lydia] add invisible
 tag @s[scores={VulnerableTime=1..}] remove invisible
 tag @s[scores={Dialog=1..}] remove invisible
-execute if entity @s[scores={Dialog=0}] if block 686 113 45 minecraft:air if block 685 115 44 minecraft:glass run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia"},{"translate":"luigis_mansion:message.master_bedroom.lydia.1"}]}
+execute if entity @s[scores={Dialog=0}] if block 686 113 45 minecraft:air if block 685 115 44 minecraft:glass run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia"},{"translate":"luigis_mansion:message.master_bedroom.lydia.talk"}]}
 execute if entity @s[scores={Dialog=0}] if block 686 113 45 minecraft:air run setblock 685 115 44 minecraft:air
 execute if entity @s[scores={Dialog=0}] if block 686 113 45 minecraft:air run playsound luigis_mansion:entity.lydia.cry hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=0}] if block 686 113 45 minecraft:air run scoreboard players set @s VulnerableTime 60
@@ -29,3 +29,5 @@ execute if entity @s[scores={Dialog=49..64}] run fill 686 113 44 686 116 ~ minec
 teleport @s[scores={Dialog=65}] 691 112 43 135 0
 execute if entity @s[scores={Dialog=65}] run setblock 685 115 44 minecraft:glass
 scoreboard players set @s[scores={Dialog=65}] Dialog 0
+execute if entity @s[tag=dead] run playsound luigis_mansion:entity.lydia.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=hurt] run playsound luigis_mansion:entity.lydia.hurt hostile @a ~ ~ ~ 1

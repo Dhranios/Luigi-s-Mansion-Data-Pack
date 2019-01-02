@@ -7,3 +7,5 @@ data merge block 678 110 10 {auto:0b}
 data merge block 675 110 0 {auto:0b}
 data merge block 675 110 7 {auto:0b}
 data merge block 675 110 15 {auto:0b}
+setblock 678 117 4 minecraft:air
+setblock 678 117 11 minecraft:air

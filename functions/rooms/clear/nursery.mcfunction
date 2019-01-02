@@ -5,5 +5,5 @@ teleport @e[tag=nursery,tag=optional_enemy] ~ -4096 ~
 kill @e[type=minecraft:painting,tag=nursery]
 scoreboard players set @a MusicType -1
 scoreboard players set @a Music 0
-tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.game_boy_horror"},{"translate":"luigis_mansion:message.nursery.game_boy_horror.1"}]}
+tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.game_boy_horror"},{"translate":"luigis_mansion:message.game_boy_horror.brrr"}]}
 scoreboard players set @a Dialog 0

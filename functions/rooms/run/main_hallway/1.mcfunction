@@ -1,4 +1,5 @@
 setblock 660 100 21 minecraft:red_terracotta
+execute if block 660 100 21 minecraft:red_terracotta if entity @s[advancements={luigis_mansion:mansion/bottom_of_the_well=false}] run kill @e[tag=main_hallway,tag=door_blockade]
 tag @s[tag=!room_name] add room_name
 execute if entity @s[advancements={luigis_mansion:mansion/graveyard=false}] unless entity @e[tag=main_hallway_1,tag=normal_enemy] run function luigis_mansion:rooms/ghosts/main_hallway/1
 execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] unless entity @e[tag=main_hallway_1,tag=normal_enemy] run function luigis_mansion:rooms/blackout/main_hallway/1

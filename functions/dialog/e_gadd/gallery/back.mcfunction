@@ -1,6 +1,6 @@
 scoreboard players add @s[scores={Dialog=73..}] Dialog 1
 execute as @a run trigger EGadd add 0
-execute if entity @s[scores={Dialog=74}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.gallery.e_gadd.re.yes.1"}]}
+execute if entity @s[scores={Dialog=74}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd"},{"translate":"luigis_mansion:message.e_gadd.gallery.yes.1"}]}
 execute if entity @s[scores={Dialog=98}] run stopsound @a music
 execute if entity @s[scores={Dialog=98}] run scoreboard players set @a Music 0
 execute if entity @s[scores={Dialog=98}] run scoreboard players set @a MusicType 0

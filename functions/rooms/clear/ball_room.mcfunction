@@ -4,6 +4,6 @@ setblock 689 102 -27 minecraft:chest[facing=east,type=single]{CustomName:"{\"tra
 teleport @e[tag=ball_room,tag=optional_enemy] ~ -4096 ~
 scoreboard players set @a MusicType 0
 scoreboard players set @a Music 38
-tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.game_boy_horror"},{"translate":"luigis_mansion:message.bathroom_1.game_boy_horror.2"}]}
+tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.game_boy_horror"},{"translate":"luigis_mansion:message.game_boy_horror.bathroom_1.short"}]}
 scoreboard players reset @a Dialog
 kill @s

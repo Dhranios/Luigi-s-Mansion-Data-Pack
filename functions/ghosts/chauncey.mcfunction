@@ -6,8 +6,8 @@ execute positioned ~-8 ~ ~ as @a[distance=..8,gamemode=adventure,y_rotation=-180
 execute positioned ~ ~ ~8 as @a[distance=..8,gamemode=adventure,y_rotation=90..-90] if entity @s[x=686,y=112,z=20,dx=10,dy=7,dz=17] run tag @e[tag=chauncey] add invisible
 execute positioned ~ ~ ~-8 as @a[distance=..8,gamemode=adventure,y_rotation=-90..90] if entity @s[x=686,y=112,z=20,dx=10,dy=7,dz=17] run tag @e[tag=chauncey] add invisible
 tag @s[scores={Dialog=60..}] remove invisible
-execute if entity @s[scores={Dialog=..59}] as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.nursery.chauncey.scan.1"}]}
-execute if entity @s[scores={Dialog=60..}] as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.nursery.chauncey.scan.2"}]}
+execute if entity @s[scores={Dialog=..59}] as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.chauncey.scan.1"}]}
+execute if entity @s[scores={Dialog=60..}] as @a[gamemode=adventure,scores={ScanTime=1},distance=..2] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.chauncey.scan.2"}]}
 execute as @a[x=716,y=112,z=56,distance=..4,tag=vacuuming,gamemode=adventure] run scoreboard players add @e[tag=chauncey,scores={Dialog=..59}] Dialog 1
 scoreboard players add @s[scores={Dialog=60..191}] Dialog 1
 execute if entity @s[scores={Dialog=41}] run playsound luigis_mansion:entity.chauncey.cry hostile @a
@@ -22,7 +22,7 @@ teleport @s[scores={Dialog=81}] ~ ~ ~ ~10 ~-10
 teleport @s[scores={Dialog=91}] ~ ~ ~ ~-20 ~-10
 teleport @s[scores={Dialog=101}] ~ ~ ~ ~20 ~10
 teleport @s[scores={Dialog=111}] ~ ~ ~ ~-10 ~10
-execute if entity @s[scores={Dialog=151}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.nursery.chauncey.1"}]}
+execute if entity @s[scores={Dialog=151}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.chauncey.talk.1"}]}
 execute if entity @s[scores={Dialog=191}] as @e[tag=haunted_teddy_bear] run data merge entity @s {NoAI:0b}
 execute if entity @s[scores={Dialog=191}] run tag @e[tag=haunted_teddy_bear] add vacuumable
 execute if entity @s[scores={Dialog=191}] as @e[tag=chauncey_ai] run data merge entity @s {NoAI:0b}
@@ -34,12 +34,14 @@ execute if entity @s[scores={Dialog=201}] as @e[tag=haunted_teddy_bear] run data
 execute if entity @s[scores={Dialog=201}] run tag @e[tag=haunted_teddy_bear] remove vacuumable
 execute if entity @s[scores={Dialog=201}] as @e[tag=chauncey_ai] run data merge entity @s {NoAI:1b}
 data merge entity @s[scores={Dialog=201}] {Invulnerable:1b,NoAI:1b}
-execute if entity @s[scores={Dialog=201}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.nursery.chauncey.2"}]}
-execute if entity @s[scores={Dialog=201}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.nursery.chauncey.2.more"}]}
-execute if entity @s[scores={Dialog=201}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.nursery.chauncey.2.more"}]}
-execute if entity @s[scores={Dialog=305}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.nursery.chauncey.3"}]}
-execute if entity @s[scores={Dialog=441}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.nursery.chauncey.4"}]}
+execute if entity @s[scores={Dialog=201}] run tellraw @a[tag=single] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.chauncey.talk.2"}]}
+execute if entity @s[scores={Dialog=201}] run tellraw @a[tag=more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.chauncey.talk.2.more"}]}
+execute if entity @s[scores={Dialog=201}] run tellraw @a[tag=even_more] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.chauncey.talk.2.more"}]}
+execute if entity @s[scores={Dialog=305}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.chauncey.talk.3"}]}
+execute if entity @s[scores={Dialog=441}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey"},{"translate":"luigis_mansion:message.chauncey.talk.4"}]}
 execute if entity @s[scores={Dialog=553}] run teleport @a THECRIB
 execute if entity @s[scores={Dialog=553}] run teleport @e[tag=haunted_teddy_bear] ~ -4096 ~
 teleport @s[scores={Dialog=553}] ~ -4096 ~
 kill @s[scores={Dialog=553}]
+execute if entity @s[tag=dead] run playsound luigis_mansion:entity.chauncey.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=hurt] run playsound luigis_mansion:entity.chauncey.hurt hostile @a ~ ~ ~ 1

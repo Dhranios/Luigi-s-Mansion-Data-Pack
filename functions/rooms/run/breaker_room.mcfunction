@@ -9,7 +9,6 @@ execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},ta
 tag @s[tag=!room_name] add room_name
 scoreboard players set @s[advancements={luigis_mansion:mansion/breaker_room=false},scores={MusicType=0,Music=0}] MusicType 4
 scoreboard players set @s[advancements={luigis_mansion:mansion/breaker_room=true},scores={MusicType=0,Music=0}] MusicType 3
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false}] if block 691 97 -33 minecraft:stone_button run setblock 691 97 -33 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=true}] if block 691 97 -33 minecraft:air run setblock 691 97 -33 minecraft:stone_button[face=floor,powered=true,facing=north]
 execute if entity @e[x=690,y=96,z=-34,dx=3,dy=2,dz=3,tag=poltergust,limit=1] run data merge block 690 90 -32 {auto:1b}
 execute if entity @e[x=690,y=96,z=-34,dx=3,dy=2,dz=3,tag=poltergust,limit=1] run data merge block 690 90 -33 {auto:1b}

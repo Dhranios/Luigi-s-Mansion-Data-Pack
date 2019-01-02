@@ -1,3 +1,4 @@
+tag @s[nbt={HurtTime:10s},nbt=!{AbsorptionAmount:0.0f}] add hurt
 execute if entity @s[tag=!marked] run function luigis_mansion:mark_entities
 execute if entity @s[scores={VulnerableTime=-200..}] run function luigis_mansion:ghosts/vulnerable
 execute if entity @s[tag=ghost] run function luigis_mansion:ghosts/spawn
@@ -6,15 +7,27 @@ execute if entity @s[tag=boo,tag=!boo_ball,tag=!boo_bomb] run function luigis_ma
 execute if entity @s[tag=boo_ball,tag=talk] run function luigis_mansion:ghosts/boo_ball
 execute if entity @s[tag=boo_bomb,tag=talk] run function luigis_mansion:ghosts/boo_bomb
 execute if entity @s[tag=gold_ghost] run function luigis_mansion:ghosts/gold_ghost
+execute if entity @s[tag=temper_terror] run function luigis_mansion:ghosts/temper_terror
+execute if entity @s[tag=speedy_spirit] run function luigis_mansion:ghosts/speedy_spirit
 execute if entity @s[tag=purple_puncher] run function luigis_mansion:ghosts/purple_puncher
+execute if entity @s[tag=flash] run function luigis_mansion:ghosts/flash
 execute if entity @s[tag=blue_twirler] run function luigis_mansion:ghosts/blue_twirler
+execute if entity @s[tag=blue_blaze] run function luigis_mansion:ghosts/blue_blaze
 execute if entity @s[tag=garbage_can_ghost] run function luigis_mansion:ghosts/garbage_can_ghost
 execute if entity @s[tag=grabbing_ghost] run function luigis_mansion:ghosts/grabbing_ghost
+execute if entity @s[tag=red_grabbing_ghost] run function luigis_mansion:ghosts/red_grabbing_ghost
+execute if entity @s[tag=mirror_ghost] run function luigis_mansion:ghosts/mirror_ghost
+execute if entity @s[tag=cinema_ghost] run function luigis_mansion:ghosts/cinema_ghost
 execute if entity @s[tag=ceiling_surprise] run function luigis_mansion:ghosts/ceiling_surprise
+execute if entity @s[tag=ceiling_surprise] run function luigis_mansion:ghosts/ceiling_bomber
 execute if entity @s[tag=bowling_ghost] run function luigis_mansion:ghosts/bowling_ghost
 execute if entity @s[tag=ghost_guy] run function luigis_mansion:ghosts/ghost_guy
 execute if entity @s[tag=mr_bones] run function luigis_mansion:ghosts/mr_bones
 execute if entity @s[tag=waiter] run function luigis_mansion:ghosts/waiter
+execute if entity @s[tag=blue_mouse] run function luigis_mansion:ghosts/blue_mouse
+execute if entity @s[tag=purple_mouse] run function luigis_mansion:ghosts/pink_mouse
+execute if entity @s[tag=gold_mouse] run function luigis_mansion:ghosts/gold_mouse
+execute if entity @s[tag=purple_bat] run function luigis_mansion:ghosts/purple_bat
 execute if entity @s[tag=yellow_bat] run function luigis_mansion:ghosts/yellow_bat
 execute if entity @s[tag=one_hit] run function luigis_mansion:ghosts/one_hit
 execute if entity @s[tag=heart] run function luigis_mansion:ghosts/heart
@@ -63,3 +76,6 @@ execute if entity @s[tag=jarvis] run function luigis_mansion:ghosts/jarvis
 execute if entity @s[tag=sir_weston] run function luigis_mansion:ghosts/sir_weston
 execute if entity @s[tag=sue_pea] run function luigis_mansion:ghosts/sue_pea
 execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:ghosts/vincent_van_gore
+kill @s[tag=dead]
+tag @s remove hurt
+tag @s[nbt={AbsorptionAmount:0.0f}] add dead

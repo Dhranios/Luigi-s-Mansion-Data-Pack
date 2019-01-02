@@ -24,6 +24,9 @@ execute if entity @a[advancements={luigis_mansion:mansion/nursery=true,luigis_ma
 execute if entity @a[advancements={luigis_mansion:mansion/nursery=true,luigis_mansion:mansion/graveyard=false},limit=1] unless block ~0.4 ~ ~ minecraft:air if block ~1.4 ~ ~ #luigis_mansion:boos_warp/area_2 run teleport @s ~4.4 ~ ~
 scoreboard players add @s Music 1
 scoreboard players set @s[scores={Music=40..}] Music 0
+execute if entity @s[tag=talk] run function luigis_mansion:ghosts/boo/talk
+execute if entity @s[tag=dead] run function luigis_mansion:ghosts/boo/death
+execute if entity @s[tag=hurt] run playsound luigis_mansion:entity.boo.hurt hostile @a ~ ~ ~ 1
 execute if entity @s[x=686,y=109,z=-1,dx=10,dy=10,dz=17] run function luigis_mansion:rooms/boo/parlor
 execute if entity @s[x=674,y=109,z=-1,dx=8,dy=10,dz=17] run function luigis_mansion:rooms/boo/anteroom
 execute if entity @s[x=674,y=109,z=20,dx=8,dy=10,dz=17] run function luigis_mansion:rooms/boo/wardrobe_room

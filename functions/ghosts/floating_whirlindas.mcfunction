@@ -65,3 +65,5 @@ teleport @s[scores={Dialog=951..980}] ~0.1 ~ ~
 teleport @s[scores={Dialog=981..1110}] ~0.1 ~ ~0.1
 teleport @s[scores={Dialog=1111..1140}] ~ ~ ~0.1
 teleport @s[scores={Dialog=1141..1220}] ~-0.1 ~ ~0.1
+execute if entity @s[tag=dead] run playsound luigis_mansion:entity.floating_whirlindas.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=hurt] run playsound luigis_mansion:entity.floating_whirlindas.hurt hostile @a ~ ~ ~ 1

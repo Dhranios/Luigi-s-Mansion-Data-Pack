@@ -8,9 +8,7 @@ scoreboard players set @s[advancements={luigis_mansion:mansion/wardrobe_room=fal
 scoreboard players set @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,scores={MusicType=0,Music=0}] MusicType 4
 scoreboard players set @s[advancements={luigis_mansion:mansion/wardrobe_room=true},tag=!blackout,scores={MusicType=0,Music=0}] MusicType 3
 scoreboard players set @s[advancements={luigis_mansion:mansion/wardrobe_room=true,luigis_mansion:mansion/breaker_room=true},scores={MusicType=0,Music=0}] MusicType 3
-execute if entity @s[advancements={luigis_mansion:mansion/wardrobe_room=false}] if block 678 118 29 minecraft:stone_button run fill 677 118 28 678 118 29 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/wardrobe_room=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 678 118 29 minecraft:air run fill 677 118 28 678 118 29 minecraft:stone_button[face=floor,powered=true,facing=north]
-execute if entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 678 118 29 minecraft:stone_button run fill 677 118 28 678 118 29 minecraft:air
 execute if entity @s[advancements={luigis_mansion:mansion/wardrobe_room=true}] unless entity @s[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout] if block 675 111 21 minecraft:command_block run clone 675 111 21 675 111 21 675 110 20 masked move
 execute if entity @e[x=676,y=117,z=27,dx=4,dy=2,dz=4,tag=poltergust,limit=1] run data merge block 678 110 28 {auto:1b}
 execute if entity @e[x=674,y=112,z=36,dx=2,dy=4,dz=2,tag=poltergust,limit=1] run data merge block 675 110 35 {auto:1b}

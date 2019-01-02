@@ -12,6 +12,7 @@ function luigis_mansion:items/game_boy_horror
 function luigis_mansion:other/music
 function luigis_mansion:items/poltergust
 function luigis_mansion:rooms/room
+function luigis_mansion:rooms/unlock_doors
 execute if block ~ ~ ~ minecraft:stone_pressure_plate run tag @s[tag=room_name] remove room_name
 execute if entity @s[scores={Death=1}] run function luigis_mansion:other/death
 execute if entity @s[scores={Death2=1}] run function luigis_mansion:other/death
@@ -47,4 +48,5 @@ tellraw @s[scores={PlayerCount=6..},tag=!player_count_3] {"translate":"chat.type
 tag @s[scores={PlayerCount=6..},tag=!player_count_3] add player_count_3
 tellraw @s[scores={PlayerCount=8..},tag=!player_count_4] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"gold"},{"translate":"luigis_mansion:message.multiplayer.4"}]}
 tag @s[scores={PlayerCount=8..},tag=!player_count_4] add player_count_4
+execute if entity @s[tag=locked_washroom] run function luigis_mansion:dialog/locked_washroom
 execute if entity @s[scores={Dialog=0..},tag=game_boy_horror] run function luigis_mansion:game_boy_horror

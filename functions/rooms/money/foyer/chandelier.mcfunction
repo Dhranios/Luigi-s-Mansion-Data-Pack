@@ -28,3 +28,4 @@ summon minecraft:item 715 113 9 {Item:{id:"minecraft:paper",Count:1b,tag:{luigis
 summon minecraft:item 712 113 9 {Item:{id:"minecraft:paper",Count:1b,tag:{luigis_mansion:{id:"luigis_mansion:bill"},display:{Name:"{\"translate\":\"luigis_mansion:item.bill\"}"}}},Age:-32768s,Invulnerable:1b,CustomName:"{\"translate\":\"luigis_mansion:item.bill\"}",Silent:1b}
 summon minecraft:item 714 113 10 {Item:{id:"minecraft:paper",Count:1b,tag:{luigis_mansion:{id:"luigis_mansion:bill"},display:{Name:"{\"translate\":\"luigis_mansion:item.bill\"}"}}},Age:-32768s,Invulnerable:1b,CustomName:"{\"translate\":\"luigis_mansion:item.bill\"}",Silent:1b}
 summon minecraft:item 713 113 10 {Item:{id:"minecraft:paper",Count:1b,tag:{luigis_mansion:{id:"luigis_mansion:bill"},display:{Name:"{\"translate\":\"luigis_mansion:item.bill\"}"}}},Age:-32768s,Invulnerable:1b,CustomName:"{\"translate\":\"luigis_mansion:item.bill\"}",Silent:1b}
+advancement grant @a only luigis_mansion:money/foyer/chandelier

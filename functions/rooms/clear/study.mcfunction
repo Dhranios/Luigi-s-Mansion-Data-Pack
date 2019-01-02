@@ -5,6 +5,6 @@ teleport @e[tag=study,tag=optional_enemy] ~ -4096 ~
 clone 688 110 25 688 110 25 687 110 25 masked move
 scoreboard players set @a MusicType 0
 scoreboard players set @a Music 38
-tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.game_boy_horror"},{"translate":"luigis_mansion:message.foyer.game_boy_horror.2"}]}
+tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.game_boy_horror"},{"translate":"luigis_mansion:message.game_boy_horror.foyer.short"}]}
 scoreboard players reset @a Dialog
 kill @s
