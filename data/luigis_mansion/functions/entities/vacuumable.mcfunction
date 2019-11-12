@@ -1,0 +1,15 @@
+execute if entity @s[tag=blue_mouse] run function luigis_mansion:entities/blue_mouse
+execute if entity @s[tag=purple_mouse] run function luigis_mansion:entities/purple_mouse
+execute if entity @s[tag=gold_mouse] run function luigis_mansion:entities/gold_mouse
+execute if entity @s[tag=purple_bat] run function luigis_mansion:entities/purple_bat
+execute if entity @s[tag=yellow_bat] run function luigis_mansion:entities/yellow_bat
+execute if entity @s[tag=pink_flying_fish] run function luigis_mansion:entities/pink_flying_fish
+execute if entity @s[tag=green_flying_fish] run function luigis_mansion:entities/green_flying_fish
+execute if entity @s[tag=spark] run function luigis_mansion:entities/spark
+execute if entity @s[tag=haunted_book] run function luigis_mansion:entities/haunted_book
+execute if entity @s[tag=haunted_teddy_bear] run function luigis_mansion:entities/haunted_teddy_bear
+execute if entity @s[tag=haunted_music_sheet] run function luigis_mansion:entities/haunted_music_sheet
+execute if entity @s[tag=haunted_flying_pan] run function luigis_mansion:entities/haunted_flying_pan
+execute if entity @s[tag=haunted_plate] run function luigis_mansion:entities/haunted_plate
+execute if entity @s[tag=haunted_jar] run function luigis_mansion:entities/haunted_jar
+execute if entity @s[tag=haunted_clown_doll] run function luigis_mansion:entities/haunted_clown_doll

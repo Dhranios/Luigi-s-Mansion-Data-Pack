@@ -1,1 +1,0 @@
-teleport @e[tag=observatory,tag=normal_enemy] ~ -4096 ~

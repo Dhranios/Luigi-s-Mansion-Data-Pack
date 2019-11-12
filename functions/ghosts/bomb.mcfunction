@@ -1,3 +1,0 @@
-tag @s[tag=ghost_bomb,nbt={Fuse:1s}] add tnt
-execute if entity @s[tag=tnt] run summon minecraft:creeper ~ ~ ~ {Fuse:0s,Health:1.0f,Attributes:[{Name:"generic.maxHealth",Base:1.0d},{Name:"generic.knockbackResistance",Base:1.0d},{Name:"generic.followRange",Base:20.0d},{Name:"generic.movementSpeed",Base:0.0d},{Name:"generic.attackDamage",Base:0.0d},{Name:"generic.armor",Base:0.0d},{Name:"generic.armorToughness",Base:0.0d}],DeathLootTable:"minecraft:empty",NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,CustomName:"{\"translate\":\"luigis_mansion:entity.ghost_bomb\"}",CustomNameVisible:1b,Silent:1b,LeftHanded:1b,Team:"Ghosts"}
-kill @s[tag=tnt]

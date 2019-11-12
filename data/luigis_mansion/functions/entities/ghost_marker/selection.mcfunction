@@ -1,0 +1,29 @@
+execute if entity @s[tag=gold_ghost] run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute if entity @s[tag=gold_dummy_ghost] run function luigis_mansion:spawn_entities/ghost/gold_dummy_ghost
+execute if entity @s[tag=temper_terror] run function luigis_mansion:spawn_entities/ghost/temper_terror
+execute if entity @s[tag=speedy_spirit] run function luigis_mansion:spawn_entities/ghost/speedy_spirit
+execute if entity @s[tag=purple_puncher] run function luigis_mansion:spawn_entities/ghost/purple_puncher
+execute if entity @s[tag=flash] run function luigis_mansion:spawn_entities/ghost/flash
+execute if entity @s[tag=blue_twirler] run function luigis_mansion:spawn_entities/ghost/blue_twirler
+execute if entity @s[tag=blue_blaze] run function luigis_mansion:spawn_entities/ghost/blue_blaze
+execute if entity @s[tag=grabbing_ghost] run function luigis_mansion:spawn_entities/ghost/grabbing_ghost
+execute if entity @s[tag=red_grabbing_ghost] run function luigis_mansion:spawn_entities/ghost/red_grabbing_ghost
+execute if entity @s[tag=mirror_ghost] run function luigis_mansion:spawn_entities/ghost/mirror_ghost
+execute if entity @s[tag=cinema_ghost] run function luigis_mansion:spawn_entities/ghost/cinema_ghost
+execute if entity @s[tag=garbage_can_ghost] run function luigis_mansion:spawn_entities/ghost/garbage_can_ghost
+execute if entity @s[tag=ghost_guy] run function luigis_mansion:spawn_entities/ghost/ghost_guy
+execute if entity @s[tag=mr_bones] run function luigis_mansion:spawn_entities/ghost/mr_bones
+execute if entity @s[tag=bowling_ghost] run function luigis_mansion:spawn_entities/ghost/bowling_ghost
+execute if entity @s[tag=ceiling_surprise] run function luigis_mansion:spawn_entities/ghost/ceiling_surprise
+execute if entity @s[tag=purple_bomber] run function luigis_mansion:spawn_entities/ghost/purple_bomber
+execute if entity @s[tag=waiter] run function luigis_mansion:spawn_entities/ghost/waiter
+
+execute if entity @s[tag=blue_mouse] run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
+execute if entity @s[tag=purple_mouse] run function luigis_mansion:spawn_entities/vacuumable/purple_mouse
+execute if entity @s[tag=gold_mouse] run function luigis_mansion:spawn_entities/vacuumable/gold_mouse
+execute if entity @s[tag=pink_flying_fish] run function luigis_mansion:spawn_entities/vacuumable/pink_flying_fish
+execute if entity @s[tag=green_flying_fish] run function luigis_mansion:spawn_entities/vacuumable/green_flying_fish
+execute if entity @s[tag=purple_bat] run function luigis_mansion:spawn_entities/vacuumable/purple_bat
+execute if entity @s[tag=yellow_bat] run function luigis_mansion:spawn_entities/vacuumable/yellow_bat
+execute if entity @s[tag=spark] run function luigis_mansion:spawn_entities/vacuumable/spark
+kill @s

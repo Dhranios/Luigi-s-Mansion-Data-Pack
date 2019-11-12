@@ -1,1 +1,0 @@
-summon minecraft:item 709 112 50 {Item:{id:"minecraft:snowball",Count:1b,tag:{luigis_mansion:{id:"luigis_mansion:chaunceys_ball"},display:{Name:"{\"translate\":\"luigis_mansion:item.chaunceys_ball\"}"}}},Age:-32768s,Invulnerable:1b,CustomName:"{\"translate\":\"luigis_mansion:item.chaunceys_ball\"}",Silent:1b,Tags:["chaunceys_ball"]}

@@ -1,1 +1,0 @@
-execute if entity @s[tag=dead] run playsound luigis_mansion:entity.gold_mouse.vacumed hostile @a ~ ~ ~ 1

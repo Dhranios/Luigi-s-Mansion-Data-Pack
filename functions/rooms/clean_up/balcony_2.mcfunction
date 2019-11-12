@@ -1,1 +1,0 @@
-teleport @e[tag=balcony_2,tag=normal_enemy] ~ -4096 ~

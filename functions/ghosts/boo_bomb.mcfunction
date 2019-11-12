@@ -1,2 +1,0 @@
-summon minecraft:tnt ~ ~4.5 ~ {Fuse:30s,Tags:["ghost_bomb","boo_bomb"],Invulnerable:1b,PersistenceRequired:1b,CustomName:"{\"translate\":\"luigis_mansion:entity.ghost_bomb\"}",CustomNameVisible:1b,Silent:1b}
-kill @s

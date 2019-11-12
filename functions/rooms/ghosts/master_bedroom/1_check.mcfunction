@@ -1,1 +1,0 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {CustomName:"{\"text\":\"Check Ghosts\"}",Tags:["check_ghosts","wave_1","master_bedroom"],Duration:2147483647}
