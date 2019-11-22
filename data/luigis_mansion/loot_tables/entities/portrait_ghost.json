@@ -23,7 +23,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{Name:\"{\\\"translate\\\":\\\"luigis_mansion:item.lapis_lazuli\\\"}\"},luigis_mansion:{id:\"luigis_mansion:lapis_lazuli\"}}"
+                            "tag": "{display:{Name:'{\"italc\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.lapis_lazuli\"}'},luigis_mansion:{id:\"luigis_mansion:lapis_lazuli\"}}"
                         }
                     ]
                 }

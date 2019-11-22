@@ -1,5 +1,3 @@
-tag @s[nbt={AbsorptionAmount:0.0f}] add dying
-
 execute if entity @s[tag=ghost_marker] run function luigis_mansion:entities/ghost_marker
 execute if entity @s[tag=ghost] run function luigis_mansion:entities/ghost
 execute if entity @s[tag=vacuumable] run function luigis_mansion:entities/vacuumable

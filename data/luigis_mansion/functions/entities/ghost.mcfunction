@@ -1,3 +1,5 @@
+tag @s[scores={Health=..0}] add dying
+
 execute if entity @s[tag=dying] run function luigis_mansion:animations/ghost/death
 execute if entity @s[tag=hurt] run function luigis_mansion:animations/ghost/hurt
 
