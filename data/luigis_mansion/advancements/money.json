@@ -1,0 +1,97 @@
+{
+    "criteria": {
+        "foyer_enter": {
+            "trigger": "minecraft:impossible"
+        },
+        "foyer_small_lamp": {
+            "trigger": "minecraft:impossible"
+        },
+        "foyer_chandelier": {
+            "trigger": "minecraft:impossible"
+        },
+        "parlor_enter": {
+            "trigger": "minecraft:impossible"
+        },
+        "parlor_lamp": {
+            "trigger": "minecraft:impossible"
+        },
+        "parlor_closet": {
+            "trigger": "minecraft:impossible"
+        },
+        "parlor_table_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "parlor_table_3": {
+            "trigger": "minecraft:impossible"
+        },
+        "anteroom_lamp_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "anteroom_lamp_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "anteroom_table_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "anteroom_table_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "wardrobe_room_closet_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "small_hallway_enter": {
+            "trigger": "minecraft:impossible"
+        },
+        "study_book_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "study_book_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "study_ceiling_lamp": {
+            "trigger": "minecraft:impossible"
+        },
+        "master_bedroom_desk": {
+            "trigger": "minecraft:impossible"
+        },
+        "master_bedroom_fan": {
+            "trigger": "minecraft:impossible"
+        },
+        "master_bedroom_table": {
+            "trigger": "minecraft:impossible"
+        },
+        "nursery_enter": {
+            "trigger": "minecraft:impossible"
+        },
+        "nursery_lamp": {
+            "trigger": "minecraft:impossible"
+        },
+        "main_hallway_jar_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "main_hallway_jar_3": {
+            "trigger": "minecraft:impossible"
+        },
+        "main_hallway_jar_5": {
+            "trigger": "minecraft:impossible"
+        },
+        "main_hallway_jar_6": {
+            "trigger": "minecraft:impossible"
+        },
+        "ball_room_lamp_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "ball_room_lamp_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "storage_room_bucket": {
+            "trigger": "minecraft:impossible"
+        },
+        "basement_stairs_lamp_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "breaker_room_lamp": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

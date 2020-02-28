@@ -1,0 +1,1 @@
+setblock 698 123 -2 minecraft:barrier

@@ -1,0 +1,1 @@
+fill 690 113 56 693 113 53 minecraft:air replace minecraft:light_gray_carpet

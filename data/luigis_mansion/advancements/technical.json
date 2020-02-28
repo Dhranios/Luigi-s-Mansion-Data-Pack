@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "entered_mansion": {
+            "trigger": "minecraft:impossible"
+        },
+        "found_e_gadd": {
+            "trigger": "minecraft:impossible"
+        },
+        "freed_boos": {
+            "trigger": "minecraft:impossible"
+        },
+        "saw_mario": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

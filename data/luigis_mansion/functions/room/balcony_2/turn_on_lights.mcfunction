@@ -1,0 +1,6 @@
+setblock 667 125 39 minecraft:stone_button[face=floor,powered=true]
+setblock 654 125 39 minecraft:stone_button[face=floor,powered=true]
+setblock 654 125 15 minecraft:stone_button[face=floor,powered=true]
+setblock 654 125 -17 minecraft:stone_button[face=floor,powered=true]
+setblock 654 125 -43 minecraft:stone_button[face=floor,powered=true]
+setblock 667 125 -43 minecraft:stone_button[face=floor,powered=true]

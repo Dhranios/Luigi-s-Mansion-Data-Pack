@@ -1,0 +1,97 @@
+{
+    "criteria": {
+        "gate": {
+            "trigger": "minecraft:impossible"
+        },
+        "parlor": {
+            "trigger": "minecraft:impossible"
+        },
+        "anteroom": {
+            "trigger": "minecraft:impossible"
+        },
+        "small_hallway": {
+            "trigger": "minecraft:impossible"
+        },
+        "master_bedroom": {
+            "trigger": "minecraft:impossible"
+        },
+        "nursery": {
+            "trigger": "minecraft:impossible"
+        },
+        "main_hallway": {
+            "trigger": "minecraft:impossible"
+        },
+        "ball_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "storage_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "washroom_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "fortune_tellers_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "laundry_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "conservatory": {
+            "trigger": "minecraft:impossible"
+        },
+        "dining_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "courtyard": {
+            "trigger": "minecraft:impossible"
+        },
+        "rec_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "main_stairs": {
+            "trigger": "minecraft:impossible"
+        },
+        "billiards_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "twins_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "safari_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "balcony_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "attic_hallway_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "breaker_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "cellar": {
+            "trigger": "minecraft:impossible"
+        },
+        "clockwork_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "armory": {
+            "trigger": "minecraft:impossible"
+        },
+        "pipe_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "cold_storage": {
+            "trigger": "minecraft:impossible"
+        },
+        "sitting_room": {
+            "trigger": "minecraft:impossible"
+        },
+        "artist_studio": {
+            "trigger": "minecraft:impossible"
+        },
+        "secret_altar": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
