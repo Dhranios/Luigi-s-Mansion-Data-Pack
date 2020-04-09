@@ -1,0 +1,2 @@
+loot spawn 722 130 7 loot luigis_mansion:gameplay/lightning_strike
+execute positioned 722 130 7 if entity @e[distance=..0.7,type=minecraft:item,limit=1,nbt={Item:{id:"minecraft:bedrock"}}] run function luigis_mansion:lightning/strike

@@ -4,6 +4,8 @@ execute if entity @s[gamemode=!spectator] run function luigis_mansion:items/polt
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:blocks/blockade
 
+execute if entity @s[x=-17,y=90,z=-17,dx=34,dy=3,dz=34,gamemode=!spectator] run function luigis_mansion:other/join_world
+
 scoreboard players operation @s[scores={Health=1..}] Health -= @s Damage
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health -1
 scoreboard players operation @s[scores={Health=1..}] Damage += #100 Constants
