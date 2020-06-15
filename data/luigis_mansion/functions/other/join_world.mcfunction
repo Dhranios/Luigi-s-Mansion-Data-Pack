@@ -2,3 +2,6 @@ tellraw @s {"translate":"luigis_mansion:settings","hoverEvent":{"action":"show_t
 tellraw @s[tag=youtuber] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.fvbico"},{"translate":"luigis_mansion:message.youtuber","with":[{"selector":"@s"}]}]}
 give @s minecraft:torch{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}
 teleport @s 27 90 0 -180 0
+scoreboard players set @s Music 0
+scoreboard players set @s MusicType 0
+scoreboard players set @s PrevMusicType 0

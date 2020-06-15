@@ -12,7 +12,7 @@ execute if entity @s[tag=flashlight] unless block ~ ~ ~ minecraft:torch run fill
 execute if entity @s[gamemode=!spectator] as @e[distance=..7,tag=ghost_marker,tag=can_spawn,tag=!needs_furniture_search] positioned ^ ^ ^4 unless entity @s[distance=..4] run tag @s add spawn
 
 # Delete when custom behavior is added
-execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={StunTime=0}] positioned ^ ^ ^4 if entity @s[distance=..4] run data merge entity @s {NoAI:1b,Motion:[0.0d,0.0d,0.0d],NoGravity:1b}
+execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={StunTime=0}] positioned ^ ^ ^4 if entity @s[distance=..4] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
 
 execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={StunTime=0}] positioned ^ ^ ^4 if entity @s[distance=..4] at @s run playsound luigis_mansion:entity.heart.flash hostile @a ~ ~ ~ 1
 execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={StunTime=0},tag=portrait_ghost] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4] StunTime 200

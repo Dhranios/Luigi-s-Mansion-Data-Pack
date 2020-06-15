@@ -26,4 +26,4 @@ execute if entity @s[tag=green_flying_fish] run function luigis_mansion:spawn_en
 execute if entity @s[tag=purple_bat] run function luigis_mansion:spawn_entities/vacuumable/purple_bat
 execute if entity @s[tag=yellow_bat] run function luigis_mansion:spawn_entities/vacuumable/yellow_bat
 execute if entity @s[tag=spark] run function luigis_mansion:spawn_entities/vacuumable/spark
-kill @s
+tag @s add dead

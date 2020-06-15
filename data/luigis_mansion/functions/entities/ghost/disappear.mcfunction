@@ -17,7 +17,7 @@ execute if entity @s[tag=ceiling_surprise] run tag @e[tag=this_entity,limit=1] a
 execute if entity @s[tag=purple_bomber] run tag @e[tag=this_entity,limit=1] add purple_bomber
 execute if entity @s[tag=waiter] run tag @e[tag=this_entity,limit=1] add waiter
 scoreboard players operation @e[tag=this_entity,limit=1] Health = @s Health
-execute facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
+execute facing entity @a[tag=target,limit=1] feet rotated ~ 0 run teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:entity.ghost.disappear hostile @a ~ ~ ~ 1
 teleport @s ~ -100 ~

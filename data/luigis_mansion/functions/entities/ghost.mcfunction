@@ -1,4 +1,5 @@
 tag @s[scores={Health=..0}] add dying
+scoreboard players operation #temp Move = @s Move
 
 execute if entity @s[tag=dying] run function luigis_mansion:animations/ghost/death
 execute if entity @s[tag=hurt] run function luigis_mansion:animations/ghost/hurt
@@ -23,17 +24,10 @@ execute if entity @s[tag=ceiling_surprise] run function luigis_mansion:entities/
 execute if entity @s[tag=purple_bomber] run function luigis_mansion:entities/purple_bomber
 execute if entity @s[tag=waiter] run function luigis_mansion:entities/waiter
 
+execute if entity @s[tag=fleeing] run function luigis_mansion:entities/ghost/flee
+
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
 scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..},tag=!hurt] VulnerableTime 1
 
-# Delete when custom behavior is added
-data merge entity @s[scores={StunTime=1}] {NoAI:0b,NoGravity:0b}
-
-execute at @s if block ~ ~1 ~ minecraft:air unless block ~ ~1.7 ~ minecraft:air run teleport @s ~ ~-0.3 ~
-execute at @s if block ~ ~0.3 ~ minecraft:air unless block ~ ~ ~ minecraft:air run teleport @s ~ ~0.3 ~
-execute at @s if block ~0.3 ~ ~ minecraft:air unless block ~ ~ ~ minecraft:air run teleport @s ~0.3 ~ ~
-execute at @s if block ~-0.3 ~ ~ minecraft:air unless block ~ ~ ~ minecraft:air run teleport @s ~-0.3 ~ ~
-execute at @s if block ~ ~ ~0.3 minecraft:air unless block ~ ~ ~ minecraft:air run teleport @s ~ ~ ~0.3
-execute at @s if block ~ ~ ~-0.3 minecraft:air unless block ~ ~ ~ minecraft:air run teleport @s ~ ~ ~-0.3
-
 execute if entity @s[tag=!dying,tag=disappear] run function luigis_mansion:entities/ghost/disappear
+scoreboard players reset #temp Move

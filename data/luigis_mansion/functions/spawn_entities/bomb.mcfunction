@@ -1,0 +1,1 @@
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.bomb"}',Tags:["bomb"],Invisible:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:tnt",Count:1b}]}
