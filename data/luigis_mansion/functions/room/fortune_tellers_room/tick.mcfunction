@@ -1,4 +1,6 @@
 execute unless score fortune_tellers_room Ticking matches 1 run function luigis_mansion:room/fortune_tellers_room/load
-execute as @e[team=Ghost,x=706,y=102,z=-23,dx=13,dy=6,dz=20] unless entity @s[scores={Room=1..}] run scoreboard players set @s Room 16
+execute as @e[x=706,y=102,z=-23,dx=13,dy=6,dz=20] unless entity @s[scores={Room=1..}] run scoreboard players set @s Room 16
 
 execute as @a[gamemode=!spectator,x=708,y=102,z=-21,dx=9,dy=6,dz=16] run function luigis_mansion:room/fortune_tellers_room/tick_per_player
+
+execute if block 717 104 -21 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 708 104 -21 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 708 104 -5 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 717 104 -5 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] unless entity @e[type=minecraft:item,nbt={Item:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"laundry_room"}}}},limit=1] unless entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"laundry_room"}}}]},limit=1] if entity @a[advancements={luigis_mansion:keys={laundry_room=false}},limit=1] run summon minecraft:item 715 108 -18 {Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:key",room:"laundry_room"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.key","with":[{"translate":"luigis_mansion:location.laundry_room"}]}'}}},Age:-32768s}

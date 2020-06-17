@@ -6,7 +6,13 @@ execute if entity @a[advancements={luigis_mansion:keys={laundry_room=false}},lim
 execute if entity @a[advancements={luigis_mansion:keys={conservatory=false}},limit=1] run function luigis_mansion:room/conservatory/lock_door
 execute if entity @a[advancements={luigis_mansion:keys={dining_room=false}},limit=1] run function luigis_mansion:room/dining_room/lock_door
 execute if entity @a[advancements={luigis_mansion:keys={courtyard=false}},limit=1] run function luigis_mansion:room/courtyard/lock_door
-execute if entity @a[advancements={luigis_mansion:keys={courtyard=false}},limit=1] run function luigis_mansion:room/main_hallway/add_blockade
+execute if entity @a[advancements={luigis_mansion:technical={cleared_area_3_blockade=false}},limit=1] run function luigis_mansion:room/main_hallway/add_blockade
 execute if entity @a[advancements={luigis_mansion:keys={billiards_room=false}},limit=1] run function luigis_mansion:room/billiards_room/lock_door
+
+execute positioned 699 102 1 run function luigis_mansion:spawn_entities/fake_door/normal/west
+execute if entity @a[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,limit=1] positioned 699 102 23 run function luigis_mansion:spawn_entities/fake_door/normal/west
+execute if entity @a[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,limit=1] positioned 677 102 -4 run function luigis_mansion:spawn_entities/fake_door/normal/south
+execute if entity @a[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,limit=1] positioned 677 102 -10 run function luigis_mansion:spawn_entities/fake_door/normal/north
+execute if entity @a[advancements={luigis_mansion:mansion/breaker_room=false},tag=blackout,limit=1] positioned 660 102 18 run function luigis_mansion:spawn_entities/fake_door/normal/north
 
 scoreboard players set main_hallway Ticking 1

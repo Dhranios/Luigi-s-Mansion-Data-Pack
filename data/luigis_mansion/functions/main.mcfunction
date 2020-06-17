@@ -5,6 +5,3 @@ execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non
 function luigis_mansion:room/detect
 function luigis_mansion:anti_cheating/scores
 function luigis_mansion:lightning/try
-
-kill @e[tag=dead]
-tag @a[tag=dead] remove dead

@@ -30,21 +30,43 @@ playsound luigis_mansion:music.boss.boolossus music @s[scores={MusicType=17}] ~ 
 scoreboard players set @s[scores={MusicType=17}] Music 686
 playsound luigis_mansion:music.boss.king_boo music @s[scores={MusicType=18}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=18}] Music 1130
-playsound luigis_mansion:music.game_boy_horror music @s[scores={MusicType=19}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=19}] Music 
-playsound luigis_mansion:music.king_boo music @s[scores={MusicType=20}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=20}] Music 
+playsound luigis_mansion:music.gameboy_horror music @s[scores={MusicType=19}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=19}] Music 831
+playsound luigis_mansion:music.king_boo_warp music @s[scores={MusicType=20}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=20}] Music 192
 playsound luigis_mansion:music.mysterious_power music @s[scores={MusicType=21}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=21}] Music 
+scoreboard players set @s[scores={MusicType=21}] Music 160
 playsound luigis_mansion:music.portrificationizing music @s[scores={MusicType=22}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=22}] Music 
+scoreboard players set @s[scores={MusicType=22}] Music 34
 playsound luigis_mansion:music.talking_ghosts music @s[scores={MusicType=23}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=23}] Music 
+scoreboard players set @s[scores={MusicType=23}] Music 288
 playsound luigis_mansion:music.training_results music @s[scores={MusicType=24}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=24}] Music 
+scoreboard players set @s[scores={MusicType=24}] Music 95
 playsound luigis_mansion:music.melody_battle music @s[scores={MusicType=25}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=25}] Music 
+scoreboard players set @s[scores={MusicType=25}] Music 248
 playsound luigis_mansion:music.lets_play music @s[scores={MusicType=26}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=26}] Music 
-
-scoreboard players operation @s[scores={Music=0}] PrevMusicType = @s MusicType
+scoreboard players set @s[scores={MusicType=26}] Music 188
+playsound luigis_mansion:music.gameboy_horror_call music @s[scores={MusicType=27}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=27}] Music 285
+playsound luigis_mansion:music.catching.ghost music @s[scores={MusicType=28}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=28}] Music 214
+playsound luigis_mansion:music.catching.portrait_ghost music @s[scores={MusicType=29}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=29}] Music 43
+playsound luigis_mansion:music.catching.boo music @s[scores={MusicType=30}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=30}] Music 378
+playsound luigis_mansion:music.king_boo_theme music @s[scores={MusicType=31}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=31}] Music 232
+playsound luigis_mansion:music.boss.catching_chauncey music @s[scores={MusicType=32}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=32}] Music 855
+playsound luigis_mansion:music.boss.catching_bogmire music @s[scores={MusicType=33}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=33}] Music 841
+playsound luigis_mansion:music.boss.boolossus_split music @s[scores={MusicType=34}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=34}] Music 686
+playsound luigis_mansion:music.boss.catching_king_boo music @s[scores={MusicType=35}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=35}] Music 768
+playsound luigis_mansion:music.danger music @s[scores={MusicType=36}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=36}] Music 172
+playsound luigis_mansion:music.mini_game music @s[scores={MusicType=37}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=37}] Music 400
+playsound luigis_mansion:music.new_paintings music @s[scores={MusicType=38}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=38}] Music 196

@@ -4,6 +4,8 @@ execute if entity @s[tag=bowling_ball] run function luigis_mansion:entities/bowl
 execute if entity @s[tag=bomb] run function luigis_mansion:entities/bomb
 execute if entity @s[tag=vacuumable] run function luigis_mansion:entities/vacuumable
 execute if entity @s[tag=vacuum] run function luigis_mansion:items/poltergust_3000/vacuum
+execute if entity @s[tag=door] run function luigis_mansion:animations/closed_door
+execute if entity @s[tag=fake_door] run function luigis_mansion:entities/fake_door
 
 # Prevent zombies from converting to drowned
 data merge entity @s[type=minecraft:zombie,nbt=!{DrownedConversionTime:-1,InWaterTime:-1}] {DrownedConversionTime:-1,InWaterTime:-1}

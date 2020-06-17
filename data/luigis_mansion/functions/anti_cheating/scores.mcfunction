@@ -1,4 +1,5 @@
 scoreboard objectives add AnimationProg dummy
+scoreboard objectives add Boos dummy
 scoreboard objectives add Bowling dummy
 scoreboard objectives add Constants dummy
 scoreboard objectives add Damage dummy

@@ -6,10 +6,43 @@
         "found_e_gadd": {
             "trigger": "minecraft:impossible"
         },
-        "freed_boos": {
+        "cleared_area_2_blockade": {
+            "trigger": "minecraft:impossible"
+        },
+        "released_boos": {
+            "trigger": "minecraft:impossible"
+        },
+        "extinguished_kitchen_fire": {
+            "trigger": "minecraft:impossible"
+        },
+        "cleared_area_3_blockade": {
             "trigger": "minecraft:impossible"
         },
         "saw_mario": {
+            "trigger": "minecraft:impossible"
+        },
+        "extinguished_main_stairs_fire": {
+            "trigger": "minecraft:impossible"
+        },
+        "has_marios_hat": {
+            "trigger": "minecraft:impossible"
+        },
+        "has_marios_letter": {
+            "trigger": "minecraft:impossible"
+        },
+        "has_marios_star": {
+            "trigger": "minecraft:impossible"
+        },
+        "has_marios_glove": {
+            "trigger": "minecraft:impossible"
+        },
+        "has_marios_shoe": {
+            "trigger": "minecraft:impossible"
+        },
+        "cleared_area_4_blockade": {
+            "trigger": "minecraft:impossible"
+        },
+        "cleared_king_boo_blockade": {
             "trigger": "minecraft:impossible"
         }
     }

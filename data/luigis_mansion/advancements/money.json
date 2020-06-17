@@ -92,6 +92,36 @@
         },
         "breaker_room_lamp": {
             "trigger": "minecraft:impossible"
+        },
+        "laundry_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "hidden_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "dining_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "courtyard_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "rec_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "washroom_2_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "billiards_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "telephone_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "ceramics_studio_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "guest_room_chest": {
+            "trigger": "minecraft:impossible"
         }
     }
 }

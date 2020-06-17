@@ -5,6 +5,15 @@ execute if entity @s[gamemode=!spectator] run function luigis_mansion:items/polt
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:blocks/gravity_swap
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:blocks/blockade
 execute if entity @s[tag=grabbed] run function luigis_mansion:entities/player/grabbed
+execute if entity @s[advancements={luigis_mansion:technical={released_boos=true}},scores={Boos=..49}] run function luigis_mansion:other/music/set/catching_boo
+execute if entity @s[scores={MusicType=15}] run function luigis_mansion:other/music/set/catching_chauncey
+execute if entity @s[scores={MusicType=32}] run function luigis_mansion:other/music/set/catching_chauncey
+execute if entity @s[scores={MusicType=16}] run function luigis_mansion:other/music/set/catching_bogmire
+execute if entity @s[scores={MusicType=33}] run function luigis_mansion:other/music/set/catching_bogmire
+execute if entity @s[scores={MusicType=17}] run function luigis_mansion:other/music/set/catching_boolossus
+execute if entity @s[scores={MusicType=34}] run function luigis_mansion:other/music/set/catching_boolossus
+execute if entity @s[scores={MusicType=18}] run function luigis_mansion:other/music/set/catching_king_boo
+execute if entity @s[scores={MusicType=35}] run function luigis_mansion:other/music/set/catching_king_boo
 
 execute if entity @s[x=-17,y=90,z=-17,dx=34,dy=3,dz=34,gamemode=!spectator] run function luigis_mansion:other/join_world
 
