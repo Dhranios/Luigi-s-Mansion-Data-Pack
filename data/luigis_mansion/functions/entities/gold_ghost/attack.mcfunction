@@ -1,8 +1,8 @@
 scoreboard players add @s[scores={AnimationProg=1..60}] AnimationProg 1
 execute unless entity @s[scores={AnimationProg=1..}] run scoreboard players set @s AnimationProg 1
 
-teleport @s[scores={AnimationProg=1..39}] ^ ^ ^0.0125
-execute at @s[scores={AnimationProg=1..20}] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,gamemode=!spectator] run tag @s add stop_attack
+teleport @s[scores={AnimationProg=1..39},tag=!dialog] ^ ^ ^0.0125
+execute at @s[scores={AnimationProg=1..20},tag=!dialog] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,gamemode=!spectator] run tag @s add stop_attack
 execute if entity @s[scores={AnimationProg=41}] run playsound luigis_mansion:entity.gold_ghost.attack hostile @a ~ ~ ~ 1
 teleport @s[scores={AnimationProg=41..60}] ~ ~ ~ ~-18 ~
 execute at @s[scores={AnimationProg=41}] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true

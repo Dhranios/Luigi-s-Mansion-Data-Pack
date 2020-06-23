@@ -1,3 +1,6 @@
-summon minecraft:silverfish ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.blue_mouse"}',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,DeathLootTable:"luigis_mansion:entities/ghosts/blue_mouse",Health:100.0f,AbsorptionAmount:1.0f,Attributes:[{Name:"generic.maxHealth",Base:100.0d},{Name:"generic.movementSpeed",Base:0.2d},{Name:"generic.followRange",Base:20.0d},{Name:"generic.knockbackResistance",Base:0.0d},{Name:"generic.armor",Base:0.0d},{Name:"generic.armorToughness",Base:0.0d},{Name:"generic.attackDamage",Base:0.0d}],HandDropChances:[1.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:1b,Team:"Ghosts",Tags:["blue_mouse","optional_enemy","vacuumable","this_entity"]}
-teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
+summon minecraft:silverfish ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.blue_mouse"}',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoAI:1b,DeathLootTable:"luigis_mansion:entities/ghosts/blue_mouse",AbsorptionAmount:1.0f,HandDropChances:[1.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:1b,Team:"Ghosts",Tags:["blue_mouse","optional_ghost","vacuumable","this_entity"]}
+execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
+execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
+execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
+scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 tag @e[tag=this_entity,limit=1] remove this_entity

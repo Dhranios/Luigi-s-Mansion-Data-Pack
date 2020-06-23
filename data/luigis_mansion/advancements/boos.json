@@ -1,0 +1,109 @@
+{
+    "criteria": {
+        "bamboo": {
+            "trigger": "minecraft:impossible"
+        },
+        "boo_b_hatch": {
+            "trigger": "minecraft:impossible"
+        },
+        "boo_la_la": {
+            "trigger": "minecraft:impossible"
+        },
+        "boodacious": {
+            "trigger": "minecraft:impossible"
+        },
+        "booffant": {
+            "trigger": "minecraft:impossible"
+        },
+        "boogie": {
+            "trigger": "minecraft:impossible"
+        },
+        "boohoo": {
+            "trigger": "minecraft:impossible"
+        },
+        "booigie": {
+            "trigger": "minecraft:impossible"
+        },
+        "boolderdash": {
+            "trigger": "minecraft:impossible"
+        },
+        "boolicious": {
+            "trigger": "minecraft:impossible"
+        },
+        "booligan": {
+            "trigger": "minecraft:impossible"
+        },
+        "boolivia": {
+            "trigger": "minecraft:impossible"
+        },
+        "boomeo": {
+            "trigger": "minecraft:impossible"
+        },
+        "boomerang": {
+            "trigger": "minecraft:impossible"
+        },
+        "boonita": {
+            "trigger": "minecraft:impossible"
+        },
+        "boonswoggle": {
+            "trigger": "minecraft:impossible"
+        },
+        "booregard": {
+            "trigger": "minecraft:impossible"
+        },
+        "booripedes": {
+            "trigger": "minecraft:impossible"
+        },
+        "booris": {
+            "trigger": "minecraft:impossible"
+        },
+        "booscaster": {
+            "trigger": "minecraft:impossible"
+        },
+        "bootha": {
+            "trigger": "minecraft:impossible"
+        },
+        "bootique": {
+            "trigger": "minecraft:impossible"
+        },
+        "gameboo": {
+            "trigger": "minecraft:impossible"
+        },
+        "gameboo_advance": {
+            "trigger": "minecraft:impossible"
+        },
+        "gumboo": {
+            "trigger": "minecraft:impossible"
+        },
+        "kung_boo": {
+            "trigger": "minecraft:impossible"
+        },
+        "limbooger": {
+            "trigger": "minecraft:impossible"
+        },
+        "little_boo_beep": {
+            "trigger": "minecraft:impossible"
+        },
+        "mr_boojangles": {
+            "trigger": "minecraft:impossible"
+        },
+        "peekaboo": {
+            "trigger": "minecraft:impossible"
+        },
+        "shamboo": {
+            "trigger": "minecraft:impossible"
+        },
+        "taboo": {
+            "trigger": "minecraft:impossible"
+        },
+        "tamboorine": {
+            "trigger": "minecraft:impossible"
+        },
+        "turboo": {
+            "trigger": "minecraft:impossible"
+        },
+        "underboo": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

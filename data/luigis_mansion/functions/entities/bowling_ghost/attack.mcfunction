@@ -3,7 +3,7 @@ execute unless entity @s[scores={AnimationProg=1..}] run scoreboard players set 
 
 execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:entity.bowling_ghost.attack hostile @a ~ ~ ~ 1
 execute if entity @s[scores={AnimationProg=1}] run replaceitem entity @s weapon.mainhand minecraft:air
-execute if entity @s[scores={AnimationProg=1}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["bowling_ball"],ArmorItems:[{},{},{},{id:"minecraft:purple_concrete",Count:1b}],Invisible:1b}
+execute if entity @s[scores={AnimationProg=1}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["bowling_ball"],ArmorItems:[{},{},{},{id:"minecraft:purple_concrete",Count:1b}],Invisible:1b,DisabledSlots:2039583,Small:1b}
 execute if entity @s[scores={AnimationProg=1}] run scoreboard players operation @s Bowling > @e[tag=bowling_ghost] Bowling
 execute if entity @s[scores={AnimationProg=1}] run scoreboard players add @s Bowling 1
 execute if entity @s[scores={AnimationProg=1}] as @e[distance=..0.1,tag=bowling_ball] unless entity @s[scores={Bowling=1..}] run scoreboard players operation @s Bowling = @e[tag=bowling_ghost,distance=..0.1] Bowling

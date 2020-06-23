@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:ink_sac",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.small_pearl"}'},luigis_mansion:{id:"luigis_mansion:small_pearl"}}},Age:5400s}

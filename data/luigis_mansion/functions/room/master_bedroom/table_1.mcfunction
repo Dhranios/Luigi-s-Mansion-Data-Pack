@@ -1,0 +1,2 @@
+execute if entity @a[advancements={luigis_mansion:money={master_bedroom_table_1=false}},limit=1] positioned 695 113 57 run function luigis_mansion:spawn_entities/item/gold_bar
+advancement grant @a only luigis_mansion:money master_bedroom_table_1

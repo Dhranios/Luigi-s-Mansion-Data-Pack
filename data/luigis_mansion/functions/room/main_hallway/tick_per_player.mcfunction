@@ -1,5 +1,5 @@
-execute if entity @s[advancements={luigis_mansion:mansion/main_hallway=true},tag=!blackout] unless entity @s[scores={MusicType=9}] unless entity @s[scores={MusicType=14}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27}] run function luigis_mansion:other/music/set/light
-execute unless entity @s[advancements={luigis_mansion:mansion/main_hallway=true},tag=!blackout] unless entity @s[scores={MusicType=6}] unless entity @s[scores={MusicType=14}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27..30}] run function luigis_mansion:other/music/set/hallway
+execute if entity @s[advancements={luigis_mansion:mansion/main_hallway=true},tag=!blackout] unless entity @s[scores={MusicType=9}] unless entity @s[scores={MusicType=14}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27}] unless entity @s[scores={MusicType=-1}] run function luigis_mansion:other/music/set/light
+execute unless entity @s[advancements={luigis_mansion:mansion/main_hallway=true},tag=!blackout] unless entity @s[scores={MusicType=6}] unless entity @s[scores={MusicType=14}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27..30}] unless entity @s[scores={MusicType=-1}] run function luigis_mansion:other/music/set/hallway
 
 execute if block 691 102 -10 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"ball_room"}}}}] run function luigis_mansion:room/ball_room/unlock_door
 execute if block 705 102 -16 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"fortune_tellers_room"}}}}] run function luigis_mansion:room/fortune_tellers_room/unlock_door
@@ -9,3 +9,6 @@ execute if block 691 102 -4 #minecraft:doors[open=true] if entity @s[nbt={Select
 execute if block 654 102 21 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"courtyard"}}}}] run function luigis_mansion:room/courtyard/unlock_door
 execute if block 668 102 -17 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_stairs"}}}}] run function luigis_mansion:room/main_stairs/unlock_door
 execute if block 671 102 19 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"billiards_room"}}}}] run function luigis_mansion:room/billiards_room/unlock_door
+
+execute if entity @s[x=704,y=102,z=-7,distance=..9,tag=!chance_check] if entity @s[advancements={luigis_mansion:mansion/main_hallway_gold_mouse=false}] unless entity @e[tag=gold_mouse,scores={Room=10},limit=1] run function luigis_mansion:room/main_hallway/gold_mouse
+tag @s[x=704,y=102,z=-7,distance=9..10,tag=chance_check] remove chance_check

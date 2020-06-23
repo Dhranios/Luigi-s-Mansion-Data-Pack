@@ -3,5 +3,11 @@ execute as @e[scores={Room=9},type=!minecraft:item_frame,type=!minecraft:player]
 tag @e[scores={Room=9},type=minecraft:item] add dead
 setblock 713 117 49 minecraft:air
 setblock 708 112 47 minecraft:air
+data merge block 708 112 42 {Items:[]}
+data merge block 708 112 41 {Items:[]}
 function luigis_mansion:room/nursery/remove_blockade
 scoreboard players reset nursery Ticking
+scoreboard players reset nursery Wave
+scoreboard players reset nursery_painting_1 Searched
+scoreboard players reset nursery_table_1 Searched
+scoreboard players reset nursery_lamp Searched

@@ -70,3 +70,5 @@ playsound luigis_mansion:music.mini_game music @s[scores={MusicType=37}] ~ ~ ~ 1
 scoreboard players set @s[scores={MusicType=37}] Music 400
 playsound luigis_mansion:music.new_paintings music @s[scores={MusicType=38}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=38}] Music 196
+playsound luigis_mansion:music.boo_woods music @s[scores={MusicType=39}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=39}] Music 1574

@@ -27,9 +27,6 @@
         "storage_room": {
             "trigger": "minecraft:impossible"
         },
-        "washroom_1": {
-            "trigger": "minecraft:impossible"
-        },
         "fortune_tellers_room": {
             "trigger": "minecraft:impossible"
         },

@@ -6,13 +6,40 @@
         "found_e_gadd": {
             "trigger": "minecraft:impossible"
         },
+        "portrait_ghosts": {
+            "trigger": "minecraft:impossible"
+        },
+        "chauncey_cried": {
+            "trigger": "minecraft:impossible"
+        },
+        "area_1_key": {
+            "trigger": "minecraft:impossible"
+        },
         "cleared_area_2_blockade": {
+            "trigger": "minecraft:impossible"
+        },
+        "grabbing_ghosts": {
             "trigger": "minecraft:impossible"
         },
         "released_boos": {
             "trigger": "minecraft:impossible"
         },
+        "released_boos_call": {
+            "trigger": "minecraft:impossible"
+        },
+        "released_boos_talk": {
+            "trigger": "minecraft:impossible"
+        },
+        "fire_element_medal": {
+            "trigger": "minecraft:impossible"
+        },
+        "water_element_medal": {
+            "trigger": "minecraft:impossible"
+        },
         "extinguished_kitchen_fire": {
+            "trigger": "minecraft:impossible"
+        },
+        "area_2_key": {
             "trigger": "minecraft:impossible"
         },
         "cleared_area_3_blockade": {
@@ -21,7 +48,13 @@
         "saw_mario": {
             "trigger": "minecraft:impossible"
         },
+        "toad_4_happy": {
+            "trigger": "minecraft:impossible"
+        },
         "extinguished_main_stairs_fire": {
+            "trigger": "minecraft:impossible"
+        },
+        "ice_element_medal": {
             "trigger": "minecraft:impossible"
         },
         "has_marios_hat": {
@@ -39,10 +72,31 @@
         "has_marios_shoe": {
             "trigger": "minecraft:impossible"
         },
+        "shown_marios_hat": {
+            "trigger": "minecraft:impossible"
+        },
+        "shown_marios_letter": {
+            "trigger": "minecraft:impossible"
+        },
+        "shown_marios_star": {
+            "trigger": "minecraft:impossible"
+        },
+        "shown_marios_glove": {
+            "trigger": "minecraft:impossible"
+        },
+        "shown_marios_shoe": {
+            "trigger": "minecraft:impossible"
+        },
+        "area_3_key": {
+            "trigger": "minecraft:impossible"
+        },
         "cleared_area_4_blockade": {
             "trigger": "minecraft:impossible"
         },
         "cleared_king_boo_blockade": {
+            "trigger": "minecraft:impossible"
+        },
+        "caught_king_boo": {
             "trigger": "minecraft:impossible"
         }
     }

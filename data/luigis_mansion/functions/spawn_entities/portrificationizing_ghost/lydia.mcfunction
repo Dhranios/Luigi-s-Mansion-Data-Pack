@@ -1,0 +1,3 @@
+execute if score lydia OneGoHealth matches 5001.. run data merge entity @e[x=764.5,y=79,z=-38.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:28}}}
+execute if score lydia OneGoHealth matches 1001..5000 run data merge entity @e[x=764.5,y=79,z=-38.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:30}}}
+execute if score lydia OneGoHealth matches ..1000 run data merge entity @e[x=764.5,y=79,z=-38.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:29}}}

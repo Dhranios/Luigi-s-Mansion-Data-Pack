@@ -1,15 +1,15 @@
 {
     "criteria": {
-        "foyer_enter": {
+        "foyer_money": {
             "trigger": "minecraft:impossible"
         },
-        "foyer_small_lamp": {
+        "foyer_lamp": {
             "trigger": "minecraft:impossible"
         },
         "foyer_chandelier": {
             "trigger": "minecraft:impossible"
         },
-        "parlor_enter": {
+        "parlor_money": {
             "trigger": "minecraft:impossible"
         },
         "parlor_lamp": {
@@ -21,7 +21,7 @@
         "parlor_table_1": {
             "trigger": "minecraft:impossible"
         },
-        "parlor_table_3": {
+        "parlor_table_2": {
             "trigger": "minecraft:impossible"
         },
         "anteroom_lamp_1": {
@@ -39,7 +39,7 @@
         "wardrobe_room_closet_2": {
             "trigger": "minecraft:impossible"
         },
-        "small_hallway_enter": {
+        "small_hallway_money": {
             "trigger": "minecraft:impossible"
         },
         "study_book_1": {
@@ -51,16 +51,16 @@
         "study_ceiling_lamp": {
             "trigger": "minecraft:impossible"
         },
-        "master_bedroom_desk": {
+        "master_bedroom_table_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "master_bedroom_table_2": {
             "trigger": "minecraft:impossible"
         },
         "master_bedroom_fan": {
             "trigger": "minecraft:impossible"
         },
-        "master_bedroom_table": {
-            "trigger": "minecraft:impossible"
-        },
-        "nursery_enter": {
+        "nursery_money": {
             "trigger": "minecraft:impossible"
         },
         "nursery_lamp": {
@@ -78,6 +78,9 @@
         "main_hallway_jar_6": {
             "trigger": "minecraft:impossible"
         },
+        "basement_stairs_lamp_1": {
+            "trigger": "minecraft:impossible"
+        },
         "ball_room_lamp_1": {
             "trigger": "minecraft:impossible"
         },
@@ -85,12 +88,6 @@
             "trigger": "minecraft:impossible"
         },
         "storage_room_bucket": {
-            "trigger": "minecraft:impossible"
-        },
-        "basement_stairs_lamp_1": {
-            "trigger": "minecraft:impossible"
-        },
-        "breaker_room_lamp": {
             "trigger": "minecraft:impossible"
         },
         "laundry_room_chest": {
@@ -115,6 +112,9 @@
             "trigger": "minecraft:impossible"
         },
         "telephone_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "breaker_room_lamp": {
             "trigger": "minecraft:impossible"
         },
         "ceramics_studio_chest": {

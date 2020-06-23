@@ -4,4 +4,5 @@ execute if entity @a[advancements={luigis_mansion:technical={has_marios_shoe=fal
 stopsound @a[advancements={luigis_mansion:mansion/twins_room=false}] music
 playsound luigis_mansion:music.cleared_room music @a[advancements={luigis_mansion:mansion/twins_room=false}] ~ ~ ~ 10000
 scoreboard players set @a[advancements={luigis_mansion:mansion/twins_room=false}] Music 40
+scoreboard players set @a[advancements={luigis_mansion:mansion/twins_room=false}] MusicType 9
 advancement grant @a only luigis_mansion:mansion/twins_room

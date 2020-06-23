@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:golden_helmet",Count:1b,tag:{AttributeModifiers:[],Unbreakable:1b,HideFlags:4,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.red_diamond"}'},luigis_mansion:{id:"luigis_mansion:red_diamond"}}},Age:5400s}

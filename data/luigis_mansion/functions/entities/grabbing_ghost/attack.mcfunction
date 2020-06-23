@@ -1,4 +1,5 @@
-scoreboard players add @s[scores={AnimationProg=1..159}] AnimationProg 1
+scoreboard players add @s[scores={AnimationProg=1..40}] AnimationProg 1
+scoreboard players add @s[scores={AnimationProg=42..62}] AnimationProg 1
 execute unless entity @s[scores={AnimationProg=1..}] run scoreboard players set @s AnimationProg 1
 
 execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:entity.grabbing_ghost.attack hostile @a ~ ~ ~ 1
@@ -24,9 +25,9 @@ execute if entity @s[scores={AnimationProg=18}] positioned ^ ^ ^0.8 at @a[gamemo
 execute if entity @s[scores={AnimationProg=19}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-324 0 run teleport @s ^ ^ ^-0.8 ~ ~
 execute if entity @s[scores={AnimationProg=20}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-342 0 run teleport @s ^ ^ ^-0.8 ~ ~
 execute if entity @s[scores={AnimationProg=21..140}] positioned ^ ^ ^0.8 store result entity @s Rotation[0] float 0.01 run data get entity @a[gamemode=!spectator,tag=grabbed,limit=1] Rotation[0] 100
-execute if entity @s[scores={AnimationProg=21..140}] positioned ^ ^ ^0.8 unless entity @a[gamemode=!spectator,distance=..0.4,tag=grabbed,limit=1] run scoreboard players set @s AnimationProg 140
-execute if entity @s[scores={AnimationProg=21..140}] positioned ^ ^ ^0.8 positioned as @a[gamemode=!spectator,distance=..0.4,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 rotated as @s run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={AnimationProg=80}] positioned ^ ^ ^0.8 if entity @a[distance=..0.4,gamemode=!spectator,tag=grabbed,limit=1] run tag @s add laugh
-tag @s[scores={AnimationProg=160},tag=!laugh] add complain
-tag @s[scores={AnimationProg=160}] remove attack
-scoreboard players reset @s[scores={AnimationProg=160}] AnimationProg
+execute if entity @s[scores={AnimationProg=21..140}] positioned ^ ^ ^0.8 unless entity @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] run scoreboard players set @s AnimationProg 42
+execute if entity @s[scores={AnimationProg=21..140}] positioned ^ ^ ^0.8 positioned as @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 rotated as @s run teleport @s ~ ~ ~ ~ ~
+execute at @s[scores={AnimationProg=40}] positioned ^ ^ ^0.8 if entity @a[distance=..0.7,gamemode=!spectator,tag=grabbed,limit=1] run tag @s add laugh
+tag @s[scores={AnimationProg=62},tag=!laugh] add complain
+tag @s[scores={AnimationProg=62}] remove attack
+scoreboard players reset @s[scores={AnimationProg=62}] AnimationProg

@@ -5,4 +5,5 @@ execute if entity @a[advancements={luigis_mansion:money={rec_room_chest=false}},
 stopsound @a[advancements={luigis_mansion:mansion/rec_room=false}] music
 playsound luigis_mansion:music.cleared_room music @a[advancements={luigis_mansion:mansion/rec_room=false}] ~ ~ ~ 10000
 scoreboard players set @a[advancements={luigis_mansion:mansion/rec_room=false}] Music 40
+scoreboard players set @a[advancements={luigis_mansion:mansion/rec_room=false}] MusicType 9
 advancement grant @a only luigis_mansion:mansion/rec_room

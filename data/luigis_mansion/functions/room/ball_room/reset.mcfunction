@@ -6,3 +6,7 @@ fill 691 107 -34 690 107 -35 minecraft:air
 setblock 688 102 -27 minecraft:air
 function luigis_mansion:room/storage_room/unlock_door
 scoreboard players reset ball_room Ticking
+scoreboard players reset ball_room Wave
+scoreboard players reset ghost_guys_1 Wave
+scoreboard players reset ghost_guys_2 Wave
+scoreboard players reset ghost_guys_3 Wave

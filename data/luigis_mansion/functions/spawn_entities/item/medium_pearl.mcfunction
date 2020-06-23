@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:clay_ball",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.medium_pearl"}'},luigis_mansion:{id:"luigis_mansion:medium_pearl"}}},Age:5400s}

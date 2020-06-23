@@ -1,0 +1,105 @@
+summon minecraft:area_effect_cloud ^ ^ ^0.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.3 ^0.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.3 ^0.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^ ^0.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^ ^0.5 {Tags:["poltergust","vacuum"],Duration:1}
+
+summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.3 ^1 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.3 ^1 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^ ^1 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^ ^1 {Tags:["poltergust","vacuum"],Duration:1}
+
+summon minecraft:area_effect_cloud ^ ^ ^1.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.3 ^1.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.3 ^1.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^ ^1.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^ ^1.5 {Tags:["poltergust","vacuum"],Duration:1}
+
+summon minecraft:area_effect_cloud ^ ^ ^2 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.3 ^2 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.3 ^2 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^ ^2 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^ ^2 {Tags:["poltergust","vacuum"],Duration:1}
+
+summon minecraft:area_effect_cloud ^ ^ ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.3 ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.3 ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^ ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^ ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^0.3 ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^-0.3 ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^0.3 ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^-0.3 ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.6 ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.6 ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.6 ^ ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.6 ^ ^2.5 {Tags:["poltergust","vacuum"],Duration:1}
+
+summon minecraft:area_effect_cloud ^ ^ ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.3 ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.3 ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^ ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^ ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^0.3 ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^-0.3 ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^0.3 ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^-0.3 ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.6 ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.6 ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.6 ^ ^3 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.6 ^ ^3 {Tags:["poltergust","vacuum"],Duration:1}
+
+summon minecraft:area_effect_cloud ^ ^ ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^ ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^ ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^-0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^-0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.6 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.6 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.6 ^ ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.6 ^ ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^0.6 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^-0.6 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.6 ^0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.6 ^0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^0.6 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^-0.6 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.6 ^-0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.6 ^-0.3 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.9 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.9 ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.9 ^ ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.9 ^ ^3.5 {Tags:["poltergust","vacuum"],Duration:1}
+
+summon minecraft:area_effect_cloud ^ ^ ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^ ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^ ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^-0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^-0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.6 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.6 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.6 ^ ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.6 ^ ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^0.6 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.3 ^-0.6 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.6 ^0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.6 ^0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^0.6 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.3 ^-0.6 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.6 ^-0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.6 ^-0.3 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^0.9 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^ ^-0.9 ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^0.9 ^ ^4 {Tags:["poltergust","vacuum"],Duration:1}
+summon minecraft:area_effect_cloud ^-0.9 ^ ^4 {Tags:["poltergust","vacuum"],Duration:1}
+
+execute at @e[tag=vacuum] if block ~ ~ ~ minecraft:air run particle minecraft:dust 0.5 0.5 0.5 1 ~ ~ ~ 0 0 0 0 1

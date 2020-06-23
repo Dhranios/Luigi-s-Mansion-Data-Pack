@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:location.ghost_portrificationizer_room"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.ghost_portrificationizer_room.description"
+        }
+    },
+	"parent": "luigis_mansion:lab/lab",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

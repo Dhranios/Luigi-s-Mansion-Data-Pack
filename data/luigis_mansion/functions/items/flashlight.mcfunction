@@ -9,13 +9,11 @@ effect give @s[tag=flashlight] minecraft:night_vision 1000000 0 true
 execute if entity @s[tag=flashlight] run fill ~ ~ ~ ~ ~ ~ minecraft:torch replace minecraft:air
 execute if entity @s[tag=flashlight] unless block ~ ~ ~ minecraft:torch run fill ~ ~1 ~ ~ ~1 ~ minecraft:torch replace minecraft:air
 
-execute if entity @s[gamemode=!spectator] as @e[distance=..7,tag=ghost_marker,tag=can_spawn,tag=!needs_furniture_search] positioned ^ ^ ^4 unless entity @s[distance=..4] run tag @s add spawn
-
-# Delete when custom behavior is added
-execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={StunTime=0}] positioned ^ ^ ^4 if entity @s[distance=..4] run data merge entity @s {Motion:[0.0d,0.0d,0.0d]}
+execute if entity @s[gamemode=!spectator] as @e[distance=..7,tag=ghost_marker,tag=can_spawn,tag=!needs_furniture_search] positioned ^ ^ ^4 unless entity @s[distance=..4] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s add spawn
 
 execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={StunTime=0}] positioned ^ ^ ^4 if entity @s[distance=..4] at @s run playsound luigis_mansion:entity.heart.flash hostile @a ~ ~ ~ 1
-execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={StunTime=0},tag=portrait_ghost] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4] StunTime 200
+execute if entity @s[tag=flashlight] as @e[distance=..7,scores={StunTime=0,VulnerableTime=1..},tag=portrait_ghost] positioned ^ ^ ^4 if entity @s[distance=..4] at @s run playsound luigis_mansion:entity.heart.flash hostile @a ~ ~ ~ 1
+execute if entity @s[tag=flashlight] as @e[distance=..7,scores={StunTime=0,VulnerableTime=1..},tag=portrait_ghost] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4] StunTime 200
 execute if entity @s[tag=flashlight] as @e[distance=6..7,tag=stunable] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4,scores={VulnerableTime=0}] VulnerableTime 10
 execute if entity @s[tag=flashlight] as @e[distance=6..7,tag=stunable] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4,scores={StunTime=0}] StunTime 10
 execute if entity @s[tag=flashlight] as @e[distance=5..6,tag=stunable] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4,scores={VulnerableTime=0}] VulnerableTime 20
@@ -35,7 +33,6 @@ execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={Stu
 
 scoreboard players add @s[tag=flashlight] FlashlightTime 1
 execute if entity @s[scores={FlashlightTime=2400}] if score #Players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"gold"},{"translate":"luigis_mansion:message.flashlight.1"}]}
-execute if entity @s[scores={FlashlightTime=2400}] if score #Players Totals matches 2..3 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"gold"},{"translate":"luigis_mansion:message.flashlight.2"}]}
-execute if entity @s[scores={FlashlightTime=2400}] if score #Players Totals matches 4.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"gold"},{"translate":"luigis_mansion:message.flashlight.2"}]}
+execute if entity @s[scores={FlashlightTime=2400}] if score #Players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"gold"},{"translate":"luigis_mansion:message.flashlight.2"}]}
 execute if entity @s[scores={FlashlightTime=2400..},tag=!flashlight] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"gold"},{"translate":"luigis_mansion:message.flashlight.3"}]}
 scoreboard players set @s[tag=!flashlight] FlashlightTime 0

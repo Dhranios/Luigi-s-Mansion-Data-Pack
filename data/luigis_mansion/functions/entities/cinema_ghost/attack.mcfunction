@@ -23,14 +23,13 @@ execute if entity @s[scores={AnimationProg=17}] positioned ^ ^ ^0.8 at @a[gamemo
 execute if entity @s[scores={AnimationProg=18}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-306 0 run teleport @s ^ ^ ^-0.8 ~ ~
 execute if entity @s[scores={AnimationProg=19}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-324 0 run teleport @s ^ ^ ^-0.8 ~ ~
 execute if entity @s[scores={AnimationProg=20}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-342 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={AnimationProg=20}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.4,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
-execute if entity @s[scores={AnimationProg=60}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.4,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
-execute if entity @s[scores={AnimationProg=100}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.4,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
-execute if entity @s[scores={AnimationProg=140}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.4,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
-execute if entity @s[scores={AnimationProg=21..140}] positioned ^ ^ ^0.8 store result entity @s Rotation[0] float 0.01 run data get entity @a[gamemode=!spectator,tag=grabbed,limit=1] Rotation[0] 100
-execute if entity @s[scores={AnimationProg=21..140}] positioned ^ ^ ^0.8 unless entity @a[gamemode=!spectator,distance=..0.4,tag=grabbed,limit=1] run scoreboard players set @s AnimationProg 140
-execute if entity @s[scores={AnimationProg=21..140}] positioned ^ ^ ^0.8 positioned as @a[gamemode=!spectator,distance=..0.4,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 rotated as @s run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={AnimationProg=80}] positioned ^ ^ ^0.8 if entity @a[distance=..0.4,gamemode=!spectator,tag=grabbed,limit=1] run tag @s add laugh
-tag @s[scores={AnimationProg=160},tag=!laugh] add complain
-tag @s[scores={AnimationProg=160}] remove attack
-scoreboard players reset @s[scores={AnimationProg=160}] AnimationProg
+execute if entity @s[scores={AnimationProg=20..100}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
+execute if entity @s[scores={AnimationProg=20}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -1
+execute if entity @s[scores={AnimationProg=21..100}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -5
+execute if entity @s[scores={AnimationProg=21..110}] positioned ^ ^ ^0.8 store result entity @s Rotation[0] float 0.01 run data get entity @a[gamemode=!spectator,tag=grabbed,limit=1] Rotation[0] 100
+execute if entity @s[scores={AnimationProg=21..110}] positioned ^ ^ ^0.8 unless entity @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] run scoreboard players set @s AnimationProg 110
+execute if entity @s[scores={AnimationProg=21..110}] positioned ^ ^ ^0.8 positioned as @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 rotated as @s run teleport @s ~ ~ ~ ~ ~
+execute at @s[scores={AnimationProg=40}] positioned ^ ^ ^0.8 if entity @a[distance=..0.7,gamemode=!spectator,tag=grabbed,limit=1] run tag @s add laugh
+tag @s[scores={AnimationProg=130},tag=!laugh] add complain
+tag @s[scores={AnimationProg=130}] remove attack
+scoreboard players reset @s[scores={AnimationProg=130}] AnimationProg

@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:17,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.big_heart"}'},luigis_mansion:{id:"luigis_mansion:heart",size:50}}},Age:5400s}

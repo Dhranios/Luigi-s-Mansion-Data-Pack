@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:paper",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.bill"}'},luigis_mansion:{id:"luigis_mansion:bill"}}},Age:5400s}

@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:emerald",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.green_emerald"}'},luigis_mansion:{id:"luigis_mansion:green_emerald"}}},Age:5400s}

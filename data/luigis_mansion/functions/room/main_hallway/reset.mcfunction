@@ -15,3 +15,9 @@ function luigis_mansion:room/courtyard/unlock_door
 function luigis_mansion:room/main_stairs/unlock_door
 function luigis_mansion:room/billiards_room/unlock_door
 scoreboard players reset main_hallway Ticking
+scoreboard players reset main_hallway_jar_1 Searched
+scoreboard players reset main_hallway_jar_2 Searched
+scoreboard players reset main_hallway_jar_3 Searched
+scoreboard players reset main_hallway_jar_4 Searched
+scoreboard players reset main_hallway_jar_5 Searched
+scoreboard players reset main_hallway_jar_6 Searched

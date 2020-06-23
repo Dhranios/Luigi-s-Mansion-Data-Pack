@@ -4,4 +4,5 @@ execute unless entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansio
 stopsound @a[advancements={luigis_mansion:mansion/cold_storage=false}] music
 playsound luigis_mansion:music.cleared_room music @a[advancements={luigis_mansion:mansion/cold_storage=false}] ~ ~ ~ 10000
 scoreboard players set @a[advancements={luigis_mansion:mansion/cold_storage=false}] Music 40
+scoreboard players set @a[advancements={luigis_mansion:mansion/cold_storage=false}] MusicType 9
 advancement grant @a only luigis_mansion:mansion/cold_storage

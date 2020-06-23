@@ -13,7 +13,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"luigis_mansion:item.coin\\\"}\"},luigis_mansion:{id:\"luigis_mansion:coin\"}}"
+							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.coin\"}'},luigis_mansion:{id:\"luigis_mansion:coin\"}}"
 						}
 					]
 				}
@@ -28,11 +28,11 @@
 					"functions": [
 						{
 							"function": "minecraft:set_count",
-							"count": 20
+							"count": 30
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"luigis_mansion:item.bill\\\"}\"},luigis_mansion:{id:\"luigis_mansion:bill\"}}"
+							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.bill\"}'},luigis_mansion:{id:\"luigis_mansion:bill\"}}"
 						}
 					]
 				}

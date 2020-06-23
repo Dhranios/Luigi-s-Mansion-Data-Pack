@@ -1,0 +1,11 @@
+execute positioned 702 112 20 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 703 112 22 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 703 112 24 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 703 112 25 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 703 112 27 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 703 112 28 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 703 112 30 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 702 112 31 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 702 112 32 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 701 112 32 run function luigis_mansion:spawn_entities/item/eternal_coin
+execute positioned 700 112 33 run function luigis_mansion:spawn_entities/item/eternal_coin

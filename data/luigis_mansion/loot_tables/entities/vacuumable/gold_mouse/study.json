@@ -13,7 +13,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"luigis_mansion:item.coin\\\"}\"},luigis_mansion:{id:\"luigis_mansion:coin\"}}"
+							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.coin\"}'},luigis_mansion:{id:\"luigis_mansion:coin\"}}"
 						}
 					]
 				}
@@ -32,7 +32,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"luigis_mansion:item.bill\\\"}\"},luigis_mansion:{id:\"luigis_mansion:bill\"}}"
+							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.bill\"}'},luigis_mansion:{id:\"luigis_mansion:bill\"}}"
 						}
 					]
 				}
@@ -47,7 +47,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:\"{\\\"translate\\\":\\\"luigis_mansion:item.green_emerald\\\"}\"},luigis_mansion:{id:\"luigis_mansion:green_emerald\"}}"
+							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.green_emerald\"}'},luigis_mansion:{id:\"luigis_mansion:green_emerald\"}}"
 						}
 					]
 				}

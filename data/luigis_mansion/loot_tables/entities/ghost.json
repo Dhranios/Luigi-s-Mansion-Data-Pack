@@ -16,7 +16,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{Name:'{\"italcs\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.ectoplasm\"}'},luigis_mansion:{id:\"luigis_mansion:ectoplasm\"}}"
+                            "tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.ectoplasm\"}'},luigis_mansion:{id:\"luigis_mansion:ectoplasm\"}}"
                         }
                     ]
                 }

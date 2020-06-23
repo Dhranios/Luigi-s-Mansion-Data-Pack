@@ -5,3 +5,5 @@ setblock 691 97 -33 minecraft:air
 setblock 689 92 -30 minecraft:air
 fill 694 92 -25 692 92 -26 minecraft:white_wool
 scoreboard players reset breaker_room Ticking
+scoreboard players reset breaker_room Wave
+scoreboard players reset breaker_room_lamp Searched
