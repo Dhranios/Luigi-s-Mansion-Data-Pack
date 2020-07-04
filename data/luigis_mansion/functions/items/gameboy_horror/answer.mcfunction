@@ -6,8 +6,8 @@ tag @s remove me
 execute if entity @s[scores={GBHCall=1}] run function luigis_mansion:dialog/portrait_ghosts
 execute if entity @s[scores={GBHCall=2}] run function luigis_mansion:dialog/area_1_key
 execute if entity @s[scores={GBHCall=3}] run function luigis_mansion:dialog/grabbing_ghosts
-execute if entity @s[scores={GBHCall=4}] run function luigis_mansion:dialog/boos_released_call
-execute if entity @s[scores={GBHCall=5}] run function luigis_mansion:dialog/boo
+execute if entity @s[scores={GBHCall=4}] run function luigis_mansion:dialog/released_boos_call
+execute if entity @s[scores={GBHCall=5}] run function luigis_mansion:dialog/caught_boo
 execute if entity @s[scores={GBHCall=6}] run function luigis_mansion:dialog/fire_element_medal
 execute if entity @s[scores={GBHCall=7}] run function luigis_mansion:dialog/water_element_medal
 execute if entity @s[scores={GBHCall=8}] run function luigis_mansion:dialog/area_2_key

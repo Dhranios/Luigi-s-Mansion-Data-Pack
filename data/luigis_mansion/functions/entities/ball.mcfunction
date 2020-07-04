@@ -14,3 +14,4 @@ tag @s[tag=!in_vacuum] remove can_spit
 tag @s[tag=in_vacuum] remove in_vacuum
 execute if entity @s[tag=!in_vacuum,tag=chauncey] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute if entity @s[tag=!in_vacuum,tag=chauncey] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
+data merge entity @s[tag=boo,tag=turn_to_marker] {Health:0.0f,DeathTime:19s}

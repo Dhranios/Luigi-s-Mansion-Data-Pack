@@ -12,6 +12,9 @@ execute if entity @s[tag=toad] run function luigis_mansion:entities/toad
 execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/first_key
 execute if entity @s[tag=chandelier] run function luigis_mansion:entities/chandelier
 execute if entity @s[tag=rocking_horse] run function luigis_mansion:entities/rocking_horse
+execute if entity @s[tag=boo_marker] run function luigis_mansion:entities/boo_marker
+execute if entity @s[tag=hidden_boo] run function luigis_mansion:entities/hidden_boo
+execute if entity @s[tag=elemental_ghost] run function luigis_mansion:entities/elemental_ghost
 
 # Prevent zombies from converting to drowned
 data merge entity @s[type=minecraft:zombie,nbt=!{DrownedConversionTime:-1,InWaterTime:-1}] {DrownedConversionTime:-1,InWaterTime:-1}
@@ -23,4 +26,4 @@ data merge entity @s[type=minecraft:item,tag=bannana_peel] {Air:1}
 
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
 scoreboard players reset @s[tag=dead]
-kill @s[tag=dead]
+tag @s[tag=dead] add can_die

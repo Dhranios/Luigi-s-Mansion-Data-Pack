@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:light_blue_dye",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.blue_sapphire"}'},luigis_mansion:{id:"luigis_mansion:blue_sapphire"}}},Age:5400s}

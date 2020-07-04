@@ -1,6 +1,7 @@
 execute as @e[scores={Room=2},type=!minecraft:item_frame] unless data entity @s Health run tag @s add dead
-execute as @e[scores={Room=2},type=!minecraft:item_frame,type=!minecraft:player] run data merge entity @s {Health:0.0f,DeathTime:19s}
+execute as @e[scores={Room=2},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=2},type=minecraft:item] add dead
+tag @e[scores={Room=2},tag=boo] add turn_to_marker
 fill 692 118 7 691 118 8 minecraft:air
 setblock 689 112 7 minecraft:air
 data merge block 696 113 -1 {Items:[]}
@@ -28,9 +29,9 @@ execute positioned 691 113 3 run function luigis_mansion:blocks/lit_candles
 execute positioned 686 114 6 run function luigis_mansion:blocks/purple_candles
 execute positioned 686 114 9 run function luigis_mansion:blocks/purple_candles
 scoreboard players reset @e[x=686.5,y=113,z=7.5,distance=..0.7,type=minecraft:item_frame,limit=1] Dialog
-scoreboard players reset parlor Ticking
-scoreboard players reset parlor Wave
-scoreboard players reset parlor_table_1 Searched
-scoreboard players reset parlor_table_2 Searched
-scoreboard players reset parlor_closet Searched
-scoreboard players reset parlor_lamp Searched
+scoreboard players reset #parlor Ticking
+scoreboard players reset #parlor Wave
+scoreboard players reset #parlor_table_1 Searched
+scoreboard players reset #parlor_table_2 Searched
+scoreboard players reset #parlor_closet Searched
+scoreboard players reset #parlor_lamp Searched

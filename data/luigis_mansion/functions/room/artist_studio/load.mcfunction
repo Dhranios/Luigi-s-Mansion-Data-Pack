@@ -7,4 +7,4 @@ execute if entity @a[advancements={luigis_mansion:mansion/artist_studio=true},li
 execute if entity @a[advancements={luigis_mansion:mansion/artist_studio=true},limit=1] run data modify entity @e[x=690.5,y=123,z=-34.5,distance=..0.7,limit=1] Item.tag.map set value 88
 execute if entity @a[advancements={luigis_mansion:mansion/artist_studio=true},limit=1] run data modify entity @e[x=690.5,y=123,z=-22.5,distance=..0.7,limit=1] Item.tag.map set value 90
 execute if entity @a[advancements={luigis_mansion:mansion/artist_studio=true},limit=1] run data modify entity @e[x=688.5,y=123,z=-27.5,distance=..0.7,limit=1] Item.tag.map set value 92
-scoreboard players set artist_studio Ticking 1
+scoreboard players set #artist_studio Ticking 1

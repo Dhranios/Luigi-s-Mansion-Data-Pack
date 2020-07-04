@@ -3,4 +3,4 @@ execute if entity @a[advancements={luigis_mansion:mansion/nursery=true},tag=!bla
 execute if entity @a[advancements={luigis_mansion:money={nursery_money=false}},limit=1] run function luigis_mansion:room/nursery/money
 data merge block 708 112 42 {LootTable:"luigis_mansion:search"}
 data merge block 708 112 41 {LootTable:"luigis_mansion:search"}
-scoreboard players set nursery Ticking 1
+scoreboard players set #nursery Ticking 1

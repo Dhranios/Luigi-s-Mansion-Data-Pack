@@ -1,1 +1,1 @@
-scoreboard players set training_room Ticking 1
+scoreboard players set #training_room Ticking 1

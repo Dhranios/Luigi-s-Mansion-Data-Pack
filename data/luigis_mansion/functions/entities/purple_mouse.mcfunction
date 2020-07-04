@@ -8,6 +8,15 @@ scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/purple_mouse/collide
 
+tag @s[tag=fleeing,tag=walk_up_wall] add walk_on_ceiling
+tag @s[tag=fleeing,tag=walk_up_wall] add walk_down_wall
+tag @s[tag=fleeing,tag=walk_up_wall] add walked_on_ceiling
+tag @s remove fleeing
+execute store result score #temp HomeY run data get entity @s Pos[1] 100
+tag @s remove on_floor
+execute if score #temp HomeY = @s HomeY run tag @s add on_floor
+scoreboard players reset #temp HomeY
+
 execute if entity @s[tag=!rotated,tag=!walk_on_ceiling,tag=!dead] run function luigis_mansion:entities/purple_mouse/move
 scoreboard players set #temp Move 2
 execute at @s[tag=rotated,tag=!walk_up_wall] rotated ~ 0 run function luigis_mansion:entities/purple_mouse/move_forward

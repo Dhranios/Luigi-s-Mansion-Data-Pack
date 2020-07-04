@@ -8,5 +8,4 @@ data merge block 686 112 8 {LootTable:"luigis_mansion:search"}
 data merge block 686 112 7 {LootTable:"luigis_mansion:search"}
 data merge block 686 113 15 {LootTable:"luigis_mansion:search"}
 data merge block 686 113 13 {LootTable:"luigis_mansion:search"}
-
-scoreboard players set parlor Ticking 1
+scoreboard players set #parlor Ticking 1

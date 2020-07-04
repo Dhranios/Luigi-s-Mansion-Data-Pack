@@ -1,5 +1,5 @@
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=boo,tag=!ghost_marker] if score @s Room = #temp Room run tag @a[distance=..0.7] add catching_boo
+execute as @e[tag=boo,tag=!ball,tag=!bomb] if score @s Room = #temp Room run tag @a[distance=..0.7] add catching_boo
 scoreboard players reset #temp Room
 execute unless entity @s[scores={MusicType=30}] run scoreboard players set @s[tag=catching_boo] Music 0
 execute unless entity @s[scores={MusicType=30}] run scoreboard players set @s[tag=catching_boo] MusicType 30

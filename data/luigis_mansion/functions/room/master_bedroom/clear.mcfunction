@@ -1,2 +1,2 @@
 function luigis_mansion:room/master_bedroom/turn_on_lights
-scoreboard players reset master_bedroom Wave
+scoreboard players reset #master_bedroom Wave

@@ -1,0 +1,3 @@
+execute if score #floating_whirlindas OneGoHealth matches 5001.. run data merge entity @e[x=757.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:75}}}
+execute if score #floating_whirlindas OneGoHealth matches 1001..5000 run data merge entity @e[x=757.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:77}}}
+execute if score #floating_whirlindas OneGoHealth matches ..1000 run data merge entity @e[x=757.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:76}}}

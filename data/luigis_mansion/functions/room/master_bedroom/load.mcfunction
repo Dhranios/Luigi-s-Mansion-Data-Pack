@@ -2,4 +2,4 @@ execute if entity @a[advancements={luigis_mansion:mansion/master_bedroom=true},t
 data merge block 695 112 57 {LootTable:"luigis_mansion:search"}
 data merge block 695 112 41 {LootTable:"luigis_mansion:search"}
 data merge block 694 112 41 {LootTable:"luigis_mansion:search"}
-scoreboard players set master_bedroom Ticking 1
+scoreboard players set #master_bedroom Ticking 1

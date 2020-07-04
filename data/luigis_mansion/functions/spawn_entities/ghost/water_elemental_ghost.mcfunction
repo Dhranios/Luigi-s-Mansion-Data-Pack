@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:water_bucket",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.water_elemental_ghost"}'}}},NoGravity:1b,PickupDelay:32767s,Tags:["water_elemental_ghost","elemental_ghost"]}

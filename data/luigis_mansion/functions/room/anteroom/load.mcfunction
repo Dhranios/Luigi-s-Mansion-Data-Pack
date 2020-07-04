@@ -5,4 +5,4 @@ data merge block 674 113 8 {LootTable:"luigis_mansion:search"}
 data merge block 674 113 7 {LootTable:"luigis_mansion:search"}
 data merge block 674 113 0 {LootTable:"luigis_mansion:search"}
 data merge block 674 113 -1 {LootTable:"luigis_mansion:search"}
-scoreboard players set anteroom Ticking 1
+scoreboard players set #anteroom Ticking 1

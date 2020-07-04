@@ -1,4 +1,4 @@
-execute unless score main_hallway Ticking matches 1 run function luigis_mansion:room/main_hallway/load
+execute unless score #main_hallway Ticking matches 1 run function luigis_mansion:room/main_hallway/load
 execute if entity @a[advancements={luigis_mansion:keys={main_stairs=false}},limit=1] run function luigis_mansion:room/main_stairs/lock_door
 execute as @e[type=!minecraft:item_frame,x=698,y=102,z=-25,dx=8,dy=6,dz=64] run scoreboard players set @s Room 10
 execute as @e[type=!minecraft:item_frame,x=664,y=102,z=-11,dx=42,dy=6,dz=8] run scoreboard players set @s Room 10
@@ -31,3 +31,14 @@ execute if entity @e[x=666.5,y=103,z=2.5,distance=..1.5,type=minecraft:area_effe
 execute if entity @e[x=666.5,y=103,z=-6.5,distance=..1.5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run function luigis_mansion:room/main_hallway/vacuum_jar_4
 execute if entity @e[x=666.5,y=103,z=-12.5,distance=..1.5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run function luigis_mansion:room/main_hallway/vacuum_jar_5
 execute if entity @e[x=700.5,y=103,z=-15.5,distance=..1.5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run function luigis_mansion:room/main_hallway/vacuum_jar_6
+
+execute if entity @e[x=700.5,y=103,z=32.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.73"}]}
+execute if entity @e[x=700.5,y=103,z=14.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.73"}]}
+execute if entity @e[x=700.5,y=103,z=-15.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.73"}]}
+execute if entity @e[x=666.5,y=103,z=-12.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.74"}]}
+execute if entity @e[x=666.5,y=103,z=-6.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.75"}]}
+execute if entity @e[x=665.5,y=105,z=-6.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.5"}]}
+execute if entity @e[x=666.5,y=103,z=2.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.73"}]}
+
+execute if entity @a[x=700.5,y=104,z=18.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=700.5,y=104,z=18.5,distance=..5,tag=fire_elemental_ghost] positioned 700 104 18 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute if entity @a[x=685.5,y=104,z=-4.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=685.5,y=104,z=-4.5,distance=..5,tag=fire_elemental_ghost] positioned 685 104 -5 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

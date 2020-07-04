@@ -9,5 +9,5 @@ execute if entity @s[tag=spawn] unless entity @s[tag=!spawn_now,scores={GhostGuy
 
 execute if entity @s[tag=move] run function luigis_mansion:entities/ghost_marker/move
 
-execute if score UpdateGhostMarker Hack matches 1.. run data merge entity @s {Air:0}
-execute if score UpdateGhostMarker Hack matches 1.. run data merge entity @s {Air:1}
+execute if score #UpdateGhostMarker Hack matches 1.. run data merge entity @s {Air:0}
+execute if score #UpdateGhostMarker Hack matches 1.. run data merge entity @s {Air:1}

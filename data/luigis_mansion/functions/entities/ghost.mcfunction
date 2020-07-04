@@ -55,6 +55,7 @@ execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:entities/
 execute if entity @s[tag=king_boo] run function luigis_mansion:entities/king_boo
 
 execute if entity @s[tag=fleeing,tag=!disappear] run function luigis_mansion:entities/ghost/flee
+execute if entity @s[tag=boo] run function luigis_mansion:entities/boo
 
 execute if entity @s[tag=!dying,tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear
 execute if entity @s[tag=!dying,tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost

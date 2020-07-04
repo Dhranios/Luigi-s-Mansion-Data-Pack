@@ -1,4 +1,4 @@
-execute unless score observatory Ticking matches 1 run function luigis_mansion:room/observatory/load
+execute unless score #observatory Ticking matches 1 run function luigis_mansion:room/observatory/load
 execute as @e[type=!minecraft:item_frame,x=672,y=112,z=-44,dx=11,dy=6,dz=12] run scoreboard players set @s Room 36
 execute as @e[type=!minecraft:item_frame,x=667,y=112,z=-105,dx=16,dy=6,dz=61] run scoreboard players set @s Room 36
 

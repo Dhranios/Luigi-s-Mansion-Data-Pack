@@ -1,6 +1,7 @@
 scoreboard players set @s Music 0
 scoreboard players set @s Offline 0
 scoreboard players set @s PrevMusicType 0
+scoreboard players set @s HallwayNoise 0
 
 execute if entity @a[advancements={luigis_mansion:lab/lab=true}] run advancement grant @a only luigis_mansion:lab/lab
 execute if entity @a[advancements={luigis_mansion:lab/underground_lab=true}] run advancement grant @a only luigis_mansion:lab/underground_lab
@@ -187,6 +188,42 @@ execute if entity @a[advancements={luigis_mansion:boos={taboo=true}}] run advanc
 execute if entity @a[advancements={luigis_mansion:boos={tamboorine=true}}] run advancement grant @a only luigis_mansion:boos tamboorine
 execute if entity @a[advancements={luigis_mansion:boos={turboo=true}}] run advancement grant @a only luigis_mansion:boos turboo
 execute if entity @a[advancements={luigis_mansion:boos={underboo=true}}] run advancement grant @a only luigis_mansion:boos underboo
+
+execute if entity @a[advancements={luigis_mansion:boos={bamboo_trap=true}}] run advancement grant @a only luigis_mansion:boos bamboo_trap
+execute if entity @a[advancements={luigis_mansion:boos={boo_b_hatch_trap=true}}] run advancement grant @a only luigis_mansion:boos boo_b_hatch_trap
+execute if entity @a[advancements={luigis_mansion:boos={boo_la_la_trap=true}}] run advancement grant @a only luigis_mansion:boos boo_la_la_trap
+execute if entity @a[advancements={luigis_mansion:boos={boodacious_trap=true}}] run advancement grant @a only luigis_mansion:boos boodacious_trap
+execute if entity @a[advancements={luigis_mansion:boos={booffant_trap=true}}] run advancement grant @a only luigis_mansion:boos booffant_trap
+execute if entity @a[advancements={luigis_mansion:boos={boogie_trap=true}}] run advancement grant @a only luigis_mansion:boos boogie_trap
+execute if entity @a[advancements={luigis_mansion:boos={boohoo_trap=true}}] run advancement grant @a only luigis_mansion:boos boohoo_trap
+execute if entity @a[advancements={luigis_mansion:boos={booigie_trap=true}}] run advancement grant @a only luigis_mansion:boos booigie_trap
+execute if entity @a[advancements={luigis_mansion:boos={boolderdash_trap=true}}] run advancement grant @a only luigis_mansion:boos boolderdash_trap
+execute if entity @a[advancements={luigis_mansion:boos={boolicious_trap=true}}] run advancement grant @a only luigis_mansion:boos boolicious_trap
+execute if entity @a[advancements={luigis_mansion:boos={booligan_trap=true}}] run advancement grant @a only luigis_mansion:boos booligan_trap
+execute if entity @a[advancements={luigis_mansion:boos={boolivia_trap=true}}] run advancement grant @a only luigis_mansion:boos boolivia_trap
+execute if entity @a[advancements={luigis_mansion:boos={boomeo_trap=true}}] run advancement grant @a only luigis_mansion:boos boomeo_trap
+execute if entity @a[advancements={luigis_mansion:boos={boomerang_trap=true}}] run advancement grant @a only luigis_mansion:boos boomerang_trap
+execute if entity @a[advancements={luigis_mansion:boos={boonita_trap=true}}] run advancement grant @a only luigis_mansion:boos boonita_trap
+execute if entity @a[advancements={luigis_mansion:boos={boonswoggle_trap=true}}] run advancement grant @a only luigis_mansion:boos boonswoggle_trap
+execute if entity @a[advancements={luigis_mansion:boos={booregard_trap=true}}] run advancement grant @a only luigis_mansion:boos booregard_trap
+execute if entity @a[advancements={luigis_mansion:boos={booripedes_trap=true}}] run advancement grant @a only luigis_mansion:boos booripedes_trap
+execute if entity @a[advancements={luigis_mansion:boos={booris_trap=true}}] run advancement grant @a only luigis_mansion:boos booris_trap
+execute if entity @a[advancements={luigis_mansion:boos={booscaster_trap=true}}] run advancement grant @a only luigis_mansion:boos booscaster_trap
+execute if entity @a[advancements={luigis_mansion:boos={bootha_trap=true}}] run advancement grant @a only luigis_mansion:boos bootha_trap
+execute if entity @a[advancements={luigis_mansion:boos={bootique_trap=true}}] run advancement grant @a only luigis_mansion:boos bootique_trap
+execute if entity @a[advancements={luigis_mansion:boos={gameboo_trap=true}}] run advancement grant @a only luigis_mansion:boos gameboo_trap
+execute if entity @a[advancements={luigis_mansion:boos={gameboo_advance_trap=true}}] run advancement grant @a only luigis_mansion:boos gameboo_advance_trap
+execute if entity @a[advancements={luigis_mansion:boos={gunboo_trap=true}}] run advancement grant @a only luigis_mansion:boos gunboo_trap
+execute if entity @a[advancements={luigis_mansion:boos={kung_boo_trap=true}}] run advancement grant @a only luigis_mansion:boos kung_boo_trap
+execute if entity @a[advancements={luigis_mansion:boos={limbooger_trap=true}}] run advancement grant @a only luigis_mansion:boos limbooger_trap
+execute if entity @a[advancements={luigis_mansion:boos={little_boo_peep_trap=true}}] run advancement grant @a only luigis_mansion:boos little_boo_peep_trap
+execute if entity @a[advancements={luigis_mansion:boos={mr_boojangles_trap=true}}] run advancement grant @a only luigis_mansion:boos mr_boojangles_trap
+execute if entity @a[advancements={luigis_mansion:boos={peekaboo_trap=true}}] run advancement grant @a only luigis_mansion:boos peekaboo_trap
+execute if entity @a[advancements={luigis_mansion:boos={shamboo_trap=true}}] run advancement grant @a only luigis_mansion:boos shamboo_trap
+execute if entity @a[advancements={luigis_mansion:boos={taboo_trap=true}}] run advancement grant @a only luigis_mansion:boos taboo_trap
+execute if entity @a[advancements={luigis_mansion:boos={tamboorine_trap=true}}] run advancement grant @a only luigis_mansion:boos tamboorine_trap
+execute if entity @a[advancements={luigis_mansion:boos={turboo_trap=true}}] run advancement grant @a only luigis_mansion:boos turboo_trap
+execute if entity @a[advancements={luigis_mansion:boos={underboo_trap=true}}] run advancement grant @a only luigis_mansion:boos underboo_trap
 
 execute if entity @a[advancements={luigis_mansion:money={foyer_money=true}}] run advancement grant @a only luigis_mansion:money foyer_money
 execute if entity @a[advancements={luigis_mansion:money={foyer_lamp=true}}] run advancement grant @a only luigis_mansion:money foyer_lamp

@@ -81,7 +81,7 @@
         "limbooger": {
             "trigger": "minecraft:impossible"
         },
-        "little_boo_beep": {
+        "little_boo_peep": {
             "trigger": "minecraft:impossible"
         },
         "mr_boojangles": {
@@ -103,6 +103,111 @@
             "trigger": "minecraft:impossible"
         },
         "underboo": {
+            "trigger": "minecraft:impossible"
+        },
+        "bamboo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boo_b_hatch_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boo_la_la_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boodacious_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "booffant_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boogie_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boohoo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "booigie_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boolderdash_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boolicious_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "booligan_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boolivia_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boomeo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boomerang_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boonita_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "boonswoggle_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "booregard_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "booripedes_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "booris_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "booscaster_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "bootha_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "bootique_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "gameboo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "gameboo_advance_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "gumboo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "kung_boo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "limbooger_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "little_boo_peep_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "mr_boojangles_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "peekaboo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "shamboo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "taboo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "tamboorine_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "turboo_trap": {
+            "trigger": "minecraft:impossible"
+        },
+        "underboo_trap": {
             "trigger": "minecraft:impossible"
         }
     }

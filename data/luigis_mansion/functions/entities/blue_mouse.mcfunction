@@ -8,6 +8,13 @@ scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/blue_mouse/collide
 
+tag @s remove fleeing
+
+execute store result score #temp HomeY run data get entity @s Pos[1] 100
+tag @s remove on_floor
+execute if score #temp HomeY = @s HomeY run tag @s add on_floor
+scoreboard players reset #temp HomeY
+
 execute if entity @s[tag=!rotated] run function luigis_mansion:entities/blue_mouse/move
 scoreboard players set #temp Move 2
 execute at @s[tag=rotated] rotated ~ 0 run function luigis_mansion:entities/blue_mouse/move_forward

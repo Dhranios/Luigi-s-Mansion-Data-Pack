@@ -90,7 +90,37 @@
         "storage_room_bucket": {
             "trigger": "minecraft:impossible"
         },
+        "washroom_1_lamp": {
+            "trigger": "minecraft:impossible"
+        },
+        "washroom_1_cabinet": {
+            "trigger": "minecraft:impossible"
+        },
+        "fortune_tellers_room_drawer_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "fortune_tellers_room_drawer_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "laundry_room_closet": {
+            "trigger": "minecraft:impossible"
+        },
+        "laundry_room_bucket": {
+            "trigger": "minecraft:impossible"
+        },
+        "laundry_room_lamp": {
+            "trigger": "minecraft:impossible"
+        },
         "laundry_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "butlers_room_closet": {
+            "trigger": "minecraft:impossible"
+        },
+        "butlers_room_bucket": {
+            "trigger": "minecraft:impossible"
+        },
+        "butlers_room_lamp": {
             "trigger": "minecraft:impossible"
         },
         "hidden_room_chest": {

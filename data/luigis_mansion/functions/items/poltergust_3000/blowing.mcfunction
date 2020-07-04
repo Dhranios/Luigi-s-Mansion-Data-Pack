@@ -104,9 +104,12 @@ summon minecraft:area_effect_cloud ^-0.9 ^ ^4 {Tags:["poltergust","blowing","new
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:1b}}}}]}] run tag @e[tag=blowing,tag=new] add fire
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:2b}}}}]}] run tag @e[tag=blowing,tag=new] add water
 execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:3b}}}}]}] run tag @e[tag=blowing,tag=new] add ice
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:1b}}}}]}] run function luigis_mansion:items/poltergust_3000/reduce_fire
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:2b}}}}]}] run function luigis_mansion:items/poltergust_3000/reduce_water
+execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:3b}}}}]}] run function luigis_mansion:items/poltergust_3000/reduce_ice
 
 tag @s add me
-execute as @e[tag=blowing,tag=new] at @s facing entity @a[tag=me,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~-180 ~
+execute as @e[tag=blowing,tag=new] at @s facing entity @a[tag=me,limit=1] feet run teleport @s ~ ~ ~ ~-180 ~
 tag @s remove me
 execute as @e[tag=blowing,tag=new] unless entity @s[tag=!fire,tag=!water,tag=!ice] run tag @s remove blowing
 tag @e[tag=new] remove new

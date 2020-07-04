@@ -5,5 +5,4 @@ execute if entity @a[advancements={luigis_mansion:keys={parlor=false}},limit=1] 
 execute if entity @a[advancements={luigis_mansion:keys={small_hallway=false}},limit=1] run function luigis_mansion:room/small_hallway/lock_door
 execute if entity @a[advancements={luigis_mansion:keys={main_hallway=false}},limit=1] run function luigis_mansion:room/main_hallway/lock_door
 execute if entity @a[advancements={luigis_mansion:technical={cleared_area_2_blockade=false}},limit=1] run function luigis_mansion:room/foyer/add_blockade
-
-scoreboard players set foyer Ticking 1
+scoreboard players set #foyer Ticking 1

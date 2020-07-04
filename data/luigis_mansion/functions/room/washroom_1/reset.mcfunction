@@ -1,6 +1,15 @@
 execute as @e[scores={Room=15},type=!minecraft:item_frame] unless data entity @s Health run tag @s add dead
-execute as @e[scores={Room=15},type=!minecraft:item_frame,type=!minecraft:player] run data merge entity @s {Health:0.0f,DeathTime:19s}
+execute as @e[scores={Room=15},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=15},type=minecraft:item] add dead
+tag @e[scores={Room=15},tag=boo] add turn_to_marker
 setblock 668 108 32 minecraft:air
+data merge block 666 105 27 {Items:[]}
+data merge block 666 105 28 {Items:[]}
+data merge block 667 102 32 {Items:[]}
+data merge block 668 102 36 {Items:[]}
 setblock 668 103 36 minecraft:oak_trapdoor[facing=north,half=bottom,open=false]
-scoreboard players reset washroom_1 Ticking
+setblock 667 105 27 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+setblock 667 105 28 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+scoreboard players reset #washroom_1 Ticking
+scoreboard players reset #washroom_1_lamp Searched
+scoreboard players reset #washroom_1_cabinet Searched

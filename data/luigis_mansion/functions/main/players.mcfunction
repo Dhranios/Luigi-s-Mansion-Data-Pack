@@ -16,8 +16,13 @@ execute if entity @s[scores={MusicType=18}] run function luigis_mansion:other/mu
 execute if entity @s[scores={MusicType=35}] run function luigis_mansion:other/music/set/catching_king_boo
 execute if entity @s[tag=chauncey_cry] run function luigis_mansion:room/small_hallway/chauncey_cry
 execute if entity @s[tag=washroom_toad] run function luigis_mansion:dialog/washroom_toad
+execute if entity @s[tag=move_wall] run function luigis_mansion:room/storage_room/moving_wall
+execute if entity @s[tag=release_boos] run function luigis_mansion:dialog/release_boos
 
 execute if entity @s[x=771.5,y=90,z=8.0,distance=..14,gamemode=!spectator] run function luigis_mansion:entities/player/open_gate
+
+execute if block ~ ~ ~ minecraft:stone_pressure_plate run stopsound @s[scores={HallwayNoise=1..}] hostile luigis_mansion:music.mansion.melody
+execute if block ~ ~ ~ minecraft:stone_pressure_plate run scoreboard players set @s HallwayNoise 0
 
 execute if entity @s[scores={Talk=1..}] run function luigis_mansion:target_villager
 scoreboard players set @s[scores={Talk=1..}] Talk 0
@@ -60,4 +65,5 @@ execute store result score @s Keys run clear @s minecraft:brick{CustomModelData:
 execute if score @s Keys > @s LastKeys run playsound luigis_mansion:item.key.get player @a ~ ~ ~ 1
 scoreboard players operation @s LastKeys = @s Keys
 
+scoreboard players remove @s[scores={HallwayNoise=1..}] HallwayNoise 1
 scoreboard players remove @s[scores={Sound=1..}] Sound 1

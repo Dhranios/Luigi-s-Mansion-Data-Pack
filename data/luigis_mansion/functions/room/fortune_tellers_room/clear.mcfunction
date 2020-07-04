@@ -1,0 +1,3 @@
+function luigis_mansion:room/fortune_tellers_room/remove_blockade
+function luigis_mansion:room/fortune_tellers_room/turn_on_lights
+scoreboard players reset #fortune_tellers_room Wave

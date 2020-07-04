@@ -39,9 +39,7 @@ execute if entity @s[scores={Wave=360}] positioned 713 45 -19940 run function lu
 tag @s[scores={Wave=381}] add laugh
 scoreboard players set @s[scores={Wave=382}] VulnerableTime 80
 tag @s[scores={Wave=382}] remove laugh
-teleport @s[scores={Wave=382}] ~ ~ ~ ~ ~
-execute at @s[scores={Wave=382..421}] run teleport @s ^ ^ ^-0.05
-execute at @s[scores={Wave=382..421}] run teleport @s ~ ~ -19940.0
+execute at @s[scores={Wave=382}] rotated ~ 0 run teleport @s ~ ~ -19944.0 ~ ~
 teleport @s[scores={Wave=462}] ~ 43 -19944
 execute if entity @s[scores={Wave=502..581}] facing entity @p[gamemode=!spectator] feet run teleport @s ~ ~ ~ ~ 0
 execute if entity @s[scores={Wave=522}] run playsound luigis_mansion:entity.chauncey.scream hostile @a ~ ~ ~ 3

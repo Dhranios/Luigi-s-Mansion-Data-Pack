@@ -1,7 +1,7 @@
 scoreboard players add @s[scores={AnimationProg=2..}] AnimationProg 1
 execute if block 686 113 45 minecraft:air run scoreboard players add @s[scores={AnimationProg=1}] AnimationProg 1
 execute unless entity @s[scores={AnimationProg=1..}] run scoreboard players add @s AnimationProg 1
-execute if entity @s[scores={AnimationProg=0}] at @a[gamemode=!spectator,scores={Room=8}] positioned ^ ^ ^8 run effect give @s[distance=..8,scores={AnimationProg=1}] minecraft:invisibility 1 0 true
+execute if entity @s[scores={AnimationProg=1}] at @a[gamemode=!spectator,scores={Room=8}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 execute if entity @s[scores={AnimationProg=40}] run playsound luigis_mansion:entity.lydia.complain hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={AnimationProg=60}] VulnerableTime 40
