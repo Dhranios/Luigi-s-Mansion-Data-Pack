@@ -31,3 +31,7 @@ execute if entity @e[x=709.0,y=102,z=11.0,dx=0,dy=1,dz=2,type=minecraft:area_eff
 execute if entity @e[x=707.0,y=102,z=7.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.55"}]}
 execute if entity @e[x=700.5,y=113,z=1.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.29"}]}
 execute if entity @e[x=700.5,y=113,z=14.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.29"}]}
+
+function luigis_mansion:room/door/foyer_parlor
+function luigis_mansion:room/door/foyer_small_hallway
+function luigis_mansion:room/door/foyer_main_hallway

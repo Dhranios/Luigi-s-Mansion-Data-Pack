@@ -6,3 +6,7 @@ execute as @a[gamemode=!spectator,x=685,y=122,z=-16,dx=34,dy=6,dz=7] run functio
 
 execute if block 684 122 -12 #minecraft:doors[open=true] if block 683 123 -12 minecraft:barrier positioned 684 122 -12 run function luigis_mansion:blocks/closed_door
 execute if block 693 122 -17 #minecraft:doors[open=true] if block 693 123 -18 minecraft:barrier positioned 693 122 -17 run function luigis_mansion:blocks/closed_door
+
+function luigis_mansion:room/door/safari_room_attic_hallway_1
+function luigis_mansion:room/door/attic_hallway_1_balcony_2
+function luigis_mansion:room/door/attic_hallway_1_artists_studio

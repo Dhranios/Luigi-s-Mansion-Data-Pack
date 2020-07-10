@@ -38,3 +38,6 @@ execute if entity @e[x=696.5,y=102,z=-29.5,distance=..0.7,type=minecraft:area_ef
 execute if entity @e[x=696.5,y=102,z=-31.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.28"}]}
 execute if entity @e[x=691.0,y=107,z=-20.0,distance=..1.5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.54"}]}
 execute if entity @e[x=691.0,y=107,z=-34.0,distance=..1.5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.54"}]}
+
+function luigis_mansion:room/door/main_hallway_ball_room
+function luigis_mansion:room/door/ball_room_storage_room

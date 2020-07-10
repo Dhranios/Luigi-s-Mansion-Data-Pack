@@ -1,8 +1,5 @@
 {
     "criteria": {
-        "gate": {
-            "trigger": "minecraft:impossible"
-        },
         "parlor": {
             "trigger": "minecraft:impossible"
         },
@@ -84,7 +81,7 @@
         "sitting_room": {
             "trigger": "minecraft:impossible"
         },
-        "artist_studio": {
+        "artists_studio": {
             "trigger": "minecraft:impossible"
         },
         "secret_altar": {

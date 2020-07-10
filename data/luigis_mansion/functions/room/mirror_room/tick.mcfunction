@@ -30,3 +30,5 @@ execute if entity @e[x=713.5,y=107,z=-37.5,distance=..1,type=minecraft:area_effe
 execute if block 709 104 -42 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 709 104 -25 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] run function luigis_mansion:room/mirror_room/remove_blockade
 
 execute if entity @a[x=717.5,y=105,z=-41.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=717.5,y=105,z=-41.5,distance=..5,tag=fire_elemental_ghost] positioned 717 105 -42 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+
+function luigis_mansion:room/door/fortune_tellers_room_mirror_room

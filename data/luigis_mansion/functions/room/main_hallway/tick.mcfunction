@@ -42,3 +42,16 @@ execute if entity @e[x=666.5,y=103,z=2.5,distance=..0.7,type=minecraft:area_effe
 
 execute if entity @a[x=700.5,y=104,z=18.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=700.5,y=104,z=18.5,distance=..5,tag=fire_elemental_ghost] positioned 700 104 18 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
 execute if entity @a[x=685.5,y=104,z=-4.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=685.5,y=104,z=-4.5,distance=..5,tag=fire_elemental_ghost] positioned 685 104 -5 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+
+function luigis_mansion:room/door/foyer_main_hallway
+function luigis_mansion:room/door/main_hallway_basement_stairs
+function luigis_mansion:room/door/main_hallway_bathroom_1
+function luigis_mansion:room/door/main_hallway_ball_room
+function luigis_mansion:room/door/main_hallway_washroom_1
+function luigis_mansion:room/door/main_hallway_fortune_tellers_room
+function luigis_mansion:room/door/main_hallway_laundry_room
+function luigis_mansion:room/door/main_hallway_conservatory
+function luigis_mansion:room/door/main_hallway_dining_room
+function luigis_mansion:room/door/main_hallway_courtyard
+function luigis_mansion:room/door/main_hallway_main_stairs
+function luigis_mansion:room/door/main_hallway_billiards_room

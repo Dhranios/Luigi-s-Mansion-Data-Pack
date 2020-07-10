@@ -20,6 +20,7 @@ execute if entity @s[tag=move_wall] run function luigis_mansion:room/storage_roo
 execute if entity @s[tag=release_boos] run function luigis_mansion:dialog/release_boos
 
 execute if entity @s[x=771.5,y=90,z=8.0,distance=..14,gamemode=!spectator] run function luigis_mansion:entities/player/open_gate
+execute if entity @s[gamemode=!spectator,distance=..10,x=719.5,y=102,z=8.0] run function luigis_mansion:room/door/outside_foyer
 
 execute if block ~ ~ ~ minecraft:stone_pressure_plate run stopsound @s[scores={HallwayNoise=1..}] hostile luigis_mansion:music.mansion.melody
 execute if block ~ ~ ~ minecraft:stone_pressure_plate run scoreboard players set @s HallwayNoise 0

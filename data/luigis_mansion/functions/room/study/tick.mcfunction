@@ -36,3 +36,5 @@ execute if entity @e[x=689.5,y=112,z=24.5,distance=..0.7,type=minecraft:area_eff
 execute if entity @e[x=690.0,y=112,z=23.0,dx=1,dy=0,dz=3,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.63"}]}
 
 execute if entity @a[x=686.5,y=112,z=30.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=686.5,y=112,z=30.5,distance=..5,tag=fire_elemental_ghost] positioned 686 112 30 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+
+function luigis_mansion:room/door/small_hallway_study

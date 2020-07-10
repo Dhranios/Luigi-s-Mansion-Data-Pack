@@ -37,3 +37,5 @@ execute if entity @e[x=690.0,y=112,z=53.0,dx=3,dy=1,dz=4,type=minecraft:area_eff
 execute if entity @e[x=686.0,y=112,z=56.0,dx=2,dy=3,dz=1,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.53"}]}
 execute at @e[x=689.0,y=112,z=41.0,dx=2,dy=3,dz=2,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] if block ~ ~ ~ minecraft:pink_wool run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.55"}]}
 execute if entity @e[x=692.0,y=118,z=49.0,distance=..1.5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.21"}]}
+
+function luigis_mansion:room/door/small_hallway_master_bedroom

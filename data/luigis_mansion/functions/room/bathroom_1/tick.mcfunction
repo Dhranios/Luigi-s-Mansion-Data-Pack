@@ -17,3 +17,5 @@ execute at @e[x=660.0,y=106,z=38.0,dx=2,dy=0,dz=0,type=minecraft:area_effect_clo
 execute at @e[x=655.0,y=102,z=27.0,dx=1,dy=2,dz=2,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] if block ~ ~ ~ minecraft:spruce_planks run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.48"}]}
 execute at @e[x=655.0,y=102,z=32.0,dx=2,dy=1,dz=5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.48"}]}
 execute at @e[x=660.0,y=106,z=38.0,dx=2,dy=0,dz=0,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.12"}]}
+
+function luigis_mansion:room/door/main_hallway_bathroom_1

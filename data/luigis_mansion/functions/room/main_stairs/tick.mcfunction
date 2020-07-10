@@ -6,3 +6,8 @@ tag @e[tag=ghost,x=664,y=102,z=-44,dx=8,dy=16,dz=26] add hallway
 execute as @a[gamemode=!spectator,x=666,y=102,z=-42,dx=4,dy=16,dz=22] run function luigis_mansion:room/main_stairs/tick_per_player
 
 execute if block 668 102 -19 #minecraft:doors[open=true] if block 668 103 -18 minecraft:barrier positioned 668 102 -19 run function luigis_mansion:blocks/closed_door
+
+function luigis_mansion:room/door/rec_room_main_stairs
+function luigis_mansion:room/door/main_hallway_main_stairs
+function luigis_mansion:room/door/main_stairs_tea_room
+function luigis_mansion:room/door/main_stairs_hallway

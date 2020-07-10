@@ -28,3 +28,6 @@ execute if entity @e[x=700.0,y=102,z=42.0,dx=0,dy=1,dz=3,type=minecraft:area_eff
 execute if entity @e[x=700.0,y=102,z=49.0,dx=2,dy=2,dz=2,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.16"}]}
 execute if entity @e[x=702.5,y=107,z=49.5,distance=..1,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.5"}]}
 execute if entity @e[x=700.0,y=102,z=54.0,dx=1,dy=1,dz=2,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.83"}]}
+
+function luigis_mansion:room/door/main_hallway_laundry_room
+function luigis_mansion:room/door/laundry_room_butlers_room

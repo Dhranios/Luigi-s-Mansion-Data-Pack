@@ -43,3 +43,5 @@ execute if entity @e[x=713.5,y=108,z=49.5,distance=..1,type=minecraft:area_effec
 execute if entity @e[x=710.5,y=102,z=40.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run function luigis_mansion:room/butlers_room/scan_hole
 
 execute if entity @a[x=717.5,y=103,z=54.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=717.5,y=103,z=54.5,distance=..5,tag=fire_elemental_ghost] positioned 717 103 54 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+
+function luigis_mansion:room/door/laundry_room_butlers_room

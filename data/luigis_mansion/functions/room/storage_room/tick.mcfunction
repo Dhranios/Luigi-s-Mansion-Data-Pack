@@ -35,3 +35,5 @@ execute if entity @e[x=674.0,y=102,z=-37.0,dx=0,dy=1,dz=0,type=minecraft:area_ef
 execute at @e[x=674.0,y=102,z=-42.0,dx=3,dy=3,dz=3,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] if block ~ ~ ~ minecraft:note_block run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.23"}]}
 execute if entity @e[x=681.0,y=103,z=-34.0,dx=0,dy=1,dz=0,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.51"}]}
 execute if entity @e[x=673.0,y=104,z=-20.0,dx=1,dy=0,dz=0,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.51"}]}
+
+function luigis_mansion:room/door/ball_room_storage_room

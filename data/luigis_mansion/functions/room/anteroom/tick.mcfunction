@@ -24,3 +24,6 @@ execute if entity @e[x=674.0,y=112,z=7.0,dx=0,dy=1,dz=1,type=minecraft:area_effe
 execute if entity @e[x=674.0,y=112,z=15.0,dx=0,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.65"}]}
 execute if entity @e[x=678.5,y=117,z=11.5,distance=..1.5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.13"}]}
 execute if entity @e[x=678.5,y=117,z=4.5,distance=..1.5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.13"}]}
+
+function luigis_mansion:room/door/parlor_anteroom
+function luigis_mansion:room/door/anteroom_wardrobe_room

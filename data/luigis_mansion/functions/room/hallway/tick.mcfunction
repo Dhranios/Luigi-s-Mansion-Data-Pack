@@ -18,3 +18,11 @@ execute as @a[gamemode=!spectator,x=655,y=112,z=19,dx=15,dy=6,dz=4] unless entit
 
 execute if block 705 122 -23 #minecraft:doors[open=true] if block 706 123 -23 minecraft:barrier positioned 705 122 -23 run function luigis_mansion:blocks/closed_door
 execute if block 705 112 -16 #minecraft:doors[open=true] if block 706 113 -16 minecraft:barrier positioned 705 112 -16 run function luigis_mansion:blocks/closed_door
+
+function luigis_mansion:room/door/main_stairs_hallway
+function luigis_mansion:room/door/hallway_washroom_2
+function luigis_mansion:room/door/hallway_bathroom_2
+function luigis_mansion:room/door/hallway_nanas_room
+function luigis_mansion:room/door/hallway_astral_hall
+function luigis_mansion:room/door/hallway_safari_room
+function luigis_mansion:room/door/hallway_sitting_room

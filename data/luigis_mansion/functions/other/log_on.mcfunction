@@ -87,7 +87,7 @@ execute if entity @a[advancements={luigis_mansion:mansion/pipe_room=true}] run a
 execute if entity @a[advancements={luigis_mansion:mansion/cold_storage=true}] run advancement grant @a only luigis_mansion:mansion/cold_storage
 execute if entity @a[advancements={luigis_mansion:mansion/sitting_room=true}] run advancement grant @a only luigis_mansion:mansion/sitting_room
 execute if entity @a[advancements={luigis_mansion:mansion/guest_room=true}] run advancement grant @a only luigis_mansion:mansion/guest_room
-execute if entity @a[advancements={luigis_mansion:mansion/artist_studio=true}] run advancement grant @a only luigis_mansion:mansion/artist_studio
+execute if entity @a[advancements={luigis_mansion:mansion/artists_studio=true}] run advancement grant @a only luigis_mansion:mansion/artists_studio
 execute if entity @a[advancements={luigis_mansion:mansion/secret_altar=true}] run advancement grant @a only luigis_mansion:mansion/secret_altar
 
 execute if entity @a[advancements={luigis_mansion:mansion/keys={parlor=true}}] run advancement grant @a only luigis_mansion:mansion/keys parlor
@@ -117,7 +117,7 @@ execute if entity @a[advancements={luigis_mansion:mansion/keys={armory=true}}] r
 execute if entity @a[advancements={luigis_mansion:mansion/keys={pipe_room=true}}] run advancement grant @a only luigis_mansion:mansion/keys pipe_room
 execute if entity @a[advancements={luigis_mansion:mansion/keys={cold_storage=true}}] run advancement grant @a only luigis_mansion:mansion/keys cold_storage
 execute if entity @a[advancements={luigis_mansion:mansion/keys={guest_room=true}}] run advancement grant @a only luigis_mansion:mansion/keys guest_room
-execute if entity @a[advancements={luigis_mansion:mansion/keys={artist_studio=true}}] run advancement grant @a only luigis_mansion:mansion/keys artist_studio
+execute if entity @a[advancements={luigis_mansion:mansion/keys={artists_studio=true}}] run advancement grant @a only luigis_mansion:mansion/keys artists_studio
 execute if entity @a[advancements={luigis_mansion:mansion/keys={secret_altar=true}}] run advancement grant @a only luigis_mansion:mansion/keys secret_altar
 
 execute if entity @a[advancements={luigis_mansion:technical={entered_mansion=true}}] run advancement grant @a only luigis_mansion:technical entered_mansion
@@ -255,7 +255,15 @@ execute if entity @a[advancements={luigis_mansion:money={basement_stairs_lamp_1=
 execute if entity @a[advancements={luigis_mansion:money={ball_room_lamp_1=true}}] run advancement grant @a only luigis_mansion:money ball_room_lamp_1
 execute if entity @a[advancements={luigis_mansion:money={ball_room_lamp_2=true}}] run advancement grant @a only luigis_mansion:money ball_room_lamp_2
 execute if entity @a[advancements={luigis_mansion:money={storage_room_bucket=true}}] run advancement grant @a only luigis_mansion:money storage_room_bucket
+execute if entity @a[advancements={luigis_mansion:money={fortune_tellers_room_table_1=true}}] run advancement grant @a only luigis_mansion:money fortune_tellers_room_table_1
+execute if entity @a[advancements={luigis_mansion:money={fortune_tellers_room_table_2=true}}] run advancement grant @a only luigis_mansion:money fortune_tellers_room_table_2
+execute if entity @a[advancements={luigis_mansion:money={laundry_room_bucket=true}}] run advancement grant @a only luigis_mansion:money laundry_room_bucket
+execute if entity @a[advancements={luigis_mansion:money={laundry_room_closet=true}}] run advancement grant @a only luigis_mansion:money laundry_room_closet
+execute if entity @a[advancements={luigis_mansion:money={laundry_room_lamp=true}}] run advancement grant @a only luigis_mansion:money laundry_room_lamp
 execute if entity @a[advancements={luigis_mansion:money={laundry_room_chest=true}}] run advancement grant @a only luigis_mansion:money laundry_room_chest
+execute if entity @a[advancements={luigis_mansion:money={butlers_room_bucket=true}}] run advancement grant @a only luigis_mansion:money butlers_room_bucket
+execute if entity @a[advancements={luigis_mansion:money={butlers_room_closet=true}}] run advancement grant @a only luigis_mansion:money butlers_room_closet
+execute if entity @a[advancements={luigis_mansion:money={butlers_room_lamp=true}}] run advancement grant @a only luigis_mansion:money butlers_room_lamp
 execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest=true}}] run advancement grant @a only luigis_mansion:money hidden_room_chest
 execute if entity @a[advancements={luigis_mansion:money={dining_room_chest=true}}] run advancement grant @a only luigis_mansion:money dining_room_chest
 execute if entity @a[advancements={luigis_mansion:money={courtyard_chest=true}}] run advancement grant @a only luigis_mansion:money courtyard_chest

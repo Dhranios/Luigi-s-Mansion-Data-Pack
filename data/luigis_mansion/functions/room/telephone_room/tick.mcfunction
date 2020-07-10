@@ -4,3 +4,6 @@ execute as @e[type=!minecraft:item_frame,x=698,y=122,z=-7,dx=23,dy=6,dz=29] run 
 execute as @a[gamemode=!spectator,x=700,y=122,z=-5,dx=19,dy=6,dz=25] run function luigis_mansion:room/telephone_room/tick_per_player
 
 execute if block 699 122 -2 #minecraft:doors[open=true] if block 698 123 -2 minecraft:barrier positioned 699 122 -2 run function luigis_mansion:blocks/closed_door
+
+function luigis_mansion:room/door/attic_hallway_1_telephone_room
+function luigis_mansion:room/door/telephone_room_clockwork_room

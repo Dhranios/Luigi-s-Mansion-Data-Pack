@@ -4,10 +4,10 @@
             "item": "minecraft:item_frame"
         },
         "title": {
-            "translate": "luigis_mansion:location.artist_studio"
+            "translate": "luigis_mansion:location.artists_studio"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.mansion.artist_studio.description"
+            "translate": "luigis_mansion:advancements.mansion.artists_studio.description"
         }
     },
 	"parent": "luigis_mansion:mansion/attic_hallway_1",

@@ -11,5 +11,5 @@ data modify entity @e[x=691.5,y=123,z=-20.5,distance=..0.7,limit=1] Item.tag.map
 data modify entity @e[x=690.5,y=123,z=-34.5,distance=..0.7,limit=1] Item.tag.map set value 89
 data modify entity @e[x=690.5,y=123,z=-22.5,distance=..0.7,limit=1] Item.tag.map set value 91
 data modify entity @e[x=688.5,y=123,z=-27.5,distance=..0.7,limit=1] Item.tag.map set value 93
-function luigis_mansion:room/artist_studio/remove_blockade
-scoreboard players reset #artist_studio Ticking
+function luigis_mansion:room/artists_studio/remove_blockade
+scoreboard players reset #artists_studio Ticking
