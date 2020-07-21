@@ -9,7 +9,7 @@ effect give @s[tag=flashlight] minecraft:night_vision 1000000 0 true
 execute if entity @s[tag=flashlight] run fill ~ ~ ~ ~ ~ ~ minecraft:torch replace minecraft:air
 execute if entity @s[tag=flashlight] unless block ~ ~ ~ minecraft:torch run fill ~ ~1 ~ ~ ~1 ~ minecraft:torch replace minecraft:air
 
-execute if entity @s[gamemode=!spectator] as @e[distance=..7,tag=ghost_marker,tag=can_spawn,tag=!needs_furniture_search] positioned ^ ^ ^4 unless entity @s[distance=..4] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s add spawn
+execute if entity @s[gamemode=!spectator] as @e[distance=..7,tag=ghost_marker,tag=can_spawn,tag=!needs_furniture_search] positioned ^ ^ ^4 unless entity @s[distance=..4] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s[tag=!waiter] add spawn
 
 execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,scores={StunTime=0}] positioned ^ ^ ^4 if entity @s[distance=..4] at @s run playsound luigis_mansion:entity.heart.flash hostile @a ~ ~ ~ 1
 execute if entity @s[tag=flashlight] as @e[distance=..7,scores={StunTime=0,VulnerableTime=1..},tag=portrait_ghost] positioned ^ ^ ^4 if entity @s[distance=..4] at @s run playsound luigis_mansion:entity.heart.flash hostile @a ~ ~ ~ 1

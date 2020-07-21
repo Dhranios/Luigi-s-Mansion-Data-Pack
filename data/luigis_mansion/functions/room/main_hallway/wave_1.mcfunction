@@ -71,3 +71,4 @@ summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","ghost"],Duration:1}
 tag @e[type=minecraft:area_effect_cloud,tag=chance,sort=random,limit=1] add selected
 execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=ghost] positioned 657 102 21 run function luigis_mansion:spawn_entities/new_ghost/bowling_ghost
 kill @e[type=minecraft:area_effect_cloud,tag=chance]
+scoreboard players set #main_hallway Wave 1

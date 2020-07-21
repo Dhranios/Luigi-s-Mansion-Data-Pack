@@ -6,3 +6,6 @@ scoreboard players set @a[advancements={luigis_mansion:mansion/artists_studio=fa
 scoreboard players set @a[advancements={luigis_mansion:mansion/artists_studio=false}] MusicType 9
 advancement grant @a only luigis_mansion:mansion/artists_studio
 execute if entity @a[advancements={luigis_mansion:technical={released_boos_talk=true}},scores={Boos=..49},limit=1] run function luigis_mansion:room/artists_studio/load_boos
+execute as @e[scores={Room=58},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
+execute as @e[scores={Room=58},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
+tag @e[scores={Room=58},tag=ghost_marker] add dead

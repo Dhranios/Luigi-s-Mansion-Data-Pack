@@ -18,3 +18,6 @@ playsound luigis_mansion:music.cleared_room music @a[advancements={luigis_mansio
 scoreboard players set @a[advancements={luigis_mansion:mansion/roof=false}] Music 40
 scoreboard players set @a[advancements={luigis_mansion:mansion/roof=false}] MusicType 9
 advancement grant @a only luigis_mansion:mansion/roof
+execute as @e[scores={Room=50},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
+execute as @e[scores={Room=50},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
+tag @e[scores={Room=50},tag=ghost_marker] add dead

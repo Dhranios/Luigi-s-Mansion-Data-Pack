@@ -21,7 +21,8 @@ execute if entity @s[tag=purple_bomber] run tag @e[tag=this_entity,limit=1] add 
 execute if entity @s[tag=waiter] run tag @e[tag=this_entity,limit=1] add waiter
 scoreboard players operation @e[tag=this_entity,limit=1] Health = @s Health
 execute if entity @s[tag=ghost_guy] run function luigis_mansion:entities/ghost/disappear_ghost_guy
-execute unless entity @s[tag=ghost_guy,tag=dancing] if entity @s[tag=!hallway] facing entity @p[gamemode=!spectator,limit=1] feet rotated ~ 0 run teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
+execute if entity @s[tag=waiter] run function luigis_mansion:entities/ghost/disappear_waiter
+execute unless entity @s[tag=ghost_guy,tag=dancing] if entity @s[tag=!waiter] if entity @s[tag=!hallway] facing entity @p[gamemode=!spectator,limit=1] feet rotated ~ 0 run teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:entity.ghost.disappear hostile @a ~ ~ ~ 1
 teleport @s ~ -100 ~

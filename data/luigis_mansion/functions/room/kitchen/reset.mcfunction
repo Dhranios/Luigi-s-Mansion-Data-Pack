@@ -8,3 +8,4 @@ setblock 692 102 49 minecraft:air
 fill 693 103 57 691 102 56 minecraft:white_wool
 fill 686 102 55 686 103 55 minecraft:air
 scoreboard players reset #kitchen Ticking
+scoreboard players reset #kitchen Wave

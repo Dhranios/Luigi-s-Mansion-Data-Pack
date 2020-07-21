@@ -6,7 +6,7 @@ execute if entity @s[tag=dead,tag=nursery] run loot spawn ~ ~ ~ loot luigis_mans
 execute if entity @s[tag=dead,tag=storage_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/storage_room
 execute if entity @s[tag=dead,tag=hidden_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/hidden_room
 execute if entity @s[tag=dead,tag=conservatory] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/conservatory
-execute if entity @s[tag=dead,tag=dinning_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/dinning_room
+execute if entity @s[tag=dead,tag=dining_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/dining_room
 execute if entity @s[tag=dead,tag=kitchen] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/kitchen
 execute if entity @s[tag=dead,tag=rec_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/rec_room
 execute if entity @s[tag=dead,tag=nanas_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/nanas_room
@@ -21,7 +21,7 @@ execute if entity @s[tag=dead,tag=nursery] run advancement grant @a only luigis_
 execute if entity @s[tag=dead,tag=storage_room] run advancement grant @a only luigis_mansion:mansion/storage_room_speedy_spirit
 execute if entity @s[tag=dead,tag=hidden_room] run advancement grant @a only luigis_mansion:mansion/hidden_room_speedy_spirit
 execute if entity @s[tag=dead,tag=conservatory] run advancement grant @a only luigis_mansion:mansion/conservatory_speedy_spirit
-execute if entity @s[tag=dead,tag=dinning_room] run advancement grant @a only luigis_mansion:mansion/dining_room_speedy_spirit
+execute if entity @s[tag=dead,tag=dining_room] run advancement grant @a only luigis_mansion:mansion/dining_room_speedy_spirit
 execute if entity @s[tag=dead,tag=kitchen] run advancement grant @a only luigis_mansion:mansion/kitchen_speedy_spirit
 execute if entity @s[tag=dead,tag=rec_room] run advancement grant @a only luigis_mansion:mansion/rec_room_speedy_spirit
 execute if entity @s[tag=dead,tag=nanas_room] run advancement grant @a only luigis_mansion:mansion/nanas_room_speedy_spirit

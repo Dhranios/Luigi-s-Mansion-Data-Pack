@@ -12,5 +12,6 @@ execute positioned 709 104 -25 run function luigis_mansion:blocks/unlit_candles
 execute positioned 709 104 -42 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #mirror_room Ticking
 scoreboard players reset #mirror_room Wave
+scoreboard players reset #mirror_room_table Searched
 scoreboard players reset #mirror_room_lamp_1 Searched
 scoreboard players reset #mirror_room_lamp_2 Searched

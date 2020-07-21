@@ -10,3 +10,4 @@ data remove block 708 102 53 LootTable
 data remove block 708 105 53 LootTable
 data remove block 708 102 51 LootTable
 data remove block 708 105 51 LootTable
+tag @e[x=708.5,y=102,z=52.5,distance=..0.7,tag=hidden_boo] add spawn

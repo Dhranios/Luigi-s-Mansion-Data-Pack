@@ -14,6 +14,8 @@ execute as @a[gamemode=!spectator,x=666,y=102,z=-9,dx=38,dy=6,dz=4] unless entit
 execute as @a[gamemode=!spectator,x=666,y=102,z=-16,dx=4,dy=6,dz=39] unless entity @s[x=666,y=102,z=-9,dx=38,dy=6,dz=4] unless entity @s[x=700,y=102,z=-23,dx=4,dy=6,dz=60] run function luigis_mansion:room/main_hallway/tick_per_player
 execute as @a[gamemode=!spectator,x=655,y=102,z=19,dx=15,dy=6,dz=4] unless entity @s[x=666,y=102,z=-16,dx=4,dy=6,dz=39] unless entity @s[x=666,y=102,z=-9,dx=38,dy=6,dz=4] unless entity @s[x=700,y=102,z=-23,dx=4,dy=6,dz=60] run function luigis_mansion:room/main_hallway/tick_per_player
 
+execute if entity @a[advancements={luigis_mansion:mansion/main_hallway=false}] unless score #main_hallway Wave matches 1.. run function luigis_mansion:room/main_hallway/wave_1
+
 execute if block 691 102 -10 #minecraft:doors[open=true] if block 691 103 -11 minecraft:barrier positioned 691 102 -10 run function luigis_mansion:blocks/closed_door
 execute if block 668 102 24 #minecraft:doors[open=true] if block 668 103 25 minecraft:barrier positioned 668 102 24 as @p[gamemode=!spectator] unless entity @s[scores={GBHCall=1..}] unless entity @s[scores={Dialog=1..}] run tag @s add washroom_toad
 execute if block 668 102 24 #minecraft:doors[open=true] if block 668 103 25 minecraft:barrier positioned 668 102 24 run function luigis_mansion:blocks/closed_door

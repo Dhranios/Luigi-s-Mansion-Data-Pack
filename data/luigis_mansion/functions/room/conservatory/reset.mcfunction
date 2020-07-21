@@ -2,6 +2,21 @@ execute as @e[scores={Room=21},type=!minecraft:item_frame] unless data entity @s
 execute as @e[scores={Room=21},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=21},type=minecraft:item] add dead
 tag @e[scores={Room=21},tag=boo] add turn_to_marker
+tag @e[x=661.5,y=104,z=-8.5,distance=..0.7,type=minecraft:item_frame] add dead
 setblock 658 108 3 minecraft:air
 setblock 659 102 0 minecraft:air
+data merge block 655 103 -8 {Items:[]}
+data merge block 655 103 -9 {Items:[]}
+setblock 656 103 -8 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+setblock 656 103 -9 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 scoreboard players reset #conservatory Ticking
+scoreboard players reset #conservatory Wave
+scoreboard players reset #conservatory_saxophone Searched
+scoreboard players reset #conservatory_harp Searched
+scoreboard players reset #conservatory_chello Searched
+scoreboard players reset #conservatory_drum_1 Searched
+scoreboard players reset #conservatory_drum_2 Searched
+scoreboard players reset #conservatory_drum_3 Searched
+scoreboard players reset #conservatory_xylophone Searched
+scoreboard players reset #conservatory_closet Searched
+scoreboard players reset #conservatory_lamp Searched

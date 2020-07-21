@@ -75,6 +75,8 @@ execute if entity @a[advancements={luigis_mansion:mansion/telephone_room=true}] 
 execute if entity @a[advancements={luigis_mansion:mansion/breaker_room=true}] run advancement grant @a only luigis_mansion:mansion/breaker_room
 execute if entity @a[advancements={luigis_mansion:mansion/breaker_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/breaker_room_speedy_spirit
 execute if entity @a[advancements={luigis_mansion:mansion/cellar=true}] run advancement grant @a only luigis_mansion:mansion/cellar
+execute if entity @a[advancements={luigis_mansion:mansion/basement_hallway=true}] run advancement grant @a only luigis_mansion:mansion/basement_hallway
+execute if entity @a[advancements={luigis_mansion:mansion/curved_hallway=true}] run advancement grant @a only luigis_mansion:mansion/curved_hallway
 execute if entity @a[advancements={luigis_mansion:mansion/cellar_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/cellar_speedy_spirit
 execute if entity @a[advancements={luigis_mansion:mansion/clockwork_room=true}] run advancement grant @a only luigis_mansion:mansion/clockwork_room
 execute if entity @a[advancements={luigis_mansion:mansion/roof=true}] run advancement grant @a only luigis_mansion:mansion/roof
@@ -264,7 +266,15 @@ execute if entity @a[advancements={luigis_mansion:money={laundry_room_chest=true
 execute if entity @a[advancements={luigis_mansion:money={butlers_room_bucket=true}}] run advancement grant @a only luigis_mansion:money butlers_room_bucket
 execute if entity @a[advancements={luigis_mansion:money={butlers_room_closet=true}}] run advancement grant @a only luigis_mansion:money butlers_room_closet
 execute if entity @a[advancements={luigis_mansion:money={butlers_room_lamp=true}}] run advancement grant @a only luigis_mansion:money butlers_room_lamp
-execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest=true}}] run advancement grant @a only luigis_mansion:money hidden_room_chest
+execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest_3=true}}] run advancement grant @a only luigis_mansion:money hidden_room_chest_3
+execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest_6=true}}] run advancement grant @a only luigis_mansion:money hidden_room_chest_6
+execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest_8=true}}] run advancement grant @a only luigis_mansion:money hidden_room_chest_8
+execute if entity @a[advancements={luigis_mansion:money={hidden_room_trophy_1=true}}] run advancement grant @a only luigis_mansion:money hidden_room_trophy_1
+execute if entity @a[advancements={luigis_mansion:money={hidden_room_trophy_2=true}}] run advancement grant @a only luigis_mansion:money hidden_room_trophy_2
+execute if entity @a[advancements={luigis_mansion:money={hidden_room_lamp=true}}] run advancement grant @a only luigis_mansion:money hidden_room_lamp
+execute if entity @a[advancements={luigis_mansion:money={conservatory_closet=true}}] run advancement grant @a only luigis_mansion:money conservatory_closet
+execute if entity @a[advancements={luigis_mansion:money={conservatory_lamp=true}}] run advancement grant @a only luigis_mansion:money conservatory_lamp
+execute if entity @a[advancements={luigis_mansion:money={dining_room_closet_2=true}}] run advancement grant @a only luigis_mansion:money dining_room_closet_2
 execute if entity @a[advancements={luigis_mansion:money={dining_room_chest=true}}] run advancement grant @a only luigis_mansion:money dining_room_chest
 execute if entity @a[advancements={luigis_mansion:money={courtyard_chest=true}}] run advancement grant @a only luigis_mansion:money courtyard_chest
 execute if entity @a[advancements={luigis_mansion:money={rec_room_chest=true}}] run advancement grant @a only luigis_mansion:money rec_room_chest
@@ -318,3 +328,67 @@ execute if entity @a[advancements={luigis_mansion:technical={shown_marios_letter
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_star=true}}] run scoreboard players add @a ClairvoyaSpoke 1
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_glove=true}}] run scoreboard players add @a ClairvoyaSpoke 1
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_shoe=true}}] run scoreboard players add @a ClairvoyaSpoke 1
+
+scoreboard players reset #foyer Ticking
+scoreboard players reset #parlor Ticking
+scoreboard players reset #anteroom Ticking
+scoreboard players reset #wardrobe_room Ticking
+scoreboard players reset #balcony_1 Ticking
+scoreboard players reset #small_hallway Ticking
+scoreboard players reset #study Ticking
+scoreboard players reset #master_bedroom Ticking
+scoreboard players reset #nursery Ticking
+scoreboard players reset #main_hallway Ticking
+scoreboard players reset #basement_stairs Ticking
+scoreboard players reset #bathroom_1 Ticking
+scoreboard players reset #ball_room Ticking
+scoreboard players reset #storage_room Ticking
+scoreboard players reset #washroom_1 Ticking
+scoreboard players reset #fortune_tellers_room Ticking
+scoreboard players reset #mirror_room Ticking
+scoreboard players reset #laundry_room Ticking
+scoreboard players reset #butlers_room Ticking
+scoreboard players reset #hidden_room Ticking
+scoreboard players reset #conservatory Ticking
+scoreboard players reset #dining_room Ticking
+scoreboard players reset #kitchen Ticking
+scoreboard players reset #boneyard Ticking
+scoreboard players reset #graveyard Ticking
+scoreboard players reset #courtyard Ticking
+scoreboard players reset #bottom_of_the_well Ticking
+scoreboard players reset #rec_room Ticking
+scoreboard players reset #main_stairs Ticking
+scoreboard players reset #tea_room Ticking
+scoreboard players reset #hallway Ticking
+scoreboard players reset #washroom_2 Ticking
+scoreboard players reset #bathroom_2 Ticking
+scoreboard players reset #nanas_room Ticking
+scoreboard players reset #astral_hall Ticking
+scoreboard players reset #observatory Ticking
+scoreboard players reset #billiards_room Ticking
+scoreboard players reset #projection_room Ticking
+scoreboard players reset #twins_room Ticking
+scoreboard players reset #safari_room Ticking
+scoreboard players reset #attic_hallway_1 Ticking
+scoreboard players reset #balcony_2 Ticking
+scoreboard players reset #attic_hallway_2 Ticking
+scoreboard players reset #telephone_room Ticking
+scoreboard players reset #breaker_room Ticking
+scoreboard players reset #cellar Ticking
+scoreboard players reset #basement_hallway Ticking
+scoreboard players reset #curved_hallway Ticking
+scoreboard players reset #clockwork_room Ticking
+scoreboard players reset #roof Ticking
+scoreboard players reset #armory Ticking
+scoreboard players reset #ceramics_studio Ticking
+scoreboard players reset #sealed_room Ticking
+scoreboard players reset #pipe_room Ticking
+scoreboard players reset #cold_storage Ticking
+scoreboard players reset #sitting_room Ticking
+scoreboard players reset #guest_room Ticking
+scoreboard players reset #artists_studio Ticking
+scoreboard players reset #secret_altar Ticking
+scoreboard players reset #underground_lab Ticking
+scoreboard players reset #training_room Ticking
+scoreboard players reset #ghost_portrificationizer_room Ticking
+scoreboard players reset #gallery Ticking

@@ -6,7 +6,7 @@ execute if entity @s[tag=nursery] run tag @e[tag=this_entity,limit=1] add nurser
 execute if entity @s[tag=storage_room] run tag @e[tag=this_entity,limit=1] add storage_room
 execute if entity @s[tag=hidden_room] run tag @e[tag=this_entity,limit=1] add hidden_room
 execute if entity @s[tag=conservatory] run tag @e[tag=this_entity,limit=1] add conservatory
-execute if entity @s[tag=dinning_room] run tag @e[tag=this_entity,limit=1] add dinning_room
+execute if entity @s[tag=dining_room] run tag @e[tag=this_entity,limit=1] add dining_room
 execute if entity @s[tag=kitchen] run tag @e[tag=this_entity,limit=1] add kitchen
 execute if entity @s[tag=rec_room] run tag @e[tag=this_entity,limit=1] add rec_room
 execute if entity @s[tag=nanas_room] run tag @e[tag=this_entity,limit=1] add nanas_room

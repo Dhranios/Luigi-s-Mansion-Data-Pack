@@ -2,7 +2,7 @@ execute if entity @s[tag=dead] run playsound luigis_mansion:entity.gold_mouse.va
 execute if entity @s[tag=dead,tag=!study,tag=!main_hallway,tag=!dinning_room,tag=!kitchen,tag=!hallway,tag=!tea_room_cheese,tag=!tea_room_random,tag=!fortune_tellers_room,tag=!safari_room,tag=!sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse
 execute if entity @s[tag=dead,tag=study] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/study
 execute if entity @s[tag=dead,tag=main_hallway] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/main_hallway
-execute if entity @s[tag=dead,tag=dinning_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/dinning_room
+execute if entity @s[tag=dead,tag=dining_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/dining_room
 execute if entity @s[tag=dead,tag=kitchen] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/kitchen
 execute if entity @s[tag=dead,tag=hallway] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/hallway
 execute if entity @s[tag=dead,tag=tea_room_random] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/tea_room_random
@@ -12,7 +12,7 @@ execute if entity @s[tag=dead,tag=safari_room] run loot spawn ~ ~ ~ loot luigis_
 execute if entity @s[tag=dead,tag=sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/sealed_room
 execute if entity @s[tag=dead,tag=study] run advancement grant @a only luigis_mansion:mansion/study_gold_mouse
 execute if entity @s[tag=dead,tag=main_hallway] run advancement grant @a only luigis_mansion:mansion/main_hallway_gold_mouse
-execute if entity @s[tag=dead,tag=dinning_room] run advancement grant @a only luigis_mansion:mansion/dining_room_gold_mouse
+execute if entity @s[tag=dead,tag=dining_room] run advancement grant @a only luigis_mansion:mansion/dining_room_gold_mouse
 execute if entity @s[tag=dead,tag=kitchen] run advancement grant @a only luigis_mansion:mansion/kitchen_gold_mouse
 execute if entity @s[tag=dead,tag=hallway] run advancement grant @a only luigis_mansion:mansion/hallway_gold_mouse
 execute if entity @s[tag=dead,tag=tea_room_random] run advancement grant @a only luigis_mansion:mansion/tea_room_random_gold_mouse
@@ -30,7 +30,7 @@ scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @s[tag=study] run function luigis_mansion:entities/gold_mouse/study
 execute if entity @s[tag=main_hallway] run function luigis_mansion:entities/gold_mouse/main_hallway
-execute if entity @s[tag=dinning_room] run function luigis_mansion:entities/gold_mouse/dinning_room
+execute if entity @s[tag=dining_room] run function luigis_mansion:entities/gold_mouse/dining_room
 execute if entity @s[tag=kitchen] run function luigis_mansion:entities/gold_mouse/kitchen
 execute if entity @s[tag=hallway] run function luigis_mansion:entities/gold_mouse/hallway
 execute if entity @s[tag=tea_room_random] run function luigis_mansion:entities/gold_mouse/tea_room_random

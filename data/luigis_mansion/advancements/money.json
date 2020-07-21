@@ -123,7 +123,34 @@
         "butlers_room_lamp": {
             "trigger": "minecraft:impossible"
         },
-        "hidden_room_chest": {
+        "hidden_room_chest_3": {
+            "trigger": "minecraft:impossible"
+        },
+        "hidden_room_chest_6": {
+            "trigger": "minecraft:impossible"
+        },
+        "hidden_room_chest_8": {
+            "trigger": "minecraft:impossible"
+        },
+        "hidden_room_trophy_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "hidden_room_trophy_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "hidden_room_lamp": {
+            "trigger": "minecraft:impossible"
+        },
+        "hidden_room_chest_8": {
+            "trigger": "minecraft:impossible"
+        },
+        "conservatory_closet": {
+            "trigger": "minecraft:impossible"
+        },
+        "conservatory_lamp": {
+            "trigger": "minecraft:impossible"
+        },
+        "dining_room_closet_2": {
             "trigger": "minecraft:impossible"
         },
         "dining_room_chest": {

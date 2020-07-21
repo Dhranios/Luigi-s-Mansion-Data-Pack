@@ -4,6 +4,8 @@ tag @e[tag=ghost,x=698,y=112,z=18,dx=8,dy=6,dz=41] add hallway
 
 execute as @a[gamemode=!spectator,x=700,y=112,z=20,dx=4,dy=6,dz=37] run function luigis_mansion:room/small_hallway/tick_per_player
 
+execute if entity @a[advancements={luigis_mansion:mansion/small_hallway=false}] unless score #small_hallway Wave matches 1.. run function luigis_mansion:room/small_hallway/wave_1
+
 execute as @e[tag=eternal_coin,scores={Room=6}] run scoreboard players add #temp Wave 1
 execute if score #temp Wave matches ..10 run advancement grant @a only luigis_mansion:money small_hallway_money
 scoreboard players reset #temp Wave

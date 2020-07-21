@@ -7,3 +7,4 @@ function luigis_mansion:room/master_bedroom/unlock_door
 function luigis_mansion:room/nursery/unlock_door
 function luigis_mansion:room/twins_room/unlock_door
 scoreboard players reset #small_hallway Ticking
+scoreboard players reset #small_hallway Wave

@@ -8,6 +8,7 @@ tag @s remove hurt_animation
 tag @s remove disappear
 scoreboard players set @s[tag=!lydia] AnimationProg 0
 scoreboard players set @s[tag=shivers] AnimationProg 5
+scoreboard players set @s[tag=mr_luggs] Dialog 858
 teleport @s[tag=shivers] 702 102 47
 scoreboard players set @s[tag=chauncey] Wave 461
 scoreboard players set @s VulnerableTime 0

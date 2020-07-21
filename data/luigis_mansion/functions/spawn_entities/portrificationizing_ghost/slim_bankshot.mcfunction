@@ -1,0 +1,3 @@
+execute if score #slim_bankshot OneGoHealth matches 5001.. run data merge entity @e[x=749.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:60}}}
+execute if score #slim_bankshot OneGoHealth matches 1001..5000 run data merge entity @e[x=749.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:62}}}
+execute if score #slim_bankshot OneGoHealth matches ..1000 run data merge entity @e[x=749.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:61}}}
