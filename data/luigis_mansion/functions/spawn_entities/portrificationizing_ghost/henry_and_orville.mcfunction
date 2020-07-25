@@ -1,3 +1,6 @@
-execute if score #henry_and_orville OneGoHealth matches 5001.. run data merge entity @e[x=753.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:19}}}
-execute if score #henry_and_orville OneGoHealth matches 1001..5000 run data merge entity @e[x=753.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:21}}}
-execute if score #henry_and_orville OneGoHealth matches ..1000 run data merge entity @e[x=753.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:20}}}
+execute if score #henry_and_orville OneGoHealth matches 5001.. unless score #henry_and_orville Rank matches 1.. run scoreboard players set #henry_and_orville Rank 1
+execute if score #henry_and_orville OneGoHealth matches 1001..5000 unless score #henry_and_orville Rank matches 2.. run scoreboard players set #henry_and_orville Rank 2
+execute if score #henry_and_orville OneGoHealth matches ..1000 unless score #henry_and_orville Rank matches 3.. run scoreboard players set #henry_and_orville Rank 3
+scoreboard players reset #henry_and_orville OneGoHealth
+scoreboard players reset #henry LastHealth
+scoreboard players reset #orville LastHealth

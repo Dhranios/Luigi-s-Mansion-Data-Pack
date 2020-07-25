@@ -5,4 +5,6 @@ execute positioned 791 77 2 run function luigis_mansion:spawn_entities/e_gadd
 scoreboard players set @s MusicType 3
 scoreboard players set @s Music 0
 scoreboard players set @s Choice 0
+tag @s remove seen_room_name
+tag @s remove seen_room_name_2
 scoreboard players set #Training Totals 0

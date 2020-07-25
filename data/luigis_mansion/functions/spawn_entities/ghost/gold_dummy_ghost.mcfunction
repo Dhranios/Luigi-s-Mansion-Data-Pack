@@ -6,3 +6,4 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 tag @e[tag=this_entity,limit=1] remove this_entity
+execute as @a[gamemode=!spectator,distance=..5] at @s run function luigis_mansion:entities/player/scare

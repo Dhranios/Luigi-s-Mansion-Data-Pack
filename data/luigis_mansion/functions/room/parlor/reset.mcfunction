@@ -31,7 +31,21 @@ execute positioned 686 114 9 run function luigis_mansion:blocks/purple_candles
 scoreboard players reset @e[x=686.5,y=113,z=7.5,distance=..0.7,type=minecraft:item_frame,limit=1] Dialog
 scoreboard players reset #parlor Ticking
 scoreboard players reset #parlor Wave
-scoreboard players reset #parlor_table_1 Searched
-scoreboard players reset #parlor_table_2 Searched
-scoreboard players reset #parlor_closet Searched
-scoreboard players reset #parlor_lamp Searched
+scoreboard players reset #parlor_painting_1
+scoreboard players reset #parlor_painting_2
+scoreboard players reset #parlor_painting_3
+scoreboard players reset #parlor_painting_4
+scoreboard players reset #parlor_painting_5
+scoreboard players reset #parlor_painting_6
+scoreboard players reset #parlor_painting_7
+scoreboard players reset #parlor_table_1
+scoreboard players reset #parlor_table_2
+scoreboard players reset #parlor_table_3
+scoreboard players reset #parlor_table_4
+scoreboard players reset #parlor_closet
+scoreboard players reset #parlor_lamp
+scoreboard players reset #parlor_chair
+scoreboard players reset #parlor_couch
+scoreboard players reset #parlor_candle_1
+scoreboard players reset #parlor_candle_2
+scoreboard players reset #parlor_candle_3

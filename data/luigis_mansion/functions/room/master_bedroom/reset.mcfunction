@@ -16,6 +16,7 @@ scoreboard players reset #master_bedroom Ticking
 scoreboard players reset #master_bedroom Wave
 scoreboard players reset #master_bedroom_table_1 Searched
 scoreboard players reset #master_bedroom_table_2 Searched
+scoreboard players reset #master_bedroom_plant Searched
 scoreboard players reset #master_bedroom_fan Searched
 scoreboard players reset #master_bedroom_fan HomeRot
 scoreboard players reset #master_bedroom_fan AnimationProg

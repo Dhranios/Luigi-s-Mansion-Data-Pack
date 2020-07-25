@@ -1,4 +1,6 @@
-execute if score #chauncey OneGoHealth matches 5001.. run data merge entity @e[x=761.5,y=79,z=-26.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:10}}}
-execute if score #chauncey OneGoHealth matches 1001..5000 run data merge entity @e[x=761.5,y=79,z=-26.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:12}}}
-execute if score #chauncey OneGoHealth matches ..1000 run data merge entity @e[x=761.5,y=79,z=-26.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:11}}}
+execute if score #chauncey OneGoHealth matches 5001.. unless score #chauncey Rank matches 1.. run scoreboard players set #chauncey Rank 1
+execute if score #chauncey OneGoHealth matches 1001..5000 unless score #chauncey Rank matches 2.. run scoreboard players set #chauncey Rank 2
+execute if score #chauncey OneGoHealth matches ..1000 unless score #chauncey Rank matches 3.. run scoreboard players set #chauncey Rank 3
+scoreboard players reset #chauncey OneGoHealth
+scoreboard players reset #chauncey LastHealth
 advancement grant @a only luigis_mansion:mansion/small_hallway

@@ -16,7 +16,7 @@ execute unless entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansio
 stopsound @a[advancements={luigis_mansion:mansion/roof=false}] music
 playsound luigis_mansion:music.cleared_room music @a[advancements={luigis_mansion:mansion/roof=false}] ~ ~ ~ 10000
 scoreboard players set @a[advancements={luigis_mansion:mansion/roof=false}] Music 40
-scoreboard players set @a[advancements={luigis_mansion:mansion/roof=false}] MusicType 9
+scoreboard players set @a[advancements={luigis_mansion:mansion/roof=false}] MusicType 8
 advancement grant @a only luigis_mansion:mansion/roof
 execute as @e[scores={Room=50},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
 execute as @e[scores={Room=50},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}

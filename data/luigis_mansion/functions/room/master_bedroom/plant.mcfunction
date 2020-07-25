@@ -1,0 +1,2 @@
+execute if entity @a[advancements={luigis_mansion:money={master_bedroom_plant=false}},limit=1] positioned 688 115 56 run function luigis_mansion:spawn_entities/item/green_emerald
+advancement grant @a only luigis_mansion:money master_bedroom_plant

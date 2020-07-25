@@ -36,9 +36,12 @@ scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
 scoreboard objectives add PrevMusicType dummy
+scoreboard objectives add Rank dummy
 scoreboard objectives add Room dummy
 scoreboard objectives add Searched dummy
+scoreboard objectives add Searching dummy
 scoreboard objectives add Sound dummy
+scoreboard objectives add SpawnTime dummy
 scoreboard objectives add Steps dummy
 scoreboard objectives add StunTime dummy
 scoreboard objectives add Talk minecraft.custom:minecraft.talked_to_villager
@@ -46,6 +49,7 @@ scoreboard objectives add TargetX dummy
 scoreboard objectives add TargetY dummy
 scoreboard objectives add TargetZ dummy
 scoreboard objectives add Ticking dummy
+scoreboard objectives add Time dummy
 scoreboard objectives add Totals dummy
 scoreboard objectives add VacuumTime dummy
 scoreboard objectives add Variant dummy

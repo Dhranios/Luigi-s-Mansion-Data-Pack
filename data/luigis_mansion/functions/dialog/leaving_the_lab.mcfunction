@@ -4,4 +4,4 @@ teleport @s[scores={Dialog=220..259}] ~ ~ ~0.1 0 0
 execute if entity @s[scores={Dialog=240}] run setblock 789 90 16 minecraft:oak_door[facing=north,half=lower,hinge=left,open=true]
 execute if entity @s[scores={Dialog=260}] run setblock 789 90 16 minecraft:oak_door[facing=north,half=lower,hinge=left,open=false]
 teleport @s[scores={Dialog=260}] ~ ~-100 ~
-tag @s[scores={Dialog=260}] add dead
+data merge entity @s[scores={Dialog=260}] {Health:0.0f,DeathTime:19s}

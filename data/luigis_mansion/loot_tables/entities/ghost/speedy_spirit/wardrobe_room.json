@@ -13,7 +13,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.coin\"}'},luigis_mansion:{id:\"luigis_mansion:coin\"}}"
+							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.gold_coin\"}'},luigis_mansion:{id:\"luigis_mansion:gold_coin\"}}"
 						}
 					]
 				}

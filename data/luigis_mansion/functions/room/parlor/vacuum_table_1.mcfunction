@@ -1,1 +1,3 @@
-tag @e[x=692.5,y=112,z=12.5,distance=..0.7,tag=hidden_boo] add spawn
+execute if entity @e[x=691.0,y=112,z=12.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #parlor_table_1 Searching 1
+execute unless entity @e[x=691.0,y=112,z=12.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #parlor_table_1 Searching
+execute if score #parlor_table_1 Searching matches 20 run function luigis_mansion:room/parlor/search_table_1

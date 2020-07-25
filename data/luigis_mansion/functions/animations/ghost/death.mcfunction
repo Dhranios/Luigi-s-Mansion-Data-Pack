@@ -12,6 +12,6 @@ scoreboard players set @s[scores={AnimationProg=3..}] AnimationProg 1
 
 execute at @s run teleport @s ^ ^ ^-0.6
 
-execute at @s[scores={AnimationProg=2}] if entity @a[gamemode=!spectator,distance=..0.7] run scoreboard players add #Ghosts_caught Totals 1
-execute at @s[scores={AnimationProg=2},tag=gold_dummy_ghost] if entity @a[gamemode=!spectator,distance=..0.7] run scoreboard players add #Training Totals 1
+execute at @s[scores={AnimationProg=2}] if entity @a[gamemode=!spectator,distance=..0.7] run scoreboard players add #ghosts_caught Totals 1
+execute at @s[scores={AnimationProg=2},tag=gold_dummy_ghost] if entity @a[gamemode=!spectator,distance=..0.7] run scoreboard players add #training Totals 1
 execute at @s[scores={AnimationProg=2}] if entity @a[gamemode=!spectator,distance=..0.7] run tag @s add dead

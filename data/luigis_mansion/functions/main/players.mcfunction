@@ -37,7 +37,7 @@ execute if entity @s[scores={Health=1..}] store result score @s Damage run data 
 scoreboard players operation @s[scores={Health=1..}] Damage += #100 Constants
 scoreboard players operation @s[scores={Health=1..,Damage=1..}] Damage += @s ForcedDamage
 scoreboard players operation @s[scores={Health=1..,Invulnerable=0}] Health -= @s Damage
-execute if entity @s[scores={Health=1..,Damage=1..,Invulnerable=0}] run function luigis_mansion:entities/player/drop_coins
+execute if entity @s[scores={Health=1..,Damage=1..,Invulnerable=0}] run function luigis_mansion:entities/player/drop_gold_coins
 scoreboard players set @s[scores={Damage=1..}] Invulnerable 10
 scoreboard players set @s[scores={ForcedDamage=1..,Damage=1..}] ForcedDamage 0
 scoreboard players set @s[scores={ForcedDamage=..-1,Damage=1..}] ForcedDamage 0
@@ -46,7 +46,7 @@ effect give @s minecraft:saturation 1000000 0 true
 execute unless entity @s[scores={Health=-100..}] run effect give @s minecraft:health_boost 1000000 19 true
 execute unless entity @s[scores={Health=-100..}] run effect give @s minecraft:instant_health 1 19 true
 execute unless entity @s[scores={Health=-100..}] run scoreboard players set @s Health 100
-title @s actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
+title @s[gamemode=!creative,gamemode=!spectator] actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
 
 stopsound @s[scores={Health=..0},gamemode=!spectator] music
 playsound luigis_mansion:music.game_over music @s[scores={Health=..0},gamemode=!spectator] ~ ~ ~ 1000

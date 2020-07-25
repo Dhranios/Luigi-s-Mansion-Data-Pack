@@ -43,3 +43,4 @@ execute if entity @s[tag=dancing] store result score @e[tag=this_entity,limit=1]
 execute if entity @s[tag=dancing] store result score @e[tag=this_entity,limit=1] HomeZ run data get entity @s Pos[2] 100
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:entity.ghost_guy.spawn hostile @a ~ ~ ~ 1
+execute as @a[gamemode=!spectator,distance=..5] at @s run function luigis_mansion:entities/player/scare

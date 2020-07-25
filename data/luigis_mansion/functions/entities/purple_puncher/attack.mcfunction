@@ -1,8 +1,6 @@
 scoreboard players add @s[scores={AnimationProg=1..60}] AnimationProg 1
 execute unless entity @s[scores={AnimationProg=1..}] run scoreboard players set @s AnimationProg 1
 
-teleport @s[scores={AnimationProg=1..39}] ^ ^ ^0.0125
-execute at @s[scores={AnimationProg=1..20}] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,gamemode=!spectator] run tag @s add stop_attack
 scoreboard players set #temp Move 6
 execute if entity @s[scores={AnimationProg=41}] run playsound luigis_mansion:entity.purple_puncher.attack hostile @a ~ ~ ~ 1
 execute if entity @s[scores={AnimationProg=41}] rotated ~ 0 run function luigis_mansion:entities/ghost/move_forward
@@ -32,7 +30,3 @@ execute at @s[scores={AnimationProg=41..60}] if entity @a[distance=..1,gamemode=
 tag @s[scores={AnimationProg=60},tag=!laugh] add complain
 tag @s[scores={AnimationProg=60}] remove attack
 scoreboard players reset @s[scores={AnimationProg=60}] AnimationProg
-
-scoreboard players reset @s[tag=stop_attack] AnimationProg
-tag @s[tag=stop_attack] remove attack
-tag @s[tag=stop_attack] remove stop_attack

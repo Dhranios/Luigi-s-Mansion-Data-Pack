@@ -5,3 +5,5 @@ playsound luigis_mansion:music.leaving_the_lab music @s ~ ~ ~ 1000
 scoreboard players set @s MusicType 0
 scoreboard players set @s Music 260
 scoreboard players set @s Choice 0
+tag @s remove seen_room_name
+tag @s remove seen_room_name_2

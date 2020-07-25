@@ -1,3 +1,5 @@
-execute if score #melody_pianissima OneGoHealth matches 5001.. run data merge entity @e[x=761.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:31}}}
-execute if score #melody_pianissima OneGoHealth matches 1001..5000 run data merge entity @e[x=761.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:33}}}
-execute if score #melody_pianissima OneGoHealth matches ..1000 run data merge entity @e[x=761.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:32}}}
+execute if score #melody_pianissima OneGoHealth matches 5001.. unless score #melody_pianissima Rank matches 1.. run scoreboard players set #melody_pianissima Rank 1
+execute if score #melody_pianissima OneGoHealth matches 1001..5000 unless score #melody_pianissima Rank matches 2.. run scoreboard players set #melody_pianissima Rank 2
+execute if score #melody_pianissima OneGoHealth matches ..1000 unless score #melody_pianissima Rank matches 3.. run scoreboard players set #melody_pianissima Rank 3
+scoreboard players reset #melody_pianissima OneGoHealth
+scoreboard players reset #melody_pianissima LastHealth

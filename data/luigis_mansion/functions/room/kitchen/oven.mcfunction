@@ -1,0 +1,2 @@
+execute if entity @a[advancements={luigis_mansion:money={kitchen_oven=false}},limit=1] positioned 688 102 41.0 run function luigis_mansion:spawn_entities/item/red_ruby
+advancement grant @a only luigis_mansion:money kitchen_oven

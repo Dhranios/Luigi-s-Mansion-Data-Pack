@@ -7,3 +7,4 @@ scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:entity.mirror_ghost.spawn hostile @a ~ ~ ~ 1
+execute as @a[gamemode=!spectator,distance=..5] at @s run function luigis_mansion:entities/player/scare

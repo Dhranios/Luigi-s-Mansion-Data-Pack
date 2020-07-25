@@ -1,0 +1,1 @@
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:glowstone_dust",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'},luigis_mansion:{id:"luigis_mansion:gold_coin"}}},Age:5400s}

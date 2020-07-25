@@ -1,3 +1,4 @@
+function #luigis_mansion:loaded_add_ons
 execute store result score #players Totals if entity @a[gamemode=!spectator]
 execute at @a run fill ~-2 ~-2 ~-2 ~2 ~2 ~2 minecraft:air replace minecraft:torch
 execute as @a at @s run function luigis_mansion:main/players

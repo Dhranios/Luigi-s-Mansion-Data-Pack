@@ -1,3 +1,3 @@
-execute if block 690 112 2 minecraft:white_wool run setblock 690 112 2 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:parlor/table_vacuumed"}
-execute if block 690 112 2 minecraft:structure_block run setblock 690 112 3 minecraft:redstone_block
-tag @e[x=692.5,y=112,z=3.5,distance=..0.7,tag=hidden_boo] add spawn
+execute if entity @e[x=686.0,y=112,z=5.0,dx=1,dy=0,dz=5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #parlor_table_2 Searching 1
+execute unless entity @e[x=686.0,y=112,z=5.0,dx=1,dy=0,dz=5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #parlor_table_2 Searching
+execute if score #parlor_table_2 Searching matches 20 run function luigis_mansion:room/parlor/search_table_2

@@ -18,10 +18,10 @@
         "parlor_closet": {
             "trigger": "minecraft:impossible"
         },
-        "parlor_table_1": {
+        "parlor_table_2": {
             "trigger": "minecraft:impossible"
         },
-        "parlor_table_2": {
+        "parlor_table_4": {
             "trigger": "minecraft:impossible"
         },
         "anteroom_lamp_1": {
@@ -37,6 +37,18 @@
             "trigger": "minecraft:impossible"
         },
         "wardrobe_room_closet_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "balcony_1_plant_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "balcony_1_plant_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "balcony_1_plant_3": {
+            "trigger": "minecraft:impossible"
+        },
+        "balcony_1_plant_4": {
             "trigger": "minecraft:impossible"
         },
         "small_hallway_money": {
@@ -55,6 +67,9 @@
             "trigger": "minecraft:impossible"
         },
         "master_bedroom_table_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "master_bedroom_plant": {
             "trigger": "minecraft:impossible"
         },
         "master_bedroom_fan": {
@@ -154,6 +169,21 @@
             "trigger": "minecraft:impossible"
         },
         "dining_room_chest": {
+            "trigger": "minecraft:impossible"
+        },
+        "kitchen_closet": {
+            "trigger": "minecraft:impossible"
+        },
+        "kitchen_oven": {
+            "trigger": "minecraft:impossible"
+        },
+        "kitchen_lamp_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "boneyard_plant": {
+            "trigger": "minecraft:impossible"
+        },
+        "graveyard_rain_pipe": {
             "trigger": "minecraft:impossible"
         },
         "courtyard_chest": {

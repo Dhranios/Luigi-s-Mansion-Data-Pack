@@ -16,13 +16,20 @@ execute unless entity @e[type=minecraft:item,nbt={Item:{tag:{luigis_mansion:{id:
 execute unless entity @e[type=minecraft:item,nbt={Item:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}},limit=1] unless entity @e[type=minecraft:zombie,tag=first_key,limit=1] unless entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}]},limit=1] if entity @a[advancements={luigis_mansion:keys={parlor=false}},limit=1] if entity @e[x=699,y=112,z=7,dx=0,dy=1,dz=1,tag=door] run summon minecraft:zombie 714.0 104 8.0 {Tags:["first_key"],NoAI:1b,Invulnerable:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1}}]}
 execute if entity @a[gamemode=!spectator,x=714.0,y=102,z=8.0,distance=..5] run tag @e[type=minecraft:zombie,tag=first_key,limit=1] add play
 
-execute as @e[tag=eternal_coin,scores={Room=1}] run scoreboard players add #temp Wave 1
+execute as @e[tag=eternal_gold_coin,scores={Room=1}] run scoreboard players add #temp Wave 1
 execute if score #temp Wave matches ..7 if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] run advancement grant @a only luigis_mansion:money foyer_money
 scoreboard players reset #temp Wave
 
-execute if block 709 103 2 minecraft:white_wool if entity @e[x=708.0,y=103,z=2.0,dx=1,dy=2,dz=1,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run function luigis_mansion:room/foyer/vacuum_mirror
-execute if entity @e[x=714.0,y=114,z=8.0,distance=..3,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run function luigis_mansion:room/foyer/vacuum_chandelier
-execute if entity @e[x=708.5,y=108,z=8.0,distance=..1.5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run function luigis_mansion:room/foyer/vacuum_lamp
+execute unless block 709 102 12 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/foyer/search_table
+
+function luigis_mansion:room/foyer/vacuum_mirror
+function luigis_mansion:room/foyer/vacuum_chandelier
+function luigis_mansion:room/foyer/vacuum_lamp
+function luigis_mansion:room/foyer/vacuum_candle_1
+function luigis_mansion:room/foyer/vacuum_candle_2
+function luigis_mansion:room/foyer/vacuum_jar_1
+function luigis_mansion:room/foyer/vacuum_jar_2
+function luigis_mansion:room/foyer/vacuum_table
 
 execute if entity @e[x=708.5,y=108,z=8.0,distance=..1.5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.58"}]}
 execute if entity @e[x=714.0,y=102,z=2.0,dx=0,dy=3,dz=0,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.59"}]}

@@ -18,3 +18,4 @@ execute at @s[tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,sc
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!collided,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/gold_ghost/laugh
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!collided,tag=complain,scores={StunTime=0}] run function luigis_mansion:entities/gold_ghost/complain
 execute if entity @s[tag=!fleeing,tag=collided,scores={StunTime=0}] run function luigis_mansion:entities/ghost/collided
+tag @s[tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={StunTime=0,SpawnTime=120..},tag=!dialog] add disappear

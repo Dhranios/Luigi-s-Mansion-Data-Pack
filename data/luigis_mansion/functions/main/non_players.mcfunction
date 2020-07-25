@@ -1,6 +1,8 @@
 execute if entity @s[tag=ghost_marker] run function luigis_mansion:entities/ghost_marker
 execute if entity @s[tag=ghost,tag=!ghost_marker] run function luigis_mansion:entities/ghost
 execute if entity @s[tag=bowling_ball] run function luigis_mansion:entities/bowling_ball
+execute if entity @s[tag=spit_fire] run function luigis_mansion:entities/spit_fire
+execute if entity @s[tag=bone] run function luigis_mansion:entities/bone
 execute if entity @s[tag=bomb] run function luigis_mansion:entities/bomb
 execute if entity @s[tag=vacuumable,tag=!ball] run function luigis_mansion:entities/vacuumable
 execute if entity @s[tag=ball] run function luigis_mansion:entities/ball
@@ -21,8 +23,9 @@ data merge entity @s[type=minecraft:zombie,nbt=!{DrownedConversionTime:-1,InWate
 data merge entity @s[type=minecraft:husk,nbt=!{DrownedConversionTime:-1,InWaterTime:-1}] {DrownedConversionTime:-1,InWaterTime:-1}
 data merge entity @s[type=minecraft:wandering_trader,nbt={DespawnDelay:2}] {DespawnDelay:2147483647}
 data merge entity @s[type=minecraft:trader_llama,nbt={DespawnDelay:2}] {DespawnDelay:2147483647}
-data merge entity @s[type=minecraft:item,tag=bannana_peel] {Air:0}
-data merge entity @s[type=minecraft:item,tag=bannana_peel] {Air:1}
+data merge entity @s[type=minecraft:item] {Air:0}
+data merge entity @s[type=minecraft:item] {Air:1}
+execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:lightning_bolt,distance=0.1..]
 
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
 scoreboard players reset @s[tag=dead]

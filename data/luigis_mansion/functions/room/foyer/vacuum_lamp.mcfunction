@@ -1,10 +1,3 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","poison_mushroom"],Duration:1}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","nothing"],Duration:1}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","small_heart"],Duration:1}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","money"],Duration:1}
-tag @e[type=minecraft:area_effect_cloud,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=poison_mushroom] unless score #foyer_lamp Searched matches 1 positioned 708 107 8.0 run function luigis_mansion:spawn_entities/item/poison_mushroom
-execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=small_heart] unless score #foyer_lamp Searched matches 1 positioned 708 107 8.0 run function luigis_mansion:spawn_entities/item/small_heart
-execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=money] unless score #foyer_lamp Searched matches 1 run function luigis_mansion:room/foyer/lamp
-scoreboard players set #foyer_lamp Searched 1
+execute if entity @e[x=708.5,y=108,z=8.0,distance=..1.5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #foyer_lamp Searching 1
+execute unless entity @e[x=708.5,y=108,z=8.0,distance=..1.5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #foyer_lamp Searching
+execute if score #foyer_lamp Searching matches 20 run function luigis_mansion:room/foyer/search_lamp

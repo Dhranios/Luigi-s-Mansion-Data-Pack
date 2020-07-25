@@ -39,6 +39,12 @@
         "extinguished_kitchen_fire": {
             "trigger": "minecraft:impossible"
         },
+        "watered_boneyard_plant_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "watered_boneyard_plant_2": {
+            "trigger": "minecraft:impossible"
+        },
         "area_2_key": {
             "trigger": "minecraft:impossible"
         },

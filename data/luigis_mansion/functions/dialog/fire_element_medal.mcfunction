@@ -1,7 +1,7 @@
 scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a MusicType 19
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a Music 0
-execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.1"}]}
+execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.1.more"}]}
 execute if entity @s[scores={Dialog=128}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.2"}]}
 execute if entity @s[scores={Dialog=152}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.3"}]}

@@ -1,3 +1,5 @@
-execute if score #slim_bankshot OneGoHealth matches 5001.. run data merge entity @e[x=749.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:60}}}
-execute if score #slim_bankshot OneGoHealth matches 1001..5000 run data merge entity @e[x=749.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:62}}}
-execute if score #slim_bankshot OneGoHealth matches ..1000 run data merge entity @e[x=749.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:61}}}
+execute if score #slim_bankshot OneGoHealth matches 5001.. unless score #slim_bankshot Rank matches 1.. run scoreboard players set #slim_bankshot Rank 1
+execute if score #slim_bankshot OneGoHealth matches 1001..5000 unless score #slim_bankshot Rank matches 2.. run scoreboard players set #slim_bankshot Rank 2
+execute if score #slim_bankshot OneGoHealth matches ..1000 unless score #slim_bankshot Rank matches 3.. run scoreboard players set #slim_bankshot Rank 3
+scoreboard players reset #slim_bankshot OneGoHealth
+scoreboard players reset #slim_bankshot LastHealth

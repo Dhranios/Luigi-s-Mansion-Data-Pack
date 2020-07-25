@@ -1,5 +1,11 @@
-summon minecraft:arrow ^ ^2 ^0.3 {inGround:0b,Potion:"minecraft:water",CustomPotionColor:16711680,Tags:["fire","new"],damage:5.0d,NoGravity:1b}
-execute if entity @s[scores={Dialog=220..480}] run summon minecraft:area_effect_cloud ^ ^2 ^0.45 {Duration:1,Tags:["new"]}
-execute if entity @s[scores={Dialog=540..}] run summon minecraft:area_effect_cloud ^ ^2 ^0.55 {Duration:1,Tags:["new"]}
-execute as @e[type=minecraft:arrow,tag=new,limit=1] run function luigis_mansion:entities/mr_luggs/spit_fire_motion
-kill @e[type=minecraft:area_effect_cloud,tag=new,limit=1]
+execute anchored eyes facing entity @p[gamemode=!spectator,scores={Room=22}] feet anchored feet positioned ^ ^0.5 ^ run teleport @s ~ ~ ~ ~ ~
+playsound luigis_mansion:entity.mr_luggs.attack hostile @a ~ ~ ~ 1
+execute anchored eyes run summon minecraft:armor_stand ^ ^-0.3 ^0.3 {Fire:32767s,Marker:1b,Invulnerable:1b,Tags:["spit_fire","new"],ArmorItems:[{},{},{},{id:"minecraft:red_concrete",Count:1b}],Invisible:1b,DisabledSlots:2039583,Small:1b}
+scoreboard players set @e[tag=spit_fire,tag=new,limit=1] Move 1
+execute if entity @s[scores={Dialog=320..340}] run scoreboard players set @e[tag=spit_fire,tag=new,limit=1] Move 2
+execute if entity @s[scores={Dialog=440..480}] run scoreboard players set @e[tag=spit_fire,tag=new,limit=1] Move 3
+execute if entity @s[scores={Dialog=540..600}] run scoreboard players set @e[tag=spit_fire,tag=new,limit=1] Move 4
+execute if entity @s[scores={Dialog=680..760}] run scoreboard players set @e[tag=spit_fire,tag=new,limit=1] Move 5
+execute as @e[tag=spit_fire,tag=new,limit=1] at @s rotated as @e[tag=mr_luggs,limit=1] run teleport @s ~ ~ ~ ~ ~
+tag @e[tag=spit_fire,tag=new,limit=1] remove new
+execute anchored eyes facing entity @p[gamemode=!spectator,scores={Room=22}] eyes anchored feet positioned ^ ^ ^ run teleport @s ~ ~ ~ ~ ~

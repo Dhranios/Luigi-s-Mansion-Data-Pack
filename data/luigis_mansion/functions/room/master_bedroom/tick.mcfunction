@@ -26,6 +26,8 @@ execute if entity @e[x=690.0,y=112,z=53.0,dx=3,dy=0,dz=3,type=minecraft:area_eff
 execute if entity @e[x=691.5,y=112,z=43.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run function luigis_mansion:room/master_bedroom/vacuum_stool
 execute at @e[x=689.0,y=112,z=41.0,dx=2,dy=3,dz=2,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] if block ~ ~ ~ minecraft:pink_wool run function luigis_mansion:room/master_bedroom/vacuum_mirror
 
+execute as @e[x=686.0,y=112,z=56.0,dx=2,dy=3,dz=1,type=minecraft:area_effect_cloud,tag=water,limit=1] at @s unless block ~ ~ ~ minecraft:air run function luigis_mansion:room/master_bedroom/water_plant
+
 execute if entity @e[x=695.5,y=112,z=57.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.28"}]}
 execute if entity @e[x=695.5,y=114,z=58.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.5"}]}
 execute if entity @e[x=697.5,y=114,z=50.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.7"}]}

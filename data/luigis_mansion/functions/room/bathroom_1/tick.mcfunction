@@ -18,4 +18,6 @@ execute at @e[x=655.0,y=102,z=27.0,dx=1,dy=2,dz=2,type=minecraft:area_effect_clo
 execute at @e[x=655.0,y=102,z=32.0,dx=2,dy=1,dz=5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.48"}]}
 execute at @e[x=660.0,y=106,z=38.0,dx=2,dy=0,dz=0,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.12"}]}
 
+execute if entity @a[x=656.5,y=106.0,z=36.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:water_element_medal"}}}]}] unless entity @e[x=656.5,y=106.0,z=36.5,distance=..5,tag=water_elemental_ghost] positioned 656 106.0 36 run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost
+
 function luigis_mansion:room/door/main_hallway_bathroom_1

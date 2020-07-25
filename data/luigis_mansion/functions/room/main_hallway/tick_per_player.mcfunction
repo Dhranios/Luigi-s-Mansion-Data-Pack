@@ -10,6 +10,8 @@ execute if block 654 102 21 #minecraft:doors[open=true] if entity @s[nbt={Select
 execute if block 668 102 -17 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_stairs"}}}}] run function luigis_mansion:room/main_stairs/unlock_door
 execute if block 671 102 19 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"billiards_room"}}}}] run function luigis_mansion:room/billiards_room/unlock_door
 
+execute if entity @s[x=655.5,y=102,z=21.5,distance=..4] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"courtyard"}}}]}] run function luigis_mansion:room/main_hallway/clear_blockade
+
 execute if entity @s[x=704,y=102,z=-7,distance=..9,tag=!chance_check] if entity @s[advancements={luigis_mansion:mansion/main_hallway_gold_mouse=false}] unless entity @e[tag=gold_mouse,scores={Room=10},limit=1] run function luigis_mansion:room/main_hallway/gold_mouse
 tag @s[x=704,y=102,z=-7,distance=9..10,tag=chance_check] remove chance_check
 

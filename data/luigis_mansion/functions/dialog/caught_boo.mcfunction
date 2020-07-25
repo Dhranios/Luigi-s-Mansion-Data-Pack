@@ -1,5 +1,10 @@
 scoreboard players set @s[scores={Boos=1}] Variant -1
 scoreboard players set @s[scores={Boos=5}] Variant -2
+scoreboard players set @s[scores={Boos=17}] Variant -3
+scoreboard players set @s[scores={Boos=20}] Variant -4
+scoreboard players set @s[scores={Boos=38}] Variant -4
+scoreboard players set @s[scores={Boos=43}] Variant -5
+scoreboard players set @s[scores={Boos=49}] Variant -6
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","1"]}
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","2"]}
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","3"]}
@@ -14,6 +19,8 @@ execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effec
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","12"]}
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","13"]}
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","14"]}
+execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","15"]}
+execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","16"]}
 execute unless entity @s[scores={Variant=-10..}] run tag @e[type=minecraft:area_effect_cloud,tag=choice,limit=1,sort=random] add selected
 execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=1,limit=1] run scoreboard players set @s Variant 1
 execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=2,limit=1] run scoreboard players set @s Variant 2
@@ -29,6 +36,8 @@ execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:are
 execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=12,limit=1] run scoreboard players set @s Variant 12
 execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=13,limit=1] run scoreboard players set @s Variant 13
 execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=14,limit=1] run scoreboard players set @s Variant 14
+execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=15,limit=1] run scoreboard players set @s Variant 15
+execute unless entity @s[scores={Variant=-10..}] if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=16,limit=1] run scoreboard players set @s Variant 16
 kill @e[type=minecraft:area_effect_cloud,tag=choice]
 
 scoreboard players add @s Dialog 1
@@ -76,6 +85,12 @@ scoreboard players set @s[scores={Dialog=56,Variant=13}] Dialog 10000
 execute if entity @s[scores={Dialog=1,Variant=14}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.14","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1,Variant=14}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.14.more"}]}
 scoreboard players set @s[scores={Dialog=88,Variant=14}] Dialog 10000
+execute if entity @s[scores={Dialog=1,Variant=15}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.15","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=1,Variant=15}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.15.more"}]}
+scoreboard players set @s[scores={Dialog=80,Variant=15}] Dialog 10000
+execute if entity @s[scores={Dialog=1,Variant=16}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.16","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=1,Variant=16}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.16.more"}]}
+scoreboard players set @s[scores={Dialog=64,Variant=16}] Dialog 10000
 execute if entity @s[scores={Dialog=1,Variant=..-3}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra"}]}
 execute if entity @s[scores={Dialog=1,Variant=..-3}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra.more"}]}
 execute if entity @s[scores={Dialog=112,Variant=-3}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra.1"}]}

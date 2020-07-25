@@ -1,4 +1,3 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["chance","money"],Duration:1}
-tag @e[type=minecraft:area_effect_cloud,tag=chance,sort=random,limit=1] add selected
-execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=money] unless score #foyer_chandelier Searched matches 1 run function luigis_mansion:room/foyer/chandelier
-scoreboard players set #foyer_chandelier Searched 1
+execute if entity @e[x=714.0,y=114,z=8.0,distance=..3,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #foyer_chandelier Searching 1
+execute unless entity @e[x=714.0,y=114,z=8.0,distance=..3,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #foyer_chandelier Searching
+execute if score #foyer_chandelier Searching matches 20 run function luigis_mansion:room/foyer/search_chandelier

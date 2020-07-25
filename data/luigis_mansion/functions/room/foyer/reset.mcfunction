@@ -13,5 +13,10 @@ function luigis_mansion:room/parlor/unlock_door
 function luigis_mansion:room/small_hallway/unlock_door
 function luigis_mansion:room/main_hallway/unlock_door
 scoreboard players reset #foyer Ticking
-scoreboard players reset #foyer_chandelier Searched
-scoreboard players reset #foyer_lamp Searched
+scoreboard players reset #foyer_chandelier
+scoreboard players reset #foyer_lamp
+scoreboard players reset #foyer_candle_1
+scoreboard players reset #foyer_candle_2
+scoreboard players reset #foyer_jar_1
+scoreboard players reset #foyer_jar_2
+scoreboard players reset #foyer_table

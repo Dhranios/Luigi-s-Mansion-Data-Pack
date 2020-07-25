@@ -1,3 +1,5 @@
-execute if score #sir_weston OneGoHealth matches 5001.. run data merge entity @e[x=749.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:57}}}
-execute if score #sir_weston OneGoHealth matches 1001..5000 run data merge entity @e[x=749.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:59}}}
-execute if score #sir_weston OneGoHealth matches ..1000 run data merge entity @e[x=749.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] {Item:{id:"minecraft:filled_map",Count:1b,tag:{map:58}}}
+execute if score #sir_weston OneGoHealth matches 5001.. unless score #sir_weston Rank matches 1.. run scoreboard players set #sir_weston Rank 1
+execute if score #sir_weston OneGoHealth matches 1001..5000 unless score #sir_weston Rank matches 2.. run scoreboard players set #sir_weston Rank 2
+execute if score #sir_weston OneGoHealth matches ..1000 unless score #sir_weston Rank matches 3.. run scoreboard players set #sir_weston Rank 3
+scoreboard players reset #sir_weston OneGoHealth
+scoreboard players reset #sir_weston LastHealth
