@@ -27,6 +27,7 @@ scoreboard objectives add Invulnerable dummy
 scoreboard objectives add Keys dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastKeys dummy
+scoreboard objectives add Loaded dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add Move dummy
 scoreboard objectives add Music dummy

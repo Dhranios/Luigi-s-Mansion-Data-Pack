@@ -13,8 +13,6 @@ summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_12"]}
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_13"]}
 tag @e[type=minecraft:area_effect_cloud,tag=choice,limit=1,sort=random] add selected
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_1,limit=1] run teleport @s 686 102 31
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_1,limit=1] run data merge block 686 103 32 {LootTable:"luigis_mansion:search"}
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_1,limit=1] run data merge block 686 103 30 {LootTable:"luigis_mansion:search"}
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_2,limit=1] run teleport @s 687 102 36
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_3,limit=1] run teleport @s 692 102 56
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_4,limit=1] run teleport @s 687 102 41

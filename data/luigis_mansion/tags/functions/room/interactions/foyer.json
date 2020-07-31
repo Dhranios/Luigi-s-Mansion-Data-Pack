@@ -1,0 +1,12 @@
+{
+	"values": [
+		"luigis_mansion:room/foyer/interact_with_candle_1",
+		"luigis_mansion:room/foyer/interact_with_candle_2",
+		"luigis_mansion:room/foyer/interact_with_chandelier",
+		"luigis_mansion:room/foyer/interact_with_jar_1",
+		"luigis_mansion:room/foyer/interact_with_jar_2",
+		"luigis_mansion:room/foyer/interact_with_lamp",
+		"luigis_mansion:room/foyer/interact_with_mirror",
+		"luigis_mansion:room/foyer/interact_with_table"
+	]
+}

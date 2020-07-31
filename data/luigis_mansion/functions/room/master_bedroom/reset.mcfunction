@@ -14,9 +14,15 @@ fill 686 113 44 686 116 48 minecraft:white_wool
 fill 686 113 50 686 116 54 minecraft:white_wool
 scoreboard players reset #master_bedroom Ticking
 scoreboard players reset #master_bedroom Wave
-scoreboard players reset #master_bedroom_table_1 Searched
-scoreboard players reset #master_bedroom_table_2 Searched
-scoreboard players reset #master_bedroom_plant Searched
-scoreboard players reset #master_bedroom_fan Searched
-scoreboard players reset #master_bedroom_fan HomeRot
-scoreboard players reset #master_bedroom_fan AnimationProg
+scoreboard players reset #master_bedroom_table_1
+scoreboard players reset #master_bedroom_table_2
+scoreboard players reset #master_bedroom_plant
+scoreboard players reset #master_bedroom_bed
+scoreboard players reset #master_bedroom_chair
+scoreboard players reset #master_bedroom_mirror
+scoreboard players reset #master_bedroom_painting_1
+scoreboard players reset #master_bedroom_painting_2
+scoreboard players reset #master_bedroom_painting_3
+scoreboard players reset #master_bedroom_painting_4
+scoreboard players reset #master_bedroom_painting_5
+scoreboard players reset #master_bedroom_fan

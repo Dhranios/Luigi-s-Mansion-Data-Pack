@@ -1,3 +1,0 @@
-execute if entity @e[x=686.0,y=112,z=12.0,dx=1,dy=3,dz=4,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #parlor_closet Searching 1
-execute unless entity @e[x=686.0,y=112,z=12.0,dx=1,dy=3,dz=4,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #parlor_closet Searching
-execute if score #parlor_closet Searching matches 20 run function luigis_mansion:room/parlor/search_closet

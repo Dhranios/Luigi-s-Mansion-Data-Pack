@@ -21,11 +21,7 @@ summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_20"]}
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_21"]}
 tag @e[type=minecraft:area_effect_cloud,tag=choice,limit=1,sort=random] add selected
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_1,limit=1] run teleport @s 686 102 3
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_1,limit=1] run data merge block 686 103 4 {LootTable:"luigis_mansion:search"}
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_1,limit=1] run data merge block 686 103 2 {LootTable:"luigis_mansion:search"}
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_2,limit=1] run teleport @s 686 102 21
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_2,limit=1] run data merge block 686 103 22 {LootTable:"luigis_mansion:search"}
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_2,limit=1] run data merge block 686 103 20 {LootTable:"luigis_mansion:search"}
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_3,limit=1] run teleport @s 686 102 25
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_4,limit=1] run teleport @s 686 102 -1
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_5,limit=1] run teleport @s 689 102 18

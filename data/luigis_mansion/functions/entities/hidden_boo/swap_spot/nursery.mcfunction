@@ -17,8 +17,6 @@ execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,ta
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_6,limit=1] run teleport @s 715 112 45
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_7,limit=1] run teleport @s 715 112 44
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_8,limit=1] run teleport @s 708 112 41
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_8,limit=1] run data merge block 708 112 41 {LootTable:"luigis_mansion:search"}
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_8,limit=1] run data merge block 708 112 42 {LootTable:"luigis_mansion:search"}
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_9,limit=1] run teleport @s 712 113 41
 execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_10,limit=1] run teleport @s 714 113 41
 kill @e[type=minecraft:area_effect_cloud,tag=choice]

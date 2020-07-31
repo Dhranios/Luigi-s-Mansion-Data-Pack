@@ -1,3 +1,0 @@
-execute if entity @e[x=691.5,y=113,z=3.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #parlor_candle_3 Searching 1
-execute unless entity @e[x=691.5,y=113,z=3.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #parlor_candle_3 Searching
-execute if score #parlor_candle_3 Searching matches 20 run function luigis_mansion:room/parlor/search_candle_3

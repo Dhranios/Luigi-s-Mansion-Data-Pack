@@ -10,5 +10,20 @@ data merge block 675 113 28 {Items:[]}
 data merge block 675 113 21 {Items:[]}
 scoreboard players reset #wardrobe_room Ticking
 scoreboard players reset #wardrobe_room Wave
-scoreboard players reset #wardrobe_room_lamp Searched
-scoreboard players reset #wardrobe_room_closet_2 Searched
+scoreboard players reset #wardrobe_room_lamp
+scoreboard players reset #wardrobe_room_closet_1
+scoreboard players reset #wardrobe_room_closet_2
+scoreboard players reset #wardrobe_room_closet_3
+scoreboard players reset #wardrobe_room_mirror
+scoreboard players reset #wardrobe_room_hat_rack
+scoreboard players reset #wardrobe_room_shoe_rack
+scoreboard players reset #wardrobe_room_painting_1
+scoreboard players reset #wardrobe_room_painting_2
+scoreboard players reset #wardrobe_room_clothes_1
+scoreboard players reset #wardrobe_room_clothes_2
+scoreboard players reset #wardrobe_room_clothes_3
+scoreboard players reset #wardrobe_room_clothes_4
+scoreboard players reset #wardrobe_room_clothes_5
+scoreboard players reset #wardrobe_room_clothes_6
+scoreboard players reset #wardrobe_room_clothes_7
+scoreboard players reset #wardrobe_room_clothes_8

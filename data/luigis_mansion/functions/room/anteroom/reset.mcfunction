@@ -13,8 +13,8 @@ data merge block 674 113 -1 {Items:[]}
 function luigis_mansion:room/anteroom/remove_blockade
 scoreboard players reset #anteroom Ticking
 scoreboard players reset #anteroom Wave
-scoreboard players reset #anteroom_table_1 Searched
-scoreboard players reset #anteroom_table_2 Searched
-scoreboard players reset #anteroom_table_3 Searched
-scoreboard players reset #anteroom_lamp_1 Searched
-scoreboard players reset #anteroom_lamp_2 Searched
+scoreboard players reset #anteroom_table_1
+scoreboard players reset #anteroom_table_2
+scoreboard players reset #anteroom_table_3
+scoreboard players reset #anteroom_lamp_1
+scoreboard players reset #anteroom_lamp_2

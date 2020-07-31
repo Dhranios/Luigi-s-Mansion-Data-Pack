@@ -17,6 +17,17 @@ data merge block 686 113 22 {Items:[]}
 data merge block 686 113 20 {Items:[]}
 scoreboard players reset #study Ticking
 scoreboard players reset #study Wave
-scoreboard players reset #study_book_1 Searched
-scoreboard players reset #study_book_2 Searched
-scoreboard players reset #study_ceiling_lamp Searched
+scoreboard players reset #study_book_1
+scoreboard players reset #study_book_2
+scoreboard players reset #study_ceiling_lamp
+scoreboard players reset #study_bottled_ship
+scoreboard players reset #study_table
+scoreboard players reset #study_chair
+scoreboard players reset #study_rocking_chair
+scoreboard players reset #study_hat_rack
+scoreboard players reset #study_lamp
+scoreboard players reset #study_painting_1
+scoreboard players reset #study_painting_2
+scoreboard players reset #study_painting_3
+scoreboard players reset #study_painting_4
+scoreboard players reset #study_painting_5

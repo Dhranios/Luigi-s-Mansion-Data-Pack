@@ -20,24 +20,9 @@ execute as @e[tag=eternal_gold_coin,scores={Room=1}] run scoreboard players add 
 execute if score #temp Wave matches ..7 if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] run advancement grant @a only luigis_mansion:money foyer_money
 scoreboard players reset #temp Wave
 
-execute unless block 709 102 12 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/foyer/search_table
+function #luigis_mansion:room/interactions/foyer
 
-function luigis_mansion:room/foyer/vacuum_mirror
-function luigis_mansion:room/foyer/vacuum_chandelier
-function luigis_mansion:room/foyer/vacuum_lamp
-function luigis_mansion:room/foyer/vacuum_candle_1
-function luigis_mansion:room/foyer/vacuum_candle_2
-function luigis_mansion:room/foyer/vacuum_jar_1
-function luigis_mansion:room/foyer/vacuum_jar_2
-function luigis_mansion:room/foyer/vacuum_table
-
-execute if entity @e[x=708.5,y=108,z=8.0,distance=..1.5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.58"}]}
-execute if entity @e[x=714.0,y=102,z=2.0,dx=0,dy=3,dz=0,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.59"}]}
-execute if entity @e[x=714.0,y=102,z=13.0,dx=0,dy=3,dz=0,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.59"}]}
-execute if entity @e[x=709.0,y=102,z=11.0,dx=0,dy=1,dz=2,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.60"}]}
 execute if entity @e[x=707.0,y=102,z=7.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.55"}]}
-execute if entity @e[x=700.5,y=113,z=1.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.29"}]}
-execute if entity @e[x=700.5,y=113,z=14.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.29"}]}
 
 function luigis_mansion:room/door/foyer_parlor
 function luigis_mansion:room/door/foyer_small_hallway

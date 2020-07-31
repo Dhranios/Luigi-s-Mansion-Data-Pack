@@ -1,0 +1,6 @@
+execute if entity @e[x=686.0,y=112,z=5.0,dx=1,dy=0,dz=5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #parlor_table_2 Searching 1
+execute unless entity @e[x=686.0,y=112,z=5.0,dx=1,dy=0,dz=5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #parlor_table_2 Searching
+execute if score #parlor_table_2 Searching matches 20 run function luigis_mansion:room/parlor/search_table_2
+execute unless block 686 112 8 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/parlor/search_table_2
+execute unless block 686 112 7 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/parlor/search_table_2
+execute if entity @e[x=686.0,y=112,z=5.0,dx=1,dy=0,dz=5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.64"}]}

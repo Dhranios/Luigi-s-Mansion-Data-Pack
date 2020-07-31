@@ -3,4 +3,5 @@ execute if entity @a[advancements={luigis_mansion:money={nursery_lamp=false}},li
 execute if entity @a[advancements={luigis_mansion:money={nursery_lamp=false}},limit=1] positioned 714 116 49 run function luigis_mansion:spawn_entities/item/gold_coin
 execute if entity @a[advancements={luigis_mansion:money={nursery_lamp=false}},limit=1] positioned 712 116 49 run function luigis_mansion:spawn_entities/item/gold_coin
 execute if entity @a[advancements={luigis_mansion:money={nursery_lamp=false}},limit=1] positioned 713 115 49 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:money={nursery_lamp=true}},limit=1] tag @e[tag=selected] add nothing
 advancement grant @a only luigis_mansion:money nursery_lamp

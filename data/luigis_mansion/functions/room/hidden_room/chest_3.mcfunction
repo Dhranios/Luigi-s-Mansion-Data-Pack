@@ -28,4 +28,5 @@ execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest_3=fal
 execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest_3=false}},limit=1] positioned 715 103 32.0 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest_3=false}},limit=1] positioned 716 103 31 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest_3=false}},limit=1] positioned 716 103 32 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:money={hidden_room_chest_3=true}},limit=1] tag @e[tag=selected] add nothing
 advancement grant @a only luigis_mansion:money hidden_room_chest_3

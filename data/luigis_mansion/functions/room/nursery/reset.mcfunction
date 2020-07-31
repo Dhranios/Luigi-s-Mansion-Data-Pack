@@ -9,6 +9,14 @@ data merge block 708 112 41 {Items:[]}
 function luigis_mansion:room/nursery/remove_blockade
 scoreboard players reset #nursery Ticking
 scoreboard players reset #nursery Wave
-scoreboard players reset #nursery_painting_1 Searched
-scoreboard players reset #nursery_table Searched
-scoreboard players reset #nursery_lamp Searched
+scoreboard players reset #nursery_painting_1
+scoreboard players reset #nursery_painting_2
+scoreboard players reset #nursery_painting_3
+scoreboard players reset #nursery_table_1
+scoreboard players reset #nursery_table_2
+scoreboard players reset #nursery_toy_1
+scoreboard players reset #nursery_toy_2
+scoreboard players reset #nursery_chair_1
+scoreboard players reset #nursery_chair_2
+scoreboard players reset #nursery_lamp
+scoreboard players reset #nursery_crib

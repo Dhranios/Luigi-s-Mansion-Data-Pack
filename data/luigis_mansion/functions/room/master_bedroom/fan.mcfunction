@@ -13,4 +13,5 @@ execute if entity @a[advancements={luigis_mansion:money={master_bedroom_fan=fals
 execute if entity @a[advancements={luigis_mansion:money={master_bedroom_fan=false}},limit=1] positioned 691 117 51 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:money={master_bedroom_fan=false}},limit=1] positioned 689 117 47 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:money={master_bedroom_fan=false}},limit=1] positioned 694 117 47 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:money={master_bedroom_fan=true}},limit=1] tag @e[tag=selected] add nothing
 advancement grant @a only luigis_mansion:money master_bedroom_fan

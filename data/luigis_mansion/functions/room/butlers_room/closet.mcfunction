@@ -38,4 +38,5 @@ execute if entity @a[advancements={luigis_mansion:money={butlers_room_closet=fal
 execute if entity @a[advancements={luigis_mansion:money={butlers_room_closet=false}},limit=1] positioned 709 105 52 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:money={butlers_room_closet=false}},limit=1] positioned 709 105 51 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:money={butlers_room_closet=false}},limit=1] positioned 709 105 50 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:money={butlers_room_closet=true}},limit=1] tag @e[tag=selected] add nothing
 advancement grant @a only luigis_mansion:money butlers_room_closet
