@@ -1,2 +1,2 @@
-scoreboard players set @s AnimationProg 0
-tag @s add collided
+scoreboard players set @s[tag=!appear] Time 0
+tag @s[tag=!appear] add collided

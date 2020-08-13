@@ -13,5 +13,17 @@ setblock 674 104 -20 minecraft:air
 data merge block 674 102 -29 {Items:[]}
 scoreboard players reset #storage_room Ticking
 scoreboard players reset #storage_room Wave
-scoreboard players reset #storage_room_bucket Searched
-scoreboard players reset #storage_room_lamp Searched
+scoreboard players reset #storage_room_bucket
+scoreboard players reset #storage_room_lamp
+scoreboard players reset #storage_room_chair
+scoreboard players reset #storage_room_chairs
+scoreboard players reset #storage_room_crate_1
+scoreboard players reset #storage_room_crate_2
+scoreboard players reset #storage_room_crate_3
+scoreboard players reset #storage_room_crate_4
+scoreboard players reset #storage_room_crate_5
+scoreboard players reset #storage_room_crate_6
+scoreboard players reset #storage_room_crate_7
+scoreboard players reset #storage_room_crate_8
+scoreboard players reset #storage_room_vacuumable
+scoreboard players reset #storage_room_mirror

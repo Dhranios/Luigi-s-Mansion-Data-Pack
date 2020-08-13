@@ -1,43 +1,18 @@
-execute if entity @s[tag=dying,scores={AnimationProg=1}] run playsound luigis_mansion:entity.speedy_spirit.vacumed hostile @a ~ ~ ~ 1
-execute if entity @s[tag=dead,tag=!wardrobe_room,tag=!study,tag=!nursery,tag=!storage_room,tag=!hidden_room,tag=!conservatory,tag=!dinning_room,tag=!kitchen,tag=!rec_room,tag=!nanas_room,tag=!billiards_room,tag=!twins_room,tag=!breaker_room,tag=!cellar,tag=!sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit
-execute if entity @s[tag=dead,tag=wardrobe_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/bills
-execute if entity @s[tag=dead,tag=study] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/red_ruby
-execute if entity @s[tag=dead,tag=nursery] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=storage_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/gold_bars
-execute if entity @s[tag=dead,tag=hidden_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=conservatory] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=dining_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/green_emerald
-execute if entity @s[tag=dead,tag=kitchen] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/blue_sapphire
-execute if entity @s[tag=dead,tag=rec_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=nanas_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=billiards_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=twins_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=breaker_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/blue_sapphire
-execute if entity @s[tag=dead,tag=cellar] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
-execute if entity @s[tag=dead,tag=wardrobe_room] run advancement grant @a only luigis_mansion:mansion/wardrobe_room_speedy_spirit
-execute if entity @s[tag=dead,tag=study] run advancement grant @a only luigis_mansion:mansion/study_speedy_spirit
-execute if entity @s[tag=dead,tag=nursery] run advancement grant @a only luigis_mansion:mansion/nursery_speedy_spirit
-execute if entity @s[tag=dead,tag=storage_room] run advancement grant @a only luigis_mansion:mansion/storage_room_speedy_spirit
-execute if entity @s[tag=dead,tag=hidden_room] run advancement grant @a only luigis_mansion:mansion/hidden_room_speedy_spirit
-execute if entity @s[tag=dead,tag=conservatory] run advancement grant @a only luigis_mansion:mansion/conservatory_speedy_spirit
-execute if entity @s[tag=dead,tag=dining_room] run advancement grant @a only luigis_mansion:mansion/dining_room_speedy_spirit
-execute if entity @s[tag=dead,tag=kitchen] run advancement grant @a only luigis_mansion:mansion/kitchen_speedy_spirit
-execute if entity @s[tag=dead,tag=rec_room] run advancement grant @a only luigis_mansion:mansion/rec_room_speedy_spirit
-execute if entity @s[tag=dead,tag=nanas_room] run advancement grant @a only luigis_mansion:mansion/nanas_room_speedy_spirit
-execute if entity @s[tag=dead,tag=billiards_room] run advancement grant @a only luigis_mansion:mansion/billiards_room_speedy_spirit
-execute if entity @s[tag=dead,tag=twins_room] run advancement grant @a only luigis_mansion:mansion/twins_room_speedy_spirit
-execute if entity @s[tag=dead,tag=breaker_room] run advancement grant @a only luigis_mansion:mansion/breaker_room_speedy_spirit
-execute if entity @s[tag=dead,tag=cellar] run advancement grant @a only luigis_mansion:mansion/cellar_speedy_spirit
-execute if entity @s[tag=dead,tag=sealed_room] run advancement grant @a only luigis_mansion:mansion/sealed_room_speedy_spirit
+execute if entity @s[tag=dying,scores={HurtTime=1}] run function luigis_mansion:entities/speedy_spirit/spawn_money
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @s[scores={AnimationProg=1},tag=hurt] run playsound luigis_mansion:entity.speedy_spirit.hurt hostile @a ~ ~ ~ 1
-scoreboard players set @s[scores={AnimationProg=1},tag=hurt] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.speedy_spirit.hurt hostile @a ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.speedy_spirit.flee hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Sound=0},tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain] run playsound luigis_mansion:entity.speedy_spirit.ambient hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute at @s[tag=!fleeing,scores={StunTime=0}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=!fleeing,scores={StunTime=0}] run function luigis_mansion:entities/ghost/flee
+execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,scores={StunTime=0}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,scores={StunTime=0,SpawnTime=20..}] run function luigis_mansion:entities/ghost/flee
+execute if entity @s[tag=vanish] run function luigis_mansion:entities/speedy_spirit/vanish
+execute if entity @s[tag=appear] run function luigis_mansion:entities/speedy_spirit/appear
+execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/gold_ghost/flee
+execute if entity @s[tag=fleeing] run function luigis_mansion:animations/gold_ghost/flee
+execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/gold_ghost/hurt
+execute if entity @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/gold_ghost/hurt

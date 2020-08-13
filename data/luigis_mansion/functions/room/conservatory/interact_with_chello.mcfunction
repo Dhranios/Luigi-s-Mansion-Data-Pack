@@ -1,0 +1,4 @@
+execute if entity @e[x=661.0,y=102,z=8.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #conservatory_chello Searching 1
+execute unless entity @e[x=661.0,y=102,z=8.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #conservatory_chello Searching
+execute if score #conservatory_chello Searching matches 20 run function luigis_mansion:room/conservatory/search_chello
+execute if entity @e[x=661.0,y=102,z=8.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.44"}]}

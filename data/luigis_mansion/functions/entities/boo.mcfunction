@@ -1,11 +1,14 @@
-execute if entity @s[tag=dying,scores={AnimationProg=1}] run playsound luigis_mansion:entity.boo.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.boo.vacumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead,tag=!warped] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/boo
 execute if entity @s[tag=dead,tag=!warped] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead,tag=!warped] run function luigis_mansion:entities/boo/captured
+execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying] run function luigis_mansion:animations/boo/hurt
+execute if entity @s[tag=hurt,tag=!dying] run function luigis_mansion:animations/boo/hurt
+execute if entity @s[tag=fleeing] run function luigis_mansion:entities/boo/flee
 
-execute if entity @s[scores={AnimationProg=1},tag=hurt] run playsound luigis_mansion:entity.boo.hurt hostile @a ~ ~ ~ 1
-scoreboard players set @s[scores={AnimationProg=1},tag=hurt] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.boo.hurt hostile @a ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
@@ -20,6 +23,7 @@ execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entitie
 execute if entity @s[tag=!dead] run function luigis_mansion:entities/boo/warp
 execute if entity @s[tag=turn_to_marker] run function luigis_mansion:entities/boo/warp/all
 
+scoreboard players reset @s[tag=!hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!dying] Time
 scoreboard players reset @s[tag=!hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!dying] AnimationProg
 tag @s[tag=fleeing] remove attack
 tag @s remove disappear

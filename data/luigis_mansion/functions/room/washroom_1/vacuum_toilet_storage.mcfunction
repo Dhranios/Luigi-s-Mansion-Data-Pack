@@ -1,1 +1,0 @@
-tag @e[x=668.5,y=105,z=38.5,distance=..0.7,tag=hidden_boo] add spawn

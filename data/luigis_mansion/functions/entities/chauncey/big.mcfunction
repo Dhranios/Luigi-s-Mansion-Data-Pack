@@ -15,7 +15,7 @@ scoreboard players add @s[scores={Wave=..20}] Wave 1
 execute unless entity @s[scores={Wave=1..}] run scoreboard players add @s[tag=intro_done] Wave 1
 execute if entity @s[scores={Wave=1}] run tag @s remove left
 execute if entity @s[scores={Wave=1}] run tag @s remove laugh
-execute if entity @s[scores={Wave=1}] run scoreboard players reset @s AnimationProg
+scoreboard players set @s[scores={Wave=1}] Time 0
 execute if entity @s[scores={Wave=1}] as @p[gamemode=!spectator] unless entity @s[x=720,y=41,z=-19958,dx=7,dy=3,dz=15] run tag @e[tag=chauncey,type=minecraft:wither] add left
 teleport @s[scores={Wave=1..20},tag=left] 720.0 43 -19940.0 90 0
 teleport @s[scores={Wave=1..20},tag=!left] 720.0 43 -19940.0 -90 0
@@ -42,24 +42,25 @@ execute if entity @s[scores={Wave=360}] positioned 713 45 -19940 run function lu
 tag @s[scores={Wave=381}] add laugh
 scoreboard players set @s[scores={Wave=382}] VulnerableTime 80
 tag @s[scores={Wave=382}] remove laugh
-execute at @s[scores={Wave=382}] rotated ~ 0 run teleport @s ~ ~ -19944.0 ~ ~
+scoreboard players set @s[scores={Wave=382}] Time 0
+execute at @s[scores={Wave=382}] rotated ~ 0 run teleport @s ~ 41 -19944.0 ~ ~
 teleport @s[scores={Wave=462}] ~ 43 -19944
 execute if entity @s[scores={Wave=502..581}] facing entity @p[gamemode=!spectator] feet run teleport @s ~ ~ ~ ~ 0
 execute if entity @s[scores={Wave=522}] run playsound luigis_mansion:entity.chauncey.scream hostile @a ~ ~ ~ 3
 execute if entity @s[scores={Wave=542}] run playsound luigis_mansion:entity.chauncey.scream hostile @a ~ ~ ~ 3
 teleport @s[scores={Wave=562..581}] ~ ~-0.1 ~
 teleport @s[scores={Wave=582}] ~ ~ ~ 90 0
-scoreboard players set @s[scores={Wave=582}] AnimationProg 0
-scoreboard players add @s[scores={Wave=583}] AnimationProg 1
-teleport @s[scores={Wave=583,AnimationProg=1..10}] ^ ^0.2 ^0.2
-teleport @s[scores={Wave=583,AnimationProg=11..20}] ^ ^-0.2 ^0.2
-execute at @s[scores={Wave=583,AnimationProg=20}] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
-execute at @s[scores={Wave=583,AnimationProg=20}] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
+scoreboard players set @s[scores={Wave=582}] Dialog 0
+scoreboard players add @s[scores={Wave=583}] Dialog 1
+teleport @s[scores={Wave=583,Dialog=1..10}] ^ ^0.2 ^0.2
+teleport @s[scores={Wave=583,Dialog=11..20}] ^ ^-0.2 ^0.2
+execute at @s[scores={Wave=583,Dialog=20}] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
+execute at @s[scores={Wave=583,Dialog=20}] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
 execute at @s[x=712,y=41,z=-19958,dx=1,dy=20,dz=20,y_rotation=45..135,scores={Wave=583}] run teleport @s ~ ~ ~ ~90 0
 execute at @s[x=712,y=41,z=-19958,dx=20,dy=20,dz=1,y_rotation=135..-135,scores={Wave=583}] run teleport @s ~ ~ ~ ~90 0
 execute at @s[x=726,y=41,z=-19958,dx=1,dy=20,dz=20,y_rotation=-135..-45,scores={Wave=583}] run teleport @s ~ ~ ~ ~90 0
 execute at @s[x=712,y=41,z=-19944,dx=20,dy=20,dz=1,y_rotation=-45..45,scores={Wave=583}] run scoreboard players add @s Wave 1
-scoreboard players set @s[scores={Wave=583,AnimationProg=20}] AnimationProg 0
+scoreboard players set @s[scores={Wave=583,Dialog=20}] Dialog 0
 teleport @s[scores={Wave=584}] ~ 45 -19940.0
 execute if entity @s[scores={Wave=585..}] facing entity @p[gamemode=!spectator] feet run teleport @s 720.0 43 -19940.0 ~ 0
 execute if entity @s[scores={Wave=614}] run playsound luigis_mansion:entity.chauncey.scream hostile @a ~ ~ ~ 3

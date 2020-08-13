@@ -3,5 +3,3 @@ execute unless entity @s[advancements={luigis_mansion:mansion/dining_room=true},
 title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.dining_room"}
 tag @s add seen_room_name
 tag @s add seen_room_name_2
-
-execute if entity @s[advancements={luigis_mansion:mansion/dining_room_gold_mouse=false}] unless entity @s[advancements={luigis_mansion:mansion/dining_room=true},tag=!blackout] if entity @e[x=689.5,y=102,z=5.5,distance=..0.7,tag=gameboy_horror_scan] unless entity @e[tag=gold_mouse,tag=dining_room,limit=1] positioned 689 102 5 run function luigis_mansion:spawn_entities/vacuumable/gold_mouse/dining_room

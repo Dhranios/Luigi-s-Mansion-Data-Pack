@@ -20,3 +20,4 @@ scoreboard players reset #foyer_candle_2
 scoreboard players reset #foyer_jar_1
 scoreboard players reset #foyer_jar_2
 scoreboard players reset #foyer_table
+scoreboard players reset #foyer_mirror

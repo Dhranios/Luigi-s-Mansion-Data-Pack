@@ -20,3 +20,4 @@ scoreboard players reset #nursery_chair_1
 scoreboard players reset #nursery_chair_2
 scoreboard players reset #nursery_lamp
 scoreboard players reset #nursery_crib
+scoreboard players reset #nursery_chest

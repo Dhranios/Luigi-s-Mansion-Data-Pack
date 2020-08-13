@@ -1,6 +1,7 @@
 execute unless score #foyer Ticking matches 1 run function luigis_mansion:room/foyer/load
 execute as @e[type=!minecraft:item_frame,x=706,y=102,z=-3,dx=13,dy=16,dz=21] run scoreboard players set @s Room 1
 execute as @e[type=!minecraft:item_frame,x=698,y=112,z=-3,dx=21,dy=6,dz=21] run scoreboard players set @s Room 1
+tag @e[tag=ghost,scores={Room=1}] add hallway
 
 execute as @a[gamemode=!spectator,x=719,y=102,z=7,dx=0,dy=1,dz=1] unless entity @s[scores={MusicType=0}] run function luigis_mansion:other/music/set/silence
 execute as @a[gamemode=!spectator,x=707,y=102,z=-1,dx=10,dy=16,dz=17] run function luigis_mansion:room/foyer/tick_per_player

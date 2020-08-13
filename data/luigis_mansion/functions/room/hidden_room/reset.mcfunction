@@ -22,11 +22,23 @@ execute positioned 709 104 36 run function luigis_mansion:blocks/unlit_candles
 execute positioned 709 104 21 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #hidden_room Ticking
 scoreboard players reset #hidden_room Wave
-scoreboard players reset #hidden_room_chest_3 Searched
-scoreboard players reset #hidden_room_chest_6 Searched
-scoreboard players reset #hidden_room_chest_7 Searched
-scoreboard players reset #hidden_room_chest_8 Searched
-scoreboard players reset #hidden_room_trophy_1 Searched
-scoreboard players reset #hidden_room_trophy_2 Searched
-scoreboard players reset #hidden_room_lamp Searched
-scoreboard players reset #hidden_room_hole Searched
+scoreboard players reset #hidden_room_chest_1
+scoreboard players reset #hidden_room_chest_2
+scoreboard players reset #hidden_room_chest_3
+scoreboard players reset #hidden_room_chest_4
+scoreboard players reset #hidden_room_chest_5
+scoreboard players reset #hidden_room_chest_6
+scoreboard players reset #hidden_room_chest_7
+scoreboard players reset #hidden_room_chest_8
+scoreboard players reset #hidden_room_trophy_1
+scoreboard players reset #hidden_room_trophy_2
+scoreboard players reset #hidden_room_candle_1
+scoreboard players reset #hidden_room_candle_2
+scoreboard players reset #hidden_room_painting_1
+scoreboard players reset #hidden_room_painting_2
+scoreboard players reset #hidden_room_painting_3
+scoreboard players reset #hidden_room_painting_4
+scoreboard players reset #hidden_room_painting_5
+scoreboard players reset #hidden_room_lamp
+scoreboard players reset #hidden_room_mirror
+scoreboard players reset #hidden_room_hole

@@ -1,0 +1,1 @@
+execute if entity @e[x=710.5,y=102,z=40.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run function luigis_mansion:room/butlers_room/scan_hole

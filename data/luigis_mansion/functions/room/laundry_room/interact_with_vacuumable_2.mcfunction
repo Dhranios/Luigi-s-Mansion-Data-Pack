@@ -1,0 +1,3 @@
+execute if entity @e[x=700.5,y=104,z=42.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #laundry_room_vacuumable_2 Searching 1
+execute unless entity @e[x=700.5,y=104,z=42.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #laundry_room_vacuumable_2 Searching
+execute if score #laundry_room_vacuumable_2 Searching matches 20 run setblock 700 104 42 minecraft:air

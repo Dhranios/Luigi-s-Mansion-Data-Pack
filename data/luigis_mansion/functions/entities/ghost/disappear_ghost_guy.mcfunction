@@ -10,5 +10,4 @@ execute if entity @s[tag=white] run tag @e[tag=this_entity,limit=1] add white
 execute if entity @s[tag=blue] run tag @e[tag=this_entity,limit=1] add blue
 execute if entity @s[tag=cyan] run tag @e[tag=this_entity,limit=1] add cyan
 execute if entity @s[tag=dancing] store result entity @e[tag=this_entity,limit=1] Pos[0] double 0.01 run scoreboard players get @s HomeX
-execute if entity @s[tag=dancing] store result entity @e[tag=this_entity,limit=1] Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute if entity @s[tag=dancing] store result entity @e[tag=this_entity,limit=1] Pos[2] double 0.01 run scoreboard players get @s HomeZ

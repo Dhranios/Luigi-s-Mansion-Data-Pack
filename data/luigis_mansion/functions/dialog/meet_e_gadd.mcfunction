@@ -5,11 +5,13 @@ execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.meet_
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a MusicType -1
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a Music 1308
 execute as @a[x=697,y=112,z=7,dx=1,dy=1,dz=1,tag=dialog] at @s run teleport @s ~-1 ~ ~
+tag @e[tag=dialog] remove stunable
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] positioned 695 112 11 run function luigis_mansion:spawn_entities/ghost/gold_ghost
-execute if entity @s[scores={Dialog=1}] positioned 695 112 11 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
-execute if entity @s[scores={Dialog=1}] run teleport @a[tag=dialog,limit=1] 695.5 112 8.0 facing entity @e[tag=gold_ghost,tag=dialog,limit=1] feet
-execute if entity @s[scores={Dialog=1}] run teleport @e[tag=gold_ghost,tag=dialog,limit=1] 695 112 11 -180 0
+execute if entity @s[scores={Dialog=2}] positioned 695 112 11 run function luigis_mansion:spawn_entities/ghost/gold_ghost
+execute if entity @s[scores={Dialog=2}] positioned 695 112 11 run scoreboard players set @e[distance=..0.1,tag=gold_ghost] SpawnTime 20
+execute if entity @s[scores={Dialog=2}] positioned 695 112 11 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
+execute if entity @s[scores={Dialog=2}] run teleport @a[tag=dialog,limit=1] 695.5 112 8.0 facing entity @e[tag=gold_ghost,tag=dialog,limit=1] feet
+execute if entity @s[scores={Dialog=2}] run teleport @e[tag=gold_ghost,tag=dialog,limit=1] 695 112 11 -180 0
 execute if entity @s[scores={Dialog=2..69}] as @a[tag=dialog,limit=1] at @e[tag=gold_ghost,tag=dialog,limit=1] run teleport @s ^ ^ ^3.5 ~-180 ~
 execute if entity @s[scores={Dialog=2..69}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ^ ^ ^0.05 ~ ~
 teleport @s[scores={Dialog=18}] ~ ~ ~ facing 689 112 11

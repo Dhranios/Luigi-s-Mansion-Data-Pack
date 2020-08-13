@@ -1,4 +1,4 @@
-scoreboard objectives add AnimationProg dummy
+scoreboard objectives add Time dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add Bowling dummy
 scoreboard objectives add Choice trigger
@@ -13,6 +13,7 @@ scoreboard objectives add ForcedDamage dummy
 scoreboard objectives add GBHCall dummy
 scoreboard objectives add GBHRadar dummy
 scoreboard objectives add GBHWait dummy
+scoreboard objectives add GhostCount dummy
 scoreboard objectives add GhostGuyCouple dummy
 scoreboard objectives add HallwayNoise dummy
 scoreboard objectives add Health dummy
@@ -23,6 +24,7 @@ scoreboard objectives add HomeRotY dummy
 scoreboard objectives add HomeX dummy
 scoreboard objectives add HomeY dummy
 scoreboard objectives add HomeZ dummy
+scoreboard objectives add HurtTime dummy
 scoreboard objectives add Invulnerable dummy
 scoreboard objectives add Keys dummy
 scoreboard objectives add LastHealth dummy
@@ -37,6 +39,9 @@ scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
 scoreboard objectives add PrevMusicType dummy
+scoreboard objectives add PrevHealth dummy
+scoreboard objectives add Pull dummy
+scoreboard objectives add PullStrength dummy
 scoreboard objectives add Rank dummy
 scoreboard objectives add Room dummy
 scoreboard objectives add Searched dummy

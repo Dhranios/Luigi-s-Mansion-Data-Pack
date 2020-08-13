@@ -1,0 +1,24 @@
+{
+	"values": [
+		"luigis_mansion:room/hidden_room/interact_with_candle_1",
+		"luigis_mansion:room/hidden_room/interact_with_candle_2",
+		"luigis_mansion:room/hidden_room/interact_with_chest_1",
+		"luigis_mansion:room/hidden_room/interact_with_chest_2",
+		"luigis_mansion:room/hidden_room/interact_with_chest_3",
+		"luigis_mansion:room/hidden_room/interact_with_chest_4",
+		"luigis_mansion:room/hidden_room/interact_with_chest_5",
+		"luigis_mansion:room/hidden_room/interact_with_chest_6",
+		"luigis_mansion:room/hidden_room/interact_with_chest_7",
+		"luigis_mansion:room/hidden_room/interact_with_chest_8",
+		"luigis_mansion:room/hidden_room/interact_with_hole",
+		"luigis_mansion:room/hidden_room/interact_with_lamp",
+		"luigis_mansion:room/hidden_room/interact_with_mirror",
+		"luigis_mansion:room/hidden_room/interact_with_painting_1",
+		"luigis_mansion:room/hidden_room/interact_with_painting_2",
+		"luigis_mansion:room/hidden_room/interact_with_painting_3",
+		"luigis_mansion:room/hidden_room/interact_with_painting_4",
+		"luigis_mansion:room/hidden_room/interact_with_painting_5",
+		"luigis_mansion:room/hidden_room/interact_with_trophy_1",
+		"luigis_mansion:room/hidden_room/interact_with_trophy_2"
+	]
+}

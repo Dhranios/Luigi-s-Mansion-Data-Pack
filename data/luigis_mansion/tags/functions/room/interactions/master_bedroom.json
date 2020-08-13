@@ -2,6 +2,7 @@
 	"values": [
 		"luigis_mansion:room/master_bedroom/interact_with_bed",
 		"luigis_mansion:room/master_bedroom/interact_with_chair",
+		"luigis_mansion:room/master_bedroom/interact_with_chest",
 		"luigis_mansion:room/master_bedroom/interact_with_fan",
 		"luigis_mansion:room/master_bedroom/interact_with_mirror",
 		"luigis_mansion:room/master_bedroom/interact_with_painting_1",

@@ -1,0 +1,4 @@
+execute if entity @e[x=709.0,y=102,z=-25.0,dx=0,dy=2,dz=0,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #mirror_room_candle_1 Searching 1
+execute unless entity @e[x=709.0,y=102,z=-25.0,dx=0,dy=2,dz=0,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #mirror_room_candle_1 Searching
+execute if score #mirror_room_candle_1 Searching matches 20 run function luigis_mansion:room/mirror_room/search_candle_1
+execute if entity @e[x=709.0,y=102,z=-25.0,dx=0,dy=2,dz=0,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.59"}]}

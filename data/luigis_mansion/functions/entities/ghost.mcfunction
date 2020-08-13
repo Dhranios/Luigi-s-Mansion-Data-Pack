@@ -7,32 +7,42 @@ scoreboard players set @s[tag=!black_bogmire,tag=fleeing,scores={SpawnTime=21..}
 scoreboard players set @s[tag=collided,scores={SpawnTime=21..}] SpawnTime 20
 scoreboard players set @s[tag=laugh,scores={SpawnTime=21..}] SpawnTime 20
 scoreboard players set @s[tag=complain,scores={SpawnTime=21..}] SpawnTime 20
-execute if entity @s[tag=dying] run function luigis_mansion:animations/ghost/death
+scoreboard players set @s[tag=element_hurt,scores={SpawnTime=21..}] SpawnTime 20
+execute if entity @s[tag=dying,tag=normal_death] run function luigis_mansion:animations/ghost/death
+execute if entity @s[tag=dying,tag=hurt] run function luigis_mansion:animations/ghost/death
+execute if entity @s[tag=dying,tag=element_death] run function luigis_mansion:animations/ghost/death_element
+execute if entity @s[tag=dying,tag=element_hurt] run function luigis_mansion:animations/ghost/death_element
 
-execute if entity @s[tag=gold_ghost,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/gold_ghost
-execute if entity @s[tag=gold_dummy_ghost,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/gold_dummy_ghost
-execute if entity @s[tag=temper_terror,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/temper_terror
-execute if entity @s[tag=speedy_spirit,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/speedy_spirit
-execute if entity @s[tag=purple_puncher,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/purple_puncher
-execute if entity @s[tag=flash,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/flash
-execute if entity @s[tag=blue_twirler,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/blue_twirler
-execute if entity @s[tag=blue_blaze,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/blue_blaze
-execute if entity @s[tag=grabbing_ghost,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/grabbing_ghost
-execute if entity @s[tag=red_grabbing_ghost,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/red_grabbing_ghost
-execute if entity @s[tag=mirror_ghost,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/mirror_ghost
-execute if entity @s[tag=cinema_ghost,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/cinema_ghost
-execute if entity @s[tag=garbage_can_ghost,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/garbage_can_ghost
-execute if entity @s[tag=ghost_guy,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/ghost_guy
-execute if entity @s[tag=mr_bones,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/mr_bones
-execute if entity @s[tag=bowling_ghost,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/bowling_ghost
-execute if entity @s[tag=ceiling_surprise,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/ceiling_surprise
-execute if entity @s[tag=purple_bomber,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/purple_bomber
-execute if entity @s[tag=waiter,tag=!disappear,tag=!element_hurt,scores={SpawnTime=20..}] run function luigis_mansion:entities/waiter
+execute if entity @s[tag=gold_ghost,tag=!disappear] run function luigis_mansion:entities/gold_ghost
+execute if entity @s[tag=gold_dummy_ghost,tag=!disappear] run function luigis_mansion:entities/gold_dummy_ghost
+execute if entity @s[tag=temper_terror,tag=!disappear] run function luigis_mansion:entities/temper_terror
+execute if entity @s[tag=speedy_spirit,tag=!disappear] run function luigis_mansion:entities/speedy_spirit
+execute if entity @s[tag=purple_puncher,tag=!disappear] run function luigis_mansion:entities/purple_puncher
+execute if entity @s[tag=flash,tag=!disappear] run function luigis_mansion:entities/flash
+execute if entity @s[tag=blue_twirler,tag=!disappear] run function luigis_mansion:entities/blue_twirler
+execute if entity @s[tag=blue_blaze,tag=!disappear] run function luigis_mansion:entities/blue_blaze
+execute if entity @s[tag=grabbing_ghost,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/grabbing_ghost
+execute if entity @s[tag=red_grabbing_ghost,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/red_grabbing_ghost
+execute if entity @s[tag=mirror_ghost,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/mirror_ghost
+execute if entity @s[tag=cinema_ghost,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/cinema_ghost
+execute if entity @s[tag=garbage_can_ghost,tag=!disappear] run function luigis_mansion:entities/garbage_can_ghost
+execute if entity @s[tag=ghost_guy,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/ghost_guy
+execute if entity @s[tag=mr_bones,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/mr_bones
+execute if entity @s[tag=bowling_ghost,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/bowling_ghost
+execute if entity @s[tag=ceiling_surprise,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/ceiling_surprise
+execute if entity @s[tag=purple_bomber,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/purple_bomber
+execute if entity @s[tag=waiter,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/waiter
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
 scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..,StunTime=0},tag=!hurt] VulnerableTime 1
-execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying] run function luigis_mansion:animations/ghost/hurt
-execute if entity @s[tag=hurt,tag=!disappear,tag=!dying] run function luigis_mansion:animations/ghost/hurt
-execute if entity @s[tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying] run function luigis_mansion:animations/ghost/hurt_element
+execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying,tag=!boo] run function luigis_mansion:entities/ghost/hurt
+execute if entity @s[tag=hurt,tag=!disappear,tag=!dying,tag=!boo] run function luigis_mansion:entities/ghost/hurt
+execute if entity @s[tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying] run function luigis_mansion:entities/ghost/hurt_element
+execute if entity @s[tag=!hurt,tag=!disappear,tag=!element_hurt,tag=freeze,tag=!dying] run function luigis_mansion:entities/ghost/hurt_element
+execute unless entity @s[scores={HomeY=9200..10199}] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9200
+execute unless entity @s[scores={HomeY=10200..11199}] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10200
+execute unless entity @s[scores={HomeY=11200..12199}] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11200
+execute unless entity @s[scores={HomeY=12200..13299}] run scoreboard players set @s[y=122,dy=7,tag=!vanish] HomeY 12200
+execute unless entity @s[scores={HomeY=13300..13399}] run scoreboard players set @s[y=133,dy=7,tag=!vanish] HomeY 13300
 
 execute if entity @s[tag=neville] run function luigis_mansion:entities/neville
 execute if entity @s[tag=lydia] run function luigis_mansion:entities/lydia
@@ -62,7 +72,7 @@ execute if entity @s[tag=sue_pea] run function luigis_mansion:entities/sue_pea
 execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:entities/vincent_van_gore
 execute if entity @s[tag=king_boo] run function luigis_mansion:entities/king_boo
 
-execute if entity @s[tag=fleeing,tag=!disappear,tag=!black_bogmire] run function luigis_mansion:entities/ghost/flee
+execute if entity @s[tag=fleeing,tag=!disappear,tag=!black_bogmire,tag=!boo] run function luigis_mansion:entities/ghost/flee
 execute if entity @s[tag=boo] run function luigis_mansion:entities/boo
 
 execute if entity @s[tag=!dying,tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear

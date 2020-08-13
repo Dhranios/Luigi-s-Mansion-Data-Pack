@@ -28,5 +28,5 @@ execute if entity @a[advancements={luigis_mansion:money={ball_room_lamp_1=false}
 execute if entity @a[advancements={luigis_mansion:money={ball_room_lamp_1=false}},limit=1] positioned 690.0 105 -21.0 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:money={ball_room_lamp_1=false}},limit=1] positioned 690.0 105 -19.0 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:money={ball_room_lamp_1=false}},limit=1] positioned 692.0 105 -20.0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:money={ball_room_lamp_1=true}},limit=1] tag @e[tag=selected] add nothing
+execute if entity @a[advancements={luigis_mansion:money={ball_room_lamp_1=true}},limit=1] run tag @e[tag=selected] add nothing
 advancement grant @a only luigis_mansion:money ball_room_lamp_1

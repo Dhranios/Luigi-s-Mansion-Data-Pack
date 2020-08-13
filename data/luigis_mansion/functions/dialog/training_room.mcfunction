@@ -101,6 +101,6 @@ execute if entity @s[scores={Dialog=2390}] if entity @a[scores={Choice=1..}] as 
 execute if entity @s[scores={Dialog=2390}] if entity @a[scores={Choice=1}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.24.yes.1"}]}
 execute if entity @s[scores={Dialog=2390}] if entity @a[scores={Choice=1}] run scoreboard players add @s Dialog 8
 execute if entity @s[scores={Dialog=2390}] if entity @a[scores={Choice=2}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.24.no.1"}]}
-execute if entity @s[scores={Dialog=2422}] run advancement grant @a[scores={MusicType=24}] only luigis_mansion:lab/training_room
+execute if entity @s[scores={Dialog=2422}] run advancement grant @a only luigis_mansion:lab/training_room
 execute if entity @s[scores={Dialog=2422}] as @a[scores={Choice=1}] run function luigis_mansion:entities/e_gadd/to_gallery
 execute if entity @s[scores={Dialog=2422}] as @a[scores={Choice=2}] run function luigis_mansion:entities/e_gadd/to_lab

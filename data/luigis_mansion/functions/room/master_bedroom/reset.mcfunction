@@ -26,3 +26,4 @@ scoreboard players reset #master_bedroom_painting_3
 scoreboard players reset #master_bedroom_painting_4
 scoreboard players reset #master_bedroom_painting_5
 scoreboard players reset #master_bedroom_fan
+scoreboard players reset #master_bedroom_chest

@@ -16,7 +16,7 @@ scoreboard players reset #wardrobe_room_closet_2
 scoreboard players reset #wardrobe_room_closet_3
 scoreboard players reset #wardrobe_room_mirror
 scoreboard players reset #wardrobe_room_hat_rack
-scoreboard players reset #wardrobe_room_shoe_rack
+scoreboard players reset #wardrobe_room_shoe_stand
 scoreboard players reset #wardrobe_room_painting_1
 scoreboard players reset #wardrobe_room_painting_2
 scoreboard players reset #wardrobe_room_clothes_1

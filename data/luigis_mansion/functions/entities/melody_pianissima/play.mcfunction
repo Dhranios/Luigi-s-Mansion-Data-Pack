@@ -1,4 +1,5 @@
 execute if score #conservatory Wave matches 2 run scoreboard players add @s[tag=!1,tag=!2] Dialog 1
+execute if score #conservatory Wave matches 3 run scoreboard players add @s[tag=!1,tag=!2] Dialog 1
 execute if entity @a[scores={Choice=1}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 1000
 execute if entity @a[scores={Choice=2}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 2000
 tag @s[scores={Dialog=1}] add talk
@@ -7,6 +8,8 @@ execute if entity @s[scores={Dialog=112}] run tellraw @a[scores={Room=21}] {"tra
 execute if entity @s[scores={Dialog=224}] if score #players Totals matches 1 run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.3"}]}
 execute if entity @s[scores={Dialog=224}] if score #players Totals matches 2.. run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.3.more"}]}
 execute if entity @s[scores={Dialog=360}] run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.4"}]}
+execute if entity @s[scores={Dialog=391}] run function luigis_mansion:room/conservatory/stop_music
+execute if entity @s[scores={Dialog=392}] run scoreboard players set #conservatory Wave 3
 execute if entity @s[scores={Dialog=392}] run summon minecraft:area_effect_cloud ~ ~ ~ {"Tags":["1","option"]}
 execute if entity @s[scores={Dialog=392}] run summon minecraft:area_effect_cloud ~ ~ ~ {"Tags":["2","option"]}
 execute if entity @s[scores={Dialog=392}] run tag @e[type=minecraft:area_effect_cloud,tag=option,sort=random,limit=1] add selected
@@ -34,7 +37,7 @@ execute if entity @s[scores={Dialog=2040}] if score #players Totals matches 1 ru
 execute if entity @s[scores={Dialog=2040}] if score #players Totals matches 2.. run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.2.more"}]}
 execute if entity @s[scores={Dialog=2120}] if score #players Totals matches 1 run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.3"}]}
 execute if entity @s[scores={Dialog=2120}] if score #players Totals matches 2.. run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.3.more"}]}
-execute if entity @s[scores={Dialog=2216}] run scoreboard players set #conservatory Wave 3
+execute if entity @s[scores={Dialog=2216}] run scoreboard players set #conservatory Wave 4
 execute if entity @s[scores={Dialog=2216}] positioned 658 101 -7 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[scores={Dialog=2216}] positioned 658 101 -8 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[scores={Dialog=2216}] positioned 658 101 -9 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet

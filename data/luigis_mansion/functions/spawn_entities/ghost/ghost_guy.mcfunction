@@ -22,7 +22,7 @@ execute if entity @s[tag=dancing] run scoreboard players operation @e[tag=this_e
 execute if entity @s[tag=dancing] run tag @e[tag=this_entity,limit=1] add dancing
 execute if entity @s[scores={GhostGuyCouple=0}] run tag @e[tag=this_entity,limit=1] add stop_dancing
 execute if entity @s[tag=!dancing] run tag @e[tag=this_entity,limit=1] add stop_dancing
-execute if entity @s[tag=red] run tag @e[tag=this_entity,limit=1] add r
+execute if entity @s[tag=red] run tag @e[tag=this_entity,limit=1] add red
 execute if entity @s[tag=green] run tag @e[tag=this_entity,limit=1] add green
 execute if entity @s[tag=pink] run tag @e[tag=this_entity,limit=1] add pink
 execute if entity @s[tag=purple] run tag @e[tag=this_entity,limit=1] add purple
@@ -38,8 +38,8 @@ scoreboard players set @e[tag=this_entity,limit=1] Distance 0
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
+execute store result score @e[tag=this_entity,limit=1] HomeY run data get entity @s Pos[1] 100
 execute if entity @s[tag=dancing] store result score @e[tag=this_entity,limit=1] HomeX run data get entity @s Pos[0] 100
-execute if entity @s[tag=dancing] store result score @e[tag=this_entity,limit=1] HomeY run data get entity @s Pos[1] 100
 execute if entity @s[tag=dancing] store result score @e[tag=this_entity,limit=1] HomeZ run data get entity @s Pos[2] 100
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:entity.ghost_guy.spawn hostile @a ~ ~ ~ 1

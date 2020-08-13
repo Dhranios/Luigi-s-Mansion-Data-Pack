@@ -11,7 +11,15 @@ setblock 700 104 42 minecraft:white_wool
 setblock 701 102 50 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 scoreboard players reset #laundry_room Ticking
 scoreboard players reset #laundry_room Wave
-scoreboard players reset #laundry_room_closet Searched
-scoreboard players reset #laundry_room_bucket Searched
-scoreboard players reset #laundry_room_lamp Searched
-scoreboard players reset #laundry_room_chest Searched
+scoreboard players reset #laundry_room_closet
+scoreboard players reset #laundry_room_bucket
+scoreboard players reset #laundry_room_lamp
+scoreboard players reset #laundry_room_dust_box
+scoreboard players reset #laundry_room_broom
+scoreboard players reset #laundry_room_basket
+scoreboard players reset #laundry_room_shelf_1
+scoreboard players reset #laundry_room_shelf_2
+scoreboard players reset #laundry_room_vacuumable_1
+scoreboard players reset #laundry_room_vacuumable_2
+scoreboard players reset #laundry_room_washing_machine
+scoreboard players reset #laundry_room_chest

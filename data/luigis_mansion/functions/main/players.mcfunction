@@ -18,8 +18,9 @@ execute if entity @s[tag=chauncey_cry] run function luigis_mansion:room/small_ha
 execute if entity @s[tag=washroom_toad] run function luigis_mansion:dialog/washroom_toad
 execute if entity @s[tag=move_wall] run function luigis_mansion:room/storage_room/moving_wall
 execute if entity @s[tag=release_boos] run function luigis_mansion:dialog/release_boos
+execute if entity @s[tag=marios_painting] run function luigis_mansion:dialog/marios_painting
+execute if entity @s[tag=marios_painting_repeat] run function luigis_mansion:dialog/marios_painting_repeat
 
-execute if entity @s[x=771.5,y=90,z=8.0,distance=..14,gamemode=!spectator] run function luigis_mansion:entities/player/open_gate
 execute if entity @s[gamemode=!spectator,distance=..10,x=719.5,y=102,z=8.0] run function luigis_mansion:room/door/outside_foyer
 
 execute if block ~ ~ ~ #minecraft:doors run stopsound @s[scores={HallwayNoise=1..}] hostile luigis_mansion:music.mansion.melody
@@ -43,9 +44,6 @@ scoreboard players set @s[scores={ForcedDamage=1..,Damage=1..}] ForcedDamage 0
 scoreboard players set @s[scores={ForcedDamage=..-1,Damage=1..}] ForcedDamage 0
 effect give @s[scores={Damage=1..}] minecraft:instant_health 1 19 true
 effect give @s minecraft:saturation 1000000 0 true
-execute unless entity @s[scores={Health=-100..}] run effect give @s minecraft:health_boost 1000000 19 true
-execute unless entity @s[scores={Health=-100..}] run effect give @s minecraft:instant_health 1 19 true
-execute unless entity @s[scores={Health=-100..}] run scoreboard players set @s Health 100
 title @s[gamemode=!creative,gamemode=!spectator] actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
 
 stopsound @s[scores={Health=..0},gamemode=!spectator] music
@@ -68,3 +66,8 @@ scoreboard players operation @s LastKeys = @s Keys
 
 scoreboard players remove @s[scores={HallwayNoise=1..}] HallwayNoise 1
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
+execute if entity @s[scores={Pull=100..}] run function luigis_mansion:entities/player/poltergust_breakage
+scoreboard players remove @s[scores={Pull=1..}] Pull 3
+scoreboard players set @s[scores={Pull=..-1}] Pull 0
+tag @s remove pulled
+execute if entity @s[tag=vacuuming] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["new_position"],Duration:2}

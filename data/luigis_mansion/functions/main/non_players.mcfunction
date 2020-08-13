@@ -17,6 +17,7 @@ execute if entity @s[tag=rocking_horse] run function luigis_mansion:entities/roc
 execute if entity @s[tag=boo_marker] run function luigis_mansion:entities/boo_marker
 execute if entity @s[tag=hidden_boo] run function luigis_mansion:entities/hidden_boo
 execute if entity @s[tag=elemental_ghost] run function luigis_mansion:entities/elemental_ghost
+execute if entity @s[tag=bannana_peel] run function luigis_mansion:entities/bannana_peel
 
 # Prevent zombies from converting to drowned
 data merge entity @s[type=minecraft:zombie,nbt=!{DrownedConversionTime:-1,InWaterTime:-1}] {DrownedConversionTime:-1,InWaterTime:-1}
@@ -30,3 +31,4 @@ execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:l
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
 scoreboard players reset @s[tag=dead]
 tag @s[tag=dead] add can_die
+scoreboard players reset @s Steps

@@ -93,7 +93,7 @@
         "main_hallway_jar_6": {
             "trigger": "minecraft:impossible"
         },
-        "basement_stairs_lamp_1": {
+        "basement_stairs_lamp_2": {
             "trigger": "minecraft:impossible"
         },
         "ball_room_lamp_1": {
@@ -186,28 +186,22 @@
         "graveyard_rain_pipe": {
             "trigger": "minecraft:impossible"
         },
+        "courtyard_statue_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "courtyard_plant_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "courtyard_plant_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "courtyard_plant_3": {
+            "trigger": "minecraft:impossible"
+        },
         "courtyard_chest": {
             "trigger": "minecraft:impossible"
         },
-        "rec_room_chest": {
-            "trigger": "minecraft:impossible"
-        },
-        "washroom_2_chest": {
-            "trigger": "minecraft:impossible"
-        },
-        "billiards_room_chest": {
-            "trigger": "minecraft:impossible"
-        },
-        "telephone_room_chest": {
-            "trigger": "minecraft:impossible"
-        },
         "breaker_room_lamp": {
-            "trigger": "minecraft:impossible"
-        },
-        "ceramics_studio_chest": {
-            "trigger": "minecraft:impossible"
-        },
-        "guest_room_chest": {
             "trigger": "minecraft:impossible"
         }
     }

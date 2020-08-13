@@ -1,10 +1,10 @@
-scoreboard players add @s[scores={AnimationProg=1..59}] AnimationProg 1
-execute unless entity @s[scores={AnimationProg=1..}] run scoreboard players set @s AnimationProg 1
-execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:entity.blue_twirler.laugh hostile @a ~ ~ ~ 1
-execute at @s run teleport @s[scores={AnimationProg=5..14}] ~ ~ ~ ~ ~-5
-execute at @s run teleport @s[scores={AnimationProg=15..24}] ~ ~ ~ ~ ~10
-execute at @s run teleport @s[scores={AnimationProg=25..34}] ~ ~ ~ ~ ~-10
-execute at @s run teleport @s[scores={AnimationProg=35..44}] ~ ~ ~ ~ ~10
-execute at @s run teleport @s[scores={AnimationProg=45..54}] ~ ~ ~ ~ ~-10
-execute at @s run teleport @s[scores={AnimationProg=55}] ~ ~ ~ ~ ~5
-tag @s[scores={AnimationProg=60}] add disappear
+scoreboard players add @s Time 1
+execute if entity @s[scores={Time=1}] run playsound luigis_mansion:entity.blue_twirler.laugh hostile @a ~ ~ ~ 1
+scoreboard players set @s[scores={Time=1}] AnimationProg 0
+data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-100.0f,0.0f,-90.0f],LeftArm:[-100.0f,0.0f,90.0f],Head:[0.0f,0.01f,0.0f]}}
+function luigis_mansion:animations/blue_twirler/laugh
+data merge entity @s[scores={Time=40}] {Pose:{RightArm:[-90.0f,0.0f,0.0f],LeftArm:[-90.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f]}}
+tag @s[scores={Time=40}] remove laugh
+tag @s[scores={Time=40}] add vanish
+scoreboard players set @s[scores={Time=40}] AnimationProg 0
+scoreboard players set @s[scores={Time=40}] Time 0

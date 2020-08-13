@@ -22,5 +22,5 @@ execute if entity @a[advancements={luigis_mansion:mansion/artist_studio=true}] i
 execute if entity @a[advancements={luigis_mansion:mansion/balcony_2=true}] if score #boolossus OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
 execute if entity @a[advancements={luigis_mansion:mansion/secret_altar=true}] if score #king_boo_and_bowser OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
 tag @e[tag=e_gadd,tag=portrificationizing] remove talk
-scoreboard players set @e[tag=e_gadd,tag=portrificationizing] Dialog
+scoreboard players set @e[tag=e_gadd,tag=portrificationizing] Dialog 0
 execute if entity @e[tag=e_gadd,tag=portrificationizing] as @a run trigger Choice set 0

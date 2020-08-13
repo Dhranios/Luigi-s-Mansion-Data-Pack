@@ -93,6 +93,9 @@
         "shown_marios_shoe": {
             "trigger": "minecraft:impossible"
         },
+        "saw_mario_again": {
+            "trigger": "minecraft:impossible"
+        },
         "area_3_key": {
             "trigger": "minecraft:impossible"
         },

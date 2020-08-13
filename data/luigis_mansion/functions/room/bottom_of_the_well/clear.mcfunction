@@ -1,0 +1,2 @@
+function luigis_mansion:room/bottom_of_the_well/turn_on_lights
+scoreboard players reset #bottom_of_the_well Wave

@@ -49,3 +49,4 @@ scoreboard players reset #parlor_couch
 scoreboard players reset #parlor_candle_1
 scoreboard players reset #parlor_candle_2
 scoreboard players reset #parlor_candle_3
+scoreboard players reset #parlor_chest

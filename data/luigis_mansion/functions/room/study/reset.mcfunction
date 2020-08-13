@@ -31,3 +31,4 @@ scoreboard players reset #study_painting_2
 scoreboard players reset #study_painting_3
 scoreboard players reset #study_painting_4
 scoreboard players reset #study_painting_5
+scoreboard players reset #study_chest

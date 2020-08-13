@@ -14,8 +14,8 @@ execute if entity @s[tag=dying] run function luigis_mansion:spawn_entities/ball/
 execute if entity @s[tag=dying] run teleport @s ~ -100 ~
 execute if entity @s[tag=dying] run tag @s add dead
 
-execute if entity @s[scores={AnimationProg=1},tag=hurt] run playsound luigis_mansion:entity.black_bogmire.hurt hostile @a ~ ~ ~ 1
-scoreboard players set @s[scores={AnimationProg=1},tag=hurt] Sound 40
+execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.black_bogmire.hurt hostile @a ~ ~ ~ 1
+scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/black_bogmire/collide
 

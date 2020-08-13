@@ -1,4 +1,4 @@
-execute if entity @e[tag=chauncey,tag=fleeing] run tag @s add catching_chauncey
+execute if entity @e[tag=chauncey,tag=fleeing,tag=!ball] run tag @s add catching_chauncey
 execute unless entity @s[scores={MusicType=32}] run scoreboard players set @s[tag=catching_chauncey] Music 0
 execute unless entity @s[scores={MusicType=32}] run scoreboard players set @s[tag=catching_chauncey] MusicType 32
 scoreboard players set @s[tag=!catching_chauncey,scores={MusicType=32}] Music 0

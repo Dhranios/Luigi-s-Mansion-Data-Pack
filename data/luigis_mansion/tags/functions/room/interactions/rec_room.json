@@ -1,0 +1,19 @@
+{
+	"values": [
+		"luigis_mansion:room/rec_room/interact_with_bike_1",
+		"luigis_mansion:room/rec_room/interact_with_bike_2",
+		"luigis_mansion:room/rec_room/interact_with_chest",
+		"luigis_mansion:room/rec_room/interact_with_lamp_1",
+		"luigis_mansion:room/rec_room/interact_with_lamp_2",
+		"luigis_mansion:room/rec_room/interact_with_punching_bag_1",
+		"luigis_mansion:room/rec_room/interact_with_punching_bag_2",
+		"luigis_mansion:room/rec_room/interact_with_punching_bag_3",
+		"luigis_mansion:room/rec_room/interact_with_swords_1",
+		"luigis_mansion:room/rec_room/interact_with_swords_2",
+		"luigis_mansion:room/rec_room/interact_with_swords_3",
+		"luigis_mansion:room/rec_room/interact_with_swords_4",
+		"luigis_mansion:room/rec_room/interact_with_table",
+		"luigis_mansion:room/rec_room/interact_with_treadmill",
+		"luigis_mansion:room/rec_room/interact_with_weights"
+	]
+}

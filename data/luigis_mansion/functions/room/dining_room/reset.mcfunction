@@ -36,5 +36,25 @@ execute positioned 691 104 9 run function luigis_mansion:blocks/1_lit_candle
 execute positioned 691 104 15 run function luigis_mansion:blocks/1_lit_candle
 scoreboard players reset #dining_room Ticking
 scoreboard players reset #dining_room Wave
-scoreboard players reset #dining_room_closet_2 Searched
-scoreboard players reset #dining_room_chest Searched
+scoreboard players reset #dining_room_closet_1
+scoreboard players reset #dining_room_closet_2
+scoreboard players reset #dining_room_torch_1
+scoreboard players reset #dining_room_torch_2
+scoreboard players reset #dining_room_table
+scoreboard players reset #dining_room_candle_1
+scoreboard players reset #dining_room_candle_2
+scoreboard players reset #dining_room_dishes_1
+scoreboard players reset #dining_room_dishes_2
+scoreboard players reset #dining_room_dishes_3
+scoreboard players reset #dining_room_dishes_4
+scoreboard players reset #dining_room_dishes_5
+scoreboard players reset #dining_room_dishes_6
+scoreboard players reset #dining_room_dishes_7
+scoreboard players reset #dining_room_painting_1
+scoreboard players reset #dining_room_painting_2
+scoreboard players reset #dining_room_painting_3
+scoreboard players reset #dining_room_painting_4
+scoreboard players reset #dining_room_chair_1
+scoreboard players reset #dining_room_chair_2
+scoreboard players reset #dining_room_chair_3
+scoreboard players reset #dining_room_chest

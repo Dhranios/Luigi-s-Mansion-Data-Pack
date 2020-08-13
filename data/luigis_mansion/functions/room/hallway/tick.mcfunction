@@ -4,11 +4,7 @@ execute as @e[type=!minecraft:item_frame,x=698,y=112,z=-25,dx=8,dy=6,dz=22] run 
 execute as @e[type=!minecraft:item_frame,x=664,y=112,z=-11,dx=42,dy=6,dz=8] run scoreboard players set @s Room 31
 execute as @e[type=!minecraft:item_frame,x=664,y=112,z=-18,dx=8,dy=6,dz=43] run scoreboard players set @s Room 31
 execute as @e[type=!minecraft:item_frame,x=653,y=112,z=17,dx=19,dy=6,dz=8] run scoreboard players set @s Room 31
-tag @e[tag=ghost,x=698,y=112,z=-44,dx=8,dy=16,dz=26] add hallway
-tag @e[tag=ghost,x=698,y=112,z=-25,dx=8,dy=6,dz=22] add hallway
-tag @e[tag=ghost,x=664,y=112,z=-11,dx=42,dy=6,dz=8] add hallway
-tag @e[tag=ghost,x=664,y=112,z=-18,dx=8,dy=6,dz=43] add hallway
-tag @e[tag=ghost,x=653,y=112,z=17,dx=19,dy=6,dz=8] add hallway
+tag @e[tag=ghost,scores={Room=31}] add hallway
 
 execute as @a[gamemode=!spectator,x=700,y=112,z=-42,dx=4,dy=16,dz=22] run function luigis_mansion:room/hallway/tick_per_player
 execute as @a[gamemode=!spectator,x=700,y=112,z=-23,dx=4,dy=6,dz=18] unless entity @s[x=700,y=112,z=-42,dx=4,dy=16,dz=22] run function luigis_mansion:room/hallway/tick_per_player

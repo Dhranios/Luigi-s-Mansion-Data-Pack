@@ -1,0 +1,4 @@
+execute if entity @e[x=665.5,y=105,z=-6.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #main_hallway_painting Searching 1
+execute unless entity @e[x=665.5,y=105,z=-6.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #main_hallway_painting Searching
+execute if score #main_hallway_painting Searching matches 20 run function luigis_mansion:room/main_hallway/search_painting
+execute if entity @e[x=665.5,y=105,z=-6.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.5"}]}

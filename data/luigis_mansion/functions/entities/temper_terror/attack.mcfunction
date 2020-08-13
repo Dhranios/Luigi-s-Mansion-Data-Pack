@@ -1,17 +1,22 @@
-scoreboard players add @s[scores={AnimationProg=1..60}] AnimationProg 1
-execute unless entity @s[scores={AnimationProg=1..}] run scoreboard players set @s AnimationProg 1
+scoreboard players add @s Time 1
+scoreboard players set @s[scores={Time=1}] AnimationProg 0
+data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-160.0f,30.0f,0.0f],LeftArm:[-40.0f,-20.0f,0.0f]}}
+function luigis_mansion:animations/gold_ghost/attack
 
-teleport @s[scores={AnimationProg=1..39}] ^ ^ ^0.0125
-execute at @s[scores={AnimationProg=1..20}] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,gamemode=!spectator] run tag @s add stop_attack
-execute if entity @s[scores={AnimationProg=41}] run playsound luigis_mansion:entity.temper_terror.attack hostile @a ~ ~ ~ 1
-teleport @s[scores={AnimationProg=41..60}] ~ ~ ~ ~-18 ~
-execute at @s[scores={AnimationProg=41}] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
-execute at @s[scores={AnimationProg=41}] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
-execute at @s[scores={AnimationProg=41}] if entity @a[distance=..1,gamemode=!spectator] run tag @s add laugh
-tag @s[scores={AnimationProg=41},tag=!laugh] add complain
-tag @s[scores={AnimationProg=60}] remove attack
-scoreboard players reset @s[scores={AnimationProg=60}] AnimationProg
+teleport @s[scores={Time=1..39}] ^ ^ ^0.0125
+execute at @s[scores={Time=1..20}] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,gamemode=!spectator] run tag @s add stop_attack
+execute if entity @s[scores={Time=41}] run playsound luigis_mansion:entity.temper_terror.attack hostile @a ~ ~ ~ 1
+teleport @s[scores={Time=41..60}] ~ ~ ~ ~-18 ~
+execute at @s[scores={Time=41}] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
+execute at @s[scores={Time=41}] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
+execute at @s[scores={Time=41}] if entity @a[distance=..1,gamemode=!spectator] run tag @s add laugh
+tag @s[scores={Time=41},tag=!laugh] add complain
+tag @s[scores={Time=60}] remove attack
+scoreboard players set @s[scores={Time=60}] AnimationProg 0
+scoreboard players set @s[scores={Time=60}] Time 0
 
-scoreboard players reset @s[tag=stop_attack] AnimationProg
+scoreboard players set @s[tag=stop_attack] Time 0
+scoreboard players set @s[tag=stop_attack] AnimationProg 0
+data merge entity @s[tag=stop_attack] {Pose:{RightArm:[-90.0f,0.0f,0.0f],LeftArm:[-90.0f,0.0f,0.0f]}}
 tag @s[tag=stop_attack] remove attack
 tag @s[tag=stop_attack] remove stop_attack

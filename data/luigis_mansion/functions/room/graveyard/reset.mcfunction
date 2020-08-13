@@ -7,9 +7,15 @@ setblock 648 102 50 minecraft:air
 setblock 656 102 48 minecraft:air
 scoreboard players reset #graveyard Ticking
 scoreboard players reset #graveyard Wave
-scoreboard players reset #graveyard_gravestone_1 Searched
-scoreboard players reset #graveyard_gravestone_3 Searched
-scoreboard players reset #graveyard_gravestone_6 Searched
-scoreboard players reset #graveyard_gravestone_7 Searched
-scoreboard players reset #graveyard_rain_pipe Searched
-scoreboard players reset #graveyard_tree_trunk Searched
+scoreboard players reset #graveyard_gravestone_1
+scoreboard players reset #graveyard_gravestone_2
+scoreboard players reset #graveyard_gravestone_3
+scoreboard players reset #graveyard_gravestone_4
+scoreboard players reset #graveyard_gravestone_5
+scoreboard players reset #graveyard_gravestone_6
+scoreboard players reset #graveyard_gravestone_7
+scoreboard players reset #graveyard_rain_pipe
+scoreboard players reset #graveyard_torch_1
+scoreboard players reset #graveyard_torch_2
+scoreboard players reset #graveyard_tree_trunk
+scoreboard players reset #graveyard_chest

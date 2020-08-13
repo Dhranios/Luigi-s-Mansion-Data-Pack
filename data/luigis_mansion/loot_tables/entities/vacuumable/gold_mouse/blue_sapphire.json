@@ -9,7 +9,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.blue_sapphire\"}'},luigis_mansion:{id:\"luigis_mansion:blue_saphire\"}}"
+							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.blue_sapphire\"}'},luigis_mansion:{id:\"luigis_mansion:blue_sapphire\"}}"
 						}
 					]
 				}

@@ -15,5 +15,11 @@ execute positioned 717 104 -5 run function luigis_mansion:blocks/unlit_candles
 execute positioned 708 104 -5 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #fortune_tellers_room Ticking
 scoreboard players reset #fortune_tellers_room Wave
-scoreboard players reset #fortune_tellers_room_drawer_1 Searched
-scoreboard players reset #fortune_tellers_room_drawer_2 Searched
+scoreboard players reset #fortune_tellers_room_drawer_1
+scoreboard players reset #fortune_tellers_room_drawer_2
+scoreboard players reset #fortune_tellers_room_candle_1
+scoreboard players reset #fortune_tellers_room_candle_2
+scoreboard players reset #fortune_tellers_room_pillar_1
+scoreboard players reset #fortune_tellers_room_pillar_2
+scoreboard players reset #fortune_tellers_room_chair
+scoreboard players reset #fortune_tellers_room_table

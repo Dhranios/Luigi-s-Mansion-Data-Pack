@@ -1,4 +1,4 @@
-execute if entity @e[x=672.5,y=112,z=44.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=water,limit=1] run scoreboard players add #balcony_1_plant_2 Searching 1
-execute unless entity @e[x=672.5,y=112,z=44.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=water,limit=1] run scoreboard players reset #balcony_1_plant_2 Searching
+execute if entity @e[x=676.5,y=112,z=44.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=water,limit=1] run scoreboard players add #balcony_1_plant_2 Searching 1
+execute unless entity @e[x=676.5,y=112,z=44.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=water,limit=1] run scoreboard players reset #balcony_1_plant_2 Searching
 execute if score #balcony_1_plant_2 Searching matches 20 run function luigis_mansion:room/balcony_1/water_plant_2
-execute if entity @e[x=672.0,y=112,z=44.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.70"}]}
+execute if entity @e[x=676.5,y=112,z=44.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.70"}]}

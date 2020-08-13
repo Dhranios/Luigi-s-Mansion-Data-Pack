@@ -8,3 +8,4 @@ execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,ta
 execute unless entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=!nothing] positioned 708 113 47 run function luigis_mansion:blocks/dust
 scoreboard players set #nursery_painting_1 Searched 1
 tag @e[x=708.5,y=113,z=47.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=708.5,y=113,z=47.5,distance=..0.7,tag=ghost_marker] add spawn

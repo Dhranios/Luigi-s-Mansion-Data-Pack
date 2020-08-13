@@ -1,0 +1,6 @@
+execute if entity @e[x=656.5,y=102,z=-9.0,dx=1,dy=2,dz=2,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #conservatory_closet Searching 1
+execute unless entity @e[x=656.5,y=102,z=-9.0,dx=1,dy=2,dz=2,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #conservatory_closet Searching
+execute if score #conservatory_closet Searching matches 20 run function luigis_mansion:room/conservatory/search_closet
+execute unless block 655 103 -8 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/conservatory/search_closet
+execute unless block 655 103 -9 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/conservatory/search_closet
+execute if entity @e[x=656.5,y=102,z=-9.0,dx=1,dy=2,dz=2,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.87"}]}
