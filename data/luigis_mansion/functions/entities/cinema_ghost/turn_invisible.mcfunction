@@ -1,3 +1,5 @@
 tag @s remove visible
-replaceitem entity @s armor.head minecraft:air
-replaceitem entity @s armor.chest minecraft:air
+data modify entity @s ArmorItems[3].tag.CustomModelData set value 16
+data modify entity @s HandItems[0].tag.CustomModelData set value 16
+data modify entity @s HandItems[1].tag.CustomModelData set value 16
+data modify entity @s CustomNameVisible set value 0b

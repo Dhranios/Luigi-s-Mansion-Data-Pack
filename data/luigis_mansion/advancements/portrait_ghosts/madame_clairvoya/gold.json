@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.madame_clairvoya.gold"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.madame_clairvoya.gold.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/madame_clairvoya/silver",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

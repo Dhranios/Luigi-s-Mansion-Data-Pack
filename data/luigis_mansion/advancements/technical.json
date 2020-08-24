@@ -21,7 +21,7 @@
         "grabbing_ghosts": {
             "trigger": "minecraft:impossible"
         },
-        "released_boos": {
+        "moved_wall": {
             "trigger": "minecraft:impossible"
         },
         "released_boos_call": {
@@ -61,6 +61,9 @@
             "trigger": "minecraft:impossible"
         },
         "ice_element_medal": {
+            "trigger": "minecraft:impossible"
+        },
+        "observatory_destroyed": {
             "trigger": "minecraft:impossible"
         },
         "has_marios_hat": {

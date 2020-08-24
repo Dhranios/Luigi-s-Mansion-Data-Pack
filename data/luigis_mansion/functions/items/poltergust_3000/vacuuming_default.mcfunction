@@ -1,106 +1,118 @@
-summon minecraft:area_effect_cloud ^ ^ ^0.5 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.3 ^0.5 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.3 ^0.5 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^ ^0.5 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^ ^0.5 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
+execute positioned ^ ^ ^0.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^0.3 ^0.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^-0.3 ^0.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^0.3 ^ ^0.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^-0.3 ^ ^0.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
 
-summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.3 ^1 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.3 ^1 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^ ^1 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^ ^1 {Tags:["poltergust","vacuum","new","no_pull"],Duration:1}
+execute positioned ^ ^ ^1 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^0.3 ^1 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^-0.3 ^1 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^0.3 ^ ^1 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^-0.3 ^ ^1 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
 
-summon minecraft:area_effect_cloud ^ ^ ^1.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.3 ^1.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.3 ^1.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^ ^1.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^ ^1.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
+execute positioned ^ ^ ^1.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^0.3 ^1.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^-0.3 ^1.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^0.3 ^ ^1.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^-0.3 ^ ^1.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
 
-summon minecraft:area_effect_cloud ^ ^ ^2 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.3 ^2 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.3 ^2 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^ ^2 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^ ^2 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
+execute positioned ^ ^ ^2 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^0.3 ^2 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^-0.3 ^2 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^0.3 ^ ^2 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^-0.3 ^ ^2 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
 
-summon minecraft:area_effect_cloud ^ ^ ^2.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.3 ^2.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.3 ^2.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^ ^2.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^ ^2.5 {Tags:["poltergust","vacuum","new","always_pull"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^0.3 ^2.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^-0.3 ^2.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^0.3 ^2.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^-0.3 ^2.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.6 ^2.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.6 ^2.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.6 ^ ^2.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.6 ^ ^2.5 {Tags:["poltergust","vacuum","new"],Duration:1}
+execute positioned ^ ^ ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^0.3 ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^ ^-0.3 ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^0.3 ^ ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^-0.3 ^ ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum
+execute positioned ^-0.3 ^0.3 ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^-0.3 ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^0.3 ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^-0.3 ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.6 ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.6 ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^ ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^ ^2.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
 
-summon minecraft:area_effect_cloud ^ ^ ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.3 ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.3 ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^ ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^ ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^0.3 ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^-0.3 ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^0.3 ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^-0.3 ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.6 ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.6 ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.6 ^ ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.6 ^ ^3 {Tags:["poltergust","vacuum","new"],Duration:1}
+execute positioned ^ ^ ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.3 ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.3 ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^ ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^ ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^0.3 ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^-0.3 ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^0.3 ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^-0.3 ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.6 ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.6 ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^ ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^ ^3 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
 
-summon minecraft:area_effect_cloud ^ ^ ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^ ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^ ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^-0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^-0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.6 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.6 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.6 ^ ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.6 ^ ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^0.6 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^-0.6 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.6 ^0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.6 ^0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^0.6 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^-0.6 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.6 ^-0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.6 ^-0.3 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.9 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.9 ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.9 ^ ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.9 ^ ^3.5 {Tags:["poltergust","vacuum","new"],Duration:1}
+execute positioned ^ ^ ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.3 ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.3 ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^ ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^ ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^0.3 ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^-0.3 ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^0.3 ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^-0.3 ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.6 ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.6 ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^ ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^ ^3.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
 
-summon minecraft:area_effect_cloud ^ ^ ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^ ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^ ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^-0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^-0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.6 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.6 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.6 ^ ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.6 ^ ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^0.6 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.3 ^-0.6 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.6 ^0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.6 ^0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^0.6 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.3 ^-0.6 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.6 ^-0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.6 ^-0.3 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^0.9 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^ ^-0.9 ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^0.9 ^ ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-summon minecraft:area_effect_cloud ^-0.9 ^ ^4 {Tags:["poltergust","vacuum","new"],Duration:1}
-tag @e[tag=vacuum,tag=new,limit=20,sort=random,tag=!no_pull,tag=!always_pull] add no_pull
-tag @e[tag=vacuum,tag=new,limit=10,sort=random,tag=!no_pull,tag=!always_pull] add pull_boo
+execute positioned ^ ^ ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^ ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^ ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^-0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^-0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.6 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.6 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^ ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^ ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^0.6 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^-0.6 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^0.6 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^-0.6 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^-0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^-0.3 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.9 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.9 ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.9 ^ ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.9 ^ ^4 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+
+execute positioned ^ ^ ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^ ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^ ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^-0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^-0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.6 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.6 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^ ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^ ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^0.6 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.3 ^-0.6 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^0.6 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.3 ^-0.6 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.6 ^-0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.6 ^-0.3 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^0.9 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^ ^-0.9 ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^0.9 ^ ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
+execute positioned ^-0.9 ^ ^4.5 facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuum_boo_chance
 scoreboard players set @s GhostCount 0

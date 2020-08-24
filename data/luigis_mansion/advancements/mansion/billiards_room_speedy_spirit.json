@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:rotten_flesh"
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:6,CustomModelData:1}"
         },
         "title": {
             "translate": "luigis_mansion:advancements.mansion.billiards_room_speedy_spirit"

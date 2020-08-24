@@ -1,3 +1,0 @@
-execute if entity @e[x=709.5,y=107,z=44.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #butlers_room_vacuumable Searching 1
-execute unless entity @e[x=709.5,y=107,z=44.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #butlers_room_vacuumable Searching
-execute if score #butlers_room_vacuumable Searching matches 20 run setblock 709 107 44 minecraft:spruce_slab[type=bottom]

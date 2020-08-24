@@ -1,8 +1,5 @@
-scoreboard players operation @s PullStrength = @s Move
-scoreboard players remove @s[scores={PullStrength=2..}] PullStrength 1
-execute if entity @e[distance=..0.5,tag=vacuum,tag=stop_ghost] run tag @s add can_pull
-execute if entity @e[distance=..0.5,tag=vacuum,tag=pull_ghost] run tag @s add can_pull
-execute if entity @s[scores={PullStrength=1..5,Pull=0},tag=can_pull] run function luigis_mansion:entities/ghost/pull_chance
+execute unless entity @s[tag=!is_stopped,tag=!is_pulled] run tag @s add can_pull
+execute if entity @s[scores={Pull=0},tag=can_pull] run function luigis_mansion:entities/ghost/pull_chance
 execute if entity @s[tag=!can_pull,scores={Pull=1..}] run scoreboard players remove @s Pull 2
 execute if entity @s[scores={Pull=..-10},tag=can_pull] run scoreboard players set @s Pull -10
 tag @s remove can_pull

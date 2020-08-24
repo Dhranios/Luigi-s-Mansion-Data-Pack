@@ -1,3 +1,0 @@
-execute if entity @e[x=666.0,y=103,z=31.0,dx=0,dy=2,dz=2,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #washroom_1_mirror Searching 1
-execute unless entity @e[x=666.0,y=103,z=31.0,dx=0,dy=2,dz=2,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #washroom_1_mirror Searching
-execute if score #washroom_1_mirror Searching matches 20 run function luigis_mansion:room/washroom_1/search_mirror

@@ -1,4 +1,4 @@
-execute if entity @s[tag=!speedy_spirit,tag=!gold_dummy_ghost] run summon minecraft:area_effect_cloud ~ ~ ~ {Rotation:[0.0f,90.0f],Duration:1000000,Tags:["ghost_marker","this_entity","ghost"]}
+execute at @s[tag=!speedy_spirit,tag=!gold_dummy_ghost] run summon minecraft:area_effect_cloud ~ ~ ~ {Rotation:[0.0f,90.0f],Duration:1000000,Tags:["ghost_marker","this_entity","ghost"]}
 execute if entity @s[tag=gold_ghost] run tag @e[tag=this_entity,limit=1] add gold_ghost
 execute if entity @s[tag=temper_terror] run tag @e[tag=this_entity,limit=1] add temper_terror
 execute if entity @s[tag=temper_terror,tag=burning_heart] run tag @e[tag=this_entity,limit=1] add burning_heart
@@ -26,6 +26,5 @@ execute if entity @s[tag=ghost_guy] run function luigis_mansion:entities/ghost/d
 execute if entity @s[tag=waiter] run function luigis_mansion:entities/ghost/disappear_waiter
 execute unless entity @s[tag=ghost_guy,tag=dancing] if entity @s[tag=!waiter,tag=!hallway] as @e[tag=this_entity,limit=1] positioned as @s facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @e[tag=this_entity,limit=1] remove this_entity
-playsound luigis_mansion:entity.ghost.disappear hostile @a ~ ~ ~ 1
 teleport @s ~ -100 ~
 data merge entity @s {Health:0f,DeathTime:19s}

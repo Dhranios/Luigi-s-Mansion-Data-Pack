@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.chauncey.bronze"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.chauncey.bronze.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/chauncey",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

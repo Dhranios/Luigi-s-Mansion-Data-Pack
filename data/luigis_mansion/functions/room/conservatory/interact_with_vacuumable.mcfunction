@@ -1,4 +1,0 @@
-execute if entity @e[x=661.5,y=104,z=-9.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #conservatory_vacuumable Searching 1
-execute unless entity @e[x=661.5,y=104,z=-9.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #conservatory_vacuumable Searching
-execute if score #conservatory_vacuumable Searching matches 20 run tag @e[x=661.5,y=104,z=-8.5,distance=..0.7,type=minecraft:item_frame,tag=poster,limit=1] add dead
-execute if entity @e[x=661.5,y=104,z=-9.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] if entity @e[x=661.5,y=104,z=-8.5,distance=..0.7,type=minecraft:item_frame,tag=poster,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.25"}]}

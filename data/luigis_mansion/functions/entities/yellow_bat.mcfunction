@@ -11,7 +11,7 @@ tag @s[tag=fleeing] remove fleeing
 
 scoreboard players operation #temp Room = @s Room
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!collided] as @e[tag=vacuum] if score @s Room = #temp Room run tag @s add this_room
-execute if entity @s[tag=!fleeing,tag=!attack,tag=!collided] if entity @e[tag=vacuum,tag=this_room,limit=1] run tag @s add attack
+execute if entity @s[tag=!fleeing,tag=!attack,tag=!collided,tag=vacuum_in_room] run tag @s add attack
 execute if entity @s[tag=attack] as @a[gamemode=!spectator] if score @s Room = #temp Room run tag @s add this_room
 scoreboard players reset #temp Room
 execute if entity @s[tag=attack,tag=!turn_back] run function luigis_mansion:entities/yellow_bat/target
@@ -20,5 +20,5 @@ tag @e[tag=this_room] remove this_room
 execute if entity @s[tag=turn_back,tag=!dead] run function luigis_mansion:entities/yellow_bat/move
 execute if entity @s[tag=targetted,tag=!dead] run function luigis_mansion:entities/yellow_bat/move
 execute if entity @s[tag=returned,tag=!dead] run function luigis_mansion:entities/yellow_bat/returned
-
+tag @s remove vacuum_in_room
 execute at @s[tag=!attack,tag=!fleeing] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

@@ -14,14 +14,14 @@ execute if entity @s[scores={MusicType=17}] run function luigis_mansion:other/mu
 execute if entity @s[scores={MusicType=34}] run function luigis_mansion:other/music/set/catching_boolossus
 execute if entity @s[scores={MusicType=18}] run function luigis_mansion:other/music/set/catching_king_boo
 execute if entity @s[scores={MusicType=35}] run function luigis_mansion:other/music/set/catching_king_boo
-execute if entity @s[tag=chauncey_cry] run function luigis_mansion:room/small_hallway/chauncey_cry
+execute if entity @s[tag=chauncey_cry] run function luigis_mansion:dialog/chauncey_cry
 execute if entity @s[tag=washroom_toad] run function luigis_mansion:dialog/washroom_toad
-execute if entity @s[tag=move_wall] run function luigis_mansion:room/storage_room/moving_wall
+execute if entity @s[tag=move_wall] run function luigis_mansion:dialog/moving_wall
 execute if entity @s[tag=release_boos] run function luigis_mansion:dialog/release_boos
 execute if entity @s[tag=marios_painting] run function luigis_mansion:dialog/marios_painting
 execute if entity @s[tag=marios_painting_repeat] run function luigis_mansion:dialog/marios_painting_repeat
 
-execute if entity @s[gamemode=!spectator,distance=..10,x=719.5,y=102,z=8.0] run function luigis_mansion:room/door/outside_foyer
+execute if entity @s[gamemode=!spectator,distance=..10,x=719.5,y=102,z=8.0] run function luigis_mansion:room/door/foyer
 
 execute if block ~ ~ ~ #minecraft:doors run stopsound @s[scores={HallwayNoise=1..}] hostile luigis_mansion:music.mansion.melody
 execute if block ~ ~ ~ #minecraft:doors run scoreboard players set @s HallwayNoise 0
@@ -36,16 +36,17 @@ execute unless entity @s[scores={Invulnerable=0..}] run scoreboard players set @
 scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health -1
 scoreboard players operation @s[scores={Health=1..}] Damage += #100 Constants
+effect give @s[scores={Damage=1..}] minecraft:instant_health 1 19 true
 scoreboard players operation @s[scores={Health=1..,Damage=1..}] Damage += @s ForcedDamage
 scoreboard players operation @s[scores={Health=1..,Invulnerable=0}] Health -= @s Damage
 execute if entity @s[scores={Health=1..,Damage=1..,Invulnerable=0}] run function luigis_mansion:entities/player/drop_gold_coins
 scoreboard players set @s[scores={Damage=1..}] Invulnerable 10
 scoreboard players set @s[scores={ForcedDamage=1..,Damage=1..}] ForcedDamage 0
 scoreboard players set @s[scores={ForcedDamage=..-1,Damage=1..}] ForcedDamage 0
-effect give @s[scores={Damage=1..}] minecraft:instant_health 1 19 true
 effect give @s minecraft:saturation 1000000 0 true
 title @s[gamemode=!creative,gamemode=!spectator] actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
 
+scoreboard players reset @s[scores={Health=..0},gamemode=!spectator] Room
 stopsound @s[scores={Health=..0},gamemode=!spectator] music
 playsound luigis_mansion:music.game_over music @s[scores={Health=..0},gamemode=!spectator] ~ ~ ~ 1000
 scoreboard players set @s[scores={Health=..0},gamemode=!spectator] MusicType 6

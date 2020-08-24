@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.lydia.silver"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.lydia.silver.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/lydia/bronze",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

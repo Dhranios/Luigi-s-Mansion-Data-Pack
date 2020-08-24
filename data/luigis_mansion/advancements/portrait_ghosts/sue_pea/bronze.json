@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.sue_pea.bronze"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.sue_pea.bronze.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/sue_pea",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

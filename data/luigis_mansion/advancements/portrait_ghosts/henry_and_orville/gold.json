@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.henry_and_orville.gold"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.henry_and_orville.gold.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/henry_and_orville/silver",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

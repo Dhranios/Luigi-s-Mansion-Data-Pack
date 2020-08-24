@@ -1,2 +1,0 @@
-function luigis_mansion:room/main_hallway/remove_blockade
-advancement grant @a only luigis_mansion:technical cleared_area_3_blockade

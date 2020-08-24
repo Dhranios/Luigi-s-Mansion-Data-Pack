@@ -1,0 +1,1 @@
+execute if block 686 102 55 minecraft:cobweb if entity @s[x=686.0,y=102,z=55.0,dx=0,dy=1,dz=0,tag=water] run function luigis_mansion:room/normal/kitchen/extinguish_fire

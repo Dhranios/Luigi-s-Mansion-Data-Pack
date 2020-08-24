@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.boolossus.gold"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.boolossus.gold.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/boolossus/silver",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

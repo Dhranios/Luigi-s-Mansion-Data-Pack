@@ -3,6 +3,7 @@ execute if entity @s[scores={Health=1..}] run scoreboard players operation @e[ta
 execute if entity @s[tag=!watery_heart] run tag @e[tag=this_entity,limit=1] remove watery_heart
 execute if entity @s[tag=!watery_heart] run tag @e[tag=this_entity,limit=1] add stunable
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
+scoreboard players set @e[tag=this_entity,limit=1] PullStrength 3
 scoreboard players set @e[tag=this_entity,limit=1] Move 1
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0

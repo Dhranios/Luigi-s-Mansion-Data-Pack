@@ -1,4 +1,4 @@
-scoreboard players add @s[tag=in_vacuum] VacuumTime 1
+scoreboard players add @s[tag=in_vacuum,scores={SpawnTime=120..}] VacuumTime 1
 scoreboard players set @s[tag=!in_vacuum_2,tag=!in_vacuum] VacuumTime 0
 tag @s[tag=in_vacuum] add fleeing
 tag @s[tag=!in_vacuum_2,tag=!in_vacuum] remove fleeing
@@ -10,7 +10,7 @@ tag @s[tag=big,scores={VacuumTime=60}] add dying
 tag @s remove disappear
 
 execute if entity @s[tag=dying] run playsound luigis_mansion:entity.black_bogmire.vacumed hostile @a ~ ~ ~ 1
-execute if entity @s[tag=dying] run function luigis_mansion:spawn_entities/ball/shadow
+execute if entity @s[tag=dying] positioned ~ ~0.5 ~ run function luigis_mansion:spawn_entities/ball/shadow
 execute if entity @s[tag=dying] run teleport @s ~ -100 ~
 execute if entity @s[tag=dying] run tag @s add dead
 

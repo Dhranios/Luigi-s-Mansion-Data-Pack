@@ -5,13 +5,14 @@ execute if entity @s[tag=!chauncey,tag=!bogmire,tag=!boolossus,tag=!king_boo] st
 tag @s remove fleeing
 tag @s remove hurt
 tag @s remove hurt_animation
+tag @s remove vanish
 tag @s remove disappear
 scoreboard players set @s Time 0
 scoreboard players set @s[tag=lydia] Time 99
 scoreboard players set @s[tag=shivers] Time 5
 scoreboard players set @s[tag=mr_luggs] Time 858
 teleport @s[tag=shivers] 702 102 47
-scoreboard players set @s[tag=chauncey] Time 461
+scoreboard players set @s[tag=chauncey] Wave 461
 scoreboard players set @s[tag=bogmire] Time 181
 scoreboard players set @s VulnerableTime 0
 scoreboard players set @s StunTime 0

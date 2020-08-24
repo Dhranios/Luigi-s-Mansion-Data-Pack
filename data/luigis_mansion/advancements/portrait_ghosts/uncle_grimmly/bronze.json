@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.uncle_grimmly.bronze"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.uncle_grimmly.bronze.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/uncle_grimmly",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

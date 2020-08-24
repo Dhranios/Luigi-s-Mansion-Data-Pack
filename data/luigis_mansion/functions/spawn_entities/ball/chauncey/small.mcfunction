@@ -1,1 +1,1 @@
-summon minecraft:armor_stand ~ ~ ~ {Tags:["ball","vacuumable"],ArmorItems:[{},{},{},{id:"minecraft:pink_concrete",Count:1b}],Invisible:1b,DisabledSlots:2039583,Small:1b}
+summon minecraft:armor_stand ~ ~ ~ {Tags:["ball","vacuumable"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:2}}],Invisible:1b,DisabledSlots:2039583}

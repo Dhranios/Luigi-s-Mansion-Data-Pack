@@ -1,26 +1,26 @@
-execute if entity @a[advancements={luigis_mansion:mansion/study=true}] if score #neville OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/master_bedroom=true}] if score #lydia OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room=true}] if score #nana OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/nursery=true}] if score #chauncey OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/conservatory=true}] if score #melody_pisnissima OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/bathroom_2=true}] if score #miss_petunia OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room=true}] if score #madame_clairvoya OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/butlers_room=true}] if score #shivers OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/guest_room=true}] if score #sue_pea OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room=true}] if score #floating_whirlindas OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/dining_room=true}] if score #mr_luggs OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/ceramics_studio=true}] if score #jarvis OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/boneyard=true}] if score #spooky OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/twins_room=true}] if score #henry_and_orville OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/clockwork_room=true}] if score #clockwork_soldiers OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room=true}] if score #biff_atlas OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/billiards_room=true}] if score #slim_bankshot OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/cold_storage=true}] if score #sir_weston OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/graveyard=true}] if score #bogmire OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/breaker_room=true}] if score #uncle_grimmly OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/artist_studio=true}] if score #vincent_van_gore OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/balcony_2=true}] if score #boolossus OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-execute if entity @a[advancements={luigis_mansion:mansion/secret_altar=true}] if score #king_boo_and_bowser OneGoHealth matches -100.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #neville LastHealth matches ..0 if score #neville OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #lydia LastHealth matches ..0 if score #lydia OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #nana LastHealth matches ..0 if score #nana OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #chauncey LastHealth matches ..0 if score #chauncey OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #melody_pianissima LastHealth matches ..0 if score #melody_pianissima OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #miss_petunia LastHealth matches ..0 if score #miss_petunia OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #madame_clairvoya LastHealth matches ..0 if score #madame_clairvoya OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #shivers LastHealth matches ..0 if score #shivers OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #sue_pea LastHealth matches ..0 if score #sue_pea OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #floating_whirlindas LastHealth matches ..0 if score #floating_whirlindas OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #mr_luggs LastHealth matches ..0 if score #mr_luggs OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #jarvis LastHealth matches ..0 if score #jarvis OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #spooky LastHealth matches ..0 if score #spooky OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #henry LastHealth matches ..0 if score #orville LastHealth matches ..0 if score #henry_and_orville OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #pink_clockwork_soldier LastHealth matches ..0 if score #blue_clockwork_soldier LastHealth matches ..0 if score #green_clockwork_soldier LastHealth matches ..0 if score #clockwork_soldiers OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #biff_atlas LastHealth matches ..0 if score #biff_atlas OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #slim_bankshot LastHealth matches ..0 if score #slim_bankshot OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #sir_weston LastHealth matches ..0 if score #sir_weston OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #bogmire LastHealth matches ..0 if score #bogmire OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #uncle_grimmly LastHealth matches ..0 if score #uncle_grimmly OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #vincent_van_gore LastHealth matches ..0 if score #vincent_van_gore OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #boolossus LastHealth matches ..0 if score #boolossus OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
+execute if score #king_boo LastHealth matches ..0 if score #king_boo OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
 tag @e[tag=e_gadd,tag=portrificationizing] remove talk
 scoreboard players set @e[tag=e_gadd,tag=portrificationizing] Dialog 0
 execute if entity @e[tag=e_gadd,tag=portrificationizing] as @a run trigger Choice set 0

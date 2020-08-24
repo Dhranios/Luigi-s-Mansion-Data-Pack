@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.miss_petunia.gold"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.miss_petunia.gold.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/miss_petunia/silver",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

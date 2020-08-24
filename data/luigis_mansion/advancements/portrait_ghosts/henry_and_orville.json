@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.henry_and_orville"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.henry_and_orville.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/portrait_ghosts",
+    "criteria": {
+        "captured": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

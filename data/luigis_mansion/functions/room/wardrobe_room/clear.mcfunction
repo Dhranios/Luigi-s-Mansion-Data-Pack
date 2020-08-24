@@ -1,2 +1,0 @@
-function luigis_mansion:room/wardrobe_room/turn_on_lights
-scoreboard players reset #wardrobe_room Wave

@@ -2,8 +2,9 @@ execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/melody_pianissima
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
-execute if entity @s[tag=dead] run scoreboard players reset #melody_pianissima LastHealth
 execute if entity @s[tag=dead] unless score #melody_pianissima OneGoHealth matches 0.. run scoreboard players operation #melody_pianissima OneGoHealth = @s Health
+execute if entity @s[tag=dead] run scoreboard players set #melody_pianissima LastHealth 0
+execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_pianissima
 execute if entity @s[tag=disappear] unless score #melody_pianissima OneGoHealth matches 0.. run scoreboard players operation #melody_pianissima OneGoHealth = @s Health
 execute if entity @s[tag=disappear] run scoreboard players operation #melody_pianissima LastHealth = @s Health
 

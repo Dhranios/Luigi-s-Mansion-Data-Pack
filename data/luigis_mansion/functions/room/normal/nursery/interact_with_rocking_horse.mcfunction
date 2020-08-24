@@ -1,0 +1,5 @@
+execute if entity @s[x=715.0,y=112,z=55.0,dx=2,dy=1,dz=2,tag=vacuum] unless score #nursery_rocking_horse Search matches 1 run scoreboard players add @e[tag=chauncey,type=minecraft:pig,scores={Dialog=1..49},limit=1] Dialog 1
+execute if entity @s[x=715.0,y=112,z=55.0,dx=2,dy=1,dz=2,tag=vacuum] run scoreboard players set #nursery_rocking_horse Search 1
+execute unless entity @s unless score #nursery_rocking_horse Search matches 1 run scoreboard players remove @e[tag=chauncey,type=minecraft:pig,scores={Dialog=2..49},limit=1] Dialog 3
+execute unless entity @s run scoreboard players reset #nursery_rocking_horse Search
+execute if entity @e[x=715.0,y=112,z=55.0,dx=2,dy=1,dz=2,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.71"}]}

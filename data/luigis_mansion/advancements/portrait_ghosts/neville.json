@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.neville"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.neville.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/portrait_ghosts",
+    "criteria": {
+        "captured": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

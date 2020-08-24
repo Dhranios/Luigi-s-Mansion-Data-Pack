@@ -7,6 +7,8 @@ execute as @e[tag=vacuumable,distance=..0.7] unless entity @s[tag=haunted_object
 execute as @e[tag=vacuumable,distance=..0.7,tag=ball,tag=!spit] positioned as @s run teleport @s ~ ~ ~ ~ ~
 execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball] unless entity @s[tag=haunted_object,tag=!moving] run tag @s add dead
 execute as @e[tag=vacuumable,distance=..0.7,tag=spark] run tag @s add explode
+execute as @e[tag=fake_door,distance=..0.7] run tag @s add dead
+execute as @e[tag=shivers,distance=..0.7] run tag @s add burning
 tag @e[tag=ghost,distance=..0.7,tag=!burning_heart,tag=!watery_heart,tag=!portrait_ghost,tag=!boo] add element_hurt
-
-tag @s add dead
+teleport @e[tag=interact,limit=1] ~ ~ ~ ~ ~
+execute as @e[tag=interact,limit=1] at @s run function luigis_mansion:room/interactions

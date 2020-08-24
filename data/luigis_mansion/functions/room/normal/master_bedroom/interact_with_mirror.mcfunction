@@ -1,0 +1,6 @@
+execute if entity @s[x=687.0,y=112,z=41.0,dx=2,dy=3,dz=2,tag=vacuum] if block ~ ~ ~ minecraft:pink_wool run scoreboard players add #master_bedroom_mirror Searching 1
+execute if entity @s[x=687.0,y=112,z=41.0,dx=2,dy=3,dz=2,tag=vacuum] if block ~ ~ ~ minecraft:pink_wool run scoreboard players set #master_bedroom_mirror Search 1
+execute unless entity @s unless score #master_bedroom_mirror Search matches 1 run scoreboard players reset #master_bedroom_mirror Searching
+execute unless entity @s run scoreboard players reset #master_bedroom_mirror Search
+execute unless entity @s if score #master_bedroom_mirror Searching matches 20 run function luigis_mansion:room/normal/master_bedroom/search_mirror
+execute if entity @s[x=687.0,y=112,z=41.0,dx=2,dy=3,dz=2,tag=gameboy_horror_scan] if block ~ ~ ~ minecraft:pink_wool run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.55"}]}

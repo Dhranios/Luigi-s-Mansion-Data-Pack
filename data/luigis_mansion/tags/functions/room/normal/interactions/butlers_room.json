@@ -1,0 +1,20 @@
+{
+	"values": [
+		"luigis_mansion:room/normal/butlers_room/interact_with_bucket",
+		"luigis_mansion:room/normal/butlers_room/interact_with_candle",
+		"luigis_mansion:room/normal/butlers_room/interact_with_chair_1",
+		"luigis_mansion:room/normal/butlers_room/interact_with_chair_2",
+		"luigis_mansion:room/normal/butlers_room/interact_with_chair_3",
+		"luigis_mansion:room/normal/butlers_room/interact_with_chair_4",
+		"luigis_mansion:room/normal/butlers_room/interact_with_chest",
+		"luigis_mansion:room/normal/butlers_room/interact_with_closet",
+		"luigis_mansion:room/normal/butlers_room/interact_with_hole",
+		"luigis_mansion:room/normal/butlers_room/interact_with_ironing_table",
+		"luigis_mansion:room/normal/butlers_room/interact_with_lamp",
+		"luigis_mansion:room/normal/butlers_room/interact_with_sewing_machine",
+		"luigis_mansion:room/normal/butlers_room/interact_with_table",
+		"luigis_mansion:room/normal/butlers_room/interact_with_toilet_paper",
+		"luigis_mansion:room/normal/butlers_room/interact_with_vacuumable",
+		"luigis_mansion:room/normal/butlers_room/interact_with_water_bucket"
+	]
+}

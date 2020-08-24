@@ -1,4 +1,16 @@
 {
+    "display": {
+        "icon": {
+            "item": "minecraft:glowstone_dust"
+        },
+        "title": {
+            "text": "Money"
+        },
+        "description": {
+            "text": "Temporary display so I can see if it triggers"
+        }
+    },
+	"parent": "luigis_mansion:mansion/mansion",
     "criteria": {
         "foyer_money": {
             "trigger": "minecraft:impossible"
@@ -154,9 +166,6 @@
             "trigger": "minecraft:impossible"
         },
         "hidden_room_lamp": {
-            "trigger": "minecraft:impossible"
-        },
-        "hidden_room_chest_8": {
             "trigger": "minecraft:impossible"
         },
         "conservatory_closet": {

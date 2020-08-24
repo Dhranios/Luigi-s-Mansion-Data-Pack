@@ -1,2 +1,0 @@
-function luigis_mansion:room/butlers_room/turn_on_lights
-scoreboard players reset #butlers_room Wave

@@ -1,4 +1,4 @@
-execute if entity @a[x=714.5,y=102,z=-12.5,distance=..1.5,gamemode=!spectator] run tag @s[scores={Dialog=0}] add talk
+execute positioned ^ ^ ^3 if entity @a[distance=..1.5,gamemode=!spectator] run tag @s[scores={Dialog=0}] add talk
 execute if entity @s[tag=talk,scores={Dialog=0}] run function luigis_mansion:entities/madame_clairvoya/select_dialog
 execute if entity @s[tag=talk,tag=normal] run function luigis_mansion:dialog/madame_clairvoya
 execute if entity @s[tag=talk,tag=hat,tag=!next] run function luigis_mansion:dialog/marios_hat

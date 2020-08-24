@@ -1,3 +1,5 @@
 tag @s add visible
-replaceitem entity @s armor.head minecraft:leather_helmet{AttributeModifiers:[],Unbreakable:1b,display:{color:5963775}}
-replaceitem entity @s armor.chest minecraft:leather_chestplate{AttributeModifiers:[],Unbreakable:1b,display:{color:5963775}}
+data modify entity @s ArmorItems[3].tag.CustomModelData set value 15
+data modify entity @s HandItems[0].tag.CustomModelData set value 15
+data modify entity @s HandItems[1].tag.CustomModelData set value 15
+data modify entity @s CustomNameVisible set value 1b

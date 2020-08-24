@@ -1,5 +1,0 @@
-execute if entity @e[x=717.5,y=102,z=57.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #butlers_room_bucket Searching 1
-execute unless entity @e[x=717.5,y=102,z=57.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #butlers_room_bucket Searching
-execute if score #butlers_room_bucket Searching matches 20 run function luigis_mansion:room/butlers_room/search_bucket
-execute unless block 717 102 57 minecraft:hopper{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/butlers_room/search_bucket
-execute if entity @e[x=717.5,y=102,z=57.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.77"}]}

@@ -1,4 +1,0 @@
-execute if entity @e[x=673.5,y=102,z=49.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #boneyard_sign Searching 1
-execute unless entity @e[x=673.5,y=102,z=49.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #boneyard_sign Searching
-execute if score #boneyard_sign Searching matches 20 run function luigis_mansion:room/boneyard/search_sign
-execute if entity @e[x=673.5,y=102,z=49.5,distance=..0.7,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.93"}]}

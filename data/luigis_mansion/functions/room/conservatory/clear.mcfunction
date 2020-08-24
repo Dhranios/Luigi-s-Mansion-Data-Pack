@@ -1,2 +1,0 @@
-function luigis_mansion:room/conservatory/turn_on_lights
-scoreboard players reset #conservatory Wave

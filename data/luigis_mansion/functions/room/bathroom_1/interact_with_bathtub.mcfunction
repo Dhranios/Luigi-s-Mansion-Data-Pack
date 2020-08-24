@@ -1,4 +1,0 @@
-execute if entity @e[x=655.0,y=102,z=32.0,dx=2,dy=1,dz=5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #bathroom_1_bathtub Searching 1
-execute unless entity @e[x=655.0,y=102,z=32.0,dx=2,dy=1,dz=5,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #bathroom_1_bathtub Searching
-execute if score #bathroom_1_bathtub Searching matches 20 run function luigis_mansion:room/bathroom_1/search_bathtub
-execute at @e[x=655.0,y=102,z=32.0,dx=2,dy=1,dz=5,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.48"}]}

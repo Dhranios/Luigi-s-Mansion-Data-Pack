@@ -5,7 +5,7 @@ execute as @a at @s run function luigis_mansion:main/players
 function luigis_mansion:room/detect
 execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non_players
 function luigis_mansion:anti_cheating/scores
-function luigis_mansion:lightning/try
+execute if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
 kill @e[tag=dead,tag=can_die]
 kill @e[tag=last_position]
 kill @e[tag=new_position]

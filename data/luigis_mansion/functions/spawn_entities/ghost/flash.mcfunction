@@ -3,11 +3,10 @@ execute if entity @s[scores={Health=1..}] run scoreboard players operation @e[ta
 execute if entity @s[tag=!frozen_heart] run tag @e[tag=this_entity,limit=1] remove frozen_heart
 execute if entity @s[tag=!frozen_heart] run tag @e[tag=this_entity,limit=1] add stunable
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
+scoreboard players set @e[tag=this_entity,limit=1] PullStrength 2
 scoreboard players set @e[tag=this_entity,limit=1] Move 3
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 execute store result score @e[tag=this_entity,limit=1] HomeY run data get entity @s Pos[1] 100
 tag @e[tag=this_entity,limit=1] remove this_entity
-playsound luigis_mansion:entity.flash.spawn hostile @a ~ ~ ~ 1
-execute as @a[gamemode=!spectator,distance=..5] at @s run function luigis_mansion:entities/player/scare

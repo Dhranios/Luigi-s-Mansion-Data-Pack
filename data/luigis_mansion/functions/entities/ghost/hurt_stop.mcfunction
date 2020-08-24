@@ -3,4 +3,3 @@ execute if entity @s[tag=portrait_ghost,tag=pearl_dropper] run function luigis_m
 tag @s remove attack
 tag @s remove laugh
 tag @s remove complain
-tag @s remove hurt

@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.melody_pianissima.gold"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.melody_pianissima.gold.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/melody_pianissima/silver",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

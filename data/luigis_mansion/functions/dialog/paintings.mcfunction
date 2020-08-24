@@ -17,6 +17,7 @@ execute if entity @s[scores={Dialog=400}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=460}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.7"}]}
 execute if entity @s[scores={Dialog=460}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.7.more"}]}
 execute if entity @s[scores={Dialog=520}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.painting","color":"green"},{"translate":"luigis_mansion:dialog.paintings.8"}]}
-execute if entity @s[scores={Dialog=560}] run function luigis_mansion:room/parlor/wave_1
+execute if entity @s[scores={Dialog=560}] if score #mansion_type Selected matches 0 run function luigis_mansion:room/normal/parlor/wave_1
+execute if entity @s[scores={Dialog=560}] if score #mansion_type Selected matches 1 run function luigis_mansion:room/hidden/parlor/wave_1
 execute if entity @s[scores={Dialog=560}] run scoreboard players set @a MusicType 0
 scoreboard players reset @s[scores={Dialog=560}] Dialog

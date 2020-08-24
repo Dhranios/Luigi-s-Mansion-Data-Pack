@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.neville.gold"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.neville.gold.description"
+        }
+    },
+	"parent": "luigis_mansion:portrait_ghosts/neville/silver",
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

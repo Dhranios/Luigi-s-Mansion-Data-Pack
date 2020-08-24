@@ -1,4 +1,0 @@
-execute if entity @e[x=674.0,y=103,z=-41.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #storage_room_crate_6 Searching 1
-execute unless entity @e[x=674.0,y=103,z=-41.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #storage_room_crate_6 Searching
-execute if score #storage_room_crate_6 Searching matches 20 run function luigis_mansion:room/storage_room/search_crate_6
-execute if entity @e[x=674.0,y=103,z=-41.0,dx=1,dy=1,dz=1,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.23"}]}

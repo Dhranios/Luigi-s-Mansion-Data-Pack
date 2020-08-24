@@ -1,17 +1,24 @@
-scoreboard players add @s[scores={Time=1}] Time 1
+scoreboard players add @s[scores={Time=1..10}] Time 1
 execute unless entity @s[scores={Time=1..}] run scoreboard players set @s Time 1
+execute if entity @s[tag=was_idle] run scoreboard players set @s Time 1
+tag @s remove was_idle
 
-execute if entity @s[scores={Time=1}] run playsound luigis_mansion:entity.bowling_ghost.attack hostile @a ~ ~ ~ 1
-execute if entity @s[scores={Time=1}] run replaceitem entity @s weapon.mainhand minecraft:air
-execute if entity @s[scores={Time=1}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["bowling_ball"],ArmorItems:[{},{},{},{id:"minecraft:purple_concrete",Count:1b}],Invisible:1b,DisabledSlots:2039583,Small:1b}
-execute if entity @s[scores={Time=1}] run scoreboard players operation @s Bowling > @e[tag=bowling_ghost] Bowling
-execute if entity @s[scores={Time=1}] run scoreboard players add @s Bowling 1
-execute if entity @s[scores={Time=1}] as @e[distance=..0.1,tag=bowling_ball] unless entity @s[scores={Bowling=1..}] run scoreboard players operation @s Bowling = @e[tag=bowling_ghost,distance=..0.1] Bowling
+scoreboard players set @s[scores={Time=1}] AnimationProg 0
+data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-45.0f,30.0f,0.0f],LeftArm:[-90.0f,0.0f,0.0f]}}
+execute if entity @s[scores={Time=1..10}] run function luigis_mansion:animations/bowling_ghost/throw_ball
+execute if entity @s[scores={Time=5}] run playsound luigis_mansion:entity.bowling_ghost.attack hostile @a ~ ~ ~ 1
+execute if entity @s[scores={Time=1}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^1.2 ^0.4
+execute if entity @s[scores={Time=2}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.6 ^0.2
+execute if entity @s[scores={Time=3}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^0.6 ^-0.2
+execute if entity @s[scores={Time=4}] run teleport @e[tag=this_bowling_ball,limit=1] ^ ^ ^0.5
+execute if entity @s[scores={Time=5}] run tag @e[tag=this_bowling_ball,limit=1] remove held
 
-execute if entity @s[scores={Time=2}] run scoreboard players operation #temp Bowling = @s Bowling
-execute if entity @s[scores={Time=2}] as @e[tag=bowling_ball] if score @s Bowling = #temp Bowling run tag @e[distance=..0.1] add wait
-tag @s[scores={Time=2},tag=!wait,tag=!laugh] add complain
-tag @s[scores={Time=2},tag=!wait] remove attack
-scoreboard players reset @s[scores={Time=2},tag=!wait] Time
-scoreboard players reset #temp Bowling
+scoreboard players set @s[scores={Time=10}] AnimationProg 0
+data merge entity @s[scores={Time=10}] {Pose:{RightArm:[20.0f,0.0f,0.0f],LeftArm:[-160.0f,50.0f,0.0f],Head:[0.0f,0.0f,0.01f]}}
+execute if entity @s[scores={Time=10..11}] run function luigis_mansion:animations/bowling_ghost/look
+execute if entity @s[scores={Time=11}] if entity @e[tag=this_bowling_ball,limit=1] run tag @s add wait
+tag @s[scores={Time=11},tag=!wait,tag=!laugh] add complain
+tag @s[scores={Time=11},tag=!wait] remove attack
+scoreboard players set @s[scores={Time=11},tag=!wait] AnimationProg 0
+scoreboard players set @s[scores={Time=11},tag=!wait] Time 0
 tag @s remove wait

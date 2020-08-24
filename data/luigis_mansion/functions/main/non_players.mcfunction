@@ -6,7 +6,6 @@ execute if entity @s[tag=bone] run function luigis_mansion:entities/bone
 execute if entity @s[tag=bomb] run function luigis_mansion:entities/bomb
 execute if entity @s[tag=vacuumable,tag=!ball] run function luigis_mansion:entities/vacuumable
 execute if entity @s[tag=ball] run function luigis_mansion:entities/ball
-execute if entity @s[tag=poltergust] run function luigis_mansion:items/poltergust_3000/entity
 execute if entity @s[tag=door] run function luigis_mansion:animations/closed_door
 execute if entity @s[tag=fake_door] run function luigis_mansion:entities/fake_door
 execute if entity @s[tag=e_gadd] run function luigis_mansion:entities/e_gadd
@@ -19,12 +18,8 @@ execute if entity @s[tag=hidden_boo] run function luigis_mansion:entities/hidden
 execute if entity @s[tag=elemental_ghost] run function luigis_mansion:entities/elemental_ghost
 execute if entity @s[tag=bannana_peel] run function luigis_mansion:entities/bannana_peel
 
-# Prevent zombies from converting to drowned
-data merge entity @s[type=minecraft:zombie,nbt=!{DrownedConversionTime:-1,InWaterTime:-1}] {DrownedConversionTime:-1,InWaterTime:-1}
-data merge entity @s[type=minecraft:husk,nbt=!{DrownedConversionTime:-1,InWaterTime:-1}] {DrownedConversionTime:-1,InWaterTime:-1}
-data merge entity @s[type=minecraft:wandering_trader,nbt={DespawnDelay:2}] {DespawnDelay:2147483647}
-data merge entity @s[type=minecraft:trader_llama,nbt={DespawnDelay:2}] {DespawnDelay:2147483647}
-data merge entity @s[type=minecraft:item] {Air:0}
+# Refresh item positions; prevent them getting destroyed by explosions, and fix multiple lightning
+data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}
 data merge entity @s[type=minecraft:item] {Air:1}
 execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:lightning_bolt,distance=0.1..]
 

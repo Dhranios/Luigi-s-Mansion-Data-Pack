@@ -3,3 +3,4 @@ execute as @e[scores={Room=62},type=!minecraft:painting,type=!minecraft:item_fra
 tag @e[scores={Room=62},type=minecraft:item] add dead
 tag @e[scores={Room=62},tag=boo] add turn_to_marker
 scoreboard players reset #ghost_portrificationizer_room Ticking
+scoreboard players reset #ghost_portrificationizer

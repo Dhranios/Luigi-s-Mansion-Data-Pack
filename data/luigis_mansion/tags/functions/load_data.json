@@ -1,0 +1,12 @@
+{
+	"values": [
+		"luigis_mansion:other/load_data/lab",
+		"luigis_mansion:other/load_data/mansion",
+		"luigis_mansion:other/load_data/keys",
+		"luigis_mansion:other/load_data/technical",
+		"luigis_mansion:other/load_data/money",
+		"luigis_mansion:other/load_data/boos",
+		"luigis_mansion:other/load_data/portrait_ghosts",
+		"luigis_mansion:other/load_data/reload_rooms"
+	]
+}

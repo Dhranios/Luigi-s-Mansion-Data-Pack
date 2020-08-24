@@ -9,7 +9,7 @@ teleport @s[scores={Dialog=31..60}] ~ ~ ~0.05
 teleport @s[scores={Dialog=61..90}] ~ ~ ~-0.05
 teleport @s[scores={Dialog=91..120}] ~ ~ ~0.025
 teleport @s[scores={Dialog=121..122}] ~ ~-0.2 ~
-execute if entity @s[scores={Dialog=216}] run summon minecraft:item ~ ~0.5 ~ {PickupDelay:254s,Motion:[0.0d,0.2d,-0.0d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:key",room:"parlor"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.key","with":[{"translate":"luigis_mansion:location.parlor"}]}'}}},Age:-32768s}
+execute if entity @s[scores={Dialog=216}] run summon minecraft:item ~ ~0.5 ~ {Invulnerable:1b,PickupDelay:254s,Motion:[0.0d,0.2d,-0.0d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:key",room:"parlor"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.key","with":[{"translate":"luigis_mansion:location.parlor"}]}'}}},Age:-32768s}
 replaceitem entity @s[scores={Dialog=216}] armor.head minecraft:air
 teleport @s[scores={Dialog=216..255}] ~ ~ ~0.2
 teleport @s[scores={Dialog=255..274}] ~-0.2 ~0.2 ~

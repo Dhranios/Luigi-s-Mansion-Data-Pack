@@ -1,2 +1,0 @@
-function luigis_mansion:room/curved_hallway/remove_blockade
-advancement grant @a only luigis_mansion:technical cleared_king_boo_blockade

@@ -1,5 +1,4 @@
 tag @s add normal_death
-tag @s remove hurt
 
 execute facing entity @p[gamemode=!spectator] feet run teleport @s ~ ~ ~ ~-180 ~
 execute store result score #temp HomeRot run data get entity @s Rotation[1] 100
@@ -16,6 +15,6 @@ execute at @s run teleport @s ^ ^ ^-0.6
 execute if entity @s[scores={HurtTime=1}] run scoreboard players operation #temp Room = @s Room
 execute at @s[scores={HurtTime=1},tag=!gold_dummy_ghost] as @a[gamemode=!spectator,scores={GhostCount=2..}] if score @s Room = #temp Room run function luigis_mansion:spawn_entities/item/small_heart
 execute if entity @s[scores={HurtTime=1}] run scoreboard players reset #temp Room
-execute at @s[scores={HurtTime=2}] if entity @a[gamemode=!spectator,distance=..0.7] run scoreboard players add #ghosts_caught Totals 1
-execute at @s[scores={HurtTime=2},tag=gold_dummy_ghost] if entity @a[gamemode=!spectator,distance=..0.7] run scoreboard players add #training Totals 1
+execute at @s[scores={HurtTime=1}] run scoreboard players add #ghosts_caught Totals 1
+execute at @s[scores={HurtTime=1},tag=gold_dummy_ghost] run scoreboard players add #training Totals 1
 execute at @s[scores={HurtTime=2}] if entity @a[gamemode=!spectator,distance=..0.7] run tag @s add dead

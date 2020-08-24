@@ -10,7 +10,7 @@ execute if entity @s[scores={Time=1},tag=north] run teleport @p[tag=door_target]
 execute if entity @s[scores={Time=1},tag=south] run teleport @p[tag=door_target] ~-1 ~ ~-0.5
 execute if entity @s[scores={Time=1},tag=west] run teleport @p[tag=door_target] ~0.5 ~ ~-1
 execute if entity @s[scores={Time=1},tag=laundry_room] run teleport @p[tag=door_target] ~0.5 ~ ~-1
-execute if entity @s[scores={Time=2}] run scoreboard players set @p[tag=door_target,distance=..3] ForcedDamage 10
+execute if entity @s[scores={Time=2}] run scoreboard players set @p[tag=door_target,distance=..3] ForcedDamage 7
 execute if entity @s[scores={Time=2..20},tag=north] run teleport @p[tag=door_target,distance=..3] ~1 ~ ~0.5
 execute if entity @s[scores={Time=2..20},tag=south] run teleport @p[tag=door_target,distance=..3] ~-1 ~ ~-0.5
 execute if entity @s[scores={Time=2..20},tag=west] run teleport @p[tag=door_target,distance=..3] ~0.5 ~ ~-1

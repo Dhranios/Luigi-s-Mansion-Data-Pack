@@ -1,5 +1,0 @@
-execute if entity @e[x=666.0,y=102,z=31.0,dx=1,dy=0,dz=2,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players add #washroom_1_sink Searching 1
-execute unless entity @e[x=666.0,y=102,z=31.0,dx=1,dy=0,dz=2,type=minecraft:area_effect_cloud,tag=vacuum,limit=1] run scoreboard players reset #washroom_1_sink Searching
-execute if score #washroom_1_sink Searching matches 20 run function luigis_mansion:room/washroom_1/search_sink
-execute unless block 667 102 32 minecraft:dropper{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/washroom_1/search_sink
-execute if entity @e[x=666.0,y=102,z=31.0,dx=1,dy=0,dz=2,type=minecraft:area_effect_cloud,tag=gameboy_horror_scan,limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator,limit=1]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.80"}]}

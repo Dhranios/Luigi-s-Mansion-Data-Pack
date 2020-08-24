@@ -1,1 +1,1 @@
-summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:nether_wart",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poison_mushroom"}'}}},Age:5400s,PickupDelay:32767s,Tags:["poison_mushroom"]}
+summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:nether_wart",Count:1b,tag:{display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poison_mushroom"}'}}},Age:5400s,PickupDelay:32767s,Tags:["poison_mushroom"]}

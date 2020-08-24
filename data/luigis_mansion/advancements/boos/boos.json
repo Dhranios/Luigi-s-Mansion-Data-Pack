@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_button"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.boos.boos"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.boos.boos.description"
+        },
+		"background": "luigis_mansion:textures/gui/advancements/background/boos.png"
+    },
+    "criteria": {
+        "released_boos": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

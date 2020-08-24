@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:wooden_sword"
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:1}"
         },
         "title": {
             "translate": "luigis_mansion:location.training_room"

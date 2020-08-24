@@ -1,2 +1,2 @@
-summon minecraft:armor_stand ~ ~ ~ {Tags:["shadow","ball","vacuumable"],ArmorItems:[{},{},{},{id:"minecraft:black_concrete",Count:1b}],Invisible:1b,DisabledSlots:2039583,Small:1b}
+summon minecraft:armor_stand ~ ~ ~ {Tags:["shadow","ball","vacuumable"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:6}}],Invisible:1b,DisabledSlots:2039583}
 execute facing entity @p[gamemode=!spectator] feet run teleport @e[tag=ball,distance=..0.1] ~ ~ ~ ~ 0

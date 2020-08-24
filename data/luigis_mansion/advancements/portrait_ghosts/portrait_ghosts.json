@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:painting"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.portrait_ghosts"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.portrait_ghosts.portrait_ghosts.description"
+        },
+		"background": "luigis_mansion:textures/gui/advancements/background/portrait_ghosts.png"
+    },
+    "criteria": {
+        "portrificationized": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
