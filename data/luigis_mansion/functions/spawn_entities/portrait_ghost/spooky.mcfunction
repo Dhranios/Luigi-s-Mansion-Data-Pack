@@ -7,6 +7,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeRot run data ge
 execute unless score #spooky LastHealth matches 1.. run scoreboard players set #spooky LastHealth 10000
 scoreboard players operation @e[tag=this_entity,limit=1] Health = #spooky LastHealth
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevHealth = @s Health
+scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=this_entity,limit=1] Move 4
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0

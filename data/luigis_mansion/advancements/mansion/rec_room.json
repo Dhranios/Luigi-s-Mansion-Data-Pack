@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.rec_room.description"
         }
     },
-	"parent": "luigis_mansion:mansion/courtyard",
+	"parent": "luigis_mansion:mansion/rec_room_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

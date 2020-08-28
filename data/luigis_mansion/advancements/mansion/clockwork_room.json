@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.clockwork_room.description"
         }
     },
-	"parent": "luigis_mansion:mansion/telephone_room",
+	"parent": "luigis_mansion:mansion/clockwork_room_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.kitchen_oven"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.kitchen_oven.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/kitchen",
+    "criteria": {
+        "spawned": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

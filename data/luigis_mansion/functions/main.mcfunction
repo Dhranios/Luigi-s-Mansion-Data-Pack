@@ -7,6 +7,5 @@ execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non
 function luigis_mansion:anti_cheating/scores
 execute if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike
 kill @e[tag=dead,tag=can_die]
-kill @e[tag=last_position]
-kill @e[tag=new_position]
-execute at @a[tag=vacuuming] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["last_position"],Duration:2}
+execute at @a[tag=vacuuming] run kill @e[distance=..0.7,type=minecraft:area_effect_cloud,tag=position,limit=1]
+execute at @a[tag=vacuuming] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["position"],Duration:2}

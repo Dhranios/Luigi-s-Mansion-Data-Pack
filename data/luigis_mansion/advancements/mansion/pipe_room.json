@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.pipe_room.description"
         }
     },
-	"parent": "luigis_mansion:mansion/basement_hallway",
+	"parent": "luigis_mansion:mansion/pipe_room_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

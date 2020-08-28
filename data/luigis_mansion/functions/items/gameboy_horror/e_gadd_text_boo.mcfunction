@@ -1,5 +1,11 @@
 scoreboard players set @s[scores={Boos=1}] Variant -1
 scoreboard players set @s[scores={Boos=5}] Variant -2
+scoreboard players set @s[scores={Boos=16}] Variant -3
+scoreboard players set @s[scores={Boos=17}] Variant -5
+scoreboard players set @s[scores={Boos=20}] Variant -4
+scoreboard players set @s[scores={Boos=38}] Variant -4
+scoreboard players set @s[scores={Boos=43}] Variant -5
+scoreboard players set @s[scores={Boos=49}] Variant -6
 execute unless entity @s[scores={Variant=-10..}] run scoreboard players set @s Variant 1
 execute if entity @s[scores={Variant=1..}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.5"}]}
 execute if entity @s[scores={Variant=-1}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.5.first"}]}

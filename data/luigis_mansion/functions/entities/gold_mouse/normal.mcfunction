@@ -1,0 +1,10 @@
+execute if entity @s[tag=study] run function luigis_mansion:entities/gold_mouse/normal/study
+execute if entity @s[tag=main_hallway] run function luigis_mansion:entities/gold_mouse/normal/main_hallway
+execute if entity @s[tag=dining_room] run function luigis_mansion:entities/gold_mouse/normal/dining_room
+execute if entity @s[tag=kitchen] run function luigis_mansion:entities/gold_mouse/normal/kitchen
+execute if entity @s[tag=tea_room_random] run function luigis_mansion:entities/gold_mouse/normal/tea_room_random
+execute if entity @s[tag=tea_room_cheese] run function luigis_mansion:entities/gold_mouse/normal/tea_room_cheese
+execute if entity @s[tag=hallway] run function luigis_mansion:entities/gold_mouse/normal/hallway
+execute if entity @s[tag=fortune_tellers_room] run function luigis_mansion:entities/gold_mouse/normal/fortune_tellers_room
+execute if entity @s[tag=safari_room] run function luigis_mansion:entities/gold_mouse/normal/safari_room
+execute if entity @s[tag=sealed_room] run function luigis_mansion:entities/gold_mouse/normal/sealed_room

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.washroom_1_cabinet"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.washroom_1_cabinet.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/washroom_1",
+    "criteria": {
+        "spawned": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

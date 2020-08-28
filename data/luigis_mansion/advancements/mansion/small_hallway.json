@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.small_hallway.description"
         }
     },
-	"parent": "luigis_mansion:mansion/foyer",
+	"parent": "luigis_mansion:mansion/small_hallway_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

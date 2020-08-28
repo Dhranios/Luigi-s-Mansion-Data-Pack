@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.armory.description"
         }
     },
-	"parent": "luigis_mansion:mansion/attic_hallway_2",
+	"parent": "luigis_mansion:mansion/armory_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

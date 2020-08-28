@@ -10,9 +10,9 @@
             "translate": "luigis_mansion:advancements.mansion.anteroom.description"
         }
     },
-	"parent": "luigis_mansion:mansion/parlor",
+	"parent": "luigis_mansion:mansion/anteroom_key",
     "criteria": {
-        "cleared": {
+        "used": {
             "trigger": "minecraft:impossible"
         }
     }

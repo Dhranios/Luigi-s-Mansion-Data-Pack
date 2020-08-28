@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.nursery_money"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.nursery_money.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/nursery",
+    "criteria": {
+        "grabbed": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

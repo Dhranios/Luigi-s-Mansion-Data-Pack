@@ -16,6 +16,7 @@ execute if entity @a[advancements={luigis_mansion:technical={cleared_area_3_bloc
 execute if entity @a[advancements={luigis_mansion:technical={saw_mario=true}}] run advancement grant @a only luigis_mansion:technical saw_mario
 execute if entity @a[advancements={luigis_mansion:technical={saw_mario_again=true}}] run advancement grant @a only luigis_mansion:technical saw_mario_again
 execute if entity @a[advancements={luigis_mansion:technical={toad_4_happy=true}}] run advancement grant @a only luigis_mansion:technical toad_4_happy
+execute if entity @a[advancements={luigis_mansion:technical={extinguished_main_stairs_fire=true}}] run advancement grant @a only luigis_mansion:technical extinguished_main_stairs_fire
 execute if entity @a[advancements={luigis_mansion:technical={ice_element_medal=true}}] run advancement grant @a only luigis_mansion:technical ice_element_medal
 execute if entity @a[advancements={luigis_mansion:technical={observatory_destroyed=true}}] run advancement grant @a only luigis_mansion:technical observatory_destroyed
 execute if entity @a[advancements={luigis_mansion:technical={has_marios_hat=true}}] run advancement grant @a only luigis_mansion:technical has_marios_hat

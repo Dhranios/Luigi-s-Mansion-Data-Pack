@@ -49,3 +49,13 @@ data merge block 745 78 -36 {Text3:'{"text":""}'}
 kill @e[x=727.5,y=79,z=-29.5,type=minecraft:item_frame,distance=..0.7,limit=1]
 setblock 727 78 -30 minecraft:air
 scoreboard players reset #gallery Ticking
+scoreboard players reset #gallery_statue_1
+scoreboard players reset #gallery_statue_2
+scoreboard players reset #gallery_table_1
+scoreboard players reset #gallery_table_2
+scoreboard players reset #gallery_table_3
+scoreboard players reset #gallery_table_4
+scoreboard players reset #gallery_lamp_1
+scoreboard players reset #gallery_lamp_2
+scoreboard players reset #gallery_lamp_3
+scoreboard players reset #gallery_lamp_4

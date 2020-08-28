@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.safari_room.description"
         }
     },
-	"parent": "luigis_mansion:mansion/hallway",
+	"parent": "luigis_mansion:mansion/safari_room_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:1}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.cold_storage_key"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.cold_storage_key.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/basement_hallway",
+    "criteria": {
+        "used": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

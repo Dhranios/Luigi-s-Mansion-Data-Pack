@@ -5,7 +5,7 @@ execute if entity @s[gamemode=!spectator] run function luigis_mansion:blocks/gra
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:blocks/blockade
 execute if entity @s[tag=grabbed] run function luigis_mansion:entities/player/grabbed
 execute if entity @s[tag=warp] run function luigis_mansion:items/gameboy_horror/warp
-execute if entity @s[advancements={luigis_mansion:technical={released_boos=true}},scores={Boos=..49}] run function luigis_mansion:other/music/set/catching_boo
+execute if entity @s[advancements={luigis_mansion:boos/boos=true},scores={Boos=..49}] run function luigis_mansion:other/music/set/catching_boo
 execute if entity @s[scores={MusicType=15}] run function luigis_mansion:other/music/set/catching_chauncey
 execute if entity @s[scores={MusicType=32}] run function luigis_mansion:other/music/set/catching_chauncey
 execute if entity @s[scores={MusicType=16}] run function luigis_mansion:other/music/set/catching_bogmire
@@ -67,8 +67,7 @@ scoreboard players operation @s LastKeys = @s Keys
 
 scoreboard players remove @s[scores={HallwayNoise=1..}] HallwayNoise 1
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
-execute if entity @s[scores={Pull=100..}] run function luigis_mansion:entities/player/poltergust_breakage
-scoreboard players remove @s[scores={Pull=1..}] Pull 3
-scoreboard players set @s[scores={Pull=..-1}] Pull 0
+execute if entity @s[tag=poltergust_malfunction] run function luigis_mansion:entities/player/poltergust_breakage
+execute if entity @s[scores={Pull=20..},gamemode=!creative,gamemode=!spectator] run function luigis_mansion:entities/player/pulled_damage
+scoreboard players remove @s[scores={Pull=1..}] Pull 1
 tag @s remove pulled
-execute if entity @s[tag=vacuuming] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["new_position"],Duration:2}

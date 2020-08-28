@@ -1,17 +1,15 @@
-execute unless entity @s[tag=!is_stopped,tag=!is_pulled] run tag @s add can_pull
-execute if entity @s[scores={Pull=0},tag=can_pull] run function luigis_mansion:entities/ghost/pull_chance
-execute if entity @s[tag=!can_pull,scores={Pull=1..}] run scoreboard players remove @s Pull 2
-execute if entity @s[scores={Pull=..-10},tag=can_pull] run scoreboard players set @s Pull -10
-tag @s remove can_pull
-execute if entity @s[scores={Pull=1..}] run scoreboard players set #temp Move 3
-execute if entity @s[scores={Pull=1..}] run scoreboard players operation #temp Room = @s Room
 tag @s add me
-execute if entity @s[scores={Pull=1..}] as @a[gamemode=!spectator,tag=vacuuming] if score @s Room = #temp Room positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ghost/pull_player
-tag @s remove me
-execute if entity @s[scores={Pull=1..}] run scoreboard players set #temp Move 2
-scoreboard players remove @s[scores={Pull=1..}] Pull 1
-scoreboard players add @s[scores={Pull=..-1}] Pull 1
-execute unless entity @s[scores={Pull=-100..}] run scoreboard players set @s Pull 0
-execute if entity @s[scores={Pull=..-60}] run scoreboard players operation #temp Room = @s Room
-execute if entity @s[scores={Pull=..-60}] as @a[gamemode=!spectator,tag=vacuuming] if score @s Room = #temp Room run scoreboard players set @s Pull 100 
+scoreboard players operation #temp Room = @s Room
+execute as @a[gamemode=!spectator,tag=vacuuming,distance=3..] if score @s Room = #temp Room run tag @s add target
+execute as @a[gamemode=!spectator,tag=vacuuming,distance=..3] if score @s Room = #temp Room run scoreboard players set @s Pull 0
+scoreboard players add @s Pull 1
+scoreboard players remove @s[scores={Pull=5..},tag=is_pulled] Pull 10
+execute if entity @s[tag=is_pulled] as @a[tag=target] run scoreboard players set @s Pull 0
+execute unless entity @s[scores={Pull=220}] if score @s Pull >= @s PullStrength run scoreboard players set #temp Move 4
+execute unless entity @s[scores={Pull=220}] if score @s Pull >= @s PullStrength as @a[tag=target] positioned as @s facing entity @e[tag=me,limit=1] feet rotated ~ 0 run function luigis_mansion:entities/ghost/pull_player
+execute if entity @s[scores={Pull=220}] as @a[tag=target] run tag @s add poltergust_malfunction
 scoreboard players reset #temp Room
+tag @s remove me
+tag @s remove can_pull
+tag @a remove target
+execute if score @s Pull >= @s PullStrength if entity @s[tag=can_pull] run scoreboard players set #temp Move 4

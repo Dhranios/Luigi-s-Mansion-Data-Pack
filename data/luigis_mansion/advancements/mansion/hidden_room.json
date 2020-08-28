@@ -8,7 +8,8 @@
         },
         "description": {
             "translate": "luigis_mansion:advancements.mansion.hidden_room.description"
-        }
+        },
+		"hidden": true
     },
 	"parent": "luigis_mansion:mansion/butlers_room",
     "criteria": {

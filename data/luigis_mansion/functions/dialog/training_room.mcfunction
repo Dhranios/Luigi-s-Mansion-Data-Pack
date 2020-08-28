@@ -11,6 +11,8 @@ scoreboard players add @s[scores={Dialog=1186..1312}] Dialog 1
 execute unless entity @e[tag=gold_dummy_ghost,limit=1] run scoreboard players add @s[scores={Dialog=1185}] Dialog 1
 scoreboard players add @s[scores={Dialog=..1184}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] if entity @a[advancements={luigis_mansion:lab/training_room=true}] run scoreboard players add @s Dialog 736
+scoreboard players add @s[scores={Dialog=2424..}] Dialog 1
+execute if entity @a[scores={Health=1,Room=61}] run scoreboard players set @s[scores={Dialog=..2424}] Dialog 2424
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.1"}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.1.more"}]}
@@ -92,6 +94,7 @@ execute if entity @s[scores={Dialog=2100}] if score #training Totals matches ..3
 execute if entity @s[scores={Dialog=2100}] if score #training Totals matches ..3 run scoreboard players add @s Dialog 16
 execute if entity @s[scores={Dialog=2100}] if score #training Totals matches 4.. if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.22.good"}]}
 execute if entity @s[scores={Dialog=2100}] if score #training Totals matches 4.. if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.22.good.more"}]}
+execute if entity @s[scores={Dialog=2172}] run scoreboard players set @a[scores={Room=61}] Health 100
 execute if entity @s[scores={Dialog=2172}] if entity @a[advancements={luigis_mansion:lab/training_room=true}] as @a[scores={Room=61}] run function luigis_mansion:entities/e_gadd/to_lab
 execute if entity @s[scores={Dialog=2172}] if entity @a[advancements={luigis_mansion:lab/training_room=false}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.23"}]}
 execute if entity @s[scores={Dialog=2260}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.24"}]}
@@ -104,3 +107,13 @@ execute if entity @s[scores={Dialog=2390}] if entity @a[scores={EGaddTrainChoice
 execute if entity @s[scores={Dialog=2422}] run advancement grant @a only luigis_mansion:lab/training_room
 execute if entity @s[scores={Dialog=2422}] if entity @a[scores={EGaddTrainChoice=1},limit=1] as @a[scores={Room=61}] run function luigis_mansion:entities/e_gadd/to_gallery
 execute if entity @s[scores={Dialog=2422}] if entity @a[scores={EGaddTrainChoice=1},limit=1] as @a[scores={Room=61}] run function luigis_mansion:entities/e_gadd/to_lab
+execute if entity @s[scores={Dialog=2424}] run setblock 791 80 -4 minecraft:stone_button[face=ceiling,powered=true]
+execute if entity @s[scores={Dialog=2424}] run setblock 791 80 -15 minecraft:stone_button[face=ceiling,powered=true]
+execute if entity @s[scores={Dialog=2424}] run scoreboard players set @a[scores={Room=61}] Health 100
+execute if entity @s[scores={Dialog=2424}] run scoreboard players set @a[scores={Room=61}] Pull 0
+execute if entity @s[scores={Dialog=2424}] run scoreboard players set #training Totals 0
+execute if entity @s[scores={Dialog=2424}] run tag @e[tag=gold_dummy_ghost,scores={Room=61}] add dead
+execute if entity @s[scores={Dialog=2424}] run tag @e[tag=gold_dummy_ghost,scores={Room=61}] add can_die
+execute if entity @s[scores={Dialog=2424}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.0","with":[{"selector":"@a[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=2424}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.training_room.0.more"}]}
+execute if entity @s[scores={Dialog=2648}] run scoreboard players set @s Dialog 735

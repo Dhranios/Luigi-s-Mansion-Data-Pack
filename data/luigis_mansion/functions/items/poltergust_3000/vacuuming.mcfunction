@@ -3,7 +3,7 @@ scoreboard players operation #temp Room = @s Room
 tag @s add me
 execute as @e[tag=ghost,tag=hurt,tag=!vanish] unless entity @s[tag=boo,tag=!dying] if score @s Room = #temp Room run scoreboard players add #temp GhostCount 1
 execute if score #temp GhostCount > @s GhostCount run scoreboard players operation @s GhostCount = #temp GhostCount
-execute if score #temp GhostCount matches 1.. positioned ^ ^ ^0.5 as @e[tag=ghost,tag=hurt,tag=!vanish] if score @s Room = #temp Room facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming_ghost
+execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=hurt,tag=!vanish] if score @s Room = #temp Room facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming_ghost
 execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=hurt] if score @s Room = #temp Room run function luigis_mansion:items/poltergust_3000/catch_ghost
 execute unless score #temp GhostCount matches 1.. unless entity @e[tag=ball,distance=..2.5,tag=can_spit,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming_default
 execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,distance=..2.5,tag=can_spit,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming_clogged

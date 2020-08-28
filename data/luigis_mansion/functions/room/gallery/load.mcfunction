@@ -92,3 +92,7 @@ execute if entity @a[advancements={luigis_mansion:portrait_ghosts/king_boo/bronz
 execute if entity @a[advancements={luigis_mansion:portrait_ghosts/king_boo/silver=true},limit=1] run summon minecraft:item_frame 727 79 -30 {Facing:5b,Silent:1b,CustomName:'{"translate":"luigis_mansion:entity.painting"}',Item:{id:"minecraft:filled_map",Count:1b,tag:{map:27}}}
 execute if entity @a[advancements={luigis_mansion:portrait_ghosts/king_boo/gold=true},limit=1] run summon minecraft:item_frame 727 79 -30 {Facing:5b,Silent:1b,CustomName:'{"translate":"luigis_mansion:entity.painting"}',Item:{id:"minecraft:filled_map",Count:1b,tag:{map:26}}}
 scoreboard players set #gallery Ticking 1
+data merge block 736 77 -22 {LootTable:"luigis_mansion:search"}
+data merge block 735 77 -22 {LootTable:"luigis_mansion:search"}
+data merge block 736 77 -37 {LootTable:"luigis_mansion:search"}
+data merge block 735 77 -37 {LootTable:"luigis_mansion:search"}

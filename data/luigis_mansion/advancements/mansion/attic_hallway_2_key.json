@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:4}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.attic_hallway_2_key"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.attic_hallway_2_key.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/balcony_2",
+    "criteria": {
+        "used": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

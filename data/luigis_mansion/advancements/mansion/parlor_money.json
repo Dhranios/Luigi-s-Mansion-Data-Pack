@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.parlor_money"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.parlor_money.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/parlor",
+    "criteria": {
+        "grabbed": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

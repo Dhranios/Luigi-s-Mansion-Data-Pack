@@ -9,7 +9,7 @@ tag @s[tag=!big,scores={VacuumTime=40}] add dying
 tag @s[tag=big,scores={VacuumTime=60}] add dying
 tag @s remove disappear
 
-execute if entity @s[tag=dying] run playsound luigis_mansion:entity.black_bogmire.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=dying] run playsound luigis_mansion:entity.black_bogmire.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dying] positioned ~ ~0.5 ~ run function luigis_mansion:spawn_entities/ball/shadow
 execute if entity @s[tag=dying] run teleport @s ~ -100 ~
 execute if entity @s[tag=dying] run tag @s add dead

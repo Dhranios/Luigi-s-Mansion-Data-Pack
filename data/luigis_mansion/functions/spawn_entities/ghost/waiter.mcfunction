@@ -3,7 +3,7 @@ execute if entity @s[scores={Health=1..}] run scoreboard players operation @e[ta
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
 tag @e[tag=this_entity,limit=1,x=687.5,y=102,z=25.5,distance=..0.7] add 1
 tag @e[tag=this_entity,limit=1,x=691.5,y=102,z=-0.5,distance=..0.7] add 2
-scoreboard players set @e[tag=this_entity,limit=1] PullStrength 1
+scoreboard players set @e[tag=this_entity,limit=1] PullStrength 20
 scoreboard players set @e[tag=this_entity,limit=1] Move 2
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0

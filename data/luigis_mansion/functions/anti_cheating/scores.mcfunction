@@ -78,6 +78,7 @@ scoreboard objectives add WaitTime dummy
 scoreboard objectives add Wave dummy
 
 scoreboard players set #-1 Constants -1
+scoreboard players set #2 Constants 2
 scoreboard players set #100 Constants 100
 
 team add Ghosts

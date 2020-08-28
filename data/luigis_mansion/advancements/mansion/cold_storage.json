@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.cold_storage.description"
         }
     },
-	"parent": "luigis_mansion:mansion/basement_hallway",
+	"parent": "luigis_mansion:mansion/cold_storage_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

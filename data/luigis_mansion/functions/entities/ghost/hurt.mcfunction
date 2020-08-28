@@ -16,6 +16,4 @@ tag @s[tag=!in_vacuum] remove fleeing
 tag @s[tag=!in_vacuum] remove hurt
 scoreboard players set @s[tag=vanish] AnimationProg 0
 scoreboard players set @s[tag=vanish] Time 0
-execute if entity @s[scores={HurtTime=30..,Pull=0},tag=is_pulled] run function luigis_mansion:entities/ghost/hurt_pull
-execute if entity @s[scores={HurtTime=30..},tag=is_stopped,tag=!is_pulled] run function luigis_mansion:entities/ghost/hurt_stop
-execute if entity @s[scores={HurtTime=30..,Pull=1..},tag=is_pulled] run function luigis_mansion:entities/ghost/hurt_stop
+execute if entity @s[scores={HurtTime=30..},tag=is_pulled] run function luigis_mansion:entities/ghost/hurt_pull

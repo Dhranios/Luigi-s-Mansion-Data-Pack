@@ -5,11 +5,11 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:emerald",
+					"name": "minecraft:brick",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.green_emerald\"}'},luigis_mansion:{id:\"luigis_mansion:green_emerald\"}}"
+							"tag": "{CustomModelData:22,display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.green_emerald\"}'},luigis_mansion:{id:\"luigis_mansion:green_emerald\"}}"
 						}
 					]
 				}

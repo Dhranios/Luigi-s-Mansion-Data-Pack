@@ -16,7 +16,7 @@ execute if entity @s[tag=breaker_room] run tag @e[tag=this_entity,limit=1] add b
 execute if entity @s[tag=cellar] run tag @e[tag=this_entity,limit=1] add cellar
 execute if entity @s[tag=sealed_room] run tag @e[tag=this_entity,limit=1] add sealed_room
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
-scoreboard players set @e[tag=this_entity,limit=1] PullStrength 1
+scoreboard players set @e[tag=this_entity,limit=1] PullStrength 20
 scoreboard players set @e[tag=this_entity,limit=1] Move 20
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0

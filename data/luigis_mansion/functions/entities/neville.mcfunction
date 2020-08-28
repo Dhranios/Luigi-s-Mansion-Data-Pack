@@ -1,4 +1,4 @@
-execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.neville.vacumed hostile @a ~ ~ ~ 1
+execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.neville.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/neville
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~

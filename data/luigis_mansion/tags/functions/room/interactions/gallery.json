@@ -1,4 +1,14 @@
 {
 	"values": [
+		"luigis_mansion:room/gallery/interact_with_lamp_1",
+		"luigis_mansion:room/gallery/interact_with_lamp_2",
+		"luigis_mansion:room/gallery/interact_with_lamp_3",
+		"luigis_mansion:room/gallery/interact_with_lamp_4",
+		"luigis_mansion:room/gallery/interact_with_statue_1",
+		"luigis_mansion:room/gallery/interact_with_statue_2",
+		"luigis_mansion:room/gallery/interact_with_table_1",
+		"luigis_mansion:room/gallery/interact_with_table_2",
+		"luigis_mansion:room/gallery/interact_with_table_3",
+		"luigis_mansion:room/gallery/interact_with_table_4"
 	]
 }

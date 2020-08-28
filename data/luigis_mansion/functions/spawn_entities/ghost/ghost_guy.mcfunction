@@ -35,7 +35,7 @@ execute if entity @s[tag=orange] run tag @e[tag=this_entity,limit=1] add orange
 execute if entity @s[tag=brown] run tag @e[tag=this_entity,limit=1] add brown
 execute if entity @s[tag=white] run tag @e[tag=this_entity,limit=1] add white
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ facing entity @p[gamemode=!spectator]
-scoreboard players set @e[tag=this_entity,limit=1] PullStrength 1
+scoreboard players set @e[tag=this_entity,limit=1] PullStrength 20
 scoreboard players set @e[tag=this_entity,limit=1] Move 2
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
 scoreboard players set @e[tag=this_entity,limit=1] Distance 0

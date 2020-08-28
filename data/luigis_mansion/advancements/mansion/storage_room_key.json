@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:1}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.storage_room_key"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.storage_room_key.description"
+        }
+    },
+	"parent": "luigis_mansion:mansion/ball_room",
+    "criteria": {
+        "used": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

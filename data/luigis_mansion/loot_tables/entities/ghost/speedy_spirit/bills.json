@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minecraft:paper",
+					"name": "minecraft:brick",
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -13,7 +13,7 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.bill\"}'},luigis_mansion:{id:\"luigis_mansion:bill\"}}"
+							"tag": "{CustomModelData:19,display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.bill\"}'},luigis_mansion:{id:\"luigis_mansion:bill\"}}"
 						}
 					]
 				}

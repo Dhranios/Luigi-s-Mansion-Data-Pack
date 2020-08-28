@@ -1,4 +1,6 @@
 {
 	"values": [
+		"luigis_mansion:room/normal/main_stairs/interact_with_fire",
+		"luigis_mansion:room/normal/main_stairs/interact_with_lamp"
 	]
 }

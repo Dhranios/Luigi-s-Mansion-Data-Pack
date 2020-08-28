@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.conservatory.description"
         }
     },
-	"parent": "luigis_mansion:mansion/main_hallway",
+	"parent": "luigis_mansion:mansion/conservatory_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

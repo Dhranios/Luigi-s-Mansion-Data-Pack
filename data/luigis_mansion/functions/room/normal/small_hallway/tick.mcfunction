@@ -7,7 +7,7 @@ execute as @a[gamemode=!spectator,x=700,y=112,z=20,dx=4,dy=6,dz=37] run function
 execute if entity @a[advancements={luigis_mansion:mansion/small_hallway=false}] unless score #small_hallway Wave matches 1.. run function luigis_mansion:room/normal/small_hallway/wave_1
 
 execute as @e[tag=eternal_gold_coin,scores={Room=6}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..10 run advancement grant @a only luigis_mansion:money small_hallway_money
+execute if score #temp Wave matches ..10 run advancement grant @a only luigis_mansion:mansion/small_hallway_money
 scoreboard players reset #temp Wave
 
 execute if block 699 112 55 #minecraft:doors[open=true] if block 698 113 55 minecraft:barrier positioned 699 112 55 run function luigis_mansion:blocks/closed_door

@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.artists_studio.description"
         }
     },
-	"parent": "luigis_mansion:mansion/attic_hallway_1",
+	"parent": "luigis_mansion:mansion/artists_studio_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

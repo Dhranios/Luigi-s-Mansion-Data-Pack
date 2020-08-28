@@ -19,7 +19,7 @@ execute unless entity @e[type=minecraft:item,nbt={Item:{tag:{luigis_mansion:{id:
 execute if entity @a[gamemode=!spectator,x=714.0,y=102,z=8.0,distance=..5] run tag @e[type=minecraft:zombie,tag=first_key,limit=1] add play
 
 execute as @e[tag=eternal_gold_coin,scores={Room=1}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..7 if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] run advancement grant @a only luigis_mansion:money foyer_money
+execute if score #temp Wave matches ..7 if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] run advancement grant @a only luigis_mansion:mansion/foyer_money
 scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/normal/interactions/foyer

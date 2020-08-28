@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.storage_room.description"
         }
     },
-	"parent": "luigis_mansion:mansion/ball_room",
+	"parent": "luigis_mansion:mansion/storage_room_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"

@@ -6,7 +6,7 @@ execute as @a[gamemode=!spectator,x=708,y=112,z=41,dx=9,dy=6,dz=16] run function
 execute if entity @a[advancements={luigis_mansion:mansion/nursery=false}] unless score #nursery Wave matches 1.. run function luigis_mansion:room/normal/nursery/wave_1
 
 execute as @e[tag=eternal_gold_coin,scores={Room=9}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..8 run advancement grant @a only luigis_mansion:money nursery_money
+execute if score #temp Wave matches ..8 run advancement grant @a only luigis_mansion:mansion/nursery_money
 scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/normal/interactions/nursery

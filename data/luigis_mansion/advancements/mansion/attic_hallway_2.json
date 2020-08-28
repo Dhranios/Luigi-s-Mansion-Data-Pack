@@ -10,7 +10,7 @@
             "translate": "luigis_mansion:advancements.mansion.attic_hallway_2.description"
         }
     },
-	"parent": "luigis_mansion:mansion/balcony_2",
+	"parent": "luigis_mansion:mansion/attic_hallway_2_key",
     "criteria": {
         "cleared": {
             "trigger": "minecraft:impossible"
