@@ -6,3 +6,6 @@ setblock 660 118 32 minecraft:air
 setblock 661 112 28 minecraft:air
 fill 658 117 31 658 113 38 minecraft:white_wool
 scoreboard players reset #bathroom_2 Ticking
+scoreboard players reset #bathroom_2 Wave
+scoreboard players reset #bathroom_2_mirror
+scoreboard players reset #bathroom_2_bathtub

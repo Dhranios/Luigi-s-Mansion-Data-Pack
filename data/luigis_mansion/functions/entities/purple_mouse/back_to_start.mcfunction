@@ -7,3 +7,5 @@ tag @s remove walk_on_ceiling
 tag @s remove walk_down_wall
 tag @s remove walked_on_ceiling
 tag @s remove disappear
+tag @s remove spawn
+tag @s remove vacuumable

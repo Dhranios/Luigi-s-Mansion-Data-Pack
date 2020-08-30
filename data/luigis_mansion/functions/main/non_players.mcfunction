@@ -2,6 +2,7 @@ execute if entity @s[tag=ghost_marker] run function luigis_mansion:entities/ghos
 execute if entity @s[tag=ghost,tag=!ghost_marker] run function luigis_mansion:entities/ghost
 execute if entity @s[tag=bowling_ball] run function luigis_mansion:entities/bowling_ball
 execute if entity @s[tag=spit_fire] run function luigis_mansion:entities/spit_fire
+execute if entity @s[tag=spit_water] run function luigis_mansion:entities/spit_water
 execute if entity @s[tag=bone] run function luigis_mansion:entities/bone
 execute if entity @s[tag=bomb] run function luigis_mansion:entities/bomb
 execute if entity @s[tag=vacuumable,tag=!ball] run function luigis_mansion:entities/vacuumable

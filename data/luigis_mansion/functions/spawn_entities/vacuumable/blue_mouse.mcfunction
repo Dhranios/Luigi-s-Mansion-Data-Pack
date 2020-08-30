@@ -1,4 +1,4 @@
-summon minecraft:silverfish ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.blue_mouse"}',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoAI:1b,DeathLootTable:"luigis_mansion:entities/ghosts/blue_mouse",AbsorptionAmount:1.0f,HandDropChances:[1.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:1b,Team:"Ghosts",Tags:["blue_mouse","optional_ghost","vacuumable","this_entity"]}
+summon minecraft:silverfish ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.blue_mouse"}',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoAI:1b,DeathLootTable:"luigis_mansion:entities/ghosts/blue_mouse",AbsorptionAmount:1.0f,HandDropChances:[1.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:1b,Team:"Ghosts",Tags:["blue_mouse","optional_ghost","ghost","this_entity"]}
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100

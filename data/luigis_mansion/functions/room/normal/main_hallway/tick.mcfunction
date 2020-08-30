@@ -26,8 +26,8 @@ execute if block 671 102 19 #minecraft:doors[open=true] if block 672 103 19 mine
 
 function #luigis_mansion:room/normal/interactions/main_hallway
 
-execute if entity @a[x=700.5,y=104,z=18.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=700.5,y=104,z=18.5,distance=..5,tag=fire_elemental_ghost] positioned 700 104 18 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
-execute if entity @a[x=685.5,y=104,z=-4.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=685.5,y=104,z=-4.5,distance=..5,tag=fire_elemental_ghost] positioned 685 104 -5 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute if entity @a[x=700.5,y=104,z=18.5,distance=..5,tag=vacuuming,limit=1] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=700.5,y=104,z=18.5,distance=..5,tag=fire_elemental_ghost] positioned 700 104 18 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute if entity @a[x=685.5,y=104,z=-4.5,distance=..5,tag=vacuuming,limit=1] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=685.5,y=104,z=-4.5,distance=..5,tag=fire_elemental_ghost] positioned 685 104 -5 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
 
 function luigis_mansion:room/normal/door/foyer_main_hallway
 function luigis_mansion:room/normal/door/main_hallway_basement_stairs

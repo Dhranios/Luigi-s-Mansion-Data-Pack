@@ -7,6 +7,7 @@ scoreboard objectives add Constants dummy
 scoreboard objectives add Damage dummy
 scoreboard objectives add Dialog dummy
 scoreboard objectives add Distance dummy
+scoreboard objectives add Element dummy
 scoreboard objectives add EGaddGallChoice trigger
 scoreboard objectives add EGaddGPRChoice trigger
 scoreboard objectives add EGaddLabChoice trigger
@@ -70,6 +71,7 @@ scoreboard objectives add Toad3Choice trigger
 scoreboard objectives add Toad4Choice trigger
 scoreboard objectives add Toad5Choice trigger
 scoreboard objectives add Totals dummy
+scoreboard objectives add Turn dummy
 scoreboard objectives add TwinsChoice trigger
 scoreboard objectives add VacuumTime dummy
 scoreboard objectives add Variant dummy

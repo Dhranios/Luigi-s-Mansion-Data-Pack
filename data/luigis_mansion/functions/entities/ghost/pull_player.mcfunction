@@ -1,5 +1,6 @@
 execute if block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore if block ^ ^1 ^0.6 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.05
 scoreboard players add @s[tag=!pulled] Pull 4
+scoreboard players set @s[tag=is_pulling] Pull 0
 tag @s add pulled
 scoreboard players remove #temp Move 1
 execute at @s if block ~ ~1 ~ #luigis_mansion:ghosts_ignore unless block ~ ~1.9 ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-0.1 ~

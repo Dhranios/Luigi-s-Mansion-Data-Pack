@@ -4,10 +4,10 @@ execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.purple_mouse.ambient hostile @a ~ ~ ~ 1
-scoreboard players set @s[scores={Sound=0}] Sound 40
+execute if entity @s[scores={Sound=0},tag=spawn] run playsound luigis_mansion:entity.purple_mouse.ambient hostile @a ~ ~ ~ 1
+scoreboard players set @s[scores={Sound=0},tag=spawn] Sound 40
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/purple_mouse/collide
+execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=spawn] run function luigis_mansion:entities/purple_mouse/collide
 
 tag @s[tag=fleeing,tag=walk_up_wall] add walk_on_ceiling
 tag @s[tag=fleeing,tag=walk_up_wall] add walk_down_wall
@@ -18,7 +18,14 @@ tag @s remove on_floor
 execute if score #temp HomeY = @s HomeY run tag @s add on_floor
 scoreboard players reset #temp HomeY
 
-execute if entity @s[tag=!rotated,tag=!walk_on_ceiling,tag=!dead] run function luigis_mansion:entities/purple_mouse/move
+scoreboard players operation #temp Room = @s Room
+execute as @e[tag=purple_mouse,tag=spawn] if score @s Room = #temp Room run scoreboard players add #temp Time 1
+execute unless score #temp Time matches 2.. run tag @s[scores={Room=1..}] add spawn
+scoreboard players reset #temp Time
+scoreboard players reset #temp Room
+
+tag @s[tag=spawn] add vacuumable
+execute if entity @s[tag=!rotated,tag=!walk_on_ceiling,tag=!dead,tag=spawn] run function luigis_mansion:entities/purple_mouse/move
 scoreboard players set #temp Move 2
 execute at @s[tag=rotated,tag=!walk_up_wall] rotated ~ 0 run function luigis_mansion:entities/purple_mouse/move_forward
 execute at @s[tag=walk_up_wall,tag=!walk_on_ceiling] rotated ~ 0 run function luigis_mansion:entities/purple_mouse/move_up

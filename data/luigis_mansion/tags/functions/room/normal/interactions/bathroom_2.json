@@ -1,4 +1,8 @@
 {
 	"values": [
+		"luigis_mansion:room/normal/bathroom_2/interact_with_bathtub",
+		"luigis_mansion:room/normal/bathroom_2/interact_with_chest",
+		"luigis_mansion:room/normal/bathroom_2/interact_with_curtain",
+		"luigis_mansion:room/normal/bathroom_2/interact_with_mirror"
 	]
 }
