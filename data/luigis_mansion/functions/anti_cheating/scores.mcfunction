@@ -19,6 +19,7 @@ scoreboard objectives add ForcedDamage dummy
 scoreboard objectives add GBHCall dummy
 scoreboard objectives add GBHRadar dummy
 scoreboard objectives add GBHWait dummy
+scoreboard objectives add GhostCaught dummy
 scoreboard objectives add GhostCount dummy
 scoreboard objectives add GhostGuyCouple dummy
 scoreboard objectives add HallwayNoise dummy
@@ -31,9 +32,11 @@ scoreboard objectives add HomeX dummy
 scoreboard objectives add HomeY dummy
 scoreboard objectives add HomeZ dummy
 scoreboard objectives add HurtTime dummy
+scoreboard objectives add ID dummy
 scoreboard objectives add Invulnerable dummy
 scoreboard objectives add JarvisChoice trigger
 scoreboard objectives add Keys dummy
+scoreboard objectives add KillerID dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastKeys dummy
 scoreboard objectives add Loaded dummy

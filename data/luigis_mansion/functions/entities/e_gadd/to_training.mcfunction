@@ -5,6 +5,6 @@ execute positioned 791 77 2 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] 
 scoreboard players set @s MusicType 3
 scoreboard players set @s Music 0
 scoreboard players set @s Health 100
-scoreboard players set #training Totals 0
+scoreboard players set #training GhostCaught 0
 tag @s remove seen_room_name
 tag @s remove seen_room_name_2
