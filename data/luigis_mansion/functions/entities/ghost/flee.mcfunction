@@ -5,7 +5,8 @@ execute at @s[tag=!fleeing] run teleport @s ~ ~ ~ ~-180 ~
 execute at @s[tag=fleeing,tag=!wall,scores={Turn=0}] run function luigis_mansion:entities/ghost/flee_turn
 execute at @s[tag=fleeing,tag=wall] run function luigis_mansion:entities/ghost/flee_wall
 tag @s add me
-execute if entity @s[tag=fleeing] as @a run function luigis_mansion:entities/ghost/find_vacuumers
+execute if entity @s[tag=fleeing] run function luigis_mansion:entities/ghost/clear_non_vacuumers
+execute if entity @s[tag=fleeing] as @a[tag=vacuuming] run function luigis_mansion:entities/ghost/find_vacuumers
 execute if entity @s[tag=fleeing] run function luigis_mansion:entities/ghost/pull
 tag @s remove me
 execute if entity @s[tag=fleeing,tag=!can_pull] run scoreboard players set #temp Move 4

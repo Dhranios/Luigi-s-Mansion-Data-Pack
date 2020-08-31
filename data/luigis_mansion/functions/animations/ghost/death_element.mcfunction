@@ -17,5 +17,5 @@ scoreboard players set @s[scores={HurtTime=3..}] HurtTime 1
 execute at @s[scores={HurtTime=1},tag=!gold_dummy_ghost] run scoreboard players add #total GhostCaught 1
 execute at @s[scores={HurtTime=1},tag=!gold_dummy_ghost] run scoreboard players add @a[tag=killer,limit=1] GhostCaught 1
 execute at @s[scores={HurtTime=1},tag=gold_dummy_ghost] run scoreboard players add #training GhostCaught 1
-execute at @s[scores={HurtTime=2}] if entity @a[gamemode=!spectator,distance=..0.7] run tag @s add dead
+execute at @s[scores={HurtTime=2}] run tag @s add dead
 tag @a remove killer

@@ -24,6 +24,8 @@ tag @s[tag=!in_vacuum] remove in_vacuum_2
 tag @s[tag=in_vacuum] add in_vacuum_2
 execute if entity @s[tag=!maskless,scores={VacuumTime=40}] run function luigis_mansion:entities/ghost_guy/lose_mask
 
+execute if entity @s[tag=element_hurt] run function luigis_mansion:entities/ghost_guy/stop_dancing
+
 scoreboard players set @s[tag=attack] Distance 0
 execute at @s[tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!dodge,tag=!complain,tag=stop_dancing,tag=!vanish,scores={Distance=0,WaitTime=0,SpawnTime=21..}] run function luigis_mansion:entities/ghost_guy/target
 execute at @s[tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!dodge,tag=!complain,tag=stop_dancing,tag=!vanish,scores={Distance=1..,WaitTime=0,SpawnTime=21..}] run function luigis_mansion:entities/ghost_guy/move

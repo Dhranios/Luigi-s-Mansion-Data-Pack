@@ -3,7 +3,8 @@ tag @s remove burning_heart
 tag @s remove watery_heart
 tag @s remove frozen_heart
 scoreboard players set @s Time 0
-scoreboard players set @s AnimationProg 0
+scoreboard players set @s[tag=!last_element_hurt] AnimationProg 0
+tag @s add last_element_hurt
 tag @s remove attack
 tag @s remove laugh
 tag @s remove complain

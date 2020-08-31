@@ -7,7 +7,7 @@ execute if entity @s[tag=flash] run tag @e[tag=this_entity,limit=1] add flash
 execute if entity @s[tag=flash,tag=frozen_heart] run tag @e[tag=this_entity,limit=1] add frozen_heart
 execute if entity @s[tag=blue_twirler] run tag @e[tag=this_entity,limit=1] add blue_twirler
 execute if entity @s[tag=blue_blaze] run tag @e[tag=this_entity,limit=1] add blue_blaze
-execute if entity @s[tag=blue_blaze,tag=watery_hart] run tag @e[tag=this_entity,limit=1] add watery_hart
+execute if entity @s[tag=blue_blaze,tag=watery_heart] run tag @e[tag=this_entity,limit=1] add watery_heart
 execute if entity @s[tag=grabbing_ghost] run tag @e[tag=this_entity,limit=1] add grabbing_ghost
 execute if entity @s[tag=red_grabbing_ghost] run tag @e[tag=this_entity,limit=1] add red_grabbing_ghost
 execute if entity @s[tag=mirror_ghost] run tag @e[tag=this_entity,limit=1] add mirror_ghost

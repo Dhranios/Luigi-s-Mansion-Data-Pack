@@ -42,10 +42,11 @@ execute unless score @s Time matches 1.. run tag @s[tag=vanish] add disappear
 scoreboard players reset @s[tag=vanish] HurtTime
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
 scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..,StunTime=0},tag=!hurt] VulnerableTime 1
-execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=fleeing,tag=!dying,tag=!boo,scores={StunTime=0..}] run function luigis_mansion:entities/ghost/hurt
-execute if entity @s[tag=!black_bogmire,tag=hurt,tag=!disappear,tag=!dying,tag=!boo,scores={StunTime=0..}] run function luigis_mansion:entities/ghost/hurt
-execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={StunTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
-execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=!element_hurt,tag=freeze,tag=!dying,scores={StunTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
+execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=fleeing,tag=!dying,tag=!boo,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
+execute if entity @s[tag=!black_bogmire,tag=hurt,tag=!disappear,tag=!dying,tag=!boo,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
+tag @s[tag=!element_hurt,tag=last_element_hurt] remove last_element_hurt
+execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
+execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=!element_hurt,tag=freeze,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
 execute unless entity @s[scores={HomeY=9200..10199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9200
 execute unless entity @s[scores={HomeY=10200..11199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10200
 execute unless entity @s[scores={HomeY=11200..12199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11200

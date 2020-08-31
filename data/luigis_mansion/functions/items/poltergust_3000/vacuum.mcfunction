@@ -20,8 +20,9 @@ execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball] unless entity 
 execute as @e[tag=ghost,distance=..0.7,scores={VulnerableTime=2..},tag=!dead,tag=!hurt] run tag @s add hurt
 execute as @e[tag=ghost,tag=hurt,distance=..0.7] run tag @s add in_vacuum
 execute as @e[tag=boo,distance=..0.7,tag=!dead,tag=!hurt] run tag @s add hurt
-execute if entity @s[type=minecraft:player] if entity @e[tag=ghost,distance=..0.7,scores={VulnerableTime=0..},tag=!being_vacuumed] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
-execute if entity @s[type=!minecraft:player] as @a[tag=me,limit=1] if entity @e[tag=ghost,distance=..0.7,scores={VulnerableTime=0..},tag=!being_vacuumed] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
+execute if entity @s[type=minecraft:player] if entity @e[tag=ghost,distance=..0.7,scores={VulnerableTime=1..},tag=!being_vacuumed] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
+execute if entity @s[type=!minecraft:player] as @a[tag=me,limit=1] if entity @e[tag=ghost,distance=..0.7,scores={VulnerableTime=1..},tag=!being_vacuumed] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
+scoreboard players reset #temp3 Steps
 execute as @e[tag=yellow_bat] if score @s Room = #temp Room run tag @s add vacuum_in_room
 teleport @e[tag=interact,limit=1] ~ ~ ~ ~ ~
 execute as @e[tag=interact,limit=1] at @s run function luigis_mansion:room/interactions
