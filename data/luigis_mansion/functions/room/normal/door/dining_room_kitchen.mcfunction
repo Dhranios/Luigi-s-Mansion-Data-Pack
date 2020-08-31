@@ -3,8 +3,8 @@ execute if block 691 102 26 minecraft:jungle_door[open=true] run scoreboard play
 execute if block 692 102 28 minecraft:jungle_door[open=true] run scoreboard players set #temp Searched 1
 execute if block 691 102 28 minecraft:jungle_door[open=true] run scoreboard players set #temp Searched 1
 
-execute if entity @a[gamemode=!spectator,distance=..5,x=692.0,y=102,z=27.0] if score #temp Searched matches 1 run scoreboard players set #temp Searched 2
-execute unless entity @a[gamemode=!spectator,distance=..5,x=692.0,y=102,z=27.0] if score #temp Searched matches 1 run scoreboard players set #temp Searched 0
+execute if entity @a[gamemode=!spectator,distance=..6,x=692.0,y=102,z=27.0] if score #temp Searched matches 1 run scoreboard players set #temp Searched 2
+execute unless entity @a[gamemode=!spectator,distance=..6,x=692.0,y=102,z=27.0] if score #temp Searched matches 1 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 2 run setblock 692 102 26 minecraft:jungle_door[open=true,facing=south,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches 2 run setblock 691 102 26 minecraft:jungle_door[open=true,facing=south,half=lower,hinge=right,powered=false]

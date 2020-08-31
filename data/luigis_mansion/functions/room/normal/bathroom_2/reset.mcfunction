@@ -9,3 +9,4 @@ scoreboard players reset #bathroom_2 Ticking
 scoreboard players reset #bathroom_2 Wave
 scoreboard players reset #bathroom_2_mirror
 scoreboard players reset #bathroom_2_bathtub
+scoreboard players reset #bathroom_2_chest

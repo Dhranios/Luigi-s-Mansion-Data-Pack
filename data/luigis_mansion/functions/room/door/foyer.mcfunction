@@ -3,8 +3,8 @@ execute if block 720 102 8 minecraft:spruce_door[open=true] run scoreboard playe
 execute if block 718 102 7 minecraft:spruce_door[open=true] run scoreboard players set #temp Searched 1
 execute if block 718 102 8 minecraft:spruce_door[open=true] run scoreboard players set #temp Searched 1
 
-execute if entity @a[gamemode=!spectator,distance=..5,x=719.5,y=102,z=8.0] if score #temp Searched matches 1 run scoreboard players set #temp Searched 2
-execute unless entity @a[gamemode=!spectator,distance=..5,x=719.5,y=102,z=8.0] if score #temp Searched matches 1 run scoreboard players set #temp Searched 0
+execute if entity @a[gamemode=!spectator,distance=..6,x=719.5,y=102,z=8.0] if score #temp Searched matches 1 run scoreboard players set #temp Searched 2
+execute unless entity @a[gamemode=!spectator,distance=..6,x=719.5,y=102,z=8.0] if score #temp Searched matches 1 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 2 run setblock 720 102 7 minecraft:spruce_door[open=true,facing=west,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches 2 run setblock 720 102 8 minecraft:spruce_door[open=true,facing=west,half=lower,hinge=left,powered=false]

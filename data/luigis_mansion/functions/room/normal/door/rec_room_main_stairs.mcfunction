@@ -1,8 +1,8 @@
 execute if block 665 102 -28 minecraft:dark_oak_door[open=true] run scoreboard players set #temp Searched 1
 execute if block 663 102 -28 minecraft:dark_oak_door[open=true] run scoreboard players set #temp Searched 1
 
-execute if entity @a[gamemode=!spectator,distance=..5,x=664.5,y=102,z=-27.5] if score #temp Searched matches 1 run scoreboard players set #temp Searched 2
-execute unless entity @a[gamemode=!spectator,distance=..5,x=664.5,y=102,z=-27.5] if score #temp Searched matches 1 run scoreboard players set #temp Searched 0
+execute if entity @a[gamemode=!spectator,distance=..6,x=664.5,y=102,z=-27.5] if score #temp Searched matches 1 run scoreboard players set #temp Searched 2
+execute unless entity @a[gamemode=!spectator,distance=..6,x=664.5,y=102,z=-27.5] if score #temp Searched matches 1 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 2 run setblock 665 102 -28 minecraft:dark_oak_door[open=true,facing=west,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches 2 run setblock 663 102 -28 minecraft:dark_oak_door[open=true,facing=east,half=lower,hinge=left,powered=false]

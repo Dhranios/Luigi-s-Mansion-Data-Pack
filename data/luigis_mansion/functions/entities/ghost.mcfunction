@@ -34,7 +34,7 @@ execute if entity @s[tag=cinema_ghost,tag=!disappear] run function luigis_mansio
 execute if entity @s[tag=garbage_can_ghost,tag=!disappear] run function luigis_mansion:entities/garbage_can_ghost
 execute if entity @s[tag=ghost_guy,tag=!disappear] run function luigis_mansion:entities/ghost_guy
 execute if entity @s[tag=mr_bones,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/mr_bones
-execute if entity @s[tag=bowling_ghost,tag=!disappear] run function luigis_mansion:entities/bowling_ghost
+execute if entity @s[tag=bowling_ghost] run function luigis_mansion:entities/bowling_ghost
 execute if entity @s[tag=ceiling_surprise,tag=!disappear] run function luigis_mansion:entities/ceiling_surprise
 execute if entity @s[tag=purple_bomber,tag=!disappear] run function luigis_mansion:entities/purple_bomber
 execute if entity @s[tag=waiter,tag=!disappear] run function luigis_mansion:entities/waiter
@@ -86,9 +86,9 @@ execute if entity @s[tag=sue_pea] run function luigis_mansion:entities/sue_pea
 execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:entities/vincent_van_gore
 execute if entity @s[tag=king_boo] run function luigis_mansion:entities/king_boo
 
-execute if entity @s[tag=fleeing,tag=!disappear,tag=!black_bogmire,tag=!boo] run function luigis_mansion:entities/ghost/flee
+execute if entity @s[tag=fleeing,tag=!disappear,tag=!black_bogmire,tag=!boo,tag=!vacuumable] run function luigis_mansion:entities/ghost/flee
 execute if entity @s[tag=boo] run function luigis_mansion:entities/boo
 tag @s[tag=in_vacuum] remove in_vacuum
-execute if entity @s[tag=!dying,tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear
-execute if entity @s[tag=!dying,tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost
+execute if entity @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear
+execute if entity @s[tag=portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear_portrait_ghost
 scoreboard players reset #temp Move

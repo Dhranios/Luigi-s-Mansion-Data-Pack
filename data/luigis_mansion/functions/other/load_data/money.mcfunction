@@ -64,5 +64,17 @@ execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_1=true
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_2=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_plant_2
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_2=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_plant_3
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_chest
+execute if entity @a[advancements={luigis_mansion:mansion/rec_room_table=true}] run advancement grant @a only luigis_mansion:mansion/rec_room_table
+execute if entity @a[advancements={luigis_mansion:mansion/rec_room_lamp_1=true}] run advancement grant @a only luigis_mansion:mansion/rec_room_lamp_1
+execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=true}] run advancement grant @a only luigis_mansion:mansion/rec_room_chest
+execute if entity @a[advancements={luigis_mansion:mansion/main_stairs_lamp=true}] run advancement grant @a only luigis_mansion:mansion/main_stairs_lamp
+execute if entity @a[advancements={luigis_mansion:mansion/tea_room_lamp=true}] run advancement grant @a only luigis_mansion:mansion/tea_room_lamp
+execute if entity @a[advancements={luigis_mansion:mansion/tea_room_drawer_2=true}] run advancement grant @a only luigis_mansion:mansion/tea_room_drawer_2
+execute if entity @a[advancements={luigis_mansion:mansion/hallway_jar_1=true}] run advancement grant @a only luigis_mansion:mansion/hallway_jar_1
+execute if entity @a[advancements={luigis_mansion:mansion/hallway_jar_3=true}] run advancement grant @a only luigis_mansion:mansion/hallway_jar_3
+execute if entity @a[advancements={luigis_mansion:mansion/hallway_jar_4=true}] run advancement grant @a only luigis_mansion:mansion/hallway_jar_4
+execute if entity @a[advancements={luigis_mansion:mansion/hallway_jar_6=true}] run advancement grant @a only luigis_mansion:mansion/hallway_jar_6
+execute if entity @a[advancements={luigis_mansion:mansion/washroom_2_lamp=true}] run advancement grant @a only luigis_mansion:mansion/washroom_2_lamp
+execute if entity @a[advancements={luigis_mansion:mansion/washroom_2_chest=true}] run advancement grant @a only luigis_mansion:mansion/washroom_2_chest
 
 execute if entity @a[advancements={luigis_mansion:mansion/breaker_room_lamp=true}] run advancement grant @a only luigis_mansion:mansion/breaker_room_lamp

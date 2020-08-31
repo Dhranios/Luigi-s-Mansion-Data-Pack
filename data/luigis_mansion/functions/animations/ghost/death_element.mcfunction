@@ -9,6 +9,7 @@ execute if entity @s[scores={HurtTime=3..}] run tag @a remove attacking_this_gho
 
 scoreboard players operation #temp KillerID = @s KillerID
 execute as @a[gamemode=!spectator] if score @s ID = #temp KillerID run tag @s add killer
+scoreboard players reset #temp KillerID
 
 scoreboard players set @s[scores={HurtTime=1}] HurtTime 2
 execute unless entity @s[scores={HurtTime=1..}] run scoreboard players set @s HurtTime 1

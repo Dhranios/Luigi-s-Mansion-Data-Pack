@@ -14,6 +14,7 @@ teleport @s[scores={HurtTime=1..19},tag=!ground_bound] ~ ~0.05 ~
 tag @s[tag=!in_vacuum] add vanish
 tag @s[tag=!in_vacuum] remove fleeing
 tag @s[tag=!in_vacuum] remove hurt
+execute if entity @s[tag=!in_vacuum] run data modify entity @s ArmorItems[3].tag merge value {attacked_by:[]}
 scoreboard players set @s[tag=vanish] AnimationProg 0
 scoreboard players set @s[tag=vanish] Time 0
 execute if entity @s[scores={HurtTime=30..},tag=is_pulled] run function luigis_mansion:entities/ghost/hurt_pull

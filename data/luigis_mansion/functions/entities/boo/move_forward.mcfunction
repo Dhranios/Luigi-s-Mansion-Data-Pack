@@ -2,4 +2,4 @@ execute unless block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore unless block ^ ^1 ^0
 teleport @s[tag=!wall] ^ ^ ^0.05
 scoreboard players remove #temp Move 1
 execute if entity @s[tag=wall] run scoreboard players set #temp Move 0
-execute if score #temp Move matches 1.. positioned as @s run function luigis_mansion:entities/boo/move_flee
+execute if score #temp Move matches 1.. positioned as @s run function luigis_mansion:entities/boo/move_forward

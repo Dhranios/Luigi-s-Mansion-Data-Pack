@@ -8,6 +8,7 @@ execute if entity @s[scores={HurtTime=3..}] run tag @a remove vacuuming_this_gho
 
 scoreboard players operation #temp KillerID = @s KillerID
 execute as @a[gamemode=!spectator] if score @s ID = #temp KillerID run tag @s add killer
+scoreboard players reset #temp KillerID
 execute facing entity @a[tag=killer,limit=1] feet run teleport @s ~ ~ ~ ~-180 ~
 execute store result score #temp HomeRot run data get entity @s Rotation[1] 100
 scoreboard players operation #temp HomeRot *= #-1 Constants
