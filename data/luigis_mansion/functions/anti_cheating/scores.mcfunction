@@ -17,6 +17,7 @@ scoreboard objectives add FlashlightTime dummy
 scoreboard objectives add FlyTime dummy
 scoreboard objectives add ForcedDamage dummy
 scoreboard objectives add GBHCall dummy
+scoreboard objectives add GBHMap minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add GBHRadar dummy
 scoreboard objectives add GBHWait dummy
 scoreboard objectives add GhostCaught dummy
