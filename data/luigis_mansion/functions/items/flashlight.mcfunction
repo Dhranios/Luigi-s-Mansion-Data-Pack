@@ -1,10 +1,10 @@
 tag @s[tag=!flashlight,tag=had_flashlight_on] remove had_flashlight_on
 tag @s[tag=flashlight] remove flashlight
 tag @s[gamemode=!spectator,tag=!grabbed,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] add flashlight
+replaceitem entity @s[tag=flashlight,tag=!had_flashlight_on] armor.head minecraft:carved_pumpkin{luigis_mansion:{id:"luigis_mansion:flashlight_vision"},display:{Name:'{"text":""}'},Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 tag @s[tag=flashlight,tag=!had_flashlight_on] add had_flashlight_on
 clear @s[tag=!flashlight] minecraft:carved_pumpkin{luigis_mansion:{id:"luigis_mansion:flashlight_vision"}}
 effect clear @s[tag=!flashlight,tag=had_flashlight_on] minecraft:night_vision
-replaceitem entity @s[tag=flashlight] armor.head minecraft:carved_pumpkin{luigis_mansion:{id:"luigis_mansion:flashlight_vision"},display:{Name:'{"text":""}'},Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 effect give @s[tag=flashlight] minecraft:night_vision 1000000 0 true
 execute if entity @s[tag=flashlight] run fill ~ ~ ~ ~ ~ ~ minecraft:torch replace minecraft:air
 execute if entity @s[tag=flashlight] unless block ~ ~ ~ minecraft:torch run fill ~ ~1 ~ ~ ~1 ~ minecraft:torch replace minecraft:air

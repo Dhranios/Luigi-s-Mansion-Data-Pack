@@ -1,4 +1,5 @@
-scoreboard players remove @s Health 10
+execute if score #mansion_type Selected matches 0 run scoreboard players remove @s Health 10
+execute if score #mansion_type Selected matches 1 run scoreboard players remove @s Health 20
 tag @s remove burning_heart
 tag @s remove watery_heart
 tag @s remove frozen_heart

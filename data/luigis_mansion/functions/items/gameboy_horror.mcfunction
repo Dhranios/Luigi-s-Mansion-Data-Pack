@@ -1,4 +1,6 @@
-execute if entity @s[scores={GBHMap=1..}] run function luigis_mansion:items/gameboy_horror/map
+execute if entity @s[scores={GBHMap=1..},nbt=!{Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] run function luigis_mansion:items/gameboy_horror/map
+execute if entity @s[scores={GBHMap=1..},nbt={SelectedItem:{id:"minecraft:filled_map",tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}},Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] run function luigis_mansion:items/gameboy_horror/map/close
+scoreboard players reset @s[scores={GBHMap=1..},nbt=!{SelectedItem:{id:"minecraft:filled_map",tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}},nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}},{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}]}] GBHMap
 tag @s remove scanning_player
 execute if entity @s[scores={GBHCall=1..},tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/answer
 execute if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}},nbt=!{SelectedItem:{id:"minecraft:filled_map",tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}},nbt=!{Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]},scores={GBHCall=0},tag=!gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/scan

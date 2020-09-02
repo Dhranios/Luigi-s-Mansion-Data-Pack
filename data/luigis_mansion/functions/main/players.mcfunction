@@ -29,6 +29,7 @@ execute if entity @s[scores={Health=1..}] store result score @s Damage run data 
 scoreboard players operation @s[scores={Health=1..}] Damage += #100 Constants
 effect give @s[scores={Damage=1..}] minecraft:instant_health 1 19 true
 scoreboard players operation @s[scores={Health=1..,Damage=1..}] Damage += @s ForcedDamage
+execute if score #mansion_type Selected matches 1 run scoreboard players operation @s[scores={Health=1..,Damage=1..}] Damage *= #2 Constants
 scoreboard players operation @s[scores={Health=1..,Invulnerable=0}] Health -= @s Damage
 execute if entity @s[scores={Health=1..,Damage=1..,Invulnerable=0}] run function luigis_mansion:entities/player/drop_gold_coins
 scoreboard players set @s[scores={Damage=1..}] Invulnerable 10
