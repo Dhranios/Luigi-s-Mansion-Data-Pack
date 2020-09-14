@@ -23,7 +23,7 @@ execute if entity @a[advancements={luigis_mansion:boos/bootha=true}] run advance
 execute if entity @a[advancements={luigis_mansion:boos/bootique=true}] run advancement grant @a only luigis_mansion:boos/bootique
 execute if entity @a[advancements={luigis_mansion:boos/gameboo=true}] run advancement grant @a only luigis_mansion:boos/gameboo
 execute if entity @a[advancements={luigis_mansion:boos/gameboo_advance=true}] run advancement grant @a only luigis_mansion:boos/gameboo_advance
-execute if entity @a[advancements={luigis_mansion:boos/gunboo=true}] run advancement grant @a only luigis_mansion:boos/gunboo
+execute if entity @a[advancements={luigis_mansion:boos/gumboo=true}] run advancement grant @a only luigis_mansion:boos/gumboo
 execute if entity @a[advancements={luigis_mansion:boos/kung_boo=true}] run advancement grant @a only luigis_mansion:boos/kung_boo
 execute if entity @a[advancements={luigis_mansion:boos/limbooger=true}] run advancement grant @a only luigis_mansion:boos/limbooger
 execute if entity @a[advancements={luigis_mansion:boos/little_boo_peep=true}] run advancement grant @a only luigis_mansion:boos/little_boo_peep
@@ -59,7 +59,7 @@ execute if entity @a[advancements={luigis_mansion:boos/bootha_trap=true}] run ad
 execute if entity @a[advancements={luigis_mansion:boos/bootique_trap=true}] run advancement grant @a only luigis_mansion:boos/bootique_trap
 execute if entity @a[advancements={luigis_mansion:boos/gameboo_trap=true}] run advancement grant @a only luigis_mansion:boos/gameboo_trap
 execute if entity @a[advancements={luigis_mansion:boos/gameboo_advance_trap=true}] run advancement grant @a only luigis_mansion:boos/gameboo_advance_trap
-execute if entity @a[advancements={luigis_mansion:boos/gunboo_trap=true}] run advancement grant @a only luigis_mansion:boos/gunboo_trap
+execute if entity @a[advancements={luigis_mansion:boos/gumboo_trap=true}] run advancement grant @a only luigis_mansion:boos/gumboo_trap
 execute if entity @a[advancements={luigis_mansion:boos/kung_boo_trap=true}] run advancement grant @a only luigis_mansion:boos/kung_boo_trap
 execute if entity @a[advancements={luigis_mansion:boos/limbooger_trap=true}] run advancement grant @a only luigis_mansion:boos/limbooger_trap
 execute if entity @a[advancements={luigis_mansion:boos/little_boo_peep_trap=true}] run advancement grant @a only luigis_mansion:boos/little_boo_peep_trap
@@ -96,7 +96,7 @@ execute if entity @a[advancements={luigis_mansion:boos/bootha=true}] run scorebo
 execute if entity @a[advancements={luigis_mansion:boos/bootique=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/gameboo=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/gameboo_advance=true}] run scoreboard players add @a Boos 1
-execute if entity @a[advancements={luigis_mansion:boos/gunboo=true}] run scoreboard players add @a Boos 1
+execute if entity @a[advancements={luigis_mansion:boos/gumboo=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/kung_boo=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/limbooger=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/little_boo_peep=true}] run scoreboard players add @a Boos 1

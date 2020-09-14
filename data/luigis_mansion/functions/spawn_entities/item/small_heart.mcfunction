@@ -1,1 +1,1 @@
-summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:16,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.small_heart"}'},luigis_mansion:{id:"luigis_mansion:heart",size:10}}},Age:5400s}
+summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:16,luigis_mansion:{id:"luigis_mansion:heart",size:10}}},Age:5400s,PickupDelay:32767s,Tags:["heart"]}

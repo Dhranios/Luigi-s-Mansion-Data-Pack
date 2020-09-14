@@ -1,0 +1,32 @@
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 676 116 -22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 676 116 -21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677 116 -23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 678 116 -23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677 116 -20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 678 116 -20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 679 116 -22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 679 116 -21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677 115 -22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677 115 -21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 678 115 -22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 678 115 -21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677.0 115 -22.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 679.0 115 -22.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 679 115 -20.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 676 116 -22 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 676 116 -21 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677 116 -23 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 678 116 -23 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677 116 -20 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 678 116 -20 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 679 116 -22 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 679 116 -21 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677 115 -22 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677 115 -21 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 678 115 -22 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 678 115 -21 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 677.0 115 -22.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 679.0 115 -22.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=false},limit=1] positioned 679 115 -20.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=true},limit=1] run tag @e[tag=selected] add nothing
+advancement grant @a only luigis_mansion:mansion/astral_hall_lamp

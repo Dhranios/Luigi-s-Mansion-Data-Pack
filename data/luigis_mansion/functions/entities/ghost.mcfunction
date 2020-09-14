@@ -3,6 +3,7 @@ execute if entity @s[tag=purple_mouse] run function luigis_mansion:entities/purp
 execute if entity @s[tag=pink_flying_fish] run function luigis_mansion:entities/pink_flying_fish
 execute if entity @s[tag=green_flying_fish] run function luigis_mansion:entities/green_flying_fish
 execute if entity @s[tag=spark] run function luigis_mansion:entities/spark
+execute if entity @s[tag=shining_ghost] run function luigis_mansion:entities/shining_ghost
 
 tag @s[scores={Health=..0}] add dying
 scoreboard players operation #temp Move = @s Move
@@ -47,11 +48,11 @@ execute if entity @s[tag=!black_bogmire,tag=hurt,tag=!disappear,tag=!dying,tag=!
 tag @s[tag=!element_hurt,tag=last_element_hurt] remove last_element_hurt
 execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
 execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=!element_hurt,tag=freeze,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
-execute unless entity @s[scores={HomeY=9200..10199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9200
-execute unless entity @s[scores={HomeY=10200..11199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10200
-execute unless entity @s[scores={HomeY=11200..12199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11200
-execute unless entity @s[scores={HomeY=12200..13299}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=122,dy=7,tag=!vanish] HomeY 12200
-execute unless entity @s[scores={HomeY=13300..13399}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=133,dy=7,tag=!vanish] HomeY 13300
+execute unless entity @s[scores={HomeY=9200..10199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9200
+execute unless entity @s[scores={HomeY=10200..11199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10200
+execute unless entity @s[scores={HomeY=11200..12199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11200
+execute unless entity @s[scores={HomeY=12200..13299}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=122,dy=7,tag=!vanish] HomeY 12200
+execute unless entity @s[scores={HomeY=13300..13399}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=133,dy=7,tag=!vanish] HomeY 13300
 execute unless entity @s[scores={HomeY=9200..10199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9500
 execute unless entity @s[scores={HomeY=10200..11199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10500
 execute unless entity @s[scores={HomeY=11200..12199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11500
@@ -86,7 +87,7 @@ execute if entity @s[tag=sue_pea] run function luigis_mansion:entities/sue_pea
 execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:entities/vincent_van_gore
 execute if entity @s[tag=king_boo] run function luigis_mansion:entities/king_boo
 
-execute if entity @s[tag=fleeing,tag=!disappear,tag=!black_bogmire,tag=!boo,tag=!vacuumable] run function luigis_mansion:entities/ghost/flee
+execute if entity @s[tag=fleeing,tag=!disappear,tag=!black_bogmire,tag=!boo,tag=!vacuumable,tag=!dialog] run function luigis_mansion:entities/ghost/flee
 execute if entity @s[tag=boo] run function luigis_mansion:entities/boo
 tag @s[tag=in_vacuum] remove in_vacuum
 execute if entity @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear

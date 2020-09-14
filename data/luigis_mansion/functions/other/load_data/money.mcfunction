@@ -76,5 +76,18 @@ execute if entity @a[advancements={luigis_mansion:mansion/hallway_jar_4=true}] r
 execute if entity @a[advancements={luigis_mansion:mansion/hallway_jar_6=true}] run advancement grant @a only luigis_mansion:mansion/hallway_jar_6
 execute if entity @a[advancements={luigis_mansion:mansion/washroom_2_lamp=true}] run advancement grant @a only luigis_mansion:mansion/washroom_2_lamp
 execute if entity @a[advancements={luigis_mansion:mansion/washroom_2_chest=true}] run advancement grant @a only luigis_mansion:mansion/washroom_2_chest
+execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=true}] run advancement grant @a only luigis_mansion:mansion/nanas_room_closet
+execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_lamp=true}] run advancement grant @a only luigis_mansion:mansion/nanas_room_lamp
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_table=true}] run advancement grant @a only luigis_mansion:mansion/astral_hall_table
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall_lamp=true}] run advancement grant @a only luigis_mansion:mansion/astral_hall_lamp
+execute if entity @a[advancements={luigis_mansion:mansion/observatory_table=true}] run advancement grant @a only luigis_mansion:mansion/observatory_table
+execute if entity @a[advancements={luigis_mansion:mansion/billiards_room_table_1=true}] run advancement grant @a only luigis_mansion:mansion/billiards_room_table_1
+execute if entity @a[advancements={luigis_mansion:mansion/billiards_room_table_2=true}] run advancement grant @a only luigis_mansion:mansion/billiards_room_table_2
+execute if entity @a[advancements={luigis_mansion:mansion/billiards_room_fan=true}] run advancement grant @a only luigis_mansion:mansion/billiards_room_fan
+execute if entity @a[advancements={luigis_mansion:mansion/billiards_room_chest=true}] run advancement grant @a only luigis_mansion:mansion/billiards_room_chest
+execute if entity @a[advancements={luigis_mansion:mansion/projection_room_closet=true}] run advancement grant @a only luigis_mansion:mansion/projection_room_closet
+execute if entity @a[advancements={luigis_mansion:mansion/projection_room_lamp_2=true}] run advancement grant @a only luigis_mansion:mansion/projection_room_lamp_2
+execute if entity @a[advancements={luigis_mansion:mansion/twins_room_table_1=true}] run advancement grant @a only luigis_mansion:mansion/twins_room_table_1
+execute if entity @a[advancements={luigis_mansion:mansion/twins_room_lamp=true}] run advancement grant @a only luigis_mansion:mansion/twins_room_lamp
 
 execute if entity @a[advancements={luigis_mansion:mansion/breaker_room_lamp=true}] run advancement grant @a only luigis_mansion:mansion/breaker_room_lamp

@@ -1,6 +1,7 @@
 scoreboard objectives add Time dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add Bowling dummy
+scoreboard objectives add ChangedMansion dummy
 scoreboard objectives add ClairvoyaChoice trigger
 scoreboard objectives add ClairvoyaSpoke dummy
 scoreboard objectives add Constants dummy
@@ -43,6 +44,7 @@ scoreboard objectives add LastKeys dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add MelodyChoice trigger
+scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
 scoreboard objectives add Music dummy
 scoreboard objectives add MusicType dummy
@@ -60,6 +62,8 @@ scoreboard objectives add Search dummy
 scoreboard objectives add Searched dummy
 scoreboard objectives add Searching dummy
 scoreboard objectives add Selected dummy
+scoreboard objectives add Shrunk dummy
+scoreboard objectives add ShrunkNr dummy
 scoreboard objectives add Sound dummy
 scoreboard objectives add SpawnTime dummy
 scoreboard objectives add Steps dummy
@@ -82,6 +86,7 @@ scoreboard objectives add Variant dummy
 scoreboard objectives add VulnerableTime dummy
 scoreboard objectives add WaitTime dummy
 scoreboard objectives add Wave dummy
+scoreboard objectives add Wool dummy
 
 scoreboard players set #-1 Constants -1
 scoreboard players set #2 Constants 2

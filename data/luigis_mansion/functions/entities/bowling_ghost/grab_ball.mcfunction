@@ -1,6 +1,6 @@
 scoreboard players add @s Time 1
 scoreboard players set @s[scores={Time=1}] AnimationProg 0
-data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-90.0f,0.0f,-90.0f],LeftArm:[-90.0f,0.0f,0.0f]}}
+data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-90.0f,0.0f,-90.0f],LeftArm:[-90.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f]}}
 function luigis_mansion:animations/bowling_ghost/grab_ball
 
 execute if entity @s[scores={Time=10}] run playsound luigis_mansion:entity.bowling_ghost.grab_ball hostile @a ~ ~ ~ 1
@@ -19,6 +19,6 @@ execute if entity @s[scores={Time=18}] run teleport @e[tag=this_bowling_ball,lim
 execute if entity @s[scores={Time=19}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^1.2 ^0.4
 execute if entity @s[scores={Time=20}] run teleport @e[tag=this_bowling_ball,limit=1] ^-0.3 ^1.2 ^0.4
 tag @s[scores={Time=20}] add grabbed_ball
-data merge entity @s[scores={Time=20}] {Pose:{RightArm:[0.0f,135.0f,50.0f],LeftArm:[0.0f,-90.0f,-20.0f]}}
-scoreboard players set @s[scores={Time=20}] AnimationProg 0
-scoreboard players set @s[scores={Time=20}] Time 0
+data merge entity @s[scores={Time=20..}] {Pose:{RightArm:[0.0f,135.0f,50.0f],LeftArm:[0.0f,-90.0f,-20.0f]}}
+scoreboard players set @s[scores={Time=20..}] AnimationProg 0
+scoreboard players set @s[scores={Time=20..}] Time 0

@@ -3,10 +3,13 @@ execute if entity @s[tag=ghost,tag=!ghost_marker] run function luigis_mansion:en
 execute if entity @s[tag=bowling_ball] run function luigis_mansion:entities/bowling_ball
 execute if entity @s[tag=spit_fire] run function luigis_mansion:entities/spit_fire
 execute if entity @s[tag=spit_water] run function luigis_mansion:entities/spit_water
+execute if entity @s[tag=shot_needle] run function luigis_mansion:entities/shot_needle
 execute if entity @s[tag=bone] run function luigis_mansion:entities/bone
 execute if entity @s[tag=bomb] run function luigis_mansion:entities/bomb
 execute if entity @s[tag=vacuumable,tag=!ball] run function luigis_mansion:entities/vacuumable
-execute if entity @s[tag=ball] run function luigis_mansion:entities/ball
+execute if entity @s[tag=wool] run function luigis_mansion:entities/wool
+execute if entity @s[tag=billiards_ball] run function luigis_mansion:entities/billiards_ball
+execute if entity @s[tag=ball,tag=!wool,tag=!shining_ghost,tag=!billiards_ball] run function luigis_mansion:entities/ball
 execute if entity @s[tag=door] run function luigis_mansion:animations/closed_door
 execute if entity @s[tag=fake_door] run function luigis_mansion:entities/fake_door
 execute if entity @s[tag=e_gadd] run function luigis_mansion:entities/e_gadd
@@ -18,6 +21,8 @@ execute if entity @s[tag=boo_marker] run function luigis_mansion:entities/boo_ma
 execute if entity @s[tag=hidden_boo] run function luigis_mansion:entities/hidden_boo
 execute if entity @s[tag=elemental_ghost] run function luigis_mansion:entities/elemental_ghost
 execute if entity @s[tag=bannana_peel] run function luigis_mansion:entities/bannana_peel
+execute if entity @s[tag=shrunk_player] run function luigis_mansion:entities/shrunk_player
+execute unless entity @s[tag=!poison_mushroom,tag=!heart,tag=!gold_coin,tag=!bill,tag=!gold_bar,tag=!blue_sapphire,tag=!green_emerald,tag=!red_ruby,tag=!red_diamond,tag=!blue_diamond,tag=!gold_diamond,tag=!small_pearl,tag=!medium_pearl,tag=!big_pearl] run scoreboard players add @s SpawnTime 1
 
 # Refresh item positions; prevent them getting destroyed by explosions, and fix multiple lightning
 data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}

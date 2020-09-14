@@ -16,7 +16,7 @@ execute if entity @s[scores={Time=161}] facing entity @p[gamemode=!spectator] fe
 execute at @s[scores={Time=161}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[scores={Time=161}] run function luigis_mansion:entities/biff_atlas/attack
 execute if entity @s[scores={Time=162..171}] run teleport @s ^ ^ ^0.2
-scoreboard players add @s[tag=hit,tag=ko] Time 160
+scoreboard players set @s[scores={Time=..160},tag=hit,tag=ko] Time 160
 tag @s[scores={Time=161},tag=!ko] add ko
 scoreboard players set @s[scores={Time=200}] VulnerableTime 80
 tag @s remove hit

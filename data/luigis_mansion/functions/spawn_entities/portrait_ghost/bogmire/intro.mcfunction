@@ -7,7 +7,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeRot run data ge
 execute unless score #bogmire LastHealth matches 1.. run scoreboard players set #bogmire LastHealth 10000
 scoreboard players operation @e[tag=this_entity,limit=1] Health = #bogmire LastHealth
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevHealth = @s Health
-scoreboard players set @e[tag=this_entity,limit=1] PullStrength 3
+scoreboard players set @e[tag=this_entity,limit=1] PullStrength 7
 scoreboard players set @e[tag=this_entity,limit=1] Move 0
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0

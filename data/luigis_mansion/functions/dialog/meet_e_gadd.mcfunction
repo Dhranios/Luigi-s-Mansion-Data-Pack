@@ -19,7 +19,9 @@ teleport @s[scores={Dialog=19..49}] ^ ^ ^0.125
 teleport @s[scores={Dialog=50}] ~ ~ ~ facing 692 112 9
 teleport @s[scores={Dialog=51..70}] ^ ^ ^0.125
 execute if entity @s[scores={Dialog=70..379}] positioned ~ ~0.5 ~ positioned ^ ^ ^0.5 as @e[tag=gold_ghost,tag=dialog,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming_e_gadd
-execute if entity @s[scores={Dialog=70..73}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~0.1 ~
+tag @e[tag=gold_ghost,tag=ghost_marker,limit=1] add dead
+execute if entity @s[scores={Dialog=70}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add hurt
+execute if entity @s[scores={Dialog=140}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add fleeing
 execute if entity @s[scores={Dialog=140}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing 690 112.3 8
 execute if entity @s[scores={Dialog=141..170}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Dialog=171}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing 688 112.3 12
@@ -28,6 +30,8 @@ execute if entity @s[scores={Dialog=192}] as @e[tag=gold_ghost,tag=dialog,limit=
 execute if entity @s[scores={Dialog=193..212}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Dialog=213}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing 693 112.3 15
 execute if entity @s[scores={Dialog=214..243}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s facing 693 112.3 15 run teleport @s ^ ^ ^0.1
+execute if entity @s[scores={Dialog=237}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] remove fleeing
+execute if entity @s[scores={Dialog=237}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] remove hurt
 execute if entity @s[scores={Dialog=237..239}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ ~60 ~
 execute if entity @s[scores={Dialog=244..263}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s facing 695 112.3 12 rotated ~ 0 run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Dialog=264..293}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s facing 693 112.3 6 rotated ~ 0 run teleport @s ^ ^ ^0.2
@@ -37,8 +41,6 @@ execute if entity @s[scores={Dialog=311}] run tag @e[tag=gold_ghost,tag=dialog,l
 execute if entity @s[scores={Dialog=311..414}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] remove complain
 execute if entity @s[scores={Dialog=311}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add laugh
 execute if entity @s[scores={Dialog=311..413}] as @e[tag=gold_ghost,tag=dialog,limit=1] at @s run teleport @s ~ ~ ~ facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet
-execute if entity @s[scores={Dialog=414}] run teleport @e[tag=gold_ghost,tag=dialog,limit=1] ~ ~-100 ~
-execute if entity @s[scores={Dialog=415}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add dead
 execute if entity @s[scores={Dialog=178..207}] facing 689 112 11 rotated ~ 0 run teleport @s ^ ^ ^0.125
 execute if entity @s[scores={Dialog=208..237}] facing 689 112 15 rotated ~ 0 run teleport @s ^ ^ ^0.125
 execute if entity @s[scores={Dialog=238..267}] facing 693 112 15 rotated ~ 0 run teleport @s ^ ^ ^0.125

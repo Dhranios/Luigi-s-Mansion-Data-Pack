@@ -4,6 +4,8 @@ tag @e[scores={Room=32},type=minecraft:item] add dead
 tag @e[scores={Room=32},tag=boo] add turn_to_marker
 setblock 668 118 32 minecraft:air
 setblock 668 112 29 minecraft:air
+data merge block 667 112 32 {Items:[]}
+data merge block 668 112 36 {Items:[]}
 setblock 668 113 36 minecraft:oak_trapdoor[facing=north,half=bottom,open=false]
 data merge entity @e[x=666.5,y=114.5,z=27.5,distance=..0.5,type=minecraft:item_frame,limit=1] {Item:{tag:{map:175}}}
 data merge entity @e[x=666.5,y=114.5,z=28.5,distance=..0.5,type=minecraft:item_frame,limit=1] {Item:{tag:{map:174}}}

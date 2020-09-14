@@ -5,4 +5,5 @@ execute if entity @a[advancements={luigis_mansion:mansion/parlor_key=false},limi
 execute if entity @a[advancements={luigis_mansion:mansion/small_hallway_key=false},limit=1] run function luigis_mansion:room/normal/small_hallway/lock_door
 execute if entity @a[advancements={luigis_mansion:mansion/main_hallway_key=false},limit=1] run function luigis_mansion:room/normal/main_hallway/lock_door
 execute if entity @a[advancements={luigis_mansion:technical={cleared_area_2_blockade=false}},limit=1] run function luigis_mansion:room/normal/foyer/add_blockade
+execute if entity @a[tag=blackout,limit=1] run function luigis_mansion:room/normal/foyer/lock_door
 scoreboard players set #foyer Ticking 1

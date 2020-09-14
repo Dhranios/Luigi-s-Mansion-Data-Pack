@@ -15,7 +15,7 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,ta
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0}] run function luigis_mansion:entities/ghost/collided
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/garbage_can_ghost/vanish
 execute if entity @s[tag=appear] run function luigis_mansion:entities/garbage_can_ghost/appear
-execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/garbage_can_ghost/idle
+execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/garbage_can_ghost/idle
 execute if entity @s[tag=fleeing] run function luigis_mansion:animations/garbage_can_ghost/flee
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/garbage_can_ghost/hurt
 execute if entity @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/garbage_can_ghost/hurt

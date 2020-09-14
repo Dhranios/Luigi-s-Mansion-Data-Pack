@@ -12,7 +12,7 @@ execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,scores={StunTime=0}] fa
 execute at @s[tag=!element_hurt,tag=!fleeing,tag=!vanish,scores={StunTime=0,SpawnTime=20..}] run function luigis_mansion:entities/speedy_spirit/flee
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/speedy_spirit/vanish
 execute if entity @s[tag=appear] run function luigis_mansion:entities/speedy_spirit/appear
-execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/gold_ghost/flee
+execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/gold_ghost/flee
 execute if entity @s[tag=fleeing] run function luigis_mansion:animations/gold_ghost/flee
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/gold_ghost/hurt
 execute if entity @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/gold_ghost/hurt

@@ -1,3 +1,4 @@
+tag @s remove dead
 scoreboard players add @s AnimationProg 1
 execute if entity @s[scores={AnimationProg=1}] run playsound luigis_mansion:block.door.locked block @a ~ ~ ~ 1
 

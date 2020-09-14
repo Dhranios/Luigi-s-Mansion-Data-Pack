@@ -6,11 +6,22 @@ fill 658 118 -28 659 118 -27 minecraft:air
 setblock 658 113 -21 minecraft:air
 fill 658 112 -17 659 112 -25 minecraft:white_wool
 fill 659 112 -30 658 112 -38 minecraft:white_wool
+setblock 658 113 -30 minecraft:hopper[enabled=false]
 fill 655 114 -20 655 117 -17 minecraft:red_wool
 fill 655 114 -29 655 117 -26 minecraft:red_wool
 fill 655 114 -38 655 117 -35 minecraft:red_wool
 execute positioned 658 114 -17 run function luigis_mansion:blocks/lit_candles
 execute positioned 658 114 -38 run function luigis_mansion:blocks/lit_candles
+data merge block 658 113 -30 {Items:[]}
+data merge block 658 113 -34 {Items:[]}
+data merge block 656 112 -13 {Items:[]}
+data merge block 657 112 -13 {Items:[]}
+data merge block 660 112 -13 {Items:[]}
+data merge block 661 112 -13 {Items:[]}
+data merge block 656 112 -42 {Items:[]}
+data merge block 657 112 -42 {Items:[]}
+data merge block 660 112 -42 {Items:[]}
+data merge block 661 112 -42 {Items:[]}
 scoreboard players reset #tea_room Ticking
 scoreboard players reset #tea_room Wave
 scoreboard players reset #tea_room_chair_1

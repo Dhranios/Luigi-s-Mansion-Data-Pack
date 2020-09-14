@@ -1,0 +1,2 @@
+execute if score #mansion_type Selected matches 0 run function luigis_mansion:dialog/observatory_explosion/normal
+execute if score #mansion_type Selected matches 1 run function luigis_mansion:dialog/observatory_explosion/hidden

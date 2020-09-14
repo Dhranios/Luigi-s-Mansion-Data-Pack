@@ -12,6 +12,7 @@ function luigis_mansion:room/normal/foyer/remove_blockade
 function luigis_mansion:room/normal/parlor/unlock_door
 function luigis_mansion:room/normal/small_hallway/unlock_door
 function luigis_mansion:room/normal/main_hallway/unlock_door
+function luigis_mansion:room/normal/foyer/unlock_door
 scoreboard players reset #foyer Ticking
 scoreboard players reset #foyer_chandelier
 scoreboard players reset #foyer_lamp

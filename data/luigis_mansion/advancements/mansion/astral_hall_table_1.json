@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.astral_hall_table"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.astral_hall_table.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/astral_hall",
+    "criteria": {
+        "spawned": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -11,6 +11,10 @@ execute if entity @s[tag=move_wall] run function luigis_mansion:dialog/moving_wa
 execute if entity @s[tag=release_boos] run function luigis_mansion:dialog/release_boos
 execute if entity @s[tag=marios_painting] run function luigis_mansion:dialog/marios_painting
 execute if entity @s[tag=marios_painting_repeat] run function luigis_mansion:dialog/marios_painting_repeat
+execute if entity @s[tag=astral_hall_ambush] run function luigis_mansion:dialog/astral_hall_ambush
+execute if entity @s[tag=observatory_dialog] run function luigis_mansion:dialog/observatory
+execute if entity @s[tag=observatory_explosion] run function luigis_mansion:dialog/observatory_explosion
+execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:player/changed_mansion
 
 execute if entity @s[gamemode=!spectator,distance=..10,x=719.5,y=102,z=8.0] run function luigis_mansion:room/door/foyer
 

@@ -6,5 +6,7 @@ execute as @a[gamemode=!spectator,x=656,y=92,z=-23,dx=26,dy=6,dz=8] run function
 
 execute if block 655 92 -19 #minecraft:doors[open=true] if block 654 93 -19 minecraft:barrier positioned 655 92 -19 run function luigis_mansion:blocks/closed_door
 
+function #luigis_mansion:room/normal/interactions/curved_hallway
+
 function luigis_mansion:room/normal/door/basement_hallway_curved_hallway
 function luigis_mansion:room/normal/door/curved_hallway_secret_altar

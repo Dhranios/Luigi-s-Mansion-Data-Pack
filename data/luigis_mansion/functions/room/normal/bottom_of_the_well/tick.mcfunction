@@ -9,5 +9,5 @@ execute if entity @a[advancements={luigis_mansion:mansion/bottom_of_the_well=fal
 
 function #luigis_mansion:room/normal/interactions/bottom_of_the_well
 
-tag @a[gamemode=!spectator,x=648.5,y=92,z=-11.5,distance=..0.7,advancements={luigis_mansion:technical={saw_mario=false}}] add marios_painting
-tag @a[gamemode=!spectator,x=648.5,y=92,z=-11.5,distance=..0.7,advancements={luigis_mansion:mansion/balcony_2=true,luigis_mansion:technical={saw_mario=true,saw_mario_again=false}}] add marios_painting_repeat
+execute as @a[gamemode=!spectator,x=648.5,y=92,z=-11.5,distance=..0.7,advancements={luigis_mansion:technical={saw_mario=false}}] unless entity @a[tag=marios_painting] run tag @s add marios_painting
+execute as @a[gamemode=!spectator,x=648.5,y=92,z=-11.5,distance=..0.7,advancements={luigis_mansion:mansion/balcony_2=true,luigis_mansion:technical={saw_mario=true,saw_mario_again=false}}] unless entity @a[tag=marios_painting_repeat] run tag @s add marios_painting_repeat

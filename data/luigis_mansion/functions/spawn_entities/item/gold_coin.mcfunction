@@ -1,1 +1,1 @@
-summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'},luigis_mansion:{id:"luigis_mansion:gold_coin"}}},Age:5400s}
+summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'},luigis_mansion:{id:"luigis_mansion:gold_coin"}}},Age:5400s,PickUpDelay:10s,Tags:["gold_coin"]}

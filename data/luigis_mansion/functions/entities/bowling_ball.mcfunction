@@ -1,4 +1,4 @@
-scoreboard players set #temp Move 4
+scoreboard players set #temp Move 8
 scoreboard players operation #temp Bowling = @s Bowling
 execute as @e[tag=bowling_ghost] if score @s Bowling = #temp Bowling run tag @s add this_bowling_ghost
 scoreboard players reset #temp Bowling
