@@ -89,5 +89,21 @@ execute if entity @a[advancements={luigis_mansion:mansion/projection_room_closet
 execute if entity @a[advancements={luigis_mansion:mansion/projection_room_lamp_2=true}] run advancement grant @a only luigis_mansion:mansion/projection_room_lamp_2
 execute if entity @a[advancements={luigis_mansion:mansion/twins_room_table_1=true}] run advancement grant @a only luigis_mansion:mansion/twins_room_table_1
 execute if entity @a[advancements={luigis_mansion:mansion/twins_room_lamp=true}] run advancement grant @a only luigis_mansion:mansion/twins_room_lamp
+execute if entity @a[advancements={luigis_mansion:mansion/safari_room_lamp_1=true}] run advancement grant @a only luigis_mansion:mansion/safari_room_lamp_1
+execute if entity @a[advancements={luigis_mansion:mansion/safari_room_lamp_2=true}] run advancement grant @a only luigis_mansion:mansion/safari_room_lamp_2
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_1=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_1
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_2=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_2
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_3=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_3
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_4=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_4
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_5=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_5
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_7=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_7
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_9=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_9
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_10=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_10
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_11=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_11
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_12=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_12
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_13=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_13
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_14=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_14
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_15=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_15
+execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_16=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_16
 
 execute if entity @a[advancements={luigis_mansion:mansion/breaker_room_lamp=true}] run advancement grant @a only luigis_mansion:mansion/breaker_room_lamp

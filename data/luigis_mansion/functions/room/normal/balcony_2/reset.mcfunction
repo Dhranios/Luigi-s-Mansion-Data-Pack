@@ -12,3 +12,25 @@ setblock 665 122 7 minecraft:air
 function luigis_mansion:room/normal/balcony_2/remove_blockade
 function luigis_mansion:room/normal/attic_hallway_2/unlock_door
 scoreboard players reset #balcony_2 Ticking
+scoreboard players reset #balcony_2 Wave
+scoreboard players reset #balcony_2_bench_1
+scoreboard players reset #balcony_2_bench_2
+scoreboard players reset #balcony_2_statue_1
+scoreboard players reset #balcony_2_statue_2
+scoreboard players reset #balcony_2_plant_1
+scoreboard players reset #balcony_2_plant_2
+scoreboard players reset #balcony_2_plant_3
+scoreboard players reset #balcony_2_plant_4
+scoreboard players reset #balcony_2_plant_5
+scoreboard players reset #balcony_2_plant_6
+scoreboard players reset #balcony_2_plant_7
+scoreboard players reset #balcony_2_plant_8
+scoreboard players reset #balcony_2_plant_9
+scoreboard players reset #balcony_2_plant_10
+scoreboard players reset #balcony_2_plant_11
+scoreboard players reset #balcony_2_plant_12
+scoreboard players reset #balcony_2_plant_13
+scoreboard players reset #balcony_2_plant_14
+scoreboard players reset #balcony_2_plant_15
+scoreboard players reset #balcony_2_plant_16
+scoreboard players reset #balcony_2_chest

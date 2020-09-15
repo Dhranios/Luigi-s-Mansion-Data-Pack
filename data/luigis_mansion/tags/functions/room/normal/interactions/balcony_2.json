@@ -1,4 +1,25 @@
 {
 	"values": [
+		"luigis_mansion:room/normal/balcony_2/interact_with_bench_1",
+		"luigis_mansion:room/normal/balcony_2/interact_with_bench_2",
+		"luigis_mansion:room/normal/balcony_2/interact_with_chest",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_1",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_2",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_3",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_4",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_5",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_6",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_7",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_8",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_9",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_10",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_11",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_12",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_13",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_14",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_15",
+		"luigis_mansion:room/normal/balcony_2/interact_with_plant_16",
+		"luigis_mansion:room/normal/balcony_2/interact_with_statue_1",
+		"luigis_mansion:room/normal/balcony_2/interact_with_statue_2"
 	]
 }
