@@ -8,7 +8,7 @@ execute if entity @s[tag=boodacious] run scoreboard players operation #boodaciou
 execute if entity @s[tag=booffant] run scoreboard players operation #booffant Room = @s Room
 execute if entity @s[tag=boogie] run scoreboard players operation #boogie Room = @s Room
 execute if entity @s[tag=boohoo] run scoreboard players operation #boohoo Room = @s Room
-execute if entity @s[tag=booigie] run scoreboard players operation #booigie Room = @s Room
+execute if entity @s[tag=booigi] run scoreboard players operation #booigi Room = @s Room
 execute if entity @s[tag=boolderdash] run scoreboard players operation #boolderdash Room = @s Room
 execute if entity @s[tag=boolicious] run scoreboard players operation #boolicious Room = @s Room
 execute if entity @s[tag=booligan] run scoreboard players operation #booligan Room = @s Room
@@ -44,7 +44,7 @@ execute if entity @s[tag=boodacious] run scoreboard players operation #boodaciou
 execute if entity @s[tag=booffant] run scoreboard players operation #booffant LastHealth = @s Health
 execute if entity @s[tag=boogie] run scoreboard players operation #boogie LastHealth = @s Health
 execute if entity @s[tag=boohoo] run scoreboard players operation #boohoo LastHealth = @s Health
-execute if entity @s[tag=booigie] run scoreboard players operation #booigie LastHealth = @s Health
+execute if entity @s[tag=booigi] run scoreboard players operation #booigi LastHealth = @s Health
 execute if entity @s[tag=boolderdash] run scoreboard players operation #boolderdash LastHealth = @s Health
 execute if entity @s[tag=boolicious] run scoreboard players operation #boolicious LastHealth = @s Health
 execute if entity @s[tag=booligan] run scoreboard players operation #booligan LastHealth = @s Health
@@ -84,7 +84,7 @@ execute if entity @s[tag=boodacious] run tag @e[tag=boo_marker,tag=new] add bood
 execute if entity @s[tag=booffant] run tag @e[tag=boo_marker,tag=new] add booffant
 execute if entity @s[tag=boogie] run tag @e[tag=boo_marker,tag=new] add boogie
 execute if entity @s[tag=boohoo] run tag @e[tag=boo_marker,tag=new] add boohoo
-execute if entity @s[tag=booigie] run tag @e[tag=boo_marker,tag=new] add booigie
+execute if entity @s[tag=booigi] run tag @e[tag=boo_marker,tag=new] add booigi
 execute if entity @s[tag=boolderdash] run tag @e[tag=boo_marker,tag=new] add boolderdash
 execute if entity @s[tag=boolicious] run tag @e[tag=boo_marker,tag=new] add boolicious
 execute if entity @s[tag=booligan] run tag @e[tag=boo_marker,tag=new] add booligan

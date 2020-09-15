@@ -5,7 +5,7 @@ execute if entity @s[tag=boodacious] run advancement grant @a only luigis_mansio
 execute if entity @s[tag=booffant] run advancement grant @a only luigis_mansion:boos/booffant
 execute if entity @s[tag=boogie] run advancement grant @a only luigis_mansion:boos/boogie
 execute if entity @s[tag=boohoo] run advancement grant @a only luigis_mansion:boos/boohoo
-execute if entity @s[tag=booigie] run advancement grant @a only luigis_mansion:boos/booigie
+execute if entity @s[tag=booigi] run advancement grant @a only luigis_mansion:boos/booigi
 execute if entity @s[tag=boolderdash] run advancement grant @a only luigis_mansion:boos/boolderdash
 execute if entity @s[tag=boolicious] run advancement grant @a only luigis_mansion:boos/boolicious
 execute if entity @s[tag=booligan] run advancement grant @a only luigis_mansion:boos/booligan
@@ -41,7 +41,7 @@ execute if entity @s[tag=boodacious] run scoreboard players reset #boodacious
 execute if entity @s[tag=booffant] run scoreboard players reset #booffant
 execute if entity @s[tag=boogie] run scoreboard players reset #boogie
 execute if entity @s[tag=boohoo] run scoreboard players reset #boohoo
-execute if entity @s[tag=booigie] run scoreboard players reset #booigie
+execute if entity @s[tag=booigi] run scoreboard players reset #booigi
 execute if entity @s[tag=boolderdash] run scoreboard players reset #boolderdash
 execute if entity @s[tag=boolicious] run scoreboard players reset #boolicious
 execute if entity @s[tag=booligan] run scoreboard players reset #booligan
@@ -77,7 +77,7 @@ execute if entity @s[tag=boodacious] run kill @e[tag=boodacious_trap]
 execute if entity @s[tag=booffant] run kill @e[tag=booffant_trap]
 execute if entity @s[tag=boogie] run kill @e[tag=boogie_trap]
 execute if entity @s[tag=boohoo] run kill @e[tag=boohoo_trap]
-execute if entity @s[tag=booigie] run kill @e[tag=booigie_trap]
+execute if entity @s[tag=booigi] run kill @e[tag=booigie_trap]
 execute if entity @s[tag=boolderdash] run kill @e[tag=boolderdash_trap]
 execute if entity @s[tag=boolicious] run kill @e[tag=boolicious_trap]
 execute if entity @s[tag=booligan] run kill @e[tag=booligan_trap]

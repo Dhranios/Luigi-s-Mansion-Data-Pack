@@ -7,6 +7,9 @@ tag @s remove hurt
 tag @s remove hurt_animation
 tag @s remove vanish
 tag @s remove disappear
+tag @s remove stunable
+tag @s[tag=henry] remove carless
+tag @s[tag=orville] remove planeless
 scoreboard players set @s Time 0
 scoreboard players set @s[tag=lydia] Time 99
 scoreboard players set @s[tag=shivers] Time 5

@@ -14,4 +14,4 @@ execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
 execute if entity @s[tag=!visible] run function luigis_mansion:entities/madame_clairvoya/shine
-execute if entity @s[tag=visible] run function luigis_mansion:entities/madame_clairvoya/talk
+execute if entity @s[tag=visible,tag=!fleeing,tag=!hurt] run function luigis_mansion:entities/madame_clairvoya/talk

@@ -1,3 +1,6 @@
+execute if entity @s[tag=dying,tag=normal_death] run function luigis_mansion:animations/boo/death
+execute if entity @s[tag=dying,tag=hurt] run function luigis_mansion:animations/boo/death
+
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.boo.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead,tag=!warped] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/boo
 execute if entity @s[tag=dead,tag=!warped] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30

@@ -4,7 +4,8 @@ scoreboard players set @s[scores={Boos=16}] Variant -3
 scoreboard players set @s[scores={Boos=17}] Variant -5
 scoreboard players set @s[scores={Boos=18}] Variant -3
 scoreboard players set @s[scores={Boos=19}] Variant -3
-scoreboard players set @s[scores={Boos=21}] Variant -4
+scoreboard players set @s[scores={Boos=21}] Variant -6
+scoreboard players set @s[scores={Boos=22}] Variant -4
 scoreboard players set @s[scores={Boos=38}] Variant -4
 scoreboard players set @s[scores={Boos=43}] Variant -5
 scoreboard players set @s[scores={Boos=49}] Variant -6

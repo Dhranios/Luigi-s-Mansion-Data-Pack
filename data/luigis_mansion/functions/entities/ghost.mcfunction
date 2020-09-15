@@ -15,8 +15,8 @@ scoreboard players set @s[tag=collided,scores={SpawnTime=21..}] SpawnTime 20
 scoreboard players set @s[tag=laugh,scores={SpawnTime=21..}] SpawnTime 20
 scoreboard players set @s[tag=complain,scores={SpawnTime=21..}] SpawnTime 20
 scoreboard players set @s[tag=!black_bogmire,tag=element_hurt,scores={SpawnTime=21..}] SpawnTime 20
-execute if entity @s[tag=dying,tag=normal_death] run function luigis_mansion:animations/ghost/death
-execute if entity @s[tag=dying,tag=hurt] run function luigis_mansion:animations/ghost/death
+execute if entity @s[tag=dying,tag=normal_death,tag=!boo] run function luigis_mansion:animations/ghost/death
+execute if entity @s[tag=dying,tag=hurt,tag=!boo] run function luigis_mansion:animations/ghost/death
 execute if entity @s[tag=dying,tag=element_death] run function luigis_mansion:animations/ghost/death_element
 execute if entity @s[tag=dying,tag=element_hurt] run function luigis_mansion:animations/ghost/death_element
 

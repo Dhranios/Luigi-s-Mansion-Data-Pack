@@ -4,7 +4,8 @@ scoreboard players set @s[scores={Boos=16}] Variant -3
 scoreboard players set @s[scores={Boos=17}] Variant -5
 scoreboard players set @s[scores={Boos=18}] Variant -3
 scoreboard players set @s[scores={Boos=19}] Variant -3
-scoreboard players set @s[scores={Boos=21}] Variant -3
+scoreboard players set @s[scores={Boos=21}] Variant -6
+scoreboard players set @s[scores={Boos=22}] Variant -4
 scoreboard players set @s[scores={Boos=38}] Variant -4
 scoreboard players set @s[scores={Boos=43}] Variant -5
 scoreboard players set @s[scores={Boos=49}] Variant -6
@@ -105,8 +106,8 @@ scoreboard players set @s[scores={Dialog=344,Variant=-4}] Dialog 10000
 execute if entity @s[scores={Dialog=112,Variant=-5}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra.3"}]}
 execute if entity @s[scores={Dialog=112,Variant=-5}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra.3.more"}]}
 scoreboard players set @s[scores={Dialog=624,Variant=-5}] Dialog 10000
-execute if entity @s[scores={Dialog=112,Variant=-6}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra.3"}]}
-execute if entity @s[scores={Dialog=112,Variant=-6}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra.3.more"}]}
+execute if entity @s[scores={Dialog=112,Variant=-6}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra.4"}]}
+execute if entity @s[scores={Dialog=112,Variant=-6}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.extra.4.more"}]}
 scoreboard players set @s[scores={Dialog=376,Variant=-6}] Dialog 10000
 execute if entity @s[scores={Dialog=1,Variant=-1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.first_boo.1"}]}
 execute if entity @s[scores={Dialog=1,Variant=-1}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.caught_boo.first_boo.1.more"}]}

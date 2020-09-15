@@ -16,7 +16,7 @@ scoreboard players reset #temp Room
 tag @s[tag=spawn] add vacuumable
 scoreboard players set #temp Move 3
 scoreboard players add @s[tag=spawn] WaitTime 1
-execute if entity @s[scores={WaitTime=1..119}] run function luigis_mansion:entities/pink_flying_fish/hover
-execute if entity @s[scores={WaitTime=120..}] run function luigis_mansion:entities/pink_flying_fish/attack
-tag @s[scores={WaitTime=160}] remove at_height
-scoreboard players set @s[scores={WaitTime=160}] WaitTime 0
+execute if entity @s[scores={WaitTime=1..79}] run function luigis_mansion:entities/pink_flying_fish/hover
+execute if entity @s[scores={WaitTime=80..}] run function luigis_mansion:entities/pink_flying_fish/attack
+tag @s[scores={WaitTime=100}] remove at_height
+scoreboard players set @s[scores={WaitTime=120}] WaitTime 0

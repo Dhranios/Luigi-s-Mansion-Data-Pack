@@ -1,4 +1,4 @@
-tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.orville","color":"green"},{"translate":"luigis_mansion:dialog.game.0"}]}
+tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.henry","color":"green"},{"translate":"luigis_mansion:dialog.twins.game.0"}]}
 scoreboard players set #temp Time 1
 function luigis_mansion:room/normal/twins_room/search_box_1
 function luigis_mansion:room/normal/twins_room/search_box_2

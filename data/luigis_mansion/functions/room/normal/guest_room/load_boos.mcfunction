@@ -5,7 +5,7 @@ execute if score #boodacious Room matches 57 unless entity @e[tag=boodacious,sco
 execute if score #booffant Room matches 57 unless entity @e[tag=booffant,scores={Room=57}] run summon minecraft:area_effect_cloud 713.0 114 -33.0 {Tags:["hidden_boo","booffant","new"],Duration:2147483647}
 execute if score #boogie Room matches 57 unless entity @e[tag=boogie,scores={Room=57}] run summon minecraft:area_effect_cloud 713.0 114 -33.0 {Tags:["hidden_boo","boogie","new"],Duration:2147483647}
 execute if score #boohoo Room matches 57 unless entity @e[tag=boohoo,scores={Room=57}] run summon minecraft:area_effect_cloud 713.0 114 -33.0 {Tags:["hidden_boo","boohoo","new"],Duration:2147483647}
-execute if score #booigie Room matches 57 unless entity @e[tag=booigie,scores={Room=57}] run summon minecraft:area_effect_cloud 713.0 114 -33.0 {Tags:["hidden_boo","booigie","new"],Duration:2147483647}
+execute if score #booigi Room matches 57 unless entity @e[tag=booigi,scores={Room=57}] run summon minecraft:area_effect_cloud 713.0 114 -33.0 {Tags:["hidden_boo","booigi","new"],Duration:2147483647}
 execute if score #boolderdash Room matches 57 unless entity @e[tag=boolderdash,scores={Room=57}] run summon minecraft:area_effect_cloud 713.0 114 -33.0 {Tags:["hidden_boo","boolderdash","new"],Duration:2147483647}
 execute if score #boolicious Room matches 57 unless entity @e[tag=boolicious,scores={Room=57}] run summon minecraft:area_effect_cloud 713.0 114 -33.0 {Tags:["hidden_boo","boolicious","new"],Duration:2147483647}
 execute if score #booligan Room matches 57 unless entity @e[tag=booligan,scores={Room=57}] run summon minecraft:area_effect_cloud 713.0 114 -33.0 {Tags:["hidden_boo","booligan","new"],Duration:2147483647}

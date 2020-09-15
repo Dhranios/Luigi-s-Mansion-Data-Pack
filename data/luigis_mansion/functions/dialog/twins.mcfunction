@@ -20,4 +20,6 @@ execute if entity @s[scores={Dialog=282}] run scoreboard players set @a TwinsCho
 tag @s[scores={Dialog=282}] add dead
 execute if entity @s[tag=dead] as @a[scores={Room=39}] run function luigis_mansion:other/music/set/silence
 execute if entity @s[tag=dead] as @a[scores={TwinsChoice=0..}] run trigger TwinsChoice set 0
-execute if entity @s[tag=dead] run tag @e[tag=henry,tag=dialog] add dead
+execute if entity @s[tag=dead] run tag @e[tag=henry,tag=dialog,limit=1] add dead
+execute if entity @s[tag=dead] run teleport @e[tag=henry,tag=dialog,limit=1] ~ ~-100 ~
+teleport @s[tag=dead] ~ ~-100 ~

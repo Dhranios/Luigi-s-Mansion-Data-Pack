@@ -6,7 +6,7 @@ execute if entity @a[advancements={luigis_mansion:boos/boodacious=true}] run adv
 execute if entity @a[advancements={luigis_mansion:boos/booffant=true}] run advancement grant @a only luigis_mansion:boos/booffant
 execute if entity @a[advancements={luigis_mansion:boos/boogie=true}] run advancement grant @a only luigis_mansion:boos/boogie
 execute if entity @a[advancements={luigis_mansion:boos/boohoo=true}] run advancement grant @a only luigis_mansion:boos/boohoo
-execute if entity @a[advancements={luigis_mansion:boos/booigie=true}] run advancement grant @a only luigis_mansion:boos/booigie
+execute if entity @a[advancements={luigis_mansion:boos/booigi=true}] run advancement grant @a only luigis_mansion:boos/booigi
 execute if entity @a[advancements={luigis_mansion:boos/boolderdash=true}] run advancement grant @a only luigis_mansion:boos/boolderdash
 execute if entity @a[advancements={luigis_mansion:boos/boolicious=true}] run advancement grant @a only luigis_mansion:boos/boolicious
 execute if entity @a[advancements={luigis_mansion:boos/booligan=true}] run advancement grant @a only luigis_mansion:boos/booligan
@@ -79,7 +79,7 @@ execute if entity @a[advancements={luigis_mansion:boos/boodacious=true}] run sco
 execute if entity @a[advancements={luigis_mansion:boos/booffant=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/boogie=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/boohoo=true}] run scoreboard players add @a Boos 1
-execute if entity @a[advancements={luigis_mansion:boos/booigie=true}] run scoreboard players add @a Boos 1
+execute if entity @a[advancements={luigis_mansion:boos/booigi=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/boolderdash=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/boolicious=true}] run scoreboard players add @a Boos 1
 execute if entity @a[advancements={luigis_mansion:boos/booligan=true}] run scoreboard players add @a Boos 1

@@ -11,7 +11,7 @@
             "translate": "luigis_mansion:advancements.boos.booigie_trap.description"
         }
     },
-	"parent": "luigis_mansion:boos/booigie",
+	"parent": "luigis_mansion:boos/booigi",
     "criteria": {
         "triggered": {
             "trigger": "minecraft:impossible"
