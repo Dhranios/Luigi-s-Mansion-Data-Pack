@@ -1,5 +1,10 @@
 {
 	"values": [
+		"luigis_mansion:room/normal/twins_room/interact_with_box_1",
+		"luigis_mansion:room/normal/twins_room/interact_with_box_2",
+		"luigis_mansion:room/normal/twins_room/interact_with_box_3",
+		"luigis_mansion:room/normal/twins_room/interact_with_box_4",
+		"luigis_mansion:room/normal/twins_room/interact_with_box_5",
 		"luigis_mansion:room/normal/twins_room/interact_with_bunk_bed",
 		"luigis_mansion:room/normal/twins_room/interact_with_chair_1",
 		"luigis_mansion:room/normal/twins_room/interact_with_chair_2",

@@ -2,6 +2,7 @@ execute as @e[scores={Room=39},type=!minecraft:item_frame] unless data entity @s
 execute as @e[scores={Room=39},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=39},type=minecraft:item] add dead
 tag @e[scores={Room=39},tag=boo] add turn_to_marker
+function luigis_mansion:room/normal/twins_room/remove_blockade
 setblock 713 117 29 minecraft:air
 setblock 710 112 29 minecraft:air
 setblock 708 112 29 minecraft:air
@@ -35,4 +36,9 @@ scoreboard players reset #twins_room_toy_2
 scoreboard players reset #twins_room_toy_3
 scoreboard players reset #twins_room_mobile
 scoreboard players reset #twins_room_lamp
+scoreboard players reset #twins_room_box_1
+scoreboard players reset #twins_room_box_2
+scoreboard players reset #twins_room_box_3
+scoreboard players reset #twins_room_box_4
+scoreboard players reset #twins_room_box_5
 scoreboard players reset #twins_room_chest
