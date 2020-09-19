@@ -7,3 +7,4 @@ setblock 714 92 -39 minecraft:air
 execute positioned 708 95 -37 run function luigis_mansion:blocks/lit_candles
 execute positioned 716 95 -25 run function luigis_mansion:blocks/lit_candles
 scoreboard players reset #cellar Ticking
+scoreboard players reset #cellar Wave

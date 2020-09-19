@@ -1,0 +1,1 @@
+scoreboard players set #bathroom_1 Wave 100

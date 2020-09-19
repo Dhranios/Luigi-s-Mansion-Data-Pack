@@ -1,0 +1,1 @@
+scoreboard players set #study Wave 100

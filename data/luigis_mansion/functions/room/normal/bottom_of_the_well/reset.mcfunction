@@ -4,6 +4,7 @@ tag @e[scores={Room=27},type=minecraft:item] add dead
 tag @e[scores={Room=27},tag=boo] add turn_to_marker
 setblock 650 92 -4 minecraft:air
 setblock 650 92 -48 minecraft:air
+advancement revoke @a only luigis_mansion:technical saw_mario_again
 scoreboard players reset #bottom_of_the_well Ticking
 scoreboard players reset #bottom_of_the_well Wave
 scoreboard players reset #bottom_of_the_well_lamp

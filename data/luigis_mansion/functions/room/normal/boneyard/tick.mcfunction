@@ -7,7 +7,8 @@ execute if score #boneyard Wave matches 7 unless entity @e[tag=ghost,scores={Roo
 execute if score #boneyard Wave matches 6 if entity @e[tag=ghost,tag=dying,scores={Room=24},tag=!optional_ghost] run function luigis_mansion:room/normal/boneyard/wave_7
 execute if score #boneyard Wave matches 6 run tag @e[tag=ghost,scores={Room=24},tag=can_spawn,tag=!optional_ghost] add spawn
 execute if score #boneyard Wave matches 5 run function luigis_mansion:room/normal/boneyard/wave_6
-execute if entity @a[advancements={luigis_mansion:mansion/boneyard=false}] unless score #boneyard Wave matches 1.. run function luigis_mansion:room/normal/boneyard/wave_1
+execute if entity @a[advancements={luigis_mansion:mansion/boneyard=false},tag=!blackout] unless score #boneyard Wave matches 1.. run function luigis_mansion:room/normal/boneyard/wave_1
+execute if entity @a[tag=blackout] unless score #boneyard Wave matches 1.. run function luigis_mansion:room/normal/boneyard/blackout
 
 execute if score #boneyard_dog_house Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 674 102 56 0.2 0.2 0.2 0 4
 

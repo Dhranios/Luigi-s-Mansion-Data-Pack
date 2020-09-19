@@ -1,0 +1,1 @@
+scoreboard players set #twins_room Wave 100

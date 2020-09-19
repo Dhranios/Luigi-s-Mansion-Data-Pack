@@ -1,0 +1,1 @@
+scoreboard players set #boneyard Wave 100

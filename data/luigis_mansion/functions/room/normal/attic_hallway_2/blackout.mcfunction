@@ -1,0 +1,1 @@
+scoreboard players set #attic_hallway_2 Wave 100

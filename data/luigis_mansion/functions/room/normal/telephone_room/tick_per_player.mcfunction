@@ -4,4 +4,4 @@ title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.tele
 tag @s add seen_room_name
 tag @s add seen_room_name_2
 
-execute if block 699 122 -2 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"clockwork_room"}}}}] run function luigis_mansion:room/normal/clockwork_room/unlock_door
+execute positioned 699 122 -2 if block ~ ~ ~ #minecraft:doors[open=true] if entity @s[distance=..4,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"clockwork_room"}}}}] run function luigis_mansion:room/normal/clockwork_room/unlock_door

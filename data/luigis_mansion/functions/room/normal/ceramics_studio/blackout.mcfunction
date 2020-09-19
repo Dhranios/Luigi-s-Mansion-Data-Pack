@@ -1,0 +1,1 @@
+scoreboard players set #ceramics_studio Wave 100

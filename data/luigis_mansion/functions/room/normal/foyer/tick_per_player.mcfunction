@@ -3,11 +3,11 @@ title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.foye
 tag @s add seen_room_name
 tag @s add seen_room_name_2
 
-execute if block 699 112 8 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}}] run function luigis_mansion:room/normal/parlor/unlock_door
-execute if block 699 112 7 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}}] run function luigis_mansion:room/normal/parlor/unlock_door
-execute if block 702 112 17 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"small_hallway"}}}}] run function luigis_mansion:room/normal/small_hallway/unlock_door
-execute if block 707 102 8 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_hallway"}}}}] run function luigis_mansion:room/normal/main_hallway/unlock_door
-execute if block 707 102 7 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_hallway"}}}}] run function luigis_mansion:room/normal/main_hallway/unlock_door
+execute positioned 699 112 8 if block ~ ~ ~ #minecraft:doors[open=true] if entity @s[distance=..4,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}}] run function luigis_mansion:room/normal/parlor/unlock_door
+execute positioned 699 112 7 if block ~ ~ ~ #minecraft:doors[open=true] if entity @s[distance=..4,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}}] run function luigis_mansion:room/normal/parlor/unlock_door
+execute positioned 702 112 17 if block ~ ~ ~ #minecraft:doors[open=true] if entity @s[distance=..4,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"small_hallway"}}}}] run function luigis_mansion:room/normal/small_hallway/unlock_door
+execute positioned 707 102 8 if block ~ ~ ~ #minecraft:doors[open=true] if entity @s[distance=..4,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_hallway"}}}}] run function luigis_mansion:room/normal/main_hallway/unlock_door
+execute positioned 707 102 7 if block ~ ~ ~ #minecraft:doors[open=true] if entity @s[distance=..4,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_hallway"}}}}] run function luigis_mansion:room/normal/main_hallway/unlock_door
 
 execute if entity @s[x=708.5,y=102,z=8.0,distance=..4] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_hallway"}}}]}] run function luigis_mansion:room/normal/foyer/clear_blockade
 

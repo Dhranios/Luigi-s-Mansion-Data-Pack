@@ -1,0 +1,1 @@
+scoreboard players set #balcony_1 Wave 100

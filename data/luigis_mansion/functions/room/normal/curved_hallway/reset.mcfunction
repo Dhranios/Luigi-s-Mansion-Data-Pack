@@ -5,3 +5,4 @@ tag @e[scores={Room=48},tag=boo] add turn_to_marker
 function luigis_mansion:room/normal/curved_hallway/remove_blockade
 function luigis_mansion:room/normal/secret_altar/unlock_door
 scoreboard players reset #curved_hallway Ticking
+scoreboard players reset #curved_hallway Wave

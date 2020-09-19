@@ -1,0 +1,1 @@
+scoreboard players set #breaker_room Wave 100

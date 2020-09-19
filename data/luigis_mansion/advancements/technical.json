@@ -105,10 +105,22 @@
         "area_3_key": {
             "trigger": "minecraft:impossible"
         },
-        "king_boo_warp": {
+        "cleared_area_4_blockade": {
             "trigger": "minecraft:impossible"
         },
-        "cleared_area_4_blockade": {
+        "blackout": {
+            "trigger": "minecraft:impossible"
+        },
+        "telephone_1": {
+            "trigger": "minecraft:impossible"
+        },
+        "telephone_2": {
+            "trigger": "minecraft:impossible"
+        },
+        "telephone_3": {
+            "trigger": "minecraft:impossible"
+        },
+        "king_boo_warp": {
             "trigger": "minecraft:impossible"
         },
         "cleared_king_boo_blockade": {

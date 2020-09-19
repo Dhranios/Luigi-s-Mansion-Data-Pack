@@ -11,6 +11,7 @@ setblock 668 103 36 minecraft:oak_trapdoor[facing=north,half=bottom,open=false]
 setblock 667 105 27 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 setblock 667 105 28 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 scoreboard players reset #washroom_1 Ticking
+scoreboard players reset #washroom_1 Wave
 scoreboard players reset #washroom_1_lamp
 scoreboard players reset #washroom_1_cabinet
 scoreboard players reset #washroom_1_radiator

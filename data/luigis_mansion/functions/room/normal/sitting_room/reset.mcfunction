@@ -8,3 +8,4 @@ function luigis_mansion:room/normal/sitting_room/remove_blockade
 execute positioned 708 114 -11 run function luigis_mansion:blocks/unlit_candles
 execute positioned 708 114 -9 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #sitting_room Ticking
+scoreboard players reset #sitting_room Wave

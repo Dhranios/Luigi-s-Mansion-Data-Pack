@@ -5,3 +5,4 @@ tag @e[scores={Room=55},tag=boo] add turn_to_marker
 setblock 709 98 -6 minecraft:air
 setblock 704 92 -8 minecraft:air
 scoreboard players reset #cold_storage Ticking
+scoreboard players reset #cold_storage Wave

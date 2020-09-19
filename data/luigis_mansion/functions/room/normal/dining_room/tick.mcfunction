@@ -4,7 +4,8 @@ execute as @e[type=!minecraft:item_frame,x=684,y=102,z=-3,dx=14,dy=6,dz=30] run 
 execute as @a[gamemode=!spectator,x=686,y=102,z=-1,dx=10,dy=6,dz=26] run function luigis_mansion:room/normal/dining_room/tick_per_player
 
 execute if score #dining_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=22},tag=!optional_ghost] run function luigis_mansion:room/normal/dining_room/clear
-execute if entity @a[advancements={luigis_mansion:mansion/dining_room=false}] unless score #dining_room Wave matches 1.. run function luigis_mansion:room/normal/dining_room/wave_1
+execute if entity @a[advancements={luigis_mansion:mansion/dining_room=false},tag=!blackout] unless score #dining_room Wave matches 1.. run function luigis_mansion:room/normal/dining_room/wave_1
+execute if entity @a[tag=blackout] unless score #dining_room Wave matches 1.. run function luigis_mansion:room/normal/dining_room/blackout
 
 function #luigis_mansion:room/normal/interactions/dining_room
 

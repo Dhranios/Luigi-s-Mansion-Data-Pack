@@ -5,4 +5,4 @@ title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.ball
 tag @s add seen_room_name
 tag @s add seen_room_name_2
 
-execute if block 684 102 -38 #minecraft:doors[open=true] if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"storage_room"}}}}] run function luigis_mansion:room/normal/storage_room/unlock_door
+execute positioned 684 102 -38 if block ~ ~ ~ #minecraft:doors[open=true] if entity @s[distance=..4,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"storage_room"}}}}] run function luigis_mansion:room/normal/storage_room/unlock_door

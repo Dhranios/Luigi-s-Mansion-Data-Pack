@@ -10,3 +10,4 @@ execute positioned 685 116 -21 run function luigis_mansion:blocks/lit_candles
 execute positioned 692 114 -22 run function luigis_mansion:blocks/lit_candles
 execute positioned 692 114 -26 run function luigis_mansion:blocks/lit_candles
 scoreboard players reset #sealed_room Ticking
+scoreboard players reset #sealed_room Wave

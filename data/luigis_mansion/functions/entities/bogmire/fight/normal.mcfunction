@@ -1,6 +1,6 @@
 execute if entity @a[advancements={luigis_mansion:mansion/graveyard=true}] run tag @s add dead
-execute if entity @a[advancements={luigis_mansion:mansion/graveyard=true}] as @a[distance=..70] run function luigis_mansion:entities/bogmire/return
-execute if entity @a[advancements={luigis_mansion:mansion/graveyard=false}] as @a[distance=70..] run function luigis_mansion:entities/bogmire/to_arena
+execute if entity @a[advancements={luigis_mansion:mansion/graveyard=true}] as @a[distance=..80] run function luigis_mansion:entities/bogmire/return
+execute if entity @a[advancements={luigis_mansion:mansion/graveyard=false}] as @a[distance=80..] run function luigis_mansion:entities/bogmire/to_arena
 execute if entity @s[tag=!intro_done] run function luigis_mansion:dialog/bogmire_intro
 execute unless entity @s[scores={Time=1..}] run scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0}] Time 1
 scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Time=..179}] Time 1

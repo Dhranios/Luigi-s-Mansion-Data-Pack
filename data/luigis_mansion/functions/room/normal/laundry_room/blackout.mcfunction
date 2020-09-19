@@ -1,0 +1,1 @@
+scoreboard players set #laundry_room Wave 100

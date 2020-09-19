@@ -1,0 +1,1 @@
+scoreboard players set #astral_hall Wave 100

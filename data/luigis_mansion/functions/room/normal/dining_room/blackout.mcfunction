@@ -1,0 +1,1 @@
+scoreboard players set #dining_room Wave 100

@@ -7,6 +7,7 @@ fill 668 114 -58 669 115 -57 minecraft:air
 setblock 672 110 -48 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:observatory/normal"}
 setblock 672 111 -48 minecraft:redstone_block
 scoreboard players reset #observatory Ticking
+scoreboard players reset #observatory Wave
 scoreboard players reset #observatory_lamp
 scoreboard players reset #observatory_telescope
 scoreboard players reset #observatory_chair

@@ -1,0 +1,1 @@
+scoreboard players set #wardrobe_room Wave 100

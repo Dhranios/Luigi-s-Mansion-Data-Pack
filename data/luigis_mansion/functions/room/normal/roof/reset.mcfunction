@@ -17,3 +17,4 @@ setblock 705 138 -26 minecraft:air
 fill 687 140 8 687 140 7 minecraft:air
 setblock 685 140 36 minecraft:air
 scoreboard players reset #roof Ticking
+scoreboard players reset #roof Wave

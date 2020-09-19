@@ -5,3 +5,4 @@ tag @e[scores={Room=54},tag=boo] add turn_to_marker
 setblock 692 96 -8 minecraft:air
 data remove block 686 93 -13 Items
 scoreboard players reset #pipe_room Ticking
+scoreboard players reset #pipe_room Wave

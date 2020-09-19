@@ -1,3 +1,3 @@
 function luigis_mansion:room/normal/balcony_2/remove_blockade
 advancement grant @a only luigis_mansion:technical cleared_area_4_blockade
-#trigger blackout
+execute unless entity @a[tag=blackout_lightning,limit=1] run tag @a[limit=1,advancements={luigis_mansion:technical={blackout=false}},tag=!blackout] add blackout_lightning

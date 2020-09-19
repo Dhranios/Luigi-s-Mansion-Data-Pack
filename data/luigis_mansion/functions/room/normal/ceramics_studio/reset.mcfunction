@@ -6,3 +6,4 @@ setblock 690 127 43 minecraft:air
 setblock 690 122 48 minecraft:air
 function luigis_mansion:room/normal/ceramics_studio/remove_blockade
 scoreboard players reset #ceramics_studio Ticking
+scoreboard players reset #ceramics_studio Wave

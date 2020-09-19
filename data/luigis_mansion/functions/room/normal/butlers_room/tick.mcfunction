@@ -4,7 +4,8 @@ execute as @e[type=!minecraft:item_frame,x=706,y=102,z=39,dx=13,dy=6,dz=20] run 
 execute as @a[gamemode=!spectator,x=708,y=102,z=41,dx=9,dy=6,dz=16] run function luigis_mansion:room/normal/butlers_room/tick_per_player
 
 execute if score #butlers_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=19},tag=!optional_ghost] unless entity @e[tag=shivers,limit=1] run function luigis_mansion:room/normal/butlers_room/clear
-execute if entity @a[advancements={luigis_mansion:mansion/butlers_room=false}] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/normal/butlers_room/wave_1
+execute if entity @a[advancements={luigis_mansion:mansion/butlers_room=false},tag=!blackout] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/normal/butlers_room/wave_1
+execute if entity @a[tag=blackout] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/normal/butlers_room/blackout
 
 execute if score #butlers_room_hole Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 710 102 41 0.2 0.2 0.2 0 4
 

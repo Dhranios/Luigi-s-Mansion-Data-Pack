@@ -8,4 +8,5 @@ execute if entity @s[scores={Dialog=420}] run tellraw @a {"translate":"chat.type
 execute if entity @s[scores={Dialog=480}] run scoreboard players set @a MusicType 0
 tag @s[scores={Dialog=480}] remove marios_painting
 execute if entity @s[scores={Dialog=480}] run advancement grant @a only luigis_mansion:technical saw_mario
+execute if entity @s[scores={Dialog=480}] run advancement grant @a only luigis_mansion:technical saw_mario_again
 scoreboard players reset @s[scores={Dialog=480}] Dialog

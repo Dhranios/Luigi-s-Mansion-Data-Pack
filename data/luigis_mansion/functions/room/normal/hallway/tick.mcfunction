@@ -12,8 +12,9 @@ execute as @a[gamemode=!spectator,x=666,y=112,z=-9,dx=38,dy=6,dz=4] unless entit
 execute as @a[gamemode=!spectator,x=666,y=112,z=-16,dx=4,dy=6,dz=39] unless entity @s[x=666,y=112,z=-7,dx=38,dy=6,dz=4] unless entity @s[x=700,y=112,z=-21,dx=4,dy=6,dz=18] unless entity @s[x=700,y=112,z=-42,dx=4,dy=16,dz=22] run function luigis_mansion:room/normal/hallway/tick_per_player
 execute as @a[gamemode=!spectator,x=655,y=112,z=19,dx=15,dy=6,dz=4] unless entity @s[x=666,y=112,z=-16,dx=4,dy=6,dz=39] unless entity @s[x=666,y=112,z=-7,dx=38,dy=6,dz=4] unless entity @s[x=700,y=112,z=-21,dx=4,dy=6,dz=18] unless entity @s[x=700,y=112,z=-42,dx=4,dy=16,dz=22] run function luigis_mansion:room/normal/hallway/tick_per_player
 
-execute if entity @a[advancements={luigis_mansion:mansion/hallway=false},limit=1] unless score #hallway Wave matches 1.. run function luigis_mansion:room/normal/hallway/wave_1
-execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_1=false},limit=1] unless score #hallway Wave matches 2.. run function luigis_mansion:room/normal/hallway/wave_2
+execute if entity @a[advancements={luigis_mansion:mansion/hallway=false},tag=!blackout,limit=1] unless score #hallway Wave matches 1.. run function luigis_mansion:room/normal/hallway/wave_1
+execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_1=false},tag=!blackout,limit=1] unless score #hallway Wave matches 2.. run function luigis_mansion:room/normal/hallway/wave_2
+execute if entity @a[tag=blackout] unless score #hallway Wave matches 1.. run function luigis_mansion:room/normal/hallway/blackout
 
 execute if block 705 122 -23 #minecraft:doors[open=true] if block 706 123 -23 minecraft:barrier positioned 705 122 -23 run function luigis_mansion:blocks/closed_door
 execute if block 705 112 -16 #minecraft:doors[open=true] if block 706 113 -16 minecraft:barrier positioned 705 112 -16 run function luigis_mansion:blocks/closed_door

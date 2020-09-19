@@ -90,8 +90,8 @@ execute if entity @a[gamemode=!spectator,x=706,y=122,z=-43,dx=13,dy=6,dz=25] run
 execute if score #safari_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=122,z=-43,dx=13,dy=6,dz=25] run function luigis_mansion:room/normal/safari_room/reset
 execute if entity @a[gamemode=!spectator,x=683,y=122,z=-18,dx=38,dy=6,dz=11] run function luigis_mansion:room/normal/attic_hallway_1/tick
 execute if score #attic_hallway_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=122,z=-18,dx=38,dy=6,dz=11] run function luigis_mansion:room/normal/attic_hallway_1/reset
-execute if entity @a[gamemode=!spectator,x=653,y=122,z=-44,dx=30,dy=6,dz=84] run function luigis_mansion:room/normal/balcony_2/tick
-execute if score #balcony_2 Ticking matches 1 unless entity @a[gamemode=!spectator,x=653,y=122,z=-44,dx=30,dy=6,dz=84] run function luigis_mansion:room/normal/balcony_2/reset
+execute if entity @a[gamemode=!spectator,x=653,y=122,z=-44,dx=30,dy=22,dz=84] run function luigis_mansion:room/normal/balcony_2/tick
+execute if score #balcony_2 Ticking matches 1 unless entity @a[gamemode=!spectator,x=653,y=122,z=-44,dx=30,dy=22,dz=84] run function luigis_mansion:room/normal/balcony_2/reset
 execute if entity @a[gamemode=!spectator,x=683,y=122,z=22,dx=38,dy=6,dz=11] run function luigis_mansion:room/normal/attic_hallway_2/tick
 execute if score #attic_hallway_2 Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=122,z=22,dx=38,dy=6,dz=11] run function luigis_mansion:room/normal/attic_hallway_2/reset
 execute if entity @a[gamemode=!spectator,x=698,y=122,z=-7,dx=23,dy=6,dz=29] run function luigis_mansion:room/normal/telephone_room/tick

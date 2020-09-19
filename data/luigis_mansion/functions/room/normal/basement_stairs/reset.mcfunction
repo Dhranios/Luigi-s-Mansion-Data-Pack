@@ -7,5 +7,6 @@ setblock 702 95 -24 minecraft:air
 function luigis_mansion:room/normal/breaker_room/unlock_door
 function luigis_mansion:room/normal/cellar/unlock_door
 scoreboard players reset #basement_stairs Ticking
+scoreboard players reset #basement_stairs Wave
 scoreboard players reset #basement_stairs_lamp_1
 scoreboard players reset #basement_stairs_lamp_2

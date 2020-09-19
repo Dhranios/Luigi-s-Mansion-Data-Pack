@@ -5,3 +5,4 @@ tag @e[scores={Room=47},tag=boo] add turn_to_marker
 function luigis_mansion:room/normal/pipe_room/unlock_door
 function luigis_mansion:room/normal/cold_storage/unlock_door
 scoreboard players reset #basement_hallway Ticking
+scoreboard players reset #basement_hallway Wave

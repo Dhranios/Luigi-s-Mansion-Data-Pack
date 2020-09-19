@@ -6,7 +6,8 @@ execute as @a[gamemode=!spectator,x=674,y=102,z=-42,dx=7,dy=6,dz=29] run functio
 execute if score #storage_room Wave matches 3 unless entity @e[tag=ghost,scores={Room=14},tag=!optional_ghost] run function luigis_mansion:room/normal/storage_room/clear
 execute if score #storage_room Wave matches 2 unless entity @e[tag=ghost,scores={Room=14},tag=!optional_ghost] run function luigis_mansion:room/normal/storage_room/wave_3
 execute if score #storage_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=14},tag=!optional_ghost] run function luigis_mansion:room/normal/storage_room/wave_2
-execute if entity @a[advancements={luigis_mansion:mansion/storage_room=false}] unless score #storage_room Wave matches 1.. run function luigis_mansion:room/normal/storage_room/wave_1
+execute if entity @a[advancements={luigis_mansion:mansion/storage_room=false},tag=!blackout] unless score #storage_room Wave matches 1.. run function luigis_mansion:room/normal/storage_room/wave_1
+execute if entity @a[tag=blackout] unless score #storage_room Wave matches 1.. run function luigis_mansion:room/normal/storage_room/blackout
 
 execute if block 681 104 -34 minecraft:stone_button[powered=true] if block 675 102 -26 minecraft:andesite_stairs unless entity @a[tag=moving_wall,limit=1] if entity @a[advancements={luigis_mansion:mansion/storage_room=true},limit=1] positioned 681 104 -34 run tag @p[gamemode=!spectator] add move_wall
 execute if block 674 104 -20 minecraft:stone_button[powered=true] if block 677 101 -20 minecraft:oak_slab unless entity @a[tag=release_boos,limit=1] positioned 674 104 -20 run tag @p[gamemode=!spectator] add release_boos

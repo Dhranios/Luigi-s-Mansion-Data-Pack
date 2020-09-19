@@ -4,6 +4,8 @@ tag @e[tag=ghost,scores={Room=48}] add hallway
 
 execute as @a[gamemode=!spectator,x=656,y=92,z=-23,dx=26,dy=6,dz=8] run function luigis_mansion:room/normal/curved_hallway/tick_per_player
 
+execute if entity @a[tag=blackout] unless score #curved_hallway Wave matches 1.. run function luigis_mansion:room/normal/curved_hallway/blackout
+
 execute if block 655 92 -19 #minecraft:doors[open=true] if block 654 93 -19 minecraft:barrier positioned 655 92 -19 run function luigis_mansion:blocks/closed_door
 
 function #luigis_mansion:room/normal/interactions/curved_hallway

@@ -6,7 +6,8 @@ execute as @a[gamemode=!spectator,x=645,y=102,z=-43,dx=7,dy=6,dz=82] run functio
 
 execute if score #courtyard Wave matches 2 unless entity @e[tag=ghost,scores={Room=26},tag=!optional_ghost] run function luigis_mansion:room/normal/courtyard/clear
 execute if score #courtyard Wave matches 1 unless entity @e[tag=ghost,scores={Room=26},tag=!optional_ghost] run function luigis_mansion:room/normal/courtyard/wave_2
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard=false}] unless score #courtyard Wave matches 1.. run function luigis_mansion:room/normal/courtyard/wave_1
+execute if entity @a[advancements={luigis_mansion:mansion/courtyard=false},tag=!blackout] unless score #courtyard Wave matches 1.. run function luigis_mansion:room/normal/courtyard/wave_1
+execute if entity @a[tag=blackout] unless score #courtyard Wave matches 1.. run function luigis_mansion:room/normal/courtyard/blackout
 
 function #luigis_mansion:room/normal/interactions/courtyard
 

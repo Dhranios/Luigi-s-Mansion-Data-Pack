@@ -1,0 +1,1 @@
+scoreboard players set #conservatory Wave 100

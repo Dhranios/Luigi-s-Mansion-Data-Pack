@@ -13,3 +13,4 @@ execute positioned 642 94 -25 run function luigis_mansion:blocks/lit_candles
 execute positioned 642 94 -27 run function luigis_mansion:blocks/lit_candles
 execute positioned 642 94 -39 run function luigis_mansion:blocks/lit_candles
 scoreboard players reset #secret_altar Ticking
+scoreboard players reset #secret_altar Wave

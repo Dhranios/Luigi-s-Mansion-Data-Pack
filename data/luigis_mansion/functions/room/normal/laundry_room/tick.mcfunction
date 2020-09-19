@@ -6,7 +6,8 @@ execute as @a[gamemode=!spectator,x=700,y=102,z=41,dx=4,dy=6,dz=16] run function
 execute if score #laundry_room Wave matches 3 unless entity @e[tag=ghost,scores={Room=18},tag=!optional_ghost] run function luigis_mansion:room/normal/laundry_room/clear
 execute if score #laundry_room Wave matches 2 unless entity @e[tag=ghost,scores={Room=18},tag=!optional_ghost] run function luigis_mansion:room/normal/laundry_room/wave_3
 execute if score #laundry_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=18},tag=!optional_ghost] run function luigis_mansion:room/normal/laundry_room/wave_2
-execute if entity @a[advancements={luigis_mansion:mansion/laundry_room=false}] unless score #laundry_room Wave matches 1.. run function luigis_mansion:room/normal/laundry_room/wave_1
+execute if entity @a[advancements={luigis_mansion:mansion/laundry_room=false},tag=!blackout] unless score #laundry_room Wave matches 1.. run function luigis_mansion:room/normal/laundry_room/wave_1
+execute if entity @a[tag=blackout] unless score #laundry_room Wave matches 1.. run function luigis_mansion:room/normal/laundry_room/blackout
 
 function #luigis_mansion:room/normal/interactions/laundry_room
 

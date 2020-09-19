@@ -6,3 +6,4 @@ setblock 708 127 43 minecraft:air
 setblock 712 122 39 minecraft:air
 fill 700 124 44 700 125 43 minecraft:white_wool
 scoreboard players reset #armory Ticking
+scoreboard players reset #armory Wave

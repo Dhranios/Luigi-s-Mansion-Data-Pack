@@ -4,7 +4,8 @@ execute as @e[type=!minecraft:item_frame,x=706,y=102,z=-23,dx=13,dy=6,dz=20] run
 execute as @a[gamemode=!spectator,x=708,y=102,z=-21,dx=9,dy=6,dz=16] run function luigis_mansion:room/normal/fortune_tellers_room/tick_per_player
 
 execute if score #fortune_tellers_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=16},tag=!optional_ghost] run function luigis_mansion:room/normal/fortune_tellers_room/clear
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room=false}] unless score #fortune_tellers_room Wave matches 1.. run function luigis_mansion:room/normal/fortune_tellers_room/wave_1
+execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room=false},tag=!blackout] unless score #fortune_tellers_room Wave matches 1.. run function luigis_mansion:room/normal/fortune_tellers_room/wave_1
+execute if entity @a[tag=blackout] unless score #fortune_tellers_room Wave matches 1.. run function luigis_mansion:room/normal/fortune_tellers_room/blackout
 
 function #luigis_mansion:room/normal/interactions/fortune_tellers_room
 
