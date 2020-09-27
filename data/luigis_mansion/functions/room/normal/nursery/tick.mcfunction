@@ -1,7 +1,7 @@
 execute unless score #nursery Ticking matches 1 run function luigis_mansion:room/normal/nursery/load
-execute as @e[type=!minecraft:item_frame,x=706,y=112,z=39,dx=13,dy=6,dz=20] run scoreboard players set @s Room 9
+execute as @e[type=!minecraft:item_frame,x=705,y=111,z=37,dx=14,dy=6,dz=20] run scoreboard players set @s Room 9
 
-execute as @a[gamemode=!spectator,x=708,y=112,z=41,dx=9,dy=6,dz=16] run function luigis_mansion:room/normal/nursery/tick_per_player
+execute as @a[gamemode=!spectator,x=707,y=111,z=39,dx=10,dy=6,dz=16] run function luigis_mansion:room/normal/nursery/tick_per_player
 
 execute if entity @a[advancements={luigis_mansion:mansion/nursery=false},tag=!blackout] unless score #nursery Wave matches 1.. run function luigis_mansion:room/normal/nursery/wave_1
 execute if entity @a[tag=blackout] unless score #nursery Wave matches 1.. run function luigis_mansion:room/normal/nursery/blackout

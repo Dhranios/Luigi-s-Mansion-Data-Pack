@@ -1,4 +1,3 @@
-setblock 706 123 -23 minecraft:air
 clear @s minecraft:brick{luigis_mansion:{id:"luigis_mansion:key",room:"safari_room"}}
-execute if entity @s[type=minecraft:player] run playsound luigis_mansion:item.key.use player @a 706 123 -23 1
-execute if entity @s[type=minecraft:player] run advancement grant @a only luigis_mansion:mansion/safari_room_key
+playsound luigis_mansion:item.key.use player @a 706 123 -23 1
+advancement grant @a only luigis_mansion:mansion/safari_room_key

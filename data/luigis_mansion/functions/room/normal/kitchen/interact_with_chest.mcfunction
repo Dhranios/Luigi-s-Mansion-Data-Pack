@@ -1,1 +1,1 @@
-execute unless entity @s if block 692 102 49 minecraft:trapped_chest unless block 692 102 49 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/kitchen/search_chest
+execute unless entity @s if block 693 102 47 minecraft:trapped_chest unless block 693 102 47 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/kitchen/search_chest

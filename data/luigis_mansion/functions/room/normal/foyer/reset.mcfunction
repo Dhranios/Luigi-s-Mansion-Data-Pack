@@ -4,15 +4,11 @@ tag @e[scores={Room=1},type=minecraft:item] add dead
 tag @e[scores={Room=1},tag=boo] add turn_to_marker
 setblock 709 103 14 minecraft:air
 fill 708 109 8 708 109 7 minecraft:air
-fill 713 103 7 714 114 8 minecraft:stone_button[face=floor,powered=false] replace minecraft:stone_button[face=floor,powered=true]
+fill 713 103 7 714 113 8 minecraft:stone_button[face=floor,powered=false] replace minecraft:stone_button[face=floor,powered=true]
 data merge block 709 102 12 {Items:[]}
 setblock 709 103 2 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:foyer/mirror_not_vacuumed"}
 setblock 709 104 2 minecraft:redstone_block
 function luigis_mansion:room/normal/foyer/remove_blockade
-function luigis_mansion:room/normal/parlor/unlock_door
-function luigis_mansion:room/normal/small_hallway/unlock_door
-function luigis_mansion:room/normal/main_hallway/unlock_door
-function luigis_mansion:room/normal/foyer/unlock_door
 scoreboard players reset #foyer Ticking
 scoreboard players reset #foyer Wave
 scoreboard players reset #foyer_chandelier

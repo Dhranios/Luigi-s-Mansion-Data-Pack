@@ -1,2 +1,2 @@
-setblock 708 112 44 minecraft:iron_trapdoor[facing=east,open=true,half=bottom]
-setblock 708 113 44 minecraft:iron_trapdoor[facing=east,open=true,half=bottom]
+setblock 707 111 42 minecraft:iron_trapdoor[facing=east,open=true,half=bottom]
+setblock 707 112 42 minecraft:iron_trapdoor[facing=east,open=true,half=bottom]

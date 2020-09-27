@@ -2,10 +2,9 @@ execute as @e[scores={Room=13},type=!minecraft:item_frame] unless data entity @s
 execute as @e[scores={Room=13},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=13},type=minecraft:item] add dead
 tag @e[scores={Room=13},tag=boo] add turn_to_marker
-fill 691 107 -20 690 107 -21 minecraft:air
-fill 691 107 -34 690 107 -35 minecraft:air
-setblock 688 102 -27 minecraft:air
-function luigis_mansion:room/normal/storage_room/unlock_door
+fill 691 107 -18 690 107 -19 minecraft:air
+fill 691 107 -32 690 107 -33 minecraft:air
+setblock 688 102 -25 minecraft:air
 scoreboard players reset #ball_room Ticking
 scoreboard players reset #ball_room Wave
 scoreboard players reset #ghost_guys_1 Wave

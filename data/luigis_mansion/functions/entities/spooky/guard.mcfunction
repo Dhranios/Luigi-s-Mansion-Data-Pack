@@ -30,6 +30,6 @@ execute if entity @s[scores={Wave=162}] run function luigis_mansion:entities/gho
 execute if entity @s[scores={Wave=162}] if entity @e[tag=target,limit=1,distance=..0.2] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
 execute if entity @s[scores={Wave=162}] if entity @e[tag=target,limit=1,distance=..0.2] run scoreboard players reset @s Wave
 execute if entity @s[scores={Wave=163}] facing entity @e[tag=spooky_bone,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Wave=163}] unless entity @s[x=679.5,y=102,z=50.5,distance=..1] run function luigis_mansion:entities/ghost/move
-execute if entity @s[scores={Wave=163},x=679.5,y=102,z=50.5,distance=..1] run scoreboard players set @s VulnerableTime 100
+execute if entity @s[scores={Wave=163}] unless entity @s[x=679.5,y=102,z=48.5,distance=..1] run function luigis_mansion:entities/ghost/move
+execute if entity @s[scores={Wave=163},x=679.5,y=102,z=48.5,distance=..1] run scoreboard players set @s VulnerableTime 100
 kill @e[tag=target,limit=1,type=minecraft:area_effect_cloud]

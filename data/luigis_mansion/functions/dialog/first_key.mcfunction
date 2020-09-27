@@ -15,7 +15,7 @@ teleport @s[scores={Dialog=216..255}] ~ ~ ~0.2
 teleport @s[scores={Dialog=255..274}] ~-0.2 ~0.2 ~
 teleport @s[scores={Dialog=275..294}] ~-0.1 ~ ~-0.1
 teleport @s[scores={Dialog=295..319}] ~ ~0.2 ~-0.2
-teleport @s[scores={Dialog=320..339}] ~ ~0.0125 ~-0.05
+teleport @s[scores={Dialog=320..339}] ~ ~ ~-0.05
 teleport @s[scores={Dialog=340..359}] ~-0.4 ~ ~
 teleport @s[scores={Dialog=360..364}] ~0.4 ~ ~
 teleport @s[scores={Dialog=365..369}] ~-0.4 ~ ~

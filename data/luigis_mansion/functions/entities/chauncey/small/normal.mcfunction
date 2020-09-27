@@ -8,7 +8,7 @@ execute if entity @s[scores={Dialog=10}] run playsound luigis_mansion:entity.cha
 execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:entity.chauncey.cry hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=51}] run function luigis_mansion:room/normal/nursery/add_blockade
 tag @s[scores={Dialog=51}] remove sleeping
-execute if entity @s[scores={Dialog=51}] run teleport @s 716 113 56
+execute if entity @s[scores={Dialog=51}] run teleport @s 716 112 54
 execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[scores={Room=9,MusicType=11}] Music 0
 execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[scores={Room=9,MusicType=11}] MusicType 26
 execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:entity.chauncey.yawn hostile @a ~ ~ ~ 1

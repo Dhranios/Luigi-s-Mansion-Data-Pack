@@ -1,1 +1,0 @@
-fill 698 113 8 698 113 7 minecraft:barrier

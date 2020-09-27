@@ -1,2 +1,2 @@
-execute positioned 674 112 -38 run function luigis_mansion:blocks/dust
+execute positioned 673 111 -36 run function luigis_mansion:blocks/dust
 scoreboard players set #observatory_chair Searched 1

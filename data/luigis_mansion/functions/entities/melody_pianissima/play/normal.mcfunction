@@ -38,10 +38,10 @@ execute if entity @s[scores={Dialog=2040}] if score #players Totals matches 2.. 
 execute if entity @s[scores={Dialog=2120}] if score #players Totals matches 1 run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.3"}]}
 execute if entity @s[scores={Dialog=2120}] if score #players Totals matches 2.. run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.yes.3.more"}]}
 execute if entity @s[scores={Dialog=2216}] run scoreboard players set #conservatory Wave 4
+execute if entity @s[scores={Dialog=2216}] positioned 658 101 -6 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[scores={Dialog=2216}] positioned 658 101 -7 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[scores={Dialog=2216}] positioned 658 101 -8 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
-execute if entity @s[scores={Dialog=2216}] positioned 658 101 -9 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
+execute if entity @s[scores={Dialog=2216}] positioned 657 101 -6 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[scores={Dialog=2216}] positioned 657 101 -7 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 execute if entity @s[scores={Dialog=2216}] positioned 657 101 -8 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
-execute if entity @s[scores={Dialog=2216}] positioned 657 101 -9 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_music_sheet
 scoreboard players reset @s[scores={Dialog=2216}] Dialog

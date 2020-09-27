@@ -1,6 +1,6 @@
-execute if entity @s[x=661.5,y=104,z=-9.5,distance=..0.7,tag=vacuum] unless score #conservatory_vacuumable Search matches 1 run scoreboard players add #conservatory_vacuumable Searching 1
-execute if entity @s[x=661.5,y=104,z=-9.5,distance=..0.7,tag=vacuum] run scoreboard players set #conservatory_vacuumable Search 1
+execute if entity @s[x=662.5,y=104,z=-8.5,distance=..0.7,tag=vacuum] unless score #conservatory_vacuumable Search matches 1 run scoreboard players add #conservatory_vacuumable Searching 1
+execute if entity @s[x=662.5,y=104,z=-8.5,distance=..0.7,tag=vacuum] run scoreboard players set #conservatory_vacuumable Search 1
 execute unless entity @s unless score #conservatory_vacuumable Search matches 1 run scoreboard players reset #conservatory_vacuumable Searching
 execute unless entity @s run scoreboard players reset #conservatory_vacuumable Search
-execute unless entity @s if score #conservatory_vacuumable Searching matches 20 run tag @e[x=661.5,y=104,z=-8.5,distance=..0.7,type=minecraft:item_frame,tag=poster,limit=1] add dead
-execute if entity @s[x=661.5,y=104,z=-9.5,distance=..0.7,tag=gameboy_horror_scan] if entity @e[x=661.5,y=104,z=-8.5,distance=..0.7,type=minecraft:item_frame,tag=poster] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.25"}]}
+execute unless entity @s if score #conservatory_vacuumable Searching matches 20 run tag @e[x=662.5,y=104,z=-7.5,distance=..0.7,type=minecraft:item_frame,tag=poster,limit=1] add dead
+execute if entity @s[x=662.5,y=104,z=-8.5,distance=..0.7,tag=gameboy_horror_scan] if entity @e[x=662.5,y=104,z=-7.5,distance=..0.7,type=minecraft:item_frame,tag=poster] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.25"}]}

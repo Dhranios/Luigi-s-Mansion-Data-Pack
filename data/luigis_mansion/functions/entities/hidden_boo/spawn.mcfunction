@@ -37,7 +37,7 @@ execute at @s[tag=turboo] run function luigis_mansion:spawn_entities/boo/turboo
 execute at @s[tag=underboo] run function luigis_mansion:spawn_entities/boo/underboo
 
 execute at @s[tag=bamboo_trap] run function luigis_mansion:spawn_entities/boo_bomb
-execute at @s[tag=boo_b_hatch_trap] run function luigis_mansion:spawn_entities/boo_bomb
+execute at @s[tag=boo_b_hatch_trap] run function luigis_mansion:spawn_entities/ball/boo
 execute at @s[tag=boo_la_la_trap] run function luigis_mansion:spawn_entities/boo_bomb
 execute at @s[tag=boodacious_trap] run function luigis_mansion:spawn_entities/ball/boo
 execute at @s[tag=booffant_trap] run function luigis_mansion:spawn_entities/boo_bomb

@@ -29,7 +29,7 @@ execute if entity @s[tag=flashlight] as @e[distance=1..2,tag=stunable,tag=!vanis
 execute if entity @s[tag=flashlight] as @e[distance=..1,tag=stunable,tag=!vanish,tag=!appear,tag=!hurt_animation,tag=!hurt,tag=!element_hurt,tag=!last_element_hurt,tag=!dialog] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4,scores={VulnerableTime=0}] VulnerableTime 70
 execute if entity @s[tag=flashlight] as @e[distance=..1,tag=stunable,tag=!vanish,tag=!appear,tag=!hurt_animation,tag=!hurt,tag=!element_hurt,tag=!last_element_hurt,tag=!dialog] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4,scores={StunTime=0}] StunTime 70
 
-execute if entity @s[tag=flashlight] as @e[distance=..7,tag=stunable,tag=!vanish,scores={StunTime=1}] positioned ^ ^ ^4 run tag @s[distance=..4] add disappear
+execute if entity @s[tag=flashlight] as @e[distance=..7,tag=!vanish,tag=!appear,tag=!hurt_animation,tag=!hurt,tag=!element_hurt,tag=!last_element_hurt,tag=!dialog,scores={StunTime=1}] positioned ^ ^ ^4 run tag @s[distance=..4] add disappear
 
 scoreboard players add @s[tag=flashlight] FlashlightTime 1
 execute if entity @s[scores={FlashlightTime=2400}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.flashlight.1"}]}

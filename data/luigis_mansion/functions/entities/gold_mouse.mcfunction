@@ -8,5 +8,5 @@ scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @s[tag=!dead] if score #mansion_type Selected matches 0 run function luigis_mansion:entities/gold_mouse/normal
 execute if entity @s[tag=!dead] if score #mansion_type Selected matches 1 run function luigis_mansion:entities/gold_mouse/hidden
-scoreboard players set #temp Move 4
+scoreboard players set #temp Move 8
 execute at @s[tag=!dead] rotated ~ 0 run function luigis_mansion:entities/gold_mouse/move_forward

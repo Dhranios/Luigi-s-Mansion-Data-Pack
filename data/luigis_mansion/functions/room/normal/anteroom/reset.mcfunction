@@ -2,14 +2,14 @@ execute as @e[scores={Room=3},type=!minecraft:item_frame] unless data entity @s 
 execute as @e[scores={Room=3},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=3},type=minecraft:item] add dead
 tag @e[scores={Room=3},tag=boo] add turn_to_marker
-setblock 678 117 4 minecraft:air
-setblock 678 117 11 minecraft:air
-data merge block 674 113 16 {Items:[]}
-data merge block 674 113 15 {Items:[]}
-data merge block 674 113 8 {Items:[]}
-data merge block 674 113 7 {Items:[]}
-data merge block 674 113 0 {Items:[]}
-data merge block 674 113 -1 {Items:[]}
+setblock 677 116 4 minecraft:air
+setblock 677 116 11 minecraft:air
+data merge block 673 112 16 {Items:[]}
+data merge block 673 112 15 {Items:[]}
+data merge block 673 112 8 {Items:[]}
+data merge block 673 112 7 {Items:[]}
+data merge block 673 112 0 {Items:[]}
+data merge block 673 112 -1 {Items:[]}
 function luigis_mansion:room/normal/anteroom/remove_blockade
 scoreboard players reset #anteroom Ticking
 scoreboard players reset #anteroom Wave

@@ -28,3 +28,4 @@ scoreboard players reset #breaker_room_barrel_15
 scoreboard players reset #breaker_room_barrel_16
 scoreboard players reset #breaker_room_barrel_17
 scoreboard players reset #breaker_room_barrel_18
+scoreboard players reset #breaker_room_chest

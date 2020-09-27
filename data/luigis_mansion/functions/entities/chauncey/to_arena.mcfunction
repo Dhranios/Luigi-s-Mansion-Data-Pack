@@ -1,3 +1,4 @@
+execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
 teleport @s 720.0 41 -19952.0 0 0
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["load_chunk"]}
 spreadplayers 721 -19940 0 1 true @e[tag=load_chunk,limit=1]

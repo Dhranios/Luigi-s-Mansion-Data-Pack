@@ -3,4 +3,4 @@ title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.grav
 tag @s add seen_room_name
 tag @s add seen_room_name_2
 
-execute if score #graveyard_tree_trunk Searched matches 1 if entity @s[x=668.5,y=102,z=56.5,distance=..0.7] run function luigis_mansion:room/normal/graveyard/go_through_tree_trunk
+execute if score #graveyard_tree_trunk Searched matches 1 if entity @s[x=668.5,y=102,z=53.5,distance=..0.7] run function luigis_mansion:room/normal/graveyard/go_through_tree_trunk

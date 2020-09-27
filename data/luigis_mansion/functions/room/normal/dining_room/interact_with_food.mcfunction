@@ -1,3 +1,3 @@
-execute if entity @s[x=691.5,y=103,z=12.5,distance=..0.7,tag=vacuum] unless score #dining_room_food Search matches 1 run scoreboard players add @e[tag=mr_luggs,scores={Dialog=1..99},limit=1] Dialog 1
-execute if entity @s[x=691.5,y=103,z=12.5,distance=..0.7,tag=vacuum] run scoreboard players set #dining_room_food Search 1
+execute if entity @s[x=692.5,y=103,z=12.5,distance=..0.7,tag=vacuum] unless score #dining_room_food Search matches 1 run scoreboard players add @e[tag=mr_luggs,scores={Dialog=1..99},limit=1] Dialog 1
+execute if entity @s[x=692.5,y=103,z=12.5,distance=..0.7,tag=vacuum] run scoreboard players set #dining_room_food Search 1
 execute unless entity @s run scoreboard players reset #dining_room_food Search

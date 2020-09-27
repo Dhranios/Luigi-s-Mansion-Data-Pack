@@ -7,6 +7,5 @@ setblock 708 127 15 minecraft:air
 setblock 704 122 -1 minecraft:air
 fill 706 123 18 707 123 17 minecraft:white_carpet
 function luigis_mansion:room/normal/telephone_room/remove_blockade
-function luigis_mansion:room/normal/clockwork_room/unlock_door
 scoreboard players reset #telephone_room Ticking
 scoreboard players reset #telephone_room Wave

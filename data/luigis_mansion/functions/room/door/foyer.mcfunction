@@ -7,9 +7,9 @@ execute if block 720 102 8 minecraft:spruce_door[open=true] if block 720 102 7 m
 execute if block 718 102 7 minecraft:spruce_door[open=true] if block 718 102 8 minecraft:spruce_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 execute if block 718 102 8 minecraft:spruce_door[open=true] if block 718 102 7 minecraft:spruce_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
-execute if block 718 102 8 #minecraft:doors[open=true] if block 719 103 8 minecraft:barrier positioned 718 102 8 run function luigis_mansion:blocks/closed_door
-execute if block 718 102 7 #minecraft:doors[open=true] if block 719 103 7 minecraft:barrier positioned 718 102 7 run function luigis_mansion:blocks/closed_door
-execute if block 719 103 7 minecraft:barrier if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
+execute if block 718 102 8 #minecraft:doors[open=true] if entity @a[tag=blackout,limit=1] positioned 718 102 8 run function luigis_mansion:blocks/closed_door
+execute if block 718 102 7 #minecraft:doors[open=true] if entity @a[tag=blackout,limit=1] positioned 718 102 7 run function luigis_mansion:blocks/closed_door
+execute if entity @a[tag=blackout,limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=719.5,y=102,z=8.0] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 1 run fill 718 102 7 720 103 8 minecraft:air replace #minecraft:doors

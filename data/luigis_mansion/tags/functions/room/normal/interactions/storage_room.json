@@ -1,6 +1,7 @@
 {
 	"values": [
 		"luigis_mansion:room/normal/storage_room/interact_with_bucket",
+		"luigis_mansion:room/normal/storage_room/interact_with_button",
 		"luigis_mansion:room/normal/storage_room/interact_with_chair",
 		"luigis_mansion:room/normal/storage_room/interact_with_chairs",
 		"luigis_mansion:room/normal/storage_room/interact_with_crate_1",

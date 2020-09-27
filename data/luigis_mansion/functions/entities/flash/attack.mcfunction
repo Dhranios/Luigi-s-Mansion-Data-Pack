@@ -4,6 +4,7 @@ data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-160.0f,30.0f,0.0f],LeftA
 function luigis_mansion:animations/purple_puncher/attack
 
 scoreboard players set #temp Move 6
+execute if entity @s[scores={Time=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Time=41}] run playsound luigis_mansion:entity.flash.attack hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Time=41}] rotated ~ 0 run function luigis_mansion:entities/ghost/move_forward
 execute if entity @s[scores={Time=42}] rotated ~18 0 run function luigis_mansion:entities/ghost/move_forward

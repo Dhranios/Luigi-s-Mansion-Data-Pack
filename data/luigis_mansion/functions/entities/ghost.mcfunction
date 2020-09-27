@@ -42,22 +42,22 @@ execute if entity @s[tag=waiter,tag=!disappear] run function luigis_mansion:enti
 execute unless score @s Time matches 1.. run tag @s[tag=vanish] add disappear
 scoreboard players reset @s[tag=vanish] HurtTime
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
-scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..,StunTime=0},tag=!hurt] VulnerableTime 1
+execute unless entity @s[tag=portrait_ghost,scores={StunTime=1..}] run scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..},tag=!hurt] VulnerableTime 1
 execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=fleeing,tag=!dying,tag=!boo,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
 execute if entity @s[tag=!black_bogmire,tag=hurt,tag=!disappear,tag=!dying,tag=!boo,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
 tag @s[tag=!element_hurt,tag=last_element_hurt] remove last_element_hurt
 execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
 execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=!element_hurt,tag=freeze,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
-execute unless entity @s[scores={HomeY=9200..10199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9200
-execute unless entity @s[scores={HomeY=10200..11199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10200
-execute unless entity @s[scores={HomeY=11200..12199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11200
-execute unless entity @s[scores={HomeY=12200..13299}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=122,dy=7,tag=!vanish] HomeY 12200
-execute unless entity @s[scores={HomeY=13300..13399}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=133,dy=7,tag=!vanish] HomeY 13300
-execute unless entity @s[scores={HomeY=9200..10199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9500
-execute unless entity @s[scores={HomeY=10200..11199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10500
-execute unless entity @s[scores={HomeY=11200..12199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11500
-execute unless entity @s[scores={HomeY=12200..13299}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=122,dy=7,tag=!vanish] HomeY 12500
-execute unless entity @s[scores={HomeY=13300..13399}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=133,dy=7,tag=!vanish] HomeY 13600
+execute unless entity @s[scores={HomeY=9300..10199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9300
+execute unless entity @s[scores={HomeY=10200..11099}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10200
+execute unless entity @s[scores={HomeY=11100..11999}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11100
+execute unless entity @s[scores={HomeY=12000..13199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=122,dy=7,tag=!vanish] HomeY 12000
+execute unless entity @s[scores={HomeY=13200..13299}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=133,dy=7,tag=!vanish] HomeY 13200
+execute unless entity @s[scores={HomeY=9300..10199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=92,dy=7,tag=!vanish] HomeY 9600
+execute unless entity @s[scores={HomeY=10200..11099}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=102,dy=7,tag=!vanish] HomeY 10500
+execute unless entity @s[scores={HomeY=11100..11999}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=112,dy=7,tag=!vanish] HomeY 11400
+execute unless entity @s[scores={HomeY=12000..13199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=122,dy=7,tag=!vanish] HomeY 12300
+execute unless entity @s[scores={HomeY=13200..13299}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=133,dy=7,tag=!vanish] HomeY 13500
 
 execute if entity @s[tag=neville] run function luigis_mansion:entities/neville
 execute if entity @s[tag=lydia] run function luigis_mansion:entities/lydia
@@ -77,7 +77,7 @@ execute if entity @s[tag=henry] run function luigis_mansion:entities/henry
 execute if entity @s[tag=orville] run function luigis_mansion:entities/orville
 execute if entity @s[tag=madame_clairvoya] run function luigis_mansion:entities/madame_clairvoya
 execute if entity @s[tag=boolossus] run function luigis_mansion:entities/boolossus
-execute if entity @s[tag=uncle_grimly] run function luigis_mansion:entities/uncle_grimly
+execute if entity @s[tag=uncle_grimmly] run function luigis_mansion:entities/uncle_grimmly
 execute if entity @s[tag=green_clockwork_soldier] run function luigis_mansion:entities/green_clockwork_soldier
 execute if entity @s[tag=pink_clockwork_soldier] run function luigis_mansion:entities/pink_clockwork_soldier
 execute if entity @s[tag=blue_clockwork_soldier] run function luigis_mansion:entities/blue_clockwork_soldier

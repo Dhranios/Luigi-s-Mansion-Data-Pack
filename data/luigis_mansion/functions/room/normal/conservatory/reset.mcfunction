@@ -3,12 +3,12 @@ execute as @e[scores={Room=21},type=!minecraft:item_frame,type=!minecraft:player
 tag @e[scores={Room=21},type=minecraft:item] add dead
 tag @e[scores={Room=21},tag=boo] add turn_to_marker
 tag @e[x=661.5,y=104,z=-8.5,distance=..0.7,type=minecraft:item_frame] add dead
-setblock 658 108 3 minecraft:air
-setblock 659 102 1 minecraft:air
+setblock 659 106 3 minecraft:air
+setblock 659 102 2 minecraft:air
+data merge block 655 103 -7 {Items:[]}
 data merge block 655 103 -8 {Items:[]}
-data merge block 655 103 -9 {Items:[]}
+setblock 656 103 -7 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 setblock 656 103 -8 minecraft:oak_trapdoor[facing=east,half=top,open=true]
-setblock 656 103 -9 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 scoreboard players reset #conservatory Ticking
 scoreboard players reset #conservatory Wave
 scoreboard players reset #conservatory_saxophone

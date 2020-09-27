@@ -7,12 +7,12 @@ execute if entity @s[scores={Time=40}] run playsound luigis_mansion:entity.lydia
 scoreboard players set @s[scores={Time=60}] VulnerableTime 40
 execute if entity @s[scores={Time=60},tag=!spoke] run tellraw @a[scores={Room=8}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia","color":"green"},{"translate":"luigis_mansion:message.lydia.draft"}]}
 tag @s[scores={Time=60},tag=!spoke] add spoke
-execute if entity @s[scores={Time=100}] run teleport @s ~ ~ ~ facing 688 112.5 44
-execute if entity @s[scores={Time=110}] run teleport @s ~ ~ ~ facing 685 112.5 44
-execute if entity @s[scores={Time=130}] run teleport @s ~ ~ ~ facing 685 112.5 47
-execute if entity @s[scores={Time=130..157}] run fill 684 113 44 684 116 ~ minecraft:white_wool
-execute if entity @s[scores={Time=157}] run teleport @s ~ ~ ~ facing 688 112.5 45
-execute if entity @s[scores={Time=185}] run teleport @s ~ ~ ~ facing 689 112.5 43
-execute if entity @s[scores={Time=200}] run teleport @s ~ ~ ~ 135 0
-execute at @s[scores={Time=100..200}] run teleport @s ^ ^ ^0.15
-scoreboard players set @s[scores={Time=200}] Time 0 
+execute if entity @s[scores={Time=100}] run teleport @s ~ ~ ~ facing 689 111.5 42
+execute if entity @s[scores={Time=110}] run teleport @s ~ ~ ~ facing 685 111.5 42
+execute if entity @s[scores={Time=136}] run teleport @s ~ ~ ~ facing 685 111.5 45
+execute if entity @s[scores={Time=136..163}] run fill 684 112 42 684 115 ~ minecraft:white_wool
+execute if entity @s[scores={Time=163}] run teleport @s ~ ~ ~ facing 689 111.5 43
+execute if entity @s[scores={Time=197}] run teleport @s ~ ~ ~ facing 690 111.5 41
+execute if entity @s[scores={Time=212}] run teleport @s ~ ~ ~ 135 0
+execute at @s[scores={Time=100..221}] run teleport @s ^ ^ ^0.15
+scoreboard players set @s[scores={Time=212}] Time 0 

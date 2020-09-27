@@ -1,2 +1,2 @@
-setblock 686 102 33 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:kitchen/fridge_closed"}
-setblock 686 103 33 minecraft:redstone_block
+setblock 687 102 32 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:kitchen/fridge_closed"}
+setblock 687 103 32 minecraft:redstone_block

@@ -8,9 +8,8 @@ setblock 654 125 15 minecraft:air
 setblock 654 125 -17 minecraft:air
 setblock 654 125 -43 minecraft:air
 setblock 667 125 -43 minecraft:air
-setblock 665 122 7 minecraft:air
+setblock 667 122 7 minecraft:air
 function luigis_mansion:room/normal/balcony_2/remove_blockade
-function luigis_mansion:room/normal/attic_hallway_2/unlock_door
 scoreboard players reset #balcony_2 Ticking
 scoreboard players reset #balcony_2 Wave
 scoreboard players reset #balcony_2_bench_1

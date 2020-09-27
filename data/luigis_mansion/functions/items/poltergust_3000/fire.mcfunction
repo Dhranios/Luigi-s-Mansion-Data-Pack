@@ -6,6 +6,7 @@ execute as @e[tag=vacuumable,distance=..0.7,tag=ball,tag=can_spit_2] positioned 
 execute as @e[tag=vacuumable,distance=..0.7,tag=!black_bogmire,tag=!boolossus] unless entity @s[tag=haunted_object,tag=!moving] unless entity @s[tag=ball,tag=spit] positioned as @s if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[gamemode=!spectator,distance=..1.2,limit=1] run teleport @s ^ ^ ^0.1
 execute as @e[tag=vacuumable,distance=..0.7,tag=ball,tag=!spit] positioned as @s run teleport @s ~ ~ ~ ~ ~
 execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball,tag=!boolossus] unless entity @s[tag=haunted_object,tag=!moving] run tag @s add dead
+execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball,tag=!boolossus] unless entity @s[tag=haunted_object,tag=!moving] run tag @s add element_death
 execute as @e[tag=vacuumable,distance=..0.7,tag=spark] run tag @s add explode
 execute as @e[tag=vacuumable,distance=..0.7,tag=boolossus] run scoreboard players set @s Dialog 0
 execute as @e[tag=fake_door,distance=..0.7] run tag @s add dead

@@ -2,15 +2,15 @@ execute as @e[scores={Room=34},type=!minecraft:item_frame] unless data entity @s
 execute as @e[scores={Room=34},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=34},type=minecraft:item] add dead
 tag @e[scores={Room=34},tag=boo] add turn_to_marker
-setblock 659 117 3 minecraft:air
-setblock 657 112 5 minecraft:air
-fill 655 114 7 655 117 12 minecraft:orange_wool
-fill 655 114 -6 655 117 -1 minecraft:orange_wool
-data merge block 661 112 -9 {Items:[]}
-data merge block 662 112 -9 {Items:[]}
-data merge block 661 113 -9 {Items:[]}
-data merge block 662 113 -9 {Items:[]}
-data merge block 655 112 3 {Items:[]}
+setblock 659 116 4 minecraft:air
+setblock 657 111 6 minecraft:air
+fill 655 113 8 655 116 13 minecraft:orange_wool
+fill 655 113 -5 655 116 0 minecraft:orange_wool
+data merge block 662 111 -8 {Items:[]}
+data merge block 663 111 -8 {Items:[]}
+data merge block 662 112 -8 {Items:[]}
+data merge block 663 112 -8 {Items:[]}
+data merge block 655 111 4 {Items:[]}
 scoreboard players reset #nanas_room Ticking
 scoreboard players reset #nanas_room Wave
 scoreboard players reset #nanas_room_chest

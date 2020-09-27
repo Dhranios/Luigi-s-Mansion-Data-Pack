@@ -1,7 +1,7 @@
 execute if entity @a[advancements={luigis_mansion:mansion/nanas_room=true},tag=!blackout,limit=1] run function luigis_mansion:room/normal/nanas_room/turn_on_lights
 scoreboard players set #nanas_room Ticking 1
-data merge block 661 112 -9 {LootTable:"luigis_mansion:search"}
-data merge block 662 112 -9 {LootTable:"luigis_mansion:search"}
-data merge block 661 113 -9 {LootTable:"luigis_mansion:search"}
-data merge block 662 113 -9 {LootTable:"luigis_mansion:search"}
-data merge block 655 112 3 {Items:[{Slot:13b,id:"minecraft:written_book",Count:1b,tag:{HideFlags:63,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.moldy_old_journal"}'},pages:['{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.1"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.2"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.3"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.4"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.5"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.6"}'],author:"",title:"",generation:0,luigis_mansion:{id:"luigis_mansion:moldy_old_journal"}}}]}
+data merge block 662 111 -8 {LootTable:"luigis_mansion:search"}
+data merge block 663 111 -8 {LootTable:"luigis_mansion:search"}
+data merge block 662 112 -8 {LootTable:"luigis_mansion:search"}
+data merge block 663 112 -8 {LootTable:"luigis_mansion:search"}
+data merge block 655 111 4 {Items:[{Slot:13b,id:"minecraft:written_book",Count:1b,tag:{HideFlags:63,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.moldy_old_journal"}'},pages:['{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.1"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.2"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.3"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.4"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.5"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.moldy_old_journal.page.6"}'],author:"",title:"",generation:0,luigis_mansion:{id:"luigis_mansion:moldy_old_journal"}}}]}

@@ -30,7 +30,7 @@ data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}
 data merge entity @s[type=minecraft:item] {Air:1}
 execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:lightning_bolt,distance=0.1..]
 
-scoreboard players remove @s[scores={Sound=1..}] Sound 1
+execute unless entity @s[scores={StunTime=1..}] run scoreboard players remove @s[scores={Sound=1..}] Sound 1
 scoreboard players reset @s[tag=dead]
 tag @s[tag=dead] add can_die
 scoreboard players reset @s Steps

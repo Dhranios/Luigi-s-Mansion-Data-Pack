@@ -21,4 +21,5 @@ execute if entity @s[scores={Time=20}] run teleport @e[tag=this_bowling_ball,lim
 tag @s[scores={Time=20}] add grabbed_ball
 data merge entity @s[scores={Time=20..}] {Pose:{RightArm:[0.0f,135.0f,50.0f],LeftArm:[0.0f,-90.0f,-20.0f]}}
 scoreboard players set @s[scores={Time=20..}] AnimationProg 0
+scoreboard players set @s[scores={Time=20..}] Sound 2
 scoreboard players set @s[scores={Time=20..}] Time 0

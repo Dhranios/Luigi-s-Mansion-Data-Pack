@@ -1,6 +1,6 @@
-execute if entity @s[x=677.5,y=117,z=-37.5,distance=..1.5,tag=vacuum] unless score #observatory_lamp Search matches 1 run scoreboard players add #observatory_lamp Searching 1
-execute if entity @s[x=677.5,y=117,z=-37.5,distance=..1.5,tag=vacuum] run scoreboard players set #observatory_lamp Search 1
+execute if entity @s[x=677.5,y=116,z=-35.5,distance=..1.5,tag=vacuum] unless score #observatory_lamp Search matches 1 run scoreboard players add #observatory_lamp Searching 1
+execute if entity @s[x=677.5,y=116,z=-35.5,distance=..1.5,tag=vacuum] run scoreboard players set #observatory_lamp Search 1
 execute unless entity @s unless score #observatory_lamp Search matches 1 run scoreboard players reset #observatory_lamp Searching
 execute unless entity @s run scoreboard players reset #observatory_lamp Search
 execute unless entity @s if score #observatory_lamp Searching matches 20 if entity @a[advancements={luigis_mansion:technical={observatory_destroyed=false}},limit=1] run function luigis_mansion:room/normal/observatory/search_lamp
-execute if entity @s[x=677.5,y=117,z=-37.5,distance=..1.5,tag=gameboy_horror_scan] if entity @a[advancements={luigis_mansion:technical={observatory_destroyed=false}},limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.69"}]}
+execute if entity @s[x=677.5,y=116,z=-35.5,distance=..1.5,tag=gameboy_horror_scan] if entity @a[advancements={luigis_mansion:technical={observatory_destroyed=false}},limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.69"}]}

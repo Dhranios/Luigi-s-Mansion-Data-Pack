@@ -5,5 +5,4 @@ title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.parl
 tag @s add seen_room_name
 tag @s add seen_room_name_2
 
-execute positioned 685 112 1 if block ~ ~ ~ #minecraft:doors[open=true] if entity @s[distance=..4,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"anteroom"}}}}] run function luigis_mansion:room/normal/anteroom/unlock_door
-execute if entity @s[advancements={luigis_mansion:technical={found_e_gadd=false}}] unless entity @e[tag=e_gadd,scores={Room=2}] positioned 688 112 15 run function luigis_mansion:spawn_entities/e_gadd
+execute if entity @s[advancements={luigis_mansion:technical={found_e_gadd=false}}] unless entity @e[tag=e_gadd,scores={Room=2}] positioned 688 111 15 run function luigis_mansion:spawn_entities/e_gadd

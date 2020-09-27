@@ -4,4 +4,4 @@ title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.butl
 tag @s add seen_room_name
 tag @s add seen_room_name_2
 
-execute if score #butlers_room_hole Searched matches 1 if entity @s[x=710.5,y=102,z=41.5,distance=..0.7] run function luigis_mansion:room/normal/butlers_room/go_through_hole
+execute if score #butlers_room_hole Searched matches 1 if entity @s[x=710.5,y=102,z=39.5,distance=..0.7] run function luigis_mansion:room/normal/butlers_room/go_through_hole

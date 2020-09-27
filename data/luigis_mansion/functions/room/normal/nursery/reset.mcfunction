@@ -2,10 +2,10 @@ execute as @e[scores={Room=9},type=!minecraft:item_frame] unless entity @s[tag=c
 execute as @e[scores={Room=9},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] unless entity @s[tag=chauncey,tag=fight] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=9},type=minecraft:item] add dead
 tag @e[scores={Room=9},tag=boo] add turn_to_marker
-setblock 713 117 49 minecraft:air
-setblock 708 112 47 minecraft:air
-data merge block 708 112 42 {Items:[]}
-data merge block 708 112 41 {Items:[]}
+setblock 712 115 47 minecraft:air
+setblock 707 111 45 minecraft:air
+data merge block 707 111 40 {Items:[]}
+data merge block 707 111 39 {Items:[]}
 function luigis_mansion:room/normal/nursery/remove_blockade
 scoreboard players reset #nursery Ticking
 scoreboard players reset #nursery Wave

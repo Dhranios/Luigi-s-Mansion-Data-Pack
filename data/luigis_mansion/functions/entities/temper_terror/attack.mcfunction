@@ -5,6 +5,7 @@ function luigis_mansion:animations/gold_ghost/attack
 
 teleport @s[scores={Time=1..39}] ^ ^ ^0.0125
 execute at @s[scores={Time=1..20}] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,gamemode=!spectator] run tag @s add stop_attack
+execute if entity @s[scores={Time=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Time=41}] run playsound luigis_mansion:entity.temper_terror.attack hostile @a ~ ~ ~ 1
 teleport @s[scores={Time=41..60}] ~ ~ ~ ~-18 ~
 execute at @s[scores={Time=41}] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
