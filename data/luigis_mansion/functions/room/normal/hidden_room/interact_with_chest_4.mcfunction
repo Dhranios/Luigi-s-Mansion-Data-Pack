@@ -5,4 +5,4 @@ execute unless entity @s run scoreboard players reset #hidden_room_chest_4 Searc
 execute unless entity @s if score #hidden_room_chest_4 Searching matches 20 run function luigis_mansion:room/normal/hidden_room/search_chest_4
 execute unless entity @s unless block 708 102 28 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/hidden_room/search_chest_4
 execute unless entity @s unless block 708 102 27 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/hidden_room/search_chest_4
-execute if entity @s[x=708.0,y=102,z=28.0,dx=0,dy=0,dz=1,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.85"}]}
+execute if entity @s[x=708.0,y=102,z=28.0,dx=0,dy=0,dz=1,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.11"}]}

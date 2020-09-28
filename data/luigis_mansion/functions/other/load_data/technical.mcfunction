@@ -31,8 +31,7 @@ execute if entity @a[advancements={luigis_mansion:technical={shown_marios_glove=
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_shoe=true}}] run advancement grant @a only luigis_mansion:technical shown_marios_shoe
 execute if entity @a[advancements={luigis_mansion:technical={area_3_key=true}}] run advancement grant @a only luigis_mansion:technical area_3_key
 execute if entity @a[advancements={luigis_mansion:technical={cleared_area_4_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_area_4_blockade
-execute if entity @a[advancements={luigis_mansion:technical={blackout=true}}] run advancement grant @a only luigis_mansion:technical blackout
-execute if entity @a[advancements={luigis_mansion:technical={blackout=true},luigis_mansion:mansion/breaker_room=false}] run tag @a add blackout
+execute if entity @a[advancements={luigis_mansion:technical={cleared_area_4_blockade=true},luigis_mansion:mansion/breaker_room=false}] run tag @a add blackout
 execute if entity @a[advancements={luigis_mansion:technical={telephone_1=true}}] run advancement grant @a only luigis_mansion:technical telephone_1
 execute if entity @a[advancements={luigis_mansion:technical={telephone_2=true}}] run advancement grant @a only luigis_mansion:technical telephone_2
 execute if entity @a[advancements={luigis_mansion:technical={telephone_3=true}}] run advancement grant @a only luigis_mansion:technical telephone_3

@@ -108,9 +108,6 @@
         "cleared_area_4_blockade": {
             "trigger": "minecraft:impossible"
         },
-        "blackout": {
-            "trigger": "minecraft:impossible"
-        },
         "telephone_1": {
             "trigger": "minecraft:impossible"
         },
@@ -118,6 +115,9 @@
             "trigger": "minecraft:impossible"
         },
         "telephone_3": {
+            "trigger": "minecraft:impossible"
+        },
+        "caught_grimmly": {
             "trigger": "minecraft:impossible"
         },
         "king_boo_warp": {
