@@ -1,1 +1,1 @@
-fill 681 122 27 681 123 27 minecraft:air
+fill 681 120 28 681 121 28 minecraft:air

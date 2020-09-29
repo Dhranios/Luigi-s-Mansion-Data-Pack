@@ -20,16 +20,24 @@ execute if entity @s[tag=!fleeing,tag=!attack,tag=can_attack,tag=!laugh,tag=!tau
 tag @s[tag=fleeing] remove attack
 execute if entity @s[tag=!fleeing,tag=attack,tag=!laugh,tag=!taunt] run function luigis_mansion:entities/boo/attack
 
+tag @s[tag=hurt] remove rotated
+tag @s[tag=attack] remove rotated
 execute at @s[tag=laugh] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt] run teleport @s ~ ~ ~ ~-2 ~
+execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt,tag=!rotated] run function luigis_mansion:entities/boo/rotate
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt] run function luigis_mansion:entities/boo/move_forward
-tag @s remove wall
+tag @s[tag=new_section] remove rotated
+tag @s[tag=new_section] remove new_section
+execute if entity @s[tag=!dead] run function luigis_mansion:entities/boo/room_section
 execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/boo/taunt
+execute if entity @s[tag=!dead] run function luigis_mansion:entities/boo/direction
 execute if entity @s[tag=!dead] run function luigis_mansion:entities/boo/warp
 execute if entity @s[tag=turn_to_marker] run function luigis_mansion:entities/boo/warp/all
 execute if entity @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/boo/hurt
+tag @s remove wall
+tag @s[tag=!up,tag=!down,tag=!left,tag=!right] add can_attack
+execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt,tag=!up,tag=!down,tag=!left,tag=!right] run teleport @s ~ ~ ~ ~-2 ~
 
 scoreboard players set @s[tag=!hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] Time 0
 scoreboard players reset @s[tag=!hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime

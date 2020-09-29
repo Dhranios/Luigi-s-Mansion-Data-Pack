@@ -6,9 +6,12 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.garbage_can_ghost.hurt hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
+scoreboard players set @s[scores={HurtTime=1},tag=hurt] BannanaDropTime 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.garbage_can_ghost.flee hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
-execute if entity @s[scores={Sound=40},tag=fleeing] run function luigis_mansion:entities/garbage_can_ghost/throw_bannana
+execute if entity @s[scores={BannanaDropTime=0}] run function luigis_mansion:entities/garbage_can_ghost/throw_bannana
+scoreboard players set @s[scores={BannanaDropTime=0},tag=fleeing] BannanaDropTime 60
+scoreboard players remove @s[scores={BannanaDropTime=1..},tag=fleeing] BannanaDropTime 1
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear] run function luigis_mansion:entities/garbage_can_ghost/collide
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=!vanish,tag=!appear,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/garbage_can_ghost/attack

@@ -4,7 +4,9 @@ tag @e[scores={Room=11},type=minecraft:item] add dead
 tag @e[scores={Room=11},tag=boo] add turn_to_marker
 setblock 702 106 -35 minecraft:air
 setblock 702 97 -23 minecraft:air
+setblock 700 107 -28 minecraft:air
 scoreboard players reset #basement_stairs Ticking
 scoreboard players reset #basement_stairs Wave
 scoreboard players reset #basement_stairs_lamp_1
 scoreboard players reset #basement_stairs_lamp_2
+scoreboard players reset #basement_stairs_vacuumable

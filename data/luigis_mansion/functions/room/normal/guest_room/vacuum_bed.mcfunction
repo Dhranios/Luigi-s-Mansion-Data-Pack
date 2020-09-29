@@ -1,1 +1,1 @@
-fill 711 112 -38 714 112 -40 minecraft:white_wool
+fill 711 111 -36 714 111 -38 minecraft:white_wool

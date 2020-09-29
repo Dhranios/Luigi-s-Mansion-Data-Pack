@@ -8,6 +8,10 @@
 		"luigis_mansion:room/normal/foyer/interact_with_jar_2",
 		"luigis_mansion:room/normal/foyer/interact_with_lamp",
 		"luigis_mansion:room/normal/foyer/interact_with_mirror",
-		"luigis_mansion:room/normal/foyer/interact_with_table"
+		"luigis_mansion:room/normal/foyer/interact_with_table",
+		"luigis_mansion:room/normal/foyer/interact_with_vacuumable_1",
+		"luigis_mansion:room/normal/foyer/interact_with_vacuumable_2",
+		"luigis_mansion:room/normal/foyer/interact_with_vacuumable_3",
+		"luigis_mansion:room/normal/foyer/interact_with_vacuumable_4"
 	]
 }

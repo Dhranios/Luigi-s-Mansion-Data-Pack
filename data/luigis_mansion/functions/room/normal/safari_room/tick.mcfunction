@@ -1,7 +1,7 @@
 execute unless score #safari_room Ticking matches 1 run function luigis_mansion:room/normal/safari_room/load
-execute as @e[type=!minecraft:item_frame,x=706,y=122,z=-43,dx=13,dy=6,dz=25] run scoreboard players set @s Room 40
+execute as @e[type=!minecraft:item_frame,x=705,y=120,z=-41,dx=14,dy=6,dz=25] run scoreboard players set @s Room 40
 
-execute as @a[gamemode=!spectator,x=708,y=122,z=-41,dx=9,dy=6,dz=21] run function luigis_mansion:room/normal/safari_room/tick_per_player
+execute as @a[gamemode=!spectator,x=707,y=120,z=-39,dx=10,dy=6,dz=21] run function luigis_mansion:room/normal/safari_room/tick_per_player
 
 execute if score #safari_room Wave matches 3 unless entity @e[tag=ghost,scores={Room=40},tag=!optional_ghost] run function luigis_mansion:room/normal/safari_room/clear
 execute if score #safari_room Wave matches 2 unless entity @e[tag=ghost,scores={Room=40},tag=!optional_ghost] run function luigis_mansion:room/normal/safari_room/wave_3

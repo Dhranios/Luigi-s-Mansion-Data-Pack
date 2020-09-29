@@ -9,3 +9,4 @@ execute unless score @s ShrunkNr matches 1.. run scoreboard players operation @s
 tag @e[tag=shrunk_model,limit=1] add found_owner
 tag @e[tag=shrunk_model,limit=1] add found_owner_2
 teleport @e[tag=shrunk_model,limit=1] ~ ~ ~ ~ ~
+scoreboard players reset #temp ShrunkNr

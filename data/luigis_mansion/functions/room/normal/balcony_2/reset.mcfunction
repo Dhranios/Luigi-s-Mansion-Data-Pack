@@ -2,13 +2,13 @@ execute as @e[scores={Room=42},type=!minecraft:item_frame] unless data entity @s
 execute as @e[scores={Room=42},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=42},type=minecraft:item] add dead
 tag @e[scores={Room=42},tag=boo] add turn_to_marker
-setblock 667 125 39 minecraft:air
-setblock 654 125 39 minecraft:air
-setblock 654 125 15 minecraft:air
-setblock 654 125 -17 minecraft:air
-setblock 654 125 -43 minecraft:air
-setblock 667 125 -43 minecraft:air
-setblock 667 122 7 minecraft:air
+setblock 668 123 37 minecraft:air
+setblock 654 123 37 minecraft:air
+setblock 654 123 11 minecraft:air
+setblock 654 123 -15 minecraft:air
+setblock 654 123 -41 minecraft:air
+setblock 668 123 -41 minecraft:air
+setblock 668 120 7 minecraft:air
 function luigis_mansion:room/normal/balcony_2/remove_blockade
 scoreboard players reset #balcony_2 Ticking
 scoreboard players reset #balcony_2 Wave

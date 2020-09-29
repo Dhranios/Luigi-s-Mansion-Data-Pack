@@ -1,12 +1,10 @@
 execute unless score #curved_hallway Ticking matches 1 run function luigis_mansion:room/normal/curved_hallway/load
-execute as @e[type=!minecraft:item_frame,x=654,y=92,z=-25,dx=30,dy=6,dz=12] run scoreboard players set @s Room 48
+execute as @e[type=!minecraft:item_frame,x=653,y=93,z=-24,dx=33,dy=6,dz=12] run scoreboard players set @s Room 48
 tag @e[tag=ghost,scores={Room=48}] add hallway
 
-execute as @a[gamemode=!spectator,x=656,y=92,z=-23,dx=26,dy=6,dz=8] run function luigis_mansion:room/normal/curved_hallway/tick_per_player
+execute as @a[gamemode=!spectator,x=655,y=93,z=-22,dx=29,dy=6,dz=8] run function luigis_mansion:room/normal/curved_hallway/tick_per_player
 
 execute if entity @a[tag=blackout] unless score #curved_hallway Wave matches 1.. run function luigis_mansion:room/normal/curved_hallway/blackout
-
-execute if block 655 92 -19 #minecraft:doors[open=true] if block 654 93 -19 minecraft:barrier positioned 655 92 -19 run function luigis_mansion:blocks/closed_door
 
 function #luigis_mansion:room/normal/interactions/curved_hallway
 

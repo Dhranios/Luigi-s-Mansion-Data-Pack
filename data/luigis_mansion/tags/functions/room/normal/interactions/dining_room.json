@@ -23,6 +23,8 @@
 		"luigis_mansion:room/normal/dining_room/interact_with_painting_4",
 		"luigis_mansion:room/normal/dining_room/interact_with_table",
 		"luigis_mansion:room/normal/dining_room/interact_with_torch_1",
-		"luigis_mansion:room/normal/dining_room/interact_with_torch_2"
+		"luigis_mansion:room/normal/dining_room/interact_with_torch_2",
+		"luigis_mansion:room/normal/dining_room/interact_with_vacuumable_1",
+		"luigis_mansion:room/normal/dining_room/interact_with_vacuumable_2"
 	]
 }

@@ -23,6 +23,8 @@ setblock 685 111 9 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 685 111 8 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 685 111 7 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 685 111 6 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+setblock 684 117 11 minecraft:air
+setblock 684 116 0 minecraft:air
 function luigis_mansion:room/normal/parlor/remove_blockade
 execute positioned 690 112 3 run function luigis_mansion:blocks/lit_candles
 execute positioned 684 113 6 run function luigis_mansion:blocks/purple_candles
@@ -49,3 +51,5 @@ scoreboard players reset #parlor_candle_1
 scoreboard players reset #parlor_candle_2
 scoreboard players reset #parlor_candle_3
 scoreboard players reset #parlor_chest
+scoreboard players reset #parlor_vacuumable_1
+scoreboard players reset #parlor_vacuumable_2

@@ -1,2 +1,2 @@
-execute if entity @a[advancements={luigis_mansion:mansion/twins_room_speedy_spirit=false},limit=1] positioned 709 114 23 run function luigis_mansion:spawn_entities/new_ghost/speedy_spirit/twins_room
+execute if entity @a[advancements={luigis_mansion:mansion/twins_room_speedy_spirit=false},limit=1] positioned 708 113 22 run function luigis_mansion:spawn_entities/new_ghost/speedy_spirit/twins_room
 scoreboard players set #twins_room Wave 1

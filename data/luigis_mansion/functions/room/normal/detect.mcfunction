@@ -79,49 +79,49 @@ execute if score #astral_hall Ticking matches 1 unless entity @a[gamemode=!spect
 execute if entity @a[gamemode=!spectator,x=671,y=111,z=-42,dx=12,dy=6,dz=12] run function luigis_mansion:room/normal/observatory/tick
 execute unless entity @a[gamemode=!spectator,x=671,y=111,z=-42,dx=12,dy=6,dz=12] if entity @a[gamemode=!spectator,x=667,y=111,z=-103,dx=16,dy=6,dz=61] run function luigis_mansion:room/normal/observatory/tick
 execute if score #observatory Ticking matches 1 unless entity @a[gamemode=!spectator,x=671,y=111,z=-42,dx=12,dy=6,dz=12] unless entity @a[gamemode=!spectator,x=667,y=111,z=-103,dx=16,dy=6,dz=61] run function luigis_mansion:room/normal/observatory/reset
-#execute if entity @a[gamemode=!spectator,x=672,y=102,z=13,dx=12,dy=6,dz=27] run function luigis_mansion:room/normal/billiards_room/tick
-execute if score #billiards_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=672,y=102,z=13,dx=12,dy=6,dz=27] run function luigis_mansion:room/normal/billiards_room/reset
-#execute if entity @a[gamemode=!spectator,x=672,y=102,z=-3,dx=12,dy=6,dz=16] run function luigis_mansion:room/normal/projection_room/tick
-execute if score #projection_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=672,y=102,z=-3,dx=12,dy=6,dz=16] run function luigis_mansion:room/normal/projection_room/reset
-#execute if entity @a[gamemode=!spectator,x=706,y=111,z=18,dx=13,dy=6,dz=21] run function luigis_mansion:room/normal/twins_room/tick
-execute if score #twins_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=111,z=18,dx=13,dy=6,dz=21] run function luigis_mansion:room/normal/twins_room/reset
-#execute if entity @a[gamemode=!spectator,x=706,y=120,z=-43,dx=13,dy=6,dz=25] run function luigis_mansion:room/normal/safari_room/tick
-execute if score #safari_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=120,z=-43,dx=13,dy=6,dz=25] run function luigis_mansion:room/normal/safari_room/reset
-#execute if entity @a[gamemode=!spectator,x=683,y=120,z=-18,dx=38,dy=6,dz=11] run function luigis_mansion:room/normal/attic_hallway_1/tick
-execute if score #attic_hallway_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=120,z=-18,dx=38,dy=6,dz=11] run function luigis_mansion:room/normal/attic_hallway_1/reset
-#execute if entity @a[gamemode=!spectator,x=653,y=120,z=-44,dx=30,dy=22,dz=84] run function luigis_mansion:room/normal/balcony_2/tick
-execute if score #balcony_2 Ticking matches 1 unless entity @a[gamemode=!spectator,x=653,y=120,z=-44,dx=30,dy=22,dz=84] run function luigis_mansion:room/normal/balcony_2/reset
-#execute if entity @a[gamemode=!spectator,x=683,y=120,z=22,dx=38,dy=6,dz=11] run function luigis_mansion:room/normal/attic_hallway_2/tick
-execute if score #attic_hallway_2 Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=120,z=22,dx=38,dy=6,dz=11] run function luigis_mansion:room/normal/attic_hallway_2/reset
-#execute if entity @a[gamemode=!spectator,x=698,y=120,z=-7,dx=23,dy=6,dz=29] run function luigis_mansion:room/normal/telephone_room/tick
-execute if score #telephone_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=698,y=120,z=-7,dx=23,dy=6,dz=29] run function luigis_mansion:room/normal/telephone_room/reset
-#execute if entity @a[gamemode=!spectator,x=684,y=93,z=-44,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/breaker_room/tick
-execute if score #breaker_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=684,y=93,z=-44,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/breaker_room/reset
-#execute if entity @a[gamemode=!spectator,x=706,y=93,z=-44,dx=13,dy=6,dz=21] run function luigis_mansion:room/normal/cellar/tick
-execute if score #cellar Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=93,z=-44,dx=13,dy=6,dz=21] run function luigis_mansion:room/normal/cellar/reset
-#execute if entity @a[gamemode=!spectator,x=684,y=93,z=-23,dx=35,dy=6,dz=8] run function luigis_mansion:room/normal/basement_hallway/tick
-execute if score #basement_hallway Ticking matches 1 unless entity @a[gamemode=!spectator,x=684,y=93,z=-23,dx=35,dy=6,dz=8] run function luigis_mansion:room/normal/basement_hallway/reset
-#execute if entity @a[gamemode=!spectator,x=654,y=93,z=-25,dx=30,dy=6,dz=12] run function luigis_mansion:room/normal/curved_hallway/tick
-execute if score #curved_hallway Ticking matches 1 unless entity @a[gamemode=!spectator,x=654,y=93,z=-25,dx=30,dy=6,dz=12] run function luigis_mansion:room/normal/curved_hallway/reset
-#execute if entity @a[gamemode=!spectator,x=683,y=120,z=-7,dx=15,dy=10,dz=29] run function luigis_mansion:room/normal/clockwork_room/tick
-execute if score #clockwork_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=120,z=-7,dx=15,dy=10,dz=29] run function luigis_mansion:room/normal/clockwork_room/reset
-#execute if entity @a[gamemode=!spectator,x=683,y=131,z=-31,dx=31,dy=15,dz=77] run function luigis_mansion:room/normal/roof/tick
-execute if score #roof Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=131,z=-31,dx=31,dy=15,dz=77] run function luigis_mansion:room/normal/roof/reset
-#execute if entity @a[gamemode=!spectator,x=698,y=120,z=33,dx=21,dy=6,dz=25] run function luigis_mansion:room/normal/armory/tick
-execute if score #armory Ticking matches 1 unless entity @a[gamemode=!spectator,x=698,y=120,z=33,dx=21,dy=6,dz=25] run function luigis_mansion:room/normal/armory/reset
-#execute if entity @a[gamemode=!spectator,x=683,y=120,z=33,dx=15,dy=6,dz=25] run function luigis_mansion:room/normal/ceramics_studio/tick
-execute if score #ceramics_studio Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=120,z=33,dx=15,dy=6,dz=25] run function luigis_mansion:room/normal/ceramics_studio/reset
-#execute if entity @a[gamemode=!spectator,x=683,y=111,z=-44,dx=15,dy=6,dz=33] run function luigis_mansion:room/normal/sealed_room/tick
-execute if score #sealed_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=111,z=-44,dx=15,dy=6,dz=33] run function luigis_mansion:room/normal/sealed_room/reset
-#execute if entity @a[gamemode=!spectator,x=684,y=93,z=-15,dx=14,dy=6,dz=18] run function luigis_mansion:room/normal/pipe_room/tick
-execute if score #pipe_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=684,y=93,z=-15,dx=14,dy=6,dz=18] run function luigis_mansion:room/normal/pipe_room/reset
-#execute if entity @a[gamemode=!spectator,x=698,y=93,z=-15,dx=21,dy=6,dz=18] run function luigis_mansion:room/normal/cold_storage/tick
+execute if entity @a[gamemode=!spectator,x=671,y=102,z=12,dx=15,dy=6,dz=27] run function luigis_mansion:room/normal/billiards_room/tick
+execute if score #billiards_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=671,y=102,z=12,dx=15,dy=6,dz=27] run function luigis_mansion:room/normal/billiards_room/reset
+execute if entity @a[gamemode=!spectator,x=671,y=102,z=-3,dx=15,dy=6,dz=16] run function luigis_mansion:room/normal/projection_room/tick
+execute if score #projection_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=671,y=102,z=-3,dx=15,dy=6,dz=16] run function luigis_mansion:room/normal/projection_room/reset
+execute if entity @a[gamemode=!spectator,x=705,y=111,z=17,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/twins_room/tick
+execute if score #twins_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=705,y=111,z=17,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/twins_room/reset
+execute if entity @a[gamemode=!spectator,x=705,y=120,z=-41,dx=14,dy=6,dz=25] run function luigis_mansion:room/normal/safari_room/tick
+execute if score #safari_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=705,y=120,z=-41,dx=14,dy=6,dz=25] run function luigis_mansion:room/normal/safari_room/reset
+execute if entity @a[gamemode=!spectator,x=682,y=120,z=-17,dx=40,dy=6,dz=8] run function luigis_mansion:room/normal/attic_hallway_1/tick
+execute if score #attic_hallway_1 Ticking matches 1 unless entity @a[gamemode=!spectator,x=682,y=120,z=-17,dx=40,dy=6,dz=8] run function luigis_mansion:room/normal/attic_hallway_1/reset
+execute if entity @a[gamemode=!spectator,x=653,y=120,z=-42,dx=30,dy=22,dz=80] run function luigis_mansion:room/normal/balcony_2/tick
+execute if score #balcony_2 Ticking matches 1 unless entity @a[gamemode=!spectator,x=653,y=120,z=-42,dx=30,dy=22,dz=80] run function luigis_mansion:room/normal/balcony_2/reset
+execute if entity @a[gamemode=!spectator,x=682,y=120,z=24,dx=40,dy=6,dz=8] run function luigis_mansion:room/normal/attic_hallway_2/tick
+execute if score #attic_hallway_2 Ticking matches 1 unless entity @a[gamemode=!spectator,x=682,y=120,z=24,dx=40,dy=6,dz=8] run function luigis_mansion:room/normal/attic_hallway_2/reset
+execute if entity @a[gamemode=!spectator,x=698,y=120,z=-10,dx=24,dy=6,dz=35] run function luigis_mansion:room/normal/telephone_room/tick
+execute if score #telephone_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=698,y=120,z=-10,dx=24,dy=6,dz=35] run function luigis_mansion:room/normal/telephone_room/reset
+execute if entity @a[gamemode=!spectator,x=685,y=93,z=-42,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/breaker_room/tick
+execute if score #breaker_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=685,y=93,z=-42,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/breaker_room/reset
+execute if entity @a[gamemode=!spectator,x=705,y=93,z=-42,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/cellar/tick
+execute if score #cellar Ticking matches 1 unless entity @a[gamemode=!spectator,x=705,y=93,z=-42,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/cellar/reset
+execute if entity @a[gamemode=!spectator,x=685,y=93,z=-22,dx=36,dy=6,dz=8] run function luigis_mansion:room/normal/basement_hallway/tick
+execute if score #basement_hallway Ticking matches 1 unless entity @a[gamemode=!spectator,x=685,y=93,z=-22,dx=36,dy=6,dz=8] run function luigis_mansion:room/normal/basement_hallway/reset
+execute if entity @a[gamemode=!spectator,x=653,y=93,z=-24,dx=33,dy=6,dz=12] run function luigis_mansion:room/normal/curved_hallway/tick
+execute if score #curved_hallway Ticking matches 1 unless entity @a[gamemode=!spectator,x=653,y=93,z=-24,dx=33,dy=6,dz=12] run function luigis_mansion:room/normal/curved_hallway/reset
+execute if entity @a[gamemode=!spectator,x=682,y=120,z=-10,dx=17,dy=7,dz=35] run function luigis_mansion:room/normal/clockwork_room/tick
+execute if score #clockwork_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=682,y=120,z=-10,dx=17,dy=7,dz=35] run function luigis_mansion:room/normal/clockwork_room/reset
+execute if entity @a[gamemode=!spectator,x=682,y=131,z=-31,dx=31,dy=15,dz=77] run function luigis_mansion:room/normal/roof/tick
+execute if score #roof Ticking matches 1 unless entity @a[gamemode=!spectator,x=682,y=131,z=-31,dx=31,dy=15,dz=77] run function luigis_mansion:room/normal/roof/reset
+execute if entity @a[gamemode=!spectator,x=698,y=120,z=31,dx=22,dy=6,dz=25] run function luigis_mansion:room/normal/armory/tick
+execute if score #armory Ticking matches 1 unless entity @a[gamemode=!spectator,x=698,y=120,z=31,dx=22,dy=6,dz=25] run function luigis_mansion:room/normal/armory/reset
+execute if entity @a[gamemode=!spectator,x=682,y=120,z=31,dx=17,dy=6,dz=25] run function luigis_mansion:room/normal/ceramics_studio/tick
+execute if score #ceramics_studio Ticking matches 1 unless entity @a[gamemode=!spectator,x=682,y=120,z=31,dx=17,dy=6,dz=25] run function luigis_mansion:room/normal/ceramics_studio/reset
+execute if entity @a[gamemode=!spectator,x=682,y=111,z=-42,dx=17,dy=6,dz=33] run function luigis_mansion:room/normal/sealed_room/tick
+execute if score #sealed_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=682,y=111,z=-42,dx=17,dy=6,dz=33] run function luigis_mansion:room/normal/sealed_room/reset
+execute if entity @a[gamemode=!spectator,x=685,y=93,z=-15,dx=14,dy=6,dz=18] run function luigis_mansion:room/normal/pipe_room/tick
+execute if score #pipe_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=685,y=93,z=-15,dx=14,dy=6,dz=18] run function luigis_mansion:room/normal/pipe_room/reset
+execute if entity @a[gamemode=!spectator,x=698,y=93,z=-15,dx=21,dy=6,dz=18] run function luigis_mansion:room/normal/cold_storage/tick
 execute if score #cold_storage Ticking matches 1 unless entity @a[gamemode=!spectator,x=698,y=93,z=-15,dx=21,dy=6,dz=18] run function luigis_mansion:room/normal/cold_storage/reset
-#execute if entity @a[gamemode=!spectator,x=706,y=111,z=-23,dx=13,dy=6,dz=20] run function luigis_mansion:room/normal/sitting_room/tick
-execute if score #sitting_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=111,z=-23,dx=13,dy=6,dz=20] run function luigis_mansion:room/normal/sitting_room/reset
-#execute if entity @a[gamemode=!spectator,x=706,y=111,z=-44,dx=13,dy=6,dz=21] run function luigis_mansion:room/normal/guest_room/tick
-execute if score #guest_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=706,y=111,z=-44,dx=13,dy=6,dz=21] run function luigis_mansion:room/normal/guest_room/reset
-#execute if entity @a[gamemode=!spectator,x=683,y=120,z=-43,dx=15,dy=6,dz=25] run function luigis_mansion:room/normal/artists_studio/tick
-execute if score #artists_studio Ticking matches 1 unless entity @a[gamemode=!spectator,x=683,y=120,z=-43,dx=15,dy=6,dz=25] run function luigis_mansion:room/normal/artists_studio/reset
-#execute if entity @a[gamemode=!spectator,x=634,y=93,z=-27,dx=20,dy=6,dz=16] run function luigis_mansion:room/normal/secret_altar/tick
-execute if score #secret_altar Ticking matches 1 unless entity @a[gamemode=!spectator,x=634,y=93,z=-27,dx=20,dy=6,dz=16] run function luigis_mansion:room/normal/secret_altar/reset
+execute if entity @a[gamemode=!spectator,x=705,y=111,z=-22,dx=14,dy=6,dz=20] run function luigis_mansion:room/normal/sitting_room/tick
+execute if score #sitting_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=705,y=111,z=-22,dx=14,dy=6,dz=20] run function luigis_mansion:room/normal/sitting_room/reset
+execute if entity @a[gamemode=!spectator,x=705,y=111,z=-42,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/guest_room/tick
+execute if score #guest_room Ticking matches 1 unless entity @a[gamemode=!spectator,x=705,y=111,z=-42,dx=14,dy=6,dz=21] run function luigis_mansion:room/normal/guest_room/reset
+execute if entity @a[gamemode=!spectator,x=682,y=120,z=-41,dx=16,dy=6,dz=25] run function luigis_mansion:room/normal/artists_studio/tick
+execute if score #artists_studio Ticking matches 1 unless entity @a[gamemode=!spectator,x=682,y=120,z=-41,dx=16,dy=6,dz=25] run function luigis_mansion:room/normal/artists_studio/reset
+execute if entity @a[gamemode=!spectator,x=634,y=93,z=-27,dx=20,dy=6,dz=18] run function luigis_mansion:room/normal/secret_altar/tick
+execute if score #secret_altar Ticking matches 1 unless entity @a[gamemode=!spectator,x=634,y=93,z=-27,dx=20,dy=6,dz=18] run function luigis_mansion:room/normal/secret_altar/reset

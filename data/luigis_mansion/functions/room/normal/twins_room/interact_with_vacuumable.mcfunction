@@ -1,6 +1,0 @@
-execute if entity @s[x=707.5,y=113,z=27.5,distance=..0.7,tag=vacuum] unless score #twins_room_vacuumable Search matches 1 run scoreboard players add #twins_room_vacuumable Searching 1
-execute if entity @s[x=707.5,y=113,z=27.5,distance=..0.7,tag=vacuum] run scoreboard players set #twins_room_vacuumable Search 1
-execute unless entity @s unless score #twins_room_vacuumable Search matches 1 run scoreboard players reset #twins_room_vacuumable Searching
-execute unless entity @s run scoreboard players reset #twins_room_vacuumable Search
-execute unless entity @s if score #twins_room_vacuumable Searching matches 20 run tag @e[x=708.5,y=113,z=27.5,distance=..0.7,type=minecraft:item_frame,tag=poster,limit=1] add dead
-execute if entity @s[x=707.5,y=113,z=27.5,distance=..0.7,tag=gameboy_horror_scan] if entity @e[x=708.5,y=113,z=27.5,distance=..0.7,type=minecraft:item_frame,tag=poster] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.101"}]}

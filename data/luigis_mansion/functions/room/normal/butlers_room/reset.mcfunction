@@ -4,7 +4,7 @@ tag @e[scores={Room=19},type=minecraft:item] add dead
 tag @e[scores={Room=19},tag=boo] add turn_to_marker
 setblock 712 106 47 minecraft:air
 setblock 715 102 49 minecraft:air
-setblock 708 107 42 minecraft:white_wool
+setblock 708 107 42 minecraft:spruce_slab
 fill 713 103 54 713 103 55 minecraft:white_carpet
 data merge block 707 102 51 {Items:[]}
 data merge block 707 105 51 {Items:[]}

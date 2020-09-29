@@ -195,65 +195,7 @@ def modify_function():
                                             else: 
                                                 modified_line.append(value)
                                         else: 
-											if value == "fill":
-												if split_line[index + 1] == "~":													
-													if split_line[index + 4] == "~":
-														modified_line.append(value)
-													else:
-														x_value = string(split_line[index + 1])
-														y_value = string(split_line[index + 2])
-														z_value = string(split_line[index + 3])
-														x_value2 = float(split_line[index + 4])
-														y_value2 = float(split_line[index + 5])
-														z_value2 = float(split_line[index + 6])
-														if x_value2.is_integer():
-															x_value2 = int(x_value2)
-														if y_value2.is_integer():
-															y_value2 = int(y_value2)
-														if z_value2.is_integer():
-															z_value2 = int(z_value2)
-
-														x_value2 += window.XOffset.value()
-														y_value2 += window.YOffset.value()
-														z_value2 += window.ZOffset.value()
-													del split_line[index:index + 6]
-													modified_line.append(f"fill {x_value} {y_value} {z_value} {x_value2} {y_value2} {z_value2}")
-												else:
-													x_value = float(split_line[index + 1])
-													y_value = float(split_line[index + 2])
-													z_value = float(split_line[index + 3])
-													if x_value.is_integer():
-														x_value = int(x_value)
-													if y_value.is_integer():
-														y_value = int(y_value)
-													if z_value.is_integer():
-														z_value = int(z_value)
-
-													x_value += window.XOffset.value()
-													y_value += window.YOffset.value()
-													z_value += window.ZOffset.value()
-													if split_line[index + 4] == "~":
-														modified_line.append(value)
-														del split_line[index:index + 3]
-														modified_line.append(f"fill {x_value} {y_value} {z_value}")
-													else:
-														x_value2 = float(split_line[index + 4])
-														y_value2 = float(split_line[index + 5])
-														z_value2 = float(split_line[index + 6])
-														if x_value2.is_integer():
-															x_value2 = int(x_value2)
-														if y_value2.is_integer():
-															y_value2 = int(y_value2)
-														if z_value2.is_integer():
-															z_value2 = int(z_value2)
-
-														x_value2 += window.XOffset.value()
-														y_value2 += window.YOffset.value()
-														z_value2 += window.ZOffset.value()
-														del split_line[index:index + 6]
-														modified_line.append(f"fill {x_value} {y_value} {z_value} {x_value2} {y_value2} {z_value2}")
-                                            else:
-												modified_line.append(value)
+                                            modified_line.append(value)
             whole_file.append(' '.join(modified_line))
         function.write('\n'.join(whole_file))
         

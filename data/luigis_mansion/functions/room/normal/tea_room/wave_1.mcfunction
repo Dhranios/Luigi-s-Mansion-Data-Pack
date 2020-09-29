@@ -1,7 +1,3 @@
-execute positioned 657 113 -11 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_plate
-execute positioned 661 113 -11 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_plate
-execute positioned 657 113 -40 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_plate
-execute positioned 661 113 -40 run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_plate
 tag @e[tag=haunted_plate] add enabled
 execute positioned 658 111 -13 run function luigis_mansion:spawn_entities/new_ghost/grabbing_ghost
 execute positioned 658 111 -38 run function luigis_mansion:spawn_entities/new_ghost/grabbing_ghost

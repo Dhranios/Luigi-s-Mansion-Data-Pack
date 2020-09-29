@@ -8,4 +8,6 @@ data merge block 684 111 8 {LootTable:"luigis_mansion:search"}
 data merge block 684 111 7 {LootTable:"luigis_mansion:search"}
 data merge block 684 112 15 {LootTable:"luigis_mansion:search"}
 data merge block 684 112 13 {LootTable:"luigis_mansion:search"}
+setblock 684 117 11 minecraft:cobweb
+setblock 684 116 0 minecraft:cobweb
 scoreboard players set #parlor Ticking 1

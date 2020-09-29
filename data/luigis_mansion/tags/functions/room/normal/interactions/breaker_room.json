@@ -21,6 +21,7 @@
 		"luigis_mansion:room/normal/breaker_room/interact_with_chest",
 		"luigis_mansion:room/normal/breaker_room/interact_with_lamp",
 		"luigis_mansion:room/normal/breaker_room/interact_with_mirror",
-		"luigis_mansion:room/normal/breaker_room/interact_with_table"
+		"luigis_mansion:room/normal/breaker_room/interact_with_table",
+		"luigis_mansion:room/normal/breaker_room/interact_with_vacuumable"
 	]
 }

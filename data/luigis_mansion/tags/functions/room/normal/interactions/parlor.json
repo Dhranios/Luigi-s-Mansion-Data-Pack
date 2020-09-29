@@ -18,6 +18,8 @@
 		"luigis_mansion:room/normal/parlor/interact_with_table_1",
 		"luigis_mansion:room/normal/parlor/interact_with_table_2",
 		"luigis_mansion:room/normal/parlor/interact_with_table_3",
-		"luigis_mansion:room/normal/parlor/interact_with_table_4"
+		"luigis_mansion:room/normal/parlor/interact_with_table_4",
+		"luigis_mansion:room/normal/parlor/interact_with_vacuumable_1",
+		"luigis_mansion:room/normal/parlor/interact_with_vacuumable_2"
 	]
 }

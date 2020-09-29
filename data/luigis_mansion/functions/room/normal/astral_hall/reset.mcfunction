@@ -8,6 +8,7 @@ data merge block 673 111 -27 {Items:[]}
 data merge block 673 111 -13 {Items:[]}
 setblock 674 111 -27 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 674 111 -13 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
+setblock 673 116 -12 minecraft:air
 function luigis_mansion:room/normal/astral_hall/remove_blockade
 execute positioned 676 113 -16 run function luigis_mansion:blocks/unlit_candles
 execute positioned 680 113 -18 run function luigis_mansion:blocks/unlit_candles
@@ -24,3 +25,4 @@ scoreboard players reset #astral_hall_candle_2
 scoreboard players reset #astral_hall_candle_3
 scoreboard players reset #astral_hall_candle_4
 scoreboard players reset #astral_hall_candle_5
+scoreboard players reset #astral_hall_vacuumable

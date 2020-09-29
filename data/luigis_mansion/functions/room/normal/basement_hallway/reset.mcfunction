@@ -2,5 +2,7 @@ execute as @e[scores={Room=47},type=!minecraft:item_frame] unless data entity @s
 execute as @e[scores={Room=47},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=47},type=minecraft:item] add dead
 tag @e[scores={Room=47},tag=boo] add turn_to_marker
+setblock 714 96 -16 minecraft:air
 scoreboard players reset #basement_hallway Ticking
 scoreboard players reset #basement_hallway Wave
+scoreboard players reset #basement_hallway_vacuumable

@@ -22,7 +22,7 @@ execute if entity @s[scores={Dialog=1320}] run tellraw @a {"translate":"chat.typ
 execute if entity @s[scores={Dialog=1328}] run stopsound @a[scores={Room=41}] music
 execute if entity @s[scores={Dialog=1328}] run playsound luigis_mansion:music.warped_by_boos music @a[scores={Room=41}] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1328}] run scoreboard players set @a Music 80
-execute if entity @s[scores={Dialog=1338..1398}] as @a[scores={Room=41}] at @s run teleport @s ~0.5 122 ~
+execute if entity @s[scores={Dialog=1338..1398}] as @a[scores={Room=41}] at @s run teleport @s ~0.5 120 ~
 execute if entity @s[scores={Dialog=1398}] run teleport @a[scores={Room=41}] 714.0 102 8.0
 execute if entity @s[scores={Dialog=1398}] run advancement grant @a only luigis_mansion:technical mysterious_power
 tag @s[scores={Dialog=1398}] add dead
@@ -37,7 +37,7 @@ execute if entity @s[scores={Dialog=1704}] run tellraw @a {"translate":"chat.typ
 execute if entity @s[scores={Dialog=1712}] run stopsound @a[scores={Room=41}] music
 execute if entity @s[scores={Dialog=1712}] run playsound luigis_mansion:music.warped_by_boos music @a[scores={Room=41}] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1712}] run scoreboard players set @a Music 80
-execute if entity @s[scores={Dialog=1722..1782}] as @a[scores={Room=41}] at @s run teleport @s ~0.5 122 ~
+execute if entity @s[scores={Dialog=1722..1782}] as @a[scores={Room=41}] at @s run teleport @s ~0.5 120 ~
 execute if entity @s[scores={Dialog=1782}] run teleport @a[scores={Room=41}] 714.0 102 8.0
 tag @s[scores={Dialog=1782}] add dead
 
@@ -47,7 +47,7 @@ execute if entity @s[scores={Dialog=1928}] run tellraw @a {"translate":"chat.typ
 execute if entity @s[scores={Dialog=1936}] run stopsound @a[scores={Room=41}] music
 execute if entity @s[scores={Dialog=1936}] run playsound luigis_mansion:music.warped_by_boos music @a[scores={Room=41}] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1936}] run scoreboard players set @a Music 80
-execute if entity @s[scores={Dialog=1946..1996}] as @a[scores={Room=41}] at @s run teleport @s ~0.5 122 ~
+execute if entity @s[scores={Dialog=1946..1996}] as @a[scores={Room=41}] at @s run teleport @s ~0.5 120 ~
 execute if entity @s[scores={Dialog=1996}] run teleport @a[scores={Room=41}] 714.0 102 8.0
 execute if entity @s[scores={Dialog=1996}] run advancement grant @a only luigis_mansion:technical mysterious_power
 tag @s[scores={Dialog=1996}] add dead

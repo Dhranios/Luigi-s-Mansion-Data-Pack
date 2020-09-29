@@ -1,4 +1,4 @@
-scoreboard objectives add Time dummy
+scoreboard objectives add BannanaDropTime dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add Bowling dummy
 scoreboard objectives add ChangedMansion dummy

@@ -7,6 +7,7 @@ execute if entity @s[tag=dead] run scoreboard players set #orville LastHealth 0
 execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:portrait_ghosts/henry_and_orville
 execute if entity @s[tag=disappear] unless score #henry_and_orville OneGoHealth matches 0.. run scoreboard players operation #henry_and_orville OneGoHealth = @s Health
 execute if entity @s[tag=disappear] run scoreboard players operation #orville LastHealth = @s Health
+tag @s[tag=remove_hide_and_seek] add dead
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.orville.hurt hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40

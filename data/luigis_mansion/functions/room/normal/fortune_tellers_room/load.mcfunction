@@ -3,4 +3,5 @@ data merge block 707 102 -5 {LootTable:"luigis_mansion:search"}
 data merge block 707 102 -4 {LootTable:"luigis_mansion:search"}
 data merge block 707 102 -20 {LootTable:"luigis_mansion:search"}
 data merge block 707 102 -19 {LootTable:"luigis_mansion:search"}
+setblock 707 108 -4 minecraft:cobweb
 scoreboard players set #fortune_tellers_room Ticking 1

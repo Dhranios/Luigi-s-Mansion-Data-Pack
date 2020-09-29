@@ -20,6 +20,7 @@ setblock 688 103 29 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 setblock 688 104 31 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 setblock 688 104 30 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 setblock 688 104 29 minecraft:oak_trapdoor[facing=east,half=top,open=true]
+setblock 687 107 55 minecraft:air
 scoreboard players reset #kitchen Ticking
 scoreboard players reset #kitchen Wave
 scoreboard players reset #kitchen_closet
@@ -39,3 +40,4 @@ scoreboard players reset #kitchen_painting_3
 scoreboard players reset #kitchen_lamp_1
 scoreboard players reset #kitchen_lamp_2
 scoreboard players reset #kitchen_chest
+scoreboard players reset #kitchen_vacuumable

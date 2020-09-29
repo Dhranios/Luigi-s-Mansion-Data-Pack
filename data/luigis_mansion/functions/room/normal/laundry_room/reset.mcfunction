@@ -6,8 +6,10 @@ setblock 702 106 47 minecraft:air
 setblock 702 102 46 minecraft:air
 data merge block 700 102 48 {Items:[]}
 data merge block 700 103 53 {Items:[]}
-setblock 700 104 42 minecraft:white_wool
-setblock 700 104 40 minecraft:white_wool
+setblock 700 104 42 minecraft:air
+setblock 700 104 40 minecraft:air
+setblock 700 105 50 minecraft:air
+setblock 700 105 46 minecraft:air
 setblock 701 102 48 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 scoreboard players reset #laundry_room Ticking
 scoreboard players reset #laundry_room Wave
@@ -22,5 +24,7 @@ scoreboard players reset #laundry_room_shelf_1
 scoreboard players reset #laundry_room_shelf_2
 scoreboard players reset #laundry_room_vacuumable_1
 scoreboard players reset #laundry_room_vacuumable_2
+scoreboard players reset #laundry_room_vacuumable_3
+scoreboard players reset #laundry_room_vacuumable_4
 scoreboard players reset #laundry_room_washing_machine
 scoreboard players reset #laundry_room_chest

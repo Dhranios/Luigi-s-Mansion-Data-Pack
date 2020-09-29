@@ -1,7 +1,7 @@
 execute unless score #projection_room Ticking matches 1 run function luigis_mansion:room/normal/projection_room/load
-execute as @e[type=!minecraft:item_frame,x=672,y=102,z=-3,dx=12,dy=6,dz=16] run scoreboard players set @s Room 38
+execute as @e[type=!minecraft:item_frame,x=671,y=102,z=-3,dx=15,dy=6,dz=16] run scoreboard players set @s Room 38
 
-execute as @a[gamemode=!spectator,x=674,y=102,z=-1,dx=8,dy=6,dz=12] run function luigis_mansion:room/normal/projection_room/tick_per_player
+execute as @a[gamemode=!spectator,x=673,y=102,z=-1,dx=11,dy=6,dz=12] run function luigis_mansion:room/normal/projection_room/tick_per_player
 
 execute if score #projection_room Wave matches 5 unless entity @e[tag=ghost,scores={Room=38},tag=!optional_ghost] run function luigis_mansion:room/normal/projection_room/clear
 execute if score #projection_room Wave matches 4 unless entity @e[tag=ghost,scores={Room=38},tag=!optional_ghost] run function luigis_mansion:room/normal/projection_room/wave_5

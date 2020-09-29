@@ -15,6 +15,8 @@ data merge block 684 113 24 {Items:[]}
 data merge block 684 113 23 {Items:[]}
 data merge block 684 113 21 {Items:[]}
 data merge block 684 113 19 {Items:[]}
+setblock 685 116 36 minecraft:air
+setblock 685 116 27 minecraft:air
 scoreboard players reset #study Ticking
 scoreboard players reset #study Wave
 scoreboard players reset #study_book_1
@@ -32,3 +34,5 @@ scoreboard players reset #study_painting_3
 scoreboard players reset #study_painting_4
 scoreboard players reset #study_painting_5
 scoreboard players reset #study_chest
+scoreboard players reset #study_vacuumable_1
+scoreboard players reset #study_vacuumable_2
