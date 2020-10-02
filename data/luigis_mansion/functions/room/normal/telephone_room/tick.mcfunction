@@ -3,6 +3,8 @@ execute as @e[type=!minecraft:item_frame,x=698,y=120,z=-10,dx=24,dy=6,dz=35] run
 
 execute as @a[gamemode=!spectator,x=700,y=120,z=-8,dx=20,dy=6,dz=31] run function luigis_mansion:room/normal/telephone_room/tick_per_player
 
+execute if score #telephone_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=44},tag=!optional_ghost] run function luigis_mansion:room/normal/telephone_room/clear
+execute if entity @a[advancements={luigis_mansion:mansion/telephone_room=false},tag=!blackout] unless score #telephone_room Wave matches 1.. run function luigis_mansion:room/normal/telephone_room/wave_1
 execute if score #telephone_room Wave matches 100 unless entity @e[tag=ghost,scores={Room=44},tag=!optional_ghost] run function luigis_mansion:room/normal/telephone_room/blackout_clear
 execute unless entity @a[tag=toad_5_dialog,limit=1] run tag @a[x=713.5,y=120,z=7.5,distance=..0.7,tag=blackout,advancements={luigis_mansion:technical={telephone_1=false}},limit=1] add toad_5_dialog
 execute unless entity @a[tag=toad_5_dialog,limit=1] run tag @a[x=713.5,y=120,z=17.5,distance=..0.7,tag=blackout,advancements={luigis_mansion:technical={telephone_1=true,telephone_2=false}},limit=1] add toad_5_dialog

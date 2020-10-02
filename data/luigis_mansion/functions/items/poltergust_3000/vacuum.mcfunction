@@ -14,6 +14,7 @@ execute as @e[tag=black_bogmire,distance=..0.7] run tag @s add in_vacuum
 execute as @e[tag=ghost_guy,tag=!maskless,distance=..0.7] run tag @s add in_vacuum
 execute as @e[tag=henry,tag=!carless,distance=..0.7] run tag @s add in_vacuum
 execute as @e[tag=orville,tag=!planeless,distance=..0.7] run tag @s add in_vacuum
+execute as @e[tag=clockwork_soldier,tag=!windless,distance=..0.7] run tag @s add in_vacuum
 execute as @e[tag=ball,distance=..0.7,tag=!spit] unless entity @s[tag=wool,scores={SpawnTime=..19}] unless entity @s[tag=billiards_ball,scores={SpawnTime=..19}] unless entity @s[tag=chauncey] run tag @s add in_vacuum
 execute as @e[tag=ball,distance=..2,tag=!spit,tag=chauncey,tag=vacuumable] run tag @s add in_vacuum
 execute as @e[tag=vacuumable,distance=..0.7,tag=spark] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add explode

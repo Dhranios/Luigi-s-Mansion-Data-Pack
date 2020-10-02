@@ -10,6 +10,9 @@ tag @s remove disappear
 tag @s remove stunable
 tag @s[tag=henry] remove carless
 tag @s[tag=orville] remove planeless
+tag @s[tag=clockwork_soldier] remove windless
+tag @s[tag=clockwork_soldier] remove was_activated
+tag @s[tag=clockwork_soldier] remove complain
 scoreboard players set @s Time 0
 scoreboard players set @s[tag=lydia] Time 99
 scoreboard players set @s[tag=shivers] Time 5
@@ -18,6 +21,8 @@ scoreboard players set @s[tag=miss_petunia] Time 60
 scoreboard players set @s[tag=nana] Time 23
 scoreboard players set @s[tag=slim_bankshot] Time 21
 scoreboard players set @s[tag=slim_bankshot] Dialog 0
+scoreboard players set @s[tag=clockwork_soldier] Distance 0
+scoreboard players set @s[tag=clockwork_soldier] WaitTime 0
 teleport @s[tag=shivers] 702 102 47
 scoreboard players set @s[tag=chauncey] Wave 461
 scoreboard players set @s[tag=bogmire] Time 181

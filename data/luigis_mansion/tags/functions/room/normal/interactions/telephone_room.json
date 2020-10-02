@@ -1,4 +1,20 @@
 {
 	"values": [
+		"luigis_mansion:room/normal/telephone_room/interact_with_chest_1",
+		"luigis_mansion:room/normal/telephone_room/interact_with_chest_2",
+		"luigis_mansion:room/normal/telephone_room/interact_with_chest_3",
+		"luigis_mansion:room/normal/telephone_room/interact_with_chest_4",
+		"luigis_mansion:room/normal/telephone_room/interact_with_closet_1",
+		"luigis_mansion:room/normal/telephone_room/interact_with_closet_2",
+		"luigis_mansion:room/normal/telephone_room/interact_with_couch",
+		"luigis_mansion:room/normal/telephone_room/interact_with_lamp_1",
+		"luigis_mansion:room/normal/telephone_room/interact_with_lamp_2",
+		"luigis_mansion:room/normal/telephone_room/interact_with_shelf_1",
+		"luigis_mansion:room/normal/telephone_room/interact_with_shelf_2",
+		"luigis_mansion:room/normal/telephone_room/interact_with_shelf_3",
+		"luigis_mansion:room/normal/telephone_room/interact_with_table",
+		"luigis_mansion:room/normal/telephone_room/interact_with_vacuumable_1",
+		"luigis_mansion:room/normal/telephone_room/interact_with_vacuumable_2",
+		"luigis_mansion:room/normal/telephone_room/interact_with_vacuumable_3"
 	]
 }

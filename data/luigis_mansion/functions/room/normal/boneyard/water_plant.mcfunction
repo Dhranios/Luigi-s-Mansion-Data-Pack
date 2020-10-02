@@ -1,4 +1,4 @@
 execute if entity @a[advancements={luigis_mansion:technical={watered_boneyard_plant_1=false,cleared_area_3_blockade=false}},limit=1] run function luigis_mansion:room/normal/boneyard/water_plant_1
-execute if entity @a[advancements={luigis_mansion:technical={watered_boneyard_plant_1=true,watered_boneyard_plant_2=false,cleared_area_3_blockade=true,cleared_area_4_blockade=false}},limit=1] run function luigis_mansion:room/normal/boneyard/water_plant_2
-execute if entity @a[advancements={luigis_mansion:technical={watered_boneyard_plant_2=true,watered_boneyard_plant_3=false,cleared_area_4_blockade=true}},limit=1] run function luigis_mansion:room/normal/boneyard/water_plant_3
+execute if entity @a[advancements={luigis_mansion:technical={watered_boneyard_plant_1=true,cleared_area_3_blockade=true,cleared_area_4_blockade=false}},limit=1] run function luigis_mansion:room/normal/boneyard/water_plant_2
+execute if entity @a[advancements={luigis_mansion:technical={watered_boneyard_plant_2=true,cleared_area_4_blockade=true},luigis_mansion:mansion/boneyard_plant=false},limit=1] run function luigis_mansion:room/normal/boneyard/water_plant_3
 execute if block 676 102 41 minecraft:structure_block run setblock 676 103 41 minecraft:redstone_block

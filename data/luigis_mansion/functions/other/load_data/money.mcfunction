@@ -105,5 +105,16 @@ execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_13=tru
 execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_14=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_14
 execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_15=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_15
 execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_16=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2_plant_16
-
+execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_lamp_1=true}] run advancement grant @a only luigis_mansion:mansion/telephone_room_lamp_1
+execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_closet_2=true}] run advancement grant @a only luigis_mansion:mansion/telephone_room_closet_2
+execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_3=true}] run advancement grant @a only luigis_mansion:mansion/telephone_room_chest_3
+execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=true}] run advancement grant @a only luigis_mansion:mansion/telephone_room_chest_4
 execute if entity @a[advancements={luigis_mansion:mansion/breaker_room_lamp=true}] run advancement grant @a only luigis_mansion:mansion/breaker_room_lamp
+execute if entity @a[advancements={luigis_mansion:mansion/cellar_shelf_1=true}] run advancement grant @a only luigis_mansion:mansion/cellar_shelf_1
+execute if entity @a[advancements={luigis_mansion:mansion/cellar_shelf_2=true}] run advancement grant @a only luigis_mansion:mansion/cellar_shelf_2
+execute if entity @a[advancements={luigis_mansion:mansion/cellar_shelf_3=true}] run advancement grant @a only luigis_mansion:mansion/cellar_shelf_3
+execute if entity @a[advancements={luigis_mansion:mansion/cellar_shelf_4=true}] run advancement grant @a only luigis_mansion:mansion/cellar_shelf_4
+execute if entity @a[advancements={luigis_mansion:mansion/cellar_shelf_5=true}] run advancement grant @a only luigis_mansion:mansion/cellar_shelf_5
+execute if entity @a[advancements={luigis_mansion:mansion/cellar_shelf_6=true}] run advancement grant @a only luigis_mansion:mansion/cellar_shelf_6
+execute if entity @a[advancements={luigis_mansion:mansion/clockwork_room_lamp_1=true}] run advancement grant @a only luigis_mansion:mansion/clockwork_room_lamp_1
+execute if entity @a[advancements={luigis_mansion:mansion/clockwork_room_lamp_2=true}] run advancement grant @a only luigis_mansion:mansion/clockwork_room_lamp_2

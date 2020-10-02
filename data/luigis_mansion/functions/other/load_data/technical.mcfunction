@@ -29,12 +29,15 @@ execute if entity @a[advancements={luigis_mansion:technical={shown_marios_letter
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_star=true}}] run advancement grant @a only luigis_mansion:technical shown_marios_star
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_glove=true}}] run advancement grant @a only luigis_mansion:technical shown_marios_glove
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_shoe=true}}] run advancement grant @a only luigis_mansion:technical shown_marios_shoe
+execute if entity @a[advancements={luigis_mansion:technical={mysterious_power=true}}] run advancement grant @a only luigis_mansion:technical mysterious_power
 execute if entity @a[advancements={luigis_mansion:technical={area_3_key=true}}] run advancement grant @a only luigis_mansion:technical area_3_key
 execute if entity @a[advancements={luigis_mansion:technical={cleared_area_4_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_area_4_blockade
 execute if entity @a[advancements={luigis_mansion:technical={cleared_area_4_blockade=true},luigis_mansion:mansion/breaker_room=false}] run tag @a add blackout
 execute if entity @a[advancements={luigis_mansion:technical={telephone_1=true}}] run advancement grant @a only luigis_mansion:technical telephone_1
 execute if entity @a[advancements={luigis_mansion:technical={telephone_2=true}}] run advancement grant @a only luigis_mansion:technical telephone_2
 execute if entity @a[advancements={luigis_mansion:technical={telephone_3=true}}] run advancement grant @a only luigis_mansion:technical telephone_3
+execute if entity @a[advancements={luigis_mansion:technical={caught_grimmly=true}}] run advancement grant @a only luigis_mansion:technical caught_grimmly
+execute if entity @a[advancements={luigis_mansion:technical={king_boo_warp=true}}] run advancement grant @a only luigis_mansion:technical king_boo_warp
 execute if entity @a[advancements={luigis_mansion:technical={cleared_king_boo_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_king_boo_blockade
 execute if entity @a[advancements={luigis_mansion:technical={caught_king_boo=true}}] run advancement grant @a only luigis_mansion:technical caught_king_boo
 

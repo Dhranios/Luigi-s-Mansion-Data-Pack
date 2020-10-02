@@ -1,5 +1,6 @@
 scoreboard objectives add BannanaDropTime dummy
 scoreboard objectives add Boos dummy
+scoreboard objectives add BooTimer dummy
 scoreboard objectives add Bowling dummy
 scoreboard objectives add ChangedMansion dummy
 scoreboard objectives add ClairvoyaChoice trigger

@@ -1,4 +1,24 @@
 {
 	"values": [
+		"luigis_mansion:room/normal/clockwork_room/interact_with_chair_1",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_chair_2",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_chair_3",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_chair_4",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_chair_5",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_lamp_1",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_lamp_2",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_puppet_1",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_puppet_2",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_small_door_1",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_small_door_2",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_small_door_3",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_small_door_4",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_small_door_5",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_small_door_6",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_table_1",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_table_2",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_table_3",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_table_4",
+		"luigis_mansion:room/normal/clockwork_room/interact_with_vacuumable"
 	]
 }

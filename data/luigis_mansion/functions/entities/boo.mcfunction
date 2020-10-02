@@ -25,8 +25,10 @@ tag @s[tag=attack] remove rotated
 execute at @s[tag=laugh] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt,tag=!rotated] run function luigis_mansion:entities/boo/rotate
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt] run function luigis_mansion:entities/boo/move_forward
-tag @s[tag=new_section] remove rotated
-tag @s[tag=new_section] remove new_section
+scoreboard players add @s[tag=new_section] BooTimer 1
+tag @s[scores={BooTimer=3}] remove rotated
+tag @s[scores={BooTimer=3}] remove new_section
+scoreboard players reset @s[scores={BooTimer=3}] BooTimer
 execute if entity @s[tag=!dead] run function luigis_mansion:entities/boo/room_section
 execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entities/boo/laugh
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/boo/taunt

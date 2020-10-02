@@ -4,6 +4,7 @@ tag @e[tag=ghost,scores={Room=43}] add hallway
 
 execute as @a[gamemode=!spectator,x=684,y=120,z=26,dx=36,dy=6,dz=4] run function luigis_mansion:room/normal/attic_hallway_2/tick_per_player
 
+execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_2=false},tag=!blackout] unless score #attic_hallway_2 Wave matches 1.. run function luigis_mansion:room/normal/attic_hallway_2/wave_1
 execute if entity @a[tag=blackout] unless score #attic_hallway_2 Wave matches 1.. run function luigis_mansion:room/normal/attic_hallway_2/blackout
 
 stopsound @a[scores={Room=43,HallwayNoise=0}] ambient luigis_mansion:block.telephone.ring
