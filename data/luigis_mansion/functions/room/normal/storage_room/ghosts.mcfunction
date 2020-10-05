@@ -1,0 +1,5 @@
+execute if score #storage_room Wave matches 3 unless entity @e[tag=ghost,scores={Room=14},tag=!optional_ghost] run function luigis_mansion:room/normal/storage_room/clear
+execute if score #storage_room Wave matches 2 unless entity @e[tag=ghost,scores={Room=14},tag=!optional_ghost] run function luigis_mansion:room/normal/storage_room/wave_3
+execute if score #storage_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=14},tag=!optional_ghost] run function luigis_mansion:room/normal/storage_room/wave_2
+execute if entity @a[advancements={luigis_mansion:mansion/storage_room=false},tag=!blackout] unless score #storage_room Wave matches 1.. run function luigis_mansion:room/normal/storage_room/wave_1
+execute if entity @a[tag=blackout] unless score #storage_room Wave matches 1.. run function luigis_mansion:room/normal/storage_room/blackout

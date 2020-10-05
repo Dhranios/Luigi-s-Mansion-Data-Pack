@@ -11,13 +11,9 @@ execute as @a[gamemode=!spectator,x=666,y=102,z=-8,dx=38,dy=6,dz=4] unless entit
 execute as @a[gamemode=!spectator,x=666,y=102,z=-15,dx=4,dy=6,dz=38] unless entity @s[x=666,y=102,z=-8,dx=38,dy=6,dz=4] unless entity @s[x=700,y=102,z=-20,dx=4,dy=6,dz=56] run function luigis_mansion:room/normal/main_hallway/tick_per_player
 execute as @a[gamemode=!spectator,x=655,y=102,z=19,dx=15,dy=6,dz=4] unless entity @s[x=666,y=102,z=-15,dx=4,dy=6,dz=38] unless entity @s[x=666,y=102,z=-8,dx=38,dy=6,dz=4] unless entity @s[x=700,y=102,z=-20,dx=4,dy=6,dz=56] run function luigis_mansion:room/normal/main_hallway/tick_per_player
 
-execute if entity @a[advancements={luigis_mansion:mansion/main_hallway=false},tag=!blackout] unless score #main_hallway Wave matches 1.. run function luigis_mansion:room/normal/main_hallway/wave_1
-execute if entity @a[tag=blackout] unless score #main_hallway Wave matches 1.. run function luigis_mansion:room/normal/main_hallway/blackout
-
 function #luigis_mansion:room/normal/interactions/main_hallway
 
-execute if entity @a[x=700.5,y=104,z=18.5,distance=..5,tag=vacuuming,limit=1] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=700.5,y=104,z=18.5,distance=..5,tag=fire_elemental_ghost] positioned 700 104 18 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
-execute if entity @a[x=684.5,y=104,z=-3.5,distance=..5,tag=vacuuming,limit=1] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=684.5,y=104,z=-3.5,distance=..5,tag=fire_elemental_ghost] positioned 684 104 -4 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+function luigis_mansion:room/normal/main_hallway/ghosts
 
 function luigis_mansion:room/normal/door/foyer_main_hallway
 function luigis_mansion:room/normal/door/main_hallway_basement_stairs

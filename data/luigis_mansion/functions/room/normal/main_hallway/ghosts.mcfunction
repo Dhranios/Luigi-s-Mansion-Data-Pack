@@ -1,0 +1,5 @@
+execute if entity @a[advancements={luigis_mansion:mansion/main_hallway=false},tag=!blackout] unless score #main_hallway Wave matches 1.. run function luigis_mansion:room/normal/main_hallway/wave_1
+execute if entity @a[tag=blackout] unless score #main_hallway Wave matches 1.. run function luigis_mansion:room/normal/main_hallway/blackout
+
+execute if entity @a[x=700.5,y=104,z=18.5,distance=..5,tag=vacuuming,limit=1] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=700.5,y=104,z=18.5,distance=..5,tag=fire_elemental_ghost] positioned 700 104 18 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute if entity @a[x=684.5,y=104,z=-3.5,distance=..5,tag=vacuuming,limit=1] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=684.5,y=104,z=-3.5,distance=..5,tag=fire_elemental_ghost] positioned 684 104 -4 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

@@ -8,7 +8,6 @@ scoreboard players set @s[scores={Boos=21}] Variant -6
 scoreboard players set @s[scores={Boos=22}] Variant -4
 scoreboard players set @s[scores={Boos=38}] Variant -4
 scoreboard players set @s[scores={Boos=41}] Variant -6
-scoreboard players set @s[scores={Boos=43}] Variant -5
 scoreboard players set @s[scores={Boos=49}] Variant -6
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","1"]}
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","2"]}

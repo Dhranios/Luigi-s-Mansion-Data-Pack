@@ -4,9 +4,9 @@ tag @e[tag=ghost,scores={Room=48}] add hallway
 
 execute as @a[gamemode=!spectator,x=655,y=93,z=-22,dx=29,dy=6,dz=8] run function luigis_mansion:room/normal/curved_hallway/tick_per_player
 
-execute if entity @a[tag=blackout] unless score #curved_hallway Wave matches 1.. run function luigis_mansion:room/normal/curved_hallway/blackout
-
 function #luigis_mansion:room/normal/interactions/curved_hallway
+
+function luigis_mansion:room/normal/curved_hallway/ghosts
 
 function luigis_mansion:room/normal/door/basement_hallway_curved_hallway
 function luigis_mansion:room/normal/door/curved_hallway_secret_altar

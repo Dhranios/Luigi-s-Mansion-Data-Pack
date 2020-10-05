@@ -4,10 +4,9 @@ tag @e[tag=ghost,scores={Room=47}] add hallway
 
 execute as @a[gamemode=!spectator,x=687,y=93,z=-20,dx=32,dy=6,dz=4] run function luigis_mansion:room/normal/basement_hallway/tick_per_player
 
-execute if entity @a[advancements={luigis_mansion:mansion/basement_hallway=false},tag=!blackout] unless score #basement_hallway Wave matches 1.. unless entity @a[x=687,y=93,z=-18,distance=..3,gamemode=!spectator,limit=1] run function luigis_mansion:room/normal/basement_hallway/wave_1
-execute if entity @a[tag=blackout] unless score #basement_hallway Wave matches 1.. run function luigis_mansion:room/normal/basement_hallway/blackout
-
 function #luigis_mansion:room/normal/interactions/basement_hallway
+
+function luigis_mansion:room/normal/basement_hallway/ghosts
 
 function luigis_mansion:room/normal/door/cellar_basement_hallway
 function luigis_mansion:room/normal/door/basement_hallway_pipe_room

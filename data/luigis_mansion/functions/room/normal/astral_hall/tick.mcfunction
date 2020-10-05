@@ -7,15 +7,11 @@ execute if score #temp Searched matches 1 run setblock 677 112 -32 minecraft:iro
 scoreboard players reset #temp Searched
 
 execute as @a[gamemode=!spectator,x=673,y=111,z=-29,dx=8,dy=6,dz=18] run function luigis_mansion:room/normal/astral_hall/tick_per_player
-execute as @a[x=677,y=111,z=-31,dx=0,dy=1,dz=0,advancements={luigis_mansion:mansion/astral_hall=false},tag=!blackout] at @s run function luigis_mansion:room/normal/astral_hall/trick_door
-
-execute if score #astral_hall Wave matches 3 unless entity @e[tag=ghost,scores={Room=35},tag=!optional_ghost] run function luigis_mansion:room/normal/astral_hall/clear
-execute if score #astral_hall Wave matches 2 unless entity @e[tag=ghost,scores={Room=35},tag=!optional_ghost] run function luigis_mansion:room/normal/astral_hall/wave_3
-execute if score #astral_hall Wave matches 1 unless entity @e[tag=ghost,scores={Room=35},tag=!optional_ghost] run function luigis_mansion:room/normal/astral_hall/wave_2
-execute as @a[x=677.0,y=111.5,z=-20.0,distance=..1,gamemode=!spectator,advancements={luigis_mansion:mansion/astral_hall=false},limit=1] if block 677 111 -11 minecraft:air if block 676 113 -16 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 680 113 -18 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 680 113 -22 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 676 113 -24 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] if block 673 113 -20 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] unless entity @a[tag=astral_hall_ambush,limit=1] run tag @s add astral_hall_ambush
-execute if entity @a[tag=blackout] unless score #astral_hall Wave matches 1.. run function luigis_mansion:room/normal/astral_hall/blackout
+execute as @a[x=677,y=111,z=-31,dx=0,dy=1,dz=0,advancements={luigis_mansion:mansion/astral_hall=false}] at @s run function luigis_mansion:room/normal/astral_hall/trick_door
 
 function #luigis_mansion:room/normal/interactions/astral_hall
+
+function luigis_mansion:room/normal/astral_hall/ghosts
 
 function luigis_mansion:room/normal/door/hallway_astral_hall
 function luigis_mansion:room/normal/door/astral_hall_observatory

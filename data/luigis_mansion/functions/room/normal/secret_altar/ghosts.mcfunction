@@ -1,0 +1,1 @@
+execute if entity @a[tag=blackout] unless score #secret_altar Wave matches 1.. run function luigis_mansion:room/normal/secret_altar/blackout

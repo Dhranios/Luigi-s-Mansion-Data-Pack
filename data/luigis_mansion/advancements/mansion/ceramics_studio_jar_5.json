@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.ceramics_studio_jar"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.ceramics_studio_jar.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/ceramics_studio",
+    "criteria": {
+        "spawned": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

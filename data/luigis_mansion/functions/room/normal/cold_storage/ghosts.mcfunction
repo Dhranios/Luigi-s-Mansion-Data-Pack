@@ -1,0 +1,1 @@
+execute if entity @a[tag=blackout] unless score #cold_storage Wave matches 1.. run function luigis_mansion:room/normal/cold_storage/blackout

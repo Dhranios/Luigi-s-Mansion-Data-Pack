@@ -1,0 +1,3 @@
+execute if score #bottom_of_the_well Wave matches 1 unless entity @e[tag=ghost,scores={Room=27},tag=!optional_ghost] run function luigis_mansion:room/normal/bottom_of_the_well/clear
+execute if entity @a[advancements={luigis_mansion:mansion/bottom_of_the_well=false,luigis_mansion:technical={saw_mario=true}},tag=!blackout] unless score #bottom_of_the_well Wave matches 1.. run function luigis_mansion:room/normal/bottom_of_the_well/wave_1
+execute if entity @a[tag=blackout] unless score #bottom_of_the_well Wave matches 1.. run function luigis_mansion:room/normal/bottom_of_the_well/blackout

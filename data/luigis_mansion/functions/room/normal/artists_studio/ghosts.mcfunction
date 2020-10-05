@@ -1,0 +1,1 @@
+execute if entity @a[tag=blackout] unless score #artists_studio Wave matches 1.. run function luigis_mansion:room/normal/artists_studio/blackout

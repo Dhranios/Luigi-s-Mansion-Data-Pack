@@ -1,5 +1,6 @@
 execute if entity @s[tag=ghost_marker] run function luigis_mansion:entities/ghost_marker
 execute if entity @s[tag=ghost,tag=!ghost_marker] run function luigis_mansion:entities/ghost
+execute if entity @s[tag=!ghost,tag=boo] run function luigis_mansion:entities/boo/cutscene
 execute if entity @s[tag=mysterious_power] run function luigis_mansion:entities/mysterious_power
 execute if entity @s[tag=bowling_ball] run function luigis_mansion:entities/bowling_ball
 execute if entity @s[tag=spit_fire] run function luigis_mansion:entities/spit_fire
