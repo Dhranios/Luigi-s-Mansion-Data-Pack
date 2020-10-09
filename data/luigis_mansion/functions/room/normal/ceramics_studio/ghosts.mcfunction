@@ -1,4 +1,4 @@
-#execute if score #ceramics_studio Wave matches 1 unless entity @e[tag=ghost,scores={Room=52},tag=!optional_ghost] run function luigis_mansion:room/normal/ceramics_studio/clear
+execute if score #ceramics_studio Wave matches 1 unless entity @e[tag=ghost,scores={Room=52},tag=!optional_ghost] run function luigis_mansion:room/normal/ceramics_studio/clear
 execute if entity @a[advancements={luigis_mansion:mansion/ceramics_studio=false},tag=!blackout] unless score #ceramics_studio Wave matches 1.. run function luigis_mansion:room/normal/ceramics_studio/wave_1
 execute if score #ceramics_studio Wave matches 100 unless entity @e[tag=ghost,scores={Room=52},tag=!optional_ghost] run function luigis_mansion:room/normal/ceramics_studio/blackout_clear
 execute if entity @a[advancements={luigis_mansion:mansion/ceramics_studio=false},tag=blackout] unless score #ceramics_studio Wave matches 1.. run function luigis_mansion:room/normal/ceramics_studio/blackout

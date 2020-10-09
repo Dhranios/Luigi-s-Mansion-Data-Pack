@@ -123,6 +123,12 @@
         "king_boo_warp": {
             "trigger": "minecraft:impossible"
         },
+        "froze_sewage": {
+            "trigger": "minecraft:impossible"
+        },
+        "closed_pipe": {
+            "trigger": "minecraft:impossible"
+        },
         "cleared_king_boo_blockade": {
             "trigger": "minecraft:impossible"
         },

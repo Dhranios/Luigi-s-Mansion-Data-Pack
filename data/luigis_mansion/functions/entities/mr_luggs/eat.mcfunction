@@ -37,8 +37,7 @@ teleport @s[scores={Dialog=100}] ~ ~ ~ ~ 20
 teleport @s[scores={Dialog=120..124}] ~ ~ ~ ~1 ~-1
 teleport @s[scores={Dialog=125..134}] ~ ~ ~ ~-1 ~-1
 teleport @s[scores={Dialog=135..139}] ~ ~ ~ ~1 ~-1
-execute if entity @s[scores={Dialog=140..}] as @a[scores={Room=22},gamemode=!spectator] unless entity @s[scores={MusicType=36}] run scoreboard players set @s Music 0
-execute if entity @s[scores={Dialog=140..}] run scoreboard players set @a[scores={Room=22},gamemode=!spectator] MusicType 36
+execute if entity @s[scores={Dialog=140..}] as @a[scores={Room=22},gamemode=!spectator] unless entity @s[scores={MusicType=36}] run function luigis_mansion:other/music/set/danger
 execute if entity @s[scores={Dialog=140..780}] anchored eyes facing entity @p[gamemode=!spectator,scores={Room=22}] eyes anchored feet positioned ^ ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=220}] run function luigis_mansion:entities/mr_luggs/spit_fire
 execute if entity @s[scores={Dialog=320}] run function luigis_mansion:entities/mr_luggs/spit_fire

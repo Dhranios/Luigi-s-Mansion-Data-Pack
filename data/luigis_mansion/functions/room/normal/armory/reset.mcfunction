@@ -53,3 +53,4 @@ scoreboard players reset #armory_crate_7
 scoreboard players reset #armory_crate_8
 scoreboard players reset #armory_crate_9
 scoreboard players reset #armory_crate_10
+scoreboard players reset #armory_crate_11

@@ -26,5 +26,5 @@ execute if entity @s[tag=breaker_room] run loot spawn ~ ~ ~ loot luigis_mansion:
 execute if entity @s[tag=breaker_room] run advancement grant @a only luigis_mansion:mansion/breaker_room_speedy_spirit
 execute if entity @s[tag=cellar] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/gold_bars
 execute if entity @s[tag=cellar] run advancement grant @a only luigis_mansion:mansion/cellar_speedy_spirit
-execute if entity @s[tag=sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/
+execute if entity @s[tag=sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/speedy_spirit/green_emerald
 execute if entity @s[tag=sealed_room] run advancement grant @a only luigis_mansion:mansion/sealed_room_speedy_spirit

@@ -16,5 +16,5 @@ execute if entity @s[tag=fortune_tellers_room] run loot spawn ~ ~ ~ loot luigis_
 execute if entity @s[tag=fortune_tellers_room] run advancement grant @a only luigis_mansion:mansion/fortune_tellers_room_gold_mouse
 execute if entity @s[tag=safari_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/bills
 execute if entity @s[tag=safari_room] run advancement grant @a only luigis_mansion:mansion/safari_room_gold_mouse
-execute if entity @s[tag=sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/
+execute if entity @s[tag=sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/bills
 execute if entity @s[tag=sealed_room] run advancement grant @a only luigis_mansion:mansion/sealed_room_gold_mouse

@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
+        },
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.sealed_room_trophy"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.sealed_room_trophy.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/sealed_room",
+    "criteria": {
+        "spawned": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

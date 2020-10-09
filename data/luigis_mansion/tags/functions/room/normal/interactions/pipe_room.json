@@ -1,4 +1,10 @@
 {
 	"values": [
+		"luigis_mansion:room/normal/pipe_room/interact_with_bucket",
+		"luigis_mansion:room/normal/pipe_room/interact_with_chest",
+		"luigis_mansion:room/normal/pipe_room/interact_with_crate",
+		"luigis_mansion:room/normal/pipe_room/interact_with_frozen_barrel",
+		"luigis_mansion:room/normal/pipe_room/interact_with_pipe_switch",
+		"luigis_mansion:room/normal/pipe_room/interact_with_sewage"
 	]
 }

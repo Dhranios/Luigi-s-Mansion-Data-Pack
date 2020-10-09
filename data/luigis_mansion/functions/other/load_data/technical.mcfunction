@@ -38,6 +38,8 @@ execute if entity @a[advancements={luigis_mansion:technical={telephone_2=true}}]
 execute if entity @a[advancements={luigis_mansion:technical={telephone_3=true}}] run advancement grant @a only luigis_mansion:technical telephone_3
 execute if entity @a[advancements={luigis_mansion:technical={caught_grimmly=true}}] run advancement grant @a only luigis_mansion:technical caught_grimmly
 execute if entity @a[advancements={luigis_mansion:technical={king_boo_warp=true}}] run advancement grant @a only luigis_mansion:technical king_boo_warp
+execute if entity @a[advancements={luigis_mansion:technical={froze_sewage=true}}] run advancement grant @a only luigis_mansion:technical froze_sewage
+execute if entity @a[advancements={luigis_mansion:technical={closed_pipe=true}}] run advancement grant @a only luigis_mansion:technical closed_pipe
 execute if entity @a[advancements={luigis_mansion:technical={cleared_king_boo_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_king_boo_blockade
 execute if entity @a[advancements={luigis_mansion:technical={caught_king_boo=true}}] run advancement grant @a only luigis_mansion:technical caught_king_boo
 

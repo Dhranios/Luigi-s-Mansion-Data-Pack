@@ -46,8 +46,8 @@ data modify entity @e[x=745.5,y=79,z=-31.5,type=minecraft:item_frame,distance=..
 data merge block 745 78 -32 {Text3:'{"text":""}'}
 data modify entity @e[x=745.5,y=79,z=-35.5,type=minecraft:item_frame,distance=..0.7,limit=1] Item set value {id:"minecraft:carved_pumpkin",Count:1b}
 data merge block 745 78 -36 {Text3:'{"text":""}'}
-kill @e[x=727.5,y=79,z=-29.5,type=minecraft:item_frame,distance=..0.7,limit=1]
-setblock 727 78 -30 minecraft:carved_pumpkin
+kill @e[x=727.5,y=80,z=-29.5,type=minecraft:item_frame,distance=..0.7,limit=1]
+setblock 727 79 -30 minecraft:air
 scoreboard players reset #gallery Ticking
 scoreboard players reset #gallery_statue_1
 scoreboard players reset #gallery_statue_2

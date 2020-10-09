@@ -17,6 +17,7 @@ execute if entity @s[tag=observatory_explosion] run function luigis_mansion:dial
 execute if entity @s[tag=blackout_lightning] run function luigis_mansion:dialog/blackout_lightning
 execute if entity @s[tag=toad_5_dialog] run function luigis_mansion:dialog/toad_5
 execute if entity @s[tag=uncle_grimmly_dialog] run function luigis_mansion:dialog/uncle_grimmly
+execute if entity @s[tag=close_pipe] run function luigis_mansion:dialog/close_pipe
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:player/changed_mansion
 
 execute if entity @s[gamemode=!spectator,distance=..10,x=719.5,y=102,z=8.0] run function luigis_mansion:room/door/foyer

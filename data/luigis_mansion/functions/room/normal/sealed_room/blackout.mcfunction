@@ -1,1 +1,2 @@
+execute if predicate luigis_mansion:gold_mouse_chance if entity @a[advancements={luigis_mansion:mansion/sealed_room_gold_mouse=false},limit=1] positioned 684 111 -21 run function luigis_mansion:spawn_entities/vacuumable/gold_mouse/sealed_room
 scoreboard players set #sealed_room Wave 100
