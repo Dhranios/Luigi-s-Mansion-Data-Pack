@@ -2,7 +2,7 @@ execute as @e[scores={Room=21},type=!minecraft:item_frame] unless data entity @s
 execute as @e[scores={Room=21},type=!minecraft:item_frame,type=!minecraft:player,tag=!boo] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=21},type=minecraft:item] add dead
 tag @e[scores={Room=21},tag=boo] add turn_to_marker
-tag @e[x=661.5,y=104,z=-8.5,distance=..0.7,type=minecraft:item_frame] add dead
+tag @e[x=662.5,y=104,z=-7.5,distance=..0.7,type=minecraft:item_frame] add dead
 setblock 659 106 3 minecraft:air
 setblock 659 102 2 minecraft:air
 data merge block 655 103 -7 {Items:[]}

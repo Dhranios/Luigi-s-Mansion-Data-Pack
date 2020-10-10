@@ -2,4 +2,4 @@ execute if score #butlers_room Wave matches 1 unless entity @e[tag=ghost,scores=
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room=false},tag=!blackout] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/normal/butlers_room/wave_1
 execute if entity @a[tag=blackout] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/normal/butlers_room/blackout
 
-execute if entity @a[x=717.5,y=103,z=52.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=717.5,y=103,z=52.5,distance=..5,tag=fire_elemental_ghost] positioned 717 103 52 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost
+execute unless score #butlers_room_candle Searched matches 1 if entity @a[x=717.5,y=103,z=52.5,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]}] unless entity @e[x=717.5,y=103,z=52.5,distance=..5,tag=fire_elemental_ghost] positioned 717 103 52 run function luigis_mansion:spawn_entities/ghost/fire_elemental_ghost

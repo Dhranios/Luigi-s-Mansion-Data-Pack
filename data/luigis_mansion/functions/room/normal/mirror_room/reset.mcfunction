@@ -7,12 +7,14 @@ setblock 713 107 -36 minecraft:air
 setblock 713 102 -28 minecraft:air
 data merge block 713 102 -40 {Items:[]}
 data merge block 712 102 -40 {Items:[]}
+setblock 717 105 -40 minecraft:soul_campfire[lit=false]
 function luigis_mansion:room/normal/mirror_room/remove_blockade
 execute positioned 708 104 -23 run function luigis_mansion:blocks/unlit_candles
 execute positioned 708 104 -40 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #mirror_room Ticking
 scoreboard players reset #mirror_room Wave
 scoreboard players reset #mirror_room_table
+scoreboard players reset #mirror_room_fire
 scoreboard players reset #mirror_room_lamp_1
 scoreboard players reset #mirror_room_lamp_2
 scoreboard players reset #mirror_room_candle_1

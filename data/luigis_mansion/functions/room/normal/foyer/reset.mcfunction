@@ -10,6 +10,12 @@ setblock 710 108 11 minecraft:air
 setblock 700 115 8 minecraft:air
 setblock 700 116 0 minecraft:air
 setblock 707 110 -1 minecraft:air
+setblock 707 109 15 minecraft:tripwire_hook[facing=east]
+setblock 700 113 12 minecraft:tripwire_hook[facing=east]
+setblock 700 113 3 minecraft:tripwire_hook[facing=east]
+setblock 707 109 0 minecraft:tripwire_hook[facing=east]
+execute positioned 714 104 13 run function luigis_mansion:blocks/lit_candles
+execute positioned 714 104 2 run function luigis_mansion:blocks/lit_candles
 setblock 709 103 2 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:foyer/mirror_not_vacuumed"}
 setblock 709 104 2 minecraft:redstone_block
 function luigis_mansion:room/normal/foyer/remove_blockade
@@ -19,6 +25,10 @@ scoreboard players reset #foyer_chandelier
 scoreboard players reset #foyer_lamp
 scoreboard players reset #foyer_candle_1
 scoreboard players reset #foyer_candle_2
+scoreboard players reset #foyer_candle_3
+scoreboard players reset #foyer_candle_4
+scoreboard players reset #foyer_candle_5
+scoreboard players reset #foyer_candle_6
 scoreboard players reset #foyer_jar_1
 scoreboard players reset #foyer_jar_2
 scoreboard players reset #foyer_table

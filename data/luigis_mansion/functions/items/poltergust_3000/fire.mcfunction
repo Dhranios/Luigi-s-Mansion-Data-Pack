@@ -1,4 +1,9 @@
 particle minecraft:flame ~ ~ ~ 0 0 0 0 1
+execute if block ~ ~ ~ minecraft:soul_campfire[lit=false] run setblock ~ ~ ~ minecraft:soul_campfire[lit=true]
+execute if block ~ ~ ~ minecraft:tripwire_hook[facing=east] run setblock ~ ~ ~ minecraft:redstone_wall_torch[facing=east,lit=true]
+execute if block ~ ~ ~ minecraft:tripwire_hook[facing=north] run setblock ~ ~ ~ minecraft:redstone_wall_torch[facing=north,lit=true]
+execute if block ~ ~ ~ minecraft:tripwire_hook[facing=south] run setblock ~ ~ ~ minecraft:redstone_wall_torch[facing=south,lit=true]
+execute if block ~ ~ ~ minecraft:tripwire_hook[facing=west] run setblock ~ ~ ~ minecraft:redstone_wall_torch[facing=west,lit=true]
 execute if block ~ ~ ~ minecraft:brewing_stand[has_bottle_0=false] run function luigis_mansion:blocks/lit_candles
 execute if block ~ ~ ~ minecraft:brewing_stand[has_bottle_1=false] run function luigis_mansion:blocks/lit_candles
 execute if block ~ ~ ~ minecraft:brewing_stand[has_bottle_2=false] run function luigis_mansion:blocks/lit_candles

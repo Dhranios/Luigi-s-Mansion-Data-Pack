@@ -5,4 +5,6 @@ data merge block 687 103 4 {LootTable:"luigis_mansion:search"}
 data merge block 687 103 2 {LootTable:"luigis_mansion:search"}
 setblock 687 106 16 minecraft:cobweb
 setblock 687 106 6 minecraft:cobweb
+setblock 687 105 -1 minecraft:soul_campfire[lit=true]
+setblock 687 105 25 minecraft:soul_campfire[lit=true]
 scoreboard players set #dining_room Ticking 1

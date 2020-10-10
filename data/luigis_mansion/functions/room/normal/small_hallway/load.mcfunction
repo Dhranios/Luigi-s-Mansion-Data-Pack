@@ -4,4 +4,10 @@ execute if entity @a[advancements={luigis_mansion:mansion/master_bedroom_key=fal
 execute if entity @a[advancements={luigis_mansion:mansion/nursery_key=false},limit=1] run function luigis_mansion:room/normal/nursery/lock_door
 execute if entity @a[advancements={luigis_mansion:mansion/twins_room_key=false},limit=1] run function luigis_mansion:room/normal/twins_room/lock_door
 execute unless score #small_hallway FakeDoors matches 1 run function luigis_mansion:room/normal/small_hallway/fake_doors
+setblock 700 113 28 minecraft:redstone_wall_torch[facing=east,lit=true]
+setblock 704 113 28 minecraft:redstone_wall_torch[facing=west,lit=true]
+setblock 700 113 37 minecraft:redstone_wall_torch[facing=east,lit=true]
+setblock 704 113 37 minecraft:redstone_wall_torch[facing=west,lit=true]
+setblock 700 113 46 minecraft:redstone_wall_torch[facing=east,lit=true]
+setblock 704 113 46 minecraft:redstone_wall_torch[facing=west,lit=true]
 scoreboard players set #small_hallway Ticking 1

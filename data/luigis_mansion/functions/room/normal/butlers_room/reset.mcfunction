@@ -23,11 +23,12 @@ scoreboard players reset #butlers_room_closet
 scoreboard players reset #butlers_room_lamp
 scoreboard players reset #butlers_room_table
 scoreboard players reset #butlers_room_hole
+scoreboard players reset #butlers_room_candle
 scoreboard players reset #butlers_room_chair_1
 scoreboard players reset #butlers_room_chair_2
 scoreboard players reset #butlers_room_chair_3
 scoreboard players reset #butlers_room_chair_4
-scoreboard players reset #butlers_room_candle
+scoreboard players reset #butlers_room_chair_5
 scoreboard players reset #butlers_room_sewing_machine
 scoreboard players reset #butlers_room_ironing_table
 scoreboard players reset #butlers_room_toilet_paper

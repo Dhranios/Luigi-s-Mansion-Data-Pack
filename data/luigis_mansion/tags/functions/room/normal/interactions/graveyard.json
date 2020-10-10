@@ -1,6 +1,8 @@
 {
 	"values": [
 		"luigis_mansion:room/normal/graveyard/interact_with_chest",
+		"luigis_mansion:room/normal/graveyard/interact_with_fire_1",
+		"luigis_mansion:room/normal/graveyard/interact_with_fire_2",
 		"luigis_mansion:room/normal/graveyard/interact_with_gravestone_1",
 		"luigis_mansion:room/normal/graveyard/interact_with_gravestone_2",
 		"luigis_mansion:room/normal/graveyard/interact_with_gravestone_3",

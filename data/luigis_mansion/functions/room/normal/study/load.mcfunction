@@ -10,4 +10,5 @@ data merge block 684 112 21 {Items:[{Slot:13b,id:"minecraft:written_book",Count:
 data merge block 684 112 19 {Items:[{Slot:13b,id:"minecraft:written_book",Count:1b,tag:{HideFlags:63,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.lydias_child_care_diary"}'},pages:['{"italic":false,"color":"black","translate":"luigis_mansion:item.lydias_child_care_diary.page.1"}','{"italic":false,"color":"black","translate":"luigis_mansion:item.lydias_child_care_diary.page.2"}'],author:"",title:"",generation:0,luigis_mansion:{id:"luigis_mansion:lydias_child_care_diary"}}}]}
 setblock 685 116 36 minecraft:cobweb
 setblock 685 116 27 minecraft:cobweb
+fill 684 111 30 684 111 28 minecraft:soul_campfire[lit=true]
 scoreboard players set #study Ticking 1

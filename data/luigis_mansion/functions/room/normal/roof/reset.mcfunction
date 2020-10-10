@@ -16,6 +16,7 @@ setblock 692 135 -26 minecraft:air
 setblock 704 135 -26 minecraft:air
 fill 686 137 8 686 137 7 minecraft:air
 setblock 684 137 36 minecraft:air
+fill 698 131 7 699 131 8 minecraft:soul_campfire[lit=false]
 execute unless score #clockwork_room Ticking matches 1 run function luigis_mansion:room/normal/clockwork_room/reset_elevator
 scoreboard players reset #roof Ticking
 scoreboard players reset #roof Wave

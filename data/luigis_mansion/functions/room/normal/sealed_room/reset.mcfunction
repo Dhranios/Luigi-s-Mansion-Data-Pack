@@ -42,6 +42,7 @@ scoreboard players reset #sealed_room_trophy_3
 scoreboard players reset #sealed_room_trophy_4
 scoreboard players reset #sealed_room_lamp
 scoreboard players reset #sealed_room_mirror
+scoreboard players reset #sealed_room_table
 scoreboard players reset #sealed_room_lamp
 scoreboard players reset #sealed_room_candle_1
 scoreboard players reset #sealed_room_candle_2

@@ -2,6 +2,10 @@
 	"values": [
 		"luigis_mansion:room/normal/foyer/interact_with_candle_1",
 		"luigis_mansion:room/normal/foyer/interact_with_candle_2",
+		"luigis_mansion:room/normal/foyer/interact_with_candle_3",
+		"luigis_mansion:room/normal/foyer/interact_with_candle_4",
+		"luigis_mansion:room/normal/foyer/interact_with_candle_5",
+		"luigis_mansion:room/normal/foyer/interact_with_candle_6",
 		"luigis_mansion:room/normal/foyer/interact_with_chandelier",
 		"luigis_mansion:room/normal/foyer/interact_with_door",
 		"luigis_mansion:room/normal/foyer/interact_with_jar_1",

@@ -7,4 +7,8 @@ setblock 710 108 11 minecraft:cobweb
 setblock 700 115 8 minecraft:cobweb
 setblock 700 116 0 minecraft:cobweb
 setblock 707 110 -1 minecraft:cobweb
+setblock 707 109 15 minecraft:redstone_wall_torch[facing=east,lit=true]
+setblock 700 113 12 minecraft:redstone_wall_torch[facing=east,lit=true]
+setblock 700 113 3 minecraft:redstone_wall_torch[facing=east,lit=true]
+setblock 707 109 0 minecraft:redstone_wall_torch[facing=east,lit=true]
 scoreboard players set #foyer Ticking 1

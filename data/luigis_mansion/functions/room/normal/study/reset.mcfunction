@@ -15,6 +15,7 @@ data merge block 684 113 24 {Items:[]}
 data merge block 684 113 23 {Items:[]}
 data merge block 684 113 21 {Items:[]}
 data merge block 684 113 19 {Items:[]}
+fill 684 111 30 684 111 28 minecraft:soul_campfire[lit=false]
 setblock 685 116 36 minecraft:air
 setblock 685 116 27 minecraft:air
 scoreboard players reset #study Ticking
@@ -36,3 +37,4 @@ scoreboard players reset #study_painting_5
 scoreboard players reset #study_chest
 scoreboard players reset #study_vacuumable_1
 scoreboard players reset #study_vacuumable_2
+scoreboard players reset #study_fire

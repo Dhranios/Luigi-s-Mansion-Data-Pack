@@ -6,8 +6,16 @@ setblock 668 115 -36 minecraft:air
 fill 666 111 -24 666 112 -24 minecraft:air
 setblock 666 106 -20 minecraft:air
 setblock 666 115 -20 minecraft:air
+setblock 666 104 -30 minecraft:tripwire_hook[facing=east]
+setblock 670 104 -30 minecraft:tripwire_hook[facing=west]
+setblock 666 113 -30 minecraft:tripwire_hook[facing=east]
+setblock 670 113 -30 minecraft:tripwire_hook[facing=west]
 scoreboard players reset #main_stairs Ticking
 scoreboard players reset #main_stairs Wave
 scoreboard players reset #main_stairs_lamp
+scoreboard players reset #main_stairs_candle_1
+scoreboard players reset #main_stairs_candle_2
+scoreboard players reset #main_stairs_candle_3
+scoreboard players reset #main_stairs_candle_4
 scoreboard players reset #main_stairs_vacuumable_1
 scoreboard players reset #main_stairs_vacuumable_2

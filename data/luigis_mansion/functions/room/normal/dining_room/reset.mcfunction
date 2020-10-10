@@ -13,6 +13,8 @@ data merge block 687 103 22 {Items:[]}
 data merge block 687 103 20 {Items:[]}
 data merge block 687 103 4 {Items:[]}
 data merge block 687 103 2 {Items:[]}
+setblock 687 105 -1 minecraft:soul_campfire[lit=false]
+setblock 687 105 25 minecraft:soul_campfire[lit=false]
 setblock 688 102 22 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 688 102 21 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 688 102 20 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
@@ -38,6 +40,8 @@ execute positioned 692 104 9 run function luigis_mansion:blocks/1_lit_candle
 execute positioned 692 104 15 run function luigis_mansion:blocks/1_lit_candle
 scoreboard players reset #dining_room Ticking
 scoreboard players reset #dining_room Wave
+scoreboard players reset #dining_room_fire_1
+scoreboard players reset #dining_room_fire_2
 scoreboard players reset #dining_room_closet_1
 scoreboard players reset #dining_room_closet_2
 scoreboard players reset #dining_room_torch_1

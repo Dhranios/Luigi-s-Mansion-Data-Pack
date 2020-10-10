@@ -5,8 +5,12 @@ tag @e[scores={Room=25},tag=boo] add turn_to_marker
 setblock 670 105 55 minecraft:air
 setblock 648 102 47 minecraft:air
 setblock 656 102 46 minecraft:air
+setblock 652 105 52 minecraft:soul_campfire[lit=false]
+setblock 652 105 42 minecraft:soul_campfire[lit=false]
 scoreboard players reset #graveyard Ticking
 scoreboard players reset #graveyard Wave
+scoreboard players reset #graveyard_fire_1
+scoreboard players reset #graveyard_fire_2
 scoreboard players reset #graveyard_gravestone_1
 scoreboard players reset #graveyard_gravestone_2
 scoreboard players reset #graveyard_gravestone_3
