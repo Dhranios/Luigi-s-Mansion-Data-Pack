@@ -1,6 +1,7 @@
 execute if entity @a[advancements={luigis_mansion:technical={entered_mansion=true}}] run advancement grant @a only luigis_mansion:technical entered_mansion
 execute if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}}] run advancement grant @a only luigis_mansion:technical found_e_gadd
 execute if entity @a[advancements={luigis_mansion:technical={portrait_ghosts=true}}] run advancement grant @a only luigis_mansion:technical portrait_ghosts
+execute if entity @a[advancements={luigis_mansion:technical={lydia_spoke=true}}] run advancement grant @a only luigis_mansion:technical lydia_spoke
 execute if entity @a[advancements={luigis_mansion:technical={chauncey_cried=true}}] run advancement grant @a only luigis_mansion:technical chauncey_cried
 execute if entity @a[advancements={luigis_mansion:technical={area_1_key=true}}] run advancement grant @a only luigis_mansion:technical area_1_key
 execute if entity @a[advancements={luigis_mansion:technical={cleared_area_2_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_area_2_blockade
@@ -9,6 +10,8 @@ execute if entity @a[advancements={luigis_mansion:technical={moved_wall=true}}] 
 execute if entity @a[advancements={luigis_mansion:technical={released_boos_call=true}}] run advancement grant @a only luigis_mansion:technical released_boos_call
 execute if entity @a[advancements={luigis_mansion:technical={released_boos_talk=true}}] run advancement grant @a only luigis_mansion:technical released_boos_talk
 execute if entity @a[advancements={luigis_mansion:technical={fire_element_medal=true}}] run advancement grant @a only luigis_mansion:technical fire_element_medal
+execute if entity @a[advancements={luigis_mansion:technical={shivers_spoke=true}}] run advancement grant @a only luigis_mansion:technical shivers_spoke
+execute if entity @a[advancements={luigis_mansion:technical={melody_pianissima_spoke=true}}] run advancement grant @a only luigis_mansion:technical melody_pianissima_spoke
 execute if entity @a[advancements={luigis_mansion:technical={water_element_medal=true}}] run advancement grant @a only luigis_mansion:technical water_element_medal
 execute if entity @a[advancements={luigis_mansion:technical={extinguished_kitchen_fire=true}}] run advancement grant @a only luigis_mansion:technical extinguished_kitchen_fire
 execute if entity @a[advancements={luigis_mansion:technical={area_2_key=true}}] run advancement grant @a only luigis_mansion:technical area_2_key
@@ -38,6 +41,7 @@ execute if entity @a[advancements={luigis_mansion:technical={telephone_2=true}}]
 execute if entity @a[advancements={luigis_mansion:technical={telephone_3=true}}] run advancement grant @a only luigis_mansion:technical telephone_3
 execute if entity @a[advancements={luigis_mansion:technical={caught_grimmly=true}}] run advancement grant @a only luigis_mansion:technical caught_grimmly
 execute if entity @a[advancements={luigis_mansion:technical={king_boo_warp=true}}] run advancement grant @a only luigis_mansion:technical king_boo_warp
+execute if entity @a[advancements={luigis_mansion:technical={jarvis_spoke=true}}] run advancement grant @a only luigis_mansion:technical jarvis_spoke
 execute if entity @a[advancements={luigis_mansion:technical={froze_sewage=true}}] run advancement grant @a only luigis_mansion:technical froze_sewage
 execute if entity @a[advancements={luigis_mansion:technical={closed_pipe=true}}] run advancement grant @a only luigis_mansion:technical closed_pipe
 execute if entity @a[advancements={luigis_mansion:technical={cleared_king_boo_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_king_boo_blockade

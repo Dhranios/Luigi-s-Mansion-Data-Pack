@@ -9,6 +9,9 @@
         "portrait_ghosts": {
             "trigger": "minecraft:impossible"
         },
+        "lydia_spoke": {
+            "trigger": "minecraft:impossible"
+        },
         "chauncey_cried": {
             "trigger": "minecraft:impossible"
         },
@@ -31,6 +34,12 @@
             "trigger": "minecraft:impossible"
         },
         "fire_element_medal": {
+            "trigger": "minecraft:impossible"
+        },
+        "shivers_spoke": {
+            "trigger": "minecraft:impossible"
+        },
+        "meldoy_pianissima_spoke": {
             "trigger": "minecraft:impossible"
         },
         "water_element_medal": {
@@ -121,6 +130,9 @@
             "trigger": "minecraft:impossible"
         },
         "king_boo_warp": {
+            "trigger": "minecraft:impossible"
+        },
+        "jarvis_spoke": {
             "trigger": "minecraft:impossible"
         },
         "froze_sewage": {

@@ -5,8 +5,8 @@ execute if entity @s[scores={Time=1}] at @a[gamemode=!spectator,scores={Room=8}]
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 execute if entity @s[scores={Time=40}] run playsound luigis_mansion:entity.lydia.complain hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Time=60}] VulnerableTime 40
-execute if entity @s[scores={Time=60},tag=!spoke] run tellraw @a[scores={Room=8}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia","color":"green"},{"translate":"luigis_mansion:message.lydia.draft"}]}
-tag @s[scores={Time=60},tag=!spoke] add spoke
+execute if entity @s[scores={Time=60}] run tellraw @a[scores={Room=8},advancements={luigis_mansion:technical={lydia_spoke=false}}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.lydia","color":"green"},{"translate":"luigis_mansion:message.lydia.draft"}]}
+execute if entity @s[scores={Time=60}] run advancement grant @a only luigis_mansion:technical lydia_spoke
 execute if entity @s[scores={Time=100}] run teleport @s ~ ~ ~ facing 689 111.5 42
 execute if entity @s[scores={Time=110}] run teleport @s ~ ~ ~ facing 685 111.5 42
 execute if entity @s[scores={Time=136}] run teleport @s ~ ~ ~ facing 685 111.5 45

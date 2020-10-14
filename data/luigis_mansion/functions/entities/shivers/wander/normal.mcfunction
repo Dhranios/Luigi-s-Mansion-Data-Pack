@@ -6,9 +6,9 @@ teleport @s[scores={Time=1},tag=!burning] ~ ~ ~ facing 668 102 -1
 scoreboard players set @s[x=668.5,y=102,z=-0.5,distance=..0.7,scores={Time=1},tag=!burning] Time 2
 teleport @s[scores={Time=2},tag=!burning] ~ ~ ~ facing 668 102 15
 scoreboard players set @s[x=668.5,y=102,z=15.5,distance=..0.7,scores={Time=2},tag=!burning] Time 1
-execute if entity @s[scores={Time=1..2},tag=burning,tag=!spoke] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.fire"}]}
+execute if entity @s[scores={Time=1..2},tag=burning] run tellraw @a[scores={Room=10},advancements={luigis_mansion:technical={shivers_spoke=false}}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.fire"}]}
 scoreboard players set @s[scores={Time=1..2},tag=burning,tag=!burning_2] Time 1
-tag @s[tag=burning] add spoke
+execute if entity @s[tag=burning] run advancement grant @a only luigis_mansion:technical shivers_spoke
 tag @s[tag=burning] add burning_2
 teleport @s[scores={Time=1},tag=burning] ~ ~ ~ facing 668 102 -6
 scoreboard players set @s[x=668.5,y=102,z=-5.5,distance=..0.7,scores={Time=1},tag=burning] Time 2
