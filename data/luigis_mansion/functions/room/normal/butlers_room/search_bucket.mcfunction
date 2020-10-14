@@ -4,5 +4,6 @@ execute if entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,ta
 execute unless entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selected,tag=!nothing] positioned 717 102 55 run function luigis_mansion:blocks/dust
 scoreboard players set #butlers_room_bucket Searched 1
 data merge block 717 102 55 {LootTable:"luigis_mansion:search"}
+setblock 717 102 55 minecraft:hopper[enabled=false]
 tag @e[x=717.5,y=102,z=55.5,distance=..0.7,tag=hidden_boo] add spawn
 tag @e[x=717.5,y=102,z=55.5,distance=..0.7,tag=ghost_marker] add spawn

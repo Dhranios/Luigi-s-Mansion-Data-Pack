@@ -1,4 +1,3 @@
-execute at @s facing entity @p[gamemode=!spectator,tag=vacuuming] feet rotated ~ 0 run teleport @s ~ ~ ~ ~-180 ~
 scoreboard players set #temp Move 4
 execute if entity @s[tag=is_pulled] run scoreboard players set #temp Move -3
 tag @s[tag=!in_vacuum] remove fleeing
