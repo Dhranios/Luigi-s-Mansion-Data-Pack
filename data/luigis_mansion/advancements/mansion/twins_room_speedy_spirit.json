@@ -4,6 +4,7 @@
             "item": "minecraft:diamond_pickaxe",
 			"nbt": "{Unbreakable:1b,Damage:6,CustomModelData:1}"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:advancements.mansion.twins_room_speedy_spirit"
         },

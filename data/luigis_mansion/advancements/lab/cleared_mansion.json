@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+			"nbt": "{SkullOwner:\"Mario\"}"
+        },
+        "show_toast": false,
+        "hidden": true,
+        "title": {
+            "translate": "luigis_mansion:advancements.lab.cleared_mansion"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.lab.cleared_mansion.description"
+        }
+    },
+	"parent": "luigis_mansion:lab/underground_lab",
+    "criteria": {
+        "cleared": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -21,6 +21,7 @@ execute if entity @a[advancements={luigis_mansion:mansion/storage_room=true}] ru
 execute if entity @a[advancements={luigis_mansion:mansion/storage_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/storage_room_speedy_spirit
 execute if entity @a[advancements={luigis_mansion:mansion/washroom_1=true}] run advancement grant @a only luigis_mansion:mansion/washroom_1
 execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room=true}] run advancement grant @a only luigis_mansion:mansion/fortune_tellers_room
+execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/fortune_tellers_room_gold_mouse
 execute if entity @a[advancements={luigis_mansion:mansion/mirror_room=true}] run advancement grant @a only luigis_mansion:mansion/mirror_room
 execute if entity @a[advancements={luigis_mansion:mansion/laundry_room=true}] run advancement grant @a only luigis_mansion:mansion/laundry_room
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room=true}] run advancement grant @a only luigis_mansion:mansion/butlers_room
@@ -48,6 +49,7 @@ execute if entity @a[advancements={luigis_mansion:mansion/hallway_gold_mouse=tru
 execute if entity @a[advancements={luigis_mansion:mansion/washroom_2=true}] run advancement grant @a only luigis_mansion:mansion/washroom_2
 execute if entity @a[advancements={luigis_mansion:mansion/bathroom_2=true}] run advancement grant @a only luigis_mansion:mansion/bathroom_2
 execute if entity @a[advancements={luigis_mansion:mansion/nanas_room=true}] run advancement grant @a only luigis_mansion:mansion/nanas_room
+execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/nanas_room_speedy_spirit
 execute if entity @a[advancements={luigis_mansion:mansion/astral_hall=true}] run advancement grant @a only luigis_mansion:mansion/astral_hall
 execute if entity @a[advancements={luigis_mansion:mansion/observatory=true}] run advancement grant @a only luigis_mansion:mansion/observatory
 execute if entity @a[advancements={luigis_mansion:mansion/billiards_room=true}] run advancement grant @a only luigis_mansion:mansion/billiards_room

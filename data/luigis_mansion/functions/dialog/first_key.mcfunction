@@ -12,9 +12,11 @@ teleport @s[scores={Dialog=121..122}] ~ ~-0.2 ~
 execute if entity @s[scores={Dialog=216}] run summon minecraft:item ~ ~0.5 ~ {Invulnerable:1b,PickupDelay:254s,Motion:[0.0d,0.2d,-0.0d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:key",room:"parlor"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.key","with":[{"translate":"luigis_mansion:location.parlor"}]}'}}},Age:-32768s}
 replaceitem entity @s[scores={Dialog=216}] armor.head minecraft:air
 teleport @s[scores={Dialog=216..255}] ~ ~ ~0.2
+execute if entity @s[scores={Dialog=242}] positioned 714 104 13 run function luigis_mansion:blocks/unlit_candles
 teleport @s[scores={Dialog=255..274}] ~-0.2 ~0.2 ~
 teleport @s[scores={Dialog=275..294}] ~-0.1 ~ ~-0.1
-teleport @s[scores={Dialog=295..319}] ~ ~0.2 ~-0.2
+execute if entity @s[scores={Dialog=280}] run setblock 707 109 15 minecraft:tripwire_hook[facing=east]
+teleport @s[scores={Dialog=295..319}] ~ ~0.16 ~-0.2
 teleport @s[scores={Dialog=320..339}] ~ ~ ~-0.05
 teleport @s[scores={Dialog=340..359}] ~-0.4 ~ ~
 teleport @s[scores={Dialog=360..364}] ~0.4 ~ ~

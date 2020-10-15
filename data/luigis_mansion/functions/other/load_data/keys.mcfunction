@@ -24,6 +24,6 @@ execute if entity @a[advancements={luigis_mansion:mansion/clockwork_room_key=tru
 execute if entity @a[advancements={luigis_mansion:mansion/armory_key=true}] run advancement grant @a only luigis_mansion:mansion/armory_key
 execute if entity @a[advancements={luigis_mansion:mansion/pipe_room_key=true}] run advancement grant @a only luigis_mansion:mansion/pipe_room_key
 execute if entity @a[advancements={luigis_mansion:mansion/cold_storage_key=true}] run advancement grant @a only luigis_mansion:mansion/cold_storage_key
-execute if entity @a[advancements={luigis_mansion:mansion/guest_room_key=true}] run advancement grant @a only luigis_mansion:mansion/guest_room_key
+execute if entity @a[advancements={luigis_mansion:mansion/sitting_room_key=true}] run advancement grant @a only luigis_mansion:mansion/sitting_room_key
 execute if entity @a[advancements={luigis_mansion:mansion/artists_studio_key=true}] run advancement grant @a only luigis_mansion:mansion/artists_studio_key
 execute if entity @a[advancements={luigis_mansion:mansion/secret_altar_key=true}] run advancement grant @a only luigis_mansion:mansion/secret_altar_key

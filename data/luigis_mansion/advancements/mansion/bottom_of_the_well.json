@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:stone_bricks"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.bottom_of_the_well"
         },

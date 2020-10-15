@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:dark_prismarine"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.kitchen"
         },

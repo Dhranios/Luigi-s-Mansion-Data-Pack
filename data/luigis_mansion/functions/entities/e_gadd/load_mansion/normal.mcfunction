@@ -2,6 +2,7 @@ scoreboard players set #mansion_type Selected 0
 scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
 
+tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.start"}]}
 kill @e[x=615,y=92,z=-66,dx=107,dy=60,dz=147,type=minecraft:item_frame]
 setblock 711 139 78 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:mansion/24",posX:1,posY:0,posZ:1,sizeX:11,sizeY:12,sizeZ:2,ignoreEntities:0b}
 setblock 711 140 78 minecraft:redstone_block
@@ -76,3 +77,4 @@ setblock 615 100 -66 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luig
 setblock 615 101 -66 minecraft:redstone_block
 fill 615 100 -66 615 101 -66 minecraft:air
 kill @e[x=615,y=92,z=-66,dx=107,dy=60,dz=147,type=minecraft:item]
+tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.load_mansion.stop"}]}

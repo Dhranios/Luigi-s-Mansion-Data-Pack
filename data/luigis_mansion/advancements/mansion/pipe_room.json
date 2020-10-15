@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:cobblestone"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.pipe_room"
         },

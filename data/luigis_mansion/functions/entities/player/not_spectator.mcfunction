@@ -1,8 +1,8 @@
 function #luigis_mansion:items
 function luigis_mansion:blocks/gravity_swap
 function luigis_mansion:blocks/blockade
-function luigis_mansion:items/gameboy_horror/warp
-function luigis_mansion:entities/player/grabbed
+execute if entity @s[tag=warp] run function luigis_mansion:items/gameboy_horror/warp
+execute if entity @s[tag=grabbed] run function luigis_mansion:entities/player/grabbed
 
 execute if entity @s[distance=..10,x=719.5,y=102,z=8.0] run function luigis_mansion:room/door/foyer
 

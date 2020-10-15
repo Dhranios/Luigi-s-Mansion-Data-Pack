@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:packed_ice"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.cold_storage"
         },

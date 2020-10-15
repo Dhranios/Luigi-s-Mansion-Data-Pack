@@ -54,10 +54,12 @@ scoreboard objectives add OneGoHealth dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy
-scoreboard objectives add PrevMusicType dummy
 scoreboard objectives add PrevHealth dummy
+scoreboard objectives add PrevMusicType dummy
+scoreboard objectives add PrevTotalDamage dummy
 scoreboard objectives add Pull dummy
 scoreboard objectives add PullStrength dummy
+scoreboard objectives add ResetChoice trigger
 scoreboard objectives add ResetMansion dummy
 scoreboard objectives add Room dummy
 scoreboard objectives add Search dummy
@@ -77,6 +79,7 @@ scoreboard objectives add TargetZ dummy
 scoreboard objectives add Ticking dummy
 scoreboard objectives add Time dummy
 scoreboard objectives add Toad1Choice trigger
+scoreboard objectives add Toad2Choice trigger
 scoreboard objectives add Toad3Choice trigger
 scoreboard objectives add Toad4Choice trigger
 scoreboard objectives add Toad5Choice trigger

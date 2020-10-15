@@ -62,7 +62,7 @@ execute if entity @a[advancements={luigis_mansion:mansion/graveyard_rain_pipe=tr
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_statue_2=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_statue_2
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_1=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_plant_1
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_2=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_plant_2
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_2=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_plant_3
+execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_3=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_plant_3
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=true}] run advancement grant @a only luigis_mansion:mansion/courtyard_chest
 execute if entity @a[advancements={luigis_mansion:mansion/rec_room_table=true}] run advancement grant @a only luigis_mansion:mansion/rec_room_table
 execute if entity @a[advancements={luigis_mansion:mansion/rec_room_lamp_1=true}] run advancement grant @a only luigis_mansion:mansion/rec_room_lamp_1
@@ -141,3 +141,4 @@ execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_1=t
 execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_2=true}] run advancement grant @a only luigis_mansion:mansion/sealed_room_trophy_2
 execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_3=true}] run advancement grant @a only luigis_mansion:mansion/sealed_room_trophy_3
 execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_4=true}] run advancement grant @a only luigis_mansion:mansion/sealed_room_trophy_4
+execute if entity @a[advancements={luigis_mansion:mansion/pipe_room_bucket=true}] run advancement grant @a only luigis_mansion:mansion/pipe_room_bucket

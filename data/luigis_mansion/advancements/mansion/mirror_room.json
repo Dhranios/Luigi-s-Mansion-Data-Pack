@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:glass_pane"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.mirror_room"
         },

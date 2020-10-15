@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:clock"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.clockwork_room"
         },

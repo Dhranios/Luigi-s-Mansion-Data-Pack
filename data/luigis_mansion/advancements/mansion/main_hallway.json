@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:birch_fence"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.main_hallway"
         },

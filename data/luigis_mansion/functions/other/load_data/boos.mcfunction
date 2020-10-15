@@ -42,7 +42,7 @@ execute if entity @a[advancements={luigis_mansion:boos/boodacious_trap=true}] ru
 execute if entity @a[advancements={luigis_mansion:boos/booffant_trap=true}] run advancement grant @a only luigis_mansion:boos/booffant_trap
 execute if entity @a[advancements={luigis_mansion:boos/boogie_trap=true}] run advancement grant @a only luigis_mansion:boos/boogie_trap
 execute if entity @a[advancements={luigis_mansion:boos/boohoo_trap=true}] run advancement grant @a only luigis_mansion:boos/boohoo_trap
-execute if entity @a[advancements={luigis_mansion:boos/booigie_trap=true}] run advancement grant @a only luigis_mansion:boos/booigie_trap
+execute if entity @a[advancements={luigis_mansion:boos/booigi_trap=true}] run advancement grant @a only luigis_mansion:boos/booigi_trap
 execute if entity @a[advancements={luigis_mansion:boos/boolderdash_trap=true}] run advancement grant @a only luigis_mansion:boos/boolderdash_trap
 execute if entity @a[advancements={luigis_mansion:boos/boolicious_trap=true}] run advancement grant @a only luigis_mansion:boos/boolicious_trap
 execute if entity @a[advancements={luigis_mansion:boos/booligan_trap=true}] run advancement grant @a only luigis_mansion:boos/booligan_trap

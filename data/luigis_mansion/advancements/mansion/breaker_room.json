@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:granite"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.breaker_room"
         },

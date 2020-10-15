@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:purpur_pillar"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.master_bedroom"
         },

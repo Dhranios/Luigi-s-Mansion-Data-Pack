@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:hopper"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.ceramics_studio"
         },

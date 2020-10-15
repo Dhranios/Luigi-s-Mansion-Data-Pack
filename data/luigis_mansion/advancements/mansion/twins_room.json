@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:light_blue_wool"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.twins_room"
         },

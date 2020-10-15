@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:soul_sand"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.cellar"
         },

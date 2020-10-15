@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:brewing_stand"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.astral_hall"
         },

@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:smooth_sandstone"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.hidden_room"
         },

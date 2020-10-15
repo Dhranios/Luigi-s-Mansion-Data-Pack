@@ -4,6 +4,7 @@
             "item": "minecraft:brick",
 			"nbt": "{CustomModelData:1}"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:advancements.mansion.laundry_room_key"
         },

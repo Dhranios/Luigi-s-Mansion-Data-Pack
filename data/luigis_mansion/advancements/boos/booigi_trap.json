@@ -4,11 +4,12 @@
             "item": "minecraft:diamond_pickaxe",
 			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:5}"
         },
+        "show_toast": false,
         "title": {
-            "translate": "luigis_mansion:advancements.boos.booigie_trap"
+            "translate": "luigis_mansion:advancements.boos.booigi_trap"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.boos.booigie_trap.description"
+            "translate": "luigis_mansion:advancements.boos.booigi_trap.description"
         }
     },
 	"parent": "luigis_mansion:boos/booigi",

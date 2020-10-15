@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:purple_stained_glass"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.parlor"
         },

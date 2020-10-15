@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:painting"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:advancements.portrait_ghosts.biff_atlas.silver"
         },

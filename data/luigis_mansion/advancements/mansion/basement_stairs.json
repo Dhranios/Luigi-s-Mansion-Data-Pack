@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:stone"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.basement_stairs"
         },

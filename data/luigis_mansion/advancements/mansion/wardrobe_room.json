@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:blue_banner"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:location.wardrobe_room"
         },

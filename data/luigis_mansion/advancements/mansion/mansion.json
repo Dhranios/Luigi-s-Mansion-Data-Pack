@@ -3,6 +3,7 @@
         "icon": {
             "item": "minecraft:spruce_log"
         },
+        "show_toast": false,
         "title": {
             "translate": "luigis_mansion:advancements.mansion.mansion"
         },
