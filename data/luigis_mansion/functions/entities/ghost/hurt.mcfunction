@@ -10,7 +10,7 @@ tag @s[scores={HurtTime=1}] remove vanish
 tag @s[scores={HurtTime=1}] add hurt_animation
 scoreboard players remove @s[scores={HurtTime=10},tag=!dialog] Health 1
 tag @s[scores={HurtTime=30},tag=!dialog] add fleeing
-teleport @s[scores={HurtTime=1..19},tag=!ground_bound] ~ ~0.05 ~
+teleport @s[scores={HurtTime=1..21},tag=!ground_bound] ~ ~0.05 ~
 tag @s[tag=!in_vacuum,tag=!dialog] add vanish
 tag @s[tag=!in_vacuum,tag=!dialog] remove fleeing
 tag @s[tag=!in_vacuum,tag=!dialog] remove hurt

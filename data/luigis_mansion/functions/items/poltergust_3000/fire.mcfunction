@@ -13,6 +13,7 @@ execute as @e[tag=vacuumable,distance=..0.7,tag=ball,tag=!spit] positioned as @s
 execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball,tag=!boolossus] unless entity @s[tag=haunted_object,tag=!moving] run tag @s add dead
 execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball,tag=!boolossus] unless entity @s[tag=haunted_object,tag=!moving] run tag @s add element_death
 execute as @e[tag=vacuumable,distance=..0.7,tag=spark] run tag @s add explode
+execute as @e[tag=sir_weston,distance=..0.7,scores={Dialog=423..}] run tag @s add melt
 execute as @e[tag=vacuumable,distance=..0.7,tag=boolossus] run scoreboard players set @s Dialog 0
 execute as @e[tag=fake_door,distance=..0.7] run tag @s add dead
 execute as @e[tag=shivers,distance=..0.7] run tag @s add burning

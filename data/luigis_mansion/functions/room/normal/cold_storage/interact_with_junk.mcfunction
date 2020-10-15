@@ -1,0 +1,6 @@
+execute if entity @s[x=701.0,y=93,z=-3.0,dx=3,dy=0,dz=3,tag=vacuum] if block ~ ~ ~ minecraft:packed_ice unless score #cold_storage_junk Search matches 1 run scoreboard players add #cold_storage_junk Searching 1
+execute if entity @s[x=701.0,y=93,z=-3.0,dx=3,dy=0,dz=3,tag=vacuum] if block ~ ~ ~ minecraft:packed_ice run scoreboard players set #cold_storage_junk Search 1
+execute unless entity @s unless score #cold_storage_junk Search matches 1 run scoreboard players reset #cold_storage_junk Searching
+execute unless entity @s run scoreboard players reset #cold_storage_junk Search
+execute unless entity @s if score #cold_storage_junk Searching matches 20 run function luigis_mansion:room/normal/cold_storage/search_junk
+execute if entity @s[x=701.0,y=93,z=-3.0,dx=3,dy=0,dz=3,tag=gameboy_horror_scan] if block ~ ~ ~ minecraft:packed_ice run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.110"}]}

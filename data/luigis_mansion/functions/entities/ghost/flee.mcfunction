@@ -8,7 +8,7 @@ function luigis_mansion:entities/ghost/pull
 tag @s remove me
 execute if entity @s[tag=!can_pull] run scoreboard players set #temp Move 4
 execute if score #temp Move matches 1.. at @s rotated ~ 0 run function luigis_mansion:entities/ghost/move_flee
-execute if entity @s[tag=is_pulled] unless entity @a[gamemode=!spectator,distance=..3,tag=vacuuming_this_ghost,limit=1] run scoreboard players set #temp Move -5
+execute if entity @s[tag=is_pulled] unless entity @a[gamemode=!spectator,distance=..3,tag=vacuuming_this_ghost,limit=1] run scoreboard players set #temp Move -6
 execute if score #temp Move matches ..-1 at @s facing entity @p[gamemode=!spectator,tag=vacuuming_this_ghost,tag=is_pulling] feet rotated ~ 0 run function luigis_mansion:entities/ghost/move_pulled
 scoreboard players remove @s[scores={Turn=1..}] Turn 1
 tag @s remove is_pulled

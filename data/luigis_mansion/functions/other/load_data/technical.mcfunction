@@ -44,6 +44,8 @@ execute if entity @a[advancements={luigis_mansion:technical={king_boo_warp=true}
 execute if entity @a[advancements={luigis_mansion:technical={jarvis_spoke=true}}] run advancement grant @a only luigis_mansion:technical jarvis_spoke
 execute if entity @a[advancements={luigis_mansion:technical={froze_sewage=true}}] run advancement grant @a only luigis_mansion:technical froze_sewage
 execute if entity @a[advancements={luigis_mansion:technical={closed_pipe=true}}] run advancement grant @a only luigis_mansion:technical closed_pipe
+execute if entity @a[advancements={luigis_mansion:technical={sir_weston_spoke=true}}] run advancement grant @a only luigis_mansion:technical sir_weston_spoke
+execute if entity @a[advancements={luigis_mansion:technical={sue_pea_spoke=true}}] run advancement grant @a only luigis_mansion:technical sue_pea_spoke
 execute if entity @a[advancements={luigis_mansion:technical={cleared_king_boo_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_king_boo_blockade
 execute if entity @a[advancements={luigis_mansion:technical={caught_king_boo=true}}] run advancement grant @a only luigis_mansion:technical caught_king_boo
 
