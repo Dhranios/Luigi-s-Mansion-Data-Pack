@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "luigis_mansion:advancements.mansion.guest_room_plant"
+        },
+        "description": {
+            "translate": "luigis_mansion:advancements.mansion.guest_room_plant.description"
+        },
+		"hidden": true
+    },
+	"parent": "luigis_mansion:mansion/guest_room",
+    "criteria": {
+        "spawned": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

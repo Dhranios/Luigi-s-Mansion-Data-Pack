@@ -43,6 +43,7 @@ execute if score #froze_sewage_s Money matches 1 run advancement grant @a only l
 execute if score #closed_pipe_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical closed_pipe
 execute if score #sir_weston_spoke_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical sir_weston_spoke
 execute if score #sue_pea_spoke_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical sue_pea_spoke
+execute if score #sue_pea_snored_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical sue_pea_snored
 execute if score #cleared_king_boo_blockade_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical cleared_king_boo_blockade
 execute if score #caught_king_boo_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical caught_king_boo
 

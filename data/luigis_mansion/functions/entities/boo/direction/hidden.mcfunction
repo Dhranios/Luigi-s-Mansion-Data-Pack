@@ -196,7 +196,7 @@ tag @s[scores={Room=54}] add left
 tag @s[scores={Room=55}] add up
 tag @s[scores={Room=55}] add left
 tag @s[scores={Room=56}] add up
-tag @s[scores={Room=56}] add left
+execute if entity @a[advancements={luigis_mansion:mansion/guest_room=true},limit=1] run tag @s[scores={Room=56}] add left
 tag @s[scores={Room=57}] add up
 tag @s[scores={Room=57}] add right
 tag @s[scores={Room=58}] add right

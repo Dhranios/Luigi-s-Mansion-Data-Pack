@@ -7,3 +7,17 @@ setblock 706 110 -41 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luig
 setblock 706 111 -41 minecraft:redstone_block
 scoreboard players reset #guest_room Ticking
 scoreboard players reset #guest_room Wave
+scoreboard players reset #guest_room_candle_1
+scoreboard players reset #guest_room_candle_2
+scoreboard players reset #guest_room_painting_1
+scoreboard players reset #guest_room_painting_2
+scoreboard players reset #guest_room_painting_3
+scoreboard players reset #guest_room_painting_4
+scoreboard players reset #guest_room_painting_5
+scoreboard players reset #guest_room_bed
+scoreboard players reset #guest_room_table_1
+scoreboard players reset #guest_room_table_2
+scoreboard players reset #guest_room_chair
+scoreboard players reset #guest_room_plant
+scoreboard players reset #guest_room_lamp
+scoreboard players reset #guest_room_chest

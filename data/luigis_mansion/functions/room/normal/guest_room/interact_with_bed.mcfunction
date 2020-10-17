@@ -1,0 +1,10 @@
+execute if block 713 112 -31 minecraft:redstone_lamp if entity @s[x=711.0,y=116,z=-40.0,dx=3,dy=1,dz=5,tag=vacuum] unless score #guest_room_bed Search matches 1 run scoreboard players add #guest_room_bed Searching 1
+execute if block 713 112 -31 minecraft:redstone_lamp if entity @s[x=711.0,y=116,z=-40.0,dx=3,dy=1,dz=5,tag=vacuum] run scoreboard players set #guest_room_bed Search 1
+execute unless block 713 112 -31 minecraft:redstone_lamp if entity @s[x=711.0,y=111,z=-40.0,dx=3,dy=1,dz=5,tag=vacuum] unless score #guest_room_bed Search matches 1 run scoreboard players add #guest_room_bed Searching 1
+execute unless block 713 112 -31 minecraft:redstone_lamp if entity @s[x=711.0,y=111,z=-40.0,dx=3,dy=1,dz=5,tag=vacuum] run scoreboard players set #guest_room_bed Search 1
+execute unless entity @s unless score #guest_room_bed Search matches 1 run scoreboard players reset #guest_room_bed Searching
+execute unless entity @s run scoreboard players reset #guest_room_bed Search
+execute if block 713 112 -31 minecraft:redstone_lamp unless entity @s if score #guest_room_bed Searching matches 20 run function luigis_mansion:room/normal/guest_room/search_bed_flipped
+execute unless block 713 112 -31 minecraft:redstone_lamp unless entity @s if score #guest_room_bed Searching matches 20 run function luigis_mansion:room/normal/guest_room/search_bed
+execute if block 713 112 -31 minecraft:redstone_lamp if entity @s[x=711.0,y=116,z=-40.0,dx=3,dy=1,dz=5,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.33"}]}
+execute unless block 713 112 -31 minecraft:redstone_lamp if entity @s[x=711.0,y=111,z=-40.0,dx=3,dy=1,dz=5,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.33"}]}

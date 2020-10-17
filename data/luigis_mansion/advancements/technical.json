@@ -147,6 +147,9 @@
         "sue_pea_spoke": {
             "trigger": "minecraft:impossible"
         },
+        "sue_pea_snored": {
+            "trigger": "minecraft:impossible"
+        },
         "cleared_king_boo_blockade": {
             "trigger": "minecraft:impossible"
         },

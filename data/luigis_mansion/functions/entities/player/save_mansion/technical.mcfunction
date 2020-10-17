@@ -43,6 +43,7 @@ scoreboard players reset #froze_sewage_s
 scoreboard players reset #closed_pipe_s
 scoreboard players reset #sir_weston_spoke_s
 scoreboard players reset #sue_pea_spoke_s
+scoreboard players reset #sue_pea_snored_s
 scoreboard players reset #cleared_king_boo_blockade_s
 scoreboard players reset #caught_king_boo_s
 
@@ -91,5 +92,6 @@ execute if entity @a[advancements={luigis_mansion:technical={froze_sewage=true}}
 execute if entity @a[advancements={luigis_mansion:technical={closed_pipe=true}}] run scoreboard players set #closed_pipe_s Money 1
 execute if entity @a[advancements={luigis_mansion:technical={sir_weston_spoke=true}}] run scoreboard players set #sir_weston_spoke_s Money 1
 execute if entity @a[advancements={luigis_mansion:technical={sue_pea_spoke=true}}] run scoreboard players set #sue_pea_spoke_s Money 1
+execute if entity @a[advancements={luigis_mansion:technical={sue_pea_snored=true}}] run scoreboard players set #sue_pea_snored_s Money 1
 execute if entity @a[advancements={luigis_mansion:technical={cleared_king_boo_blockade=true}}] run scoreboard players set #cleared_king_boo_blockade_s Money 1
 execute if entity @a[advancements={luigis_mansion:technical={caught_king_boo=true}}] run scoreboard players set #caught_king_boo_s Money 1

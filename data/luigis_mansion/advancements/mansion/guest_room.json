@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:red_wool"
+            "item": "minecraft:pumpkin"
         },
         "show_toast": false,
         "title": {
