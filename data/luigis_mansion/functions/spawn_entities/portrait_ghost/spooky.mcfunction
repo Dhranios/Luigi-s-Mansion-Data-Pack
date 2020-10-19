@@ -1,4 +1,4 @@
-summon minecraft:wolf ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.spooky"}',NoAI:1b,NoGravity:1b,CustomNameVisible:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Silent:1b,AbsorptionAmount:100.0f,HandItems:[{},{}],HandDropChances:[0.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:1b,Team:"Ghosts",Tags:["spooky","portrait_ghost","pearl_dropper","ghost","this_entity"]}
+summon minecraft:wolf ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.spooky"}',NoAI:1b,NoGravity:1b,CustomNameVisible:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Silent:1b,AbsorptionAmount:100.0f,HandItems:[{},{}],HandDropChances:[0.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:0b,Team:"Ghosts",Tags:["spooky","portrait_ghost","pearl_dropper","ghost","this_entity"]}
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100

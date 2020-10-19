@@ -11,4 +11,6 @@ setblock 707 109 15 minecraft:redstone_wall_torch[facing=east,lit=true]
 setblock 700 113 12 minecraft:redstone_wall_torch[facing=east,lit=true]
 setblock 700 113 3 minecraft:redstone_wall_torch[facing=east,lit=true]
 setblock 707 109 0 minecraft:redstone_wall_torch[facing=east,lit=true]
+execute positioned 714 104 13 run function luigis_mansion:blocks/lit_candles
+execute positioned 714 104 2 run function luigis_mansion:blocks/lit_candles
 scoreboard players set #foyer Ticking 1

@@ -14,8 +14,8 @@ setblock 707 109 15 minecraft:tripwire_hook[facing=east]
 setblock 700 113 12 minecraft:tripwire_hook[facing=east]
 setblock 700 113 3 minecraft:tripwire_hook[facing=east]
 setblock 707 109 0 minecraft:tripwire_hook[facing=east]
-execute positioned 714 104 13 run function luigis_mansion:blocks/lit_candles
-execute positioned 714 104 2 run function luigis_mansion:blocks/lit_candles
+execute positioned 714 104 13 run function luigis_mansion:blocks/unlit_candles
+execute positioned 714 104 2 run function luigis_mansion:blocks/unlit_candles
 setblock 709 103 2 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:foyer/mirror_not_vacuumed"}
 setblock 709 104 2 minecraft:redstone_block
 function luigis_mansion:room/normal/foyer/remove_blockade

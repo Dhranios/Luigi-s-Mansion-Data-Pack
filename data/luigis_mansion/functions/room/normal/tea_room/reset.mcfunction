@@ -10,8 +10,8 @@ setblock 659 112 -28 minecraft:hopper[enabled=false]
 fill 655 113 -18 655 116 -15 minecraft:red_wool
 fill 655 113 -27 655 116 -24 minecraft:red_wool
 fill 655 113 -36 655 116 -33 minecraft:red_wool
-execute positioned 659 113 -15 run function luigis_mansion:blocks/lit_candles
-execute positioned 659 113 -36 run function luigis_mansion:blocks/lit_candles
+execute positioned 659 113 -15 run function luigis_mansion:blocks/unlit_candles
+execute positioned 659 113 -36 run function luigis_mansion:blocks/unlit_candles
 data merge block 659 112 -28 {Items:[]}
 data merge block 659 112 -32 {Items:[]}
 data merge block 657 111 -11 {Items:[]}

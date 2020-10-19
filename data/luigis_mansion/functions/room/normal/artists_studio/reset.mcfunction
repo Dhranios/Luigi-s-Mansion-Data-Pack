@@ -14,3 +14,17 @@ data modify entity @e[x=696.5,y=121,z=-34.5,distance=..0.7,limit=1] Item.tag.map
 function luigis_mansion:room/normal/artists_studio/remove_blockade
 scoreboard players reset #artists_studio Ticking
 scoreboard players reset #artists_studio Wave
+scoreboard players reset #artists_studio_painting_1
+scoreboard players reset #artists_studio_painting_2
+scoreboard players reset #artists_studio_painting_3
+scoreboard players reset #artists_studio_painting_4
+scoreboard players reset #artists_studio_painting_5
+scoreboard players reset #artists_studio_painting_6
+scoreboard players reset #artists_studio_painting_7
+scoreboard players reset #artists_studio_painting_8
+scoreboard players reset #artists_studio_painting_9
+scoreboard players reset #artists_studio_chairs
+scoreboard players reset #artists_studio_table_1
+scoreboard players reset #artists_studio_table_2
+scoreboard players reset #artists_studio_table_3
+scoreboard players reset #artists_studio_lamp

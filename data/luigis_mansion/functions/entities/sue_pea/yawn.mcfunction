@@ -15,7 +15,8 @@ execute if entity @s[scores={Time=1}] run playsound luigis_mansion:music.sue_pea
 execute if entity @s[scores={Time=94}] run tellraw @a[scores={Room=57}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sue_pea","color":"green"},{"translate":"luigis_mansion:dialog.sue_pea.1"}]}
 execute if entity @s[scores={Time=175}] run tellraw @a[scores={Room=57}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sue_pea","color":"green"},{"translate":"luigis_mansion:dialog.sue_pea.2"}]}
 execute if entity @s[scores={Time=175}] run advancement grant @a only luigis_mansion:technical sue_pea_spoke
-
+effect give @s[scores={Time=175..299}] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Time=175..299}] at @a[gamemode=!spectator,scores={Room=57}] positioned ^ ^ ^8 run effect clear @s[distance=..8] minecraft:invisibility
 execute if entity @s[scores={Time=299}] if entity @a[advancements={luigis_mansion:technical={sue_pea_snored=false}}] run tellraw @a[scores={Room=57}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sue_pea","color":"green"},{"translate":"luigis_mansion:dialog.sue_pea.3"}]}
 execute if entity @s[scores={Time=299}] run advancement grant @a only luigis_mansion:technical sue_pea_snored
 execute if entity @s[scores={Time=299..}] as @a[scores={Room=57}] unless entity @s[scores={MusicType=36}] run function luigis_mansion:other/music/set/danger

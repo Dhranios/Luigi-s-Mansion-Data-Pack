@@ -12,8 +12,8 @@ fill 716 93 -31 717 94 -29 minecraft:air replace minecraft:soul_sand
 fill 714 93 -29 715 94 -27 minecraft:air replace minecraft:soul_sand
 fill 712 93 -27 713 94 -25 minecraft:air replace minecraft:soul_sand
 fill 715 93 -25 717 94 -23 minecraft:air replace minecraft:soul_sand
-execute positioned 707 96 -35 run function luigis_mansion:blocks/lit_candles
-execute positioned 716 96 -23 run function luigis_mansion:blocks/lit_candles
+execute positioned 707 96 -35 run function luigis_mansion:blocks/unlit_candles
+execute positioned 716 96 -23 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #cellar Ticking
 scoreboard players reset #cellar Wave
 scoreboard players reset #cellar_dust_1

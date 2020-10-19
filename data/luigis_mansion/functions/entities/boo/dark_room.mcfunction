@@ -42,4 +42,4 @@ execute unless entity @a[advancements={luigis_mansion:mansion/pipe_room=true},ta
 execute unless entity @a[advancements={luigis_mansion:mansion/cold_storage=true},tag=!blackout,limit=1] run tag @s[scores={Room=55}] add dark_room
 execute unless entity @a[advancements={luigis_mansion:mansion/sitting_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=56}] add dark_room
 execute unless entity @a[advancements={luigis_mansion:mansion/guest_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=57}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/artist_studio=true},tag=!blackout,limit=1] run tag @s[scores={Room=58}] add dark_room
+execute unless entity @a[advancements={luigis_mansion:mansion/artists_studio=true},tag=!blackout,limit=1] run tag @s[scores={Room=58}] add dark_room

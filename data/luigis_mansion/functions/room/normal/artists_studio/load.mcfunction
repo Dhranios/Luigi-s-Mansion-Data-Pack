@@ -6,5 +6,4 @@ execute if entity @a[advancements={luigis_mansion:mansion/artists_studio=true},l
 execute if entity @a[advancements={luigis_mansion:mansion/artists_studio=true},limit=1] run data modify entity @e[x=688.5,y=121,z=-28.5,distance=..0.7,limit=1] Item.tag.map set value 84
 execute if entity @a[advancements={luigis_mansion:mansion/artists_studio=true},limit=1] run data modify entity @e[x=689.5,y=121,z=-30.5,distance=..0.7,limit=1] Item.tag.map set value 82
 execute if entity @a[advancements={luigis_mansion:mansion/artists_studio=true},limit=1] run data modify entity @e[x=690.5,y=121,z=-32.5,distance=..0.7,limit=1] Item.tag.map set value 88
-execute if entity @a[advancements={luigis_mansion:mansion/artists_studio=true},limit=1] run data modify entity @e[x=696.5,y=121,z=-34.5,distance=..0.7,limit=1] Item.tag.map set value 80
 scoreboard players set #artists_studio Ticking 1

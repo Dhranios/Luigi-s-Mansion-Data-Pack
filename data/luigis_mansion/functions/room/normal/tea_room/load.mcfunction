@@ -15,3 +15,5 @@ data merge block 658 111 -40 {LootTable:"luigis_mansion:search"}
 data merge block 660 111 -40 {LootTable:"luigis_mansion:search"}
 data merge block 661 111 -40 {LootTable:"luigis_mansion:search"}
 setblock 659 112 -28 minecraft:hopper[enabled=false]
+execute positioned 659 113 -15 run function luigis_mansion:blocks/lit_candles
+execute positioned 659 113 -36 run function luigis_mansion:blocks/lit_candles

@@ -26,8 +26,8 @@ setblock 685 111 6 minecraft:oak_trapdoor[facing=east,half=bottom,open=true]
 setblock 684 117 11 minecraft:air
 setblock 684 116 0 minecraft:air
 function luigis_mansion:room/normal/parlor/remove_blockade
-execute positioned 684 113 6 run function luigis_mansion:blocks/purple_candles
-execute positioned 684 113 9 run function luigis_mansion:blocks/purple_candles
+execute positioned 684 113 6 run function luigis_mansion:blocks/unlit_candles
+execute positioned 684 113 9 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset @e[x=684.5,y=112,z=7.5,distance=..0.7,type=minecraft:item_frame,limit=1] Dialog
 scoreboard players reset #parlor Ticking
 scoreboard players reset #parlor Wave

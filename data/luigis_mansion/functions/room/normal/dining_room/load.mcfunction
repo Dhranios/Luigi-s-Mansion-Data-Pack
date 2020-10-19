@@ -7,4 +7,6 @@ setblock 687 106 16 minecraft:cobweb
 setblock 687 106 6 minecraft:cobweb
 setblock 687 105 -1 minecraft:soul_campfire[lit=true]
 setblock 687 105 25 minecraft:soul_campfire[lit=true]
+execute positioned 692 104 9 run function luigis_mansion:blocks/1_lit_candle
+execute positioned 692 104 15 run function luigis_mansion:blocks/1_lit_candle
 scoreboard players set #dining_room Ticking 1

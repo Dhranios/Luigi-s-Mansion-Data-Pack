@@ -12,4 +12,8 @@ data merge block 691 112 -38 {LootTable:"luigis_mansion:search"}
 data merge block 692 112 -38 {LootTable:"luigis_mansion:search"}
 data merge block 687 114 -39 {LootTable:"luigis_mansion:search"}
 data merge block 695 114 -39 {LootTable:"luigis_mansion:search"}
+execute positioned 684 115 -15 run function luigis_mansion:blocks/lit_candles
+execute positioned 684 115 -19 run function luigis_mansion:blocks/lit_candles
+execute positioned 693 113 -20 run function luigis_mansion:blocks/lit_candles
+execute positioned 693 113 -24 run function luigis_mansion:blocks/lit_candles
 scoreboard players set #sealed_room Ticking 1

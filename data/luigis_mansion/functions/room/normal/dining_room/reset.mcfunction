@@ -36,8 +36,8 @@ setblock 688 104 2 minecraft:oak_trapdoor[facing=east,half=top,open=true]
 setblock 687 106 16 minecraft:air
 setblock 687 106 6 minecraft:air
 fill 693 102 2 691 102 22 minecraft:white_wool
-execute positioned 692 104 9 run function luigis_mansion:blocks/1_lit_candle
-execute positioned 692 104 15 run function luigis_mansion:blocks/1_lit_candle
+execute positioned 692 104 9 run function luigis_mansion:blocks/unlit_candles
+execute positioned 692 104 15 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #dining_room Ticking
 scoreboard players reset #dining_room Wave
 scoreboard players reset #dining_room_fire_1
