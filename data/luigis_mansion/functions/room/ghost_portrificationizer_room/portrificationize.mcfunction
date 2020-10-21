@@ -21,6 +21,6 @@ execute if score #uncle_grimmly LastHealth matches ..0 if score #uncle_grimmly O
 execute if score #vincent_van_gore LastHealth matches ..0 if score #vincent_van_gore OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
 execute if score #boolossus LastHealth matches ..0 if score #boolossus OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
 execute if score #king_boo LastHealth matches ..0 if score #king_boo OneGoHealth matches -1000000.. run tag @e[tag=e_gadd,scores={Room=62}] add portrificationizing
-tag @e[tag=e_gadd,tag=portrificationizing] remove talk
-scoreboard players set @e[tag=e_gadd,tag=portrificationizing] Dialog 0
-execute if entity @e[tag=e_gadd,tag=portrificationizing] as @a run trigger Choice set 0
+tag @e[tag=e_gadd,tag=portrificationizing,tag=!return_dialog,tag=!ending_dialog] remove talk
+scoreboard players set @e[tag=e_gadd,tag=portrificationizing,tag=!return_dialog,tag=!ending_dialog] Dialog 0
+execute if entity @e[tag=e_gadd,tag=portrificationizing,tag=!return_dialog,tag=!ending_dialog] as @a run trigger Choice set 0

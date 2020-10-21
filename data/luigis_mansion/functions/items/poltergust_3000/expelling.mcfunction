@@ -1,5 +1,5 @@
 scoreboard players operation #temp Room = @s Room
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["interact"]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["interact","poltergust"]}
 execute unless entity @s[scores={Element=1..}] unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}]}] run function luigis_mansion:items/poltergust_3000/no_element
 scoreboard players reset @s[scores={Element=1..},nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}]}] Element
 tag @s[nbt={Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:1b}}}}]}] add fire

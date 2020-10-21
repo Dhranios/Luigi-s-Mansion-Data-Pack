@@ -73,7 +73,7 @@ scoreboard players reset #gold_diamond_s
 scoreboard players reset #small_pearl_s
 scoreboard players reset #medium_pearl_s
 scoreboard players reset #big_pearl_s
-scoreboard players reset #total_s GhostCaught
+scoreboard players reset #total_s
 
 execute if score #neville LastHealth matches -100.. run scoreboard players operation #neville_s LastHealth = #neville LastHealth
 execute if score #neville OneGoHealth matches -100.. run scoreboard players operation #neville_s OneGoHealth = #neville OneGoHealth
@@ -206,6 +206,7 @@ execute if score #gold_diamond Money matches -100.. run scoreboard players opera
 execute if score #small_pearl Money matches -100.. run scoreboard players operation #small_pearl_s Money = #small_pearl Money
 execute if score #medium_pearl Money matches -100.. run scoreboard players operation #medium_pearl_s Money = #medium_pearl Money
 execute if score #big_pearl Money matches -100.. run scoreboard players operation #big_pearl_s Money = #big_pearl Money
+execute if score #total Money matches -100.. run scoreboard players operation #total_s Money = #total Money
 execute if score #total GhostCaught matches -100.. run scoreboard players operation #total_s GhostCaught = #total GhostCaught
 scoreboard players reset @a LastHealth
 scoreboard players reset @a PrevTotalDamage

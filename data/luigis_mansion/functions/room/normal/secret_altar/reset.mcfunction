@@ -9,3 +9,13 @@ execute positioned 644 95 -11 run function luigis_mansion:blocks/unlit_candles
 execute positioned 644 95 -25 run function luigis_mansion:blocks/unlit_candles
 scoreboard players reset #secret_altar Ticking
 scoreboard players reset #secret_altar Wave
+scoreboard players reset #secret_altar_candle_1
+scoreboard players reset #secret_altar_candle_2
+scoreboard players reset #secret_altar_candle_3
+scoreboard players reset #secret_altar_candle_4
+scoreboard players reset #secret_altar_candle_5
+scoreboard players reset #secret_altar_candle_6
+scoreboard players reset #secret_altar_mirror
+scoreboard players reset #secret_altar_lamp_1
+scoreboard players reset #secret_altar_lamp_2
+scoreboard players reset #secret_altar_lamp_3

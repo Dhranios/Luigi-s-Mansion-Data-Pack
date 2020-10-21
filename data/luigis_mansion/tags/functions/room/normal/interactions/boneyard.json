@@ -4,6 +4,7 @@
 		"luigis_mansion:room/normal/boneyard/interact_with_dog_house",
 		"luigis_mansion:room/normal/boneyard/interact_with_plant",
 		"luigis_mansion:room/normal/boneyard/interact_with_sign",
-		"luigis_mansion:room/normal/boneyard/interact_with_water_tap"
+		"luigis_mansion:room/normal/boneyard/interact_with_water_tap",
+		"luigis_mansion:room/normal/boneyard/interact_with_water"
 	]
 }

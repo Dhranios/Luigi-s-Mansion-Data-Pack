@@ -16,4 +16,4 @@ execute as @e[tag=vacuumable,distance=..0.7,tag=ball,tag=!spit] positioned as @s
 tag @e[tag=ghost,distance=..0.7,tag=!watery_heart,tag=!frozen_heart,tag=!portrait_ghost,tag=!boo,tag=!hurt_animation,tag=!vanish,tag=!appear] add element_hurt
 tag @e[tag=sue_pea,distance=..0.7] add watered
 teleport @e[tag=interact,limit=1] ~ ~ ~ ~ ~
-execute as @e[tag=interact,limit=1] at @s run function luigis_mansion:room/normal/interactions
+execute as @e[tag=interact,limit=1] at @s run function luigis_mansion:room/interactions

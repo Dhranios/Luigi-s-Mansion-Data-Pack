@@ -97,6 +97,15 @@ scoreboard objectives add Wool dummy
 scoreboard players set #-1 Constants -1
 scoreboard players set #2 Constants 2
 scoreboard players set #100 Constants 100
+scoreboard players set #5 Constants 5
+scoreboard players set #20 Constants 20
+scoreboard players set #50 Constants 50
+scoreboard players set #100 Constants 100
+scoreboard players set #500 Constants 500
+scoreboard players set #800 Constants 800
+scoreboard players set #1000 Constants 1000
+scoreboard players set #2000 Constants 2000
+scoreboard players set #20000 Constants 20000
 
 team add Ghosts
 team modify Ghosts nametagVisibility never

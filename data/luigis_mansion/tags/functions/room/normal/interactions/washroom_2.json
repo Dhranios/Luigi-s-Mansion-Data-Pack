@@ -12,6 +12,7 @@
 		"luigis_mansion:room/normal/washroom_2/interact_with_sink",
 		"luigis_mansion:room/normal/washroom_2/interact_with_toilet",
 		"luigis_mansion:room/normal/washroom_2/interact_with_toilet_paper",
-		"luigis_mansion:room/normal/washroom_2/interact_with_toilet_storage"
+		"luigis_mansion:room/normal/washroom_2/interact_with_toilet_storage",
+		"luigis_mansion:room/normal/washroom_2/interact_with_water"
 	]
 }

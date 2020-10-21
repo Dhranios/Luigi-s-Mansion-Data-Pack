@@ -4,9 +4,11 @@ tag @e[scores={Room=12},type=minecraft:item] add dead
 tag @e[scores={Room=12},tag=boo] add turn_to_marker
 setblock 661 107 31 minecraft:air
 fill 659 107 30 659 103 36 minecraft:white_wool
+setblock 656 106 34 minecraft:stone_brick_slab[type=top,waterlogged=true]
 scoreboard players reset #bathroom_1 Ticking
 scoreboard players reset #bathroom_1 Wave
 scoreboard players reset #bathroom_1_curtain
 scoreboard players reset #bathroom_1_bathtub
 scoreboard players reset #bathroom_1_mirror
 scoreboard players reset #bathroom_1_shelf
+scoreboard players reset #bathroom_1_water

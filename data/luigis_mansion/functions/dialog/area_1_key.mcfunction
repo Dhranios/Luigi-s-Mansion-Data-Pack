@@ -16,6 +16,8 @@ execute if entity @s[scores={Dialog=528}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=528}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.area_1_key.7.more"}]}
 execute if entity @s[scores={Dialog=624}] as @a run function luigis_mansion:entities/e_gadd/to_portrificationizer
 execute if entity @s[scores={Dialog=624}] run advancement grant @a only luigis_mansion:technical area_1_key
-scoreboard players set @s[scores={Dialog=624}] GBHCall 0
-scoreboard players set @s[scores={Dialog=624}] GBHWait 0
-scoreboard players reset @s[scores={Dialog=624}] Dialog
+execute if entity @s[scores={Dialog=625},advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run tag @e[tag=e_gadd,scores={Room=62},limit=1] add return_dialog
+execute if entity @s[scores={Dialog=625},advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run tag @e[tag=e_gadd,scores={Room=62},limit=1] add talk
+scoreboard players set @s[scores={Dialog=625}] GBHCall 0
+scoreboard players set @s[scores={Dialog=625}] GBHWait 0
+scoreboard players reset @s[scores={Dialog=625}] Dialog

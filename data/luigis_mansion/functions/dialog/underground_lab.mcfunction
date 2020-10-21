@@ -2,10 +2,11 @@ scoreboard players add @s[scores={Dialog=130}] Dialog 1
 execute if entity @a[scores={EGaddLabChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=57..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..56}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
+execute if entity @s[scores={Dialog=1}] if score #king_boo LastHealth matches ..0 if score #king_boo OneGoHealth matches -1000000.. run tag @s add no_mansion
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[scores={Room=60}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.underground_lab.1","with":[{"selector":"@a[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[scores={Room=60}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.underground_lab.1.more"}]}
 execute if entity @s[scores={Dialog=56}] run tellraw @a[scores={Room=60}] {"translate":"luigis_mansion:message.options","color":"green"}
-function #luigis_mansion:mansion_options
+execute if entity @s[tag=!no_mansion] run function #luigis_mansion:mansion_options
 execute if entity @s[scores={Dialog=56}] run tellraw @a[scores={Room=60}] {"translate":"luigis_mansion:dialog.underground_lab.training","color":"green","clickEvent":{"action":"run_command","value":"/trigger EGaddLabChoice set 3"},"extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.underground_lab.gallery","clickEvent":{"action":"run_command","value":"/trigger EGaddLabChoice set 4"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.underground_lab.portrificationizer","clickEvent":{"action":"run_command","value":"/trigger EGaddLabChoice set 5"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.underground_lab.old_data","clickEvent":{"action":"run_command","value":"/trigger EGaddLabChoice set 6"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.underground_lab.nowhere","clickEvent":{"action":"run_command","value":"/trigger EGaddLabChoice set 7"}}]}
 execute if entity @s[scores={Dialog=56}] run scoreboard players enable @a[scores={Room=60},gamemode=!spectator] EGaddLabChoice
 execute if entity @s[scores={Dialog=58}] if entity @a[scores={EGaddLabChoice=1..},limit=1] as @a[scores={EGaddLabChoice=0}] run trigger EGaddLabChoice set 0
@@ -33,3 +34,4 @@ tag @s[scores={Dialog=148}] remove cannot_change
 execute unless entity @a[gamemode=!spectator,distance=..7] run tag @s remove talk
 execute if entity @s[tag=!talk] as @a[scores={EGaddLabChoice=0..}] run trigger EGaddLabChoice set 0
 scoreboard players set @s[tag=!talk] Dialog 0
+tag @s[tag=!talk] remove no_mansion

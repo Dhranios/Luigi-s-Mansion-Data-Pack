@@ -9,8 +9,10 @@ execute if entity @s[scores={Room=60},tag=talk,tag=lost_gear] run function luigi
 execute if entity @s[scores={Room=60},tag=talk,tag=!lost_gear] if entity @a[advancements={luigis_mansion:lab/underground_lab=true}] unless entity @a[advancements={luigis_mansion:technical={released_boos_call=true,released_boos_talk=false}}] run function luigis_mansion:dialog/underground_lab
 execute if entity @s[scores={Room=61}] run function luigis_mansion:dialog/training_room
 execute if entity @s[scores={Room=62},tag=portrificationizing] run function luigis_mansion:dialog/portrificationizing
-execute if entity @s[scores={Room=62},tag=!portrificationizing,tag=talk] if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run function luigis_mansion:dialog/ghost_portrificationizer_room
-execute if entity @s[scores={Room=62},tag=!portrificationizing,tag=talk] if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run function luigis_mansion:dialog/ghost_portrificationizer_room_repeat
+execute if entity @s[scores={Room=62},tag=return_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room_return
+execute if entity @s[scores={Room=62},tag=ending_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room_ending
+execute if entity @s[scores={Room=62},tag=!portrificationizing,tag=!return_dialog,tag=!ending_dialog,tag=talk] if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run function luigis_mansion:dialog/ghost_portrificationizer_room
+execute if entity @s[scores={Room=62},tag=!portrificationizing,tag=!return_dialog,tag=!ending_dialog,tag=talk] if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run function luigis_mansion:dialog/ghost_portrificationizer_room_repeat
 execute if entity @s[scores={Room=63},tag=talk] if entity @a[advancements={luigis_mansion:lab/gallery=false}] run function luigis_mansion:dialog/gallery
 execute if entity @s[scores={Room=63},tag=talk] if entity @a[advancements={luigis_mansion:lab/gallery=true}] run function luigis_mansion:dialog/gallery_repeat
 

@@ -26,3 +26,4 @@ scoreboard players reset #sitting_room_table_2
 scoreboard players reset #sitting_room_chair
 scoreboard players reset #sitting_room_couch
 scoreboard players reset #sitting_room_lamp
+scoreboard players reset #sitting_room_water

@@ -14,6 +14,7 @@ data merge block 697 120 42 {Items:[]}
 data merge block 687 120 39 {Items:[]}
 data merge block 697 120 39 {Items:[]}
 setblock 684 125 44 minecraft:air
+setblock 693 120 36 minecraft:packed_ice
 function luigis_mansion:room/normal/ceramics_studio/remove_blockade
 scoreboard players reset #ceramics_studio Ticking
 scoreboard players reset #ceramics_studio Wave
@@ -48,3 +49,4 @@ scoreboard players reset #ceramics_studio_jar_8
 scoreboard players reset #ceramics_studio_frozen_jar
 scoreboard players reset #ceramics_studio_chest
 scoreboard players reset #ceramics_studio_vacuumable
+scoreboard players reset #ceramics_studio_ice

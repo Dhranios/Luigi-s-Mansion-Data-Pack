@@ -13,6 +13,7 @@ data merge entity @e[x=666.5,y=114.5,z=26.5,distance=..0.5,type=minecraft:item_f
 data merge entity @e[x=666.5,y=114.5,z=27.5,distance=..0.5,type=minecraft:item_frame,limit=1] {Item:{tag:{map:172}}}
 data merge entity @e[x=666.5,y=115.5,z=26.5,distance=..0.5,type=minecraft:item_frame,limit=1] {Item:{tag:{map:171}}}
 data merge entity @e[x=666.5,y=115.5,z=27.5,distance=..0.5,type=minecraft:item_frame,limit=1] {Item:{tag:{map:170}}}
+setblock 668 115 36 minecraft:spruce_slab[type=top,waterlogged=true]
 scoreboard players reset #washroom_2 Ticking
 scoreboard players reset #washroom_2 Wave
 scoreboard players reset #washroom_2_lamp
@@ -28,3 +29,4 @@ scoreboard players reset #washroom_2_painting_2
 scoreboard players reset #washroom_2_painting_3
 scoreboard players reset #washroom_2_shelf
 scoreboard players reset #washroom_2_chest
+scoreboard players reset #washroom_2_water

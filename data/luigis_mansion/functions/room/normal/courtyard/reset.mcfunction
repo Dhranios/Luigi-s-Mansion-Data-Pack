@@ -8,6 +8,7 @@ setblock 650 102 -8 minecraft:air
 fill 647 104 30 647 105 32 minecraft:white_wool
 setblock 649 102 -32 minecraft:oak_door[facing=east,half=lower,hinge=left,open=false]
 data merge block 647 103 -12 {Items:[]}
+setblock 648 104 11 minecraft:water
 scoreboard players reset #courtyard Ticking
 scoreboard players reset #courtyard Wave
 scoreboard players reset #courtyard_vacuumable
@@ -21,3 +22,4 @@ scoreboard players reset #courtyard_plant_3
 scoreboard players reset #courtyard_plant_4
 scoreboard players reset #courtyard_bird_house
 scoreboard players reset #courtyard_chest
+scoreboard players reset #courtyard_water

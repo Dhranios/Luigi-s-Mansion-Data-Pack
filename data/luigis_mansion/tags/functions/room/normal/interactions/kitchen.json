@@ -5,6 +5,7 @@
 		"luigis_mansion:room/normal/kitchen/interact_with_dish_washer",
 		"luigis_mansion:room/normal/kitchen/interact_with_fire",
 		"luigis_mansion:room/normal/kitchen/interact_with_fridge",
+		"luigis_mansion:room/normal/kitchen/interact_with_ice",
 		"luigis_mansion:room/normal/kitchen/interact_with_lamp_1",
 		"luigis_mansion:room/normal/kitchen/interact_with_lamp_2",
 		"luigis_mansion:room/normal/kitchen/interact_with_oven",
@@ -18,6 +19,7 @@
 		"luigis_mansion:room/normal/kitchen/interact_with_shelf_5",
 		"luigis_mansion:room/normal/kitchen/interact_with_table",
 		"luigis_mansion:room/normal/kitchen/interact_with_tool_rack",
-		"luigis_mansion:room/normal/kitchen/interact_with_vacuumable"
+		"luigis_mansion:room/normal/kitchen/interact_with_vacuumable",
+		"luigis_mansion:room/normal/kitchen/interact_with_water"
 	]
 }

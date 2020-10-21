@@ -1,3 +1,4 @@
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:fire_element_medal"}}}]},advancements={luigis_mansion:technical={fire_element_medal=false}}] run scoreboard players set @s GBHCall 6
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:water_element_medal"}}}]},advancements={luigis_mansion:technical={water_element_medal=false}}] run scoreboard players set @s GBHCall 7
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:ice_element_medal"}}}]},advancements={luigis_mansion:technical={ice_element_medal=false}}] run scoreboard players set @s GBHCall 9
+#playsound luigis_mansion:item.item.get player @s ~ ~ ~ 1

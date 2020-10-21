@@ -1,1 +1,2 @@
+execute if entity @s[x=711.5,y=111,z=34.5,distance=..0.7,tag=interact,tag=poltergust] if block 711 111 34 minecraft:chest if entity @e[x=711.5,y=111,z=34.5,distance=..0.7,tag=ghost_marker] positioned 711 111 34 run function luigis_mansion:room/normal/twins_room/twin_shake
 execute unless entity @s if block 711 111 34 minecraft:chest unless block 711 111 34 minecraft:chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/twins_room/search_box_1

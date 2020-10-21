@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["interact","vacuum"]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["interact","vacuum","poltergust"]}
 scoreboard players operation #temp Room = @s Room
 scoreboard players operation #temp ID = @s ID
 tag @s add me

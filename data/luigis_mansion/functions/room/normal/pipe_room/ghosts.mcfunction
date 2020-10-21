@@ -2,4 +2,4 @@ execute if score #pipe_room Wave matches 1 unless entity @e[tag=ghost,tag=!optio
 execute if entity @a[advancements={luigis_mansion:mansion/pipe_room=false},tag=!blackout] unless score #pipe_room Wave matches 1.. run function luigis_mansion:room/normal/pipe_room/wave_1
 execute if entity @a[tag=blackout] unless score #pipe_room Wave matches 1.. run function luigis_mansion:room/normal/pipe_room/blackout
 
-execute if entity @a[x=697.0,y=96,z=-1.0,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:ice_element_medal"}}}]}] unless entity @e[x=697.0,y=96,z=-1.0,distance=..5,tag=ice_elemental_ghost] positioned 697.0 96 -1.0 run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost
+execute unless score #pipe_room_ice Searched matches 1 if entity @a[x=697.0,y=96,z=-1.0,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:ice_element_medal"}}}]}] unless entity @e[x=697.0,y=96,z=-1.0,distance=..5,tag=ice_elemental_ghost] positioned 697.0 96 -1.0 run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost

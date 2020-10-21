@@ -49,3 +49,4 @@ scoreboard players reset #tea_room_curtain_3
 scoreboard players reset #tea_room_lamp
 scoreboard players reset #tea_room_tea_box
 scoreboard players reset #tea_room_ice_bucket
+scoreboard players reset #tea_room_ice
