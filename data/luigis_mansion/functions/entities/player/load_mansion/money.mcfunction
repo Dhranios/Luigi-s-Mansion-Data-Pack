@@ -142,3 +142,10 @@ execute if score #sealed_room_trophy_2_s Money matches 1 run advancement grant @
 execute if score #sealed_room_trophy_3_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/sealed_room_trophy_3
 execute if score #sealed_room_trophy_4_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/sealed_room_trophy_4
 execute if score #pipe_room_bucket_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/pipe_room_bucket
+execute if score #sitting_room_plant_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/sitting_room_plant
+execute if score #guest_room_plant_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/guest_room_plant
+execute if score #guest_room_table_2_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/guest_room_table_2
+execute if score #guest_room_chest_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/guest_room_chest
+execute if score #secret_altar_lamp_2_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/secret_altar_lamp_2
+execute if score #secret_altar_candle_4_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/secret_altar_candle_4
+execute if score #secret_altar_candle_5_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/secret_altar_candle_5

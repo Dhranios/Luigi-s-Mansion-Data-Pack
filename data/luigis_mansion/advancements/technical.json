@@ -152,9 +152,6 @@
         },
         "cleared_king_boo_blockade": {
             "trigger": "minecraft:impossible"
-        },
-        "caught_king_boo": {
-            "trigger": "minecraft:impossible"
         }
     }
 }

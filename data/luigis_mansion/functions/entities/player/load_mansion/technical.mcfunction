@@ -45,7 +45,6 @@ execute if score #sir_weston_spoke_s Money matches 1 run advancement grant @a on
 execute if score #sue_pea_spoke_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical sue_pea_spoke
 execute if score #sue_pea_snored_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical sue_pea_snored
 execute if score #cleared_king_boo_blockade_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical cleared_king_boo_blockade
-execute if score #caught_king_boo_s Money matches 1 run advancement grant @a only luigis_mansion:mansion/technical caught_king_boo
 
 scoreboard players set @a ClairvoyaSpoke 0
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_hat=true}}] run scoreboard players add @a ClairvoyaSpoke 1

@@ -142,3 +142,10 @@ execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_2=t
 execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_3=true}] run advancement grant @a only luigis_mansion:mansion/sealed_room_trophy_3
 execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_4=true}] run advancement grant @a only luigis_mansion:mansion/sealed_room_trophy_4
 execute if entity @a[advancements={luigis_mansion:mansion/pipe_room_bucket=true}] run advancement grant @a only luigis_mansion:mansion/pipe_room_bucket
+execute if entity @a[advancements={luigis_mansion:mansion/sitting_room_plant=true}] run advancement grant @a only luigis_mansion:mansion/sitting_room_plant
+execute if entity @a[advancements={luigis_mansion:mansion/guest_room_plant=true}] run advancement grant @a only luigis_mansion:mansion/guest_room_plant
+execute if entity @a[advancements={luigis_mansion:mansion/guest_room_table_2=true}] run advancement grant @a only luigis_mansion:mansion/guest_room_table_2
+execute if entity @a[advancements={luigis_mansion:mansion/guest_room_chest=true}] run advancement grant @a only luigis_mansion:mansion/guest_room_chest
+execute if entity @a[advancements={luigis_mansion:mansion/secret_altar_lamp_2=true}] run advancement grant @a only luigis_mansion:mansion/secret_altar_lamp_2
+execute if entity @a[advancements={luigis_mansion:mansion/secret_altar_candle_4=true}] run advancement grant @a only luigis_mansion:mansion/secret_altar_candle_4
+execute if entity @a[advancements={luigis_mansion:mansion/secret_altar_candle_5=true}] run advancement grant @a only luigis_mansion:mansion/secret_altar_candle_5

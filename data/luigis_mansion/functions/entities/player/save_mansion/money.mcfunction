@@ -141,6 +141,14 @@ scoreboard players reset #sealed_room_trophy_1_s
 scoreboard players reset #sealed_room_trophy_2_s
 scoreboard players reset #sealed_room_trophy_3_s
 scoreboard players reset #sealed_room_trophy_4_s
+scoreboard players reset #pipe_room_bucket_s
+scoreboard players reset #sitting_room_plant_s
+scoreboard players reset #guest_room_plant_s
+scoreboard players reset #guest_room_table_2_s
+scoreboard players reset #guest_room_chest_s
+scoreboard players reset #secret_altar_lamp_2_s
+scoreboard players reset #secret_altar_candle_4_s
+scoreboard players reset #secret_altar_candle_5_s
 
 execute if entity @a[advancements={luigis_mansion:mansion/foyer_money=true}] run scoreboard players set #foyer_money_s Money 1
 execute if entity @a[advancements={luigis_mansion:mansion/foyer_lamp=true}] run scoreboard players set #foyer_lamp_s Money 1
@@ -286,3 +294,10 @@ execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_2=t
 execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_3=true}] run scoreboard players set #sealed_room_trophy_3_s Money 1
 execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_trophy_4=true}] run scoreboard players set #sealed_room_trophy_4_s Money 1
 execute if entity @a[advancements={luigis_mansion:mansion/pipe_room_bucket=true}] run scoreboard players set #pipe_room_bucket_s Money 1
+execute if entity @a[advancements={luigis_mansion:mansion/sitting_room_plant=true}] run scoreboard players set #sitting_room_plant_s Money 1
+execute if entity @a[advancements={luigis_mansion:mansion/guest_room_plant=true}] run scoreboard players set #guest_room_plant_s Money 1
+execute if entity @a[advancements={luigis_mansion:mansion/guest_room_table_2=true}] run scoreboard players set #guest_room_table_2_s Money 1
+execute if entity @a[advancements={luigis_mansion:mansion/guest_room_chest=true}] run scoreboard players set #guest_room_chest_s Money 1
+execute if entity @a[advancements={luigis_mansion:mansion/secret_altar_lamp_2=true}] run scoreboard players set #secret_altar_lamp_2_s Money 1
+execute if entity @a[advancements={luigis_mansion:mansion/secret_altar_candle_4=true}] run scoreboard players set #secret_altar_candle_4_s Money 1
+execute if entity @a[advancements={luigis_mansion:mansion/secret_altar_candle_5=true}] run scoreboard players set #secret_altar_candle_5_s Money 1

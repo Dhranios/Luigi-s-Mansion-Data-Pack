@@ -48,7 +48,6 @@ execute if entity @a[advancements={luigis_mansion:technical={sir_weston_spoke=tr
 execute if entity @a[advancements={luigis_mansion:technical={sue_pea_spoke=true}}] run advancement grant @a only luigis_mansion:technical sue_pea_spoke
 execute if entity @a[advancements={luigis_mansion:technical={sue_pea_snored=true}}] run advancement grant @a only luigis_mansion:technical sue_pea_snored
 execute if entity @a[advancements={luigis_mansion:technical={cleared_king_boo_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_king_boo_blockade
-execute if entity @a[advancements={luigis_mansion:technical={caught_king_boo=true}}] run advancement grant @a only luigis_mansion:technical caught_king_boo
 
 scoreboard players set @a ClairvoyaSpoke 0
 execute if entity @a[advancements={luigis_mansion:technical={shown_marios_hat=true}}] run scoreboard players add @a ClairvoyaSpoke 1
