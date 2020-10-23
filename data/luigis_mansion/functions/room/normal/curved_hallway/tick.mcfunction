@@ -10,3 +10,5 @@ function luigis_mansion:room/normal/curved_hallway/ghosts
 
 function luigis_mansion:room/normal/door/basement_hallway_curved_hallway
 function luigis_mansion:room/normal/door/curved_hallway_secret_altar
+
+tag @a[scores={Room=48},advancements={luigis_mansion:mansion/secret_altar=true},limit=1] add return_mario

@@ -111,4 +111,4 @@ team add Ghosts
 team modify Ghosts nametagVisibility never
 team add Passive
 
-execute unless score #mansion_type Selected matches 0.. run scoreboard players set #mansion_type Selected 0
+execute unless score #mansion_type Selected matches -1.. run scoreboard players set #mansion_type Selected 0
