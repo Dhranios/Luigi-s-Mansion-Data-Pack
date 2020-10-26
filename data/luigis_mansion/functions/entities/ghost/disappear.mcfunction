@@ -24,6 +24,7 @@ scoreboard players operation @e[tag=this_entity,limit=1] Health = @s Health
 execute store result entity @e[tag=this_entity,limit=1] Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute if entity @s[tag=ghost_guy] run function luigis_mansion:entities/ghost/disappear_ghost_guy
 execute if entity @s[tag=waiter] run function luigis_mansion:entities/ghost/disappear_waiter
+execute if entity @s[tag=mr_bones] run function luigis_mansion:entities/ghost/disappear_mr_bones
 execute unless entity @s[tag=ghost_guy,tag=dancing] if entity @s[tag=!waiter,tag=!hallway] as @e[tag=this_entity,limit=1] positioned as @s facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @e[tag=this_entity,limit=1] remove this_entity
 teleport @s ~ -100 ~

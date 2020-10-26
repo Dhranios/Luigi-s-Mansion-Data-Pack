@@ -1,8 +1,15 @@
+scoreboard players operation #temp MrBonesNr = @s MrBonesNr
+execute as @e[tag=mr_bones_body] if score @s MrBonesNr = #temp MrBonesNr run tag @s add this_mr_bones_body
+
 execute if entity @s[tag=dying,tag=normal_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_bones.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dying,tag=element_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_bones.element_death hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/mr_bones
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
+execute if entity @s[tag=dead] run teleport @e[tag=this_mr_bones_body] ~ -100 ~
+execute if entity @s[tag=dead] run tag @e[tag=this_mr_bones_body] add dead
+
+teleport @e[tag=this_mr_bones_body] ~ ~-0.5 ~ ~ ~
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.mr_bones.hurt hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
@@ -21,3 +28,6 @@ execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=laugh,scores={StunTime=0}] run function luigis_mansion:entities/mr_bones/laugh
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=complain,scores={StunTime=0}] run function luigis_mansion:entities/mr_bones/complain
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0}] run function luigis_mansion:entities/ghost/collided
+
+scoreboard players reset #temp MrBonesNr
+tag @e[tag=this_mr_bones_body] remove this_mr_bones_body

@@ -48,6 +48,7 @@ scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add MelodyChoice trigger
 scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
+scoreboard objectives add MrBonesNr dummy
 scoreboard objectives add Music dummy
 scoreboard objectives add MusicType dummy
 scoreboard objectives add OneGoHealth dummy

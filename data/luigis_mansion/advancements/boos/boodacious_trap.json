@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:diamond_pickaxe",
-			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:5}"
+			"nbt": "{Unbreakable:1b,Damage:4,CustomModelData:4}"
         },
         "show_toast": false,
         "title": {
