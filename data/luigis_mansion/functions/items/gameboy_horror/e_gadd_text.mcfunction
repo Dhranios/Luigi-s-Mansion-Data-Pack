@@ -29,7 +29,6 @@ advancement grant @s[scores={GBHCall=8}] only luigis_mansion:technical area_2_ke
 advancement grant @s[scores={GBHCall=9}] only luigis_mansion:technical ice_element_medal
 advancement grant @s[scores={GBHCall=10}] only luigis_mansion:technical area_3_key
 advancement grant @s[scores={GBHCall=11}] only luigis_mansion:technical blackout
-advancement grant @s[scores={GBHCall=12}] only luigis_mansion:technical caught_king_boo
 scoreboard players set @s[scores={MusicType=19}] Dialog 0
 execute as @a run function luigis_mansion:other/music/set/silence
 scoreboard players set @a GBHCall 0 

@@ -106,6 +106,6 @@ execute if score #sitting_room Ticking matches 1 if entity @a[advancements={luig
 execute if score #guest_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/guest_room=true},limit=1] if block 713 112 -31 minecraft:redstone_lamp run particle minecraft:dust 0.6 0.6 1 1.5 713.0 112 -31.0 1.2 0.6 1.2 0 10
 execute if score #guest_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/guest_room=true},limit=1] unless block 713 112 -31 minecraft:redstone_lamp run particle minecraft:dust 0.6 0.6 1 1.5 713.0 117 -31.0 1.2 0.6 1.2 0 10
 execute if score #artists_studio Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/artists_studio=true},limit=1] run particle minecraft:dust 0.6 0.6 1 1.5 691 125.5 -26 0.3 0.3 0.3 0 10
-execute if score #secret_altar Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/secret_altar=true},limit=1] run particle minecraft:dust 0.6 0.6 1 1.5 648 98 -18 0.9 0.6 0.9 0 10
-execute if score #secret_altar Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/secret_altar=true},limit=1] run particle minecraft:dust 0.6 0.6 1 1.5 641 98 -13 0.9 0.6 0.9 0 10
-execute if score #secret_altar Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/secret_altar=true},limit=1] run particle minecraft:dust 0.6 0.6 1 1.5 641 98 -23 0.9 0.6 0.9 0 10
+execute if score #secret_altar Ticking matches 1 run particle minecraft:dust 0.6 0.6 1 1.5 648 99 -18 0.9 0.6 0.9 0 10
+execute if score #secret_altar Ticking matches 1 run particle minecraft:dust 0.6 0.6 1 1.5 641 99 -13 0.9 0.6 0.9 0 10
+execute if score #secret_altar Ticking matches 1 run particle minecraft:dust 0.6 0.6 1 1.5 641 99 -23 0.9 0.6 0.9 0 10

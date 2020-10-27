@@ -34,7 +34,7 @@ execute if entity @s[tag=mirror_ghost,tag=!disappear] run function luigis_mansio
 execute if entity @s[tag=cinema_ghost,tag=!disappear] run function luigis_mansion:entities/cinema_ghost
 execute if entity @s[tag=garbage_can_ghost,tag=!disappear] run function luigis_mansion:entities/garbage_can_ghost
 execute if entity @s[tag=ghost_guy,tag=!disappear] run function luigis_mansion:entities/ghost_guy
-execute if entity @s[tag=mr_bones,tag=!disappear,scores={SpawnTime=20..}] run function luigis_mansion:entities/mr_bones
+execute if entity @s[tag=mr_bones,tag=!disappear] run function luigis_mansion:entities/mr_bones
 execute if entity @s[tag=bowling_ghost] run function luigis_mansion:entities/bowling_ghost
 execute if entity @s[tag=ceiling_surprise,tag=!disappear] run function luigis_mansion:entities/ceiling_surprise
 execute if entity @s[tag=purple_bomber,tag=!disappear] run function luigis_mansion:entities/purple_bomber

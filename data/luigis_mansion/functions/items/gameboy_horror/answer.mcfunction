@@ -1,4 +1,4 @@
-tag @s[nbt=!{SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] add hang_up
+execute unless entity @e[tag=e_gadd] run tag @s[nbt=!{SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] add hang_up
 tag @s add me
 scoreboard players set @a[tag=!me] GBHCall 0
 scoreboard players set @a[tag=!me] GBHWait 0

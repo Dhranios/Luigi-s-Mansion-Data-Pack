@@ -42,7 +42,7 @@ execute if score #attic_hallway_1 Ticking matches 1 run function luigis_mansion:
 execute if score #balcony_2 Ticking matches 1 run function luigis_mansion:room/normal/balcony_2/reset
 execute if score #attic_hallway_2 Ticking matches 1 run function luigis_mansion:room/normal/attic_hallway_2/reset
 execute if score #telephone_room Ticking matches 1 run function luigis_mansion:room/normal/telephone_room/reset
-execute if score #breaker_room Ticking matches 1 run teleport @a[scores={Room=45}] 701 92 -28
+execute if score #breaker_room Ticking matches 1 run teleport @a[scores={Room=45},advancements={luigis_mansion:mansion/breaker_room_key=false}] 700 93 -26
 execute if score #breaker_room Ticking matches 1 run function luigis_mansion:room/normal/breaker_room/reset
 execute if score #cellar Ticking matches 1 run function luigis_mansion:room/normal/cellar/reset
 execute if score #basement_hallway Ticking matches 1 run function luigis_mansion:room/normal/basement_hallway/reset
