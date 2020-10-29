@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:bedrock",
+                    "name": "minecraft:carved_pumpkin",
                     "weight": 1,
 					"functions": [
 						{
@@ -16,7 +16,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:bedrock",
+                    "name": "minecraft:carved_pumpkin",
                     "weight": 1,
 					"functions": [
 						{
@@ -27,7 +27,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:bedrock",
+                    "name": "minecraft:carved_pumpkin",
                     "weight": 1,
 					"functions": [
 						{
@@ -38,7 +38,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:bedrock",
+                    "name": "minecraft:carved_pumpkin",
                     "weight": 1,
 					"functions": [
 						{

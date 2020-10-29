@@ -2,5 +2,5 @@ execute if entity @s[x=675.5,y=112,z=-38.5,distance=..1.5,tag=vacuum] unless sco
 execute if entity @s[x=675.5,y=112,z=-38.5,distance=..1.5,tag=vacuum] run scoreboard players set #observatory_telescope Search 1
 execute unless entity @s unless score #observatory_telescope Search matches 1 run scoreboard players reset #observatory_telescope Searching
 execute unless entity @s run scoreboard players reset #observatory_telescope Search
-execute unless entity @s if score #observatory_telescope Searching matches 20 if entity @a[advancements={luigis_mansion:technical={observatory_destroyed=false}},limit=1] run function luigis_mansion:room/normal/observatory/search_telescope
-execute if entity @s[x=675.5,y=112,z=-38.5,distance=..1.5,tag=gameboy_horror_scan] if entity @a[advancements={luigis_mansion:technical={observatory_destroyed=false}},limit=1] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.103"}]}
+execute unless entity @s if score #observatory_telescope Searching matches 20 if block 677 115 -36 minecraft:redstone_lamp run function luigis_mansion:room/normal/observatory/search_telescope
+execute if entity @s[x=675.5,y=112,z=-38.5,distance=..1.5,tag=gameboy_horror_scan] if block 677 115 -36 minecraft:redstone_lamp run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.103"}]}

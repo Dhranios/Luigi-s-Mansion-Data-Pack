@@ -12,6 +12,7 @@ execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[ta
 tag @s[tag=fleeing,tag=walk_up_wall] add walk_on_ceiling
 tag @s[tag=fleeing,tag=walk_up_wall] add walk_down_wall
 tag @s[tag=fleeing,tag=walk_up_wall] add walked_on_ceiling
+data merge entity @s[tag=fleeing,tag=walk_up_wall] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:58}}]}
 tag @s remove fleeing
 execute store result score #temp HomeY run data get entity @s Pos[1] 100
 tag @s remove on_floor
@@ -24,6 +25,7 @@ execute unless score #temp Time matches 2.. run tag @s[scores={Room=1..}] add sp
 scoreboard players reset #temp Time
 scoreboard players reset #temp Room
 
+data merge entity @s[tag=spawn,tag=!vacuumable] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:58}}]}
 tag @s[tag=spawn] add vacuumable
 execute if entity @s[tag=!rotated,tag=!walk_on_ceiling,tag=!dead,tag=spawn] run function luigis_mansion:entities/purple_mouse/move
 scoreboard players set #temp Move 2
@@ -37,3 +39,6 @@ execute at @s[tag=walked_on_ceiling,tag=!rotated] rotated ~ 0 run teleport @s ~ 
 tag @s[tag=walked_on_ceiling,tag=!rotated] add rotated
 execute at @s[tag=walked_on_ceiling] rotated ~ 0 run function luigis_mansion:entities/purple_mouse/move_forward
 execute if entity @s[tag=disappear,tag=!dead] run function luigis_mansion:entities/purple_mouse/back_to_start
+execute if entity @s[tag=spawn] unless entity @s[tag=walk_up_wall,tag=!walk_on_ceiling] unless entity @s[tag=walk_down_wall,tag=!walked_on_ceiling] run function luigis_mansion:animations/blue_mouse/idle
+execute if entity @s[tag=spawn,tag=walk_up_wall,tag=!walk_on_ceiling] run function luigis_mansion:animations/blue_mouse/idle_wall
+execute if entity @s[tag=spawn,tag=walk_down_wall,tag=!walked_on_ceiling] run function luigis_mansion:animations/blue_mouse/idle_wall

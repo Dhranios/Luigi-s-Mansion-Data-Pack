@@ -10,3 +10,4 @@ execute if entity @s[tag=!dead] if score #mansion_type Selected matches 0 run fu
 execute if entity @s[tag=!dead] if score #mansion_type Selected matches 1 run function luigis_mansion:entities/gold_mouse/hidden
 scoreboard players set #temp Move 8
 execute at @s[tag=!dead] rotated ~ 0 run function luigis_mansion:entities/gold_mouse/move_forward
+function luigis_mansion:animations/blue_mouse/idle

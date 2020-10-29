@@ -4,16 +4,15 @@ execute if entity @a[advancements={luigis_mansion:mansion/balcony_2=false}] as @
 
 execute if entity @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] run playsound luigis_mansion:entity.boo.flee hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0,Dialog=0},tag=!freeze,tag=fleeing] Sound 40
-execute if entity @s[tag=!laugh] run tag @e[tag=boolossus,tag=laugh] remove laugh
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80}] store result score @s Time if entity @e[tag=boolossus,tag=split,tag=!dead]
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80,Time=15}] run tag @e[tag=boolossus] add laugh
 execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=80,Time=8..14}] if predicate luigis_mansion:boolossus_laugh_chance run tag @e[tag=boolossus] add laugh
 scoreboard players set @s[scores={Wave=80}] Time 0
-execute if entity @s[tag=laugh] run function luigis_mansion:entities/boolossus/laugh
+execute if entity @s[tag=laugh,scores={Dialog=0}] run function luigis_mansion:entities/boolossus/laugh
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/boo/collide
-execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=81..580}] if predicate luigis_mansion:boolossus_attack_chance run tag @s add attack
-execute if entity @s[tag=attack,tag=!laugh] run function luigis_mansion:entities/boolossus/attack
+execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Wave=81..580,Dialog=0}] if predicate luigis_mansion:boolossus_attack_chance run tag @s add attack
+execute if entity @s[tag=attack,tag=!laugh,scores={Dialog=0}] run function luigis_mansion:entities/boolossus/attack
 tag @s[scores={Wave=..30}] add fleeing
 tag @s[scores={Wave=..30}] add fleeing_no_target
 
@@ -22,9 +21,11 @@ execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0,Wave=..599}] 
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=hit_floor] run function luigis_mansion:entities/boolossus/move_up
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=!hit_floor] run function luigis_mansion:entities/boolossus/move_down
 tag @s remove wall
-scoreboard players set @s[tag=freeze,scores={Dialog=0,Wave=..599}] Dialog 100
+scoreboard players set @s[tag=freeze,scores={Dialog=0,Wave=41..599}] Dialog 100
 scoreboard players remove @s[scores={Dialog=1..}] Dialog 1
 scoreboard players set @s[scores={Wave=600..}] Dialog 0
+data merge entity @s[scores={Dialog=1..},tag=!vacuumable] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:64}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:64}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:64}}]}
+data merge entity @s[scores={Dialog=0},tag=vacuumable] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:65}}],HandItems:[{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:2,CustomModelData:65}},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:3,CustomModelData:65}}]}
 tag @s[scores={Dialog=1..}] add vacuumable
 tag @s[scores={Dialog=0}] remove vacuumable
 tag @s remove freeze

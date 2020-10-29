@@ -9,3 +9,4 @@ tag @s remove walked_on_ceiling
 tag @s remove disappear
 tag @s remove spawn
 tag @s remove vacuumable
+data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:62}}]}

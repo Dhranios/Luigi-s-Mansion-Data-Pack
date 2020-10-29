@@ -22,8 +22,10 @@ execute unless score #temp Time matches 3.. run tag @s[scores={Room=1..}] add sp
 scoreboard players reset #temp Time
 scoreboard players reset #temp Room
 
+data merge entity @s[tag=spawn,tag=!vacuumable] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:56}}]}
 tag @s[tag=spawn] add vacuumable
 execute if entity @s[tag=!rotated,tag=spawn] run function luigis_mansion:entities/blue_mouse/move
 scoreboard players set #temp Move 2
 execute at @s[tag=rotated] rotated ~ 0 run function luigis_mansion:entities/blue_mouse/move_forward
 execute if entity @s[tag=disappear,tag=!dead] run function luigis_mansion:entities/blue_mouse/back_to_start
+execute if entity @s[tag=spawn] run function luigis_mansion:animations/blue_mouse/idle
