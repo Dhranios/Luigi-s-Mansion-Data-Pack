@@ -27,6 +27,5 @@ tag @s[scores={Dialog=520}] add rambling
 tag @s[scores={Dialog=580}] add wink
 tag @s[scores={Dialog=590}] remove wink
 tag @s[scores={Dialog=630}] add attack
-execute if entity @s[tag=attack] run function luigis_mansion:entities/chauncey/attack
-tag @s[scores={Dialog=680}] add intro_done
-scoreboard players reset @s[scores={Dialog=680}] Dialog
+tag @s[scores={Dialog=670}] add intro_done
+scoreboard players reset @s[scores={Dialog=670}] Dialog

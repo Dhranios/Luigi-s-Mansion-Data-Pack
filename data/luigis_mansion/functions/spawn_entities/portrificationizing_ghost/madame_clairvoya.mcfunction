@@ -1,4 +1,1 @@
-execute if score #madame_clairvoya OneGoHealth matches 5001.. run advancement grant @a through luigis_mansion:portrait_ghosts/madame_clairvoya/bronze
-execute if score #madame_clairvoya OneGoHealth matches 1001..5000 run advancement grant @a through luigis_mansion:portrait_ghosts/madame_clairvoya/silver
-execute if score #madame_clairvoya OneGoHealth matches ..1000 run advancement grant @a through luigis_mansion:portrait_ghosts/madame_clairvoya/gold
-scoreboard players reset #madame_clairvoya
+summon minecraft:armor_stand 769 81 15 {Tags:["portrificationizing_ghost","madame_clairvoya"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:8,CustomModelData:0}}],DisabledSlots:2039583}

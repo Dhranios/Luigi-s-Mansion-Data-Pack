@@ -19,16 +19,16 @@ execute if entity @s[scores={GBHCall=11}] run tellraw @a {"translate":"chat.type
 execute if entity @s[scores={GBHCall=12}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.12"}]}
 execute if entity @s[scores={GBHCall=12}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:item.gameboy_horror","color":"green"},{"translate":"luigis_mansion:message.gameboy_horror.12.more"}]}
 
-advancement grant @s[scores={GBHCall=1}] only luigis_mansion:technical portrait_ghosts
-advancement grant @s[scores={GBHCall=2}] only luigis_mansion:technical area_1_key 
-advancement grant @s[scores={GBHCall=3}] only luigis_mansion:technical grabbing_ghosts
-advancement grant @s[scores={GBHCall=4}] only luigis_mansion:technical released_boos_call
-advancement grant @s[scores={GBHCall=6}] only luigis_mansion:technical fire_element_medal
-advancement grant @s[scores={GBHCall=7}] only luigis_mansion:technical water_element_medal
-advancement grant @s[scores={GBHCall=8}] only luigis_mansion:technical area_2_key
-advancement grant @s[scores={GBHCall=9}] only luigis_mansion:technical ice_element_medal
-advancement grant @s[scores={GBHCall=10}] only luigis_mansion:technical area_3_key
-advancement grant @s[scores={GBHCall=11}] only luigis_mansion:technical blackout
+execute if entity @s[scores={GBHCall=1}] run advancement grant @a only luigis_mansion:technical portrait_ghosts
+execute if entity @s[scores={GBHCall=2}] run advancement grant @a only luigis_mansion:technical area_1_key 
+execute if entity @s[scores={GBHCall=3}] run advancement grant @a only luigis_mansion:technical grabbing_ghosts
+execute if entity @s[scores={GBHCall=4}] run advancement grant @a only luigis_mansion:technical released_boos_call
+execute if entity @s[scores={GBHCall=6}] run advancement grant @a only luigis_mansion:technical fire_element_medal
+execute if entity @s[scores={GBHCall=7}] run advancement grant @a only luigis_mansion:technical water_element_medal
+execute if entity @s[scores={GBHCall=8}] run advancement grant @a only luigis_mansion:technical area_2_key
+execute if entity @s[scores={GBHCall=9}] run advancement grant @a only luigis_mansion:technical ice_element_medal
+execute if entity @s[scores={GBHCall=10}] run advancement grant @a only luigis_mansion:technical area_3_key
+execute if entity @s[scores={GBHCall=11}] run advancement grant @a only luigis_mansion:technical blackout
 scoreboard players set @s[scores={MusicType=19}] Dialog 0
 execute as @a run function luigis_mansion:other/music/set/silence
 scoreboard players set @a GBHCall 0 

@@ -1,5 +1,1 @@
-execute if score #chauncey OneGoHealth matches 51.. run advancement grant @a through luigis_mansion:portrait_ghosts/chauncey/bronze
-execute if score #chauncey OneGoHealth matches 11..50 run advancement grant @a through luigis_mansion:portrait_ghosts/chauncey/silver
-execute if score #chauncey OneGoHealth matches ..10 run advancement grant @a through luigis_mansion:portrait_ghosts/chauncey/gold
-scoreboard players reset #chauncey
-advancement grant @a only luigis_mansion:mansion/small_hallway
+summon minecraft:armor_stand 769 81 15 {Tags:["portrificationizing_ghost","chauncey"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:8,CustomModelData:0}}],DisabledSlots:2039583}

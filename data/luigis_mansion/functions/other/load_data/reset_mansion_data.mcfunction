@@ -1,5 +1,6 @@
 advancement revoke @s from luigis_mansion:mansion/mansion
 advancement revoke @s from luigis_mansion:boos/boos
+advancement revoke @s from luigis_mansion:technical
 
 advancement grant @s only luigis_mansion:mansion/mansion
 advancement grant @s only luigis_mansion:mansion/parlor_key
@@ -8,6 +9,8 @@ advancement grant @s only luigis_mansion:technical found_e_gadd
 
 scoreboard players reset @s ResetMansion
 scoreboard players reset @s Element
+scoreboard players set @s Boos 0
+scoreboard players set @s ClairvoyaSpoke 0
 scoreboard players set @s TotalDamage 0
 scoreboard players set @s LastTotalDamage 0
 scoreboard players set @s Health 100

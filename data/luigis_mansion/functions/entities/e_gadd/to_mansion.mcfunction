@@ -3,6 +3,10 @@ execute unless score #mansion_type Selected matches 0 run function luigis_mansio
 teleport @s 760 89.9375 8.0 90 0
 execute positioned 789 90 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd
 scoreboard players set #mansion_type Selected 0
+scoreboard players set #mirrored Selected 0
+scoreboard players set #double_damage Selected 0
+scoreboard players set #double_hurt Selected 0
+scoreboard players set #extra_health Selected 0
 scoreboard players set @s Room 0
 stopsound @s music
 playsound luigis_mansion:music.leaving_the_lab music @s ~ ~ ~ 1000

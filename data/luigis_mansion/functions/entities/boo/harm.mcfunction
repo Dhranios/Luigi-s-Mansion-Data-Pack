@@ -1,8 +1,8 @@
 scoreboard players operation #temp LastHealth = @s Health
-execute if score #mansion_type Selected matches 0 run scoreboard players remove @s[tag=!dark_room] Health 25
-execute if score #mansion_type Selected matches 0 run scoreboard players remove @s[tag=dark_room] Health 5
-execute if score #mansion_type Selected matches 1 run scoreboard players remove @s[tag=!dark_room] Health 50
-execute if score #mansion_type Selected matches 1 run scoreboard players remove @s[tag=dark_room] Health 10
+execute if score #double_damage Selected matches 0 run scoreboard players remove @s[tag=!dark_room] Health 25
+execute if score #double_damage Selected matches 0 run scoreboard players remove @s[tag=dark_room] Health 5
+execute if score #double_damage Selected matches 1 run scoreboard players remove @s[tag=!dark_room] Health 50
+execute if score #double_damage Selected matches 1 run scoreboard players remove @s[tag=dark_room] Health 10
 scoreboard players operation #temp Health = @s Health
 scoreboard players operation #temp LastHealth /= #100 Constants
 scoreboard players operation #temp Health /= #100 Constants

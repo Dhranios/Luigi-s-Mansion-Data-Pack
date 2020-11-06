@@ -16,5 +16,5 @@ execute if entity @s[tag=gameboy_horror_selected] run function luigis_mansion:it
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=hidden_boo] if score @s Room = #temp Room run tag @s add this_room
 scoreboard players reset #temp Room
-execute if entity @e[tag=hidden_boo] positioned ~ ~0.5 ~ run function luigis_mansion:items/gameboy_horror/boo_radar
+execute if entity @e[tag=hidden_boo,tag=this_room] positioned ~ ~0.5 ~ run function luigis_mansion:items/gameboy_horror/boo_radar
 tag @e[tag=hidden_boo] remove this_room

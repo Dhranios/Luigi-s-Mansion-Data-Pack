@@ -14,7 +14,7 @@ execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] unless entity @
 execute if entity @s[tag=!visible] unless entity @s[tag=!element_hurt,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={VulnerableTime=0}] run function luigis_mansion:entities/mirror_ghost/turn_visible
 execute if entity @s[tag=visible] if entity @s[tag=!element_hurt,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,scores={VulnerableTime=0}] run function luigis_mansion:entities/mirror_ghost/turn_invisible
 
-execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,tag=!vanish,tag=!appear,scores={StunTime=0,SpawnTime=20..}] positioned ^ ^ ^0.8 if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run tag @s add attack
+execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!laugh,tag=!complain,tag=!vanish,tag=!appear,tag=!vanish,tag=!appear,scores={StunTime=0,SpawnTime=20..},tag=!grabbed] positioned ^ ^ ^0.8 if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run tag @s add attack
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=attack,scores={StunTime=0}] run function luigis_mansion:entities/mirror_ghost/attack
 
 execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,scores={StunTime=0}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

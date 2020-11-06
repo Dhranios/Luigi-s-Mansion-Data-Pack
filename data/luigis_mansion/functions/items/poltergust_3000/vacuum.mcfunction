@@ -13,7 +13,9 @@ execute as @e[type=minecraft:item,distance=..0.7,tag=!elemental_ghost,scores={Sp
 execute as @e[type=minecraft:item,distance=..0.7,tag=!elemental_ghost,scores={SpawnTime=10..}] positioned as @s unless block ^ ^ ^0.3 #luigis_mansion:items_ignore rotated ~ 0 if block ^ ^ ^0.3 #luigis_mansion:items_ignore run teleport @s ^ ^ ^0.1
 execute as @e[type=minecraft:item,distance=..0.7,nbt={Item:{tag:{luigis_mansion:{id:"luigis_mansion:key"}}}}] positioned as @s if block ^ ^ ^0.3 #luigis_mansion:items_ignore run teleport @s ^ ^ ^0.1
 execute as @e[type=minecraft:item,distance=..0.7,nbt={Item:{tag:{luigis_mansion:{id:"luigis_mansion:key"}}}}] positioned as @s unless block ^ ^ ^0.3 #luigis_mansion:items_ignore rotated ~ 0 if block ^ ^ ^0.3 #luigis_mansion:items_ignore run teleport @s ^ ^ ^0.1
-execute as @e[tag=vacuumable,distance=..0.7] unless entity @s[tag=wool,scores={SpawnTime=..19}] unless entity @s[tag=billiards_ball,scores={SpawnTime=..19}] unless entity @s[tag=ball,tag=spit] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[gamemode=!spectator,distance=..1.2,limit=1] run teleport @s ^ ^ ^0.1
+execute as @e[tag=vacuumable,distance=..0.7,tag=!boolossus] unless entity @s[tag=wool,scores={SpawnTime=..19}] unless entity @s[tag=billiards_ball,scores={SpawnTime=..19}] unless entity @s[tag=ball,tag=spit] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[gamemode=!spectator,distance=..1.2,limit=1] run teleport @s ^ ^ ^0.1
+execute positioned ~ ~-1 ~ as @e[tag=vacuumable,distance=..0.7,tag=boolossus,tag=split] positioned as @s positioned ~ ~1 ~ if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[gamemode=!spectator,distance=..1.2,limit=1] positioned ~ ~-1 ~ run teleport @s ^ ^ ^0.1
+execute positioned ~ ~-1.3 ~ as @e[tag=vacuumable,distance=..0.7,tag=money] positioned as @s positioned ~ ~1.3 ~ if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[gamemode=!spectator,distance=..1.2,limit=1] positioned ~ ~-1 ~ run teleport @s ^ ^ ^0.1
 tag @e[tag=vacuumable,distance=..0.7,tag=!ball] add fleeing
 execute as @e[tag=black_bogmire,distance=..0.7] run tag @s add in_vacuum
 execute as @e[tag=ghost_guy,tag=!maskless,distance=..0.7] run tag @s add in_vacuum
@@ -26,8 +28,10 @@ execute as @e[tag=vacuumable,distance=..0.7,tag=spark] positioned as @s if entit
 execute as @e[distance=..0.7,tag=elemental_ghost,scores={SpawnTime=21..}] positioned as @s if block ^ ^ ^0.3 #luigis_mansion:items_ignore run teleport @s ^ ^ ^0.01
 execute as @e[distance=..0.7,tag=elemental_ghost,scores={SpawnTime=21..}] run tag @s add hurt
 execute as @e[distance=..0.7,tag=elemental_ghost,scores={SpawnTime=21..},tag=hurt] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add sucked_up
-execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] unless entity @s[tag=boolossus,tag=!split] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add normal_death
-execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] unless entity @s[tag=boolossus,tag=!split] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add dead
+execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball,tag=!boolossus,tag=!money] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add normal_death
+execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball,tag=!boolossus,tag=!money] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add dead
+execute positioned ~ ~-1 ~ as @e[tag=vacuumable,distance=..0.7,tag=boolossus,tag=split] positioned as @s positioned ~ ~1 ~ if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add normal_death
+execute positioned ~ ~-1 ~ as @e[tag=vacuumable,distance=..0.7,tag=boolossus,tag=split] positioned as @s positioned ~ ~1 ~ if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add dead
 execute as @e[tag=ghost,distance=..0.7,scores={VulnerableTime=2..},tag=!dead,tag=!vanish,tag=!appear] run tag @s add hurt
 execute as @e[tag=ghost,tag=hurt,distance=..0.7] run tag @s add in_vacuum
 execute as @e[tag=boo,distance=..0.7,tag=!dead,tag=!hurt] run tag @s add hurt

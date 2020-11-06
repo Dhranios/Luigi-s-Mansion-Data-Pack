@@ -1,7 +1,8 @@
-scoreboard players add @s[scores={Time=1..60}] Time 1
+scoreboard players add @s[scores={Time=1..30}] Time 1
 execute unless entity @s[scores={Time=1..}] run scoreboard players set @s Time 1
 
 execute if entity @s[scores={Time=1},type=minecraft:wither] run tag @e[tag=rocking_horse] add attack
+scoreboard players set @s[scores={Time=1},type=minecraft:wither] Time 11
 teleport @s[scores={Time=1..10},type=minecraft:pig] ^ ^ ^0.04
 execute if entity @s[scores={Time=11}] run playsound luigis_mansion:entity.ghost.punch hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Time=11}] run playsound luigis_mansion:entity.chauncey.attack hostile @a ~ ~ ~ 1

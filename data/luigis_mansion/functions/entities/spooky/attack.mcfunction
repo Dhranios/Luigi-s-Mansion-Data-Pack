@@ -5,7 +5,7 @@ execute at @s[scores={Time=1..19}] run function luigis_mansion:entities/ghost/mo
 tag @s[scores={Time=20}] remove attack
 scoreboard players set @s[scores={Time=20}] Wave 19
 scoreboard players reset @s[scores={Time=20}] Time
-execute if entity @s[scores={Time=1..19}] positioned ^ ^ ^0.8 if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run scoreboard players set @s Time 30
+execute if entity @s[scores={Time=1..19}] positioned ^ ^ ^0.8 if entity @a[gamemode=!spectator,distance=..0.7,tag=!grabbed,limit=1] run scoreboard players set @s Time 30
 
 execute if entity @s[scores={Time=30}] run playsound luigis_mansion:entity.spooky.hold hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Time=30}] positioned ^ ^ ^0.8 run tag @a[gamemode=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed

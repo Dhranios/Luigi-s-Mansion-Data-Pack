@@ -1,4 +1,1 @@
-execute if score #melody_pianissima OneGoHealth matches 5001.. run advancement grant @a through luigis_mansion:portrait_ghosts/melody_pianissima/bronze
-execute if score #melody_pianissima OneGoHealth matches 1001..5000 run advancement grant @a through luigis_mansion:portrait_ghosts/melody_pianissima/silver
-execute if score #melody_pianissima OneGoHealth matches ..1000 run advancement grant @a through luigis_mansion:portrait_ghosts/melody_pianissima/gold
-scoreboard players reset #melody_pianissima
+summon minecraft:armor_stand 769 81 15 {Tags:["portrificationizing_ghost","melody_pianissima"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:8,CustomModelData:0}}],DisabledSlots:2039583}

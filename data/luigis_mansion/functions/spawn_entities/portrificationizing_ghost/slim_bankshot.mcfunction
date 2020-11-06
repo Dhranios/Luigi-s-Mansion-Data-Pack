@@ -1,4 +1,1 @@
-execute if score #slim_bankshot OneGoHealth matches 5001.. run advancement grant @a through luigis_mansion:portrait_ghosts/slim_bankshot/bronze
-execute if score #slim_bankshot OneGoHealth matches 1001..5000 run advancement grant @a through luigis_mansion:portrait_ghosts/slim_bankshot/silver
-execute if score #slim_bankshot OneGoHealth matches ..1000 run advancement grant @a through luigis_mansion:portrait_ghosts/slim_bankshot/gold
-scoreboard players reset #slim_bankshot
+summon minecraft:armor_stand 769 81 15 {Tags:["portrificationizing_ghost","slim_bankshot"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:8,CustomModelData:0}}],DisabledSlots:2039583}

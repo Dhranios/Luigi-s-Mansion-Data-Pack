@@ -20,6 +20,7 @@ execute if entity @s[scores={Keys=0}] store result score @s Keys run clear @s mi
 execute if entity @s[scores={Keys=0}] store result score @s Keys run clear @s minecraft:brick{CustomModelData:5,luigis_mansion:{id:"luigis_mansion:key"}} 0
 function luigis_mansion:items/get_boss_key
 execute store result score @s Keys run clear @s minecraft:brick{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:key"}} 0
+execute if score @s Keys > @s LastKeys run playsound luigis_mansion:item.item.get player @a ~ ~ ~ 1
 execute if score @s Keys > @s LastKeys run playsound luigis_mansion:item.key.get player @a ~ ~ ~ 1
 scoreboard players operation @s LastKeys = @s Keys
 

@@ -1,4 +1,5 @@
 scoreboard players add @s Dialog 1
+scoreboard players set @s[tag=fleeing] Dialog 580
 teleport @s[scores={Dialog=..280}] ~ ~-0.225 ~
 teleport @s[scores={Dialog=290..300}] ~ ~0.225 ~
 execute if entity @s[scores={Dialog=321}] run playsound luigis_mansion:entity.boo.laugh hostile @a ~ ~ ~ 1

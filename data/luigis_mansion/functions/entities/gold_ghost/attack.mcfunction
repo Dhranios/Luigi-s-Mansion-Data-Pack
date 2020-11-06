@@ -1,13 +1,13 @@
 scoreboard players add @s Time 1
 scoreboard players set @s[scores={Time=1}] AnimationProg 0
-data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-160.0f,30.0f,0.0f],LeftArm:[-40.0f,-20.0f,0.0f]}}
 function luigis_mansion:animations/gold_ghost/attack
 
 teleport @s[scores={Time=1..39},tag=!dialog] ^ ^ ^0.0125
 execute at @s[scores={Time=1..20},tag=!dialog] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,gamemode=!spectator] run tag @s add stop_attack
 execute if entity @s[scores={Time=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Time=41}] run playsound luigis_mansion:entity.gold_ghost.attack hostile @a ~ ~ ~ 1
-teleport @s[scores={Time=41..60}] ~ ~ ~ ~-18 ~
+execute if entity @s[scores={Time=41..60}] if score #mirrored Selected matches 0 run teleport @s ~ ~ ~ ~-18 ~
+execute if entity @s[scores={Time=41..60}] if score #mirrored Selected matches 1 run teleport @s ~ ~ ~ ~18 ~
 execute at @s[scores={Time=41}] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={Time=41}] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
 execute at @s[scores={Time=41}] if entity @a[distance=..1,gamemode=!spectator] run tag @s add laugh

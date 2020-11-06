@@ -1,6 +1,8 @@
 scoreboard players add @s Time 1
-teleport @s[scores={Time=1}] ~ ~2 ~ ~-80 ~
-teleport @s[scores={Time=2..11}] ~ ~-0.2 ~ ~8 ~ 
+execute if score #mirrored Selected matches 0 run teleport @s[scores={Time=1}] ~ ~2 ~ ~-80 ~
+execute if score #mirrored Selected matches 1 run teleport @s[scores={Time=1}] ~ ~2 ~ ~80 ~
+execute if score #mirrored Selected matches 0 run teleport @s[scores={Time=2..11}] ~ ~-0.2 ~ ~8 ~ 
+execute if score #mirrored Selected matches 1 run teleport @s[scores={Time=2..11}] ~ ~-0.2 ~ ~-8 ~ 
 teleport @s[scores={Time=12..13}] ~ ~0.4 ~
 teleport @s[scores={Time=14..15}] ~ ~-0.4 ~
 execute if entity @s[scores={Time=1}] run playsound luigis_mansion:entity.garbage_can_ghost.spawn hostile @a ~ ~ ~ 1

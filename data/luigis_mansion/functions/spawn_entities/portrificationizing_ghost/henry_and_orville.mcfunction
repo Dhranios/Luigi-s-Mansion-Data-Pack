@@ -1,6 +1,1 @@
-execute if score #henry_and_orville OneGoHealth matches 5001.. run advancement grant @a through luigis_mansion:portrait_ghosts/henry_and_orville/bronze
-execute if score #henry_and_orville OneGoHealth matches 1001..5000 run advancement grant @a through luigis_mansion:portrait_ghosts/henry_and_orville/silver
-execute if score #henry_and_orville OneGoHealth matches ..1000 run advancement grant @a through luigis_mansion:portrait_ghosts/henry_and_orville/gold
-scoreboard players reset #henry_and_orville
-scoreboard players reset #henry
-scoreboard players reset #orville
+summon minecraft:armor_stand 769 81 15 {Tags:["portrificationizing_ghost","henry_and_orville"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:8,CustomModelData:0}}],DisabledSlots:2039583}

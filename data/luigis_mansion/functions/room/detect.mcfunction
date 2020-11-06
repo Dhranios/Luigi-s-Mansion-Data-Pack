@@ -1,8 +1,6 @@
 execute if entity @a[x=771.5,y=90,z=8.0,distance=..14,gamemode=!spectator,limit=1] run function luigis_mansion:entities/player/open_gate
 
-execute if score #mansion_type Selected matches 0 run function luigis_mansion:room/normal/detect
-execute if score #mansion_type Selected matches 1 run function luigis_mansion:room/hidden/detect
-
+function #luigis_mansion:mansion_detect
 execute if entity @a[gamemode=!spectator,x=778,y=77,z=4,dx=20,dy=11,dz=21] run function luigis_mansion:room/underground_lab/tick
 execute if score #underground_lab Ticking matches 1 unless entity @a[gamemode=!spectator,x=778,y=77,z=4,dx=20,dy=11,dz=21] run function luigis_mansion:room/underground_lab/reset
 execute if entity @a[gamemode=!spectator,x=781,y=77,z=-23,dx=19,dy=6,dz=27] run function luigis_mansion:room/training_room/tick

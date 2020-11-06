@@ -1,6 +1,1 @@
-execute if score #bogmire OneGoHealth matches 51.. run advancement grant @a through luigis_mansion:portrait_ghosts/bogmire/bronze
-execute if score #bogmire OneGoHealth matches 11..50 run advancement grant @a through luigis_mansion:portrait_ghosts/bogmire/silver
-execute if score #bogmire OneGoHealth matches ..10 run advancement grant @a through luigis_mansion:portrait_ghosts/bogmire/gold
-scoreboard players reset #bogmire
-advancement grant @a only luigis_mansion:mansion/main_hallway
-advancement grant @a only luigis_mansion:mansion/basement_stairs
+summon minecraft:armor_stand 769 81 15 {Tags:["portrificationizing_ghost","bogmire"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:8,CustomModelData:0}}],DisabledSlots:2039583}

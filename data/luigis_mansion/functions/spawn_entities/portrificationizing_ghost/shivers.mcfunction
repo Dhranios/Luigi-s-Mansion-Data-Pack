@@ -1,4 +1,1 @@
-execute if score #shivers OneGoHealth matches 5001.. run advancement grant @a through luigis_mansion:portrait_ghosts/shivers/bronze
-execute if score #shivers OneGoHealth matches 1001..5000 run advancement grant @a through luigis_mansion:portrait_ghosts/shivers/silver
-execute if score #shivers OneGoHealth matches ..1000 run advancement grant @a through luigis_mansion:portrait_ghosts/shivers/gold
-scoreboard players reset #shivers
+summon minecraft:armor_stand 769 81 15 {Tags:["portrificationizing_ghost","shivers"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:8,CustomModelData:0}}],DisabledSlots:2039583}

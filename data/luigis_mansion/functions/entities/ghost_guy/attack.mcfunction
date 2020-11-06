@@ -5,7 +5,8 @@ execute if entity @s[tag=!dancing] run function luigis_mansion:animations/ghost_
 execute if entity @s[tag=dancing] run function luigis_mansion:animations/ghost_guy/spin_attack
 
 execute if entity @s[scores={Time=20}] run playsound luigis_mansion:entity.ghost_guy.attack hostile @a ~ ~ ~ 1
-teleport @s[scores={Time=20..29},tag=dancing] ~ ~ ~ ~-36 ~
+execute if score #mirrored Selected matches 0 run teleport @s[scores={Time=20..29},tag=dancing] ~ ~ ~ ~-36 ~
+execute if score #mirrored Selected matches 1 run teleport @s[scores={Time=20..29},tag=dancing] ~ ~ ~ ~36 ~
 execute at @s[scores={Time=20},tag=dancing] run effect give @a[distance=..2,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute at @s[scores={Time=20},tag=dancing] run scoreboard players set @a[distance=..2,gamemode=!spectator] ForcedDamage 4
 execute at @s[scores={Time=20},tag=dancing,tag=stop_dancing] unless entity @a[distance=..2,gamemode=!spectator] run tag @s add complain

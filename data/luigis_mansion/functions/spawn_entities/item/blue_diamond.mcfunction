@@ -1,1 +1,1 @@
-summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:25,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.blue_diamond"}'},luigis_mansion:{id:"luigis_mansion:blue_diamond"}}},Age:5400s,PickUpDelay:10s,Tags:["blue_diamond"]}
+summon minecraft:armor_stand ~ ~ ~ {Pose:{Head:[0.0f,0.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:2}}],Tags:["money","blue_diamond"],DisabledSlots:2039583}

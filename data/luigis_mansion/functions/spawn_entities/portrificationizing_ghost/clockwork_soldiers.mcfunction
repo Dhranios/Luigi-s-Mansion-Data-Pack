@@ -1,7 +1,1 @@
-execute if score #clockwork_soldiers OneGoHealth matches 5001.. run advancement grant @a through luigis_mansion:portrait_ghosts/clockwork_soldiers/bronze
-execute if score #clockwork_soldiers OneGoHealth matches 1001..5000 run advancement grant @a through luigis_mansion:portrait_ghosts/clockwork_soldiers/silver
-execute if score #clockwork_soldiers OneGoHealth matches ..1000 run advancement grant @a through luigis_mansion:portrait_ghosts/clockwork_soldiers/gold
-scoreboard players reset #clockwork_soldiers
-scoreboard players reset #green_clockwork_soldier
-scoreboard players reset #blue_clockwork_soldier
-scoreboard players reset #pink_clockwork_soldier
+summon minecraft:armor_stand 769 81 15 {Tags:["portrificationizing_ghost","clockwork_soldiers"],Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:8,CustomModelData:0}}],DisabledSlots:2039583}
