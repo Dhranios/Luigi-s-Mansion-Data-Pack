@@ -1,6 +1,5 @@
 scoreboard players add @s Time 1
 scoreboard players set @s[scores={Time=1}] AnimationProg 0
-data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-160.0f,30.0f,0.0f],LeftArm:[-40.0f,-20.0f,0.0f]}}
 function luigis_mansion:animations/gold_ghost/attack
 
 teleport @s[scores={Time=1..39}] ^ ^ ^0.0125

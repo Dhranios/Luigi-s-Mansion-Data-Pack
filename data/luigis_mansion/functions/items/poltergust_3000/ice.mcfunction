@@ -12,6 +12,7 @@ execute as @e[tag=boolossus,distance=..0.7,tag=split,scores={Wave=..599}] run ta
 execute as @e[tag=boolossus,tag=split,scores={Wave=..599},distance=..10] run tag @s add fleeing
 execute as @e[tag=jarvis,distance=..0.7,tag=can_freeze,tag=appeared] run tag @s add frozen
 execute as @e[tag=vacuumable,distance=..0.7,tag=ball,tag=can_spit_2] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add spit
+execute as @e[tag=vacuumable,distance=..0.7,tag=chauncey,tag=ball,tag=can_spit_2] positioned as @s if entity @a[gamemode=!spectator,distance=..3,limit=1] run tag @s add spit
 execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball,tag=!boolossus] unless entity @s[tag=haunted_object,tag=!moving] run tag @s add element_death
 execute as @e[tag=vacuumable,distance=..0.7,tag=!spark,tag=!ball,tag=!boolossus] unless entity @s[tag=haunted_object,tag=!moving] run tag @s add dead
 execute as @e[tag=vacuumable,distance=..0.7,tag=!black_bogmire,tag=!boolossus] unless entity @s[tag=haunted_object,tag=!moving] unless entity @s[tag=ball,tag=spit] positioned as @s if block ^ ^ ^0.3 #luigis_mansion:ghosts_ignore unless entity @a[gamemode=!spectator,distance=..1.2,limit=1] run teleport @s ^ ^ ^0.1

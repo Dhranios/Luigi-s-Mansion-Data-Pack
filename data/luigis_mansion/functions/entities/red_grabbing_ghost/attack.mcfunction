@@ -6,26 +6,8 @@ execute if entity @s[scores={Time=1..20}] run function luigis_mansion:animations
 
 execute if entity @s[scores={Time=1}] run playsound luigis_mansion:entity.red_grabbing_ghost.attack hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Time=1}] positioned ^ ^ ^0.8 run tag @a[gamemode=!spectator,distance=..0.8,tag=!grabbed,limit=1] add grabbed
-execute if entity @s[scores={Time=1}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~ 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=2}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-18 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=3}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-36 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=4}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-54 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=5}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-72 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=6}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-90 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=7}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-108 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=8}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-136 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=9}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-144 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=10}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-162 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=11}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-180 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=12}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-198 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=13}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-216 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=14}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-234 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=15}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-252 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=16}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-270 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=17}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-288 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=18}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-306 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=19}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-324 0 run teleport @s ^ ^ ^-0.8 ~ ~
-execute if entity @s[scores={Time=20}] positioned ^ ^ ^0.8 at @a[gamemode=!spectator,tag=grabbed,limit=1] rotated ~-342 0 run teleport @s ^ ^ ^-0.8 ~ ~
+execute if entity @s[scores={Time=1..20}] if score #mirrored Selected matches 0 run function luigis_mansion:entities/red_grabbing_ghost/grab/normal
+execute if entity @s[scores={Time=1..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/red_grabbing_ghost/grab/hidden
 execute if entity @s[scores={Time=20..100}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
 execute if entity @s[scores={Time=20}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -1
 execute if entity @s[scores={Time=21..100}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -5

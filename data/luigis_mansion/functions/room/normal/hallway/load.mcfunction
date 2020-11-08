@@ -1,4 +1,5 @@
 execute if entity @a[advancements={luigis_mansion:mansion/hallway=true},tag=!blackout,limit=1] run function luigis_mansion:room/normal/hallway/turn_on_lights
+execute if entity @a[advancements={luigis_mansion:technical={released_boos_talk=true}},scores={Boos=..49},limit=1] run function luigis_mansion:room/normal/hallway/load_boos
 execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_1=true},tag=!blackout,limit=1] run function luigis_mansion:room/normal/hallway/turn_on_attic_light
 execute unless score #hallway FakeDoors matches 1 run function luigis_mansion:room/normal/hallway/fake_doors
 setblock 700 113 -30 minecraft:redstone_wall_torch[facing=east,lit=true]

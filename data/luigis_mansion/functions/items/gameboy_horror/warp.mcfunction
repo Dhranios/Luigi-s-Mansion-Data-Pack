@@ -4,6 +4,7 @@ execute if entity @s[scores={Time=20}] run playsound luigis_mansion:item.gameboy
 execute if entity @s[scores={Time=50..130}] run particle minecraft:dust 0.5 0.5 1 1.5 ~ ~1.2 ~ 0.5 0.6 0.5 0 10
 teleport @s[scores={Time=70..129}] ~ ~ ~ ~54 ~
 tag @s[scores={Time=94..95}] remove grabbed
+execute if entity @s[scores={Time=95}] run fill ~-1 ~-1 ~-1 ~1 ~2 ~1 minecraft:air replace minecraft:torch
 teleport @s[scores={Time=95}] 714.0 102 8.0 ~54 ~
 tag @s[scores={Time=95,Room=1}] add in_foyer
 tag @s[scores={Time=130},tag=!in_foyer] remove seen_room_name

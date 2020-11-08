@@ -1,4 +1,5 @@
 execute unless entity @e[tag=eternal_gold_coin,scores={Room=6}] if entity @a[advancements={luigis_mansion:mansion/small_hallway_money=false},limit=1] run function luigis_mansion:room/normal/small_hallway/money
+execute if entity @a[advancements={luigis_mansion:technical={released_boos_talk=true}},scores={Boos=..49},limit=1] run function luigis_mansion:room/normal/small_hallway/load_boos
 execute if entity @a[advancements={luigis_mansion:mansion/small_hallway=true},tag=!blackout,limit=1] run function luigis_mansion:room/normal/small_hallway/turn_on_lights
 execute if entity @a[advancements={luigis_mansion:mansion/master_bedroom_key=false},limit=1] run function luigis_mansion:room/normal/master_bedroom/lock_door
 execute if entity @a[advancements={luigis_mansion:mansion/nursery_key=false},limit=1] run function luigis_mansion:room/normal/nursery/lock_door

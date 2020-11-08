@@ -4,7 +4,7 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
-execute unless score #king_boo LastHealth matches 1.. run scoreboard players set #king_boo LastHealth 10000
+execute unless score #king_boo LastHealth matches 1.. if score #extra_health Selected matches 1 run scoreboard players set #king_boo LastHealth 15000
 scoreboard players operation @e[tag=this_entity,limit=1] Health = #king_boo LastHealth
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevHealth = @s Health
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10

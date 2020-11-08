@@ -1,3 +1,2 @@
-execute store result score #temp Time run data get entity @s Pose.Head[1]
-execute store result entity @s Pose.Head[1] float 1 run scoreboard players add #temp Time 3
-scoreboard players reset #temp Time
+execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/money/normal/rotate
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/money/hidden/rotate

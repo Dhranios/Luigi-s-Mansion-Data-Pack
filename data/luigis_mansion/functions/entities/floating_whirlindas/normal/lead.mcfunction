@@ -6,8 +6,10 @@ execute if entity @s[scores={Time=..299}] run effect clear @s[nbt={ActiveEffects
 
 execute if entity @s[scores={Time=1}] positioned ^ ^ ^-0.5 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Time=1}] positioned ^ ^ ^0.5 run teleport @e[tag=partner,limit=1] ~ ~ ~ ~-180 ~
-execute if entity @s[scores={Time=..299}] rotated ~4 ~ positioned ^ ^ ^-0.5 run teleport @s ~ ~ ~ facing ^ ^ ^0.5
-execute if entity @s[scores={Time=..299}] rotated ~4 ~ positioned ^ ^ ^0.5 as @e[tag=partner,limit=1] run teleport @s ~ ~ ~ facing ^ ^ ^-0.5
+execute if entity @s[scores={Time=..299}] if score #mirrored Selected matches 0 rotated ~4 ~ positioned ^ ^ ^-0.5 run teleport @s ~ ~ ~ facing ^ ^ ^0.5
+execute if entity @s[scores={Time=..299}] if score #mirrored Selected matches 1 rotated ~-4 ~ positioned ^ ^ ^-0.5 run teleport @s ~ ~ ~ facing ^ ^ ^0.5
+execute if entity @s[scores={Time=..299}] if score #mirrored Selected matches 0 rotated ~4 ~ positioned ^ ^ ^0.5 as @e[tag=partner,limit=1] run teleport @s ~ ~ ~ facing ^ ^ ^-0.5
+execute if entity @s[scores={Time=..299}] if score #mirrored Selected matches 1 rotated ~-4 ~ positioned ^ ^ ^0.5 as @e[tag=partner,limit=1] run teleport @s ~ ~ ~ facing ^ ^ ^-0.5
 execute if entity @s[scores={Time=300..}] run effect give @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility 1 0 true
 execute if entity @s[scores={Time=300}] unless entity @s[nbt={ActiveEffects:[{Id:14b}]}] run scoreboard players set @s VulnerableTime 120
 execute if entity @s[scores={Time=420}] run scoreboard players set @s Time 0

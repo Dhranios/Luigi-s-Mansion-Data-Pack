@@ -1,3 +1,2 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Duration:1000000,Tags:["this_entity","ghost_marker","ghost","mr_bones","spawn"],Rotation:[0.0f,90.0f]}
-scoreboard players set @e[tag=this_entity,limit=1] Health 3000
-tag @e[tag=this_entity,limit=1] remove this_entity
+function luigis_mansion:spawn_entities/new_ghost/mr_bones
+tag @e[distance=..0.1,tag=mr_bones,limit=1] add spawn

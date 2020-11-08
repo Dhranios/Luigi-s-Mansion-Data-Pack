@@ -15,7 +15,7 @@ execute if entity @s[tag=blackout_lightning] run function luigis_mansion:dialog/
 execute if entity @s[tag=toad_5_dialog] run function luigis_mansion:dialog/toad_5
 execute if entity @s[tag=uncle_grimmly_dialog] run function luigis_mansion:dialog/uncle_grimmly
 execute if entity @s[tag=close_pipe] run function luigis_mansion:dialog/close_pipe
-execute if entity @s[tag=return_mario] run function luigis_mansion:entities/e_gadd/return_mario
+execute if entity @s[tag=return_mario] as @a run function luigis_mansion:entities/e_gadd/return_mario
 execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:player/changed_mansion
 
 execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world

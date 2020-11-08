@@ -1,3 +1,2 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Duration:1000000,Tags:["this_entity","ghost_marker","ghost","ghost_guy","pink","spawn"],Rotation:[0.0f,90.0f]}
-scoreboard players set @e[tag=this_entity,limit=1] Health 2000
-tag @e[tag=this_entity,limit=1] remove this_entity
+function luigis_mansion:spawn_entities/new_ghost/ghost_guy/pink
+tag @e[distance=..0.1,tag=ghost_guy,limit=1] add spawn
