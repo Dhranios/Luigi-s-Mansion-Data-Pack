@@ -55,5 +55,5 @@ scoreboard players reset #hallway_jar_3
 scoreboard players reset #hallway_jar_4
 scoreboard players reset #hallway_jar_5
 scoreboard players reset #hallway_jar_6
-scoreboard players reset #hallway_lamp
+scoreboard players reset #hallway_lamp_4
 scoreboard players reset #hallway_painting

@@ -1,1 +1,0 @@
-execute unless entity @s if block 713 102 -28 minecraft:trapped_chest unless block 713 102 -28 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/mirror_room/search_chest

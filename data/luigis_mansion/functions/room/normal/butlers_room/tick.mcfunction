@@ -3,9 +3,7 @@ execute as @e[type=!minecraft:item_frame,x=705,y=102,z=37,dx=14,dy=6,dz=20] run 
 
 execute as @a[gamemode=!spectator,x=707,y=102,z=39,dx=10,dy=6,dz=16] run function luigis_mansion:room/normal/butlers_room/tick_per_player
 
-function #luigis_mansion:room/normal/interactions/butlers_room
-
-execute if score #butlers_room_hole Searched matches 1 run particle minecraft:dust 0.5 0.5 1 1 710 102 39 0.2 0.2 0.2 0 4
+function #luigis_mansion:room/normal/butlers_room/interactions/room
 
 function luigis_mansion:room/normal/butlers_room/ghosts
 

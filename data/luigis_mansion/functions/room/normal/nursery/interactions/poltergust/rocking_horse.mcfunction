@@ -1,0 +1,1 @@
+execute if entity @s[x=715.0,y=111,z=53.0,dx=2,dy=1,dz=2,tag=vacuum] unless score #nursery_rocking_horse Search matches 1 store success score #nursery_rocking_horse Search run scoreboard players add @e[tag=chauncey,type=minecraft:pig,scores={Dialog=1..49},limit=1] Dialog 1

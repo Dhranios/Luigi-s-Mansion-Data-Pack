@@ -5,7 +5,7 @@ tag @e[tag=ghost,scores={Room=29}] add hallway
 
 execute as @a[gamemode=!spectator,x=666,y=102,z=-40,dx=4,dy=15,dz=22] run function luigis_mansion:room/normal/main_stairs/tick_per_player
 
-function #luigis_mansion:room/normal/interactions/main_stairs
+function #luigis_mansion:room/normal/main_stairs/interactions/room
 
 function luigis_mansion:room/normal/main_stairs/ghosts
 

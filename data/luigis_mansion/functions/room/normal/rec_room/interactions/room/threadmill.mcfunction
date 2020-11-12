@@ -1,0 +1,6 @@
+execute if entity @a[x=659.5,y=103,z=-11.5,distance=..0.7,gamemode=!spectator,limit=1] unless score #rec_room_threadmill Search matches 1 run scoreboard players add #rec_room_threadmill Searching 1
+execute if entity @a[x=659.5,y=103,z=-11.5,distance=..0.7,gamemode=!spectator,limit=1] run scoreboard players set #rec_room_threadmill Search 1
+execute as @a[x=659.5,y=103,z=-11.5,distance=..0.7,gamemode=!spectator,limit=1] at @s run teleport @s ~ ~ ~-0.2
+execute unless score #rec_room_threadmill Search matches 1 run scoreboard players reset #rec_room_threadmill Searching
+scoreboard players reset #rec_room_threadmill Search
+execute if score #rec_room_threadmill Searching matches 60 run function luigis_mansion:room/normal/rec_room/search_threadmill

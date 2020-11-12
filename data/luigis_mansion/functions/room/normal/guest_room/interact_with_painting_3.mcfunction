@@ -1,7 +1,0 @@
-execute if entity @s[x=718.5,y=114,z=-30.5,distance=..0.7,tag=vacuum] unless score #guest_room_painting_3 Search matches 1 run scoreboard players add #guest_room_painting_3 Searching 1
-execute if entity @s[x=718.5,y=114,z=-30.5,distance=..0.7,tag=vacuum] run scoreboard players set #guest_room_painting_3 Search 1
-execute unless entity @s unless score #guest_room_painting_3 Search matches 1 run scoreboard players reset #guest_room_painting_3 Searching
-execute unless entity @s run scoreboard players reset #guest_room_painting_3 Search
-execute if block 713 112 -31 minecraft:redstone_lamp unless entity @s if score #guest_room_painting_3 Searching matches 20 run function luigis_mansion:room/normal/guest_room/search_painting_3_flipped
-execute unless block 713 112 -31 minecraft:redstone_lamp unless entity @s if score #guest_room_painting_3 Searching matches 20 run function luigis_mansion:room/normal/guest_room/search_painting_3
-execute if entity @s[x=718.5,y=114,z=-30.5,distance=..0.7,tag=gameboy_horror_scan] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.7"}]}

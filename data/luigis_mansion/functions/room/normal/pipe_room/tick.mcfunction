@@ -5,7 +5,7 @@ execute as @a[gamemode=!spectator,x=687,y=93,z=-13,dx=10,dy=6,dz=14] run functio
 execute if entity @a[advancements={luigis_mansion:technical={closed_pipe=true}},limit=1] run setblock 688 95 1 minecraft:lever[face=wall,facing=east,powered=true]
 execute if entity @a[advancements={luigis_mansion:technical={closed_pipe=false}},limit=1] if block 688 95 1 minecraft:lever[face=wall,facing=east,powered=true] positioned 688 95 1 run tag @p[gamemode=!spectator] add close_pipe
 
-function #luigis_mansion:room/normal/interactions/pipe_room
+function #luigis_mansion:room/normal/pipe_room/interactions/room
 
 function luigis_mansion:room/normal/pipe_room/ghosts
 

@@ -1,9 +1,0 @@
-{
-	"values": [
-		"luigis_mansion:room/normal/observatory/interact_with_chair",
-		"luigis_mansion:room/normal/observatory/interact_with_lamp",
-		"luigis_mansion:room/normal/observatory/interact_with_shot_moon",
-		"luigis_mansion:room/normal/observatory/interact_with_table",
-		"luigis_mansion:room/normal/observatory/interact_with_telescope"
-	]
-}

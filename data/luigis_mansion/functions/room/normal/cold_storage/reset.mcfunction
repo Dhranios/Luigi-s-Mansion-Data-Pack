@@ -9,9 +9,9 @@ setblock 705 93 0 minecraft:soul_campfire[lit=false]
 setblock 701 93 -4 minecraft:soul_campfire[lit=false]
 scoreboard players reset #cold_storage Ticking
 scoreboard players reset #cold_storage Wave
-scoreboard players reset #cold_storage_fire_1
-scoreboard players reset #cold_storage_fire_2
-scoreboard players reset #cold_storage_fire_3
+scoreboard players reset #cold_storage_campfire_1
+scoreboard players reset #cold_storage_campfire_2
+scoreboard players reset #cold_storage_campfire_3
 scoreboard players reset #cold_storage_barrel_1
 scoreboard players reset #cold_storage_barrel_2
 scoreboard players reset #cold_storage_crate_1
@@ -19,5 +19,5 @@ scoreboard players reset #cold_storage_crate_2
 scoreboard players reset #cold_storage_shelf_1
 scoreboard players reset #cold_storage_shelf_2
 scoreboard players reset #cold_storage_junk
-scoreboard players reset #cold_storage_campfire
+scoreboard players reset #cold_storage_fire
 scoreboard players reset #cold_storage_chest

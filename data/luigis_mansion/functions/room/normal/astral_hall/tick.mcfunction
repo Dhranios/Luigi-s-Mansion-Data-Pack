@@ -9,7 +9,7 @@ scoreboard players reset #temp Searched
 execute as @a[gamemode=!spectator,x=673,y=111,z=-29,dx=8,dy=6,dz=18] run function luigis_mansion:room/normal/astral_hall/tick_per_player
 execute as @a[x=677,y=111,z=-31,dx=0,dy=1,dz=0,advancements={luigis_mansion:mansion/astral_hall=false}] at @s run function luigis_mansion:room/normal/astral_hall/trick_door
 
-function #luigis_mansion:room/normal/interactions/astral_hall
+function #luigis_mansion:room/normal/astral_hall/interactions/room
 
 function luigis_mansion:room/normal/astral_hall/ghosts
 

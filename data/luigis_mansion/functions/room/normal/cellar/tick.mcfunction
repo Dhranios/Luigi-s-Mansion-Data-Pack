@@ -3,7 +3,7 @@ execute as @e[type=!minecraft:item_frame,x=705,y=93,z=-42,dx=14,dy=6,dz=21] run 
 
 execute as @a[gamemode=!spectator,x=707,y=93,z=-40,dx=10,dy=6,dz=17] run function luigis_mansion:room/normal/cellar/tick_per_player
 
-function #luigis_mansion:room/normal/interactions/cellar
+function #luigis_mansion:room/normal/cellar/interactions/room
 
 function luigis_mansion:room/normal/cellar/ghosts
 

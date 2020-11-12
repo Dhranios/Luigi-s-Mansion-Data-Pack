@@ -3,5 +3,3 @@ execute unless entity @s[advancements={luigis_mansion:mansion/hidden_room=true},
 title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.hidden_room"}
 tag @s add seen_room_name
 tag @s add seen_room_name_2
-
-execute if score #hidden_room_hole Searched matches 1 if entity @s[x=710.5,y=102,z=34.5,distance=..0.7] run function luigis_mansion:room/normal/hidden_room/go_through_hole

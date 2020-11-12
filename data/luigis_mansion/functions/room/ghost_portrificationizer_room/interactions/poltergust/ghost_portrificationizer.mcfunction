@@ -1,0 +1,1 @@
+execute if entity @s[x=773.5,y=78,z=20.5,distance=..0.7,tag=!vacuum] unless score #ghost_portrificationizer Search matches 1 store success score #ghost_portrificationizer Search run scoreboard players add #ghost_portrificationizer Searching 1

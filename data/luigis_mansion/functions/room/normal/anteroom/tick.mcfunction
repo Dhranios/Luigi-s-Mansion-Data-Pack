@@ -3,7 +3,7 @@ execute as @e[type=!minecraft:item_frame,x=671,y=111,z=-3,dx=12,dy=6,dz=21] run 
 
 execute as @a[gamemode=!spectator,x=673,y=111,z=-1,dx=8,dy=6,dz=17] run function luigis_mansion:room/normal/anteroom/tick_per_player
 
-function #luigis_mansion:room/normal/interactions/anteroom
+function #luigis_mansion:room/normal/anteroom/interactions/room
 
 function luigis_mansion:room/normal/anteroom/ghosts
 

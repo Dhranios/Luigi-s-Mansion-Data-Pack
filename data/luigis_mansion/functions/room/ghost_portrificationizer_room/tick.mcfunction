@@ -8,4 +8,4 @@ setblock 771 77 -1 minecraft:lever[face=wall,facing=east,powered=true]
 setblock 767 77 1 minecraft:lever[face=wall,facing=west,powered=true]
 setblock 767 77 -1 minecraft:lever[face=wall,facing=west,powered=true]
 
-function #luigis_mansion:room/interactions/ghost_portrificationizer_room
+function #luigis_mansion:room/ghost_portrificationizer_room/interactions/room

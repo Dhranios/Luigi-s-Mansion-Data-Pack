@@ -4,7 +4,7 @@ tag @e[tag=ghost,scores={Room=27}] add hallway
 
 execute as @a[gamemode=!spectator,x=647,y=93,z=-10,dx=2,dy=6,dz=10] run function luigis_mansion:room/normal/bottom_of_the_well/tick_per_player
 
-function #luigis_mansion:room/normal/interactions/bottom_of_the_well
+function #luigis_mansion:room/normal/bottom_of_the_well/interactions/room
 
 function luigis_mansion:room/normal/bottom_of_the_well/ghosts
 

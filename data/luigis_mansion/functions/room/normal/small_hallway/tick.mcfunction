@@ -8,7 +8,7 @@ execute as @e[tag=eternal_gold_coin,scores={Room=6}] run scoreboard players add 
 execute if score #temp Wave matches ..10 run advancement grant @a only luigis_mansion:mansion/small_hallway_money
 scoreboard players reset #temp Wave
 
-function #luigis_mansion:room/normal/interactions/small_hallway
+function #luigis_mansion:room/normal/small_hallway/interactions/room
 
 function luigis_mansion:room/normal/small_hallway/ghosts
 

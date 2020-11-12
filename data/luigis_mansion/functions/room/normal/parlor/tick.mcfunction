@@ -7,7 +7,7 @@ execute as @e[tag=eternal_gold_coin,scores={Room=2}] run scoreboard players add 
 execute if score #temp Wave matches ..14 if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] run advancement grant @a only luigis_mansion:mansion/parlor_money
 scoreboard players reset #temp Wave
 
-function #luigis_mansion:room/normal/interactions/parlor
+function #luigis_mansion:room/normal/parlor/interactions/room
 
 execute if block 684 113 9 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 684 113 9 run function luigis_mansion:blocks/purple_candles
 execute if block 684 113 6 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true,has_bottle_2=true] positioned 684 113 6 run function luigis_mansion:blocks/purple_candles

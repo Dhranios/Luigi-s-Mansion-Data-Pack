@@ -85,7 +85,7 @@ execute if entity @s[tag=sue_pea] run function luigis_mansion:entities/sue_pea
 execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:entities/vincent_van_gore
 execute if entity @s[tag=king_boo] run function luigis_mansion:entities/king_boo
 
-execute if entity @s[tag=fleeing,tag=!disappear,tag=!black_bogmire,tag=!boo,tag=!vacuumable,tag=!dialog] run function luigis_mansion:entities/ghost/flee
+execute if entity @s[tag=fleeing,tag=!vanish,tag=!disappear,tag=!black_bogmire,tag=!boo,tag=!vacuumable,tag=!dialog] run function luigis_mansion:entities/ghost/flee
 execute if entity @s[tag=boo] run function luigis_mansion:entities/boo
 tag @s[tag=in_vacuum] remove in_vacuum
 execute if entity @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear

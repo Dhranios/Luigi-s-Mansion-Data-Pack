@@ -11,7 +11,7 @@ execute as @a[gamemode=!spectator,x=666,y=102,z=-8,dx=38,dy=6,dz=4] unless entit
 execute as @a[gamemode=!spectator,x=666,y=102,z=-15,dx=4,dy=6,dz=38] unless entity @s[x=666,y=102,z=-8,dx=38,dy=6,dz=4] unless entity @s[x=700,y=102,z=-20,dx=4,dy=6,dz=56] run function luigis_mansion:room/normal/main_hallway/tick_per_player
 execute as @a[gamemode=!spectator,x=655,y=102,z=19,dx=15,dy=6,dz=4] unless entity @s[x=666,y=102,z=-15,dx=4,dy=6,dz=38] unless entity @s[x=666,y=102,z=-8,dx=38,dy=6,dz=4] unless entity @s[x=700,y=102,z=-20,dx=4,dy=6,dz=56] run function luigis_mansion:room/normal/main_hallway/tick_per_player
 
-function #luigis_mansion:room/normal/interactions/main_hallway
+function #luigis_mansion:room/normal/main_hallway/interactions/room
 
 function luigis_mansion:room/normal/main_hallway/ghosts
 

@@ -14,7 +14,7 @@ execute if entity @e[tag=ghost_guy,tag=!ghost_marker,scores={Room=58},limit=1] r
 execute if entity @e[tag=garbage_can_ghost,tag=!ghost_marker,scores={Room=58},limit=1] run data modify entity @e[x=689.5,y=121,z=-30.5,distance=..0.7,limit=1] Item.tag.map set value 82
 execute if entity @e[tag=purple_bomber,tag=!ghost_marker,scores={Room=58},limit=1] run data modify entity @e[x=690.5,y=121,z=-32.5,distance=..0.7,limit=1] Item.tag.map set value 88
 
-function #luigis_mansion:room/normal/interactions/artists_studio
+function #luigis_mansion:room/normal/artists_studio/interactions/room
 
 function luigis_mansion:room/normal/artists_studio/ghosts
 

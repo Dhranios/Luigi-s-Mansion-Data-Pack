@@ -22,6 +22,5 @@ execute at @s[scores={SpawnTime=80..}] unless block ~ ~-0.1 ~ #luigis_mansion:it
 tag @s[scores={SpawnTime=280}] add dead
 scoreboard players set @s[scores={SpawnTime=60}] SpawnTime 20
 scoreboard players remove @s Turn 1
-
-execute if entity @s[tag=!dead,tag=!hurt] positioned ~ ~-1 ~ if entity @a[gamemode=!spectator,distance=..1] run function luigis_mansion:entities/elemental_ghost/attack
-execute if entity @s[tag=!dead,tag=!hurt] if entity @a[gamemode=!spectator,distance=..1] run function luigis_mansion:entities/elemental_ghost/attack
+execute if entity @s[tag=!dead,tag=!hurt,scores={SpawnTime=21..}] positioned ~ ~-1 ~ if entity @a[gamemode=!spectator,distance=..1] run function luigis_mansion:entities/elemental_ghost/attack
+execute if entity @s[tag=!dead,tag=!hurt,scores={SpawnTime=21..}] if entity @a[gamemode=!spectator,distance=..1] run function luigis_mansion:entities/elemental_ghost/attack

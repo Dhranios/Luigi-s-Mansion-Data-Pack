@@ -3,7 +3,7 @@ execute as @e[type=!minecraft:item_frame,x=705,y=120,z=-41,dx=14,dy=6,dz=25] run
 
 execute as @a[gamemode=!spectator,x=707,y=120,z=-39,dx=10,dy=6,dz=21] run function luigis_mansion:room/normal/safari_room/tick_per_player
 
-function #luigis_mansion:room/normal/interactions/safari_room
+function #luigis_mansion:room/normal/safari_room/interactions/room
 
 function luigis_mansion:room/normal/safari_room/ghosts
 

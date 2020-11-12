@@ -3,7 +3,7 @@ execute as @e[type=!minecraft:item_frame,x=698,y=102,z=37,dx=8,dy=6,dz=20] run s
 
 execute as @a[gamemode=!spectator,x=700,y=102,z=39,dx=4,dy=6,dz=16] run function luigis_mansion:room/normal/laundry_room/tick_per_player
 
-function #luigis_mansion:room/normal/interactions/laundry_room
+function #luigis_mansion:room/normal/laundry_room/interactions/room
 
 function luigis_mansion:room/normal/laundry_room/ghosts
 

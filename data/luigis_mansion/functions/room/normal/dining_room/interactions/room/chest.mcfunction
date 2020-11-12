@@ -1,0 +1,1 @@
+execute if block 692 102 1 minecraft:trapped_chest unless block 692 102 1 minecraft:trapped_chest{LootTable:"luigis_mansion:search"} run function luigis_mansion:room/normal/dining_room/search_chest

@@ -7,7 +7,7 @@ execute as @a[gamemode=!spectator,x=669,y=111,z=-101,dx=12,dy=6,dz=58] unless en
 
 execute as @a[x=675.5,y=111,z=-37.5,distance=..0.7,y_rotation=135..-135,advancements={luigis_mansion:technical={observatory_destroyed=false}},limit=1] unless entity @a[tag=observatory_dialog,limit=1] run tag @s add observatory_dialog
 
-function #luigis_mansion:room/normal/interactions/observatory
+function #luigis_mansion:room/normal/observatory/interactions/room
 
 function luigis_mansion:room/normal/observatory/ghosts
 

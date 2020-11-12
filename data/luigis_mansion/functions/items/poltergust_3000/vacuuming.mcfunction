@@ -18,4 +18,5 @@ tag @s remove catch_portrait_ghost
 tag @s remove catch_ghost
 tag @s remove me
 tag @s add vacuuming
+tag @s add vacuuming_ghost
 kill @e[tag=interact,limit=1]

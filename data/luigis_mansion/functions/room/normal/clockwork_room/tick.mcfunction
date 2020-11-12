@@ -5,7 +5,7 @@ execute as @a[gamemode=!spectator,x=684,y=120,z=-8,dx=13,dy=7,dz=31] run functio
 scoreboard players reset @a[gamemode=!spectator,x=698.5,y=120,z=-3.5,distance=..0.7] Time
 scoreboard players reset @a[gamemode=!spectator,x=685,y=128,z=7,dx=1,dy=1,dz=1] Time
 
-function #luigis_mansion:room/normal/interactions/clockwork_room
+function #luigis_mansion:room/normal/clockwork_room/interactions/room
 
 function luigis_mansion:room/normal/clockwork_room/ghosts
 

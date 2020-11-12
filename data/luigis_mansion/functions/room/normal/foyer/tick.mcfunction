@@ -16,7 +16,7 @@ execute as @e[tag=eternal_gold_coin,scores={Room=1}] run scoreboard players add 
 execute if score #temp Wave matches ..7 if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] run advancement grant @a only luigis_mansion:mansion/foyer_money
 scoreboard players reset #temp Wave
 
-function #luigis_mansion:room/normal/interactions/foyer
+function #luigis_mansion:room/normal/foyer/interactions/room
 
 function luigis_mansion:room/normal/foyer/ghosts
 
