@@ -1,1 +1,0 @@
-execute if entity @s[x=658.0,y=103,z=-24.0,dx=0,dy=5,dz=0,tag=dust] rotated ~ 0 positioned ^ ^ ^2 as @e[tag=biff_atlas,distance=..1] positioned as @s run function luigis_mansion:entities/biff_atlas/hit

@@ -27,6 +27,7 @@ execute if entity @s[tag=hidden_boo] run function luigis_mansion:entities/hidden
 execute if entity @s[tag=elemental_ghost] run function luigis_mansion:entities/elemental_ghost
 execute if entity @s[tag=bannana_peel] run function luigis_mansion:entities/bannana_peel
 execute if entity @s[tag=shrunk_player] run function luigis_mansion:entities/shrunk_player
+execute if entity @s[tag=punching_bag] run function luigis_mansion:entities/punching_bag
 execute if entity @s[tag=portrificationizing_ghost] run function luigis_mansion:entities/portrificationizing_ghost
 execute if entity @s[tag=money] run function luigis_mansion:entities/money
 execute unless entity @s[tag=!poison_mushroom,tag=!heart,tag=!gold_coin,tag=!bill,tag=!gold_bar,tag=!blue_sapphire,tag=!green_emerald,tag=!red_ruby,tag=!small_pearl,tag=!medium_pearl,tag=!big_pearl] run scoreboard players add @s SpawnTime 1

@@ -12,12 +12,12 @@ execute if entity @s[scores={Time=81}] facing entity @p[gamemode=!spectator] fee
 execute at @s[scores={Time=81}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[scores={Time=81}] positioned ^ ^ ^0.7 if entity @a[gamemode=!spectator,distance=..0.7,limit=1] at @s run function luigis_mansion:entities/biff_atlas/attack
 execute if entity @s[scores={Time=82..91}] run teleport @s ^ ^ ^0.2
+scoreboard players set @s[scores={Time=..160},tag=hit,tag=ko] Time 160
+tag @s[scores={Time=161},tag=!ko] add ko
 execute if entity @s[scores={Time=161}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={Time=161}] run function luigis_mansion:entities/ghost/move
 execute if entity @s[scores={Time=161}] run function luigis_mansion:entities/biff_atlas/attack
 execute if entity @s[scores={Time=162..171}] run teleport @s ^ ^ ^0.2
-scoreboard players set @s[scores={Time=..160},tag=hit,tag=ko] Time 160
-tag @s[scores={Time=161},tag=!ko] add ko
 scoreboard players set @s[scores={Time=200}] VulnerableTime 80
 tag @s remove hit
-scoreboard players set @s[scores={Time=290}] Time 170
+scoreboard players set @s[scores={Time=290}] Time 160

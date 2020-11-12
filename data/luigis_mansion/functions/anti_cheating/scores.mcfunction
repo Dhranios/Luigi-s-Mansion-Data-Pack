@@ -1,3 +1,4 @@
+scoreboard objectives add Angle dummy
 scoreboard objectives add BannanaDropTime dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
@@ -45,6 +46,7 @@ scoreboard objectives add LastKeys dummy
 scoreboard objectives add LastTotalDamage dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
+scoreboard objectives add PunchingBag dummy
 scoreboard objectives add MelodyChoice trigger
 scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
