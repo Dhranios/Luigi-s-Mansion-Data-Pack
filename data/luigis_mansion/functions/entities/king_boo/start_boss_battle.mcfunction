@@ -34,4 +34,4 @@ setblock 1089 42 -19959 minecraft:redstone_block
 spreadplayers 1089 -19947 0 1 true @e[tag=load_chunk,limit=1]
 setblock 1089 41 -19947 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:king_boo_battle_pillar",posX:-1,posY:0,posZ:-1}
 setblock 1089 42 -19947 minecraft:redstone_block
-execute positioned 1053 41 -19955 run function luigis_mansion:spawn_entities/portrait_ghost/king_boo/battle
+execute positioned 1053 85 -19955 run function luigis_mansion:spawn_entities/bowser

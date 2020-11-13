@@ -19,3 +19,4 @@ execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!mon
 tag @s[tag=ghost,scores={VulnerableTime=2..},tag=!dead,tag=!vanish,tag=!appear] add hurt
 tag @s[tag=ghost,tag=hurt,tag=!vanish] add in_vacuum
 tag @s[tag=boo,tag=!dead,tag=!hurt] add hurt
+tag @s[tag=king_boo,tag=battle,tag=!dead,tag=!hurt] add hurt

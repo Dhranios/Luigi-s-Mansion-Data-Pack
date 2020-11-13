@@ -43,8 +43,8 @@ execute unless score @s Time matches 1.. run tag @s[tag=vanish] add disappear
 scoreboard players reset @s[tag=vanish] HurtTime
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
 execute unless entity @s[tag=portrait_ghost,scores={StunTime=1..}] run scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..},tag=!hurt] VulnerableTime 1
-execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=fleeing,tag=!dying,tag=!boo,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
-execute if entity @s[tag=!black_bogmire,tag=hurt,tag=!disappear,tag=!dying,tag=!boo,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
+execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=fleeing,tag=!dying,tag=!boo,tag=!king_boo,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
+execute if entity @s[tag=!black_bogmire,tag=hurt,tag=!disappear,tag=!dying,tag=!boo,tag=!king_boo,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
 tag @s[tag=!element_hurt,tag=last_element_hurt] remove last_element_hurt
 execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=element_hurt,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
 execute if entity @s[tag=!black_bogmire,tag=!hurt,tag=!disappear,tag=!element_hurt,tag=freeze,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt_element
@@ -85,7 +85,7 @@ execute if entity @s[tag=sue_pea] run function luigis_mansion:entities/sue_pea
 execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:entities/vincent_van_gore
 execute if entity @s[tag=king_boo] run function luigis_mansion:entities/king_boo
 
-execute if entity @s[tag=fleeing,tag=!vanish,tag=!disappear,tag=!black_bogmire,tag=!boo,tag=!vacuumable,tag=!dialog] run function luigis_mansion:entities/ghost/flee
+execute if entity @s[tag=fleeing,tag=!vanish,tag=!disappear,tag=!black_bogmire,tag=!boo,tag=!king_boo,tag=!vacuumable,tag=!dialog] run function luigis_mansion:entities/ghost/flee
 execute if entity @s[tag=boo] run function luigis_mansion:entities/boo
 tag @s[tag=in_vacuum] remove in_vacuum
 execute if entity @s[tag=!portrait_ghost,tag=disappear] run function luigis_mansion:entities/ghost/disappear

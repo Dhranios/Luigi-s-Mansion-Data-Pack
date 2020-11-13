@@ -6,6 +6,9 @@ execute if entity @s[tag=dying,scores={HurtTime=1}] at @p[gamemode=!spectator] r
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/king_boo
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
+execute if entity @s[tag=dead] run tag @e[tag=bowser] add dead
+execute if entity @s[tag=dead] run tag @e[tag=bowser_body] add dead
+execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @p run function luigis_mansion:items/red_diamond
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @a run function luigis_mansion:entities/ghost/boss_damage
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run scoreboard players operation #king_boo OneGoHealth = #temp Damage
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run scoreboard players set #king_boo LastHealth 0
@@ -24,11 +27,7 @@ scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/king_boo/collide
 
-execute at @s[tag=laugh] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[tag=warp] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt,tag=!warp,tag=!secret_altar,tag=!cutscene] run teleport @s ~ ~ ~ ~-2 ~
-execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt,tag=!warp,tag=!secret_altar,tag=!cutscene] run function luigis_mansion:entities/king_boo/move_forward
-execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entities/king_boo/laugh
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/king_boo/taunt
 execute if entity @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/boo/hurt
@@ -42,3 +41,6 @@ tag @s remove fleeing
 execute if entity @s[tag=warp] run function luigis_mansion:dialog/king_boo_warp
 execute if entity @s[tag=secret_altar] run function luigis_mansion:entities/king_boo/secret_altar
 execute if entity @s[tag=cutscene] run function luigis_mansion:entities/king_boo/cutscene
+execute if entity @s[tag=battle] run function luigis_mansion:entities/king_boo/battle
+tag @s[tag=vanish] add dead
+scoreboard players operation #king_boo LastHealth = @s[tag=vanish] Health
