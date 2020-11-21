@@ -1,0 +1,1 @@
+scoreboard players set #main_stairs Ticking 1

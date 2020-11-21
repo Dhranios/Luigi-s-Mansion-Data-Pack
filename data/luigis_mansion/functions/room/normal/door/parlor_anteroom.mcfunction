@@ -3,7 +3,7 @@ execute if block 682 111 1 minecraft:warped_door[open=true] if block 683 111 1 m
 execute if block 683 111 1 minecraft:warped_door[open=true] if block 682 111 1 minecraft:warped_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 execute if block 682 111 1 minecraft:warped_door[open=true] if block 683 111 1 minecraft:warped_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=683.0,y=111,z=1.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"anteroom"}}}}] run function luigis_mansion:room/normal/anteroom/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=683.0,y=111,z=1.5,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"anteroom"}}}}] run function luigis_mansion:room/normal/anteroom/unlock_door
 execute if block 683 111 1 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/anteroom_key=false},limit=1] positioned 683 111 1 run function luigis_mansion:blocks/closed_door
 execute if entity @a[advancements={luigis_mansion:mansion/anteroom_key=false},limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=683.0,y=111,z=1.5] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0

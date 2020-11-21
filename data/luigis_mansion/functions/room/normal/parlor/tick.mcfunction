@@ -1,4 +1,4 @@
-execute unless score #parlor Ticking matches 1 run function luigis_mansion:room/normal/parlor/load
+execute unless score #parlor Ticking matches 1 run function #luigis_mansion:room/normal/parlor/load
 execute as @e[type=!minecraft:item_frame,x=682,y=111,z=-3,dx=17,dy=6,dz=21] run scoreboard players set @s Room 2
 
 execute as @a[gamemode=!spectator,x=684,y=111,z=-1,dx=13,dy=6,dz=17] run function luigis_mansion:room/normal/parlor/tick_per_player

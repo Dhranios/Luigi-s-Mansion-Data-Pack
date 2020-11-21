@@ -1,5 +1,4 @@
-execute if block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore run teleport @s ^ ^ ^0.05
-execute if block ^ ^ ^0.6 minecraft:barrier run teleport @s ^ ^ ^0.05
+teleport @s ^ ^ ^0.1
 scoreboard players remove #temp Move 1
 scoreboard players add @s Dialog 1
 execute rotated ~ 0 if block ^ ^ ^0.6 minecraft:white_wool run tag @s add collision

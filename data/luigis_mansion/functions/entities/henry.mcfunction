@@ -2,8 +2,10 @@ execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/henry
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
-execute if entity @s[tag=dead,tag=dying] run scoreboard players set #henry LastHealth 0
-execute if entity @s[tag=disappear] run scoreboard players operation #henry LastHealth = @s Health
+execute if entity @s[tag=dead] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_health int 1 run scoreboard players set @s Health 0
+execute if entity @s[tag=dead] unless entity @e[tag=orville,limit=1,tag=!dead] run advancement grant @a only luigis_mansion:portrait_ghosts/henry_and_orville
+execute if entity @s[tag=disappear] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_health int 1 run scoreboard players get @s Health
+
 tag @s[tag=remove_hide_and_seek] add dead
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.henry.hurt hostile @a ~ ~ ~ 1

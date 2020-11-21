@@ -5,37 +5,10 @@ tag @e[tag=bogmire] add dead
 tag @e[tag=boolossus] add dead
 tag @e[tag=king_boo] add dead
 tag @e[tag=bowser] add dead
+tag @e[tag=bowser_body] add dead
 gamerule announceAdvancements false
 execute as @a run function luigis_mansion:other/load_data/reset_mansion_data
 gamerule announceAdvancements true
-scoreboard players reset #neville
-scoreboard players reset #lydia
-scoreboard players reset #chauncey
-scoreboard players reset #floating_whirlindas
-scoreboard players reset #shivers
-scoreboard players reset #melody_pianissima
-scoreboard players reset #mr_luggs
-scoreboard players reset #spooky
-scoreboard players reset #bogmire
-scoreboard players reset #biff_atlas
-scoreboard players reset #miss_petunia
-scoreboard players reset #nana
-scoreboard players reset #slim_bankshot
-scoreboard players reset #henry
-scoreboard players reset #orville
-scoreboard players reset #henry_and_orville
-scoreboard players reset #madame_clairvoya
-scoreboard players reset #boolossus
-scoreboard players reset #uncle_grimmly
-scoreboard players reset #green_clockwork_soldier
-scoreboard players reset #blue_clockwork_soldier
-scoreboard players reset #pink_clockwork_soldier
-scoreboard players reset #clockwork_soldiers
-scoreboard players reset #jarvis
-scoreboard players reset #sir_weston
-scoreboard players reset #sue_pea
-scoreboard players reset #vincent_van_gore
-scoreboard players reset #king_boo
 scoreboard players reset #bamboo
 scoreboard players reset #bootha
 scoreboard players reset #gameboo_advance
@@ -71,16 +44,4 @@ scoreboard players reset #boolderdash
 scoreboard players reset #boolivia
 scoreboard players reset #boonita
 scoreboard players reset #bootique
-scoreboard players reset #gold_coin
-scoreboard players reset #bill
-scoreboard players reset #gold_bar
-scoreboard players reset #blue_sapphire
-scoreboard players reset #green_emerald
-scoreboard players reset #red_ruby
-scoreboard players reset #red_diamond
-scoreboard players reset #blue_diamond
-scoreboard players reset #gold_diamond
-scoreboard players reset #small_pearl
-scoreboard players reset #medium_pearl
-scoreboard players reset #big_pearl
-scoreboard players reset #total GhostCaught
+data modify storage luigis_mansion:data current_state merge value {current_data:{dead_players:[],portrait_ghosts:{neville:{health:-1,one_go_health:-1},lydia:{health:-1,one_go_health:-1},chauncey:{health:-1,one_go_health:-1},floating_whirlindas:{health:-1,one_go_health:-1},shivers:{health:-1,one_go_health:-1},melody_pianissima:{health:-1,one_go_health:-1},mr_luggs:{health:-1,one_go_health:-1},spooky:{health:-1,one_go_health:-1},bogmire:{health:-1,one_go_health:-1},biff_atlas:{health:-1,one_go_health:-1},miss_petunia:{health:-1,one_go_health:-1},nana:{health:-1,one_go_health:-1},slim_bankshot:{health:-1,one_go_health:-1},henry_and_orville:{henry_health:-1,orville_health:-1,one_go_health:-1},madame_clairvoya:{health:-1,one_go_health:-1},boolossus:{health:-1,one_go_health:-1},uncle_grimmly:{health:-1,one_go_health:-1},clockwork_soldiers:{pink_health:-1,blue_health:-1,green_health:-1,one_go_health:-1},jarvis:{health:-1,one_go_health:-1},sir_weston:{health:-1,one_go_health:-1},sue_pea:{health:-1,one_go_health:-1},vincent_van_gore:{health:-1,one_go_health:-1},king_boo:{health:-1,one_go_health:-1}},money:{gold_coin:0,bill:0,gold_bar:0,blue_sapphire:0,green_emerald:0,red_ruby:0,blue_diamond:0,red_diamond:0,gold_diamond:0,small_pearl:0,medium_pearl:0,big_pearl:0}}}

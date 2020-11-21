@@ -1,5 +1,4 @@
-setblock 668 115 31 minecraft:stone_button[face=ceiling,powered=true]
-setblock 668 111 28 minecraft:trapped_chest[facing=south,type=single]{LootTable:"luigis_mansion:search"}
+function #luigis_mansion:room/normal/washroom_2/turn_lights/on
 advancement grant @a only luigis_mansion:mansion/washroom_2
 execute if entity @a[advancements={luigis_mansion:technical={released_boos_talk=true}},scores={Boos=..49},limit=1] run function luigis_mansion:room/normal/washroom_2/load_boos
 execute as @e[scores={Room=32},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}

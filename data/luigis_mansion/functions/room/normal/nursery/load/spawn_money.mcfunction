@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:mansion/nursery_money=false},limit=1] run function luigis_mansion:room/normal/nursery/money

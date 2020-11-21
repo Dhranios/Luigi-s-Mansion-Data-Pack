@@ -1,0 +1,2 @@
+function luigis_mansion:room/hidden/foyer/remove_blockade
+advancement grant @a only luigis_mansion:technical cleared_area_2_blockade

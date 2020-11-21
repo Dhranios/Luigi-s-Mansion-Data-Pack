@@ -2,7 +2,6 @@ execute if entity @s[tag=dying,tag=normal_death] run function luigis_mansion:ani
 execute if entity @s[tag=dying,tag=hurt] run function luigis_mansion:animations/boo/death
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.king_boo.vacuumed hostile @a ~ ~ ~ 1
-execute if entity @s[tag=dying,scores={HurtTime=1}] at @p[gamemode=!spectator] run summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:24,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.red_diamond"}'},luigis_mansion:{id:"luigis_mansion:red_diamond"}}},Age:5400s,Tags:["red_diamond"]}
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/king_boo
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
@@ -10,12 +9,14 @@ execute if entity @s[tag=dead] run tag @e[tag=bowser] add dead
 execute if entity @s[tag=dead] run tag @e[tag=bowser_body] add dead
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @p run function luigis_mansion:items/red_diamond
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @a run function luigis_mansion:entities/ghost/boss_damage
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run scoreboard players operation #king_boo OneGoHealth = #temp Damage
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run scoreboard players set #king_boo LastHealth 0
+execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.one_go_health int 1 run scoreboard players get #temp Damage
+execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players set @s Health 0
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run advancement grant @a only luigis_mansion:portrait_ghosts/king_boo
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run scoreboard players reset #temp Damage
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run advancement grant @a only luigis_mansion:mansion/secret_altar
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @a run function luigis_mansion:entities/king_boo/return
+execute if entity @s[tag=disappear,tag=!warp,tag=!secret_altar] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players get @s Health
+
 execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying] run function luigis_mansion:entities/king_boo/hurt
 execute if entity @s[tag=hurt,tag=!dying] run function luigis_mansion:entities/king_boo/hurt
 execute if entity @s[tag=fleeing] run function luigis_mansion:entities/king_boo/flee
@@ -43,4 +44,4 @@ execute if entity @s[tag=secret_altar] run function luigis_mansion:entities/king
 execute if entity @s[tag=cutscene] run function luigis_mansion:entities/king_boo/cutscene
 execute if entity @s[tag=battle] run function luigis_mansion:entities/king_boo/battle
 tag @s[tag=vanish] add dead
-scoreboard players operation #king_boo LastHealth = @s[tag=vanish] Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players get @s Health

@@ -34,7 +34,7 @@ execute if entity @s[tag=!fleeing,tag=laugh] run function luigis_mansion:entitie
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/boo/taunt
 execute if entity @s[tag=!dead] run function luigis_mansion:entities/boo/direction
 execute if entity @s[tag=!dead] run function luigis_mansion:entities/boo/warp
-execute if entity @s[tag=turn_to_marker] run function luigis_mansion:entities/boo/warp/all
+execute if entity @s[tag=remove_from_existence] run function luigis_mansion:entities/boo/warp/all
 execute if entity @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 tag @s remove wall
 tag @s[tag=!up,tag=!down,tag=!left,tag=!right] add can_attack

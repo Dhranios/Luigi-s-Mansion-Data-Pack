@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:blue_banner"
+            "item": "minecraft:cyan_banner"
         },
         "show_toast": false,
         "title": {

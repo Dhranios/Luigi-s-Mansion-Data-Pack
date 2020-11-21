@@ -1,6 +1,4 @@
-setblock 648 99 -18 minecraft:stone_button[face=floor,powered=true]
-setblock 641 99 -13 minecraft:stone_button[face=floor,powered=true]
-setblock 641 99 -23 minecraft:stone_button[face=floor,powered=true]
+function #luigis_mansion:room/normal/secret_altar/turn_lights/on
 #advancement grant @a only luigis_mansion:mansion/secret_altar
 execute as @e[scores={Room=59},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
 execute as @e[scores={Room=59},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}

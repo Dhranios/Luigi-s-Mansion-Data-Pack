@@ -30,6 +30,7 @@ execute if entity @s[tag=shrunk_player] run function luigis_mansion:entities/shr
 execute if entity @s[tag=punching_bag] run function luigis_mansion:entities/punching_bag
 execute if entity @s[tag=portrificationizing_ghost] run function luigis_mansion:entities/portrificationizing_ghost
 execute if entity @s[tag=money] run function luigis_mansion:entities/money
+execute if entity @s[tag=mario] run function luigis_mansion:entities/mario
 execute if entity @s[tag=bowser] run function luigis_mansion:entities/bowser
 execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burning_floor
 execute unless entity @s[tag=!poison_mushroom,tag=!heart,tag=!gold_coin,tag=!bill,tag=!gold_bar,tag=!blue_sapphire,tag=!green_emerald,tag=!red_ruby,tag=!small_pearl,tag=!medium_pearl,tag=!big_pearl] run scoreboard players add @s SpawnTime 1
@@ -40,6 +41,9 @@ data merge entity @s[type=minecraft:item] {Air:1}
 execute if entity @s[type=minecraft:lightning_bolt] run kill @e[type=minecraft:lightning_bolt,distance=0.1..]
 
 execute unless entity @s[scores={StunTime=1..}] run scoreboard players remove @s[scores={Sound=1..}] Sound 1
+tag @s[tag=remove_from_existence] add dead
+data merge entity @s[tag=remove_from_existence] {Health:0.0f,DeathTime:19s}
+teleport @s[tag=remove_from_existence] ~ ~-100 ~
 scoreboard players reset @s[tag=dead]
 tag @s[tag=dead] add can_die
 scoreboard players reset @s Steps

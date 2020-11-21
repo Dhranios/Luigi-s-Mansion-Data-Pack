@@ -6,6 +6,7 @@
         },
         "show_toast": false,
         "hidden": true,
+        "frame": "goal",
         "title": {
             "translate": "luigis_mansion:advancements.lab.cleared_mansion"
         },

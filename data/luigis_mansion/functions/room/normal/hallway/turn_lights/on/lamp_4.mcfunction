@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_1=true},tag=!blackout,limit=1] run setblock 702 124 -35 minecraft:stone_button[face=floor,powered=true]

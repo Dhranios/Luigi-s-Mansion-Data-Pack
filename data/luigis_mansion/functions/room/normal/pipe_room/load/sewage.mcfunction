@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:technical={froze_sewage=true}},limit=1] run function luigis_mansion:room/normal/pipe_room/freeze_sewage

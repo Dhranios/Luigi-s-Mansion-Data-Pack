@@ -1,14 +1,14 @@
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.floating_whirlindas.one_go_health
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.floating_whirlindas.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/floating_whirlindas
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
-execute if entity @s[tag=dead] run teleport @e[tag=floating_whirlindas_female,limit=1] ~ -100 ~
-execute if entity @s[tag=dead] run tag @e[tag=floating_whirlindas_female,limit=1] add dead
-execute if entity @s[tag=dead] unless score #floating_whirlindas OneGoHealth matches 0.. run scoreboard players operation #floating_whirlindas OneGoHealth = @s Health
-execute if entity @s[tag=dead] run scoreboard players set #floating_whirlindas LastHealth 0
+execute if entity @s[tag=dead] unless score #temp Time matches 0.. store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.floating_whirlindas.one_go_health int 1 run scoreboard players set @s Health 0
+execute if entity @s[tag=dead] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.floating_whirlindas.health int 1 run scoreboard players set @s Health 0
 execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:portrait_ghosts/floating_whirlindas
-execute if entity @s[tag=disappear] unless score #floating_whirlindas OneGoHealth matches 0.. run scoreboard players operation #floating_whirlindas OneGoHealth = @s Health
-execute if entity @s[tag=disappear] run scoreboard players operation #floating_whirlindas LastHealth = @s Health
+execute if entity @s[tag=disappear] unless score #temp Time matches 0.. store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.floating_whirlindas.one_go_health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=disappear] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.floating_whirlindas.health int 1 run scoreboard players get @s Health
+scoreboard players reset #temp Time
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.floating_whirlindas.hurt hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40

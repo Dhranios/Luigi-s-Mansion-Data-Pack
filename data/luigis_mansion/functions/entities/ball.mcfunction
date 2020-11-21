@@ -12,7 +12,6 @@ scoreboard players remove @s[tag=spike_ball] Move 1
 scoreboard players set @s[tag=in_vacuum,tag=spike_ball] Move 0
 tag @s[tag=collision,tag=boo] add dead
 tag @s[tag=collision,tag=spike_ball] add explode
-tag @s[tag=boo,tag=turn_to_marker] add dead
 tag @s[tag=collision] remove spit
 tag @s[tag=collision] remove collision
 execute if entity @s[tag=in_vacuum] at @p[gamemode=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~

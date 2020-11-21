@@ -1,0 +1,5 @@
+execute positioned 688 104 41 unless score #kitchen Wave matches 1.. unless entity @e[distance=..0.7,tag=haunted_frying_pan,limit=1] run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_frying_pan
+execute positioned 688 103.5 42 unless score #kitchen Wave matches 1.. unless entity @e[distance=..0.7,tag=haunted_frying_pan,limit=1] run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_frying_pan
+execute positioned 687 107 49 unless score #kitchen Wave matches 1.. unless entity @e[distance=..0.7,tag=haunted_frying_pan,limit=1] run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_frying_pan
+execute positioned 687 106 50 unless score #kitchen Wave matches 1.. unless entity @e[distance=..0.7,tag=haunted_frying_pan,limit=1] run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_frying_pan
+execute positioned 687 107 51 unless score #kitchen Wave matches 1.. unless entity @e[distance=..0.7,tag=haunted_frying_pan,limit=1] run function luigis_mansion:spawn_entities/vacuumable/haunted_object/haunted_frying_pan

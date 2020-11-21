@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:mansion/courtyard=true},tag=!blackout,limit=1] run function luigis_mansion:room/normal/courtyard/turn_on_lights

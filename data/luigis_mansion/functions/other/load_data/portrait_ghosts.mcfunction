@@ -19,10 +19,10 @@ execute if entity @a[advancements={luigis_mansion:portrait_ghosts/shivers=true}]
 execute if entity @a[advancements={luigis_mansion:portrait_ghosts/shivers/bronze=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/shivers/bronze
 execute if entity @a[advancements={luigis_mansion:portrait_ghosts/shivers/silver=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/shivers/silver
 execute if entity @a[advancements={luigis_mansion:portrait_ghosts/shivers/gold=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/shivers/gold
-execute if entity @a[advancements={luigis_mansion:portrait_ghosts/melody_panissima=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_panissima
-execute if entity @a[advancements={luigis_mansion:portrait_ghosts/melody_panissima/bronze=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_panissima/bronze
-execute if entity @a[advancements={luigis_mansion:portrait_ghosts/melody_panissima/silver=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_panissima/silver
-execute if entity @a[advancements={luigis_mansion:portrait_ghosts/melody_panissima/gold=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_panissima/gold
+execute if entity @a[advancements={luigis_mansion:portrait_ghosts/melody_pianissima=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_panissima
+execute if entity @a[advancements={luigis_mansion:portrait_ghosts/melody_pianissima/bronze=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_pianissima/bronze
+execute if entity @a[advancements={luigis_mansion:portrait_ghosts/melody_pianissima/silver=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_pianissima/silver
+execute if entity @a[advancements={luigis_mansion:portrait_ghosts/melody_pianissima/gold=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/melody_pianissima/gold
 execute if entity @a[advancements={luigis_mansion:portrait_ghosts/mr_luggs=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/mr_luggs
 execute if entity @a[advancements={luigis_mansion:portrait_ghosts/mr_luggs/bronze=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/mr_luggs/bronze
 execute if entity @a[advancements={luigis_mansion:portrait_ghosts/mr_luggs/silver=true}] run advancement grant @a only luigis_mansion:portrait_ghosts/mr_luggs/silver

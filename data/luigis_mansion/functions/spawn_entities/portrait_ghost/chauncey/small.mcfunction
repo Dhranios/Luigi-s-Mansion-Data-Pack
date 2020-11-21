@@ -4,9 +4,11 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
-execute unless score #chauncey LastHealth matches 1.. if score #extra_health Selected matches 0 run scoreboard players set #chauncey LastHealth 10000
-execute unless score #chauncey LastHealth matches 1.. if score #extra_health Selected matches 1 run scoreboard players set #chauncey LastHealth 15000
-scoreboard players operation @e[tag=this_entity,limit=1] Health = #chauncey LastHealth
+execute store result score #temp LastHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.health
+execute if score #temp LastHealth matches -1 if score #extra_health Selected matches 0 store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.health int 1 run scoreboard players set #temp LastHealth 10000
+execute if score #temp LastHealth matches -1 if score #extra_health Selected matches 1 store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.health int 1 run scoreboard players set #temp LastHealth 15000
+scoreboard players operation @e[tag=this_entity,limit=1] Health = #temp LastHealth
+scoreboard players reset #temp LastHealth
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevHealth = @s Health
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 7
 scoreboard players set @e[tag=this_entity,limit=1] Move 1

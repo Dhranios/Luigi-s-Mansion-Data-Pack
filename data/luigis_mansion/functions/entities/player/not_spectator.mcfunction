@@ -32,6 +32,8 @@ scoreboard players remove @s[scores={Pull=1..}] Pull 1
 tag @s remove pulled
 
 execute if entity @s[scores={Health=..0}] run function luigis_mansion:entities/player/death
+execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
+tag @s[scores={Health=1..}] remove already_added_to_list
 
 give @s[tag=blackout,nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] minecraft:diamond_pickaxe{AttributeModifiers:[],HideFlags:63,Unbreakable:1b,Damage:5,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poltergust_3000"}',Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']},luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}
 execute if entity @s[tag=blackout] run kill @e[distance=..3,type=minecraft:item,nbt={Item:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}}]

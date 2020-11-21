@@ -1,0 +1,32 @@
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.0 111 8.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 715.0 111 8.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.0 111 8.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.0 111 9.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.0 111 7.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 715.0 111 9.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.0 111 9.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 715.0 111 7.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.0 111 7.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.5 111 8.5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.5 111 8.5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.5 111 7.5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.5 111 7.5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.5 111 8.5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.5 111 7.5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.0 111 8.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 715.0 111 8.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.0 111 8.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.0 111 9.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.0 111 7.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 715.0 111 9.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.0 111 9.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 715.0 111 7.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.0 111 7.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.5 111 8.5 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.5 111 8.5 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.5 111 7.5 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.5 111 7.5 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 714.5 111 8.5 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=false},limit=1] positioned 713.5 111 7.5 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/foyer_chandelier=true},limit=1] run tag @e[tag=selected] add nothing
+advancement grant @a only luigis_mansion:mansion/foyer_chandelier

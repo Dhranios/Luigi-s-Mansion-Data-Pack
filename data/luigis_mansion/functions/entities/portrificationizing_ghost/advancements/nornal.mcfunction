@@ -1,0 +1,9 @@
+execute if entity @s[tag=chauncey] run advancement grant @a through luigis_mansion:mansion/small_hallway
+execute if entity @s[tag=bogmire] run advancement grant @a through luigis_mansion:mansion/main_hallway
+execute if entity @s[tag=bogmire] run advancement grant @a through luigis_mansion:mansion/basement_stairs
+execute if entity @s[tag=boolossus] run advancement grant @a through luigis_mansion:mansion/hallway
+execute if entity @s[tag=boolossus] run advancement grant @a through luigis_mansion:mansion/main_stairs
+execute if entity @s[tag=king_boo] run advancement grant @a through luigis_mansion:mansion/attic_hallway_1
+execute if entity @s[tag=king_boo] run advancement grant @a through luigis_mansion:mansion/attic_hallway_2
+execute if entity @s[tag=king_boo] run advancement grant @a through luigis_mansion:mansion/basement_hallway
+execute if entity @s[tag=king_boo] run advancement grant @a through luigis_mansion:mansion/curved_hallway

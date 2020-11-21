@@ -1,4 +1,4 @@
-setblock 702 117 37 minecraft:stone_button[face=floor,powered=true]
+function #luigis_mansion:room/normal/small_hallway/turn_lights/on
 advancement grant @a only luigis_mansion:mansion/small_hallway
 execute as @e[scores={Room=6},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
 execute as @e[scores={Room=6},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}

@@ -13,4 +13,5 @@ execute unless entity @s[scores={Angle=-1000..1000}] at @s positioned ^ ^-4.4 ^ 
 execute unless entity @s[scores={Angle=-1000..1000}] at @s positioned ^ ^-5.4 ^ positioned ~-0.5 ~ ~-0.5 run function luigis_mansion:entities/punching_bag/hit
 execute if entity @s[scores={Angle=0}] run fill ~ ~-4.4 ~ ~ ~-2.4 ~ minecraft:chain
 execute unless entity @s[scores={Angle=0}] run fill ~ ~-4.4 ~ ~ ~-2.4 ~ minecraft:air
+execute if entity @s[tag=remove_from_existence] run fill ~ ~-4.4 ~ ~ ~-2.4 ~ minecraft:air
 tag @e[tag=this_punching_bag] remove this_punching_bag

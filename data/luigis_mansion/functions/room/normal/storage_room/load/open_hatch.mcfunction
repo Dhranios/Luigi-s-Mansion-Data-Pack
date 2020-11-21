@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:boos/boos=true},limit=1] run function luigis_mansion:room/normal/storage_room/open_hatch

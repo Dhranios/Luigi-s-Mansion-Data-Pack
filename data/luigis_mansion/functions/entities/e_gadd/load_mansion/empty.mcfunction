@@ -1,4 +1,3 @@
-scoreboard players set #mansion_type Selected -1
 scoreboard players set * ChangedMansion 1
 scoreboard players reset @e ChangedMansion
 

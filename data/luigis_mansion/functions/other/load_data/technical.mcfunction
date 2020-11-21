@@ -14,6 +14,8 @@ execute if entity @a[advancements={luigis_mansion:technical={shivers_spoke=true}
 execute if entity @a[advancements={luigis_mansion:technical={melody_pianissima_spoke=true}}] run advancement grant @a only luigis_mansion:technical melody_pianissima_spoke
 execute if entity @a[advancements={luigis_mansion:technical={water_element_medal=true}}] run advancement grant @a only luigis_mansion:technical water_element_medal
 execute if entity @a[advancements={luigis_mansion:technical={extinguished_kitchen_fire=true}}] run advancement grant @a only luigis_mansion:technical extinguished_kitchen_fire
+execute if entity @a[advancements={luigis_mansion:technical={watered_boneyard_plant_1=true}}] run advancement grant @a only luigis_mansion:technical watered_boneyard_plant_1
+execute if entity @a[advancements={luigis_mansion:technical={watered_boneyard_plant_2=true}}] run advancement grant @a only luigis_mansion:technical watered_boneyard_plant_2
 execute if entity @a[advancements={luigis_mansion:technical={area_2_key=true}}] run advancement grant @a only luigis_mansion:technical area_2_key
 execute if entity @a[advancements={luigis_mansion:technical={cleared_area_3_blockade=true}}] run advancement grant @a only luigis_mansion:technical cleared_area_3_blockade
 execute if entity @a[advancements={luigis_mansion:technical={saw_mario=true}}] run advancement grant @a only luigis_mansion:technical saw_mario

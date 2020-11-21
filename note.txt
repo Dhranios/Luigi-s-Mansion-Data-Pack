@@ -1,0 +1,15 @@
+Do define a new mansion, you need to set the mansion_type value, mansion_data_index is for saved data, all mansions with the same data index use the same save data
+
+
+
+
+
+
+
+The following mansion types and mansion indexes are predefined, keep them in mind when making your add-ons
+
+mansion  | type | index | add-on       | overwrites
+normal   | 0    | 0     | vanilla      |
+hidden   | 1    | 0     | vanilla      |
+hidden   | 1    | 1     | 3ds_remake   | vanilla/hidden
+original | 2    | 2     | beta_mansion |

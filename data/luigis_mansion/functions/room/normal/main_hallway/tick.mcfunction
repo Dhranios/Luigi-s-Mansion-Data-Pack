@@ -1,4 +1,4 @@
-execute unless score #main_hallway Ticking matches 1 run function luigis_mansion:room/normal/main_hallway/load
+execute unless score #main_hallway Ticking matches 1 run function #luigis_mansion:room/normal/main_hallway/load
 execute if entity @a[advancements={luigis_mansion:keys={main_stairs=false}},limit=1] run function luigis_mansion:room/normal/main_stairs/lock_door
 execute as @e[type=!minecraft:item_frame,x=698,y=102,z=-22,dx=8,dy=6,dz=60] run scoreboard players set @s Room 10
 execute as @e[type=!minecraft:item_frame,x=664,y=102,z=-10,dx=42,dy=6,dz=8] run scoreboard players set @s Room 10

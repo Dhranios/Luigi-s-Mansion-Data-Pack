@@ -1,4 +1,4 @@
-setblock 712 117 -12 minecraft:stone_button[face=floor,powered=true]
+function #luigis_mansion:room/normal/sitting_room/turn_lights/on
 advancement grant @a only luigis_mansion:mansion/sitting_room
 execute if entity @a[advancements={luigis_mansion:technical={released_boos_talk=true}},scores={Boos=..49},limit=1] run function luigis_mansion:room/normal/sitting_room/load_boos
 execute as @e[scores={Room=56},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}

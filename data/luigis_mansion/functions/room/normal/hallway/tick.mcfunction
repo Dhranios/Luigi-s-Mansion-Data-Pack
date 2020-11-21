@@ -1,4 +1,4 @@
-execute unless score #hallway Ticking matches 1 run function luigis_mansion:room/normal/hallway/load
+execute unless score #hallway Ticking matches 1 run function #luigis_mansion:room/normal/hallway/load
 execute as @e[type=!minecraft:item_frame,x=698,y=111,z=-42,dx=8,dy=15,dz=26] run scoreboard players set @s Room 31
 execute as @e[type=!minecraft:item_frame,x=698,y=111,z=-42,dx=8,dy=6,dz=40] run scoreboard players set @s Room 31
 execute as @e[type=!minecraft:item_frame,x=664,y=111,z=-10,dx=42,dy=6,dz=8] run scoreboard players set @s Room 31

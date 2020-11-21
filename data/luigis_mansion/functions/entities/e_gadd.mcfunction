@@ -11,9 +11,10 @@ execute if entity @s[scores={Room=61}] run function luigis_mansion:dialog/traini
 execute if entity @s[scores={Room=62},tag=portrificationizing] run function luigis_mansion:dialog/portrificationizing
 execute if entity @s[scores={Room=62},tag=return_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room_return
 execute if entity @s[scores={Room=62},tag=ending_dialog] run function luigis_mansion:dialog/ghost_portrificationizer_room_ending
-execute if entity @s[scores={Room=62},tag=!portrificationizing,tag=!return_dialog,tag=!ending_dialog,tag=talk] if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run function luigis_mansion:dialog/ghost_portrificationizer_room
-execute if entity @s[scores={Room=62},tag=!portrificationizing,tag=!return_dialog,tag=!ending_dialog,tag=talk] if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run function luigis_mansion:dialog/ghost_portrificationizer_room_repeat
+execute if entity @s[scores={Room=62},tag=mario_to_normal] run function luigis_mansion:dialog/mario_to_normal
+execute if entity @s[scores={Room=62},tag=!portrificationizing,tag=!return_dialog,tag=!ending_dialog,tag=!mario_to_normal,tag=!ending,tag=talk] if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=false}] run function luigis_mansion:dialog/ghost_portrificationizer_room
+execute if entity @s[scores={Room=62},tag=!portrificationizing,tag=!return_dialog,tag=!ending_dialog,tag=!mario_to_normal,tag=!ending,tag=talk] if entity @a[advancements={luigis_mansion:lab/ghost_portrificationizer_room=true}] run function luigis_mansion:dialog/ghost_portrificationizer_room_repeat
 execute if entity @s[scores={Room=63},tag=talk] if entity @a[advancements={luigis_mansion:lab/gallery=false}] run function luigis_mansion:dialog/gallery
 execute if entity @s[scores={Room=63},tag=talk] if entity @a[advancements={luigis_mansion:lab/gallery=true}] run function luigis_mansion:dialog/gallery_repeat
 
-execute unless entity @s[scores={Room=2}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,scores={Room=1..}] ~ ~ ~ ~ ~
+execute unless entity @s[scores={Room=2}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,tag=!mario_to_normal,scores={Room=1..}] ~ ~ ~ ~ ~

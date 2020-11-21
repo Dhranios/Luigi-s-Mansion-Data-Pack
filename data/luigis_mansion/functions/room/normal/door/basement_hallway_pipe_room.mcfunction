@@ -13,8 +13,8 @@ execute if score #temp Searched matches 1 run setblock 692 93 -15 minecraft:oak_
 execute if score #temp Searched matches 1 run setblock 692 94 -15 minecraft:oak_door[open=true,facing=south,half=upper,hinge=left,powered=false]
 execute if score #temp Searched matches 1 run setblock 692 93 -14 minecraft:oak_door[open=true,facing=north,half=lower,hinge=right,powered=false]
 execute if score #temp Searched matches 1 run setblock 692 94 -14 minecraft:oak_door[open=true,facing=north,half=upper,hinge=right,powered=false]
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a 692 93 -15 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a 692 93 -15 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a 692 93 -14.0 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a 692 93 -14.0 1 1
 execute if score #temp Searched matches -1..0 run fill 692 93 -15 692 94 -14 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run setblock 692 93 -15 minecraft:oak_door[open=false,facing=south,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 692 94 -15 minecraft:oak_door[open=false,facing=south,half=upper,hinge=left,powered=false]

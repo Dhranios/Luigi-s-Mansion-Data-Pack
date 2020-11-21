@@ -1,4 +1,4 @@
-execute unless score #basement_stairs Ticking matches 1 run function luigis_mansion:room/normal/basement_stairs/load
+execute unless score #basement_stairs Ticking matches 1 run function #luigis_mansion:room/normal/basement_stairs/load
 execute as @e[type=!minecraft:item_frame,x=698,y=93,z=-42,dx=8,dy=15,dz=21] run scoreboard players set @s Room 11
 tag @e[tag=ghost,scores={Room=11}] add hallway
 

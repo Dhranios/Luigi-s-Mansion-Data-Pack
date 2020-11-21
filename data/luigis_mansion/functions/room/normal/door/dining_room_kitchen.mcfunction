@@ -18,8 +18,8 @@ execute if score #temp Searched matches 1 run setblock 693 102 27 minecraft:jung
 execute if score #temp Searched matches 1 run setblock 693 103 27 minecraft:jungle_door[open=true,facing=north,half=upper,hinge=right,powered=false]
 execute if score #temp Searched matches 1 run setblock 692 102 27 minecraft:jungle_door[open=true,facing=north,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches 1 run setblock 692 103 27 minecraft:jungle_door[open=true,facing=north,half=upper,hinge=left,powered=false]
-execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a 693.0 102 27 1 1
-execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a 693.0 102 27 1 1
+execute if score #temp Searched matches 0 run playsound luigis_mansion:block.door.close block @a 693.0 102 27.0 1 1
+execute if score #temp Searched matches 1 run playsound luigis_mansion:block.door.open block @a 693.0 102 27.0 1 1
 execute if score #temp Searched matches -1..0 run fill 692 102 26 693 103 27 minecraft:air replace #minecraft:doors
 execute if score #temp Searched matches -1..0 run setblock 693 102 26 minecraft:jungle_door[open=false,facing=south,half=lower,hinge=left,powered=false]
 execute if score #temp Searched matches -1..0 run setblock 693 103 26 minecraft:jungle_door[open=false,facing=south,half=upper,hinge=left,powered=false]

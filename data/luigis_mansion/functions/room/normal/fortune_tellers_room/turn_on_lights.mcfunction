@@ -1,5 +1,4 @@
-setblock 712 108 -12 minecraft:stone_button[face=floor,powered=true]
-setblock 711 102 -6 minecraft:trapped_chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
+function #luigis_mansion:room/normal/fortune_tellers_room/turn_lights/on
 advancement grant @a only luigis_mansion:mansion/fortune_tellers_room
 advancement grant @a only luigis_mansion:technical toad_4_happy
 execute if entity @a[advancements={luigis_mansion:technical={released_boos_talk=true}},scores={Boos=..49},limit=1] run function luigis_mansion:room/normal/fortune_tellers_room/load_boos

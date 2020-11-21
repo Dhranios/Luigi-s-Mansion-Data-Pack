@@ -1,4 +1,4 @@
-execute unless score #underground_lab Ticking matches 1 run function luigis_mansion:room/underground_lab/load
+execute unless score #underground_lab Ticking matches 1 run function #luigis_mansion:room/underground_lab/load
 execute as @e[type=!minecraft:item_frame,x=780,y=77,z=6,dx=16,dy=11,dz=17] run scoreboard players set @s Room 60
 
 scoreboard players reset @a[x=788,y=90,z=21,dx=1,dy=1,dz=0] Room

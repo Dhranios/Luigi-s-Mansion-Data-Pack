@@ -1,22 +1,22 @@
-execute if entity @s[tag=neville] run scoreboard players operation #temp Health = #neville LastHealth
-execute if entity @s[tag=lydia] run scoreboard players operation #temp Health = #lydia LastHealth
-execute if entity @s[tag=floating_whirlindas] run scoreboard players operation #temp Health = #floating_whirlindas LastHealth
-execute if entity @s[tag=shivers] run scoreboard players operation #temp Health = #shivers LastHealth
-execute if entity @s[tag=melody_pianissima] run scoreboard players operation #temp Health = #melody_pianissima LastHealth
-execute if entity @s[tag=mr_luggs] run scoreboard players operation #temp Health = #mr_luggs LastHealth
-execute if entity @s[tag=spooky] run scoreboard players operation #temp Health = #spooky LastHealth
-execute if entity @s[tag=biff_atlas] run scoreboard players operation #temp Health = #biff_atlas LastHealth
-execute if entity @s[tag=miss_petunia] run scoreboard players operation #temp Health = #miss_petunia LastHealth
-execute if entity @s[tag=nana] run scoreboard players operation #temp Health = #nana LastHealth
-execute if entity @s[tag=slim_bankshot] run scoreboard players operation #temp Health = #slim_bankshot LastHealth
-execute if entity @s[tag=orville] run scoreboard players operation #temp Health = #orville LastHealth
-execute if entity @s[tag=madame_clairvoya] run scoreboard players operation #temp Health = #madame_clairvoya LastHealth
-execute if entity @s[tag=uncle_grimly] run scoreboard players operation #temp Health = #uncle_grimly LastHealth
-execute if entity @s[tag=blue_clockwork_soldier] run scoreboard players operation #temp Health = #blue_clockwork_soldier LastHealth
-execute if entity @s[tag=jarvis] run scoreboard players operation #temp Health = #jarvis LastHealth
-execute if entity @s[tag=sir_weston] run scoreboard players operation #temp Health = #sir_weston LastHealth
-execute if entity @s[tag=sue_pea] run scoreboard players operation #temp Health = #sue_pea LastHealth
-execute if entity @s[tag=vincent_van_gore] run scoreboard players operation #temp Health = #vincent_van_gore LastHealth
+execute if entity @s[tag=neville] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.neville.health
+execute if entity @s[tag=lydia] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.lydia.health
+execute if entity @s[tag=floating_whirlindas] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.floating_whirlindas.health
+execute if entity @s[tag=shivers] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.shivers.health
+execute if entity @s[tag=melody_pianissima] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.melody_pianissima.health
+execute if entity @s[tag=mr_luggs] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.health
+execute if entity @s[tag=spooky] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.spooky.health
+execute if entity @s[tag=biff_atlas] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.biff_atlas.health
+execute if entity @s[tag=miss_petunia] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.miss_petunia.health
+execute if entity @s[tag=nana] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.nana.health
+execute if entity @s[tag=slim_bankshot] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.slim_banksho.health
+execute if entity @s[tag=orville] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.orville_health
+execute if entity @s[tag=madame_clairvoya] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.madame_clairvoya.health
+execute if entity @s[tag=uncle_grimly] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimly.health
+execute if entity @s[tag=blue_clockwork_soldier] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.clockwork_soldiers.blue_health
+execute if entity @s[tag=jarvis] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.jarvis.health
+execute if entity @s[tag=sir_weston] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.sir_weston.health
+execute if entity @s[tag=sue_pea] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.sue_pea.health
+execute if entity @s[tag=vincent_van_gore] store result score #temp Health run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.vincent_van_gore.health
 
 scoreboard players operation #temp Health -= @s Health
 execute if entity @s[scores={Health=..14000,PrevHealth=14001..}] if score #temp Health matches ..4100 run function luigis_mansion:spawn_entities/item/small_pearl

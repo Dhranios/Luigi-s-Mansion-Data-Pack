@@ -1,0 +1,1 @@
+summon minecraft:armor_stand ~ ~ ~ {Rotation:[-180.0f,0.0f],CustomName:'{"translate":"luigis_mansion:entity.mario"}',NoGravity:1b,CustomNameVisible:1b,Invulnerable:1b,Silent:1b,DeathLootTable:"luigis_mansion:entities/mario",Team:"Passive",Tags:["mario","normal"]}

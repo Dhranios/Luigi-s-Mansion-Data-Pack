@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:technical={cleared_area_4_blockade=false}},tag=!blackout,limit=1] run function luigis_mansion:room/normal/balcony_2/add_blockade

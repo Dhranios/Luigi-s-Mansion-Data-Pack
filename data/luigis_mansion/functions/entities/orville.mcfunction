@@ -1,12 +1,15 @@
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.one_go_health
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.orville.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/orville
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
-execute if entity @s[tag=dead,tag=dying] unless score #henry_and_orville OneGoHealth matches 0.. run scoreboard players operation #henry_and_orville OneGoHealth = @s Health
-execute if entity @s[tag=dead,tag=dying] run scoreboard players set #orville LastHealth 0
-execute if entity @s[tag=dead,tag=dying] run advancement grant @a only luigis_mansion:portrait_ghosts/henry_and_orville
-execute if entity @s[tag=disappear] unless score #henry_and_orville OneGoHealth matches 0.. run scoreboard players operation #henry_and_orville OneGoHealth = @s Health
-execute if entity @s[tag=disappear] run scoreboard players operation #orville LastHealth = @s Health
+execute if entity @s[tag=dead] unless score #temp Time matches 0.. store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.one_go_health int 1 run scoreboard players set @s Health 0
+execute if entity @s[tag=dead] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.orville_health int 1 run scoreboard players set @s Health 0
+execute if entity @s[tag=dead] unless entity @e[tag=henry,limit=1,tag=!dead] run advancement grant @a only luigis_mansion:portrait_ghosts/henry_and_orville
+execute if entity @s[tag=disappear] unless score #temp Time matches 0.. store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.one_go_health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=disappear] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.orville_health int 1 run scoreboard players get @s Health
+scoreboard players reset #temp Time
+
 tag @s[tag=remove_hide_and_seek] add dead
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.orville.hurt hostile @a ~ ~ ~ 1

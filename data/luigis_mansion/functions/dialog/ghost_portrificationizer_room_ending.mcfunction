@@ -7,5 +7,4 @@ execute if entity @s[scores={Dialog=432}] run tellraw @a {"translate":"chat.type
 execute if entity @s[scores={Dialog=552}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.ending.4"}]}
 tag @s[scores={Dialog=688}] add ending
 tag @s[scores={Dialog=688}] remove ending_dialog
-execute unless entity @a[gamemode=!spectator,distance=..7] run tag @s remove ending_dialog
 scoreboard players set @s[tag=!ending_dialog] Dialog 0

@@ -1,3 +1,0 @@
-execute if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] positioned 773 77 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd
-execute if score #king_boo LastHealth matches ..0 if score #king_boo OneGoHealth matches -1000000.. positioned 773 77 14 run tag @e[distance=..0.7,tag=e_gadd,limit=1] add ending_dialog
-scoreboard players set #ghost_portrificationizer_room Ticking 1

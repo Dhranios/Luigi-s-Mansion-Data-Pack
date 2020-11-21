@@ -1,0 +1,1 @@
+execute unless entity @e[tag=eternal_gold_coin,scores={Room=1}] if entity @a[advancements={luigis_mansion:mansion/foyer_money=false},limit=1] run function luigis_mansion:room/hidden/foyer/money

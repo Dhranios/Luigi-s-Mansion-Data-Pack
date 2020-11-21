@@ -71,3 +71,5 @@ playsound luigis_mansion:music.new_paintings music @s[scores={MusicType=38}] ~ ~
 scoreboard players set @s[scores={MusicType=38}] Music 196
 playsound luigis_mansion:music.boo_woods music @s[scores={MusicType=39}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=39}] Music 1574
+playsound luigis_mansion:music.staff_credits music @s[scores={MusicType=40}] ~ ~ ~ 1000
+scoreboard players set @s[scores={MusicType=40}] Music 2820

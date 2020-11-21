@@ -11,5 +11,5 @@ execute unless entity @e[type=minecraft:area_effect_cloud,tag=chance,tag=selecte
 scoreboard players set #parlor_closet Searched 1
 data merge block 684 112 15 {LootTable:"luigis_mansion:search"}
 data merge block 684 112 13 {LootTable:"luigis_mansion:search"}
-tag @e[x=684.5,y=111,z=3.5,distance=..0.7,tag=hidden_boo] add spawn
-tag @e[x=684.5,y=111,z=3.5,distance=..0.7,tag=ghost_marker] add spawn
+tag @e[x=684.5,y=111,z=14.5,distance=..0.7,tag=hidden_boo] add spawn
+tag @e[x=684.5,y=111,z=14.5,distance=..0.7,tag=ghost_marker] add spawn

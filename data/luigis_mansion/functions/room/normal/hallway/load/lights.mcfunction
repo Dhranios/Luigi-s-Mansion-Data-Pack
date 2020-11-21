@@ -1,0 +1,2 @@
+execute if entity @a[advancements={luigis_mansion:mansion/hallway=true}] run function luigis_mansion:room/normal/hallway/turn_on_lights
+execute if entity @a[advancements={luigis_mansion:mansion/hallway=false}] run function #luigis_mansion:room/normal/hallway/turn_lights/on

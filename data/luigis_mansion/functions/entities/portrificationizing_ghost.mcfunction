@@ -1,3 +1,4 @@
+execute unless entity @a[gamemode=!spectator] run tag @s add dead
 scoreboard players add @s[scores={Dialog=301..}] Dialog 1
 execute unless entity @e[tag=portrificationizing_ghost,scores={Dialog=301..380},limit=1] run scoreboard players add @s[scores={Dialog=300}] Dialog 1
 scoreboard players add @s[scores={Dialog=..299}] Dialog 1
@@ -111,10 +112,10 @@ execute if entity @s[scores={Dialog=580}] run setblock 768 80 -4 minecraft:oak_f
 execute if entity @s[scores={Dialog=580}] run setblock 767 80 -4 minecraft:oak_fence[north=false,south=false,west=false,east=true]
 execute if entity @s[scores={Dialog=550}] run teleport @s 769 78 -7
 execute if entity @s[scores={Dialog=550}] run setblock 769 81 -7 minecraft:spruce_planks
-execute if entity @s[scores={Dialog=570}] run setblock 769 79 -7 minecraft:green_terracotta
+execute if entity @s[scores={Dialog=550}] run setblock 769 79 -7 minecraft:green_terracotta
 execute if entity @s[scores={Dialog=570}] run setblock 769 81 -7 minecraft:green_terracotta
-execute if entity @s[scores={Dialog=550}] run setblock 769 79 -7 minecraft:air
-execute if entity @s[scores={Dialog=570}] run function luigis_mansion:entities/portrificationizing_ghost/portrait
+execute if entity @s[scores={Dialog=570}] run setblock 769 79 -7 minecraft:air
+execute if entity @s[scores={Dialog=570},tag=!dead] run function luigis_mansion:entities/portrificationizing_ghost/portrait
 replaceitem entity @s[scores={Dialog=570}] armor.head minecraft:air
 execute if entity @s[scores={Dialog=570}] run teleport @s 769 78 -8
 execute if entity @s[scores={Dialog=570}] positioned ~ ~1 ~ run teleport @e[distance=..0.7,type=minecraft:item_frame,limit=1] 769 79 -8
