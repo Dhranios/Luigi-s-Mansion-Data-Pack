@@ -1,0 +1,1 @@
+execute if entity @s[x=687.5,y=111,z=-8.5,distance=..0.7] if entity @a[advancements={luigis_mansion:mansion/study_gold_mouse=false},limit=1] unless entity @a[advancements={luigis_mansion:mansion/study=true},tag=!blackout,limit=1] unless entity @e[tag=gold_mouse,tag=study,limit=1] positioned 687 111 -9 run function luigis_mansion:spawn_entities/vacuumable/gold_mouse/study

@@ -4,15 +4,15 @@ execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @s[scores={Sound=0},tag=spawn] run playsound luigis_mansion:entity.purple_mouse.ambient hostile @a ~ ~ ~ 1
-scoreboard players set @s[scores={Sound=0},tag=spawn] Sound 40
-
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=spawn] run function luigis_mansion:entities/purple_mouse/collide
 
 tag @s[tag=fleeing,tag=walk_up_wall] add walk_on_ceiling
 tag @s[tag=fleeing,tag=walk_up_wall] add walk_down_wall
 tag @s[tag=fleeing,tag=walk_up_wall] add walked_on_ceiling
 data merge entity @s[tag=fleeing,tag=walk_up_wall] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:58}}]}
+execute if entity @s[tag=fleeing,tag=spawn,tag=!played_sound] run playsound luigis_mansion:entity.purple_mouse.ambient hostile @a ~ ~ ~ 1
+tag @s[tag=fleeing,tag=spawn,tag=!played_sound] add played_sound
+tag @s[tag=!fleeing] remove played_sound
 tag @s remove fleeing
 execute store result score #temp HomeY run data get entity @s Pos[1] 100
 tag @s remove on_floor

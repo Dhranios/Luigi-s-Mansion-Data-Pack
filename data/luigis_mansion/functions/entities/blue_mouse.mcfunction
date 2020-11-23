@@ -4,11 +4,11 @@ execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @s[scores={Sound=0},tag=spawn] run playsound luigis_mansion:entity.blue_mouse.ambient hostile @a ~ ~ ~ 1
-scoreboard players set @s[scores={Sound=0},tag=spawn] Sound 40
+execute if entity @s[tag=spawn] if predicate luigis_mansion:blue_mouse/start_squeeking run tag @s add squeek
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=spawn] run function luigis_mansion:entities/blue_mouse/collide
 
+tag @s[tag=fleeing] remove squeek
 tag @s remove fleeing
 
 execute store result score #temp HomeY run data get entity @s Pos[1] 100
@@ -26,6 +26,7 @@ data merge entity @s[tag=spawn,tag=!vacuumable] {ArmorItems:[{},{},{},{id:"minec
 tag @s[tag=spawn] add vacuumable
 execute if entity @s[tag=!rotated,tag=spawn] run function luigis_mansion:entities/blue_mouse/move
 scoreboard players set #temp Move 2
-execute at @s[tag=rotated] rotated ~ 0 run function luigis_mansion:entities/blue_mouse/move_forward
-execute if entity @s[tag=disappear,tag=!dead] run function luigis_mansion:entities/blue_mouse/back_to_start
-execute if entity @s[tag=spawn] run function luigis_mansion:animations/blue_mouse/idle
+execute at @s[tag=rotated,tag=!squeek] rotated ~ 0 run function luigis_mansion:entities/blue_mouse/move_forward
+execute if entity @s[tag=disappear,tag=!dead,tag=!squeek] run function luigis_mansion:entities/blue_mouse/back_to_start
+execute if entity @s[tag=spawn,tag=!squeek] run function luigis_mansion:animations/blue_mouse/idle
+execute if entity @s[tag=squeek] run function luigis_mansion:entities/blue_mouse/squeek

@@ -3,8 +3,9 @@ execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.
 execute if entity @s[tag=disappear] run tag @s add dead
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @s[scores={Sound=0}] run playsound luigis_mansion:entity.gold_mouse.ambient hostile @a ~ ~ ~ 1
-scoreboard players set @s[scores={Sound=0}] Sound 40
+execute if entity @s[tag=fleeing,tag=!played_sound] run playsound luigis_mansion:entity.gold_mouse.ambient hostile @a ~ ~ ~ 1
+tag @s[tag=fleeing,tag=!played_sound] add played_sound
+tag @s[tag=!fleeing] remove played_sound
 
 execute if entity @s[tag=!dead] if score #mansion_type Selected matches 0 run function luigis_mansion:entities/gold_mouse/normal
 execute if entity @s[tag=!dead] if score #mansion_type Selected matches 1 run function luigis_mansion:entities/gold_mouse/hidden
