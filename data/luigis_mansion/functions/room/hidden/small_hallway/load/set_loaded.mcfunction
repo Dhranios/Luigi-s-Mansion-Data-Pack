@@ -1,0 +1,1 @@
+scoreboard players set #small_hallway Ticking 1

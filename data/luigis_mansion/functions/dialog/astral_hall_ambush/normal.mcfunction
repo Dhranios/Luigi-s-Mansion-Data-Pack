@@ -13,6 +13,6 @@ execute if entity @s[scores={Time=90}] positioned 680 113 -22 run function luigi
 execute if entity @s[scores={Time=105}] positioned 676 113 -24 run function luigis_mansion:blocks/lit_candles
 execute if entity @s[scores={Time=120}] positioned 673 113 -20 run function luigis_mansion:blocks/lit_candles
 execute if entity @s[scores={Time=120}] run function luigis_mansion:room/normal/astral_hall/wave_1
-teleport @s[x=677.5,y=111.5,z=-20.5,distance=1..] 677 111.5 -20
+teleport @s[x=677.5,y=111.5,z=-19.5,distance=1..] 677 111.5 -20
 tag @s[scores={Time=120}] remove astral_hall_ambush
 scoreboard players reset @s[scores={Time=120}] Time

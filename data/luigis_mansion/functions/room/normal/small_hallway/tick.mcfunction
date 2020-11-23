@@ -1,5 +1,5 @@
 execute unless score #small_hallway Ticking matches 1 run function #luigis_mansion:room/normal/small_hallway/load
-execute as @e[type=!minecraft:item_frame,x=698,y=111,z=17,dx=8,dy=6,dz=40] run scoreboard players set @s Room 6
+execute as @e[type=!minecraft:item_frame,x=698,y=111,z=18,dx=8,dy=6,dz=38] run scoreboard players set @s Room 6
 tag @e[tag=ghost,scores={Room=6}] add hallway
 
 execute as @a[gamemode=!spectator,x=700,y=111,z=19,dx=4,dy=6,dz=36] run function luigis_mansion:room/normal/small_hallway/tick_per_player

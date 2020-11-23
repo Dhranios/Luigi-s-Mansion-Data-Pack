@@ -26,7 +26,8 @@ scoreboard players set @s[tag=clockwork_soldier] WaitTime 0
 scoreboard players set @s[tag=sir_weston] Dialog 483
 scoreboard players set @s[tag=sue_pea] Time 298
 scoreboard players set @s[tag=vincent_van_gore] Time 646
-teleport @s[tag=shivers] 702 102 47
+execute if score #mansion_type Selected matches 0 run teleport @s[tag=shivers] 702 102 47
+execute if score #mansion_type Selected matches 1 run teleport @s[tag=shivers] 702 102 -32
 scoreboard players set @s[tag=chauncey] Wave 461
 scoreboard players set @s[tag=bogmire] Time 181
 scoreboard players set @s VulnerableTime 0
