@@ -2,7 +2,7 @@ scoreboard players add @s[scores={Dialog=171..}] Dialog 1
 execute if entity @e[type=minecraft:armor_stand,tag=ball,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=170}] Dialog 1
 scoreboard players add @s[scores={Dialog=50..169}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1..49}] at @a[gamemode=!spectator,scores={Room=8}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Dialog=1..49}] at @a[gamemode=!spectator,scores={Room=9}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 execute if entity @s[scores={Dialog=10}] run playsound luigis_mansion:entity.chauncey.cry hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=30}] run playsound luigis_mansion:entity.chauncey.cry hostile @a ~ ~ ~ 1
@@ -13,8 +13,8 @@ execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[scor
 execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[scores={Room=9,MusicType=11}] MusicType 26
 execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:entity.chauncey.yawn hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=130}] run tellraw @a[scores={Room=9}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:message.chauncey.play"}]}
-execute if entity @s[scores={Dialog=170..}] run scoreboard players set @a[scores={Room=9,MusicType=11..26}] Music 0
-execute if entity @s[scores={Dialog=170..}] run scoreboard players set @a[scores={Room=9,MusicType=11..26}] MusicType 36
+execute if entity @s[scores={Dialog=170..641}] run scoreboard players set @a[scores={Room=9,MusicType=11..26}] Music 0
+execute if entity @s[scores={Dialog=170..641}] run scoreboard players set @a[scores={Room=9,MusicType=11..26}] MusicType 36
 execute if entity @s[scores={Dialog=170},tag=!attack,tag=!laugh,tag=!complain] run tag @e[scores={Room=9},tag=haunted_teddy_bear] add enabled
 execute if entity @s[scores={Dialog=170},tag=attack] run tag @e[scores={Room=9},tag=haunted_teddy_bear] remove enabled
 execute if entity @s[scores={Dialog=170},tag=laugh] run tag @e[scores={Room=9},tag=haunted_teddy_bear] remove enabled

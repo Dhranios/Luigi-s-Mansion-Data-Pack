@@ -3,7 +3,7 @@ execute if block 668 102 31 minecraft:dark_oak_door[open=true] if block 668 102 
 execute if block 668 102 32 minecraft:dark_oak_door[open=true] if block 668 102 31 minecraft:dark_oak_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 execute if block 668 102 31 minecraft:dark_oak_door[open=true] if block 668 102 32 minecraft:dark_oak_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=668.5,y=102,z=32.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_stairs"}}}}] run function luigis_mansion:room/normal/main_stairs/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=668.5,y=102,z=32.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_stairs"}}}}] run function luigis_mansion:room/hidden/main_stairs/unlock_door
 execute if score #main_hallway Ticking matches 1 if block 668 102 31 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/main_stairs_key=false},limit=1] positioned 668 102 31 run function luigis_mansion:blocks/closed_door
 execute if score #main_stairs Ticking matches 1 if block 668 102 32 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/main_stairs_key=false},limit=1] positioned 668 102 32 run function luigis_mansion:blocks/closed_door
 execute if entity @a[advancements={luigis_mansion:mansion/main_stairs_key=false},limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1

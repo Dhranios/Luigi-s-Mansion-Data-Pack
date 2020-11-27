@@ -5,7 +5,7 @@ execute if block 653 93 33 minecraft:acacia_door[open=true] if block 654 93 33 m
 execute if block 654 93 33 minecraft:acacia_door[powered=false] run scoreboard players set #temp Searched -1
 execute if block 653 93 33 minecraft:acacia_door[powered=false] run scoreboard players set #temp Searched -1
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=654.0,y=93,z=33.5,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"secret_altar"}}}}] run function luigis_mansion:room/normal/secret_altar/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=654.0,y=93,z=33.5,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"secret_altar"}}}}] run function luigis_mansion:room/hidden/secret_altar/unlock_door
 execute if block 654 93 33 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/secret_altar_key=false},limit=1] positioned 654 93 33 run function luigis_mansion:blocks/closed_door
 execute if block 653 93 33 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/secret_altar=true},limit=1] if entity @e[x=636.5,y=94,z=33.5,distance=..0.7,type=minecraft:item_frame,nbt={Item:{id:"minecraft:painting"}},limit=1] positioned 653 93 33 run function luigis_mansion:blocks/closed_door
 execute if entity @a[advancements={luigis_mansion:mansion/secret_altar_key=false},limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1

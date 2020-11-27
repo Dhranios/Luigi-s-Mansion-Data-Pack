@@ -1,5 +1,5 @@
 scoreboard players add @s[scores={Time=2..}] Time 1
-execute if block 684 113 45 minecraft:air run scoreboard players add @s[scores={Time=1}] Time 1
+execute if block 684 113 -30 minecraft:air run scoreboard players add @s[scores={Time=1}] Time 1
 execute unless entity @s[scores={Time=1..}] run scoreboard players add @s Time 1
 execute if entity @s[scores={Time=1}] at @a[gamemode=!spectator,scores={Room=8}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
