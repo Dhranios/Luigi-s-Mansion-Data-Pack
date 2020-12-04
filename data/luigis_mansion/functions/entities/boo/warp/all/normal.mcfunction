@@ -31,8 +31,8 @@ scoreboard players set @s[x=665,y=111,z=25,dx=7,dy=6,dz=12] Room 32
 scoreboard players set @s[x=654,y=111,z=25,dx=11,dy=6,dz=12] Room 33
 scoreboard players set @s[x=654,y=111,z=-9,dx=11,dy=6,dz=26] Room 34
 scoreboard players set @s[x=672,y=111,z=-30,dx=11,dy=6,dz=20] Room 35
-scoreboard players set @s[x=672,y=102,z=13,dx=14,dy=6,dz=25] Room 37
-scoreboard players set @s[x=672,y=102,z=-2,dx=14,dy=6,dz=14] Room 38
+scoreboard players set @s[x=672,y=102,z=13,dx=13,dy=6,dz=25] Room 37
+scoreboard players set @s[x=672,y=102,z=-2,dx=13,dy=6,dz=14] Room 38
 scoreboard players set @s[x=706,y=111,z=18,dx=13,dy=6,dz=19] Room 39
 scoreboard players set @s[x=706,y=120,z=-40,dx=13,dy=6,dz=23] Room 40
 scoreboard players set @s[x=683,y=120,z=-16,dx=39,dy=6,dz=6] Room 41

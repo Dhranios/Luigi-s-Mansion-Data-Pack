@@ -33,8 +33,8 @@ execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=fa
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 104 50 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 104 49 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 104 48 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 105 53 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 105 52 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 105 51 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 105 50 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 105 49 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/butlers_room_closet=false},limit=1] positioned 708 105 48 run function luigis_mansion:spawn_entities/item/bill

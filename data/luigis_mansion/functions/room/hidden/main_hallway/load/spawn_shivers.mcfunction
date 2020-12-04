@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:mansion/butlers_room=false,luigis_mansion:technical={released_boos_talk=true}},tag=!blackout,limit=1] unless entity @e[tag=shivers,limit=1] positioned 668 102 13 rotated -180 0 run function luigis_mansion:spawn_entities/portrait_ghost/shivers

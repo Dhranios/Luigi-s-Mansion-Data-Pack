@@ -15,7 +15,7 @@ scoreboard players set @s[x=671,y=102,z=18,dx=11,dy=6,dz=6] HallwaySection 8
 scoreboard players set @s[x=665,y=102,z=24,dx=6,dy=6,dz=7] HallwaySection 9
 scoreboard players set @s[x=665,y=102,z=19,dx=5,dy=6,dz=4] HallwaySection 10
 scoreboard players set @s[x=665,y=102,z=3,dx=6,dy=6,dz=15] HallwaySection 11
-scoreboard players set @s[x=665,y=102,z=23,dx=6,dy=6,dz=5] HallwaySection 12
+scoreboard players set @s[x=665,y=102,z=-3,dx=6,dy=6,dz=5] HallwaySection 12
 scoreboard players set @s[x=667,y=102,z=-9,dx=5,dy=6,dz=6] HallwaySection 13
 scoreboard players set @s[x=652,y=102,z=-11,dx=11,dy=6,dz=8] HallwaySection 14
 

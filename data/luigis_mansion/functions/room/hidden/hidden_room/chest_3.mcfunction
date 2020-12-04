@@ -1,0 +1,32 @@
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 102 -14 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 102 -15 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 102 -16 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 102 -17 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 715 102 -14 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 715 102 -17 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 102 -14 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 102 -15 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 102 -16 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 102 -17 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 103 -15 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 103 -16 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 715 103 -15.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 103 -15 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 103 -16 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 102 -14 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 102 -15 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 102 -16 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 102 -17 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 715 102 -14 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 715 102 -17 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 102 -14 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 102 -15 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 102 -16 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 102 -17 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 103 -15 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 714 103 -16 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 715 103 -15.0 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 103 -15 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=false},limit=1] positioned 716 103 -16 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_chest_3=true},limit=1] run tag @e[tag=selected] add nothing
+advancement grant @a only luigis_mansion:mansion/hidden_room_chest_3

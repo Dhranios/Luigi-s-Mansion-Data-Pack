@@ -1,0 +1,1 @@
+execute if entity @s[x=655.0,y=102,z=17.0,dx=5,dy=2,dz=3] unless block ~ ~ ~ minecraft:air run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@p[tag=scanning_player,gamemode=!spectator]","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.46"}]}

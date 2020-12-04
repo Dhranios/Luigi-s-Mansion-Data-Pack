@@ -1,15 +1,39 @@
-Do define a new mansion, you need to set the mansion_type value, mansion_data_index is for saved data, all mansions with the same data index use the same save data
+== Empty mansion ==
+The empty mansion is used after king boo has been portrificationized, to make sure nobody is in the mansion when resetting. It has no rooms, no data and no functions other than "generating" (which is actually wiping out the existing mansion).
+It is loaded in when you enter the curved hallway with mario's painting, but the mansion type is set only when king boo has been portrificationized.
 
+== Predefined mansions ==
+Add-on is the variable defined as loaded, namespace is the namespace used for files.
+The following mansion types and mansion indexes are predefined, keep them in mind when making your add-ons.
 
+mansion  | type | index | add-on       | overwrites     | namespace                 | Data pack name
+empty    | -1   | -     | vanilla      |                | -                         | "file/Luigi's Mansion"
+normal   | 0    | 0     | vanilla      |                | luigis_mansion            | "file/Luigi's Mansion"
+hidden   | 1    | 0     | vanilla      |                | luigis_mansion            | "file/Luigi's Mansion"
+hidden   | 1    | 1     | 3ds_remake   | vanilla/hidden | luigis_mansion_3ds_remake | "file/Luigi's Mansion 3DS Remake"
+original | 2    | 2     | beta_mansion |                | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
 
+== Mansion data variables ==
+Do define a new mansion, you need to set the mansion_type value, mansion_data_index is for saved data, all mansions with the same data index use the same save data.
 
+#mansion_type (int): Defines the mansion that is loaded.
+#mansion_data_index (int): Defines the save data ID that is used.
+#mirrored (bool): Whether the ghosts mirror all their animations.
+#double_damage (bool): Whether the poltergust deals twice as much damage.
+#double_hurt (bool): Whether the players take twice as much damage.
+#extra_health (bool): Whether the ghosts have 1.5x their normal health; portrait ghosts will drop 4 small pearls, 9 medium pearls and 1 big pearl in 1 suction.
+#switch_boo_stats (bool): Whether the normal boos get the health and speed values of the original's hidden mansion; this stacks with extra_health.
 
+None of these variables affect non-mansion rooms.
 
+== Check compatibility/dependency ==
+To set this add-on as loaded, allowing for other add-ons to check/warn for compatibility issues, add to the function tag #luigis_mansion:loaded_add_ons a function with the following contents: scoreboard players set #<add-on> Loaded 1
+To check for add-on compatibility issues, add to the function tag #luigis_mansion:post_loaded_add_ons a function which checks if the other add-on is loaded (execute if score #<other add-on> Loaded matches 1 run ...) and send the mandatory commands.
+You can also do the same, but for dependencies, eg if you need the 3ds_remake add-on to exist to have a functioning add-on. (execute unless score #<required add-on> Loaded matches 1 run ...)
 
-The following mansion types and mansion indexes are predefined, keep them in mind when making your add-ons
-
-mansion  | type | index | add-on       | overwrites
-normal   | 0    | 0     | vanilla      |
-hidden   | 1    | 0     | vanilla      |
-hidden   | 1    | 1     | 3ds_remake   | vanilla/hidden
-original | 2    | 2     | beta_mansion |
+== Other ==
+Ghost behavioral change the 3ds remake add-on applies: Using a flashlight on a temper terror, flash or blue blaze make them "smug", laugh and then disappear, rather than ignore and continue moving/attacking.
+The 3ds remake add-on will always apply itself directly after vanilla, as it has "replace": true on several tags to overwrite the hidden mansion in such a way that other add-ons can modify both seperately; having it any later will result in the add-ons added in between being lost.
+Room -4 is the gallery, regardless of 3ds remake add-on or not. The 3ds remake add-on will simply teleport players in the old gallery to the new one, and never start ticking the old one.
+Negative Room values are reserved for non-mansion rooms and Room 0 the boo woods, all positive room scores can be used freely.
+To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion-Data-Pack into the root of the data pack. Any changes to chunk data will not be stored on github, you'll need to re-download the map for those.

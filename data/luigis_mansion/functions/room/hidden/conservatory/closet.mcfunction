@@ -1,0 +1,32 @@
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 102 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 102 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 655 102 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 103 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 103 22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 103 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 103 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 655 103 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 104 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 104 22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 104 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 104 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 655 104 20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 102 23 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 102 22 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 102 21 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 102 20 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 655 102 20 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 103 23 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 103 22 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 103 21 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 103 20 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 655 103 20 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 104 23 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 104 22 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 104 21 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 656 104 20 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=false},limit=1] positioned 655 104 20 run function luigis_mansion:spawn_entities/item/bill
+execute if entity @a[advancements={luigis_mansion:mansion/conservatory_closet=true},limit=1] run tag @e[tag=selected] add nothing
+advancement grant @a only luigis_mansion:mansion/conservatory_closet

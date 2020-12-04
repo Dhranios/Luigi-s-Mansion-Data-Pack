@@ -1,8 +1,8 @@
 execute unless entity @e[tag=portrificationizing_ghost,limit=1] run scoreboard players add @s[scores={Dialog=665..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..664}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=62}] MusicType 22
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=62}] Music 0
+execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=-3}] MusicType 22
+execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=-3}] Music 0
 execute if entity @s[scores={Dialog=1}] run function luigis_mansion:spawn_entities/portrificationizing_ghost
 teleport @s[scores={Dialog=1}] ~ ~ ~ facing 770 77 15
 teleport @s[scores={Dialog=201..210}] ~ ~0.05 ~
@@ -28,8 +28,8 @@ execute if entity @s[scores={Dialog=674},tag=!ending] if score #players Totals m
 execute if entity @s[scores={Dialog=674},tag=!ending] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.6.more"}]}
 execute if entity @s[scores={Dialog=674},tag=ending] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.ending.5"}]}
 execute if entity @s[scores={Dialog=802},tag=ending] run scoreboard players set @s Dialog 810
-execute if entity @s[scores={Dialog=810}] run scoreboard players set @a[scores={Room=62}] MusicType 38
-execute if entity @s[scores={Dialog=810}] run scoreboard players set @a[scores={Room=62}] Music 0
+execute if entity @s[scores={Dialog=810}] run scoreboard players set @a[scores={Room=-3}] MusicType 38
+execute if entity @s[scores={Dialog=810}] run scoreboard players set @a[scores={Room=-3}] Music 0
 execute if entity @s[scores={Dialog=810}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.gold_coin
 execute if entity @s[scores={Dialog=810}] run scoreboard players operation #temp2 Money *= #5 Constants
 execute if entity @s[scores={Dialog=810}] run scoreboard players operation #temp Money += #temp2 Money

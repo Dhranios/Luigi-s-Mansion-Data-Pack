@@ -7,7 +7,7 @@ execute if entity @s[x=704,y=102,z=-6,distance=..9,tag=!chance_check] if entity 
 tag @s[x=704,y=102,z=-6,distance=9..10,tag=chance_check] remove chance_check
 
 execute at @s unless block ~ ~ ~ #minecraft:doors run playsound luigis_mansion:music.mansion.melody hostile @s[x=666,y=102,z=-15,dx=4,dy=6,dz=39,advancements={luigis_mansion:mansion/conservatory=false},scores={HallwayNoise=0}] ~ ~ ~ 1000
-execute at @s unless block ~ ~ ~ #minecraft:doors run scoreboard players set @s[x=666,y=102,z=-17,dx=4,dy=6,dz=39,advancements={luigis_mansion:mansion/conservatory=false},scores={HallwayNoise=0}] HallwayNoise 850
+execute at @s unless block ~ ~ ~ #minecraft:doors run scoreboard players set @s[x=666,y=102,z=-15,dx=4,dy=6,dz=39,advancements={luigis_mansion:mansion/conservatory=false},scores={HallwayNoise=0}] HallwayNoise 850
 execute at @s unless block ~ ~ ~ #minecraft:doors unless entity @s[x=685,y=102,z=-8,dx=14,dy=6,dz=4] unless entity @s[x=666,y=102,z=-16,dx=4,dy=6,dz=39] run scoreboard players set @s HallwayNoise 0
 execute at @s unless block ~ ~ ~ #minecraft:doors unless entity @s[x=666,y=102,z=-15,dx=4,dy=6,dz=39] run stopsound @s hostile luigis_mansion:music.mansion.melody
 execute at @s unless block ~ ~ ~ #minecraft:doors if entity @s[x=685,y=102,z=-8,dx=14,dy=6,dz=4,advancements={luigis_mansion:mansion/dining_room=false}] at @s run function luigis_mansion:room/normal/dining_room/noise
