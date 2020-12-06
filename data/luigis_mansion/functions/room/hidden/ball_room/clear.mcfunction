@@ -1,4 +1,5 @@
 function luigis_mansion:room/hidden/ball_room/turn_on_lights
+playsound luigis_mansion:block.chest.spawn block @a 688 102 40 2
 stopsound @a[scores={Room=13}] music
 playsound luigis_mansion:music.cleared_room music @a[scores={Room=13}] ~ ~ ~ 10000
 scoreboard players set @a[scores={Room=13}] Music 40

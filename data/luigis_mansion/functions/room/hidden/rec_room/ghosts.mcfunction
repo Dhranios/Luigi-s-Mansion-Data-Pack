@@ -1,0 +1,3 @@
+execute if score #rec_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=28},tag=!optional_ghost] run function luigis_mansion:room/hidden/rec_room/clear
+execute if entity @a[advancements={luigis_mansion:mansion/rec_room=false},tag=!blackout] unless score #rec_room Wave matches 1.. run function luigis_mansion:room/hidden/rec_room/wave_1
+execute if entity @a[tag=blackout] unless score #rec_room Wave matches 1.. run function luigis_mansion:room/hidden/rec_room/blackout

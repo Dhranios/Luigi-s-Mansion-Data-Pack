@@ -1,5 +1,5 @@
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_1=false},limit=1] positioned 645 103 13 run function luigis_mansion:spawn_entities/item/gold_coin
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_1=false},limit=1] positioned 645 103 14 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_1=false},limit=1] positioned 645 103 15 run function luigis_mansion:spawn_entities/item/gold_coin
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_1=false},limit=1] positioned 645 103 16 run function luigis_mansion:spawn_entities/item/gold_coin
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_1=false},limit=1] positioned 646 103 14 run function luigis_mansion:spawn_entities/item/gold_coin
 execute if entity @a[advancements={luigis_mansion:mansion/courtyard_plant_1=false},limit=1] positioned 646 104 15 run function luigis_mansion:spawn_entities/item/gold_coin

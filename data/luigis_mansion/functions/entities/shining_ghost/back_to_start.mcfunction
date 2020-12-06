@@ -15,4 +15,5 @@ tag @s remove can_spit
 tag @s remove spit
 tag @s remove in_vacuum
 tag @s remove collision
+tag @s remove played_sound
 scoreboard players reset @s Dialog

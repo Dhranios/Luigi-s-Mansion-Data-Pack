@@ -17,5 +17,7 @@ tag @s[tag=in_vacuum] add can_spit_2
 tag @s[tag=!can_spit] remove can_spit_2
 tag @s[tag=!in_vacuum] remove can_spit
 tag @s[tag=in_vacuum] remove in_vacuum
+execute at @s[tag=!played_sound] run playsound luigis_mansion:entity.shining_ghost.ambient hostile @a ~ ~ ~ 1
+tag @s add played_sound
 tag @s[scores={Dialog=400}] add disappear
 execute if entity @s[tag=disappear] run function luigis_mansion:entities/shining_ghost/back_to_start

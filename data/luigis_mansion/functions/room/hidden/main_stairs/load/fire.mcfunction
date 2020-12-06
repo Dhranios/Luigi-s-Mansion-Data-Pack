@@ -1,0 +1,2 @@
+execute if entity @a[advancements={luigis_mansion:technical={extinguished_main_stairs_fire=false}},limit=1] run setblock 666 111 39 minecraft:fire
+execute if entity @a[advancements={luigis_mansion:technical={extinguished_main_stairs_fire=false}},limit=1] run setblock 666 112 39 minecraft:barrier

@@ -1,5 +1,5 @@
 playsound luigis_mansion:music.mansion.room.foyer music @s[scores={MusicType=1}] ~ ~ ~ 1000
-scoreboard players set @s[scores={MusicType=1}] Music 2442
+scoreboard players set @s[scores={MusicType=1}] Music 3615
 playsound luigis_mansion:music.lab music @s[scores={MusicType=2}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=2}] Music 773
 playsound luigis_mansion:music.training music @s[scores={MusicType=3}] ~ ~ ~ 1000

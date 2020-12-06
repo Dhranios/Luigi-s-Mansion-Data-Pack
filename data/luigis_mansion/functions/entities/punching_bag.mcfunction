@@ -4,6 +4,7 @@ execute as @e[tag=punching_bag_detect] if score @s PunchingBag = #temp PunchingB
 scoreboard players reset #temp PunchingBag
 execute if entity @s[scores={Angle=-600..600}] positioned ~ ~-5.4 ~ unless entity @e[tag=this_punching_bag,distance=..0.1,limit=1] at @s facing entity @e[tag=this_punching_bag,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Angle=-600..600}] positioned ~ ~-5.4 ~ unless entity @e[tag=this_punching_bag,distance=..0.1,limit=1] if entity @e[tag=this_punching_bag,limit=1,nbt={HurtTime:0s}] run scoreboard players set @s Angle 1000
+execute if entity @s[scores={Angle=-600..600}] positioned ~ ~-5.4 ~ unless entity @e[tag=this_punching_bag,distance=..0.1,limit=1] if entity @e[tag=this_punching_bag,limit=1,nbt=!{HurtTime:0s}] run playsound luigis_mansion:entity.player.punch player @a ~ ~ ~ 1
 execute if entity @s[scores={Angle=-600..600}] positioned ~ ~-5.4 ~ unless entity @e[tag=this_punching_bag,distance=..0.1,limit=1] if entity @e[tag=this_punching_bag,limit=1,nbt=!{HurtTime:0s}] run scoreboard players set @s Angle 3000
 teleport @e[tag=this_punching_bag,limit=1] ~ ~-5.4 ~
 data merge entity @e[tag=this_punching_bag,limit=1] {Health:20.0f}

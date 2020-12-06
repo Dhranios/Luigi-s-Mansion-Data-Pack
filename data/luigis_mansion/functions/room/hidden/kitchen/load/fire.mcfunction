@@ -1,0 +1,2 @@
+execute if entity @a[advancements={luigis_mansion:technical={extinguished_kitchen_fire=false}},limit=1] run setblock 687 102 -38 minecraft:fire
+execute if entity @a[advancements={luigis_mansion:technical={extinguished_kitchen_fire=false}},limit=1] run setblock 687 103 -38 minecraft:barrier

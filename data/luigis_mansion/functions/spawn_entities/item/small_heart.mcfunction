@@ -1,2 +1,3 @@
 execute if score #double_hurt Selected matches 0 run summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:16,luigis_mansion:{id:"luigis_mansion:heart",size:20}}},Age:5400s,PickupDelay:32767s,Tags:["heart"]}
 execute if score #double_hurt Selected matches 1 run summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:16,luigis_mansion:{id:"luigis_mansion:heart",size:10}}},Age:5400s,PickupDelay:32767s,Tags:["heart"]}
+playsound luigis_mansion:item.heart.spawn player @a ~ ~ ~ 1
