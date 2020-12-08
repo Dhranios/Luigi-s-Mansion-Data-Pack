@@ -3,11 +3,11 @@ execute if entity @s[tag=ghost,tag=!ghost_marker] run function luigis_mansion:en
 execute if entity @s[tag=!ghost,tag=boo,tag=!ball] run function luigis_mansion:entities/boo/cutscene
 execute if entity @s[tag=mysterious_power] run function luigis_mansion:entities/mysterious_power
 execute if entity @s[tag=bowling_ball] run function luigis_mansion:entities/bowling_ball
-execute if entity @s[tag=spit_fire] run function luigis_mansion:entities/spit_fire
-execute if entity @s[tag=spit_water] run function luigis_mansion:entities/spit_water
-execute if entity @s[tag=spit_ice] run function luigis_mansion:entities/spit_ice
-execute if entity @s[tag=shot_needle] run function luigis_mansion:entities/shot_needle
+execute if entity @s[tag=shot_fire] run function luigis_mansion:entities/shot_fire
+execute if entity @s[tag=shot_water] run function luigis_mansion:entities/shot_water
 execute if entity @s[tag=shot_ice] run function luigis_mansion:entities/shot_ice
+execute if entity @s[tag=shot_needle] run function luigis_mansion:entities/shot_needle
+execute if entity @s[tag=moving_ice] run function luigis_mansion:entities/moving_ice
 execute if entity @s[tag=ice_spike] run function luigis_mansion:entities/ice_spike
 execute if entity @s[tag=bone] run function luigis_mansion:entities/bone
 execute if entity @s[tag=bomb] run function luigis_mansion:entities/bomb
