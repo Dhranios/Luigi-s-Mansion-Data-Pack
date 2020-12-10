@@ -1,0 +1,2 @@
+execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_1=false},tag=!blackout] unless score #attic_hallway_1 Wave matches 1.. run function luigis_mansion:room/hidden/attic_hallway_1/wave_1
+execute if entity @a[tag=blackout] unless score #attic_hallway_1 Wave matches 1.. run function luigis_mansion:room/hidden/attic_hallway_1/blackout

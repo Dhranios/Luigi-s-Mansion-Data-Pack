@@ -18,6 +18,7 @@ execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=fals
 execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 113 23 run function luigis_mansion:spawn_entities/item/gold_coin
 execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 113 23 run function luigis_mansion:spawn_entities/item/gold_coin
 execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 113 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 113 23 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 111 22 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 111 22 run function luigis_mansion:spawn_entities/item/bill
 execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 111 22 run function luigis_mansion:spawn_entities/item/bill

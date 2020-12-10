@@ -2,8 +2,8 @@ execute unless score #astral_hall Ticking matches 1 run function #luigis_mansion
 execute as @e[type=!minecraft:item_frame,x=671,y=111,z=-31,dx=12,dy=6,dz=22] run scoreboard players set @s Room 35
 execute if entity @a[advancements={luigis_mansion:mansion/astral_hall=false},limit=1] unless block 677 111 -32 minecraft:iron_door[powered=true] run scoreboard players set #temp Searched 1
 execute if score #temp Searched matches 1 run fill 677 111 -32 677 112 -32 minecraft:air
-execute if score #temp Searched matches 1 run setblock 677 111 -32 minecraft:iron_door[open=false,facing=north,half=lower,hinge=right,powered=true]
-execute if score #temp Searched matches 1 run setblock 677 112 -32 minecraft:iron_door[open=false,facing=north,half=upper,hinge=right,powered=true]
+execute if score #temp Searched matches 1 run setblock 677 111 -32 minecraft:iron_door[open=false,facing=north,half=lower,hinge=left,powered=true]
+execute if score #temp Searched matches 1 run setblock 677 112 -32 minecraft:iron_door[open=false,facing=north,half=upper,hinge=left,powered=true]
 scoreboard players reset #temp Searched
 
 execute as @a[gamemode=!spectator,x=673,y=111,z=-29,dx=8,dy=6,dz=18] run function luigis_mansion:room/normal/astral_hall/tick_per_player

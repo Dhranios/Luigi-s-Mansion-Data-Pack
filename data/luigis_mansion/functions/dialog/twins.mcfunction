@@ -17,9 +17,9 @@ execute if entity @s[scores={Dialog=226}] if entity @a[scores={TwinsChoice=1}] r
 execute if entity @s[scores={Dialog=170}] if entity @a[scores={TwinsChoice=2}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.orville","color":"green"},{"translate":"luigis_mansion:dialog.twins.no.1"}]}
 execute if entity @s[scores={Dialog=210}] if entity @a[scores={TwinsChoice=2}] run scoreboard players set @s Dialog 281
 execute if entity @s[scores={Dialog=282}] run scoreboard players set @a TwinsChoice 0
-tag @s[scores={Dialog=282}] add dead
-execute if entity @s[tag=dead] as @a[scores={Room=39}] run function luigis_mansion:other/music/set/silence
-execute if entity @s[tag=dead] as @a[scores={TwinsChoice=0..}] run trigger TwinsChoice set 0
-execute if entity @s[tag=dead] run tag @e[tag=henry,tag=dialog,limit=1] add dead
-execute if entity @s[tag=dead] run teleport @e[tag=henry,tag=dialog,limit=1] ~ ~-100 ~
-teleport @s[tag=dead] ~ ~-100 ~
+tag @s[scores={Dialog=282}] add remove_from_existence
+execute if entity @s[tag=remove_from_existence] as @a[scores={Room=39}] run function luigis_mansion:other/music/set/silence
+execute if entity @s[tag=remove_from_existence] as @a[scores={TwinsChoice=0..}] run trigger TwinsChoice set 0
+execute if entity @s[tag=remove_from_existence] run tag @e[tag=henry,tag=dialog,limit=1] add remove_from_existence
+execute if entity @s[tag=remove_from_existence] run teleport @e[tag=henry,tag=dialog,limit=1] ~ ~-100 ~
+teleport @s[tag=remove_from_existence] ~ ~-100 ~

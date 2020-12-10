@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:mansion/astral_hall=true},limit=1] positioned 673 113 35 run function luigis_mansion:blocks/lit_candles

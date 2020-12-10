@@ -10,5 +10,5 @@ setblock 677 111 -31 minecraft:dark_oak_door[open=true,facing=south,half=lower,h
 setblock 677 112 -31 minecraft:dark_oak_door[open=true,facing=south,half=upper,hinge=left,powered=false]
 setblock 677 111 -30 minecraft:dark_oak_door[open=true,facing=north,half=lower,hinge=right,powered=false]
 setblock 677 112 -30 minecraft:dark_oak_door[open=true,facing=north,half=upper,hinge=right,powered=false]
-playsound minecraft:block.wooden_door.close block @a 677 111 -30.0 1
-playsound minecraft:block.wooden_door.open block @a 677 111 -9 1
+playsound luigis_mansion:block.door.close block @a 677 111 -30.0 1
+playsound luigis_mansion:block.door.open block @a 677 111 -9 1

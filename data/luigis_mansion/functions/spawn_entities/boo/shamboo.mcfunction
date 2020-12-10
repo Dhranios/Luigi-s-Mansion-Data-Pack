@@ -9,7 +9,7 @@ scoreboard players operation @e[tag=this_entity,limit=1] Health = #temp LastHeal
 execute store result score @e[tag=this_entity,limit=1] Room run data get storage luigis_mansion:data current_state.current_data.boos.shamboo.room
 scoreboard players reset #temp LastHealth
 execute if score #switch_boo_stats Selected matches 0 run scoreboard players set @e[tag=this_entity,limit=1] Move 6
-execute if score #switch_boo_stats Selected matches 1 run scoreboard players set @e[tag=this_entity,limit=1] Move 6
+execute if score #switch_boo_stats Selected matches 1 run scoreboard players set @e[tag=this_entity,limit=1] Move 12
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 execute if entity @a[advancements={luigis_mansion:mansion/main_hallway_key=false},limit=1] run tag @e[tag=this_entity,limit=1] add area_1
 execute if entity @a[advancements={luigis_mansion:mansion/main_hallway_key=true},limit=1] run tag @e[tag=this_entity,limit=1] add area_2

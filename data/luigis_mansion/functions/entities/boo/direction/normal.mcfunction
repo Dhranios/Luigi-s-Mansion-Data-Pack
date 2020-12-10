@@ -159,7 +159,6 @@ tag @s[scores={Room=37}] add up
 tag @s[scores={Room=37}] add down
 tag @s[scores={Room=37,HallwaySection=1}] add left
 tag @s[scores={Room=37}] add right
-tag @s[scores={Room=37,HallwaySection=2}] add left
 tag @s[scores={Room=38}] add up
 tag @s[scores={Room=38}] add down
 tag @s[scores={Room=38}] add left

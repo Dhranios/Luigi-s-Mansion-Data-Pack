@@ -2,7 +2,7 @@ execute if entity @s[tag=normal_death] run playsound luigis_mansion:entity.boolo
 execute if entity @s[tag=normal_death] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/boolossus
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
-execute if entity @s[tag=normal_death] run scoreboard players set @p[gamemode=!spectator] Element 460
+execute if entity @s[tag=normal_death] as @p[gamemode=!spectator] at @s run function luigis_mansion:items/poltergust_3000/ice_element
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run tag @e[tag=ice_elemental_ghost] add dead
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] as @a run function luigis_mansion:entities/boolossus/boss_damage
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus.one_go_health int 1 run scoreboard players get #temp Damage

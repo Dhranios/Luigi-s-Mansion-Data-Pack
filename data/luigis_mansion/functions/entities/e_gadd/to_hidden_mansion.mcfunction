@@ -4,6 +4,7 @@ execute unless score #mansion_type Selected matches 1 run function luigis_mansio
 teleport @s 760 89.9375 8.0 90 0
 execute positioned 789 90 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd
 scoreboard players set #mansion_type Selected 1
+execute unless score #mansion_data_index Selected matches 0 run clear @a minecraft:brick
 execute unless score #mansion_data_index Selected matches 0 run function luigis_mansion:entities/e_gadd/save_mansion_data
 scoreboard players operation #previous_mansion_index Selected = #mansion_data_index Selected
 scoreboard players set #mansion_data_index Selected 0

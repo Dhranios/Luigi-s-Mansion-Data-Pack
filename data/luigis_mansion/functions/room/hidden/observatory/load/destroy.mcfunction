@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:technical={observatory_destroyed=true},luigis_mansion:mansion/secret_altar=false},limit=1] run function luigis_mansion:room/hidden/observatory/destroy

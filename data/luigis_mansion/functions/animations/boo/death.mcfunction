@@ -12,9 +12,9 @@ execute unless entity @s[scores={HurtTime=1..}] run scoreboard players set @s Hu
 scoreboard players set @s[scores={HurtTime=3..}] HurtTime 1
 
 execute at @s run teleport @s ^ ^ ^-0.6
+scoreboard players set @s Move 0
 
 execute if entity @s[scores={HurtTime=1}] run scoreboard players operation #temp Room = @s Room
-execute at @s[scores={HurtTime=1},tag=!gold_dummy_ghost] as @a[gamemode=!spectator,scores={GhostCount=2..}] if score @s Room = #temp Room run function luigis_mansion:spawn_entities/item/small_heart
 execute if entity @s[scores={HurtTime=1}] run scoreboard players reset #temp Room
 execute at @s[scores={HurtTime=2}] if entity @a[gamemode=!spectator,distance=..0.7] run scoreboard players add #ghosts_caught Totals 1
 execute at @s[scores={HurtTime=2}] if entity @a[gamemode=!spectator,distance=..0.7] run tag @s add dead
