@@ -116,6 +116,7 @@ execute if entity @s[tag=area_1] run tag @e[tag=boo_marker,tag=new] add area_1
 execute if entity @s[tag=area_2] run tag @e[tag=boo_marker,tag=new] add area_2
 execute if entity @s[tag=area_3] run tag @e[tag=boo_marker,tag=new] add area_3
 execute if entity @s[tag=area_4] run tag @e[tag=boo_marker,tag=new] add area_4
+scoreboard players operation @e[tag=boo_marker,tag=new] Health = @s Health
 scoreboard players operation @e[tag=boo_marker,tag=new] Room = @s Room
 scoreboard players operation @e[tag=boo_marker,tag=new] HallwaySection = @s HallwaySection
 tag @e[tag=boo_marker,tag=new] remove new

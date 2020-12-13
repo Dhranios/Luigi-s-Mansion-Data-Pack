@@ -13,7 +13,3 @@ function luigis_mansion:room/normal/door/telephone_room_clockwork_room
 
 execute unless score #clockwork_room_elevator Time matches 1.. if entity @a[x=685.0,y=120,z=7.0,dx=1,dy=0,dz=1,gamemode=!spectator] run scoreboard players set #clockwork_room_elevator Searched 1
 execute if score #clockwork_room_elevator Time matches 100 if entity @a[x=687.0,y=120,z=7.0,dx=1,dy=0,dz=1,gamemode=!spectator] run scoreboard players set #clockwork_room_elevator Searched -1
-
-scoreboard players remove #clockwork_room_clock_1 Searched 1
-scoreboard players remove #clockwork_room_clock_2 Searched 1
-scoreboard players remove #clockwork_room_clock_3 Searched 1

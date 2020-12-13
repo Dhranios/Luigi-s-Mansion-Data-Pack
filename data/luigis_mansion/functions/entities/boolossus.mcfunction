@@ -10,6 +10,7 @@ execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run advancement grant @a only luigis_mansion:portrait_ghosts/boolossus
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run scoreboard players reset #temp Damage
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run advancement grant @a only luigis_mansion:mansion/balcony_2
+execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run scoreboard players reset #balcony_2 Ticking
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] as @a run function luigis_mansion:entities/boolossus/return
 
 execute if entity @s[tag=battle] run function luigis_mansion:entities/boolossus/battle

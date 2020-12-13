@@ -9,6 +9,7 @@ execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:port
 execute if entity @s[tag=disappear] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.chauncey.health int 1 run scoreboard players get @s Health
 execute if entity @s[tag=dead] run scoreboard players reset #temp Damage
 execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:mansion/nursery
+execute if entity @s[tag=dead] run scoreboard players reset #nursery Ticking
 execute if entity @s[tag=dead] as @a run function luigis_mansion:entities/chauncey/return
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.chauncey.hurt hostile @a ~ ~ ~ 1

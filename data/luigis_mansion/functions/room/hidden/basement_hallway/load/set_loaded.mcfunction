@@ -1,0 +1,1 @@
+scoreboard players set #basement_hallway Ticking 1

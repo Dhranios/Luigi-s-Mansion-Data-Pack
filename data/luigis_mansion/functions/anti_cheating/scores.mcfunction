@@ -101,8 +101,10 @@ scoreboard players set #2 Constants 2
 scoreboard players set #100 Constants 100
 scoreboard players set #5 Constants 5
 scoreboard players set #20 Constants 20
+scoreboard players set #30 Constants 30
 scoreboard players set #50 Constants 50
 scoreboard players set #100 Constants 100
+scoreboard players set #200 Constants 200
 scoreboard players set #500 Constants 500
 scoreboard players set #800 Constants 800
 scoreboard players set #1000 Constants 1000

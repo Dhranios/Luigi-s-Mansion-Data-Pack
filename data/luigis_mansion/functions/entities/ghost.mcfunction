@@ -52,12 +52,12 @@ execute unless entity @s[scores={HomeY=9300..10199}] if entity @s[tag=!ceiling_s
 execute unless entity @s[scores={HomeY=10200..11099}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=102,dy=6,tag=!vanish,tag=!disappear] HomeY 10200
 execute unless entity @s[scores={HomeY=11100..11999}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=111,dy=6,tag=!vanish,tag=!disappear] HomeY 11100
 execute unless entity @s[scores={HomeY=12000..13199}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=120,dy=6,tag=!vanish,tag=!disappear] HomeY 12000
-execute unless entity @s[scores={HomeY=13200..13299}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=132,dy=6,tag=!vanish,tag=!disappear] HomeY 13200
+execute unless entity @s[scores={HomeY=13200..13299}] if entity @s[tag=!ceiling_surprise,tag=!purple_bomber,tag=!shining_ghost] run scoreboard players set @s[y=132,dy=6,tag=!vanish,tag=!disappear] HomeY 13100
 execute unless entity @s[scores={HomeY=9300..10199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=93,dy=6,tag=!vanish,tag=!disappear] HomeY 9600
 execute unless entity @s[scores={HomeY=10200..11099}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=102,dy=6,tag=!vanish,tag=!disappear] HomeY 10500
 execute unless entity @s[scores={HomeY=11100..11999}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=111,dy=6,tag=!vanish,tag=!disappear] HomeY 11400
 execute unless entity @s[scores={HomeY=12000..13199}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=120,dy=6,tag=!vanish,tag=!disappear] HomeY 12300
-execute unless entity @s[scores={HomeY=13200..13299}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=132,dy=6,tag=!vanish,tag=!disappear] HomeY 13500
+execute unless entity @s[scores={HomeY=13200..13299}] unless entity @s[tag=!ceiling_surprise,tag=!purple_bomber] run scoreboard players set @s[y=132,dy=6,tag=!vanish,tag=!disappear] HomeY 13400
 
 execute if entity @s[tag=neville] run function luigis_mansion:entities/neville
 execute if entity @s[tag=lydia] run function luigis_mansion:entities/lydia

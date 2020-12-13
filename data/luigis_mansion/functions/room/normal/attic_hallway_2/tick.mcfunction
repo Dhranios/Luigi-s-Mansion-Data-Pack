@@ -8,7 +8,7 @@ function #luigis_mansion:room/normal/attic_hallway_2/interactions/room
 
 stopsound @a[scores={Room=43,HallwayNoise=0}] ambient luigis_mansion:block.telephone.ring
 execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if entity @a[tag=blackout,advancements={luigis_mansion:technical={telephone_3=false}},limit=1] positioned 712 121 7 run playsound luigis_mansion:block.telephone.ring ambient @a[scores={Room=43,HallwayNoise=0}] ~ ~ ~ 2
-execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if entity @a[tag=blackout,advancements={luigis_mansion:technical={telephone_3=false}},limit=1] run scoreboard players set @a[scores={Room=43,HallwayNoise=0}] HallwayNoise 60
+execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if entity @a[tag=blackout,advancements={luigis_mansion:technical={telephone_3=false}},limit=1] run scoreboard players set @a[scores={Room=43,HallwayNoise=0}] HallwayNoise 40
 
 function luigis_mansion:room/normal/attic_hallway_2/ghosts
 

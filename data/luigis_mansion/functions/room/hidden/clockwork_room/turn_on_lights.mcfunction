@@ -1,0 +1,10 @@
+fill 687 120 8 687 122 7 minecraft:air
+fill 688 120 6 688 122 6 minecraft:yellow_terracotta
+fill 688 120 9 688 122 9 minecraft:yellow_terracotta
+function #luigis_mansion:room/hidden/clockwork_room/turn_lights/on
+advancement grant @a only luigis_mansion:mansion/clockwork_room
+execute if entity @a[advancements={luigis_mansion:technical={released_boos_talk=true}},scores={Boos=..49},limit=1] run function luigis_mansion:room/hidden/clockwork_room/load_boos
+execute as @e[scores={Room=49},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
+execute as @e[scores={Room=49},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
+tag @e[scores={Room=49},tag=ghost_marker] add dead
+scoreboard players reset #clockwork_room Wave
