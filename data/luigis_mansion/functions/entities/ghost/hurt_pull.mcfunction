@@ -1,7 +1,7 @@
 scoreboard players operation #temp LastHealth = @s Health
 scoreboard players remove @s[scores={Room=..0}] Health 25
-execute if score #double_damage Selected matches 0 run scoreboard players remove @s[scores={Room=1..}] Health 25
-execute if score #double_damage Selected matches 1 run scoreboard players remove @s[scores={Room=1..}] Health 50
+execute if score #double_damage Selected matches 0 run scoreboard players remove @s[scores={Room=1..}] Health 24
+execute if score #double_damage Selected matches 1 run scoreboard players remove @s[scores={Room=1..}] Health 36
 scoreboard players operation #temp Health = @s Health
 scoreboard players operation #temp LastHealth /= #100 Constants
 scoreboard players operation #temp Health /= #100 Constants

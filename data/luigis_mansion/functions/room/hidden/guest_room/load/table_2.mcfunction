@@ -1,0 +1,1 @@
+execute if entity @a[advancements={luigis_mansion:mansion/guest_room=false},limit=1] run data merge block 715 117 55 {LootTable:"luigis_mansion:search"}

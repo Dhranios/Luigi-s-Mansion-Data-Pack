@@ -35,5 +35,5 @@ teleport @s[scores={Room=52}] 690 120 43
 teleport @s[scores={Room=54}] 691 93 -6
 teleport @s[scores={Room=55}] 709 93 -6
 teleport @s[scores={Room=56}] 713.0 111 -13
-teleport @s[scores={Room=57}] 713.0 114 -33.0
+teleport @s[scores={Room=57}] 713.0 111 -33.0
 teleport @s[scores={Room=58}] 690 120 -30

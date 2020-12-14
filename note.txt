@@ -19,7 +19,7 @@ Do define a new mansion, you need to set the mansion_type value, mansion_data_in
 #mansion_type (int): Defines the mansion that is loaded.
 #mansion_data_index (int): Defines the save data ID that is used.
 #mirrored (bool): Whether the ghosts mirror all their animations.
-#double_damage (bool): Whether the poltergust deals twice as much damage.
+#double_damage (bool): Whether the poltergust deals 1.5x as much damage.
 #double_hurt (bool): Whether the players take twice as much damage.
 #extra_health (bool): Whether the ghosts have 1.5x their normal health; portrait ghosts will drop 4 small pearls, 9 medium pearls and 1 big pearl in 1 suction.
 #switch_boo_stats (bool): Whether the normal boos get the health and speed values of the original's hidden mansion; this stacks with extra_health.

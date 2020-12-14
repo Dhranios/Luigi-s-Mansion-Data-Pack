@@ -1,5 +1,5 @@
 scoreboard players add @s Time 1
-execute if entity @s[scores={Time=20}] run playsound luigis_mansion:item.gameboy_horror.warp player @a ~ ~ ~ 1
+execute if entity @s[scores={Time=10}] run playsound luigis_mansion:item.gameboy_horror.warp player @a ~ ~ ~ 1
 
 execute if entity @s[scores={Time=50..130}] run particle minecraft:dust 0.5 0.5 1 1.5 ~ ~1.2 ~ 0.5 0.6 0.5 0 10
 teleport @s[scores={Time=70..129}] ~ ~ ~ ~54 ~
