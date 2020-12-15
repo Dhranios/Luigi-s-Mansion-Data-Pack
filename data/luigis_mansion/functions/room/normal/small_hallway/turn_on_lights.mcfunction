@@ -1,5 +1,5 @@
 function #luigis_mansion:room/normal/small_hallway/turn_lights/on
-advancement grant @a only luigis_mansion:mansion/small_hallway
+data modify storage luigis_mansion:data current_state.current_data.rooms.small_hallway merge value {cleared:1b}
 execute as @e[scores={Room=6},tag=optional_ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
 execute as @e[scores={Room=6},tag=ghost] run data merge entity @s {Health:0.0f,DeathTime:19s}
 tag @e[scores={Room=6},tag=ghost_marker] add dead

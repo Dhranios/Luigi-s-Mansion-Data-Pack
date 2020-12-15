@@ -1,84 +1,44 @@
-execute if entity @a[advancements={luigis_mansion:mansion/mansion=true}] run advancement grant @a only luigis_mansion:mansion/mansion
-execute if entity @a[advancements={luigis_mansion:mansion/foyer=true}] run advancement grant @a only luigis_mansion:mansion/foyer
-execute if entity @a[advancements={luigis_mansion:mansion/parlor=true}] run advancement grant @a only luigis_mansion:mansion/parlor
-execute if entity @a[advancements={luigis_mansion:mansion/anteroom=true}] run advancement grant @a only luigis_mansion:mansion/anteroom
-execute if entity @a[advancements={luigis_mansion:mansion/wardrobe_room=true}] run advancement grant @a only luigis_mansion:mansion/wardrobe_room
-execute if entity @a[advancements={luigis_mansion:mansion/wardrobe_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/wardrobe_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/balcony_1=true}] run advancement grant @a only luigis_mansion:mansion/balcony_1
-execute if entity @a[advancements={luigis_mansion:mansion/small_hallway=true}] run advancement grant @a only luigis_mansion:mansion/small_hallway
-execute if entity @a[advancements={luigis_mansion:mansion/study=true}] run advancement grant @a only luigis_mansion:mansion/study
-execute if entity @a[advancements={luigis_mansion:mansion/study_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/study_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/study_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/study_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/master_bedroom=true}] run advancement grant @a only luigis_mansion:mansion/master_bedroom
-execute if entity @a[advancements={luigis_mansion:mansion/nursery=true}] run advancement grant @a only luigis_mansion:mansion/nursery
-execute if entity @a[advancements={luigis_mansion:mansion/nursery_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/nursery_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/main_hallway=true}] run advancement grant @a only luigis_mansion:mansion/main_hallway
-execute if entity @a[advancements={luigis_mansion:mansion/main_hallway_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/main_hallway_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/basement_stairs=true}] run advancement grant @a only luigis_mansion:mansion/basement_stairs
-execute if entity @a[advancements={luigis_mansion:mansion/bathroom_1=true}] run advancement grant @a only luigis_mansion:mansion/bathroom_1
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room=true}] run advancement grant @a only luigis_mansion:mansion/ball_room
-execute if entity @a[advancements={luigis_mansion:mansion/storage_room=true}] run advancement grant @a only luigis_mansion:mansion/storage_room
-execute if entity @a[advancements={luigis_mansion:mansion/storage_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/storage_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/washroom_1=true}] run advancement grant @a only luigis_mansion:mansion/washroom_1
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room=true}] run advancement grant @a only luigis_mansion:mansion/fortune_tellers_room
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/fortune_tellers_room_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/mirror_room=true}] run advancement grant @a only luigis_mansion:mansion/mirror_room
-execute if entity @a[advancements={luigis_mansion:mansion/laundry_room=true}] run advancement grant @a only luigis_mansion:mansion/laundry_room
-execute if entity @a[advancements={luigis_mansion:mansion/butlers_room=true}] run advancement grant @a only luigis_mansion:mansion/butlers_room
-execute if entity @a[advancements={luigis_mansion:mansion/hidden_room=true}] run advancement grant @a only luigis_mansion:mansion/hidden_room
-execute if entity @a[advancements={luigis_mansion:mansion/hidden_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/hidden_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/conservatory=true}] run advancement grant @a only luigis_mansion:mansion/conservatory
-execute if entity @a[advancements={luigis_mansion:mansion/conservatory_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/conservatory_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/dining_room=true}] run advancement grant @a only luigis_mansion:mansion/dining_room
-execute if entity @a[advancements={luigis_mansion:mansion/dining_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/dining_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/dining_room_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/dining_room_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/kitchen=true}] run advancement grant @a only luigis_mansion:mansion/kitchen
-execute if entity @a[advancements={luigis_mansion:mansion/kitchen_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/kitchen_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/kitchen_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/kitchen_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/boneyard=true}] run advancement grant @a only luigis_mansion:mansion/boneyard
-execute if entity @a[advancements={luigis_mansion:mansion/graveyard=true}] run advancement grant @a only luigis_mansion:mansion/graveyard
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard=true}] run advancement grant @a only luigis_mansion:mansion/courtyard
-execute if entity @a[advancements={luigis_mansion:mansion/bottom_of_the_well=true}] run advancement grant @a only luigis_mansion:mansion/bottom_of_the_well
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room=true}] run advancement grant @a only luigis_mansion:mansion/rec_room
-execute if entity @a[advancements={luigis_mansion:mansion/main_stairs=true}] run advancement grant @a only luigis_mansion:mansion/main_stairs
-execute if entity @a[advancements={luigis_mansion:mansion/tea_room=true}] run advancement grant @a only luigis_mansion:mansion/tea_room
-execute if entity @a[advancements={luigis_mansion:mansion/tea_room_cheese_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/tea_room_cheese_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/tea_room_random_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/tea_room_random_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/hallway=true}] run advancement grant @a only luigis_mansion:mansion/hallway
-execute if entity @a[advancements={luigis_mansion:mansion/hallway_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/hallway_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/washroom_2=true}] run advancement grant @a only luigis_mansion:mansion/washroom_2
-execute if entity @a[advancements={luigis_mansion:mansion/bathroom_2=true}] run advancement grant @a only luigis_mansion:mansion/bathroom_2
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room=true}] run advancement grant @a only luigis_mansion:mansion/nanas_room
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/nanas_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/astral_hall=true}] run advancement grant @a only luigis_mansion:mansion/astral_hall
-execute if entity @a[advancements={luigis_mansion:mansion/observatory=true}] run advancement grant @a only luigis_mansion:mansion/observatory
-execute if entity @a[advancements={luigis_mansion:mansion/billiards_room=true}] run advancement grant @a only luigis_mansion:mansion/billiards_room
-execute if entity @a[advancements={luigis_mansion:mansion/billiards_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/billiards_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/projection_room=true}] run advancement grant @a only luigis_mansion:mansion/projection_room
-execute if entity @a[advancements={luigis_mansion:mansion/twins_room=true}] run advancement grant @a only luigis_mansion:mansion/twins_room
-execute if entity @a[advancements={luigis_mansion:mansion/twins_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/twins_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/safari_room=true}] run advancement grant @a only luigis_mansion:mansion/safari_room
-execute if entity @a[advancements={luigis_mansion:mansion/safari_room_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/safari_room_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_1=true}] run advancement grant @a only luigis_mansion:mansion/attic_hallway_1
-execute if entity @a[advancements={luigis_mansion:mansion/balcony_2=true}] run advancement grant @a only luigis_mansion:mansion/balcony_2
-execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_2=true}] run advancement grant @a only luigis_mansion:mansion/attic_hallway_2
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room=true}] run advancement grant @a only luigis_mansion:mansion/telephone_room
-execute if entity @a[advancements={luigis_mansion:mansion/breaker_room=true}] run advancement grant @a only luigis_mansion:mansion/breaker_room
-execute if entity @a[advancements={luigis_mansion:mansion/breaker_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/breaker_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/cellar=true}] run advancement grant @a only luigis_mansion:mansion/cellar
-execute if entity @a[advancements={luigis_mansion:mansion/basement_hallway=true}] run advancement grant @a only luigis_mansion:mansion/basement_hallway
-execute if entity @a[advancements={luigis_mansion:mansion/curved_hallway=true}] run advancement grant @a only luigis_mansion:mansion/curved_hallway
-execute if entity @a[advancements={luigis_mansion:mansion/cellar_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/cellar_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/clockwork_room=true}] run advancement grant @a only luigis_mansion:mansion/clockwork_room
-execute if entity @a[advancements={luigis_mansion:mansion/roof=true}] run advancement grant @a only luigis_mansion:mansion/roof
-execute if entity @a[advancements={luigis_mansion:mansion/armory=true}] run advancement grant @a only luigis_mansion:mansion/armory
-execute if entity @a[advancements={luigis_mansion:mansion/ceramics_studio=true}] run advancement grant @a only luigis_mansion:mansion/ceramics_studio
-execute if entity @a[advancements={luigis_mansion:mansion/sealed_room=true}] run advancement grant @a only luigis_mansion:mansion/sealed_room
-execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_speedy_spirit=true}] run advancement grant @a only luigis_mansion:mansion/sealed_room_speedy_spirit
-execute if entity @a[advancements={luigis_mansion:mansion/sealed_room_gold_mouse=true}] run advancement grant @a only luigis_mansion:mansion/sealed_room_gold_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/pipe_room=true}] run advancement grant @a only luigis_mansion:mansion/pipe_room
-execute if entity @a[advancements={luigis_mansion:mansion/cold_storage=true}] run advancement grant @a only luigis_mansion:mansion/cold_storage
-execute if entity @a[advancements={luigis_mansion:mansion/sitting_room=true}] run advancement grant @a only luigis_mansion:mansion/sitting_room
-execute if entity @a[advancements={luigis_mansion:mansion/guest_room=true}] run advancement grant @a only luigis_mansion:mansion/guest_room
-execute if entity @a[advancements={luigis_mansion:mansion/artists_studio=true}] run advancement grant @a only luigis_mansion:mansion/artists_studio
-execute if entity @a[advancements={luigis_mansion:mansion/secret_altar=true}] run advancement grant @a only luigis_mansion:mansion/secret_altar
+scoreboard players set @a Boos 0
+execute if data storage luigis_mansion:data current_state.current_data.boos.bamboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boo_b_hatch{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boo_la_la{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boodacious{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booffant{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boogie{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boohoo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booigi{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boolderdash{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boolicious{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booligan{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boolivia{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boomeo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boomerang{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boonita{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boonswoggle{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booregard{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booripedes{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booris{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booscaster{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.bootha{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.bootique{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.gameboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.gameboo_advance{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.gumboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.kung_boo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.limbooger{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.little_boo_peep{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.mr_boojangles{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.peekaboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.shamboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.taboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.tamboorine{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.turboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.underboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.room.balcony_2{cleared:1b} run scoreboard players add @a Boos 15
+
+scoreboard players set @a ClairvoyaSpoke 0
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add @a ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_latter:1b} run scoreboard players add @a ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_star:1b} run scoreboard players add @a ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_glove:1b} run scoreboard players add @a ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_shoe:1b} run scoreboard players add @a ClairvoyaSpoke 1

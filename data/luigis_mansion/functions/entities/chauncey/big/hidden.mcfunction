@@ -1,6 +1,6 @@
-execute if entity @a[advancements={luigis_mansion:mansion/nursery=true}] run tag @s add dead
-execute if entity @a[advancements={luigis_mansion:mansion/nursery=true}] as @a[distance=..80] run function luigis_mansion:entities/chauncey/return
-execute if entity @a[advancements={luigis_mansion:mansion/nursery=false}] as @a[distance=80..] run function luigis_mansion:entities/chauncey/to_arena
+execute if data storage luigis_mansion:data current_state.current_data.room.nursery{cleared:1b} run tag @s add dead
+execute if data storage luigis_mansion:data current_state.current_data.room.nursery{cleared:1b} as @a[distance=..80] run function luigis_mansion:entities/chauncey/return
+execute unless data storage luigis_mansion:data current_state.current_data.room.nursery{cleared:1b} as @a[distance=80..] run function luigis_mansion:entities/chauncey/to_arena
 execute if entity @s[tag=!intro_done] run function luigis_mansion:dialog/chauncey_intro
 scoreboard players add @s[scores={Wave=584..}] Wave 1
 scoreboard players add @s[scores={Wave=382..582}] Wave 1

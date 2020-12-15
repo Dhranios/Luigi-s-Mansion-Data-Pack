@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond_pickaxe",
-			"nbt": "{Unbreakable:1b,Damage:5,CustomModelData:1}"
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:2}"
         },
         "show_toast": false,
         "title": {

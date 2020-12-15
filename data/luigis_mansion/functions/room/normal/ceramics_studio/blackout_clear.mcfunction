@@ -1,2 +1,2 @@
 function luigis_mansion:room/normal/ceramics_studio/remove_blockade
-advancement grant @a only luigis_mansion:mansion/ceramics_studio
+data modify storage luigis_mansion:data current_state.current_data.rooms.ceramics_studio merge value {cleared:1b}

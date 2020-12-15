@@ -1,3 +1,3 @@
-execute if entity @a[advancements={luigis_mansion:mansion/pipe_room_bucket=false},limit=1] positioned 696 93 27 run function luigis_mansion:spawn_entities/item/gold_bar
-execute if entity @a[advancements={luigis_mansion:mansion/pipe_room_bucket=true},limit=1] run tag @e[tag=selected] add nothing
-advancement grant @a only luigis_mansion:mansion/pipe_room_bucket
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{pipe_room_bucket:1b} positioned 696 93 27 run function luigis_mansion:spawn_entities/item/gold_bar
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{pipe_room_bucket:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {pipe_room_bucket:1b}

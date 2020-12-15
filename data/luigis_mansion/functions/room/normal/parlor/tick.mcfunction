@@ -4,7 +4,7 @@ execute as @e[type=!minecraft:item_frame,x=682,y=111,z=-3,dx=17,dy=6,dz=21] run 
 execute as @a[gamemode=!spectator,x=684,y=111,z=-1,dx=13,dy=6,dz=17] run function luigis_mansion:room/normal/parlor/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=2}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..14 if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] run advancement grant @a only luigis_mansion:mansion/parlor_money
+execute if score #temp Wave matches ..14 if data storage luigis_mansion:data {found_e_gadd:1b} run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {parlor_money:1b}
 scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/normal/parlor/interactions/room

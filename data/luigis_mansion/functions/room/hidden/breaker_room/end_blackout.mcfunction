@@ -1,60 +1,60 @@
 tag @a remove blackout
-execute if score #foyer Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/foyer=true}] run function luigis_mansion:room/hidden/foyer/clear
-execute if score #parlor Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/parlor=true}] run function luigis_mansion:room/hidden/parlor/clear
-execute if score #anteroom Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/anteroom=true}] run function luigis_mansion:room/hidden/anteroom/clear
-execute if score #wardrobe_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/wardrobe_room=true}] run function luigis_mansion:room/hidden/wardrobe_room/clear
-execute if score #balcony_1 Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/balcony_1=true}] run function luigis_mansion:room/hidden/balcony_1/clear
-execute if score #small_hallway Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/small_hallway=true}] run function luigis_mansion:room/hidden/small_hallway/clear
-execute if score #study Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/study=true}] run function luigis_mansion:room/hidden/study/clear
-execute if score #master_bedroom Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/master_bedroom=true}] run function luigis_mansion:room/hidden/master_bedroom/clear
-execute if score #nursery Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/nursery=true}] run function luigis_mansion:room/hidden/nursery/clear
-execute if score #main_hallway Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/main_hallway=true}] run function luigis_mansion:room/hidden/main_hallway/clear
-execute if score #basement_stairs Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/basement_stairs=true}] run function luigis_mansion:room/hidden/basement_stairs/clear
-execute if score #bathroom_1 Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/bathroom_1=true}] run function luigis_mansion:room/hidden/bathroom_1/clear
-execute if score #ball_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/ball_room=true}] run function luigis_mansion:room/hidden/ball_room/clear
-execute if score #storage_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/storage_room=true}] run function luigis_mansion:room/hidden/storage_room/clear
-execute if score #washroom_1 Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/washroom_1=true}] run function luigis_mansion:room/hidden/washroom_1/clear
-execute if score #fortune_tellers_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room=true}] run function luigis_mansion:room/hidden/fortune_tellers_room/clear
-execute if score #mirror_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/mirror_room=true}] run function luigis_mansion:room/hidden/mirror_room/clear
-execute if score #laundry_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/laundry_room=true}] run function luigis_mansion:room/hidden/laundry_room/clear
-execute if score #butlers_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/butlers_room=true}] run function luigis_mansion:room/hidden/butlers_room/clear
-execute if score #hidden_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/hidden_room=true}] run function luigis_mansion:room/hidden/hidden_room/clear
-execute if score #conservatory Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/conservatory=true}] run function luigis_mansion:room/hidden/conservatory/clear
-execute if score #dining_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/dining_room=true}] run function luigis_mansion:room/hidden/dining_room/clear
-execute if score #kitchen Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/kitchen=true}] run function luigis_mansion:room/hidden/kitchen/clear
-execute if score #boneyard Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/boneyard=true}] run function luigis_mansion:room/hidden/boneyard/clear
-execute if score #graveyard Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/graveyard=true}] run function luigis_mansion:room/hidden/graveyard/clear
-execute if score #courtyard Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/courtyard=true}] run function luigis_mansion:room/hidden/courtyard/clear
-execute if score #bottom_of_the_well Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/bottom_of_the_well=true}] run function luigis_mansion:room/hidden/bottom_of_the_well/clear
-execute if score #rec_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/rec_room=true}] run function luigis_mansion:room/hidden/rec_room/clear
-execute if score #main_stairs Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/main_stairs=true}] run function luigis_mansion:room/hidden/main_stairs/clear
-execute if score #tea_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/tea_room=true}] run function luigis_mansion:room/hidden/tea_room/clear
-execute if score #hallway Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/hallway=true}] run function luigis_mansion:room/hidden/hallway/clear
-execute if score #washroom_2 Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/washroom_2=true}] run function luigis_mansion:room/hidden/washroom_2/clear
-execute if score #bathroom_2 Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/bathroom_2=true}] run function luigis_mansion:room/hidden/bathroom_2/clear
-execute if score #nanas_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/nanas_room=true}] run function luigis_mansion:room/hidden/nanas_room/clear
-execute if score #astral_hall Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/astral_hall=true}] run function luigis_mansion:room/hidden/astral_hall/clear
-execute if score #observatory Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/observatory=true}] run function luigis_mansion:room/hidden/observatory/clear
-execute if score #billiards_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/billiards_room=true}] run function luigis_mansion:room/hidden/billiards_room/clear
-execute if score #projection_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/projection_room=true}] run function luigis_mansion:room/hidden/projection_room/clear
-execute if score #twins_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/twins_room=true}] run function luigis_mansion:room/hidden/twins_room/clear
-execute if score #safari_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/safari_room=true}] run function luigis_mansion:room/hidden/safari_room/clear
-execute if score #attic_hallway_1 Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/attic_hallway_1=true}] run function luigis_mansion:room/hidden/attic_hallway_1/clear
-execute if score #balcony_2 Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/balcony_2=true}] run function luigis_mansion:room/hidden/balcony_2/clear
-execute if score #attic_hallway_2 Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/attic_hallway_2=true}] run function luigis_mansion:room/hidden/attic_hallway_2/clear
-execute if score #telephone_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/telephone_room=true}] run function luigis_mansion:room/hidden/telephone_room/clear
+execute if score #foyer Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.foyer{cleared:1b} run function luigis_mansion:room/hidden/foyer/clear
+execute if score #parlor Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.parlor{cleared:1b} run function luigis_mansion:room/hidden/parlor/clear
+execute if score #anteroom Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.anteroom{cleared:1b} run function luigis_mansion:room/hidden/anteroom/clear
+execute if score #wardrobe_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.wardrobe_room{cleared:1b} run function luigis_mansion:room/hidden/wardrobe_room/clear
+execute if score #balcony_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.balcony_1{cleared:1b} run function luigis_mansion:room/hidden/balcony_1/clear
+execute if score #small_hallway Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.small_hallway{cleared:1b} run function luigis_mansion:room/hidden/small_hallway/clear
+execute if score #study Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.study{cleared:1b} run function luigis_mansion:room/hidden/study/clear
+execute if score #master_bedroom Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.master_bedroom{cleared:1b} run function luigis_mansion:room/hidden/master_bedroom/clear
+execute if score #nursery Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.nursery{cleared:1b} run function luigis_mansion:room/hidden/nursery/clear
+execute if score #main_hallway Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.main_hallway{cleared:1b} run function luigis_mansion:room/hidden/main_hallway/clear
+execute if score #basement_stairs Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.basement_stairs{cleared:1b} run function luigis_mansion:room/hidden/basement_stairs/clear
+execute if score #bathroom_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.bathroom_1{cleared:1b} run function luigis_mansion:room/hidden/bathroom_1/clear
+execute if score #ball_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.ball_room{cleared:1b} run function luigis_mansion:room/hidden/ball_room/clear
+execute if score #storage_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.storage_room{cleared:1b} run function luigis_mansion:room/hidden/storage_room/clear
+execute if score #washroom_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.washroom_1{cleared:1b} run function luigis_mansion:room/hidden/washroom_1/clear
+execute if score #fortune_tellers_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.fortune_tellers_room{cleared:1b} run function luigis_mansion:room/hidden/fortune_tellers_room/clear
+execute if score #mirror_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.mirror_room{cleared:1b} run function luigis_mansion:room/hidden/mirror_room/clear
+execute if score #laundry_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.laundry_room{cleared:1b} run function luigis_mansion:room/hidden/laundry_room/clear
+execute if score #butlers_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.butlers_room{cleared:1b} run function luigis_mansion:room/hidden/butlers_room/clear
+execute if score #hidden_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.hidden_room{cleared:1b} run function luigis_mansion:room/hidden/hidden_room/clear
+execute if score #conservatory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.conservatory{cleared:1b} run function luigis_mansion:room/hidden/conservatory/clear
+execute if score #dining_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.dining_room{cleared:1b} run function luigis_mansion:room/hidden/dining_room/clear
+execute if score #kitchen Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.kitchen{cleared:1b} run function luigis_mansion:room/hidden/kitchen/clear
+execute if score #boneyard Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.boneyard{cleared:1b} run function luigis_mansion:room/hidden/boneyard/clear
+execute if score #graveyard Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.graveyard{cleared:1b} run function luigis_mansion:room/hidden/graveyard/clear
+execute if score #courtyard Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.courtyard{cleared:1b} run function luigis_mansion:room/hidden/courtyard/clear
+execute if score #bottom_of_the_well Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.bottom_of_the_well{cleared:1b} run function luigis_mansion:room/hidden/bottom_of_the_well/clear
+execute if score #rec_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.rec_room{cleared:1b} run function luigis_mansion:room/hidden/rec_room/clear
+execute if score #main_stairs Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.main_stairs{cleared:1b} run function luigis_mansion:room/hidden/main_stairs/clear
+execute if score #tea_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.tea_room{cleared:1b} run function luigis_mansion:room/hidden/tea_room/clear
+execute if score #hallway Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.hallway{cleared:1b} run function luigis_mansion:room/hidden/hallway/clear
+execute if score #washroom_2 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.washroom_2{cleared:1b} run function luigis_mansion:room/hidden/washroom_2/clear
+execute if score #bathroom_2 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.bathroom_2{cleared:1b} run function luigis_mansion:room/hidden/bathroom_2/clear
+execute if score #nanas_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.nanas_room{cleared:1b} run function luigis_mansion:room/hidden/nanas_room/clear
+execute if score #astral_hall Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.astral_hall{cleared:1b} run function luigis_mansion:room/hidden/astral_hall/clear
+execute if score #observatory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.observatory{cleared:1b} run function luigis_mansion:room/hidden/observatory/clear
+execute if score #billiards_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.billiards_room{cleared:1b} run function luigis_mansion:room/hidden/billiards_room/clear
+execute if score #projection_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.projection_room{cleared:1b} run function luigis_mansion:room/hidden/projection_room/clear
+execute if score #twins_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.twins_room{cleared:1b} run function luigis_mansion:room/hidden/twins_room/clear
+execute if score #safari_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.safari_room{cleared:1b} run function luigis_mansion:room/hidden/safari_room/clear
+execute if score #attic_hallway_1 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.attic_hallway_1{cleared:1b} run function luigis_mansion:room/hidden/attic_hallway_1/clear
+execute if score #balcony_2 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.balcony_2{cleared:1b} run function luigis_mansion:room/hidden/balcony_2/clear
+execute if score #attic_hallway_2 Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.attic_hallway_2{cleared:1b} run function luigis_mansion:room/hidden/attic_hallway_2/clear
+execute if score #telephone_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.telephone_room{cleared:1b} run function luigis_mansion:room/hidden/telephone_room/clear
 function luigis_mansion:room/hidden/breaker_room/clear
-execute if score #cellar Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/cellar=true}] run function luigis_mansion:room/hidden/cellar/clear
-execute if score #basement_hallway Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/basement_hallway=true}] run function luigis_mansion:room/hidden/basement_hallway/clear
-execute if score #curved_hallway Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/curved_hallway=true}] run function luigis_mansion:room/hidden/curved_hallway/clear
-execute if score #clockwork_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/clockwork_room=true}] run function luigis_mansion:room/hidden/clockwork_room/clear
-execute if score #roof Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/roof=true}] run function luigis_mansion:room/hidden/roof/clear
-execute if score #armory Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/armory=true}] run function luigis_mansion:room/hidden/armory/clear
-execute if score #ceramics_studio Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/ceramics_studio=true}] run function luigis_mansion:room/hidden/ceramics_studio/clear
-execute if score #sealed_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/sealed_room=true}] run function luigis_mansion:room/hidden/sealed_room/clear
-execute if score #pipe_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/pipe_room=true}] run function luigis_mansion:room/hidden/pipe_room/clear
-execute if score #cold_storage Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/cold_storage=true}] run function luigis_mansion:room/hidden/cold_storage/clear
-execute if score #sitting_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/sitting_room=true}] run function luigis_mansion:room/hidden/sitting_room/clear
-execute if score #guest_room Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/guest_room=true}] run function luigis_mansion:room/hidden/guest_room/clear
-execute if score #artists_studio Ticking matches 1 if entity @a[advancements={luigis_mansion:mansion/artists_studio=true}] run function luigis_mansion:room/hidden/artists_studio/clear
+execute if score #cellar Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.cellar{cleared:1b} run function luigis_mansion:room/hidden/cellar/clear
+execute if score #basement_hallway Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.basement_hallway{cleared:1b} run function luigis_mansion:room/hidden/basement_hallway/clear
+execute if score #curved_hallway Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.curved_hallway{cleared:1b} run function luigis_mansion:room/hidden/curved_hallway/clear
+execute if score #clockwork_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.clockwork_room{cleared:1b} run function luigis_mansion:room/hidden/clockwork_room/clear
+execute if score #roof Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.roof{cleared:1b} run function luigis_mansion:room/hidden/roof/clear
+execute if score #armory Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.armory{cleared:1b} run function luigis_mansion:room/hidden/armory/clear
+execute if score #ceramics_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.ceramics_studio{cleared:1b} run function luigis_mansion:room/hidden/ceramics_studio/clear
+execute if score #sealed_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.sealed_room{cleared:1b} run function luigis_mansion:room/hidden/sealed_room/clear
+execute if score #pipe_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.pipe_room{cleared:1b} run function luigis_mansion:room/hidden/pipe_room/clear
+execute if score #cold_storage Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.cold_storage{cleared:1b} run function luigis_mansion:room/hidden/cold_storage/clear
+execute if score #sitting_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.sitting_room{cleared:1b} run function luigis_mansion:room/hidden/sitting_room/clear
+execute if score #guest_room Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.guest_room{cleared:1b} run function luigis_mansion:room/hidden/guest_room/clear
+execute if score #artists_studio Ticking matches 1 if data storage luigis_mansion:data current_state.current_data.room.artists_studio{cleared:1b} run function luigis_mansion:room/hidden/artists_studio/clear
 execute if score #secret_altar Ticking matches 1 run function luigis_mansion:room/hidden/secret_altar/clear

@@ -1,5 +1,5 @@
 execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
-execute if score #mansion_type Selected matches -1 if entity @a[advancements={luigis_mansion:mansion/parlor=false}] run scoreboard players set #can_clear_hidden Selected 1
+execute if score #mansion_type Selected matches -1 unless data storage luigis_mansion:data current_state.current_data.room.parlor{cleared:1b} run scoreboard players set #can_clear_hidden Selected 1
 execute unless score #mansion_type Selected matches 1 run function luigis_mansion:entities/e_gadd/load_mansion/hidden
 teleport @s 760 89.9375 8.0 90 0
 execute positioned 789 90 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd

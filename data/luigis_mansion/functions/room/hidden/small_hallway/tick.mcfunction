@@ -5,7 +5,7 @@ tag @e[tag=ghost,scores={Room=6}] add hallway
 execute as @a[gamemode=!spectator,x=700,y=111,z=-40,dx=4,dy=6,dz=36] run function luigis_mansion:room/hidden/small_hallway/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=6}] run scoreboard players add #temp Wave 1
-execute if score #temp Wave matches ..10 run advancement grant @a only luigis_mansion:mansion/small_hallway_money
+execute if score #temp Wave matches ..10 run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {small_hallway_money:1b}
 scoreboard players reset #temp Wave
 
 function #luigis_mansion:room/hidden/small_hallway/interactions/room

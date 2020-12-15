@@ -7,7 +7,7 @@ execute as @a[distance=..2] at @s run teleport @s ~1 ~ ~
 execute if entity @s[scores={Dialog=1}] run stopsound @a[scores={Room=41}] music
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=41}] MusicType 21
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=41}] Music 0
-execute if entity @a[advancements={luigis_mansion:technical={mysterious_power=true}},limit=1] run scoreboard players set @s[scores={Dialog=1}] Dialog 1400
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{mysterious_power:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 1400
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.1"}]}
 execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.1.more"}]}
 execute if entity @s[scores={Dialog=88}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.2"}]}
@@ -24,7 +24,7 @@ execute if entity @s[scores={Dialog=1328}] run playsound luigis_mansion:music.wa
 execute if entity @s[scores={Dialog=1328}] run scoreboard players set @a[scores={Room=41}] Music 80
 execute if entity @s[scores={Dialog=1338..1398}] as @a[scores={Room=41}] at @s run teleport @s ~0.5 120 ~
 execute if entity @s[scores={Dialog=1398}] run teleport @a[scores={Room=41}] 714.0 102 8.0
-execute if entity @s[scores={Dialog=1398}] run advancement grant @a only luigis_mansion:technical mysterious_power
+execute if entity @s[scores={Dialog=1398}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {mysterious_power:1b}
 tag @s[scores={Dialog=1398}] add dead
 
 execute if entity @s[scores={Dialog=1400}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mysterious_power","color":"green"},{"translate":"luigis_mansion:dialog.mysterious_power.repeat.1"}]}
@@ -49,5 +49,5 @@ execute if entity @s[scores={Dialog=1936}] run playsound luigis_mansion:music.wa
 execute if entity @s[scores={Dialog=1936}] run scoreboard players set @a[scores={Room=41}] Music 80
 execute if entity @s[scores={Dialog=1946..1996}] as @a[scores={Room=41}] at @s run teleport @s ~0.5 120 ~
 execute if entity @s[scores={Dialog=1996}] run teleport @a[scores={Room=41}] 714.0 102 8.0
-execute if entity @s[scores={Dialog=1996}] run advancement grant @a only luigis_mansion:technical mysterious_power
+execute if entity @s[scores={Dialog=1996}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {mysterious_power:1b}
 tag @s[scores={Dialog=1996}] add dead

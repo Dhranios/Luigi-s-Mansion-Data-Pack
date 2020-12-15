@@ -1,44 +1,44 @@
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -34 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 102 -34 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 658 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 658 102 -34 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 658 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 662 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 662 102 -34 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 662 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -36 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 102 -36 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 103 -36 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -32 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 102 -32 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 102 -32 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -35 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -34 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -33 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 102 -35 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 102 -33 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 102 -35 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 102 -34 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 102 -33 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 658 102 -35 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 658 102 -34 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 658 102 -33 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 662 102 -35 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 662 102 -34 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 662 102 -33 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -36 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 102 -36 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 103 -36 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 659 102 -32 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 102 -32 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 661 102 -32 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 103 -33.0 run function luigis_mansion:spawn_entities/item/gold_bar
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 103 -34.0 run function luigis_mansion:spawn_entities/item/gold_bar
-execute if entity @a[advancements={luigis_mansion:mansion/rec_room_chest=false},limit=1] positioned 660 103 -34 run function luigis_mansion:spawn_entities/item/blue_diamond
-advancement grant @a only luigis_mansion:mansion/rec_room_chest
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -34 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 102 -34 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 658 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 658 102 -34 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 658 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 662 102 -35 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 662 102 -34 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 662 102 -33 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -36 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 102 -36 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 103 -36 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -32 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 102 -32 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 102 -32 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -35 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -34 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -33 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 102 -35 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 102 -33 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 102 -35 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 102 -34 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 102 -33 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 658 102 -35 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 658 102 -34 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 658 102 -33 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 662 102 -35 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 662 102 -34 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 662 102 -33 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -36 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 102 -36 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 103 -36 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 659 102 -32 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 102 -32 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 661 102 -32 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 103 -33.0 run function luigis_mansion:spawn_entities/item/gold_bar
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 103 -34.0 run function luigis_mansion:spawn_entities/item/gold_bar
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{rec_room_chest:1b} positioned 660 103 -34 run function luigis_mansion:spawn_entities/item/blue_diamond
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {rec_room_chest:1b}

@@ -20,6 +20,6 @@ tag @s[scores={Dialog=460}] remove release_boos
 execute if score #mansion_type Selected matches 0 run teleport @s[x=681.5,y=102,z=-37.5,distance=..1.5] ~-1.5 ~ ~
 execute if score #mansion_type Selected matches 1 run teleport @s[x=681.5,y=102,z=-37.5,distance=..1.5] ~-1.5 ~ ~
 execute if entity @s[scores={Dialog=460}] as @a run function luigis_mansion:other/music/set/silence
-execute if entity @s[scores={Dialog=460}] run advancement grant @a only luigis_mansion:boos/boos
+execute if entity @s[scores={Dialog=460}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {released_boos:1b}
 execute if entity @s[scores={Dialog=460}] run scoreboard players set @a GBHCall 4
 scoreboard players reset @s[scores={Dialog=460}] Dialog

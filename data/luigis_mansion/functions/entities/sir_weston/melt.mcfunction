@@ -7,7 +7,7 @@ scoreboard players add @s[scores={Dialog=1..422}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] if block ^2.7 ^ ^2.7 minecraft:soul_campfire[lit=true] if block ^-2.7 ^ ^2.7 minecraft:soul_campfire[lit=true] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=55}] ~ ~ ~ 1000
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=55,Music=..30}] Music 30
-execute if entity @s[scores={Dialog=30}] if entity @a[advancements={luigis_mansion:technical={sir_weston_spoke=true}}] run scoreboard players set @s Dialog 422
+execute if entity @s[scores={Dialog=30}] if data storage luigis_mansion:data current_state.current_data.technical_data{sir_weston_spoke:1b} run scoreboard players set @s Dialog 422
 execute if entity @s[scores={Dialog=31..421}] facing entity @p[scores={Room=55},gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=31..421}] as @a[scores={Room=55}] unless entity @s[scores={MusicType=23}] run scoreboard players set @s Music 0
 execute if entity @s[scores={Dialog=31..421}] as @a[scores={Room=55}] unless entity @s[scores={MusicType=23}] run scoreboard players set @s MusicType 23
@@ -19,7 +19,7 @@ execute if entity @s[scores={Dialog=198}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=270}] run tellraw @a[scores={Room=55}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sir_weston","color":"green"},{"translate":"luigis_mansion:dialog.sir_weston.4"}]}
 execute if entity @s[scores={Dialog=390}] if score #players Totals matches 1 run tellraw @a[scores={Room=55}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sir_weston","color":"green"},{"translate":"luigis_mansion:dialog.sir_weston.5"}]}
 execute if entity @s[scores={Dialog=390}] if score #players Totals matches 2.. run tellraw @a[scores={Room=55}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sir_weston","color":"green"},{"translate":"luigis_mansion:dialog.sir_weston.5.more"}]}
-execute if entity @s[scores={Dialog=422}] run advancement grant @a only luigis_mansion:technical sir_weston_spoke
+execute if entity @s[scores={Dialog=422}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sir_weston_spoke:1b}
 execute if entity @s[scores={Dialog=422..}] as @a[scores={Room=55}] unless entity @s[scores={MusicType=36}] run function luigis_mansion:other/music/set/danger
 scoreboard players add @s[scores={Dialog=422..482}] Time 1
 execute if entity @s[scores={Time=20..50,VulnerableTime=0}] facing entity @p[scores={Room=55},gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

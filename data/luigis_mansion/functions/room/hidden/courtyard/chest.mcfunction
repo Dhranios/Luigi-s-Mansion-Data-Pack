@@ -1,43 +1,43 @@
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 103 23 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 102 25 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 102 25 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 25 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 652 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 648 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 648 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 652 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 21 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 102 21 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 652 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 103 21 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 102 22 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 102 22 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 22 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 102 23 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 23 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 102 24 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 102 24 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 24 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 103 23 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 102 25 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 102 25 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 25 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 652 102 24 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 648 102 24 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 648 102 23 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 652 102 23 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 651 102 21 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 102 21 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 652 102 22 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 649 103 21 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 103 22.1 run function luigis_mansion:spawn_entities/item/gold_bar
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_chest=false},limit=1] positioned 650 103 22.9 run function luigis_mansion:spawn_entities/item/gold_bar
-advancement grant @a only luigis_mansion:mansion/courtyard_chest
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 103 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 102 25 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 102 25 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 25 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 652 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 648 102 24 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 648 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 652 102 23 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 102 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 652 102 22 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 103 21 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 102 22 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 102 22 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 22 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 102 23 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 23 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 102 24 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 102 24 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 24 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 103 23 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 102 25 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 102 25 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 25 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 652 102 24 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 648 102 24 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 648 102 23 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 652 102 23 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 651 102 21 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 102 21 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 652 102 22 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 649 103 21 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 103 22.1 run function luigis_mansion:spawn_entities/item/gold_bar
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{courtyard_chest:1b} positioned 650 103 22.9 run function luigis_mansion:spawn_entities/item/gold_bar
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {courtyard_chest:1b}

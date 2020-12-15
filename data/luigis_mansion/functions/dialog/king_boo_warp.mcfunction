@@ -3,10 +3,10 @@ scoreboard players add @s Dialog 1
 scoreboard players set @a[scores={Room=48}] Invulnerable 10
 execute as @a[distance=..2] at @s run teleport @s ~1 ~ ~
 execute if entity @s[scores={Dialog=1}] run stopsound @a[scores={Room=48}] music
-execute if entity @a[advancements={luigis_mansion:technical={king_boo_warp=false}},limit=1] if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=48}] MusicType 20
-execute if entity @a[advancements={luigis_mansion:technical={king_boo_warp=true}},limit=1] if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=48}] MusicType 21
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=48}] MusicType 20
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=48}] MusicType 21
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=48}] Music 0
-execute if entity @a[advancements={luigis_mansion:technical={king_boo_warp=true}},limit=1] run scoreboard players set @s[scores={Dialog=1}] Dialog 720
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{king_boo_warp:1b} run scoreboard players set @s[scores={Dialog=1}] Dialog 720
 execute if entity @s[scores={Dialog=1}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo_warp.1"}]}
 execute if entity @s[scores={Dialog=40}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo_warp.2"}]}
 execute if entity @s[scores={Dialog=80}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.king_boo","color":"green"},{"translate":"luigis_mansion:dialog.king_boo_warp.3"}]}
@@ -32,6 +32,6 @@ execute if entity @s[scores={Dialog=920}] run scoreboard players set @a[tag=warp
 execute if entity @s[scores={Dialog=920..980}] as @a[tag=warp_target] at @s run teleport @s ~0.5 93 ~
 execute if entity @s[scores={Dialog=980}] run teleport @a[tag=warp_target] 714.0 102 8.0
 execute if entity @s[scores={Dialog=980}] run tag @a[tag=warp_target] remove warp_target
-execute if entity @s[scores={Dialog=980}] run advancement grant @a only luigis_mansion:technical king_boo_warp
+execute if entity @s[scores={Dialog=980}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {king_boo_warp:1b}
 tag @s[scores={Dialog=980}] add dead
 

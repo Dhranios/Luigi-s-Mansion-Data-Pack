@@ -3,4 +3,4 @@ execute if score #players Totals matches 2.. run tellraw @a {"translate":"chat.t
 execute as @a at @s run playsound luigis_mansion:item.marios_item player @s ~ ~ ~ 1
 execute as @a at @s run playsound luigis_mansion:item.item.get player @s ~ ~ ~ 1
 clear @s minecraft:brick{luigis_mansion:{id:"luigis_mansion:marios_shoe"}}
-advancement grant @a only luigis_mansion:technical has_marios_shoe
+data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {has_marios_shoe:1b}

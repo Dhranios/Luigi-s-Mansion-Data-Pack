@@ -1,3 +1,3 @@
 clear @s minecraft:brick{luigis_mansion:{id:"luigis_mansion:key",room:"balcony_2"}}
 playsound luigis_mansion:item.key.use player @a 683.0 121 -13 1
-advancement grant @a only luigis_mansion:mansion/balcony_2_key
+data modify storage luigis_mansion:data current_state.current_data.used_keys merge value {balcony_2:1b}

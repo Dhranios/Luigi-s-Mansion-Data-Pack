@@ -1,3 +1,3 @@
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_3=false},limit=1] positioned 707 103 34 run function luigis_mansion:spawn_entities/item/gold_bar
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_3=true},limit=1] run tag @e[tag=selected] add nothing
-advancement grant @a only luigis_mansion:mansion/fortune_tellers_room_table_3
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_3:1b} positioned 707 103 34 run function luigis_mansion:spawn_entities/item/gold_bar
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_3:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {fortune_tellers_room_table_3:1b}

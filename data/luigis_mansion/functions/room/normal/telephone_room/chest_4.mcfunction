@@ -1,42 +1,42 @@
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 1 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 1 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 702 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 702 120 1 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 702 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 706 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 706 120 1 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 706 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 -1 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 120 -1 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 -1 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 3 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 120 3 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 3 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 1 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 2 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 120 0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 120 2 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 1 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 2 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 702 120 0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 702 120 1 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 702 120 2 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 706 120 0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 706 120 1 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 706 120 2 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 -1 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 120 -1 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 -1 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 703 120 3 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 120 3 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 705 120 3 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/telephone_room_chest_4=false},limit=1] positioned 704 121 1 run function luigis_mansion:spawn_entities/item/gold_bar
-advancement grant @a only luigis_mansion:mansion/telephone_room_chest_4
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 1 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 1 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 702 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 702 120 1 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 702 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 706 120 0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 706 120 1 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 706 120 2 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 -1 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 120 -1 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 -1 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 3 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 120 3 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 3 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 0 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 1 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 2 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 120 0 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 120 2 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 0 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 1 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 2 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 702 120 0 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 702 120 1 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 702 120 2 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 706 120 0 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 706 120 1 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 706 120 2 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 -1 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 120 -1 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 -1 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 703 120 3 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 120 3 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 705 120 3 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{telephone_room_chest_4:1b} positioned 704 121 1 run function luigis_mansion:spawn_entities/item/gold_bar
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {telephone_room_chest_4:1b}

@@ -33,7 +33,7 @@ execute if data storage luigis_mansion:data current_state.current_data.boos.tabo
 execute if data storage luigis_mansion:data current_state.current_data.boos.tamboorine{room:55} unless entity @e[tag=tamboorine,scores={Room=55}] run summon minecraft:area_effect_cloud 709 93 21 {Tags:["hidden_boo","tamboorine","new"],Duration:2147483647}
 execute if data storage luigis_mansion:data current_state.current_data.boos.turboo{room:55} unless entity @e[tag=turboo,scores={Room=55}] run summon minecraft:area_effect_cloud 709 93 21 {Tags:["hidden_boo","turboo","new"],Duration:2147483647}
 execute if data storage luigis_mansion:data current_state.current_data.boos.underboo{room:55} unless entity @e[tag=underboo,scores={Room=55}] run summon minecraft:area_effect_cloud 709 93 21 {Tags:["hidden_boo","underboo","new"],Duration:2147483647}
-execute if entity @a[advancements={luigis_mansion:boos/boolderdash=false,luigis_mansion:boos/boolderdash_trap=false}] unless entity @e[tag=boolderdrash_trap,scores={Room=55}] run summon minecraft:area_effect_cloud 709 93 21 {Tags:["hidden_boo","boolderdash_trap","trap","new"],Duration:2147483647}
+execute unless data storage luigis_mansion:data current_state.current_data.boos.boolderdash{dead:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{boolderdash_trap:1b} unless entity @e[tag=boolderdrash_trap,scores={Room=55}] run summon minecraft:area_effect_cloud 709 93 21 {Tags:["hidden_boo","boolderdash_trap","trap","new"],Duration:2147483647}
 scoreboard players set @e[tag=hidden_boo,tag=new] Room 55
 scoreboard players set @e[tag=hidden_boo,tag=new] HideTime 0
 tag @e[tag=hidden_boo,tag=new] remove new 

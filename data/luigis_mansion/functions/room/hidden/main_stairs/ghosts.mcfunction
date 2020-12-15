@@ -1,2 +1,2 @@
-execute if entity @a[advancements={luigis_mansion:mansion/main_stairs=false},tag=!blackout] unless score #main_stairs Wave matches 1.. run function luigis_mansion:room/hidden/main_stairs/wave_1
+execute unless data storage luigis_mansion:data current_state.current_data.room.main_stairs{cleared:1b} if entity @a[tag=!blackout] unless score #main_stairs Wave matches 1.. run function luigis_mansion:room/hidden/main_stairs/wave_1
 execute if entity @a[tag=blackout] unless score #main_stairs Wave matches 1.. run function luigis_mansion:room/hidden/main_stairs/blackout

@@ -1,3 +1,3 @@
-execute if entity @a[advancements={luigis_mansion:mansion/master_bedroom_plant=false},limit=1] positioned 687 114 -39 run function luigis_mansion:spawn_entities/item/green_emerald
-execute if entity @a[advancements={luigis_mansion:mansion/master_bedroom_plant=true},limit=1] run tag @e[tag=selected] add nothing
-advancement grant @a only luigis_mansion:mansion/master_bedroom_plant
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{master_bedroom_plant:1b} positioned 687 114 -39 run function luigis_mansion:spawn_entities/item/green_emerald
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{master_bedroom_plant:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {master_bedroom_plant:1b}

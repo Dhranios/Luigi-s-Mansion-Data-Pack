@@ -19,4 +19,4 @@ tag @s remove catch_ghost
 tag @s remove me
 tag @s add vacuuming
 tag @s add vacuuming_ghost
-kill @e[tag=interact,limit=1]
+kill @e[tag=interact,limit=1,tag=!shot_fire,tag=!shot_water,tag=!shot_ice]

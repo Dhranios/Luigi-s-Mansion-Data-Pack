@@ -4,11 +4,11 @@ execute if entity @a[scores={ClairvoyaSpoke=2},limit=1] run function luigis_mans
 execute if entity @a[scores={ClairvoyaSpoke=3},limit=1] run function luigis_mansion:dialog/marios_item/item_4
 execute if entity @a[scores={ClairvoyaSpoke=4},limit=1] run function luigis_mansion:dialog/marios_item/item_5
 
-execute if entity @s[tag=!talk,tag=hat] run advancement grant @a only luigis_mansion:technical shown_marios_hat
-execute if entity @s[tag=!talk,tag=letter] run advancement grant @a only luigis_mansion:technical shown_marios_letter
-execute if entity @s[tag=!talk,tag=star] run advancement grant @a only luigis_mansion:technical shown_marios_star
-execute if entity @s[tag=!talk,tag=glove] run advancement grant @a only luigis_mansion:technical shown_marios_glove
-execute if entity @s[tag=!talk,tag=shoe] run advancement grant @a only luigis_mansion:technical shown_marios_shoe
+execute if entity @s[tag=!talk,tag=hat] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_hat:1b}
+execute if entity @s[tag=!talk,tag=letter] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_letter:1b}
+execute if entity @s[tag=!talk,tag=star] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_star:1b}
+execute if entity @s[tag=!talk,tag=glove] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_glove:1b}
+execute if entity @s[tag=!talk,tag=shoe] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_shoe:1b}
 execute if entity @s[tag=!talk] run scoreboard players add @a ClairvoyaSpoke 1
 
 execute unless entity @a[gamemode=!spectator,distance=..7] run tag @s remove talk

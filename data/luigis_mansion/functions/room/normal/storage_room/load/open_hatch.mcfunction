@@ -1,1 +1,1 @@
-execute if entity @a[advancements={luigis_mansion:boos/boos=true},limit=1] run function luigis_mansion:room/normal/storage_room/open_hatch
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos:1b} run function luigis_mansion:room/normal/storage_room/open_hatch

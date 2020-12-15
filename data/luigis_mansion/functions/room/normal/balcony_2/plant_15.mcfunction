@@ -1,3 +1,3 @@
-execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_15=false},limit=1] positioned 667 121 -40 run function luigis_mansion:spawn_entities/item/gold_bar
-execute if entity @a[advancements={luigis_mansion:mansion/balcony_2_plant_15=true},limit=1] run tag @e[tag=selected] add nothing
-advancement grant @a only luigis_mansion:mansion/balcony_2_plant_15
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{balcony_2_plant_15:1b} positioned 667 121 -40 run function luigis_mansion:spawn_entities/item/gold_bar
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{balcony_2_plant_15:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {balcony_2_plant_15:1b}

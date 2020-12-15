@@ -3,10 +3,10 @@ execute if score #conservatory Wave matches 3 run scoreboard players add @s[tag=
 execute if entity @a[scores={MelodyChoice=1}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 1000
 execute if entity @a[scores={MelodyChoice=2}] run scoreboard players set @s[scores={Dialog=..999}] Dialog 2000
 tag @s[scores={Dialog=1}] add talk
-execute if entity @s[scores={Dialog=1}] if entity @a[advancements={luigis_mansion:technical={melody_pianissima_spoke=true}}] run scoreboard players set @s Dialog 224
+execute if entity @s[scores={Dialog=1}] if data storage luigis_mansion:data current_state.current_data.technical_data{melody_pianissima_spoke:1b} run scoreboard players set @s Dialog 224
 execute if entity @s[scores={Dialog=1}] run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.1"}]}
 execute if entity @s[scores={Dialog=112}] run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.2"}]}
-execute if entity @s[scores={Dialog=224}] run advancement grant @a only luigis_mansion:technical melody_pianissima_spoke
+execute if entity @s[scores={Dialog=224}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {melody_pianissima_spoke:1b}
 execute if entity @s[scores={Dialog=224}] if score #players Totals matches 1 run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.3"}]}
 execute if entity @s[scores={Dialog=224}] if score #players Totals matches 2.. run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.3.more"}]}
 execute if entity @s[scores={Dialog=360}] run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.4"}]}

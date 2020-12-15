@@ -1,7 +1,5 @@
 function luigis_mansion:entities/e_gadd/save_mansion_data
 data modify storage luigis_mansion:data saved_state.mansion_data set from storage luigis_mansion:data current_state.mansion_data
-data modify storage luigis_mansion:data saved_state.advancements set value {}
-
 
 function #luigis_mansion:save_data
 

@@ -2,6 +2,14 @@ execute if entity @s[tag=!flashlight,tag=had_flashlight_on] run playsound luigis
 tag @s[tag=!flashlight,tag=had_flashlight_on] remove had_flashlight_on
 tag @s[tag=flashlight] remove flashlight
 tag @s[gamemode=!spectator,tag=!grabbed,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] add flashlight
+tag @s[tag=!flashlight] remove flashlight_off
+tag @s[tag=flashlight,scores={UseItem=1},tag=!flashlight_off] add toggle_flashlight_off
+tag @s[tag=flashlight,tag=toggle_flashlight_off] add flashlight_off
+scoreboard players set @s[tag=flashlight,tag=toggle_flashlight_off] UseItem 0
+tag @s[tag=flashlight,tag=toggle_flashlight_off] remove toggle_flashlight_off
+tag @s[tag=flashlight,scores={UseItem=1},tag=flashlight_off] remove flashlight_off
+scoreboard players set @s[tag=flashlight,scores={UseItem=1},tag=flashlight] UseItem 0
+tag @s[tag=flashlight,tag=flashlight_off] remove flashlight
 execute unless entity @s[nbt={Inventory:[{Slot:103b}]}] run replaceitem entity @s[tag=flashlight,tag=!had_flashlight_on] armor.head minecraft:carved_pumpkin{luigis_mansion:{id:"luigis_mansion:flashlight_vision"},display:{Name:'{"text":""}'},Enchantments:[{id:"minecraft:binding_curse",lvl:1s}]}
 execute if entity @s[tag=flashlight,tag=!had_flashlight_on] run playsound luigis_mansion:item.flashlight.on player @a ~ ~ ~ 1
 tag @s[tag=flashlight,tag=!had_flashlight_on] add had_flashlight_on

@@ -1,45 +1,46 @@
-execute unless entity @a[advancements={luigis_mansion:mansion/parlor=true},tag=!blackout,limit=1] run tag @s[scores={Room=2}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/anteroom=true},tag=!blackout,limit=1] run tag @s[scores={Room=3}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/wardrobe_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=4}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/small_hallway=true},tag=!blackout,limit=1] run tag @s[scores={Room=6}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/study=true},tag=!blackout,limit=1] run tag @s[scores={Room=7}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/master_bedroom=true},tag=!blackout,limit=1] run tag @s[scores={Room=8}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/nursery=true},tag=!blackout,limit=1] run tag @s[scores={Room=9}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/main_hallway=true},tag=!blackout,limit=1] run tag @s[scores={Room=10}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/bathroom_1=true},tag=!blackout,limit=1] run tag @s[scores={Room=12}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/ball_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=13}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/storage_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=14}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/washroom_1=true},tag=!blackout,limit=1] run tag @s[scores={Room=15}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=16}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/mirror_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=17}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/laundry_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=18}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/butlers_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=19}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/hidden_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=20}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/conservatory=true},tag=!blackout,limit=1] run tag @s[scores={Room=21}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/dining_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=22}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/kitchen=true},tag=!blackout,limit=1] run tag @s[scores={Room=23}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/rec_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=28}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/tea_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=30}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/hallway=true},tag=!blackout,limit=1] run tag @s[scores={Room=31}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/washroom_2=true},tag=!blackout,limit=1] run tag @s[scores={Room=32}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/batheroom_2=true},tag=!blackout,limit=1] run tag @s[scores={Room=33}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/nanas_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=34}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/astral_hall=true},tag=!blackout,limit=1] run tag @s[scores={Room=35}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/billiards_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=37}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/projection_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=38}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/twins_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=39}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/safari_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=40}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/attic_hallway_1=true},tag=!blackout,limit=1] run tag @s[scores={Room=41}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/attic_hallway_2=true},tag=!blackout,limit=1] run tag @s[scores={Room=43}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/telephone_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=44}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/breaker_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=45}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/cellar=true},tag=!blackout,limit=1] run tag @s[scores={Room=46}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/basement_hallway=true},tag=!blackout,limit=1] run tag @s[scores={Room=47}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/clockwork_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=49}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/armory=true},tag=!blackout,limit=1] run tag @s[scores={Room=51}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/ceramics_studio=true},tag=!blackout,limit=1] run tag @s[scores={Room=52}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/pipe_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=54}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/cold_storage=true},tag=!blackout,limit=1] run tag @s[scores={Room=55}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/sitting_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=56}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/guest_room=true},tag=!blackout,limit=1] run tag @s[scores={Room=57}] add dark_room
-execute unless entity @a[advancements={luigis_mansion:mansion/artists_studio=true},tag=!blackout,limit=1] run tag @s[scores={Room=58}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.parlor{cleared:1b} run tag @s[scores={Room=2}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.anteroom{cleared:1b} run tag @s[scores={Room=3}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.wardrobe_room{cleared:1b} run tag @s[scores={Room=4}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.small_hallway{cleared:1b} run tag @s[scores={Room=6}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.study{cleared:1b} run tag @s[scores={Room=7}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.master_bedroom{cleared:1b} run tag @s[scores={Room=8}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.nursery{cleared:1b} run tag @s[scores={Room=9}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.main_hallway{cleared:1b} run tag @s[scores={Room=10}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.bathroom_1{cleared:1b} run tag @s[scores={Room=12}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.ball_room{cleared:1b} run tag @s[scores={Room=13}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.storage_room{cleared:1b} run tag @s[scores={Room=14}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.washroom_1{cleared:1b} run tag @s[scores={Room=15}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.fortune_tellers_room{cleared:1b} run tag @s[scores={Room=16}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.mirror_room{cleared:1b} run tag @s[scores={Room=17}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.laundry_room{cleared:1b} run tag @s[scores={Room=18}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.butlers_room{cleared:1b} run tag @s[scores={Room=19}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.hidden_room{cleared:1b} run tag @s[scores={Room=20}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.conservatory{cleared:1b} run tag @s[scores={Room=21}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.dining_room{cleared:1b} run tag @s[scores={Room=22}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.kitchen{cleared:1b} run tag @s[scores={Room=23}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.rec_room{cleared:1b} run tag @s[scores={Room=28}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.tea_room{cleared:1b} run tag @s[scores={Room=30}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.hallway{cleared:1b} run tag @s[scores={Room=31}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.washroom_2{cleared:1b} run tag @s[scores={Room=32}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.batheroom_2{cleared:1b} run tag @s[scores={Room=33}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.nanas_room{cleared:1b} run tag @s[scores={Room=34}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.astral_hall{cleared:1b} run tag @s[scores={Room=35}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.billiards_room{cleared:1b} run tag @s[scores={Room=37}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.projection_room{cleared:1b} run tag @s[scores={Room=38}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.twins_room{cleared:1b} run tag @s[scores={Room=39}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.safari_room{cleared:1b} run tag @s[scores={Room=40}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.attic_hallway_1{cleared:1b} run tag @s[scores={Room=41}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.attic_hallway_2{cleared:1b} run tag @s[scores={Room=43}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.telephone_room{cleared:1b} run tag @s[scores={Room=44}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.breaker_room{cleared:1b} run tag @s[scores={Room=45}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.cellar{cleared:1b} run tag @s[scores={Room=46}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.basement_hallway{cleared:1b} run tag @s[scores={Room=47}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.clockwork_room{cleared:1b} run tag @s[scores={Room=49}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.armory{cleared:1b} run tag @s[scores={Room=51}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.ceramics_studio{cleared:1b} run tag @s[scores={Room=52}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.pipe_room{cleared:1b} run tag @s[scores={Room=54}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.cold_storage{cleared:1b} run tag @s[scores={Room=55}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.sitting_room{cleared:1b} run tag @s[scores={Room=56}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.guest_room{cleared:1b} run tag @s[scores={Room=57}] add dark_room
+execute unless data storage luigis_mansion:data current_state.current_data.room.artists_studio{cleared:1b} run tag @s[scores={Room=58}] add dark_room
+execute if entity @a[tag=blackout,limit=1] run tag @s[scores={Room=58}] remove dark_room

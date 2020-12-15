@@ -1,1 +1,1 @@
-execute if entity @a[advancements={luigis_mansion:technical={froze_sewage=true}},limit=1] run function luigis_mansion:room/hidden/pipe_room/freeze_sewage
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{froze_sewage:1b} run function luigis_mansion:room/hidden/pipe_room/freeze_sewage

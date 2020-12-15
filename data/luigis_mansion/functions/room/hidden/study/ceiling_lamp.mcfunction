@@ -1,7 +1,7 @@
-execute if entity @a[advancements={luigis_mansion:mansion/study_ceiling_lamp=false},limit=1] positioned 691 115 -13 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/study_ceiling_lamp=false},limit=1] positioned 691 115 -12 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/study_ceiling_lamp=false},limit=1] positioned 690 115 -13 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/study_ceiling_lamp=false},limit=1] positioned 690 115 -12 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/study_ceiling_lamp=false},limit=1] positioned 691.0 115 -12.0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/study_ceiling_lamp=true},limit=1] run tag @e[tag=selected] add nothing
-advancement grant @a only luigis_mansion:mansion/study_ceiling_lamp
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 691 115 -13 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 691 115 -12 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 690 115 -13 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 690 115 -12 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} positioned 691.0 115 -12.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{study_ceiling_lamp:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {study_ceiling_lamp:1b}

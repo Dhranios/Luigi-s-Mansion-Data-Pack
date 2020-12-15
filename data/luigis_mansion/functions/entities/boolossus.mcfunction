@@ -9,7 +9,7 @@ execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus.health int 1 run scoreboard players set @s Health 0
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run advancement grant @a only luigis_mansion:portrait_ghosts/boolossus
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run scoreboard players reset #temp Damage
-execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run advancement grant @a only luigis_mansion:mansion/balcony_2
+execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run data modify storage luigis_mansion:data current_state.current_data.rooms.balcony_2 merge value {cleared:1b}
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run scoreboard players reset #balcony_2 Ticking
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] as @a run function luigis_mansion:entities/boolossus/return
 

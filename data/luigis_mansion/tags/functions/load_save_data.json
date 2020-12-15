@@ -1,9 +1,5 @@
 {
 	"values": [
-		"luigis_mansion:entities/player/load_mansion/mansion",
-		"luigis_mansion:entities/player/load_mansion/keys",
-		"luigis_mansion:entities/player/load_mansion/technical",
-		"luigis_mansion:entities/player/load_mansion/money",
-		"luigis_mansion:entities/player/load_mansion/boos"
+		"luigis_mansion:entities/player/load_mansion/mansion"
 	]
 }

@@ -7,8 +7,8 @@ execute as @a[gamemode=!spectator,x=684,y=120,z=-15,dx=36,dy=6,dz=4] run functio
 function #luigis_mansion:room/hidden/attic_hallway_2/interactions/room
 
 stopsound @a[scores={Room=43,HallwayNoise=0}] ambient luigis_mansion:block.telephone.ring
-execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if entity @a[tag=blackout,advancements={luigis_mansion:technical={telephone_3=false}},limit=1] positioned 712 121 8 run playsound luigis_mansion:block.telephone.ring ambient @a[scores={Room=43,HallwayNoise=0}] ~ ~ ~ 2
-execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if entity @a[tag=blackout,advancements={luigis_mansion:technical={telephone_3=false}},limit=1] run scoreboard players set @a[scores={Room=43,HallwayNoise=0}] HallwayNoise 40
+execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if entity @a[tag=blackout,limit=1] unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} positioned 712 121 8 run playsound luigis_mansion:block.telephone.ring ambient @a[scores={Room=43,HallwayNoise=0}] ~ ~ ~ 2
+execute unless entity @a[tag=toad_5_dialog,limit=1] unless entity @a[tag=uncle_grimmly_dialog,limit=1] if entity @a[tag=blackout,limit=1] unless data storage luigis_mansion:data current_state.current_data.technical_data{telephone_3:1b} run scoreboard players set @a[scores={Room=43,HallwayNoise=0}] HallwayNoise 40
 
 function luigis_mansion:room/hidden/attic_hallway_2/ghosts
 

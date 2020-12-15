@@ -1,1 +1,1 @@
-execute unless entity @e[tag=eternal_gold_coin,scores={Room=1}] if entity @a[advancements={luigis_mansion:mansion/foyer_money=false},limit=1] run function luigis_mansion:room/hidden/foyer/money
+execute unless entity @e[tag=eternal_gold_coin,scores={Room=1}] unless data storage luigis_mansion:data current_state.current_data.money_spawned{foyer_money:1b} run function luigis_mansion:room/hidden/foyer/money

@@ -1,3 +1,3 @@
 function luigis_mansion:room/hidden/balcony_2/remove_blockade
-advancement grant @a only luigis_mansion:technical cleared_area_4_blockade
-execute unless entity @a[tag=blackout_lightning,limit=1] run tag @a[limit=1,advancements={luigis_mansion:mansion/breaker_room=false},tag=!blackout] add blackout_lightning
+data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {cleared_area_4_blockade:1b}
+execute unless entity @a[tag=blackout_lightning,limit=1] unless data storage luigis_mansion:data current_state.current_data.room.breaker_room{cleared:1b} run tag @a[limit=1,tag=!blackout] add blackout_lightning

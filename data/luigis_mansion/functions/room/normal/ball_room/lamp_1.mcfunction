@@ -1,32 +1,32 @@
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690 106 -20 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 691 106 -20 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 689 106 -19 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 689 106 -18 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 692 106 -19 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 692 106 -18 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690 106 -17 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 691 106 -17 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690 105 -19 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690 105 -18 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 691 105 -19 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 691 105 -18 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690.0 105 -19.0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690.0 105 -17.0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 692.0 105 -18.0 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690 106 -20 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 691 106 -20 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 689 106 -19 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 689 106 -18 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 692 106 -19 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 692 106 -18 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690 106 -17 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 691 106 -17 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690 105 -19 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690 105 -18 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 691 105 -19 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 691 105 -18 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690.0 105 -19.0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 690.0 105 -17.0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=false},limit=1] positioned 692.0 105 -18.0 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/ball_room_lamp_1=true},limit=1] run tag @e[tag=selected] add nothing
-advancement grant @a only luigis_mansion:mansion/ball_room_lamp_1
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690 106 -20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 691 106 -20 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 689 106 -19 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 689 106 -18 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 692 106 -19 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 692 106 -18 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690 106 -17 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 691 106 -17 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690 105 -19 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690 105 -18 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 691 105 -19 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 691 105 -18 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690.0 105 -19.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690.0 105 -17.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 692.0 105 -18.0 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690 106 -20 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 691 106 -20 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 689 106 -19 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 689 106 -18 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 692 106 -19 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 692 106 -18 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690 106 -17 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 691 106 -17 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690 105 -19 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690 105 -18 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 691 105 -19 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 691 105 -18 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690.0 105 -19.0 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 690.0 105 -17.0 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} positioned 692.0 105 -18.0 run function luigis_mansion:spawn_entities/item/bill
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{ball_room_lamp_1:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {ball_room_lamp_1:1b}

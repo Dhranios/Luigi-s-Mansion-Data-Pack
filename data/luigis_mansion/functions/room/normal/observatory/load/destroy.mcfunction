@@ -1,1 +1,1 @@
-execute if entity @a[advancements={luigis_mansion:technical={observatory_destroyed=true},luigis_mansion:mansion/secret_altar=false},limit=1] run function luigis_mansion:room/normal/observatory/destroy
+execute unless data storage luigis_mansion:data current_state.current_data.technical_data{observatory_destroyed:1b} unless data storage luigis_mansion:data current_state.current_data.room.secret_altar{cleared:1b} run function luigis_mansion:room/normal/observatory/destroy

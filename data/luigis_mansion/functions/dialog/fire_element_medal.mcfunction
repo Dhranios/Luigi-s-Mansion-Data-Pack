@@ -20,7 +20,7 @@ execute if entity @s[scores={Dialog=872}] if score #players Totals matches 2.. r
 execute if entity @s[scores={Dialog=1038}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.10"}]}
 execute if entity @s[scores={Dialog=1038}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.fire_element_medal.10.more"}]}
 execute if entity @s[scores={Dialog=1222}] as @a run function luigis_mansion:other/music/set/silence
-execute if entity @s[scores={Dialog=1222}] run advancement grant @a only luigis_mansion:technical fire_element_medal
+execute if entity @s[scores={Dialog=1222}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {fire_element_medal:1b}
 scoreboard players set @s[scores={Dialog=1222}] GBHCall 0
 scoreboard players set @s[scores={Dialog=1222}] GBHWait 0
 scoreboard players reset @s[scores={Dialog=1222}] Dialog

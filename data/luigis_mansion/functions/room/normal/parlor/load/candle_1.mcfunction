@@ -1,1 +1,1 @@
-execute if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},limit=1] positioned 684 113 9 run function luigis_mansion:blocks/purple_candles
+execute if data storage luigis_mansion:data {found_e_gadd:1b} positioned 684 113 9 run function luigis_mansion:blocks/purple_candles

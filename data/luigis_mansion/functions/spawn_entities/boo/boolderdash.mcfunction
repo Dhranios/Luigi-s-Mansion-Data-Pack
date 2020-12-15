@@ -11,10 +11,10 @@ scoreboard players reset #temp LastHealth
 execute if score #switch_boo_stats Selected matches 0 run scoreboard players set @e[tag=this_entity,limit=1] Move 6
 execute if score #switch_boo_stats Selected matches 1 run scoreboard players set @e[tag=this_entity,limit=1] Move 9
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
-execute if entity @a[advancements={luigis_mansion:mansion/main_hallway_key=false},limit=1] run tag @e[tag=this_entity,limit=1] add area_1
-execute if entity @a[advancements={luigis_mansion:mansion/main_hallway_key=true},limit=1] run tag @e[tag=this_entity,limit=1] add area_2
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_key=true},limit=1] run tag @e[tag=this_entity,limit=1] add area_3
-execute if entity @a[advancements={luigis_mansion:mansion/attic_hallway_2_key=true},limit=1] run tag @e[tag=this_entity,limit=1] add area_4
+execute unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} run tag @e[tag=this_entity,limit=1] add area_1
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} run tag @e[tag=this_entity,limit=1] add area_2
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{courtyard:1b} run tag @e[tag=this_entity,limit=1] add area_3
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{attic_hallway_2:1b} run tag @e[tag=this_entity,limit=1] add area_4
 execute as @e[tag=this_entity,limit=1] run function luigis_mansion:entities/boo/dark_room
 tag @e[tag=this_entity,limit=1] remove this_entity
 execute if entity @s[tag=hidden_boo] run function luigis_mansion:entities/boo/message

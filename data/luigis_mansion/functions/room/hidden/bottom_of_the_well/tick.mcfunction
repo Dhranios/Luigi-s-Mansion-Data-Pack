@@ -8,5 +8,5 @@ function #luigis_mansion:room/hidden/bottom_of_the_well/interactions/room
 
 function luigis_mansion:room/hidden/bottom_of_the_well/ghosts
 
-execute as @a[gamemode=!spectator,x=648.5,y=93,z=25.5,distance=..0.7,advancements={luigis_mansion:technical={saw_mario=false}}] unless entity @a[tag=marios_painting] run tag @s add marios_painting
-execute as @a[gamemode=!spectator,x=648.5,y=93,z=25.5,distance=..0.7,advancements={luigis_mansion:technical={saw_mario=true,saw_mario_again=false}}] unless entity @a[tag=marios_painting_repeat] run tag @s add marios_painting_repeat
+execute as @a[gamemode=!spectator,x=648.5,y=93,z=25.5,distance=..0.7] unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} unless entity @a[tag=marios_painting] run tag @s add marios_painting
+execute as @a[gamemode=!spectator,x=648.5,y=93,z=25.5,distance=..0.7] if data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{saw_mario_again:1b} unless entity @a[tag=marios_painting_repeat] run tag @s add marios_painting_repeat

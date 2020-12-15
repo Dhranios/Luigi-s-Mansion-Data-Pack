@@ -1,6 +1,6 @@
-execute if entity @a[advancements={luigis_mansion:mansion/balcony_2=true}] run tag @s add dead
-execute if entity @a[advancements={luigis_mansion:mansion/balcony_2=true}] as @a[distance=..80] run function luigis_mansion:entities/boolossus/return
-execute if entity @a[advancements={luigis_mansion:mansion/balcony_2=false}] as @a[distance=80..] run function luigis_mansion:entities/boolossus/to_arena
+execute if data storage luigis_mansion:data current_state.current_data.room.balcony_2{cleared:1b} run tag @s add dead
+execute if data storage luigis_mansion:data current_state.current_data.room.balcony_2{cleared:1b} as @a[distance=..80] run function luigis_mansion:entities/boolossus/return
+execute unless data storage luigis_mansion:data current_state.current_data.room.balcony_2{cleared:1b} as @a[distance=80..] run function luigis_mansion:entities/boolossus/to_arena
 execute if entity @s[tag=!intro_done] run function luigis_mansion:dialog/boolossus_intro
 execute if entity @s[x=929.5,y=47,z=-19952.5,distance=..4] run function luigis_mansion:entities/boolossus/split_up
 execute if entity @s[x=958.5,y=47,z=-19952.5,distance=..4] run function luigis_mansion:entities/boolossus/split_up

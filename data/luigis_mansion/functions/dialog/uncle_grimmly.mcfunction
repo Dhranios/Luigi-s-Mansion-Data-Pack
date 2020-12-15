@@ -15,6 +15,6 @@ execute if entity @s[scores={Dialog=1100}] if score #players Totals matches 1 ru
 execute if entity @s[scores={Dialog=1100}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.uncle_grimmly.9.more"}]}
 execute if entity @s[scores={Dialog=1220}] if score #mansion_type Selected matches 0 run function luigis_mansion:room/normal/telephone_room/blackout
 execute if entity @s[scores={Dialog=1220}] if score #mansion_type Selected matches 1 run function luigis_mansion:room/hidden/telephone_room/blackout
-execute if entity @s[scores={Dialog=1220}] run advancement grant @a only luigis_mansion:technical telephone_3
+execute if entity @s[scores={Dialog=1220}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {telephone_3:1b}
 tag @s[scores={Dialog=1220}] remove uncle_grimmly_dialog
 scoreboard players reset @s[scores={Dialog=1220}] Dialog

@@ -6,8 +6,8 @@ execute if block 683 102 -36 minecraft:warped_door[powered=false] run scoreboard
 execute if block 682 102 -36 minecraft:warped_door[powered=false] run scoreboard players set #temp Searched -1
 
 execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=683.0,y=102,z=-35.5,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"storage_room"}}}}] run function luigis_mansion:room/normal/storage_room/unlock_door
-execute if block 683 102 -36 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/storage_room_key=false},limit=1] positioned 683 102 -36 run function luigis_mansion:blocks/closed_door
-execute if entity @a[advancements={luigis_mansion:mansion/storage_room_key=false},limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
+execute if block 683 102 -36 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{storage_room:1b} positioned 683 102 -36 run function luigis_mansion:blocks/closed_door
+execute unless data storage luigis_mansion:data current_state.current_data.used_keys{storage_room:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=683.0,y=102,z=-35.5] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 1 run fill 682 102 -36 683 103 -36 minecraft:air replace #minecraft:doors

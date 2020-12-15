@@ -4,8 +4,8 @@ execute if block 712 93 30 minecraft:oak_door[open=true] if block 712 93 29 mine
 execute if block 712 93 29 minecraft:oak_door[open=true] if block 712 93 30 minecraft:oak_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
 execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=712.5,y=93,z=30.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"cold_storage"}}}}] run function luigis_mansion:room/hidden/cold_storage/unlock_door
-execute if block 712 93 30 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/cold_storage_key=false},limit=1] positioned 712 93 30 run function luigis_mansion:blocks/closed_door
-execute if entity @a[advancements={luigis_mansion:mansion/cold_storage_key=false},limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
+execute if block 712 93 30 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{cold_storage:1b} positioned 712 93 30 run function luigis_mansion:blocks/closed_door
+execute unless data storage luigis_mansion:data current_state.current_data.used_keys{cold_storage:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=712.5,y=93,z=30.0] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 1 run fill 712 93 30 712 94 29 minecraft:air replace #minecraft:doors

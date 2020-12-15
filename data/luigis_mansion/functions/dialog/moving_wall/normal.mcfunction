@@ -21,7 +21,7 @@ execute if entity @s[scores={Time=210}] run clone 673 102 -16 681 108 -15 673 10
 execute if entity @s[scores={Time=220}] run clone 673 102 -15 681 108 -14 673 102 -14 replace move
 execute if entity @s[scores={Time=230}] run clone 673 102 -14 681 108 -13 673 102 -13 replace move
 execute if entity @s[scores={Time=240}] run clone 673 102 -13 681 108 -12 673 102 -12 replace move
-execute if entity @s[scores={Time=240}] run advancement grant @a only luigis_mansion:technical moved_wall
+execute if entity @s[scores={Time=240}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {moved_wall:1b}
 execute if entity @s[scores={Time=280}] run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=14}] ~ ~ ~ 10000
 teleport @s[x=681.5,y=102,z=-35.5,distance=..1.5] ~-1.5 ~ ~
 tag @s[scores={Time=280}] remove move_wall

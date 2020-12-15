@@ -30,3 +30,12 @@ execute if entity @s[scores={Health=1..}] store result score @s Damage run data 
 scoreboard players operation @s[scores={Health=1..}] Damage += #100 Constants
 execute if entity @s[scores={Damage=1..},gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
 effect give @s minecraft:saturation 1000000 0 true
+
+scoreboard players set @s UseItem 0
+scoreboard players add @s[scores={SneakTime=1..}] SneakTime 1
+scoreboard players set @s[scores={Sneaking=1},tag=!was_sneaking] SneakTime 1
+tag @s[scores={Sneaking=1}] add was_sneaking
+tag @s[scores={Sneaking=0}] remove was_sneaking
+scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
+execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
+scoreboard players set @s Sneaking 0

@@ -23,6 +23,5 @@ execute if entity @s[scores={Dialog=1384}] if score #players Totals matches 2.. 
 execute if entity @s[scores={Dialog=1520}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.13","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=1520}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.the_mansion.13.more"}]}
 execute if entity @s[scores={Dialog=1672}] as @a run function luigis_mansion:entities/e_gadd/to_training
-execute if entity @s[scores={Dialog=1672}] run advancement grant @a only luigis_mansion:mansion/mansion
 execute if entity @s[scores={Dialog=1672}] run advancement grant @a only luigis_mansion:lab/lab
 execute if entity @s[scores={Dialog=1672}] run advancement grant @a only luigis_mansion:lab/underground_lab

@@ -75,5 +75,5 @@ execute if entity @s[scores={Dialog=1308}] run tag @a[tag=dialog] remove dialog
 execute if entity @s[scores={Dialog=1307}] run teleport @e[tag=dialog,type=!minecraft:player,limit=1] ~ ~-100 ~
 execute if entity @s[scores={Dialog=1308}] run tag @e[tag=dialog] add dead
 execute if entity @s[scores={Dialog=1308}] run scoreboard players set @a MusicType 2
-execute if entity @s[scores={Dialog=1308}] run advancement grant @a only luigis_mansion:technical found_e_gadd
+execute if entity @s[scores={Dialog=1308}] run data modify storage luigis_mansion:data {} merge value {found_e_gadd:1b}
 execute if entity @s[scores={Dialog=1308}] as @a run function luigis_mansion:entities/e_gadd/to_lab

@@ -11,5 +11,5 @@ execute positioned 687 93 43 run function luigis_mansion:spawn_entities/vacuumab
 execute positioned 687 93 49 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
 execute positioned 687 93 52 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
 execute positioned 697 93 50 run function luigis_mansion:spawn_entities/vacuumable/blue_mouse
-execute if entity @a[advancements={luigis_mansion:mansion/breaker_room_speedy_spirit=false}] positioned 694 93 39 run function luigis_mansion:spawn_entities/new_ghost/speedy_spirit/breaker_room
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{breaker_room_speedy_spirit:1b} positioned 694 93 39 run function luigis_mansion:spawn_entities/new_ghost/speedy_spirit/breaker_room
 scoreboard players set #breaker_room Wave 1

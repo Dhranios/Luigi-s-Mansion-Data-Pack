@@ -1,22 +1,22 @@
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 102 -6 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 102 -5 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 102 -4 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 707 102 -6 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 103 -6 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 103 -5 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 103 -4 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 707 103 -6 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 707 103 -5 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 707 104 -5 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 102 -6 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 102 -5 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 102 -4 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 707 102 -6 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 103 -6 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 103 -5 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 708 103 -4 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 707 103 -6 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 707 103 -5 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=false},limit=1] positioned 707 104 -5 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/fortune_tellers_room_table_1=true},limit=1] run tag @e[tag=selected] add nothing
-advancement grant @a only luigis_mansion:mansion/fortune_tellers_room_table_1
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 -6 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 -5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 -4 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 102 -6 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 -6 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 -5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 -4 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 103 -6 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 103 -5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 104 -5 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 -6 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 -5 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 102 -4 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 102 -6 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 -6 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 -5 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 708 103 -4 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 103 -6 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 103 -5 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} positioned 707 104 -5 run function luigis_mansion:spawn_entities/item/bill
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{fortune_tellers_room_table_1:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {fortune_tellers_room_table_1:1b}

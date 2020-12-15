@@ -1,3 +1,3 @@
 execute if score #hidden_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=20},tag=!optional_ghost] run function luigis_mansion:room/normal/hidden_room/clear
-execute if entity @a[advancements={luigis_mansion:mansion/hidden_room=false},tag=!blackout] unless score #hidden_room Wave matches 1.. run function luigis_mansion:room/normal/hidden_room/wave_1
+execute unless data storage luigis_mansion:data current_state.current_data.room.hidden_room{cleared:1b} if entity @a[tag=!blackout] unless score #hidden_room Wave matches 1.. run function luigis_mansion:room/normal/hidden_room/wave_1
 execute if entity @a[tag=blackout] unless score #hidden_room Wave matches 1.. run function luigis_mansion:room/normal/hidden_room/blackout

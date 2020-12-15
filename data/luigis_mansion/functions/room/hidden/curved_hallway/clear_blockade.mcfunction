@@ -1,2 +1,2 @@
 function luigis_mansion:room/hidden/curved_hallway/remove_blockade
-advancement grant @a only luigis_mansion:technical cleared_king_boo_blockade
+data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {cleared_king_boo_blockade:1b}

@@ -6,8 +6,8 @@ execute if block 654 102 -6 minecraft:dark_oak_door[powered=false] run scoreboar
 execute if block 653 102 -6 minecraft:dark_oak_door[powered=false] run scoreboard players set #temp Searched -1
 
 execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=654.0,y=102,z=-5.5,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"courtyard"}}}}] run function luigis_mansion:room/hidden/courtyard/unlock_door
-execute if block 654 102 -6 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/courtyard_key=false},limit=1] positioned 654 102 -6 run function luigis_mansion:blocks/closed_door
-execute if entity @a[advancements={luigis_mansion:mansion/courtyard_key=false},limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
+execute if block 654 102 -6 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{courtyard:1b} positioned 654 102 -6 run function luigis_mansion:blocks/closed_door
+execute unless data storage luigis_mansion:data current_state.current_data.used_keys{courtyard:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=654.0,y=102,z=-5.5] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 1 run fill 653 102 -6 654 103 -6 minecraft:air replace #minecraft:doors

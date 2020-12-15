@@ -1,1 +1,1 @@
-execute if entity @a[advancements={luigis_mansion:mansion/artists_studio=true},tag=!blackout,limit=1] run function luigis_mansion:room/normal/artists_studio/turn_on_lights
+execute if data storage luigis_mansion:data current_state.current_data.room.artists_studio{cleared:1b} if entity @a[tag=!blackout] run function luigis_mansion:room/normal/artists_studio/turn_on_lights

@@ -1,1 +1,1 @@
-execute if entity @a[advancements={luigis_mansion:mansion/astral_hall=true},limit=1] positioned 673 113 -20 run function luigis_mansion:blocks/lit_candles
+execute if data storage luigis_mansion:data current_state.current_data.room.astral_hall{cleared:1b} positioned 673 113 -20 run function luigis_mansion:blocks/lit_candles

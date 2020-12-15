@@ -1,83 +1,44 @@
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/foyer":1b} run advancement grant @a only luigis_mansion:mansion/foyer
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/parlor":1b} run advancement grant @a only luigis_mansion:mansion/parlor
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/anteroom":1b} run advancement grant @a only luigis_mansion:mansion/anteroom
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/wardrobe_room":1b} run advancement grant @a only luigis_mansion:mansion/wardrobe_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/wardrobe_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/wardrobe_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/balcony_1":1b} run advancement grant @a only luigis_mansion:mansion/balcony_1
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/small_hallway":1b} run advancement grant @a only luigis_mansion:mansion/small_hallway
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/study":1b} run advancement grant @a only luigis_mansion:mansion/study
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/study_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/study_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/study_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/study_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/master_bedroom":1b} run advancement grant @a only luigis_mansion:mansion/master_bedroom
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/nursery":1b} run advancement grant @a only luigis_mansion:mansion/nursery
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/nursery_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/nursery_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/main_hallway":1b} run advancement grant @a only luigis_mansion:mansion/main_hallway
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/main_hallway_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/main_hallway_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/basement_stairs":1b} run advancement grant @a only luigis_mansion:mansion/basement_stairs
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/bathroom_1":1b} run advancement grant @a only luigis_mansion:mansion/bathroom_1
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/ball_room":1b} run advancement grant @a only luigis_mansion:mansion/ball_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/storage_room":1b} run advancement grant @a only luigis_mansion:mansion/storage_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/storage_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/storage_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/washroom_1":1b} run advancement grant @a only luigis_mansion:mansion/washroom_1
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/fortune_tellers_room":1b} run advancement grant @a only luigis_mansion:mansion/fortune_tellers_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/fortune_tellers_room_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/fortune_tellers_room_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/mirror_room":1b} run advancement grant @a only luigis_mansion:mansion/mirror_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/laundry_room":1b} run advancement grant @a only luigis_mansion:mansion/laundry_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/butlers_room":1b} run advancement grant @a only luigis_mansion:mansion/butlers_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/hidden_room":1b} run advancement grant @a only luigis_mansion:mansion/hidden_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/hidden_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/hidden_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/conservatory":1b} run advancement grant @a only luigis_mansion:mansion/conservatory
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/conservatory_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/conservatory_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/dining_room":1b} run advancement grant @a only luigis_mansion:mansion/dining_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/dining_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/dining_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/dining_room_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/dining_room_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/kitchen":1b} run advancement grant @a only luigis_mansion:mansion/kitchen
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/kitchen_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/kitchen_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/kitchen_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/kitchen_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/boneyard":1b} run advancement grant @a only luigis_mansion:mansion/boneyard
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/graveyard":1b} run advancement grant @a only luigis_mansion:mansion/graveyard
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/courtyard":1b} run advancement grant @a only luigis_mansion:mansion/courtyard
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/bottom_of_the_well":1b} run advancement grant @a only luigis_mansion:mansion/bottom_of_the_well
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/rec_room":1b} run advancement grant @a only luigis_mansion:mansion/rec_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/main_stairs":1b} run advancement grant @a only luigis_mansion:mansion/main_stairs
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/tea_room":1b} run advancement grant @a only luigis_mansion:mansion/tea_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/tea_room_cheese_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/tea_room_cheese_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/tea_room_random_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/tea_room_random_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/hallway":1b} run advancement grant @a only luigis_mansion:mansion/hallway
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/hallway_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/hallway_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/washroom_2":1b} run advancement grant @a only luigis_mansion:mansion/washroom_2
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/bathroom_2":1b} run advancement grant @a only luigis_mansion:mansion/bathroom_2
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/nanas_room":1b} run advancement grant @a only luigis_mansion:mansion/nanas_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/nanas_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/nanas_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/astral_hall":1b} run advancement grant @a only luigis_mansion:mansion/astral_hall
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/observatory":1b} run advancement grant @a only luigis_mansion:mansion/observatory
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/billiards_room":1b} run advancement grant @a only luigis_mansion:mansion/billiards_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/billiards_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/billiards_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/projection_room":1b} run advancement grant @a only luigis_mansion:mansion/projection_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/twins_room":1b} run advancement grant @a only luigis_mansion:mansion/twins_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/twins_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/twins_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/safari_room":1b} run advancement grant @a only luigis_mansion:mansion/safari_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/safari_room_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/safari_room_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/attic_hallway_1":1b} run advancement grant @a only luigis_mansion:mansion/attic_hallway_1
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/balcony_2":1b} run advancement grant @a only luigis_mansion:mansion/balcony_2
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/attic_hallway_2":1b} run advancement grant @a only luigis_mansion:mansion/attic_hallway_2
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/telephone_room":1b} run advancement grant @a only luigis_mansion:mansion/telephone_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/breaker_room":1b} run advancement grant @a only luigis_mansion:mansion/breaker_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/breaker_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/breaker_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/cellar":1b} run advancement grant @a only luigis_mansion:mansion/cellar
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/basement_hallway":1b} run advancement grant @a only luigis_mansion:mansion/basement_hallway
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/curved_hallway":1b} run advancement grant @a only luigis_mansion:mansion/curved_hallway
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/cellar_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/cellar_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/clockwork_room":1b} run advancement grant @a only luigis_mansion:mansion/clockwork_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/roof":1b} run advancement grant @a only luigis_mansion:mansion/roof
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/armory":1b} run advancement grant @a only luigis_mansion:mansion/armory
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/ceramics_studio":1b} run advancement grant @a only luigis_mansion:mansion/ceramics_studio
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/sealed_room":1b} run advancement grant @a only luigis_mansion:mansion/sealed_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/sealed_room_speedy_spirit":1b} run advancement grant @a only luigis_mansion:mansion/sealed_room_speedy_spirit
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/sealed_room_gold_mouse":1b} run advancement grant @a only luigis_mansion:mansion/sealed_room_gold_mouse
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/pipe_room":1b} run advancement grant @a only luigis_mansion:mansion/pipe_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/cold_storage":1b} run advancement grant @a only luigis_mansion:mansion/cold_storage
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/sitting_room":1b} run advancement grant @a only luigis_mansion:mansion/sitting_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/guest_room":1b} run advancement grant @a only luigis_mansion:mansion/guest_room
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/artists_studio":1b} run advancement grant @a only luigis_mansion:mansion/artists_studio
-execute if data storage luigis_mansion:data saved_state.advancements{"mansion/secret_altar":1b} run advancement grant @a only luigis_mansion:mansion/secret_altar
+scoreboard players set @a Boos 0
+execute if data storage luigis_mansion:data current_state.current_data.boos.bamboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boo_b_hatch{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boo_la_la{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boodacious{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booffant{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boogie{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boohoo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booigi{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boolderdash{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boolicious{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booligan{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boolivia{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boomeo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boomerang{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boonita{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.boonswoggle{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booregard{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booripedes{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booris{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.booscaster{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.bootha{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.bootique{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.gameboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.gameboo_advance{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.gumboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.kung_boo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.limbooger{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.little_boo_peep{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.mr_boojangles{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.peekaboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.shamboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.taboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.tamboorine{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.turboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.boos.underboo{dead:1b} run scoreboard players add @a Boos 1
+execute if data storage luigis_mansion:data current_state.current_data.room.balcony_2{cleared:1b} run scoreboard players add @a Boos 15
+
+scoreboard players set @a ClairvoyaSpoke 0
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add @a ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_latter:1b} run scoreboard players add @a ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_star:1b} run scoreboard players add @a ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_glove:1b} run scoreboard players add @a ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_shoe:1b} run scoreboard players add @a ClairvoyaSpoke 1

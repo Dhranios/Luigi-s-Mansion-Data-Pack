@@ -5,5 +5,5 @@ execute if entity @s[scores={Dialog=1}] run scoreboard players set @a MusicType 
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a Music 253
 execute if entity @s[scores={Dialog=253}] run scoreboard players set @a MusicType 0
 tag @s[scores={Dialog=253}] remove marios_painting_repeat
-execute if entity @s[scores={Dialog=253}] run advancement grant @a only luigis_mansion:technical saw_mario_again
+execute if entity @s[scores={Dialog=253}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {saw_mario_again:1b}
 scoreboard players reset @s[scores={Dialog=253}] Dialog

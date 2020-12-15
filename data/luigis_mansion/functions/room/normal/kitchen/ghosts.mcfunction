@@ -1,5 +1,5 @@
 execute if score #kitchen Wave matches 1 unless entity @e[tag=ghost,scores={Room=23},tag=!optional_ghost] run function luigis_mansion:room/normal/kitchen/clear
-execute if entity @a[advancements={luigis_mansion:mansion/kitchen=false},tag=!blackout] unless score #kitchen Wave matches 1.. run function luigis_mansion:room/normal/kitchen/wave_1
+execute unless data storage luigis_mansion:data current_state.current_data.room.kitchen{cleared:1b} if entity @a[tag=!blackout] unless score #kitchen Wave matches 1.. run function luigis_mansion:room/normal/kitchen/wave_1
 execute if entity @a[tag=blackout] unless score #kitchen Wave matches 1.. run function luigis_mansion:room/normal/kitchen/blackout
 
 execute unless score #kitchen_water Searched matches 1 if entity @a[x=687.5,y=103,z=45.0,distance=..5] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:water_element_medal"}}}]}] unless entity @e[x=687.5,y=103,z=45.0,distance=..5,tag=water_elemental_ghost] positioned 687 103 45.0 run function luigis_mansion:spawn_entities/ghost/water_elemental_ghost

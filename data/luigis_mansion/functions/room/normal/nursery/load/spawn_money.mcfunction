@@ -1,1 +1,1 @@
-execute if entity @a[advancements={luigis_mansion:mansion/nursery_money=false},limit=1] run function luigis_mansion:room/normal/nursery/money
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nursery_money:1b} run function luigis_mansion:room/normal/nursery/money

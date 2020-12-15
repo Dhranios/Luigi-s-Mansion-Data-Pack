@@ -4,8 +4,8 @@ execute if block 711 120 -16 minecraft:oak_door[open=true] if block 711 120 -17 
 execute if block 711 120 -17 minecraft:oak_door[open=true] if block 711 120 -16 minecraft:oak_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
 execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=711.5,y=120,z=-16.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"armory"}}}}] run function luigis_mansion:room/hidden/armory/unlock_door
-execute if block 711 120 -16 #minecraft:doors[open=true] if entity @a[advancements={luigis_mansion:mansion/armory_key=false},limit=1] positioned 711 120 -16 run function luigis_mansion:blocks/closed_door
-execute if entity @a[advancements={luigis_mansion:mansion/armory_key=false},limit=1] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
+execute if block 711 120 -16 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{armory:1b} positioned 711 120 -16 run function luigis_mansion:blocks/closed_door
+execute unless data storage luigis_mansion:data current_state.current_data.used_keys{armory:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=711.5,y=120,z=-16.0] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 1 run fill 711 120 -16 711 121 -17 minecraft:air replace #minecraft:doors

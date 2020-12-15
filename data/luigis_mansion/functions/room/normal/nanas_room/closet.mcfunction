@@ -1,42 +1,42 @@
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 111 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 111 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 111 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 111 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 111 -8 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 112 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 112 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 112 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 112 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 112 -8 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 113 -8 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 113 -8 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 113 -8 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 113 -8 run function luigis_mansion:spawn_entities/item/gold_coin
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 111 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 111 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 111 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 111 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 111 -8 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 112 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 112 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 112 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 112 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 112 -8 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 113 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 113 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 113 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 113 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 660 113 -8 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 113 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 113 -7 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 663 113 -8 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 662 113 -8 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=false},limit=1] positioned 661 113 -8 run function luigis_mansion:spawn_entities/item/bill
-execute if entity @a[advancements={luigis_mansion:mansion/nanas_room_closet=true},limit=1] run tag @e[tag=selected] add nothing
-advancement grant @a only luigis_mansion:mansion/nanas_room_closet
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 111 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 111 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 661 111 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 111 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 111 -8 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 112 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 112 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 661 112 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 112 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 112 -8 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 661 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 113 -8 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 113 -7 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 113 -8 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 113 -8 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 661 113 -8 run function luigis_mansion:spawn_entities/item/gold_coin
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 111 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 111 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 661 111 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 111 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 111 -8 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 112 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 112 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 661 112 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 112 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 112 -8 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 113 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 113 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 661 113 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 113 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 660 113 -8 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 113 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 113 -7 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 663 113 -8 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 662 113 -8 run function luigis_mansion:spawn_entities/item/bill
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} positioned 661 113 -8 run function luigis_mansion:spawn_entities/item/bill
+execute if data storage luigis_mansion:data current_state.current_data.money_spawned{nanas_room_closet:1b} run tag @e[tag=selected] add nothing
+data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {nanas_room_closet:1b}

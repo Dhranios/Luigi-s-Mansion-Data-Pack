@@ -7,6 +7,6 @@ execute if entity @s[scores={Dialog=340}] run tellraw @a {"translate":"chat.type
 execute if entity @s[scores={Dialog=420}] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:dialog.marios_painting.2"}]}
 execute if entity @s[scores={Dialog=480}] run scoreboard players set @a MusicType 0
 tag @s[scores={Dialog=480}] remove marios_painting
-execute if entity @s[scores={Dialog=480}] run advancement grant @a only luigis_mansion:technical saw_mario
-execute if entity @s[scores={Dialog=480}] run advancement grant @a only luigis_mansion:technical saw_mario_again
+execute if entity @s[scores={Dialog=480}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {saw_mario:1b}
+execute if entity @s[scores={Dialog=480}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {saw_mario_again:1b}
 scoreboard players reset @s[scores={Dialog=480}] Dialog

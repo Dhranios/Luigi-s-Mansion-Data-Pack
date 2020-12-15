@@ -5,5 +5,5 @@ tag @s add seen_room_name_2
 
 execute if entity @s[x=708.5,y=102,z=8.0,distance=..4] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_hallway"}}}]}] run function luigis_mansion:room/hidden/foyer/clear_blockade
 
-execute if entity @s[advancements={luigis_mansion:mansion/mansion=true,luigis_mansion:mansion/nursery=false},x=714.0,y=102,z=8.0,distance=..3,tag=!warp] unless entity @e[x=714.0,y=102,z=8.0,distance=..3,tag=chandelier,type=minecraft:area_effect_cloud,limit=1] run summon minecraft:area_effect_cloud 714.0 102 8.0 {Tags:["chandelier"],Duration:180}
-execute if entity @s[x=702.5,y=111,z=1.5,distance=..3,advancements={luigis_mansion:mansion/wardrobe_room=true,luigis_mansion:technical={portrait_ghosts=false}}] run scoreboard players set @a GBHCall 1
+execute if data storage luigis_mansion:data {found_e_gadd:1b} unless data storage luigis_mansion:data current_state.current_data.room.nursery{cleared:1b} if entity @s[x=714.0,y=102,z=8.0,distance=..3,tag=!warp] unless entity @e[x=714.0,y=102,z=8.0,distance=..3,tag=chandelier,type=minecraft:area_effect_cloud,limit=1] run summon minecraft:area_effect_cloud 714.0 102 8.0 {Tags:["chandelier"],Duration:180}
+execute if entity @s[x=702.5,y=111,z=1.5,distance=..3] if data storage luigis_mansion:data current_state.current_data.room.wardrobe_room{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{portrait_ghosts:1b} run scoreboard players set @a GBHCall 1

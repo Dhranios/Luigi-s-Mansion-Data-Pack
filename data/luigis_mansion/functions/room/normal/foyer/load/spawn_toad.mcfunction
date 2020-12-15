@@ -1,1 +1,1 @@
-execute if entity @a[advancements={luigis_mansion:technical={found_e_gadd=true}},tag=!blackout,limit=1] positioned 714 102 12 unless entity @e[distance=..0.7,tag=toad,limit=1] rotated -90 0 run function luigis_mansion:spawn_entities/toad/foyer
+execute if data storage luigis_mansion:data {found_e_gadd:1b} if entity @a[tag=!blackout,limit=1] positioned 714 102 12 unless entity @e[distance=..0.7,tag=toad,limit=1] rotated -90 0 run function luigis_mansion:spawn_entities/toad/foyer
