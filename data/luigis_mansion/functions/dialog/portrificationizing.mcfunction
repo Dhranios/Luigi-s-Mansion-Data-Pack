@@ -4,7 +4,7 @@ execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dial
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=-3}] MusicType 22
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[scores={Room=-3}] Music 0
 execute if entity @s[scores={Dialog=1}] run function luigis_mansion:spawn_entities/portrificationizing_ghost
-teleport @s[scores={Dialog=1}] ~ ~ ~ facing 770 77 15
+teleport @s[scores={Dialog=1}] ~ ~ ~ facing 771 77 15
 teleport @s[scores={Dialog=201..210}] ~ ~0.05 ~
 teleport @s[scores={Dialog=211..220}] ~ ~-0.05 ~
 teleport @s[scores={Dialog=221..230}] ~ ~0.05 ~
@@ -18,7 +18,7 @@ execute if entity @s[scores={Dialog=396..439}] facing entity @e[tag=portrificati
 teleport @s[scores={Dialog=440..475}] ~ ~ ~-0.171 -180 0
 execute if entity @s[scores={Dialog=476..519}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 teleport @s[scores={Dialog=520..555}] ~ ~ ~-0.228 -180 0
-teleport @s[scores={Dialog=556..809}] ~ ~ ~ facing 769 77 -12
+teleport @s[scores={Dialog=556..809}] ~ ~ ~ facing 770 77 -12
 execute if entity @s[scores={Dialog=360}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.1"}]}
 execute if entity @s[scores={Dialog=440}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.2"}]}
 execute if entity @s[scores={Dialog=520}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.3"}]}
@@ -100,7 +100,7 @@ execute if entity @s[scores={Dialog=1050},tag=ending] run tellraw @a {"translate
 execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp Money
 execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp2 Money
 teleport @s[scores={Dialog=810..1068},tag=!ending] ~ ~ ~0.1 0 0
-teleport @s[scores={Dialog=1069},tag=!ending] 773 77 14 0 0
+teleport @s[scores={Dialog=1069},tag=!ending] 774 77 14 0 0
 tag @s[scores={Dialog=1070}] remove portrificationizing
 tag @s[scores={Dialog=1070},tag=ending] add mario_to_normal
 tag @s[scores={Dialog=1070}] remove ending

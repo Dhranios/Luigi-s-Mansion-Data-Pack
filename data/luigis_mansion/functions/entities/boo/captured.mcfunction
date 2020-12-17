@@ -71,5 +71,7 @@ execute if entity @s[tag=turboo] run kill @e[tag=turboo_trap]
 execute if entity @s[tag=underboo] run kill @e[tag=underboo_trap]
 
 execute if entity @a[scores={Boos=49},limit=1] run function luigis_mansion:spawn_entities/item/gold_diamond
+execute if score #mansion_type Selected matches 0 if entity @a[scores={Boos=4},tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/normal/door/main_hallway_washroom_1
+execute if score #mansion_type Selected matches 1 if entity @a[scores={Boos=4},tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/hidden/door/main_hallway_washroom_1
 scoreboard players add @a Boos 1
 scoreboard players add @a GBHCall 5

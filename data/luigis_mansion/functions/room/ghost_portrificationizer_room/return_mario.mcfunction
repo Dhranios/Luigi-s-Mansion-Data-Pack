@@ -4,4 +4,4 @@ tag @e[tag=e_gadd] remove ending
 tag @e[tag=e_gadd] add mario_to_normal
 scoreboard players set @e[tag=e_gadd] Dialog 0
 execute as @a run trigger EGaddGPRChoice set 0
-teleport @e[tag=e_gadd] 773 77 -12 90 0
+teleport @e[tag=e_gadd] 774 77 -12 90 0

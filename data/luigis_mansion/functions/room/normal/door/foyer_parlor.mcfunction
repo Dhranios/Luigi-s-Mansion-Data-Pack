@@ -9,9 +9,9 @@ execute if block 698 111 8 minecraft:jungle_door[open=true] if block 698 111 7 m
 
 execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=699.0,y=111,z=8.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}}] run function luigis_mansion:room/normal/parlor/unlock_door
 execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=699.0,y=111,z=8.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}}] run function luigis_mansion:room/normal/parlor/unlock_door
-execute if block 699 111 7 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{parlor:1b} positioned 699 111 7 run function luigis_mansion:blocks/closed_door
-execute if block 699 111 8 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{parlor:1b} positioned 699 111 8 run function luigis_mansion:blocks/closed_door
-execute unless data storage luigis_mansion:data current_state.current_data.used_keys{parlor:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
+execute if block 699 111 7 #minecraft:doors[open=true] unless data storage luigis_mansion:data {used_parlor_key:1b} positioned 699 111 7 run function luigis_mansion:blocks/closed_door
+execute if block 699 111 8 #minecraft:doors[open=true] unless data storage luigis_mansion:data {used_parlor_key:1b} positioned 699 111 8 run function luigis_mansion:blocks/closed_door
+execute unless data storage luigis_mansion:data {used_parlor_key:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=699.0,y=111,z=8.0] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0
 
 execute if score #temp Searched matches 1 run fill 698 111 7 699 112 8 minecraft:air replace #minecraft:doors

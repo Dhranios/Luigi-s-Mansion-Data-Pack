@@ -1,4 +1,6 @@
 execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
+execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
+scoreboard players set @s Room 0
 teleport @s 944.0 41 -19953 0 0
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["load_chunk"]}
 spreadplayers 944 -19953 0 1 true @e[tag=load_chunk,limit=1]

@@ -1,6 +1,6 @@
-execute if data storage luigis_mansion:data current_state.current_data.room.graveyard{cleared:1b} run tag @s add dead
-execute if data storage luigis_mansion:data current_state.current_data.room.graveyard{cleared:1b} as @a[distance=..80] run function luigis_mansion:entities/bogmire/return
-execute unless data storage luigis_mansion:data current_state.current_data.room.graveyard{cleared:1b} as @a[distance=80..] run function luigis_mansion:entities/bogmire/to_arena
+execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:1b} run tag @s add dead
+execute if data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:1b} as @a[distance=..80] run function luigis_mansion:entities/bogmire/return
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.graveyard{cleared:1b} as @a[distance=80..] run function luigis_mansion:entities/bogmire/to_arena
 execute if entity @s[tag=!intro_done] run function luigis_mansion:dialog/bogmire_intro
 execute unless entity @s[scores={Time=1..}] run scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0}] Time 1
 scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Time=..179}] Time 1

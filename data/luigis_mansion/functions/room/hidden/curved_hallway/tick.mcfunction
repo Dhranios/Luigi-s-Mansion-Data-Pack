@@ -11,4 +11,4 @@ function luigis_mansion:room/hidden/curved_hallway/ghosts
 function luigis_mansion:room/hidden/door/basement_hallway_curved_hallway
 function luigis_mansion:room/hidden/door/curved_hallway_secret_altar
 
-execute if data storage luigis_mansion:data current_state.current_data.room.secret_altar{cleared:1b} run tag @a[scores={Room=48}] add return_mario
+execute if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run tag @a[scores={Room=48}] add return_mario

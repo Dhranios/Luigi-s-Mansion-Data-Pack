@@ -26,3 +26,4 @@ execute if entity @s[scores={Time=163}] run clone 712 102 6 715 114 9 712 103 6 
 execute if entity @s[scores={Time=171}] run clone 712 102 6 715 114 9 712 103 6 replace force
 execute if entity @s[scores={Time=179}] run playsound luigis_mansion:entity.chandelier.land hostile @a ~ ~11 ~ 2
 tag @s remove dead
+tag @s remove remove_from_existence

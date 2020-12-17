@@ -1,4 +1,5 @@
 execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
+execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 scoreboard players reset #can_clear_hidden Selected
 execute unless score #mansion_type Selected matches 0 run function luigis_mansion:entities/e_gadd/load_mansion/normal
 teleport @s 760 89.9375 8.0 90 0

@@ -1,7 +1,7 @@
 execute if entity @s[tag=!flashlight,tag=had_flashlight_on] run playsound luigis_mansion:item.flashlight.off player @a ~ ~ ~ 1
 tag @s[tag=!flashlight,tag=had_flashlight_on] remove had_flashlight_on
 tag @s[tag=flashlight] remove flashlight
-tag @s[gamemode=!spectator,tag=!grabbed,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{Inventory:[{Slot:-106b,tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] add flashlight
+tag @s[gamemode=!spectator,tag=!grabbed,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}}] add flashlight
 tag @s[tag=!flashlight] remove flashlight_off
 tag @s[tag=flashlight,scores={UseItem=1},tag=!flashlight_off] add toggle_flashlight_off
 tag @s[tag=flashlight,tag=toggle_flashlight_off] add flashlight_off
@@ -14,7 +14,7 @@ execute unless entity @s[nbt={Inventory:[{Slot:103b}]}] run replaceitem entity @
 execute if entity @s[tag=flashlight,tag=!had_flashlight_on] run playsound luigis_mansion:item.flashlight.on player @a ~ ~ ~ 1
 tag @s[tag=flashlight,tag=!had_flashlight_on] add had_flashlight_on
 clear @s[tag=!flashlight] minecraft:carved_pumpkin{luigis_mansion:{id:"luigis_mansion:flashlight_vision"}}
-effect clear @s[tag=!flashlight,tag=had_flashlight_on] minecraft:night_vision
+execute unless entity @s[scores={Shrunk=1..}] run effect clear @s[tag=!flashlight,tag=had_flashlight_on] minecraft:night_vision
 effect give @s[tag=flashlight] minecraft:night_vision 1000000 0 true
 execute if entity @s[tag=flashlight] run fill ~ ~ ~ ~ ~ ~ minecraft:torch replace minecraft:air
 execute if entity @s[tag=flashlight] unless block ~ ~ ~ minecraft:torch run fill ~ ~1 ~ ~ ~1 ~ minecraft:torch replace minecraft:air

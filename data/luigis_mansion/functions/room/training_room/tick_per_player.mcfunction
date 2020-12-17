@@ -3,4 +3,4 @@ title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.trai
 tag @s add seen_room_name
 tag @s add seen_room_name_2
 
-execute unless entity @e[tag=e_gadd,scores={Room=61}] run function luigis_mansion:entities/e_gadd/to_lab
+execute unless entity @e[tag=e_gadd,scores={Room=-2}] run function luigis_mansion:entities/e_gadd/to_lab

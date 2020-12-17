@@ -32,6 +32,7 @@ execute if entity @s[tag=portrificationizing_ghost] run function luigis_mansion:
 execute if entity @s[tag=money] run function luigis_mansion:entities/money
 execute if entity @s[tag=mario] run function luigis_mansion:entities/mario
 execute if entity @s[tag=bowser] run function luigis_mansion:entities/bowser
+execute if entity @s[tag=gameboy_horror_marker] run function luigis_mansion:entities/gameboy_horror_marker
 execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burning_floor
 execute unless entity @s[tag=!poison_mushroom,tag=!heart,tag=!gold_coin,tag=!bill,tag=!gold_bar,tag=!blue_sapphire,tag=!green_emerald,tag=!red_ruby,tag=!small_pearl,tag=!medium_pearl,tag=!big_pearl] run scoreboard players add @s SpawnTime 1
 

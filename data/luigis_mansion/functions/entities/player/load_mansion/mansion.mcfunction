@@ -34,7 +34,7 @@ execute if data storage luigis_mansion:data current_state.current_data.boos.tabo
 execute if data storage luigis_mansion:data current_state.current_data.boos.tamboorine{dead:1b} run scoreboard players add @a Boos 1
 execute if data storage luigis_mansion:data current_state.current_data.boos.turboo{dead:1b} run scoreboard players add @a Boos 1
 execute if data storage luigis_mansion:data current_state.current_data.boos.underboo{dead:1b} run scoreboard players add @a Boos 1
-execute if data storage luigis_mansion:data current_state.current_data.room.balcony_2{cleared:1b} run scoreboard players add @a Boos 15
+execute if data storage luigis_mansion:data current_state.current_data.rooms.balcony_2{cleared:1b} run scoreboard players add @a Boos 15
 
 scoreboard players set @a ClairvoyaSpoke 0
 execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add @a ClairvoyaSpoke 1

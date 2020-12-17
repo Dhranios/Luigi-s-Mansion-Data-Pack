@@ -1,0 +1,3 @@
+execute unless entity @a[scores={Boos=5..}] run setblock 3669 60 -10 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:gameboy_horror_map/door/single_locked",rotation:"CLOCKWISE_90"}
+execute if entity @a[scores={Boos=5..}] run setblock 3669 60 -10 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:gameboy_horror_map/door/single_unlocked",rotation:"CLOCKWISE_90"}
+setblock 3669 61 -10 minecraft:redstone_block

@@ -1,4 +1,5 @@
 execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
+execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 teleport @s 790 77 15 45 0
 scoreboard players set @s MusicType 2
 scoreboard players set @s Music 0

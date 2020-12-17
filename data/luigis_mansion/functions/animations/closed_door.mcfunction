@@ -1,4 +1,5 @@
 tag @s remove dead
+tag @s remove remove_from_existence
 scoreboard players add @s AnimationProg 1
 execute if entity @s[scores={AnimationProg=1}] unless block ~ ~ ~ minecraft:spruce_door run playsound luigis_mansion:block.door.locked block @a ~ ~ ~ 1
 execute if block ~ ~ ~ #minecraft:doors[facing=east] align xyz run teleport @a[dx=1] ~-0.5 ~ ~0.5

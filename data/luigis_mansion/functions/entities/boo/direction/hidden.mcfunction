@@ -202,7 +202,7 @@ tag @s[scores={Room=54}] add left
 tag @s[scores={Room=55}] add up
 tag @s[scores={Room=55}] add left
 tag @s[scores={Room=56}] add up
-execute if data storage luigis_mansion:data current_state.current_data.room.guest_room{cleared:1b} run tag @s[scores={Room=56}] add left
+execute if data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} run tag @s[scores={Room=56}] add left
 tag @s[scores={Room=57}] add up
 tag @s[scores={Room=57}] add right
 tag @s[scores={Room=58}] add right

@@ -4,4 +4,4 @@ execute unless entity @s[tag=warp] unless entity @e[tag=target,limit=1] unless b
 scoreboard players add #temp Move 1
 execute unless entity @s[tag=warp] unless entity @e[tag=target,limit=1] positioned ^ ^ ^0.5 if score #temp Move matches 201 if entity @s[y_rotation=87..93,x_rotation=-23..-16] run tellraw @a {"translate":"chat.type.text","with":[{"selector":"@s","color":"green"},{"translate":"luigis_mansion:message.player.scan_furniture.103"}]}
 execute unless entity @s[tag=warp] unless entity @e[tag=target,limit=1] positioned ^ ^ ^0.5 if score #temp Move matches ..200 run function luigis_mansion:items/gameboy_horror/scan/target
-execute if entity @s[tag=warp] if data storage luigis_mansion:data current_state.current_data.room.secret_altar{cleared:1b} run tag @s remove warp
+execute if entity @s[tag=warp] if data storage luigis_mansion:data current_state.current_data.rooms.secret_altar{cleared:1b} run tag @s remove warp

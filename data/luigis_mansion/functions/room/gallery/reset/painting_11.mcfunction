@@ -1,2 +1,2 @@
-data modify entity @e[x=757.5,y=79,z=-26.5,type=minecraft:item_frame,distance=..0.7,limit=1] Item set value {id:"minecraft:carved_pumpkin",Count:1b}
-data merge block 757 78 -27 {Text3:'{"text":""}'}
+data modify entity @e[x=758.5,y=79,z=-25.5,type=minecraft:item_frame,distance=..0.7,limit=1] Item set value {id:"minecraft:carved_pumpkin",Count:1b}
+data merge block 758 78 -26 {Text3:'{"text":""}'}

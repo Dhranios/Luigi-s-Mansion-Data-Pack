@@ -1,4 +1,5 @@
 function luigis_mansion:room/hidden/twins_room/turn_on_lights
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/hidden/twins_room
 function luigis_mansion:room/hidden/twins_room/remove_blockade
 playsound luigis_mansion:block.chest.spawn block @a 709 111 -13 2
 stopsound @a[scores={Room=39}] music

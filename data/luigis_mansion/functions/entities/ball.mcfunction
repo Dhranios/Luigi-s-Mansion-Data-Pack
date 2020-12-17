@@ -29,5 +29,6 @@ execute if entity @s[tag=explode] run function luigis_mansion:entities/ball/spik
 tag @s[tag=in_vacuum] add can_spit
 tag @s[tag=in_vacuum] add can_spit_2
 tag @s[tag=!can_spit] remove can_spit_2
+tag @s[tag=!in_vacuum,tag=can_spit_2] add spit
 tag @s[tag=!in_vacuum] remove can_spit
 tag @s[tag=in_vacuum] remove in_vacuum

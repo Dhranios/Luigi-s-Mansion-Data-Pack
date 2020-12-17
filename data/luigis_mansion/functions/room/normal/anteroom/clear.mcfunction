@@ -1,4 +1,5 @@
 function luigis_mansion:room/normal/anteroom/turn_on_lights
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/normal/anteroom
 function luigis_mansion:room/normal/anteroom/remove_blockade
 stopsound @a[scores={Room=3}] music
 playsound luigis_mansion:music.cleared_room music @a[scores={Room=3}] ~ ~ ~ 10000

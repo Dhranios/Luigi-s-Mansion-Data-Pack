@@ -1,1 +1,1 @@
-execute if entity @s[x=753.0,y=81,z=-25.0,dx=0,dy=2,dz=0,tag=vacuum] unless score #gallery_lamp_1 Search matches 1 store success score #gallery_lamp_1 Search run scoreboard players add #gallery_lamp_1 Searching 1
+execute if entity @s[x=754.0,y=81,z=-24.0,dx=0,dy=2,dz=0,tag=vacuum] unless score #gallery_lamp_1 Search matches 1 store success score #gallery_lamp_1 Search run scoreboard players add #gallery_lamp_1 Searching 1

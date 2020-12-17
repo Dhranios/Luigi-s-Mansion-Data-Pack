@@ -34,4 +34,4 @@ tag @s[scores={Time=148}] remove burning_2
 execute if entity @s[scores={Time=148}] run scoreboard players set @s Time 1
 
 execute if entity @a[tag=blackout] run tag @s add dead
-execute if data storage luigis_mansion:data current_state.current_data.room.butlers_room{cleared:1b} run tag @s add dead
+execute if data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} run tag @s add dead
