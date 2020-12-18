@@ -6,8 +6,8 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] unless score #temp Time matches 0.. store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.one_go_health int 1 run scoreboard players set @s Health 0
 execute if entity @s[tag=dead] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.health int 1 run scoreboard players set @s Health 0
 execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:portrait_ghosts/mr_luggs
-execute if entity @s[tag=disappear] unless score #temp Time matches 0.. store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.one_go_health int 1 run scoreboard players get @s Health
-execute if entity @s[tag=disappear] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=vanish] unless score #temp Time matches 0.. store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.one_go_health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.mr_luggs.health int 1 run scoreboard players get @s Health
 scoreboard players reset #temp Time
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.mr_luggs.hurt hostile @a ~ ~ ~ 1

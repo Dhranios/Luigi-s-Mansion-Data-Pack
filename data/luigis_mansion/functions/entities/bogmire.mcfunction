@@ -10,7 +10,7 @@ execute if entity @s[tag=dead] run scoreboard players reset #temp Damage
 execute if entity @s[tag=dead] run data modify storage luigis_mansion:data current_state.current_data.rooms.graveyard merge value {cleared:1b}
 execute if entity @s[tag=dead] run scoreboard players reset #graveyard Ticking
 execute if entity @s[tag=dead] as @a run function luigis_mansion:entities/bogmire/return
-execute if entity @s[tag=disappear] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.bogmire.health int 1 run scoreboard players get @s Health
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.bogmire.hurt hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40

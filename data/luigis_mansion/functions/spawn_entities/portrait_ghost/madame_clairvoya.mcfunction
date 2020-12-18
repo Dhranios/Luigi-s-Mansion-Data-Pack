@@ -15,4 +15,10 @@ scoreboard players set @e[tag=this_entity,limit=1] Move 4
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
+scoreboard players set @e[tag=this_entity,limit=1] ClairvoyaSpoke 0
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_hat:1b} run scoreboard players add @e[tag=this_entity,limit=1] ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_latter:1b} run scoreboard players add @e[tag=this_entity,limit=1] ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_star:1b} run scoreboard players add @e[tag=this_entity,limit=1] ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_glove:1b} run scoreboard players add @e[tag=this_entity,limit=1] ClairvoyaSpoke 1
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{shown_marios_shoe:1b} run scoreboard players add @e[tag=this_entity,limit=1] ClairvoyaSpoke 1
 tag @e[tag=this_entity,limit=1] remove this_entity

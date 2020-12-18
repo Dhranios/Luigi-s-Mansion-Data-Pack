@@ -1,7 +1,5 @@
 scoreboard players reset @s ResetMansion
 scoreboard players reset @s Element
-scoreboard players set @s Boos 0
-scoreboard players set @s ClairvoyaSpoke 0
 scoreboard players set @s TotalDamage 0
 scoreboard players set @s LastTotalDamage 0
 scoreboard players set @s Health 100
