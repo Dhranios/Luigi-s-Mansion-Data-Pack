@@ -1,4 +1,4 @@
-execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{twins_room_speedy_spirit:1b} positioned 709 114 23 run function luigis_mansion:spawn_entities/new_ghost/speedy_spirit/twins_room
+execute unless data storage luigis_mansion:data current_state.current_data.money_spawned{twins_room_speedy_spirit:1b} positioned 709 114 23 run function luigis_mansion:spawn_entities/new_ghost/speedy_spirit
 setblock 707 111 28 minecraft:chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
 setblock 711 111 34 minecraft:chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}
 setblock 716 111 31 minecraft:chest[facing=east,type=single]{LootTable:"luigis_mansion:search"}

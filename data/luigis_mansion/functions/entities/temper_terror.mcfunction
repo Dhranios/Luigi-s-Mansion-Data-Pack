@@ -7,7 +7,7 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.temper_terror.hurt hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.temper_terror.flee hostile @a ~ ~ ~ 1
-execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain] run playsound luigis_mansion:entity.temper_terror.ambient hostile @a ~ ~ ~ 1
+execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=!appear] run playsound luigis_mansion:entity.temper_terror.ambient hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!appear] run function luigis_mansion:entities/temper_terror/collide

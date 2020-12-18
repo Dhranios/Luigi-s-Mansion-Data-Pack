@@ -8,44 +8,6 @@
                     "name": "luigis_mansion:entities/ghost/gold_ghost"
                 }
             ]
-        },
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "minecraft:brick",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": 20
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:18,display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.gold_coin\"}'},luigis_mansion:{id:\"luigis_mansion:gold_coin\"}}"
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "minecraft:brick",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": 5
-						},
-						{
-							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:19,display:{Name:'{\"italic\":false,\"color\":\"white\",\"translate\":\"luigis_mansion:item.bill\"}'},luigis_mansion:{id:\"luigis_mansion:bill\"}}"
-						}
-					]
-				}
-			]
-		}
+        }
 	]
 }

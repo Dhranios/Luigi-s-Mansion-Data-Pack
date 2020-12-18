@@ -1,6 +1,6 @@
 scoreboard players add @s[tag=in_vacuum,scores={SpawnTime=120..}] VacuumTime 1
 scoreboard players set @s[tag=!in_vacuum_2,tag=!in_vacuum] VacuumTime 0
-tag @s[tag=in_vacuum] add fleeing
+tag @s[tag=in_vacuum,scores={SpawnTime=120..}] add fleeing
 tag @s[tag=!in_vacuum_2,tag=!in_vacuum] remove fleeing
 tag @s[tag=!in_vacuum] remove in_vacuum_2
 tag @s[tag=in_vacuum] add in_vacuum_2

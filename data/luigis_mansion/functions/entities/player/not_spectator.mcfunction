@@ -46,3 +46,5 @@ execute if score #temp Time matches 0 store result score #temp Time run clear @s
 execute if score #temp Time matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gameboy_horror"}'},luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}
 scoreboard players reset #temp Time
 execute as @e[distance=..3,type=minecraft:item] unless entity @s[nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] run kill @s
+
+execute unless entity @s[scores={Room=-3}] if score #mansion_data_index Selected matches -1 unless score #mansion_type Selected matches -1 run function luigis_mansion:entities/e_gadd/to_portrificationizer

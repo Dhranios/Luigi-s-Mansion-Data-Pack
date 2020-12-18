@@ -1,20 +1,20 @@
-execute if entity @s[tag=study] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=study] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {study_gold_mouse:1b}
-execute if entity @s[tag=main_hallway] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=main_hallway] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {main_hallway_gold_mouse:1b}
-execute if entity @s[tag=dining_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=dining_room] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {dining_room_gold_mouse:1b}
-execute if entity @s[tag=kitchen] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=kitchen] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {kitchen_gold_mouse:1b}
-execute if entity @s[tag=tea_room_random] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=tea_room_random] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {tea_room_random_gold_mouse:1b}
-execute if entity @s[tag=tea_room_cheese] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=tea_room_cheese] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {tea_room_cheese_gold_mouse:1b}
-execute if entity @s[tag=hallway_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=hallway_room] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {hallway_gold_mouse:1b}
-execute if entity @s[tag=fortune_tellers_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=fortune_tellers_room] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {fortune_tellers_room_gold_mouse:1b}
-execute if entity @s[tag=safari_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=safari_room] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {safari_room_gold_mouse:1b}
-execute if entity @s[tag=sealed_room] run loot spawn ~ ~ ~ loot luigis_mansion:entities/vacuumable/gold_mouse/blue_diamond
-execute if entity @s[tag=sealed_room] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {sealed_room_gold_mouse:1b}
+execute if entity @s[scores={Room=7}] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=7}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {study_gold_mouse:1b}
+execute if entity @s[scores={Room=10}] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=10}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {main_hallway_gold_mouse:1b}
+execute if entity @s[scores={Room=16}] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=16}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {fortune_tellers_room_gold_mouse:1b}
+execute if entity @s[scores={Room=22}] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=22}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {dining_room_gold_mouse:1b}
+execute if entity @s[scores={Room=23}] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=23}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {kitchen_gold_mouse:1b}
+execute if entity @s[scores={Room=30},tag=!cheese] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=30},tag=!cheese] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {tea_room_random_gold_mouse:1b}
+execute if entity @s[scores={Room=30},tag=cheese] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=30},tag=cheese] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {tea_room_cheese_gold_mouse:1b}
+execute if entity @s[scores={Room=31}] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=31}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {hallway_gold_mouse:1b}
+execute if entity @s[scores={Room=40}] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=40}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {safari_room_gold_mouse:1b}
+execute if entity @s[scores={Room=53}] run function luigis_mansion:entities/gold_mouse/spawn_money/loot/blue_diamond
+execute if entity @s[scores={Room=53}] run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {sealed_room_gold_mouse:1b}

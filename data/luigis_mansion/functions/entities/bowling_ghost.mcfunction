@@ -18,7 +18,7 @@ execute if entity @s[scores={HurtTime=1},tag=hurt] run tag @e[tag=this_bowling_b
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!disappear] run playsound luigis_mansion:entity.bowling_ghost.hurt hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt,tag=!disappear] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing,tag=!disappear] run playsound luigis_mansion:entity.bowling_ghost.flee hostile @a ~ ~ ~ 1
-execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=grabbed_ball,tag=!disappear] run playsound luigis_mansion:entity.bowling_ghost.ambient hostile @a ~ ~ ~ 1
+execute if entity @s[scores={Sound=0},tag=!vanish,tag=!fleeing,tag=!attack,tag=!laugh,tag=!complain,tag=grabbed_ball,tag=!disappear,tag=!appear] run playsound luigis_mansion:entity.bowling_ghost.ambient hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 20
 
 execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!vanish,tag=!appear,tag=!disappear] run function luigis_mansion:entities/bowling_ghost/collide
