@@ -44,6 +44,3 @@ teleport @s[scores={Wave=600..},tag=to_me] ~ ~0.1 ~
 execute if entity @s[scores={Wave=610..},tag=to_me] run particle minecraft:campfire_cosy_smoke ~ ~3 ~ 0.4 0.4 0.4 0 10 force
 scoreboard players set @s[scores={Wave=600..}] Move 20
 execute if entity @s[scores={Wave=640},tag=to_me] run function luigis_mansion:entities/boolossus/merge
-
-execute unless entity @e[x=959.5,y=42,z=-19952.5,distance=..5,tag=ice_elemental_ghost] positioned 959 42 -19953 run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost
-execute unless entity @e[x=928.5,y=42,z=-19952.5,distance=..5,tag=ice_elemental_ghost] positioned 928 42 -19953 run function luigis_mansion:spawn_entities/ghost/ice_elemental_ghost

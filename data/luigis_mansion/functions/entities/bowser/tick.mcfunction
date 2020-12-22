@@ -19,11 +19,11 @@ execute if entity @s[tag=run] run function luigis_mansion:entities/bowser/run
 execute if entity @s[tag=jump] run function luigis_mansion:entities/bowser/jump
 
 execute as @a[distance=..3,gamemode=!spectator,tag=!vacuumed] run function luigis_mansion:entities/bowser/collide
-execute unless entity @s[tag=!walk,tag=!run] positioned ~ ~ ~2 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run] positioned ~1 ~ ~1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run] positioned ~-1 ~ ~1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run] positioned ~2 ~ ~ if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run] positioned ~-2 ~ ~ if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run] positioned ~1 ~ ~-1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run] positioned ~-1 ~ ~-1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
-execute unless entity @s[tag=!walk,tag=!run] positioned ~ ~ ~-2 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
+execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~ ~ ~2 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
+execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~1 ~ ~1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
+execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~-1 ~ ~1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
+execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~2 ~ ~ if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
+execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~-2 ~ ~ if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
+execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~1 ~ ~-1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
+execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~-1 ~ ~-1 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar
+execute unless entity @s[tag=!walk,tag=!run,tag=!headless_run] positioned ~ ~ ~-2 if block ~ ~1 ~ minecraft:clay run function luigis_mansion:entities/bowser/destroy_pillar

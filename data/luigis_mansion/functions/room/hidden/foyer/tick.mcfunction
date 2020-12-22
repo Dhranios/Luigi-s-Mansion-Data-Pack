@@ -5,8 +5,8 @@ tag @e[tag=ghost,scores={Room=1}] add hallway
 
 scoreboard players reset @a[gamemode=!spectator,x=719,y=102,z=7,dx=0,dy=1,dz=1] Room
 execute as @a[gamemode=!spectator,x=719,y=102,z=7,dx=0,dy=1,dz=1] unless entity @s[scores={MusicType=0}] run function luigis_mansion:other/music/set/silence
-execute as @a[gamemode=!spectator,x=707,y=102,z=-1,dx=10,dy=15,dz=17] run function luigis_mansion:room/hidden/foyer/tick_per_player
-execute as @a[gamemode=!spectator,x=700,y=111,z=-1,dx=17,dy=6,dz=17] unless entity @s[x=707,y=102,z=-1,dx=10,dy=15,dz=17] run function luigis_mansion:room/hidden/foyer/tick_per_player
+execute as @a[gamemode=!spectator,x=707,y=102,z=-1,dx=11,dy=15,dz=17] run function luigis_mansion:room/hidden/foyer/tick_per_player
+execute as @a[gamemode=!spectator,x=700,y=111,z=-1,dx=17,dy=6,dz=17] unless entity @s[x=707,y=102,z=-1,dx=11,dy=15,dz=17] run function luigis_mansion:room/hidden/foyer/tick_per_player
 
 execute as @e[tag=eternal_gold_coin,scores={Room=1}] run scoreboard players add #temp Wave 1
 execute if score #temp Wave matches ..7 run data modify storage luigis_mansion:data current_state.current_data.money_spawned merge value {foyer_money:1b}

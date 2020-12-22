@@ -40,4 +40,4 @@ execute if entity @s[scores={Dialog=1785..1806}] facing 633 94 33 run teleport @
 execute if entity @s[scores={Dialog=1895..}] run scoreboard players set @a[scores={Room=59}] Invulnerable 10
 execute if entity @s[scores={Dialog=1895..}] positioned 635 94 33 as @a[scores={Room=59}] facing entity @s feet run function luigis_mansion:dialog/king_boo/suck
 execute if entity @s[scores={Dialog=1895..}] positioned 635 94 33 if entity @a[distance=..0.7,gamemode=!spectator,limit=1] run tag @s add dead
-execute if entity @s[scores={Dialog=1895..}] positioned 635 94 33 if entity @a[distance=..0.7,gamemode=!spectator,limit=1] as @a run function luigis_mansion:entities/king_boo/to_arena
+execute if entity @s[scores={Dialog=1895..}] positioned 635 94 33 if entity @a[distance=..0.7,gamemode=!spectator,limit=1] as @a run function luigis_mansion:entities/king_boo/to_arena/hidden

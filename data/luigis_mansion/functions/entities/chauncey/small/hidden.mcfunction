@@ -40,4 +40,4 @@ execute if entity @s[scores={Dialog=426}] run tellraw @a {"translate":"chat.type
 tag @s[scores={Dialog=530..}] add laughing
 execute if entity @s[scores={Dialog=530}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.4"}]}
 execute if entity @s[scores={Dialog=562}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:dialog.chauncey.5"}]}
-execute if entity @s[scores={Dialog=642}] as @a run function luigis_mansion:entities/chauncey/to_arena
+execute if entity @s[scores={Dialog=642}] as @a run function luigis_mansion:entities/chauncey/to_arena/hidden

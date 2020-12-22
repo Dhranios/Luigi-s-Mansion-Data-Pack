@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:painting"
+            "item": "minecraft:gold_block"
         },
         "show_toast": false,
         "title": {

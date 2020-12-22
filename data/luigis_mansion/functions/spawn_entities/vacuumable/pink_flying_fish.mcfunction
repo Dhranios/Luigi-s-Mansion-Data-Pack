@@ -1,4 +1,5 @@
-summon minecraft:chicken ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.pink_flying_fish"}',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoAI:1b,EggLayTime:12000,AbsorptionAmount:1.0f,HandDropChances:[1.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:1b,Tags:["pink_flying_fish","ghost","optional_ghost","this_entity"]}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.pink_flying_fish"}',Invisible:1b,NoGravity:1b,CustomNameVisible:0b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:62}}],Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["pink_flying_fish","optional_ghost","ghost","this_entity"],DisabledSlots:2039583}
 scoreboard players set @e[tag=this_entity,limit=1] WaitTime 0
+execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 tag @e[tag=this_entity,limit=1] remove this_entity
 playsound luigis_mansion:entity.pink_flying_fish.spawn hostile @a ~ ~ ~ 1

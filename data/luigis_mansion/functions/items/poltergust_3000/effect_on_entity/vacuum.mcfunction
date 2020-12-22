@@ -18,5 +18,5 @@ execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!mon
 execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!money] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add dead
 tag @s[tag=ghost,scores={VulnerableTime=2..},tag=!dead,tag=!vanish,tag=!appear] add hurt
 tag @s[tag=ghost,tag=hurt,tag=!vanish] add in_vacuum
-tag @s[tag=boo,tag=!dead,tag=!hurt] add hurt
-tag @s[tag=king_boo,tag=battle,tag=!dead,tag=!hurt] add hurt
+tag @s[tag=boo,tag=!dead,tag=!hurt] add boo_hurt
+tag @s[tag=king_boo,tag=battle,tag=!dead,tag=!hurt] add boo_hurt

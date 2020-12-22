@@ -1,4 +1,5 @@
 scoreboard objectives add Angle dummy
+scoreboard objectives add AnimationProg dummy
 scoreboard objectives add BannanaDropTime dummy
 scoreboard objectives add Boos dummy
 scoreboard objectives add BooTimer dummy
@@ -41,6 +42,7 @@ scoreboard objectives add JarvisChoice trigger
 scoreboard objectives add Jump minecraft.custom:minecraft.jump
 scoreboard objectives add Keys dummy
 scoreboard objectives add KillerID dummy
+scoreboard objectives add LastFloor dummy
 scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastKeys dummy
 scoreboard objectives add LastTotalDamage dummy

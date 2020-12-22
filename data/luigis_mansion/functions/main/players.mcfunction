@@ -40,3 +40,4 @@ scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
 execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
 scoreboard players set @s Sneaking 0
 scoreboard players set @s Jump 0
+execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2

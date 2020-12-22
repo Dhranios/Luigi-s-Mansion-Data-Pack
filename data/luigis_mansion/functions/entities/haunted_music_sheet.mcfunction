@@ -7,11 +7,14 @@ execute if entity @s[tag=dead] store result entity @s Pos[1] double 0.01 run sco
 execute if entity @s[tag=dead] store result entity @s Pos[2] double 0.01 run scoreboard players get @s HomeZ
 execute if entity @s[tag=dead] store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRotX
 execute if entity @s[tag=dead] store result entity @s Rotation[1] float 1 run scoreboard players get @s HomeRotY
-execute if entity @s[tag=dead] store result entity @s Rotation[1] float 1 run scoreboard players set @s WaitTime -60
+execute if entity @s[tag=dead] store result entity @s Pose.RightArm[0] float 1 run scoreboard players get @s HomeRotY
+execute if entity @s[tag=dead] store result entity @s Pose.LeftArm[0] float 1 run scoreboard players get @s HomeRotY
+execute if entity @s[tag=dead] run scoreboard players set @s WaitTime -60
 execute if entity @e[tag=melody_pianissima,limit=1] run tag @s[tag=dead] remove dead
 
 scoreboard players set #temp Move 5
 scoreboard players add @s[scores={WaitTime=..-1}] WaitTime 1
-execute if entity @e[tag=melody_pianissima,scores={VulnerableTime=0},limit=1] run scoreboard players add @s[scores={WaitTime=0..}] WaitTime 1
+execute unless entity @e[tag=melody_pianissima,scores={VulnerableTime=1..},limit=1] run scoreboard players add @s[scores={WaitTime=0..}] WaitTime 1
 execute if entity @s[scores={WaitTime=1..59}] run function luigis_mansion:entities/haunted_music_sheet/hover
 execute if entity @s[scores={WaitTime=60..}] run function luigis_mansion:entities/haunted_music_sheet/attack
+execute if entity @s[scores={WaitTime=1..}] run function luigis_mansion:animations/haunted_object/flap

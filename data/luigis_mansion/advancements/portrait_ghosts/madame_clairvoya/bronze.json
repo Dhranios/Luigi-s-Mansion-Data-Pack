@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:painting"
+            "item": "minecraft:brown_mushroom_block"
         },
         "show_toast": false,
         "title": {

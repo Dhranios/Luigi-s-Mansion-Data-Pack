@@ -1,4 +1,4 @@
-spreadplayers 832.0 -19952.0 0 11 true @s
+spreadplayers 720.0 -19952.0 0 11 true @s
 execute at @s if block ~ 38 ~ minecraft:lime_wool run summon minecraft:lightning_bolt
 execute at @s if block ~ 38 ~ minecraft:lime_wool run teleport @s ~ 41 ~ 0 0
 execute at @s if block ~ 38 ~ minecraft:lime_wool run scoreboard players set @s Time 0

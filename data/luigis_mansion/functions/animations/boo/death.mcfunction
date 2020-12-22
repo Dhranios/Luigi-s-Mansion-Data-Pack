@@ -1,5 +1,5 @@
 tag @s remove hurt
-tag @s add normal_death
+tag @s add boo_death
 
 execute facing entity @p[gamemode=!spectator] feet run teleport @s ~ ~ ~ ~-180 ~
 execute store result score #temp HomeRot run data get entity @s Rotation[1] 100

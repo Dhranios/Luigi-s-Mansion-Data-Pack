@@ -36,7 +36,7 @@ execute if entity @s[scores={Health=..0}] run function luigis_mansion:entities/p
 execute if entity @s[scores={Health=1..},tag=already_added_to_list] run function luigis_mansion:entities/player/remove_dead_entry
 tag @s[scores={Health=1..}] remove already_added_to_list
 
-execute if entity @s[scores={Shrunk=1}] store result score #temp Time run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:flashlight"}} 0
+execute store result score #temp Time run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:flashlight"}} 0
 execute if score #temp Time matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:1,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.flashlight"}'},luigis_mansion:{id:"luigis_mansion:flashlight"}}
 execute store result score #temp Time run clear @s minecraft:carrot_on_a_stick{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}} 0
 execute if score #temp Time matches 0 run scoreboard players reset @s[advancements={luigis_mansion:lab/lab=true}] Element
