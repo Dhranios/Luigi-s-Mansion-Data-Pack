@@ -16,10 +16,10 @@ execute if entity @s[tag=toad_5_dialog] run function luigis_mansion:dialog/toad_
 execute if entity @s[tag=uncle_grimmly_dialog] run function luigis_mansion:dialog/uncle_grimmly
 execute if entity @s[tag=close_pipe] run function luigis_mansion:dialog/close_pipe
 execute if entity @s[tag=return_mario] as @a run function luigis_mansion:entities/e_gadd/return_mario
-execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:player/changed_mansion
 
 execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world
 execute if entity @s[scores={Offline=1}] run function luigis_mansion:other/log_on
+execute if entity @s[scores={ChangedMansion=1}] run function luigis_mansion:entities/player/changed_mansion
 
 tag @s[tag=!seen_room_name] remove seen_room_name_2
 tag @s remove seen_room_name

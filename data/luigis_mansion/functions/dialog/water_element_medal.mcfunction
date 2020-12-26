@@ -10,11 +10,11 @@ execute if entity @s[scores={Dialog=208}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=208}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.5.more"}]}
 execute if entity @s[scores={Dialog=368}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.6"}]}
 execute if entity @s[scores={Dialog=368}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.6.more"}]}
-execute if entity @s[scores={Dialog=448}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.7"}]}
-execute if entity @s[scores={Dialog=648}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.8","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
-execute if entity @s[scores={Dialog=648}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.8.more"}]}
-execute if entity @s[scores={Dialog=760}] as @a run function luigis_mansion:other/music/set/silence
-execute if entity @s[scores={Dialog=760}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {water_element_medal:1b}
-scoreboard players set @s[scores={Dialog=760}] GBHCall 0
-scoreboard players set @s[scores={Dialog=760}] GBHWait 0
-scoreboard players reset @s[scores={Dialog=760}] Dialog
+execute if entity @s[scores={Dialog=440}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.7"}]}
+execute if entity @s[scores={Dialog=640}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.8","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=640}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.water_element_medal.8.more"}]}
+execute if entity @s[scores={Dialog=752}] as @a run function luigis_mansion:other/music/set/silence
+execute if entity @s[scores={Dialog=752}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {water_element_medal:1b}
+scoreboard players set @s[scores={Dialog=752}] GBHCall 0
+scoreboard players set @s[scores={Dialog=752}] GBHWait 0
+scoreboard players reset @s[scores={Dialog=752}] Dialog

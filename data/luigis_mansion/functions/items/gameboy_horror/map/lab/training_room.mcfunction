@@ -1,2 +1,2 @@
-execute unless entity @e[tag=e_gadd,scores={Room=-2,Dialog=1184..2003}] run fill 4798 100 3 4783 100 -20 minecraft:white_concrete
-execute if entity @e[tag=e_gadd,scores={Room=-2,Dialog=1184..2003}] run fill 4798 100 3 4783 100 -20 minecraft:light_gray_concrete
+execute unless entity @e[tag=e_gadd,scores={Room=-2,Dialog=1272..2331}] run fill 4798 100 3 4783 100 -20 minecraft:white_concrete
+execute if entity @e[tag=e_gadd,scores={Room=-2,Dialog=1272..2331}] run fill 4798 100 3 4783 100 -20 minecraft:light_gray_concrete

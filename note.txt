@@ -1,6 +1,6 @@
 == Empty mansion ==
-The empty mansion is used after king boo has been portrificationized, to make sure nobody is in the mansion when resetting. It has no rooms, no data and no functions other than "generating" (which is actually wiping out the existing mansion).
-It is loaded in when you enter the curved hallway with mario's painting, but the mansion type is set only when king boo has been portrificationized.
+The empty mansion is used after King Boo has been portrificationized, to make sure nobody is in the mansion when resetting. It has no rooms, no data and no functions other than "generating" (which is actually wiping out the existing mansion).
+It is loaded in when you enter the curved hallway with Mario's painting, but the data variables are set only when Mario has been unportrificationized.
 
 == Predefined mansions ==
 Add-on is the variable defined as loaded, namespace is the namespace used for files.

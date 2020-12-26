@@ -5,8 +5,6 @@ function luigis_mansion:blocks/blockade
 execute if entity @s[tag=warp] run function luigis_mansion:items/gameboy_horror/warp
 execute if entity @s[tag=grabbed] run function luigis_mansion:entities/player/grabbed
 
-execute if entity @s[distance=..10,x=719.5,y=102,z=8.0] run function luigis_mansion:room/door/foyer
-
 execute if block ~ ~ ~ #minecraft:doors run stopsound @s[scores={HallwayNoise=1..}] hostile luigis_mansion:music.mansion.melody
 execute if block ~ ~ ~ #minecraft:doors run scoreboard players set @s HallwayNoise 0
 
@@ -47,4 +45,4 @@ execute if score #temp Time matches 0 unless entity @s[scores={Shrunk=1..}] run 
 scoreboard players reset #temp Time
 execute as @e[distance=..3,type=minecraft:item] unless entity @s[nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] run kill @s
 
-execute unless entity @s[scores={Room=-3}] if score #mansion_data_index Selected matches -1 unless score #mansion_type Selected matches -1 run function luigis_mansion:entities/e_gadd/to_portrificationizer
+execute unless entity @s[scores={Room=-3}] if block 771 97 2 minecraft:air if data storage luigis_mansion:data current_state.current_data.rooms run function luigis_mansion:entities/e_gadd/to_portrificationizer

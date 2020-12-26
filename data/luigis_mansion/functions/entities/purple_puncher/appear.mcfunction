@@ -1,5 +1,6 @@
 scoreboard players add @s Time 1
 execute if entity @s[scores={Time=1}] run playsound luigis_mansion:entity.purple_puncher.spawn hostile @a ~ ~ ~ 1
+execute if entity @s[scores={Time=1}] run function luigis_mansion:blocks/dust
 execute if entity @s[scores={Time=1}] as @a[gamemode=!spectator,distance=..5] at @s run function luigis_mansion:entities/player/scare
 scoreboard players set @s[scores={Time=1}] AnimationProg 0
 data merge entity @s[scores={Time=1}] {Pose:{RightArm:[-120.0f,0.0f,0.0f],LeftArm:[-120.0f,0.0f,0.0f]}}

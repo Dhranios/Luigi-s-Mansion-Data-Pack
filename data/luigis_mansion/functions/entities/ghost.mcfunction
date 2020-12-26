@@ -17,6 +17,13 @@ scoreboard players set @s[tag=element_hurt,scores={SpawnTime=21..}] SpawnTime 20
 scoreboard players reset @s[tag=vanish] HurtTime
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
 execute unless entity @s[tag=portrait_ghost,scores={StunTime=1..}] run scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..},tag=!hurt] VulnerableTime 1
+execute if entity @s[scores={VulnerableTime=1..},tag=!spawned_heart] run function luigis_mansion:entities/ghost/spawn_heart
+execute if entity @s[scores={StunTime=1..},tag=!spawned_health_display] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[tag=hurt,tag=!spawned_health_display] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[tag=element_hurt,tag=!spawned_health_display] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[tag=boo,tag=!spawned_health_display] run function luigis_mansion:entities/ghost/spawn_health_display
+tag @s[scores={VulnerableTime=0},tag=spawned_heart] remove spawned_heart
+tag @s[scores={VulnerableTime=0},tag=!element_hurt,tag=!boo,tag=spawned_health_display] remove spawned_health_display
 execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
 execute if entity @s[tag=hurt,tag=!disappear,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt
 tag @s[tag=!element_hurt,tag=last_element_hurt] remove last_element_hurt

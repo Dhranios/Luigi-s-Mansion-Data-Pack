@@ -4,6 +4,3 @@ execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:go
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:blue_sapphire"}}}]}] run function luigis_mansion:items/blue_sapphire
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:green_emerald"}}}]}] run function luigis_mansion:items/green_emerald
 execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:red_ruby"}}}]}] run function luigis_mansion:items/red_ruby
-execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:small_pearl"}}}]}] run function luigis_mansion:items/small_pearl
-execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:medium_pearl"}}}]}] run function luigis_mansion:items/medium_pearl
-execute if entity @s[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:big_pearl"}}}]}] run function luigis_mansion:items/big_pearl

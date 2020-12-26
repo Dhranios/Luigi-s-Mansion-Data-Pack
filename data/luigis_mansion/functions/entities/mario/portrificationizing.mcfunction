@@ -67,6 +67,7 @@ execute if entity @s[scores={Dialog=80}] run setblock 770 81 -7 minecraft:spruce
 execute if entity @s[scores={Dialog=80}] run setblock 770 79 -7 minecraft:green_terracotta
 execute if entity @s[scores={Dialog=90}] run setblock 770 81 -7 minecraft:green_terracotta
 execute if entity @s[scores={Dialog=90}] run setblock 770 79 -7 minecraft:air
+execute if entity @s[scores={Dialog=80}] run playsound luigis_mansion:entity.mario.owch neutral @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=80}] run kill @e[tag=marios_painting,limit=1]
 replaceitem entity @s[scores={Dialog=80}] armor.head minecraft:diamond_pickaxe{Unbreakable:1b,Damage:8,CustomModelData:2}
 execute if entity @s[scores={Dialog=90}] run teleport @s 770 78 -6
@@ -79,6 +80,7 @@ execute if entity @s[scores={Dialog=110}] run teleport @s 770 78 -2
 execute if entity @s[scores={Dialog=115}] run teleport @s 770 78 -1
 execute if entity @s[scores={Dialog=120}] run teleport @s 770 78 0
 execute if entity @s[scores={Dialog=120..130}] run particle minecraft:bubble_pop 770 78.3 0 0.6 0.6 0.6 0 10
+execute if entity @s[scores={Dialog=120}] run playsound luigis_mansion:entity.mario.wowch neutral @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=130}] run teleport @s 770 78 1
 execute if entity @s[scores={Dialog=135}] run teleport @s 770 78 2
 execute if entity @s[scores={Dialog=140}] run setblock 769 79 -1 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:ghost_portrificationizer_room/zapper_stand_by"}
@@ -97,7 +99,9 @@ execute if entity @s[scores={Dialog=145}] run setblock 770 80 4 minecraft:light_
 execute if entity @s[scores={Dialog=150}] run setblock 770 80 4 minecraft:air
 execute if entity @s[scores={Dialog=150}] run setblock 770 79 5 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=150}] run teleport @s 770 78 5
+execute if entity @s[scores={Dialog=150}] run playsound luigis_mansion:entity.mario.oof neutral @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=150}] run particle minecraft:cloud 770 78.3 5 0.6 0 0.6 0 10
+execute if entity @s[scores={Dialog=155}] run playsound luigis_mansion:entity.mario.wah_ah_ah_ah neutral @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=155}] run particle minecraft:cloud 770 78.3 5 0.6 0 0.6 0 10
 execute if entity @s[scores={Dialog=160}] run setblock 770 79 5 minecraft:air
 execute if entity @s[scores={Dialog=160}] run setblock 770 80 6 minecraft:light_gray_concrete
@@ -125,6 +129,9 @@ execute if entity @s[scores={Dialog=195}] run setblock 770 77 12 minecraft:light
 execute if entity @s[scores={Dialog=200}] run setblock 770 77 12 minecraft:air
 execute if entity @s[scores={Dialog=200}] run setblock 770 76 12 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=205}] run setblock 770 76 12 minecraft:air
-execute if entity @s[scores={Dialog=650}] run particle minecraft:cloud 774 78.5 19.8 0.2 0.2 0 0 10
-execute if entity @s[scores={Dialog=710}] positioned 774 77 20 run function luigis_mansion:spawn_entities/mario/normal
-kill @s[scores={Dialog=710}]
+execute if entity @s[scores={Dialog=300}] run playsound luigis_mansion:entity.mario.unportrificationizing neutral @a ~ ~ ~ 1
+execute if entity @s[scores={Dialog=590}] run playsound luigis_mansion:entity.mario.wohh_hoo_hoo neutral @a ~ ~ ~ 1
+execute if entity @s[scores={Dialog=630}] run playsound luigis_mansion:entity.mario.oof neutral @a ~ ~ ~ 1
+execute if entity @s[scores={Dialog=630}] run particle minecraft:cloud 774 78.5 19.8 0.2 0.2 0 0 10
+execute if entity @s[scores={Dialog=690}] positioned 774 77 20 run function luigis_mansion:spawn_entities/mario/normal
+kill @s[scores={Dialog=690}]

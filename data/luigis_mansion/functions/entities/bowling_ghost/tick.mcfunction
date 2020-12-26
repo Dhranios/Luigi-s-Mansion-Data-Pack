@@ -9,8 +9,8 @@ tag @s[tag=grab_ball] remove complain
 tag @s[tag=grab_ball] remove attack
 tag @s[tag=grabbed_ball,scores={Time=..5}] remove grab_ball
 
-scoreboard players operation #temp Bowling = @s Bowling
-execute as @e[tag=bowling_ball] if score @s Bowling = #temp Bowling run tag @s add this_bowling_ball
+scoreboard players operation #temp GhostNr = @s GhostNr
+execute as @e[tag=bowling_ball] if score @s GhostNr = #temp GhostNr run tag @s add this_bowling_ball
 
 execute if entity @s[tag=disappear] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
 execute if entity @s[scores={HurtTime=1},tag=element_hurt] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
@@ -37,5 +37,5 @@ execute if entity @s[tag=fleeing,tag=!disappear] run function luigis_mansion:ani
 execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,tag=grabbed_ball,scores={StunTime=0},tag=!disappear] run function luigis_mansion:entities/bowling_ghost/idle
 execute if entity @s[tag=!fleeing,tag=hurt,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/hurt
 execute if entity @s[tag=!hurt,tag=element_hurt,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/hurt
-scoreboard players reset #temp Bowling
+scoreboard players reset #temp GhostNr
 tag @e[tag=this_bowling_ball] remove this_bowling_ball

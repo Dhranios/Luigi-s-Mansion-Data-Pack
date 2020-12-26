@@ -1,1 +1,1 @@
-summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:27,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.small_pearl"}'},luigis_mansion:{id:"luigis_mansion:small_pearl"}}},Age:4200s,PickUpDelay:10s,Tags:["small_pearl"]}
+summon minecraft:armor_stand ~ ~ ~ {Pose:{Head:[0.0f,0.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:5}}],Tags:["money","small_pearl"],DisabledSlots:2039583}

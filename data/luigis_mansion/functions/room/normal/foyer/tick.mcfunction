@@ -20,6 +20,7 @@ function #luigis_mansion:room/normal/foyer/interactions/room
 
 function luigis_mansion:room/normal/foyer/ghosts
 
+function luigis_mansion:room/normal/door/foyer
 function luigis_mansion:room/normal/door/foyer_parlor
 function luigis_mansion:room/normal/door/foyer_small_hallway
 function luigis_mansion:room/normal/door/foyer_main_hallway

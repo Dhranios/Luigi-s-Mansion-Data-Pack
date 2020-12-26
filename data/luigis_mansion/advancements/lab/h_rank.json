@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:painting"
+            "item": "minecraft:brick",
+			"nbt": "{CustomModelData:18}"
         },
         "show_toast": false,
         "title": {

@@ -21,6 +21,8 @@ execute if data storage luigis_mansion:data current_state.current_data.portrait_
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.vincent_van_gore{health:0} run tag @e[tag=e_gadd,scores={Room=-3}] add portrificationizing
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.boolossus{health:0} run tag @e[tag=e_gadd,scores={Room=-3}] add portrificationizing
 execute if data storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo{health:0} run tag @e[tag=e_gadd,scores={Room=-3}] add portrificationizing
+tag @e[tag=e_gadd,tag=return_dialog] remove portrificationizing
+tag @e[tag=e_gadd,tag=ending_dialog] remove portrificationizing
 tag @e[tag=e_gadd,tag=portrificationizing,tag=!return_dialog,tag=!ending_dialog] remove talk
 scoreboard players set @e[tag=e_gadd,tag=portrificationizing,tag=!return_dialog,tag=!ending_dialog] Dialog 0
 execute if entity @e[tag=e_gadd,tag=portrificationizing,tag=!return_dialog,tag=!ending_dialog] as @a run trigger EGaddGPRChoice set 0

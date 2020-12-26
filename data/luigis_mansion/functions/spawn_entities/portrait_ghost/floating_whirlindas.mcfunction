@@ -2,6 +2,8 @@ summon minecraft:vindicator ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:enti
 summon minecraft:evoker ~ ~ ~ {CustomName:'{"translate":"luigis_mansion:entity.floating_whirlindas"}',NoAI:1b,NoGravity:1b,CustomNameVisible:1b,Invulnerable:1b,ArmorItems:[{},{},{},{}],Silent:1b,AbsorptionAmount:100.0f,HandItems:[{},{}],HandDropChances:[0.0f,1.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,LeftHanded:0b,Tags:["floating_whirlindas_female","portrait_ghost"]}
 teleport @e[tag=this_entity,limit=1] ~ ~ ~ ~ ~
 teleport @e[tag=floating_whirlindas_female,limit=1] ~ ~ ~ ~-180 ~
+execute as @e[tag=this_entity,limit=1] store result score @s GhostNr run data get storage luigis_mansion:data ghost_nr
+execute as @e[tag=this_entity,limit=1] store result storage luigis_mansion:data ghost_nr int 1 run scoreboard players add @s GhostNr 1
 execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get entity @s Pos[0] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100

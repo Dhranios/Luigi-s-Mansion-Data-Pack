@@ -16,6 +16,7 @@ function #luigis_mansion:room/hidden/foyer/interactions/room
 
 function luigis_mansion:room/hidden/foyer/ghosts
 
+function luigis_mansion:room/hidden/door/foyer
 function luigis_mansion:room/hidden/door/foyer_parlor
 function luigis_mansion:room/hidden/door/foyer_small_hallway
 function luigis_mansion:room/hidden/door/foyer_main_hallway

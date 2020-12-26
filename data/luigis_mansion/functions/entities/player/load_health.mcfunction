@@ -1,5 +1,3 @@
-scoreboard players set @s Health 100
-gamemode adventure @s
 setblock 27 0 0 minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:stone",Count:1b,tag:{value:[I;]}}]}
 setblock 26 0 0 minecraft:shulker_box{Items:[{Slot:0b,id:"minecraft:stone",Count:1b,tag:{value:[I;]}}]}
 data modify block 27 0 0 Items[0].tag.value set from entity @s UUID

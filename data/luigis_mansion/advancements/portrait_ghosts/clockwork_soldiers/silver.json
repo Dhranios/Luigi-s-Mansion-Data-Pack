@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:iron_block"
+            "item": "minecraft:iron_ingot"
         },
         "show_toast": false,
         "title": {

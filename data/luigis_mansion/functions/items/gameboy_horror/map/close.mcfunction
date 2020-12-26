@@ -7,4 +7,5 @@ tag @s remove me
 tag @s remove looking_at_map
 tag @s add seen_room_name
 tag @s add seen_room_name_2
+title @s subtitle ""
 scoreboard players set @s UseItem 0

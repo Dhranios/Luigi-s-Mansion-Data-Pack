@@ -1,7 +1,7 @@
 scoreboard players set #temp Move 8
-scoreboard players operation #temp Bowling = @s Bowling
-execute as @e[tag=bowling_ghost] if score @s Bowling = #temp Bowling run tag @s add this_bowling_ghost
-scoreboard players reset #temp Bowling
+scoreboard players operation #temp GhostNr = @s GhostNr
+execute as @e[tag=bowling_ghost] if score @s GhostNr = #temp GhostNr run tag @s add this_bowling_ghost
+scoreboard players reset #temp GhostNr
 execute if entity @s[tag=!held,tag=!rotated] rotated as @e[tag=this_bowling_ghost,limit=1] rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 tag @s[tag=!held] add rotated
 execute at @s[tag=!held,tag=rotated] run function luigis_mansion:entities/bowling_ball/move_forward

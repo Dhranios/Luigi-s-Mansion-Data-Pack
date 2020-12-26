@@ -1,4 +1,3 @@
-gamerule announceAdvancements false
 execute if entity @s[scores={ResetMansion=1}] run function luigis_mansion:other/load_data/reset_mansion_data
 
 execute if entity @a[advancements={luigis_mansion:lab/lab=true}] run advancement grant @a only luigis_mansion:lab/lab
