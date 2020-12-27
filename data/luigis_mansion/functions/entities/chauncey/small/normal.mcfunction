@@ -12,7 +12,9 @@ execute if entity @s[scores={Dialog=51}] run teleport @s 716 112 54
 execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[scores={Room=9,MusicType=11}] Music 0
 execute if entity @s[scores={Dialog=51..169}] run scoreboard players set @a[scores={Room=9,MusicType=11}] MusicType 26
 execute if entity @s[scores={Dialog=90}] run playsound luigis_mansion:entity.chauncey.yawn hostile @a ~ ~ ~ 1
+execute if entity @s[scores={Dialog=130}] if data storage luigis_mansion:data current_state.current_data.technical{chauncey_spoke:1b} run scoreboard players set @s Dialog 170
 execute if entity @s[scores={Dialog=130}] run tellraw @a[scores={Room=9}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.chauncey","color":"green"},{"translate":"luigis_mansion:message.chauncey.play"}]}
+execute if entity @s[scores={Dialog=170}] run data modify storage luigis_mansion:data current_state.current_data.technical merge value {chauncey_spoke:1b}
 execute if entity @s[scores={Dialog=170..641}] run scoreboard players set @a[scores={Room=9,MusicType=11..26}] Music 0
 execute if entity @s[scores={Dialog=170..641}] run scoreboard players set @a[scores={Room=9,MusicType=11..26}] MusicType 36
 execute if entity @s[scores={Dialog=170},tag=!attack,tag=!laugh,tag=!complain] run tag @e[scores={Room=9},tag=haunted_teddy_bear] add enabled
