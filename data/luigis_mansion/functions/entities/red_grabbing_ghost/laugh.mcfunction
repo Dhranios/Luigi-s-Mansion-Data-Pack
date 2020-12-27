@@ -23,6 +23,7 @@ execute at @s run teleport @s[scores={Time=16}] ~ ~ ~ ~288 ~
 execute at @s run teleport @s[scores={Time=17}] ~ ~ ~ ~306 ~
 execute at @s run teleport @s[scores={Time=18}] ~ ~ ~ ~324 ~
 execute at @s run teleport @s[scores={Time=19}] ~ ~ ~ ~342 ~
+tag @s[scores={Time=40}] add disappear
 tag @s[scores={Time=40}] remove laugh
 scoreboard players set @s[scores={Time=40}] AnimationProg 0
 scoreboard players set @s[scores={Time=40}] Time 0
