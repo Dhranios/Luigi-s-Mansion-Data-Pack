@@ -18,10 +18,6 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.chauncey.flee hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[type=minecraft:pig] run function luigis_mansion:entities/chauncey/small
-execute if entity @s[tag=!fleeing,tag=!hurt,type=minecraft:wither] run function luigis_mansion:entities/chauncey/big
+function #luigis_mansion:entities/chauncey/tick
 execute if entity @s[tag=!fleeing,tag=!attack,tag=laugh] run function luigis_mansion:entities/chauncey/laugh
 execute if entity @s[tag=!fleeing,tag=!attack,tag=complain] run function luigis_mansion:entities/chauncey/complain
-
-replaceitem entity @s[tag=rambling] weapon.mainhand minecraft:stick 
-replaceitem entity @s[tag=!rambling] weapon.mainhand minecraft:stick

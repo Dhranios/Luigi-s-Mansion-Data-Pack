@@ -5,7 +5,7 @@ scoreboard players add @s[scores={Time=81},tag=hit] Time 1
 scoreboard players add @s[scores={Time=2..80}] Time 1
 scoreboard players add @s[scores={Time=1},tag=hit] Time 1
 execute unless entity @s[scores={Time=1..}] run scoreboard players add @s Time 1
-execute if entity @s[scores={Time=1}] at @a[gamemode=!spectator,scores={Room=28}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Time=1}] at @a[tag=same_room] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 execute if entity @s[scores={Time=2..11}] run teleport @s ^ ^ ^0.2
 execute if entity @s[scores={Time=81}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~

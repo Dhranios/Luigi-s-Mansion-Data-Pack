@@ -1,9 +1,9 @@
-execute unless entity @s[scores={Dialog=1..}] at @a[gamemode=!spectator,scores={Room=22}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute unless entity @s[scores={Dialog=1..}] at @a[tag=same_room] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 execute unless entity @s[scores={Dialog=1..}] unless entity @s[nbt={ActiveEffects:[{Id:14b}]}] run setblock ^ ^1 ^2 minecraft:yellow_wool
 execute if entity @s[nbt={ActiveEffects:[{Id:14b}]}] run setblock ^ ^1 ^2 minecraft:crimson_pressure_plate
-execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run playsound luigis_mansion:music.solve_puzzle music @a[scores={Room=22}] ~ ~ ~ 10000
-execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run scoreboard players set @a[scores={Room=22,Music=..29}] Music 30
+execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run playsound luigis_mansion:music.solve_puzzle music @a[tag=same_room] ~ ~ ~ 10000
+execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run scoreboard players set @a[tag=same_room,scores={Music=..29}] Music 30
 execute unless entity @s[scores={Dialog=1..}] if block ^3 ^2 ^2 minecraft:purple_stained_glass if block ^-3 ^2 ^2 minecraft:purple_stained_glass run scoreboard players set @s Dialog 1
 execute if entity @s[scores={Dialog=1..99}] run setblock ^ ^1 ^2 minecraft:yellow_wool
 scoreboard players add @s[scores={Dialog=100..}] Dialog 1
@@ -37,8 +37,8 @@ teleport @s[scores={Dialog=100}] ~ ~ ~ ~ 20
 teleport @s[scores={Dialog=120..124}] ~ ~ ~ ~1 ~-1
 teleport @s[scores={Dialog=125..134}] ~ ~ ~ ~-1 ~-1
 teleport @s[scores={Dialog=135..139}] ~ ~ ~ ~1 ~-1
-execute if entity @s[scores={Dialog=140..}] as @a[scores={Room=22},gamemode=!spectator] unless entity @s[scores={MusicType=36}] run function luigis_mansion:other/music/set/danger
-execute if entity @s[scores={Dialog=140..780}] anchored eyes facing entity @p[gamemode=!spectator,scores={Room=22}] eyes anchored feet positioned ^ ^ ^ run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={Dialog=140..}] as @a[tag=same_room] unless entity @s[scores={MusicType=36}] run function luigis_mansion:other/music/set/danger
+execute if entity @s[scores={Dialog=140..780}] anchored eyes facing entity @p[tag=same_room] eyes anchored feet positioned ^ ^ ^ run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[scores={Dialog=220}] run function luigis_mansion:entities/mr_luggs/spit_fire
 execute if entity @s[scores={Dialog=320}] run function luigis_mansion:entities/mr_luggs/spit_fire
 execute if entity @s[scores={Dialog=360}] run function luigis_mansion:entities/mr_luggs/spit_fire

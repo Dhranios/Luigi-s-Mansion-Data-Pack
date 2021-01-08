@@ -1,7 +1,7 @@
 scoreboard players add @s[scores={Wave=81..161}] Wave 1
 scoreboard players set @s Move 3
 scoreboard players add @s[scores={Wave=1..79}] Wave 1
-execute unless entity @s[scores={Wave=1..}] at @a[gamemode=!spectator,scores={Room=24}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute unless entity @s[scores={Wave=1..}] at @a[tag=same_room] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 execute unless entity @s[scores={Wave=1..}] if entity @e[tag=spooky_bone,limit=1] run scoreboard players set @s Wave 1
 execute unless entity @s[scores={Wave=1..}] if entity @a[gamemode=!spectator,distance=..4,limit=1] run scoreboard players set @s Wave 1

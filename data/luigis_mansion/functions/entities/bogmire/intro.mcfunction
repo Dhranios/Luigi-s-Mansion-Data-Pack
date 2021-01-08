@@ -1,6 +1,6 @@
 scoreboard players add @s Time 1
-execute if entity @s[scores={Time=1}] run scoreboard players set @a[scores={Room=25}] MusicType 16
-execute if entity @s[scores={Time=1}] run scoreboard players set @a[scores={Room=25}] Music 0
+execute if entity @s[scores={Time=1}] run scoreboard players set @a[tag=same_room] MusicType 16
+execute if entity @s[scores={Time=1}] run scoreboard players set @a[tag=same_room] Music 0
 effect give @s[scores={Time=1..80}] minecraft:invisibility 1 0 true
 execute if entity @s[scores={Time=60}] run summon minecraft:lightning_bolt
 execute if entity @s[scores={Time=70}] run summon minecraft:lightning_bolt

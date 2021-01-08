@@ -7,10 +7,15 @@ execute if entity @s[scores={Time=35}] positioned 680 113 33 run function luigis
 execute if entity @s[scores={Time=50}] positioned 680 113 37 run function luigis_mansion:blocks/purple_candles
 execute if entity @s[scores={Time=65}] positioned 676 113 39 run function luigis_mansion:blocks/purple_candles
 execute if entity @s[scores={Time=80}] positioned 673 113 35 run function luigis_mansion:blocks/purple_candles
-execute if entity @s[scores={Time=60}] positioned 676 113 31 run function luigis_mansion:blocks/lit_candles
-execute if entity @s[scores={Time=75}] positioned 680 113 33 run function luigis_mansion:blocks/lit_candles
-execute if entity @s[scores={Time=90}] positioned 680 113 37 run function luigis_mansion:blocks/lit_candles
-execute if entity @s[scores={Time=105}] positioned 676 113 39 run function luigis_mansion:blocks/lit_candles
+execute if entity @s[scores={Time=60}] positioned 676 113 31 run function luigis_mansion:blocks/unlit_candles
+execute if entity @s[scores={Time=75}] positioned 680 113 33 run function luigis_mansion:blocks/unlit_candles
+execute if entity @s[scores={Time=90}] positioned 680 113 37 run function luigis_mansion:blocks/unlit_candles
+execute if entity @s[scores={Time=105}] positioned 676 113 39 run function luigis_mansion:blocks/unlit_candles
+execute if entity @s[scores={Time=119}] positioned 673 113 35 run function luigis_mansion:blocks/unlit_candles
+execute if entity @s[scores={Time=120}] positioned 676 113 31 run function luigis_mansion:blocks/lit_candles
+execute if entity @s[scores={Time=120}] positioned 680 113 33 run function luigis_mansion:blocks/lit_candles
+execute if entity @s[scores={Time=120}] positioned 680 113 37 run function luigis_mansion:blocks/lit_candles
+execute if entity @s[scores={Time=120}] positioned 676 113 39 run function luigis_mansion:blocks/lit_candles
 execute if entity @s[scores={Time=120}] positioned 673 113 35 run function luigis_mansion:blocks/lit_candles
 execute if entity @s[scores={Time=120}] run function luigis_mansion:room/hidden/astral_hall/wave_1
 teleport @s[x=677.5,y=111.5,z=35.5,distance=1..] 677 111.5 35

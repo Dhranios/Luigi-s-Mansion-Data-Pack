@@ -6,7 +6,7 @@ execute if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7
 tag @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] add collision
 execute if entity @e[tag=wool,tag=vacuumable,limit=1] run scoreboard players add @s[scores={Time=1}] Time 1
 execute unless entity @s[scores={Time=1..}] run scoreboard players add @s Time 1
-execute if entity @s[scores={Time=1}] at @a[gamemode=!spectator,scores={Room=34}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Time=1}] at @a[tag=same_room] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 execute if entity @s[scores={Time=2}] if entity @e[tag=wool,tag=can_spit,limit=1] run function luigis_mansion:entities/nana/move
 execute if entity @s[scores={Time=3}] run playsound luigis_mansion:entity.nana.scream hostile @a ~ ~ ~ 1

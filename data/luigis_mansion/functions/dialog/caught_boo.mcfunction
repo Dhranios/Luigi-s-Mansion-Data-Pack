@@ -1,13 +1,15 @@
-scoreboard players set @s[scores={Boos=1}] Variant -1
-scoreboard players set @s[scores={Boos=5}] Variant -2
-scoreboard players set @s[scores={Boos=16}] Variant -3
-scoreboard players set @s[scores={Boos=17}] Variant -5
-scoreboard players set @s[scores={Boos=18}] Variant -3
-scoreboard players set @s[scores={Boos=19}] Variant -3
-scoreboard players set @s[scores={Boos=21}] Variant -6
-scoreboard players set @s[scores={Boos=22}] Variant -4
-scoreboard players set @s[scores={Boos=38}] Variant -4
-scoreboard players set @s[scores={Boos=41}] Variant -6
+execute store result score #temp Boos run data get storage luigis_mansion:data current_state.current_data.boo_counter
+execute if score #temp Boos matches 1 run scoreboard players set @s Variant -1
+execute if score #temp Boos matches 5 run scoreboard players set @s Variant -2
+execute if score #temp Boos matches 16 run scoreboard players set @s Variant -3
+execute if score #temp Boos matches 17 run scoreboard players set @s Variant -5
+execute if score #temp Boos matches 18 run scoreboard players set @s Variant -3
+execute if score #temp Boos matches 19 run scoreboard players set @s Variant -3
+execute if score #temp Boos matches 21 run scoreboard players set @s Variant -6
+execute if score #temp Boos matches 22 run scoreboard players set @s Variant -4
+execute if score #temp Boos matches 38 run scoreboard players set @s Variant -4
+execute if score #temp Boos matches 41 run scoreboard players set @s Variant -6
+scoreboard players reset #temp Boos
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","1"]}
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","2"]}
 execute unless entity @s[scores={Variant=-10..}] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","3"]}

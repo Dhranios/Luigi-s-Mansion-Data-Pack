@@ -11,6 +11,7 @@ execute if block ~ ~ ~ #minecraft:doors run scoreboard players set @s HallwayNoi
 execute if entity @s[scores={Talk=1..}] run function luigis_mansion:target_villager
 scoreboard players set @s[scores={Talk=1..}] Talk 0
 
+execute as @e[distance=..7,tag=ghost_marker,tag=can_spawn] positioned ^ ^ ^4 unless entity @s[distance=..4] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s[tag=!only_forced_spawn] add spawn
 title @s[gamemode=!creative] actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
 
 execute store result score @s Keys run clear @s minecraft:brick{CustomModelData:2,luigis_mansion:{id:"luigis_mansion:key"}} 0

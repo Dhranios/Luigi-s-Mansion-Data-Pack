@@ -1,41 +1,13 @@
-execute if entity @s[tag=ghost_marker] run function luigis_mansion:entities/ghost_marker
-execute if entity @s[tag=ghost,tag=!ghost_marker] run function luigis_mansion:entities/ghost
-execute if entity @s[tag=!ghost,tag=boo,tag=!ball] run function luigis_mansion:entities/boo/cutscene
-execute if entity @s[tag=mysterious_power] run function luigis_mansion:entities/mysterious_power
-execute if entity @s[tag=bowling_ball] run function luigis_mansion:entities/bowling_ball
-execute if entity @s[tag=shot_fire] run function luigis_mansion:entities/shot_fire
-execute if entity @s[tag=shot_water] run function luigis_mansion:entities/shot_water
-execute if entity @s[tag=shot_ice] run function luigis_mansion:entities/shot_ice
-execute if entity @s[tag=shot_needle] run function luigis_mansion:entities/shot_needle
-execute if entity @s[tag=moving_ice] run function luigis_mansion:entities/moving_ice
-execute if entity @s[tag=ice_spike] run function luigis_mansion:entities/ice_spike
-execute if entity @s[tag=bone] run function luigis_mansion:entities/bone
-execute if entity @s[tag=bomb] run function luigis_mansion:entities/bomb
-execute if entity @s[tag=vacuumable,tag=!ball] run function luigis_mansion:entities/vacuumable
-execute if entity @s[tag=wool] run function luigis_mansion:entities/wool
-execute if entity @s[tag=billiards_ball] run function luigis_mansion:entities/billiards_ball
-execute if entity @s[tag=ball,tag=!wool,tag=!shining_ghost,tag=!billiards_ball] run function luigis_mansion:entities/ball
+scoreboard players operation #temp Room = @s Room
+execute as @a[gamemode=!spectator] if score @s Room = #temp Room run tag @s add same_room
+scoreboard players reset #temp Room
+
 execute if entity @s[tag=door] run function luigis_mansion:animations/closed_door
-execute if entity @s[tag=fake_door] run function luigis_mansion:entities/fake_door
-execute if entity @s[tag=e_gadd] run function luigis_mansion:entities/e_gadd
-execute if entity @s[tag=toad] run function luigis_mansion:entities/toad
 execute if entity @s[tag=first_key,tag=play] run function luigis_mansion:dialog/first_key
-execute if entity @s[tag=chandelier] run function luigis_mansion:entities/chandelier
-execute if entity @s[tag=rocking_horse] run function luigis_mansion:entities/rocking_horse
-execute if entity @s[tag=boo_marker] run function luigis_mansion:entities/boo_marker
-execute if entity @s[tag=hidden_boo] run function luigis_mansion:entities/hidden_boo
-execute if entity @s[tag=elemental_ghost] run function luigis_mansion:entities/elemental_ghost
-execute if entity @s[tag=banana_peel] run function luigis_mansion:entities/banana_peel
-execute if entity @s[tag=shrunk_player] run function luigis_mansion:entities/shrunk_player
-execute if entity @s[tag=punching_bag] run function luigis_mansion:entities/punching_bag
-execute if entity @s[tag=portrificationizing_ghost] run function luigis_mansion:entities/portrificationizing_ghost
-execute if entity @s[tag=money] run function luigis_mansion:entities/money
-execute if entity @s[tag=mario] run function luigis_mansion:entities/mario
-execute if entity @s[tag=bowser] run function luigis_mansion:entities/bowser
 execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burning_floor
-execute if entity @s[tag=gameboy_horror_marker] run function luigis_mansion:entities/gameboy_horror_marker
-execute if entity @s[tag=health_display] run function luigis_mansion:entities/health_display
-execute if entity @s[tag=ghost_heart] run function luigis_mansion:entities/ghost_heart
+
+function #luigis_mansion:entities
+
 execute unless entity @s[tag=!poison_mushroom,tag=!heart,tag=!gold_coin,tag=!bill,tag=!gold_bar,tag=!blue_sapphire,tag=!green_emerald,tag=!red_ruby] run scoreboard players add @s SpawnTime 1
 
 data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}
@@ -51,3 +23,5 @@ teleport @s[tag=remove_from_existence] ~ ~-100 ~
 scoreboard players reset @s[tag=dead]
 tag @s[tag=dead] add can_die
 scoreboard players reset @s Steps
+
+tag @a[tag=same_room] remove same_room

@@ -1,7 +1,1 @@
-scoreboard players operation #temp GhostNr = @s GhostNr
-execute as @e[tag=spawned_heart] if score @s GhostNr = #temp GhostNr run tag @s add this_ghost
-scoreboard players reset #temp GhostNr
-execute at @e[tag=this_ghost,tag=!ceiling_ghost,limit=1] run teleport @s ~ ~-0.2 ~ ~ ~
-execute at @e[tag=this_ghost,tag=ceiling_ghost,limit=1] run teleport @s ~ ~0.8 ~ ~ ~
-execute unless entity @e[tag=this_ghost,limit=1] run tag @s add dead
-tag @e[tag=this_ghost] remove this_ghost
+execute if entity @s[tag=ghost_heart] run function luigis_mansion:entities/ghost_heart/tick

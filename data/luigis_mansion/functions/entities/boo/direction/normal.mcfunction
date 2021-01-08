@@ -1,3 +1,81 @@
+tag @s remove up
+tag @s remove down
+tag @s remove left
+tag @s remove right
+execute if data storage luigis_mansion:data current_state.current_data.rooms.parlor{cleared:1b} run tag @s add area_1
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} run tag @s add area_2
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{courtyard:1b} run tag @s add area_3
+execute if data storage luigis_mansion:data current_state.current_data.used_keys{attic_hallway_2:1b} run tag @s add area_4
+
+scoreboard players set @s[x=672,y=111,z=18,dx=10,dy=6,dz=6] HallwaySection 1
+scoreboard players set @s[x=672,y=111,z=25,dx=10,dy=6,dz=12] HallwaySection 2
+
+scoreboard players set @s[x=699,y=111,z=18,dx=6,dy=6,dz=19] HallwaySection 1
+scoreboard players set @s[x=699,y=111,z=39,dx=6,dy=6,dz=19] HallwaySection 2
+
+scoreboard players set @s[x=699,y=102,z=27,dx=6,dy=6,dz=10] HallwaySection 1
+scoreboard players set @s[x=699,y=102,z=18,dx=6,dy=6,dz=8] HallwaySection 2
+scoreboard players set @s[x=699,y=102,z=-3,dx=6,dy=6,dz=20] HallwaySection 3
+scoreboard players set @s[x=699,y=102,z=-8,dx=5,dy=6,dz=4] HallwaySection 4
+scoreboard players set @s[x=699,y=102,z=-21,dx=6,dy=6,dz=12] HallwaySection 5
+scoreboard players set @s[x=686,y=102,z=-9,dx=13,dy=6,dz=6] HallwaySection 6
+scoreboard players set @s[x=683,y=102,z=-9,dx=2,dy=6,dz=6] HallwaySection 7
+scoreboard players set @s[x=671,y=102,z=-9,dx=11,dy=6,dz=6] HallwaySection 8
+scoreboard players set @s[x=665,y=102,z=-16,dx=6,dy=6,dz=7] HallwaySection 9
+scoreboard players set @s[x=665,y=102,z=-8,dx=5,dy=6,dz=4] HallwaySection 10
+scoreboard players set @s[x=665,y=102,z=-3,dx=6,dy=6,dz=15] HallwaySection 11
+scoreboard players set @s[x=665,y=102,z=-13,dx=6,dy=6,dz=5] HallwaySection 12
+scoreboard players set @s[x=667,y=102,z=18,dx=5,dy=6,dz=6] HallwaySection 13
+scoreboard players set @s[x=652,y=102,z=18,dx=11,dy=6,dz=8] HallwaySection 14
+
+scoreboard players set @s[x=683,y=102,z=-21,dx=15,dy=6,dz=11] HallwaySection 1
+scoreboard players set @s[x=683,y=102,z=-41,dx=15,dy=6,dz=19] HallwaySection 2
+
+scoreboard players set @s[x=672,y=102,z=-41,dx=10,dy=6,dz=24] HallwaySection 1
+scoreboard players set @s[x=672,y=102,z=-16,dx=10,dy=6,dz=6] HallwaySection 2
+
+scoreboard players set @s[x=686,y=102,z=-2,dx=12,dy=6,dz=14] HallwaySection 1
+scoreboard players set @s[x=686,y=102,z=13,dx=12,dy=6,dz=13] HallwaySection 2
+
+scoreboard players set @s[x=686,y=102,z=27,dx=12,dy=6,dz=10] HallwaySection 1
+scoreboard players set @s[x=686,y=102,z=38,dx=12,dy=6,dz=19] HallwaySection 2
+
+scoreboard players set @s[x=654,y=102,z=-41,dx=10,dy=6,dz=24] HallwaySection 1
+scoreboard players set @s[x=654,y=102,z=-16,dx=10,dy=6,dz=7] HallwaySection 2
+
+scoreboard players set @s[x=654,y=111,z=-41,dx=10,dy=6,dz=24] HallwaySection 1
+scoreboard players set @s[x=654,y=111,z=-16,dx=10,dy=6,dz=7] HallwaySection 2
+
+scoreboard players set @s[x=699,y=111,z=-8,dx=5,dy=6,dz=5] HallwaySection 1
+scoreboard players set @s[x=699,y=111,z=-21,dx=6,dy=6,dz=12] HallwaySection 2
+scoreboard players set @s[x=699,y=111,z=-39,dx=6,dy=6,dz=12] HallwaySection 3
+scoreboard players set @s[x=671,y=111,z=-9,dx=26,dy=6,dz=6] HallwaySection 4
+scoreboard players set @s[x=665,y=111,z=-16,dx=6,dy=6,dz=7] HallwaySection 5
+scoreboard players set @s[x=665,y=111,z=-8,dx=5,dy=6,dz=4] HallwaySection 6
+scoreboard players set @s[x=665,y=111,z=-3,dx=6,dy=6,dz=15] HallwaySection 7
+scoreboard players set @s[x=665,y=111,z=-13,dx=6,dy=6,dz=6] HallwaySection 8
+scoreboard players set @s[x=666,y=111,z=19,dx=5,dy=6,dz=5] HallwaySection 9
+scoreboard players set @s[x=652,y=111,z=18,dx=12,dy=6,dz=8] HallwaySection 10
+
+scoreboard players set @s[x=672,y=111,z=-16,dx=10,dy=6,dz=6] HallwaySection 1
+scoreboard players set @s[x=672,y=111,z=-30,dx=10,dy=6,dz=14] HallwaySection 2
+
+scoreboard players set @s[x=672,y=102,z=13,dx=13,dy=6,dz=13] HallwaySection 1
+scoreboard players set @s[x=672,y=102,z=27,dx=13,dy=6,dz=12] HallwaySection 2
+
+scoreboard players set @s[x=720,y=120,z=-16,dx=1,dy=6,dz=6] HallwaySection 1
+scoreboard players set @s[x=706,y=120,z=-16,dx=11,dy=6,dz=6] HallwaySection 2
+scoreboard players set @s[x=699,y=120,z=-16,dx=6,dy=6,dz=6] HallwaySection 3
+scoreboard players set @s[x=683,y=120,z=-16,dx=15,dy=6,dz=6] HallwaySection 4
+
+scoreboard players set @s[x=683,y=120,z=25,dx=15,dy=6,dz=6] HallwaySection 1
+scoreboard players set @s[x=699,y=120,z=25,dx=19,dy=6,dz=6] HallwaySection 2
+scoreboard players set @s[x=720,y=120,z=25,dx=1,dy=6,dz=6] HallwaySection 3
+
+scoreboard players set @s[x=706,y=93,z=-21,dx=13,dy=6,dz=6] HallwaySection 1
+scoreboard players set @s[x=699,y=93,z=-21,dx=6,dy=6,dz=6] HallwaySection 2
+scoreboard players set @s[x=686,y=93,z=-21,dx=13,dy=6,dz=6] HallwaySection 3
+
 tag @s[scores={Room=2}] add up
 tag @s[scores={Room=2}] add left
 tag @s[scores={Room=2},tag=area_3] add right

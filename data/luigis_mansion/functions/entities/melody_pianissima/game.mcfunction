@@ -1,9 +1,9 @@
 scoreboard players add @s Dialog 1
-scoreboard players set @a[scores={Room=21}] MusicType 23
-execute if entity @s[scores={Dialog=393}] run stopsound @a[scores={Room=21}] music
-execute if entity @s[scores={Dialog=393}] run playsound luigis_mansion:music.super_mario_bros_3 music @a[scores={Room=21}] ~ ~ ~ 1000
-execute if entity @s[scores={Dialog=393}] run scoreboard players set @a[scores={Room=21}] Music 220
-execute if entity @s[scores={Dialog=632}] if score #players Totals matches 1 run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.1"}]}
-execute if entity @s[scores={Dialog=632}] if score #players Totals matches 2.. run tellraw @a[scores={Room=21}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.1.more"}]}
-execute if entity @s[scores={Dialog=880}] run tellraw @a[scores={Room=21}] {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.no.1","clickEvent":{"action":"run_command","value":"/trigger MelodyChoice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.no.2","clickEvent":{"action":"run_command","value":"/trigger MelodyChoice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.yes","clickEvent":{"action":"run_command","value":"/trigger MelodyChoice set 2"}}]}
-execute if entity @s[scores={Dialog=880}] run scoreboard players enable @a[scores={Room=21},gamemode=!spectator] MelodyChoice
+scoreboard players set @a[tag=same_room] MusicType 23
+execute if entity @s[scores={Dialog=393}] run stopsound @a[tag=same_room] music
+execute if entity @s[scores={Dialog=393}] run playsound luigis_mansion:music.super_mario_bros_3 music @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=393}] run scoreboard players set @a[tag=same_room] Music 220
+execute if entity @s[scores={Dialog=632}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.1"}]}
+execute if entity @s[scores={Dialog=632}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.melody_pianissima","color":"green"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.1.more"}]}
+execute if entity @s[scores={Dialog=880}] run tellraw @a[tag=same_room] {"translate":"luigis_mansion:message.options","color":"green","extra":[{"text":"\n"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.no.1","clickEvent":{"action":"run_command","value":"/trigger MelodyChoice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.no.2","clickEvent":{"action":"run_command","value":"/trigger MelodyChoice set 1"}},{"text":"\n"},{"translate":"luigis_mansion:dialog.melody_pianissima.game.yes","clickEvent":{"action":"run_command","value":"/trigger MelodyChoice set 2"}}]}
+execute if entity @s[scores={Dialog=880}] run scoreboard players enable @a[tag=same_room] MelodyChoice

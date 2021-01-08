@@ -1,9 +1,9 @@
 tag @s[scores={Dialog=1}] add dialog
-execute if entity @s[scores={Dialog=1}] run tag @p[gamemode=!spectator,scores={Room=2}] add dialog
-execute if entity @s[scores={Dialog=1}] run stopsound @a music
-execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.meet_e_gadd music @a ~ ~ ~ 1000
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a MusicType -1
-execute if entity @s[scores={Dialog=1}] run scoreboard players set @a Music 1308
+execute if entity @s[scores={Dialog=1}] run tag @p[tag=same_room] add dialog
+execute if entity @s[scores={Dialog=1}] run stopsound @a[tag=same_room] music
+execute if entity @s[scores={Dialog=1}] run playsound luigis_mansion:music.meet_e_gadd music @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] MusicType -1
+execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 1308
 execute as @a[x=697,y=111,z=7,dx=1,dy=1,dz=1,tag=dialog] at @s run teleport @s ~-1 ~ ~
 tag @e[tag=dialog] remove stunable
 scoreboard players add @s Dialog 1
@@ -50,27 +50,27 @@ execute if entity @s[scores={Dialog=317..352}] facing 689 111 6 rotated ~ 0 run 
 execute if entity @s[scores={Dialog=353..372}] facing 695 111 6 rotated ~ 0 run teleport @s ^ ^ ^0.25
 execute if entity @s[scores={Dialog=70..379}] at @s run teleport @s ~ ~ ~ facing entity @e[tag=gold_ghost,tag=dialog,limit=1] feet
 execute if entity @s[scores={Dialog=380}] at @s run teleport @s ~ ~ ~ ~ ~45
-execute if entity @s[scores={Dialog=500}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.1"}]}
+execute if entity @s[scores={Dialog=500}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.1"}]}
 execute if entity @s[scores={Dialog=569..744}] facing entity @a[tag=dialog,limit=1] feet run teleport @s ~ ~ ~ ~ ~
-execute if entity @s[scores={Dialog=569}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.2"}]}
-execute if entity @s[scores={Dialog=685}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.3"}]}
-execute if entity @s[scores={Dialog=780}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.4"}]}
-execute if entity @s[scores={Dialog=780}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.4.more"}]}
+execute if entity @s[scores={Dialog=569}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.2"}]}
+execute if entity @s[scores={Dialog=685}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.3"}]}
+execute if entity @s[scores={Dialog=780}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.4"}]}
+execute if entity @s[scores={Dialog=780}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.4.more"}]}
 execute if entity @s[scores={Dialog=846}] run teleport @s ~ ~ ~ facing 694 111 16
-execute if entity @s[scores={Dialog=866}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.5"}]}
+execute if entity @s[scores={Dialog=866}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.5"}]}
 execute if entity @s[scores={Dialog=866..965}] run teleport @s ~ ~ ~ ~0.75 ~
-execute if entity @s[scores={Dialog=965}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.6"}]}
-execute if entity @s[scores={Dialog=965}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.6.more"}]}
+execute if entity @s[scores={Dialog=965}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.6"}]}
+execute if entity @s[scores={Dialog=965}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.6.more"}]}
 execute if entity @s[scores={Dialog=1107}] positioned 688 111 9 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if entity @s[scores={Dialog=1107}] positioned 688 111 9 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
 execute if entity @s[scores={Dialog=1112}] positioned 688 111 6 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if entity @s[scores={Dialog=1112}] positioned 688 111 6 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
 execute if entity @s[scores={Dialog=1137}] positioned 690 111 7 run function luigis_mansion:spawn_entities/ghost/gold_ghost
 execute if entity @s[scores={Dialog=1137}] positioned 690 111 7 run tag @e[distance=..0.1,tag=gold_ghost] add dialog
-execute if entity @s[scores={Dialog=1182}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.7"}]}
+execute if entity @s[scores={Dialog=1182}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.7"}]}
 execute if entity @s[scores={Dialog=1182..1306}] as @e[tag=gold_ghost,tag=dialog] at @s facing entity @e[tag=e_gadd,tag=dialog,limit=1] feet run teleport @s ^ ^ ^0.025
-execute if entity @s[scores={Dialog=1239}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.8"}]}
-execute if entity @s[scores={Dialog=1239}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.8.more"}]}
+execute if entity @s[scores={Dialog=1239}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.8"}]}
+execute if entity @s[scores={Dialog=1239}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.meet_e_gadd.8.more"}]}
 execute if entity @s[scores={Dialog=1308}] run tag @a[tag=dialog] remove dialog
 execute if entity @s[scores={Dialog=1307}] run teleport @e[tag=dialog,type=!minecraft:player,limit=1] ~ ~-100 ~
 execute if entity @s[scores={Dialog=1308}] run tag @e[tag=dialog] add dead

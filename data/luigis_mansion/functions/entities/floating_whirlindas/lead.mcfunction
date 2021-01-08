@@ -1,7 +1,7 @@
 scoreboard players add @s Time 1
-execute if entity @s[scores={Time=..300}] at @a[gamemode=!spectator,scores={Room=13}] unless block ~ ~-2 ~ #minecraft:wool unless block ~ ~-1 ~ #minecraft:wool run effect give @s minecraft:invisibility 1 0 true
-execute if entity @s[scores={Time=..300}] at @a[gamemode=!spectator,scores={Room=13}] if block ~ ~-1 ~ #minecraft:wool positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
-execute if entity @s[scores={Time=..300}] at @a[gamemode=!spectator,scores={Room=13}] if block ~ ~-2 ~ #minecraft:wool positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Time=..300}] at @a[tag=same_room] unless block ~ ~-2 ~ #minecraft:wool unless block ~ ~-1 ~ #minecraft:wool run effect give @s minecraft:invisibility 1 0 true
+execute if entity @s[scores={Time=..300}] at @a[tag=same_room] if block ~ ~-1 ~ #minecraft:wool positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if entity @s[scores={Time=..300}] at @a[tag=same_room] if block ~ ~-2 ~ #minecraft:wool positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 execute if entity @s[scores={Time=..299}] run effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
 
 execute if entity @s[scores={Time=1}] positioned ^ ^ ^-0.5 run teleport @s ~ ~ ~ ~ ~

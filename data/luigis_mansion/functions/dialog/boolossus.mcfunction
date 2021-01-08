@@ -1,14 +1,14 @@
 scoreboard players add @s Dialog 1
-execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
-execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.1.more"}]}
-execute if entity @s[scores={Dialog=120}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.2"}]}
-execute if entity @s[scores={Dialog=168}] run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.3"}]}
-execute if entity @s[scores={Dialog=232}] if score #players Totals matches 1 run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.4"}]}
-execute if entity @s[scores={Dialog=232}] if score #players Totals matches 2.. run tellraw @a {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.4.more"}]}
+execute if entity @s[scores={Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.1","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
+execute if entity @s[scores={Dialog=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.1.more"}]}
+execute if entity @s[scores={Dialog=120}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.2"}]}
+execute if entity @s[scores={Dialog=168}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.3"}]}
+execute if entity @s[scores={Dialog=232}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.4"}]}
+execute if entity @s[scores={Dialog=232}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.boolossus","color":"green"},{"translate":"luigis_mansion:dialog.boolossus.4.more"}]}
 execute if entity @s[scores={Dialog=304}] run tag @e[tag=boolossus] add dialog_animation
-execute if entity @s[scores={Dialog=304}] run stopsound @a music
-execute if entity @s[scores={Dialog=304}] run playsound luigis_mansion:music.boss.boolossus_balcony music @a ~ ~ ~ 1000
-execute if entity @s[scores={Dialog=304}] run scoreboard players set @a Music 291
+execute if entity @s[scores={Dialog=304}] run stopsound @a[tag=same_room] music
+execute if entity @s[scores={Dialog=304}] run playsound luigis_mansion:music.boss.boolossus_balcony music @a[tag=same_room] ~ ~ ~ 1000
+execute if entity @s[scores={Dialog=304}] run scoreboard players set @a[tag=same_room] Music 291
 execute if entity @s[scores={Dialog=334}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=338}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start
 execute if entity @s[scores={Dialog=342}] run tag @e[tag=boolossus,sort=random,tag=!dialog_animation_start,limit=1] add dialog_animation_start

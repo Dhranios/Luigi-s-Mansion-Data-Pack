@@ -1,0 +1,1 @@
+execute if entity @s[tag=sue_pea] run function luigis_mansion:ghost/disappear/portrait_ghost/sue_pea

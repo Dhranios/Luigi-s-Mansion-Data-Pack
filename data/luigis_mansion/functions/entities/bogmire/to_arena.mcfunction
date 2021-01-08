@@ -1,8 +1,7 @@
-execute unless entity @e[tag=bogmire,tag=!intro,tag=!dead,limit=1] run setblock 709 39 -19961 minecraft:structure_block[mode=load]{mode:"LOAD",name:"luigis_mansion:boss_area/bogmire/create"}
-execute unless entity @e[tag=bogmire,tag=!intro,tag=!dead,limit=1] run setblock 709 40 -19961 minecraft:redstone_block
+execute unless entity @e[tag=bogmire,tag=!intro,tag=!dead,limit=1] run function #luigis_mansion:entities/bogmire/load_arena
 execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
-scoreboard players set @s Room 0
+scoreboard players set @s Room 60
 teleport @s 720.0 41 -19941.5 -180 0
 scoreboard players set @s MusicType 16
 scoreboard players set @s Music 0

@@ -1,0 +1,26 @@
+{
+	"values": [
+        "luigis_mansion:entities/neville",
+        "luigis_mansion:entities/lydia",
+        "luigis_mansion:entities/chauncey",
+        "luigis_mansion:entities/floating_whirlindas",
+        "luigis_mansion:entities/shivers",
+        "luigis_mansion:entities/melody_pianissima",
+        "luigis_mansion:entities/mr_luggs",
+        "luigis_mansion:entities/spooky",
+        "luigis_mansion:entities/bogmire",
+        "luigis_mansion:entities/biff_atlas",
+        "luigis_mansion:entities/miss_petunia",
+        "luigis_mansion:entities/nana",
+        "luigis_mansion:entities/slim_bankshot",
+        "luigis_mansion:entities/henry",
+        "luigis_mansion:entities/orville",
+        "luigis_mansion:entities/madame_clairvoya",
+        "luigis_mansion:entities/uncle_grimmly",
+        "luigis_mansion:entities/clockwork_soldier",
+        "luigis_mansion:entities/jarvis",
+        "luigis_mansion:entities/sir_weston",
+        "luigis_mansion:entities/sue_pea",
+        "luigis_mansion:entities/vincent_van_gore"
+	]
+}

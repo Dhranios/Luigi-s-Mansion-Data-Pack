@@ -3,6 +3,7 @@ execute if entity @s[tag=looking_at_map,scores={UseItem=1},tag=gameboy_horror_se
 execute if entity @s[tag=!looking_at_map,scores={UseItem=1},tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/map/open
 tag @s remove scanning_player
 execute if entity @s[scores={GBHCall=1..},tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/answer
+execute if entity @s[scores={GBHWait=1200}] run function luigis_mansion:items/gameboy_horror/answer
 execute if entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}},scores={GBHCall=0},tag=!looking_at_map,tag=!gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/scan
 tag @s remove gameboy_horror_selected
 execute if entity @s[scores={GBHCall=1..}] if entity @e[tag=e_gadd,limit=1] run tag @s add gameboy_horror_selected
@@ -10,7 +11,6 @@ tag @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror
 execute unless entity @s[scores={GBHCall=0..}] run scoreboard players set @s GBHCall 0
 execute if entity @s[scores={GBHCall=1..}] unless entity @s[scores={MusicType=2..5}] unless entity @s[scores={MusicType=22}] unless entity @s[scores={MusicType=24}] unless entity @s[scores={MusicType=38}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27}] run function luigis_mansion:other/music/set/gameboy_horror_calling
 scoreboard players add @s[scores={GBHCall=1..},tag=!gameboy_horror_selected] GBHWait 1
-execute if entity @s[scores={GBHWait=1200}] run function luigis_mansion:items/gameboy_horror/e_gadd_text
 execute if entity @s[tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/show_ghost_presence
 
 scoreboard players operation #temp Room = @s Room

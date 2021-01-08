@@ -1,0 +1,2 @@
+execute if entity @s[tag=flashlight] as @e[distance=..7,scores={StunTime=0,VulnerableTime=1..},tag=portrait_ghost] positioned ^ ^ ^4 at @s[distance=..4] run playsound luigis_mansion:entity.heart.flash hostile @a ~ ~ ~ 1
+execute if entity @s[tag=flashlight] as @e[distance=..7,scores={StunTime=0,VulnerableTime=1..},tag=portrait_ghost] positioned ^ ^ ^4 run scoreboard players set @s[distance=..4] StunTime 200

@@ -11,8 +11,7 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.melody_pianissima.flee hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if score #conservatory Wave matches 1..2 unless entity @s[scores={Dialog=1..}] at @a[gamemode=!spectator,scores={Room=21}] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
+execute if score #conservatory Wave matches 1..2 unless entity @s[scores={Dialog=1..}] at @a[tag=same_room] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
 effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
-execute if entity @s[tag=talk] run function luigis_mansion:entities/melody_pianissima/play
-execute if entity @s[tag=!talk] if entity @a[gamemode=!spectator,distance=..5] run function luigis_mansion:entities/melody_pianissima/play
-execute if score #conservatory Wave matches 4 if entity @s[scores={VulnerableTime=0}] run function luigis_mansion:entities/melody_pianissima/battle
+execute if entity @s[tag=talk] run function #luigis_mansion:entities/melody_pianissima/play
+execute if entity @s[tag=!talk] if entity @a[gamemode=!spectator,distance=..5] run function #luigis_mansion:entities/melody_pianissima/play

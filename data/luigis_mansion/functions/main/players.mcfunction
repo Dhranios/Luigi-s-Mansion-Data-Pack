@@ -2,19 +2,7 @@ function luigis_mansion:dialog/try
 function luigis_mansion:other/music
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
 execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/player/spectator
-execute if entity @s[tag=chauncey_cry] run function luigis_mansion:dialog/chauncey_cry
-execute if entity @s[tag=washroom_toad] run function luigis_mansion:dialog/washroom_toad
-execute if entity @s[tag=move_wall] run function luigis_mansion:dialog/moving_wall
-execute if entity @s[tag=release_boos] run function luigis_mansion:dialog/release_boos
-execute if entity @s[tag=marios_painting] run function luigis_mansion:dialog/marios_painting
-execute if entity @s[tag=marios_painting_repeat] run function luigis_mansion:dialog/marios_painting_repeat
-execute if entity @s[tag=astral_hall_ambush] run function luigis_mansion:dialog/astral_hall_ambush
-execute if entity @s[tag=observatory_dialog] run function luigis_mansion:dialog/observatory
-execute if entity @s[tag=observatory_explosion] run function luigis_mansion:dialog/observatory_explosion
-execute if entity @s[tag=blackout_lightning] run function luigis_mansion:dialog/blackout_lightning
-execute if entity @s[tag=toad_5_dialog] run function luigis_mansion:dialog/toad_5
-execute if entity @s[tag=uncle_grimmly_dialog] run function luigis_mansion:dialog/uncle_grimmly
-execute if entity @s[tag=close_pipe] run function luigis_mansion:dialog/close_pipe
+function #luigis_mansion:player_tag_dialogs
 execute if entity @s[tag=return_mario] as @a run function luigis_mansion:entities/e_gadd/return_mario
 
 execute if entity @s[tag=!joined] run function luigis_mansion:other/join_world

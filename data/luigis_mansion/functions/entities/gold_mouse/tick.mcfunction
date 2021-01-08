@@ -7,8 +7,7 @@ execute if entity @s[tag=fleeing,tag=!played_sound] run playsound luigis_mansion
 tag @s[tag=fleeing,tag=!played_sound] add played_sound
 tag @s[tag=!fleeing] remove played_sound
 
-execute if entity @s[tag=!dead] if score #mansion_type Selected matches 0 run function luigis_mansion:entities/gold_mouse/normal
-execute if entity @s[tag=!dead] if score #mansion_type Selected matches 1 run function luigis_mansion:entities/gold_mouse/hidden
+execute if entity @s[tag=!dead] run function #luigis_mansion:entities/gold_mouse/tick
 scoreboard players set #temp Move 8
 execute at @s[tag=!dead] rotated ~ 0 run function luigis_mansion:entities/gold_mouse/move_forward
 function luigis_mansion:animations/blue_mouse/idle

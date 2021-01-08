@@ -1,0 +1,1 @@
+execute if score #mansion_type Selected matches 1 as @a[tag=same_room] at @s run function luigis_mansion:entities/floating_whirlindas/hidden/dance_floor

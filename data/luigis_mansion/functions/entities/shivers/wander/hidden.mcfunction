@@ -6,7 +6,7 @@ teleport @s[scores={Time=1},tag=!burning] ~ ~ ~ facing 668 102 16
 scoreboard players set @s[x=668.5,y=102,z=16.5,distance=..0.7,scores={Time=1},tag=!burning] Time 2
 teleport @s[scores={Time=2},tag=!burning] ~ ~ ~ facing 668 102 0
 scoreboard players set @s[x=668.5,y=102,z=0.5,distance=..0.7,scores={Time=2},tag=!burning] Time 1
-execute if entity @s[scores={Time=1..2},tag=burning] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[scores={Room=10}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.fire"}]}
+execute if entity @s[scores={Time=1..2},tag=burning] unless data storage luigis_mansion:data current_state.current_data.technical_data{shivers_spoke:1b} run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.shivers","color":"green"},{"translate":"luigis_mansion:message.shivers.fire"}]}
 scoreboard players set @s[scores={Time=1..2},tag=burning,tag=!burning_2] Time 1
 execute if entity @s[tag=burning] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shivers_spoke:1b}
 tag @s[tag=burning] add burning_2
@@ -33,5 +33,6 @@ tag @s[scores={Time=148}] remove burning
 tag @s[scores={Time=148}] remove burning_2
 execute if entity @s[scores={Time=148}] run scoreboard players set @s Time 1
 
+teleport @s[tag=disappear] 702 102 -32
 execute if entity @a[tag=blackout] run tag @s add dead
 execute if data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} run tag @s add dead

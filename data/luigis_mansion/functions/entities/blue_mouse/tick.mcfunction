@@ -18,7 +18,7 @@ scoreboard players reset #temp HomeY
 
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=blue_mouse,tag=spawn] if score @s Room = #temp Room run scoreboard players add #temp Time 1
-execute unless score #temp Time matches 3.. run tag @s[scores={Room=1..}] add spawn
+execute unless score #temp Time matches 3.. run tag @s add spawn
 scoreboard players reset #temp Time
 scoreboard players reset #temp Room
 

@@ -17,4 +17,7 @@ teleport @s[scores={Dialog=8}] ~ ~ ~ facing 678 102 -15
 scoreboard players add @s[x=678.5,y=102.5,z=-14.5,distance=..0.7,scores={Dialog=8..100}] Dialog 1
 teleport @s[scores={Dialog=9}] ~ ~ ~ facing 679 103 -12
 execute if entity @s[scores={Dialog=40}] positioned 679 103 -12 rotated -15 0 run function luigis_mansion:spawn_entities/ball/billiards/white
+execute at @s[scores={Dialog=..8}] run function luigis_mansion:entities/slim_bankshot/move_forward
+execute if entity @s[scores={Dialog=90}] run tag @e[tag=billiards_ball,tag=white,limit=1] add move
+execute if entity @s[scores={Dialog=98}] run tag @e[tag=billiards_ball,tag=!white,limit=3] add vacuumable
 scoreboard players set @s[scores={Dialog=101}] Dialog 1

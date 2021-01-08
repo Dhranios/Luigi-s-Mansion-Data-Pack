@@ -1,0 +1,1 @@
+execute if entity @s[tag=ceiling_surprise] run tag @e[tag=this_entity,limit=1] add ceiling_surprise

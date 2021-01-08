@@ -1,0 +1,2 @@
+execute if score #mansion_type Selected matches 1 if entity @s[type=minecraft:pig] run function luigis_mansion:entities/chauncey/small/hidden
+execute if score #mansion_type Selected matches 1 if entity @s[tag=!fleeing,tag=!hurt,type=minecraft:wither] run function luigis_mansion:entities/chauncey/big/hidden

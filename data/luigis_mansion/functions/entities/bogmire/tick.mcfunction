@@ -19,4 +19,4 @@ execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
 execute if entity @s[tag=intro] run function luigis_mansion:entities/bogmire/intro
-execute if entity @s[tag=!fleeing,tag=!hurt,tag=!intro] run function luigis_mansion:entities/bogmire/fight
+execute if entity @s[tag=!fleeing,tag=!hurt,tag=!intro] run function #luigis_mansion:entities/bogmire/fight

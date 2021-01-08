@@ -44,6 +44,7 @@ execute if score #mirrored Selected matches 1 if entity @s[tag=white,tag=dancing
 execute if entity @s[scores={Health=1..}] run scoreboard players operation @e[tag=this_entity,limit=1] Health = @s Health
 execute if entity @s[tag=dancing] run scoreboard players operation @e[tag=this_entity,limit=1] GhostGuyCouple = @s GhostGuyCouple
 execute if entity @s[tag=dancing] run tag @e[tag=this_entity,limit=1] add dancing
+execute if entity @s[tag=dancing] run tag @e[tag=this_entity,limit=1] add hallway
 execute if entity @s[scores={GhostGuyCouple=0}] run tag @e[tag=this_entity,limit=1] add stop_dancing
 execute if entity @s[tag=!dancing] run tag @e[tag=this_entity,limit=1] add stop_dancing
 execute if entity @s[tag=red] run tag @e[tag=this_entity,limit=1] add red

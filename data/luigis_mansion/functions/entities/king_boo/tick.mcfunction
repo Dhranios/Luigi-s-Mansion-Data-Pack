@@ -41,8 +41,8 @@ scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,ta
 tag @s remove disappear
 tag @s remove fleeing
 
-execute if entity @s[tag=warp] run function luigis_mansion:dialog/king_boo_warp
-execute if entity @s[tag=secret_altar] run function luigis_mansion:entities/king_boo/secret_altar
+execute if entity @s[tag=warp] run function #luigis_mansion:entities/king_boo/warp
+execute if entity @s[tag=secret_altar] run function #luigis_mansion:entities/king_boo/secret_altar
 execute if entity @s[tag=cutscene] run function luigis_mansion:entities/king_boo/cutscene
 execute if entity @s[tag=battle] run function luigis_mansion:entities/king_boo/battle
 tag @s[tag=vanish] add dead
