@@ -1,1 +1,0 @@
-execute if entity @s[tag=money] run function luigis_mansion:entities/money/tick

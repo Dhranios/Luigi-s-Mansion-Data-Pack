@@ -7,6 +7,8 @@ effect give @s minecraft:instant_health 1 19 true
 scoreboard players set @s ForcedDamage 0
 scoreboard players set @s Health 100
 scoreboard players set @s MusicType 0
+scoreboard players set @s ForcedDamage -101
+scoreboard players set @s Damage 1
 scoreboard players set @s TotalDamage 0
 scoreboard players set @s LastTotalDamage 0
 gamemode adventure @s

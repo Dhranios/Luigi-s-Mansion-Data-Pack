@@ -11,7 +11,7 @@ execute if block 706 102 7 minecraft:jungle_door[powered=false] run scoreboard p
 execute if block 705 102 8 minecraft:jungle_door[powered=false] run scoreboard players set #temp Searched -1
 execute if block 705 102 7 minecraft:jungle_door[powered=false] run scoreboard players set #temp Searched -1
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=706.0,y=102,z=8.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"main_hallway"}}}}] run function luigis_mansion:room/hidden/main_hallway/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=706.0,y=102,z=8.0] if data storage luigis_mansion:data current_state.current_data.obtained_keys{main_hallway:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} run function luigis_mansion:room/hidden/main_hallway/unlock_door
 execute if block 706 102 8 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} positioned 706 102 8 run function luigis_mansion:blocks/closed_door
 execute if block 706 102 7 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} positioned 706 102 7 run function luigis_mansion:blocks/closed_door
 execute unless data storage luigis_mansion:data current_state.current_data.used_keys{main_hallway:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1

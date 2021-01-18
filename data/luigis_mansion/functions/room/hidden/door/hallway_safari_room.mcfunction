@@ -3,7 +3,7 @@ execute if block 705 120 36 minecraft:oak_door[open=true] if block 706 120 36 mi
 execute if block 706 120 36 minecraft:oak_door[open=true] if block 705 120 36 minecraft:oak_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 execute if block 705 120 36 minecraft:oak_door[open=true] if block 706 120 36 minecraft:oak_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=706.0,y=120,z=36.5,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"safari_room"}}}}] run function luigis_mansion:room/hidden/safari_room/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=706.0,y=120,z=36.5] if data storage luigis_mansion:data current_state.current_data.obtained_keys{safari_room:1b} unless data storage luigis_mansion:data current_state.current_data.used_keys{safari_room:1b} run function luigis_mansion:room/hidden/safari_room/unlock_door
 execute if block 705 120 36 #minecraft:doors[open=true] unless data storage luigis_mansion:data current_state.current_data.used_keys{safari_room:1b} positioned 705 120 36 run function luigis_mansion:blocks/closed_door
 execute unless data storage luigis_mansion:data current_state.current_data.used_keys{safari_room:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1
 execute unless entity @a[gamemode=!spectator,distance=..3,x=706.0,y=120,z=36.5] if score #temp Searched matches 1..2 run scoreboard players set #temp Searched 0

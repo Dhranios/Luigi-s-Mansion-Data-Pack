@@ -10,4 +10,5 @@ execute if entity @s[tag=gold_diamond] run playsound luigis_mansion:item.gold_di
 execute if entity @s[tag=small_pearl] run playsound luigis_mansion:item.small_pearl.bounce player @a ~ ~ ~ 1
 execute if entity @s[tag=medium_pearl] run playsound luigis_mansion:item.medium_pearl.bounce player @a ~ ~ ~ 1
 execute if entity @s[tag=big_pearl] run playsound luigis_mansion:item.big_pearl.bounce player @a ~ ~ ~ 1
+execute if entity @s[tag=key] run playsound luigis_mansion:item.key.bounce player @a ~ ~ ~ 1
 tag @s add bounce

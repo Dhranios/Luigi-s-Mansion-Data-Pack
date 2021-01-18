@@ -1,6 +1,4 @@
 scoreboard players add @s AnimationProg 1
-data merge entity @s[scores={HomeRotY=90,AnimationProg=1}] {Pose:{Head:[90.0f,0.0f,0.01f]}}
-execute unless entity @s[scores={HomeRotY=90}] run data merge entity @s[scores={AnimationProg=1}] {Pose:{Head:[0.0f,0.01f,0.0f]}}
 execute unless entity @s[scores={HomeRotY=90}] if entity @s[scores={AnimationProg=1}] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s HomeRotY
 execute if entity @s[scores={HomeRotY=90}] store result score #temp Time run data get entity @s Pose.Head[0]
 execute if entity @s[scores={HomeRotY=90,AnimationProg=1}] store result entity @s Pose.Head[0] float 1 run scoreboard players add #temp Time 4

@@ -8,8 +8,14 @@ teleport @s[scores={Dialog=31..60}] ~ ~ ~0.05
 teleport @s[scores={Dialog=61..90}] ~ ~ ~-0.05
 teleport @s[scores={Dialog=91..120}] ~ ~ ~0.025
 teleport @s[scores={Dialog=121..122}] ~ ~-0.2 ~
-execute if entity @s[scores={Dialog=216}] run summon minecraft:item ~ ~0.5 ~ {Invulnerable:1b,PickupDelay:254s,Motion:[0.0d,0.2d,-0.0d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:key",room:"parlor"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.key","with":[{"translate":"luigis_mansion:location.parlor"}]}'}}},Age:-32768s}
+execute if entity @s[scores={Dialog=216}] run summon minecraft:armor_stand ~ ~ ~ {Pose:{Head:[0.0f,90.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:brick",Count:1b,tag:{CustomModelData:1}}],Tags:["parlor_key"],Rotation:[-90.0f,0.0f],DisabledSlots:2039583}
 item entity @s[scores={Dialog=216}] armor.head replace minecraft:air
+execute if entity @s[scores={Dialog=216..220}] as @e[tag=parlor_key,limit=1] at @s run teleport @s ~ ~0.1 ~
+execute if entity @s[scores={Dialog=221..231}] as @e[tag=parlor_key,limit=1] at @s run teleport @s ~ ~-0.3 ~
+execute if entity @s[scores={Dialog=232}] as @e[tag=parlor_key,limit=1] at @s run teleport @s ~0.35 ~0.2 ~0.35
+execute if entity @s[scores={Dialog=232}] run data merge entity @e[tag=parlor_key,limit=1] {Pose:{Head:[45.0f,45.0f,0.01f]},Rotation:[-67.5f,0.0f]}
+execute if entity @s[scores={Dialog=233}] as @e[tag=parlor_key,limit=1] at @s run teleport @s ~0.35 ~-0.3 ~0.35
+execute if entity @s[scores={Dialog=233}] run data merge entity @e[tag=parlor_key,limit=1] {Pose:{Head:[90.0f,0.0f,0.01f]},Rotation:[-45.0f,0.0f]}
 teleport @s[scores={Dialog=216..255}] ~ ~ ~0.2
 execute if entity @s[scores={Dialog=242}] positioned 714 104 13 run function luigis_mansion:blocks/unlit_candles
 teleport @s[scores={Dialog=255..274}] ~-0.2 ~0.2 ~
@@ -22,4 +28,7 @@ teleport @s[scores={Dialog=360..364}] ~0.4 ~ ~
 teleport @s[scores={Dialog=365..369}] ~-0.4 ~ ~
 teleport @s[scores={Dialog=369..374}] ~-0.4 ~0.2 ~
 execute if entity @s[scores={Dialog=469}] run teleport @s ~ ~-100 ~
+execute if entity @s[scores={Dialog=469}] at @e[tag=parlor_key,limit=1] run summon minecraft:armor_stand ~-0.7 ~0.9 ~-0.7 {Pose:{Head:[0.0f,-90.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:15}}],Small:1b,Tags:["item","key","parlor","rotated","bounce"],Rotation:[-90.0f,0.0f],DisabledSlots:2039583}
+execute if entity @s[scores={Dialog=469}] run scoreboard players set @e[tag=key,tag=parlor,limit=1] Time 4
+execute if entity @s[scores={Dialog=469}] run kill @e[tag=parlor_key,limit=1]
 execute if entity @s[scores={Dialog=470}] run tag @s add dead

@@ -7,8 +7,8 @@ execute if block 698 111 8 minecraft:jungle_door[open=true] if block 698 111 7 m
 execute if block 698 111 7 minecraft:jungle_door[open=true] if block 698 111 8 minecraft:jungle_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 execute if block 698 111 8 minecraft:jungle_door[open=true] if block 698 111 7 minecraft:jungle_door[open=true] unless score #temp Searched matches 1 run scoreboard players set #temp Searched 2
 
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=699.0,y=111,z=8.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}}] run function luigis_mansion:room/normal/parlor/unlock_door
-execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=699.0,y=111,z=8.0,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"parlor"}}}}] run function luigis_mansion:room/normal/parlor/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=699.0,y=111,z=8.0] if data storage luigis_mansion:data {obtained_parlor_key:1b} unless data storage luigis_mansion:data {used_parlor_key:1b} run function luigis_mansion:room/normal/parlor/unlock_door
+execute if score #temp Searched matches 1..2 as @a[gamemode=!spectator,distance=..3,x=699.0,y=111,z=8.0] if data storage luigis_mansion:data {obtained_parlor_key:1b} unless data storage luigis_mansion:data {used_parlor_key:1b} run function luigis_mansion:room/normal/parlor/unlock_door
 execute if block 699 111 7 #minecraft:doors[open=true] unless data storage luigis_mansion:data {used_parlor_key:1b} positioned 699 111 7 run function luigis_mansion:blocks/closed_door
 execute if block 699 111 8 #minecraft:doors[open=true] unless data storage luigis_mansion:data {used_parlor_key:1b} positioned 699 111 8 run function luigis_mansion:blocks/closed_door
 execute unless data storage luigis_mansion:data {used_parlor_key:1b} if score #temp Searched matches 1..2 run scoreboard players set #temp Searched -1

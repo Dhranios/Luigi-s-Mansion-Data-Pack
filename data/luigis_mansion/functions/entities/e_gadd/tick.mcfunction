@@ -1,4 +1,4 @@
-execute unless entity @s[scores={Room=-4..}] run function luigis_mansion:dialog/leaving_the_lab
+execute if entity @s[scores={Room=0}] run function luigis_mansion:dialog/leaving_the_lab
 execute if entity @s[scores={Room=2}] run function luigis_mansion:dialog/meet_e_gadd
 execute if entity @s[scores={Room=-1}] if entity @a[advancements={luigis_mansion:lab/underground_lab=false}] run function luigis_mansion:dialog/the_mansion
 execute if entity @s[scores={Room=-1}] if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_call:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_talk:1b} run function luigis_mansion:dialog/released_boos_talk
@@ -14,4 +14,4 @@ execute if entity @s[scores={Room=-3},tag=!portrificationizing,tag=!return_dialo
 execute if entity @s[scores={Room=-4},tag=talk] if entity @a[advancements={luigis_mansion:lab/gallery=false}] run function luigis_mansion:dialog/gallery
 execute if entity @s[scores={Room=-4},tag=talk] if entity @a[advancements={luigis_mansion:lab/gallery=true}] run function luigis_mansion:dialog/gallery_repeat
 
-execute unless entity @s[scores={Room=2}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,tag=!mario_to_normal,scores={Room=-4..}] ~ ~ ~ ~ ~
+execute facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s[tag=!portrificationizing,tag=!mario_to_normal,scores={Room=-4..-1}] ~ ~ ~ ~ ~

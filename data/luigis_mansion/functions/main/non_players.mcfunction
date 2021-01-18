@@ -8,7 +8,7 @@ execute if entity @s[tag=burning_floor] run function luigis_mansion:blocks/burni
 
 function #luigis_mansion:entities
 
-execute unless entity @s[tag=!poison_mushroom,tag=!heart,tag=!gold_coin,tag=!bill,tag=!gold_bar,tag=!blue_sapphire,tag=!green_emerald,tag=!red_ruby] run scoreboard players add @s SpawnTime 1
+execute unless entity @s[tag=!poison_mushroom,tag=!heart] run scoreboard players add @s SpawnTime 1
 
 data merge entity @s[type=minecraft:item] {Invulnerable:1b,Air:0}
 data merge entity @s[type=minecraft:item] {Air:1}

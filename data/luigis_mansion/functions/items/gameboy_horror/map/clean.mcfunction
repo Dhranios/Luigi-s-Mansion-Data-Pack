@@ -57,3 +57,5 @@ fill 3636 212 -49 3726 212 64 minecraft:air
 fill 3636 213 -49 3726 213 64 minecraft:air
 fill 3636 214 -49 3726 214 64 minecraft:air
 fill 3636 215 -49 3726 215 64 minecraft:air
+
+tag @e[tag=key,tag=display] add dead
