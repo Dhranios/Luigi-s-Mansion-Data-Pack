@@ -1,16 +1,19 @@
+scoreboard players set @s Shruk 201
 playsound luigis_mansion:item.poison_mushroom.obtain player @a ~ ~ ~ 1
-tag @s remove hit
-execute if score #gold_coin Money matches 1.. run summon minecraft:item ~0.05 ~1 ~-0.25 {Motion:[0.05d,0.3d,-0.25d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 2.. run summon minecraft:item ~-0.25 ~1 ~-0.1 {Motion:[-0.25d,0.3d,-0.1d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 3.. run summon minecraft:item ~-0.15 ~1 ~0.15 {Motion:[-0.15d,0.3d,0.15d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 4.. run summon minecraft:item ~0.15 ~1 ~0.15 {Motion:[0.15d,0.3d,0.15d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 5.. run summon minecraft:item ~0.25 ~1 ~-0.1 {Motion:[0.25d,0.3d,-0.1d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 6.. run summon minecraft:item ~-0.05 ~1 ~0.25 {Motion:[-0.05d,0.3d,0.25d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 7.. run summon minecraft:item ~0.25 ~1 ~0.1 {Motion:[0.25d,0.3d,0.1d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 8.. run summon minecraft:item ~0.15 ~1 ~-0.15 {Motion:[0.15d,0.3d,-0.15d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 9.. run summon minecraft:item ~-0.15 ~1 ~-0.15 {Motion:[-0.15d,0.3d,-0.15d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-execute if score #gold_coin Money matches 10.. run summon minecraft:item ~-0.25 ~1 ~0.1 {Motion:[-0.25d,0.3d,0.1d],Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:18,luigis_mansion:{id:"luigis_mansion:gold_coin"},display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gold_coin"}'}}},Age:5900s,PickupDelay:10s}
-scoreboard players remove #gold_coin Money 10
-execute if score #gold_coin Money matches ..0 run scoreboard players reset #gold_coin Money
+execute store result score #temp Time run data get storage luigis_mansion:data current_state.current_data.money.gold_coin
+execute if score #temp Time matches 1.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 2.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 3.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 4.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 5.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 6.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 7.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 8.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 9.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 10.. positioned ~ ~2 ~ run function luigis_mansion:spawn_entities/item/gold_coin
+execute if score #temp Time matches 1.. positioned ~ ~1 ~ as @e[tag=gold_coin,distance=..0.7] unless entity @s[scores={SpawnedTime=1..}] run scoreboard players set @s SpawnedTime 100
+execute store result storage luigis_mansion:data current_state.current_data.money.gold_coin int 1 run scoreboard players remove #temp Time 10
+execute store result storage luigis_mansion:data current_state.current_data.money.gold_coin int 1 if score #temp Time matches ..0 run scoreboard players set #temp Time 0
+scoreboard players reset #temp Time
 execute unless entity @s[scores={Shrunk=1..}] run function luigis_mansion:items/poison_mushroom/remove_inventory
 scoreboard players set @s Shrunk 201

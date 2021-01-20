@@ -22,3 +22,4 @@ teleport @s[scores={Room=1..},y=120,dy=6] 3736 191 -34 60 10
 teleport @s[scores={Room=1..},y=131,dy=124] 3736 241 -34 60 10
 teleport @s[scores={Room=-4..-1}] 4816 132 -47 60 10
 execute unless entity @s[scores={Room=0}] run scoreboard players set @s UseItem 0
+execute at @s run playsound luigis_mansion:item.gameboy_horror.map.open player @s ~ ~ ~ 1

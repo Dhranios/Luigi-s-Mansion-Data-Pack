@@ -18,7 +18,7 @@ teleport @s[scores={Dialog=18}] ~ ~ ~ facing 689 111 11
 teleport @s[scores={Dialog=19..49}] ^ ^ ^0.125
 teleport @s[scores={Dialog=50}] ~ ~ ~ facing 692 111 9
 teleport @s[scores={Dialog=51..70}] ^ ^ ^0.125
-execute if entity @s[scores={Dialog=70..379}] positioned ~ ~0.5 ~ positioned ^ ^ ^0.5 as @e[tag=gold_ghost,tag=dialog,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming_e_gadd
+execute if entity @s[scores={Dialog=70..379}] positioned ~ ~0.5 ~ positioned ^ ^ ^0.5 as @e[tag=gold_ghost,tag=dialog,limit=1] facing entity @s feet run function luigis_mansion:items/poltergust_3000/vacuuming/e_gadd
 tag @e[tag=gold_ghost,tag=ghost_marker,limit=1] add dead
 execute if entity @s[scores={Dialog=70}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add hurt
 execute if entity @s[scores={Dialog=140}] run tag @e[tag=gold_ghost,tag=dialog,limit=1] add fleeing

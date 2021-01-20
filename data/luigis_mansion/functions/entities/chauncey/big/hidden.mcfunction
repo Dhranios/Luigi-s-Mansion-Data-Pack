@@ -2,7 +2,8 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.nur
 execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} as @a[distance=..80] run function luigis_mansion:entities/chauncey/return
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} as @a[distance=80..] run function luigis_mansion:entities/chauncey/to_arena
 execute if entity @s[tag=!intro_done] run function luigis_mansion:dialog/chauncey_intro
-scoreboard players add @s[scores={Wave=584..}] Wave 1
+scoreboard players add @s[scores={Wave=1584..}] Wave 1
+scoreboard players add @s[scores={Wave=584..1582}] Wave 1
 scoreboard players add @s[scores={Wave=382..582}] Wave 1
 execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:armor_stand,tag=ball,tag=spit,dx=2,dy=2,dz=2] run scoreboard players add @s[scores={Wave=381}] Wave 1
 execute unless entity @e[type=minecraft:armor_stand,tag=ball] run scoreboard players set @s[scores={Wave=381}] Wave 0

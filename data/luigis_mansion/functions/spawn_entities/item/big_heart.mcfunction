@@ -1,4 +1,4 @@
-summon minecraft:item ~ ~ ~ {Invulnerable:1b,Item:{id:"minecraft:brick",Count:1b,tag:{CustomModelData:17,luigis_mansion:{id:"luigis_mansion:heart",size:50}}},Age:5400s,PickupDelay:32767s,Tags:["heart"]}
+summon minecraft:armor_stand ~ ~-1 ~ {Pose:{Head:[0.0f,0.0f,0.01f]},Marker:1b,Invisible:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:5,CustomModelData:21,luigis_mansion:{size:50}}}],Tags:["item","heart","this_entity"],DisabledSlots:2039583}
 loot spawn ~ ~ ~ loot luigis_mansion:gameplay/0_90
 execute as @e[tag=this_entity,limit=1] run data modify entity @s Rotation[0] set from entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}},limit=1] Item.tag.Value
 kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]

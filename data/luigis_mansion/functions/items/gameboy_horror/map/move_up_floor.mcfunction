@@ -8,3 +8,4 @@ teleport @s[y=141,dy=3] ~ 180 ~
 teleport @s[y=191,dy=3] ~ 230 ~
 execute at @s run teleport @s ~ ~11 ~
 title @s title ""
+execute at @s run playsound luigis_mansion:item.gameboy_horror.map.up_floor player @s ~ ~ ~ 1

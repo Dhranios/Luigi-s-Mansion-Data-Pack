@@ -2,6 +2,10 @@ function luigis_mansion:dialog/try
 function luigis_mansion:other/music
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
 execute if entity @s[gamemode=spectator] run function luigis_mansion:entities/player/spectator
+execute if entity @s[scores={Shrunk=1}] run function luigis_mansion:items/poison_mushroom/readd_inventory
+scoreboard players remove @s[scores={Shrunk=1..}] Shrunk 1
+scoreboard players reset @s[scores={Shrunk=0}] Shrunk
+scoreboard players reset @s[scores={Shrunk=0}] ShrunkNr
 function #luigis_mansion:player_tag_dialogs
 execute if entity @s[tag=return_mario] as @a run function luigis_mansion:entities/e_gadd/return_mario
 
@@ -26,6 +30,9 @@ tag @s[scores={Sneaking=1}] add was_sneaking
 tag @s[scores={Sneaking=0}] remove was_sneaking
 scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
 execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
+scoreboard players set @s Sneak 0
 scoreboard players set @s Sneaking 0
+scoreboard players set @s Walk 0
+scoreboard players set @s Run 0
 scoreboard players set @s Jump 0
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2

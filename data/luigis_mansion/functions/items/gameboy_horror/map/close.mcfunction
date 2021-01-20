@@ -9,3 +9,4 @@ tag @s add seen_room_name
 tag @s add seen_room_name_2
 title @s subtitle ""
 scoreboard players set @s UseItem 0
+execute at @s run playsound luigis_mansion:item.gameboy_horror.map.close player @s ~ ~ ~ 1

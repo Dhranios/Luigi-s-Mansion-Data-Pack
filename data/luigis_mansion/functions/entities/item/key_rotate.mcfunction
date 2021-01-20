@@ -10,4 +10,5 @@ kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpk
 loot spawn ~ ~ ~ loot luigis_mansion:gameplay/0_90
 data modify entity @s Rotation[1] set from entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}},limit=1] Item.tag.Value
 kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]
+tag @s add vacuumable
 tag @s add rotated

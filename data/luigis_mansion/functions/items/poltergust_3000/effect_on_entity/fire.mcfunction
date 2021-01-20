@@ -1,6 +1,6 @@
 execute if entity @s[tag=vacuumable] run function luigis_mansion:items/poltergust_3000/effect_on_entity/dust
-execute unless entity @s[tag=haunted_object,tag=!moving] run tag @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus] add dead
-execute unless entity @s[tag=haunted_object,tag=!moving] run tag @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus] add element_death
+execute unless entity @s[tag=haunted_object,tag=!moving] run tag @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!item] add dead
+execute unless entity @s[tag=haunted_object,tag=!moving] run tag @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!item] add element_death
 tag @s[tag=ghost,tag=!burning_heart,tag=!watery_heart,tag=!portrait_ghost,tag=!boo,tag=!hurt_animation,tag=!vanish,tag=!appear] add element_hurt
 tag @s[tag=vacuumable,tag=spark] add explode
 tag @s[tag=sir_weston,scores={Dialog=423..}] add melt

@@ -10,5 +10,10 @@ execute if entity @s[tag=gold_diamond] run playsound luigis_mansion:item.gold_di
 execute if entity @s[tag=small_pearl] run playsound luigis_mansion:item.small_pearl.bounce player @a ~ ~ ~ 1
 execute if entity @s[tag=medium_pearl] run playsound luigis_mansion:item.medium_pearl.bounce player @a ~ ~ ~ 1
 execute if entity @s[tag=big_pearl] run playsound luigis_mansion:item.big_pearl.bounce player @a ~ ~ ~ 1
-execute if entity @s[tag=key] run playsound luigis_mansion:item.key.bounce player @a ~ ~ ~ 1
+execute if entity @s[tag=heart] run playsound luigis_mansion:item.heart.bounce player @a ~ ~ ~ 1
+execute if entity @s[tag=poison_mushroom] run playsound luigis_mansion:item.poison_mushroom.bounce player @a ~ ~ ~ 1
+execute if entity @s[tag=key,nbt={ArmorItems:[{tag:{CustomModelData:15}}]}] run playsound luigis_mansion:item.key.bounce player @a ~ ~ ~ 1
+execute if entity @s[tag=key,nbt=!{ArmorItems:[{tag:{CustomModelData:15}}]}] run playsound luigis_mansion:item.key.bounce_area player @a ~ ~ ~ 1
+execute if entity @s[tag=mario_item] run playsound luigis_mansion:item.mario_item.bounce player @a ~ ~ ~ 1
+execute if entity @s[tag=element_medal] run playsound luigis_mansion:item.element_medal.bounce player @a ~ ~ ~ 1
 tag @s add bounce

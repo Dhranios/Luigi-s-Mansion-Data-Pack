@@ -14,16 +14,6 @@ scoreboard players set @s[scores={Talk=1..}] Talk 0
 execute as @e[distance=..7,tag=ghost_marker,tag=can_spawn] positioned ^ ^ ^4 unless entity @s[distance=..4] at @s if block ~ ~ ~ #luigis_mansion:ghosts_ignore run tag @s[tag=!only_forced_spawn] add spawn
 title @s[gamemode=!creative] actionbar {"translate":"luigis_mansion:message.health","with":[{"score":{"name":"@s","objective":"Health"}}],"color":"red"}
 
-execute store result score @s Keys run clear @s minecraft:brick{CustomModelData:2,luigis_mansion:{id:"luigis_mansion:key"}} 0
-execute if entity @s[scores={Keys=0}] store result score @s Keys run clear @s minecraft:brick{CustomModelData:3,luigis_mansion:{id:"luigis_mansion:key"}} 0
-execute if entity @s[scores={Keys=0}] store result score @s Keys run clear @s minecraft:brick{CustomModelData:4,luigis_mansion:{id:"luigis_mansion:key"}} 0
-execute if entity @s[scores={Keys=0}] store result score @s Keys run clear @s minecraft:brick{CustomModelData:5,luigis_mansion:{id:"luigis_mansion:key"}} 0
-function luigis_mansion:items/get_boss_key
-execute store result score @s Keys run clear @s minecraft:brick{CustomModelData:1,luigis_mansion:{id:"luigis_mansion:key"}} 0
-execute if score @s Keys > @s LastKeys run playsound luigis_mansion:item.item.get player @a ~ ~ ~ 1
-execute if score @s Keys > @s LastKeys run playsound luigis_mansion:item.key.get player @a ~ ~ ~ 1
-scoreboard players operation @s LastKeys = @s Keys
-
 scoreboard players remove @s[scores={HallwayNoise=1..}] HallwayNoise 1
 scoreboard players remove @s[scores={Sound=1..}] Sound 1
 execute if entity @s[tag=poltergust_malfunction] run function luigis_mansion:entities/player/poltergust_breakage
@@ -45,5 +35,7 @@ execute if score #temp Time matches 0 store result score #temp Time run clear @s
 execute if score #temp Time matches 0 unless entity @s[scores={Shrunk=1..}] run give @s[advancements={luigis_mansion:lab/lab=true}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:0,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.gameboy_horror"}'},luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}
 scoreboard players reset #temp Time
 execute as @e[distance=..3,type=minecraft:item] unless entity @s[nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}},nbt=!{Item:{tag:{luigis_mansion:{id:"luigis_mansion:gameboy_horror"}}}}] run kill @s
+
+execute if entity @s[scores={Shrunk=2..}] run function luigis_mansion:items/poison_mushroom/visual
 
 execute unless entity @s[scores={Room=-3}] if block 771 97 2 minecraft:air if data storage luigis_mansion:data current_state.current_data.rooms run function luigis_mansion:entities/e_gadd/to_portrificationizer

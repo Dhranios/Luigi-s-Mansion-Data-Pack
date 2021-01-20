@@ -14,8 +14,8 @@ execute if entity @s[tag=vacuumable,tag=spark] positioned as @s if entity @a[gam
 execute if entity @s[tag=elemental_ghost,scores={SpawnTime=21..}] positioned as @s if block ^ ^ ^0.3 #luigis_mansion:items_ignore run teleport @s ^ ^ ^0.01
 tag @s[tag=elemental_ghost,scores={SpawnTime=21..}] add hurt
 execute if entity @s[tag=elemental_ghost,scores={SpawnTime=21..},tag=hurt] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add sucked_up
-execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!money] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add normal_death
-execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!money] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add dead
+execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!item] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add normal_death
+execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!item] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[gamemode=!spectator,distance=..1.2,limit=1] run tag @s add dead
 tag @s[tag=ghost,scores={VulnerableTime=2..},tag=!dead,tag=!vanish,tag=!appear] add hurt
 tag @s[tag=ghost,tag=hurt,tag=!vanish] add in_vacuum
 tag @s[tag=boo,tag=!dead] add boo_hurt

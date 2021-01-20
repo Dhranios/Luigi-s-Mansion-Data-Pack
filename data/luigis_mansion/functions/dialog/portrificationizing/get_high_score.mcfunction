@@ -4,5 +4,5 @@ execute store result block 27 0 0 Items[0].tag.value int 1 run scoreboard player
 function luigis_mansion:dialog/portrificationizing/load_score_index
 scoreboard players reset #temp Time
 fill 27 0 0 26 0 0 minecraft:bedrock
-data modify storage luigis_mansion:data high_scores[] set from storage luigis_mansion:data new_high_scores
+data modify storage luigis_mansion:data high_scores set from storage luigis_mansion:data new_high_scores
 data remove storage luigis_mansion:data new_high_scores
