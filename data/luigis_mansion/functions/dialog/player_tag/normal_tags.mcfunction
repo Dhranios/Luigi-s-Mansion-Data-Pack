@@ -1,3 +1,4 @@
+execute if entity @s[tag=meet_e_gadd] run function luigis_mansion:dialog/meet_e_gadd
 execute if entity @s[tag=chauncey_cry] run function luigis_mansion:dialog/chauncey_cry/normal
 execute if entity @s[tag=washroom_toad] run function luigis_mansion:dialog/washroom_toad
 execute if entity @s[tag=move_wall] run function luigis_mansion:dialog/moving_wall/normal

@@ -9,7 +9,7 @@ execute unless entity @e[tag=select_me,tag=moving,limit=1] run scoreboard player
 execute unless entity @e[tag=select_me,tag=moving,limit=1] run scoreboard players set @s AnimationProg 0
 execute unless entity @e[tag=select_me,tag=moving,limit=1] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s HomeRotY
 execute unless entity @e[tag=select_me,tag=moving,limit=1] run data modify entity @s Pose.Head[1] set value 0.0f
-execute unless entity @e[tag=select_me,tag=moving,limit=1] run data modify entity @s Pose.Head[2] set value 0.01f
+execute unless entity @e[tag=select_me,tag=moving,limit=1] run data modify entity @s Pose.Head[2] set value 1.01f
 tag @e[tag=select_me] remove select_me
 tag @e[tag=from_me] remove from_me
 scoreboard players reset #temp Room

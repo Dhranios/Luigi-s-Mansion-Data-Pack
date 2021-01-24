@@ -1,4 +1,5 @@
 effect give @s minecraft:instant_health 1 19 true
+function luigis_mansion:entities/player/poltergust_breakage
 scoreboard players operation @s[scores={Health=1..}] Damage += @s ForcedDamage
 execute if score #double_hurt Selected matches 1 run scoreboard players operation @s[scores={Health=1..}] Damage *= #2 Constants
 scoreboard players operation @s[scores={Health=1..,Invulnerable=0}] Health -= @s Damage
@@ -10,5 +11,6 @@ execute store result storage luigis_mansion:data current_state.current_data.mone
 scoreboard players reset #temp Time
 scoreboard players operation @s LastTotalDamage = @s TotalDamage
 scoreboard players set @s Invulnerable 10
+scoreboard players set @s[scores={Health=101..}] Health 100
 scoreboard players set @s[scores={ForcedDamage=1..}] ForcedDamage 0
 scoreboard players set @s[scores={ForcedDamage=..-1}] ForcedDamage 0

@@ -2,7 +2,7 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.mai
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.main_hallway{cleared:1b} unless entity @s[scores={MusicType=6}] unless entity @s[scores={MusicType=14}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27..30}] unless entity @s[scores={MusicType=-1}] run function luigis_mansion:other/music/set/hallway
 execute if entity @s[tag=blackout] unless entity @s[scores={MusicType=6}] unless entity @s[scores={MusicType=14}] unless entity @s[scores={MusicType=19}] unless entity @s[scores={MusicType=27..30}] unless entity @s[scores={MusicType=-1}] run function luigis_mansion:other/music/set/hallway
 
-execute if entity @s[x=655.5,y=102,z=-5.5,distance=..4] if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:key",room:"courtyard"}}}]}] run function luigis_mansion:room/hidden/main_hallway/clear_blockade
+execute if entity @s[x=655.5,y=102,z=-5.5,distance=..4] if data storage luigis_mansion:data current_state.current_data.obtained_keys{courtyard:1b} run function luigis_mansion:room/hidden/main_hallway/clear_blockade
 
 execute if entity @s[x=704,y=102,z=21,distance=..9,tag=!chance_check] unless data storage luigis_mansion:data current_state.current_data.money_spawned{main_hallway_gold_mouse:1b} unless entity @e[tag=gold_mouse,scores={Room=10},limit=1] run function luigis_mansion:room/hidden/main_hallway/gold_mouse
 tag @s[x=704,y=102,z=21,distance=9..10,tag=chance_check] remove chance_check

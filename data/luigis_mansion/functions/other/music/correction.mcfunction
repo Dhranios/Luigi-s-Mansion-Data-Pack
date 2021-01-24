@@ -1,4 +1,4 @@
-execute if entity @s[scores={Boos=..49}] if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos:1b} run function luigis_mansion:other/music/set/catching_boo
+execute if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos:1b} run function luigis_mansion:other/music/set/catching_boo
 execute if entity @s[scores={MusicType=15}] run function luigis_mansion:other/music/set/catching_chauncey
 execute if entity @s[scores={MusicType=32}] run function luigis_mansion:other/music/set/catching_chauncey
 execute if entity @s[scores={MusicType=16}] run function luigis_mansion:other/music/set/catching_bogmire

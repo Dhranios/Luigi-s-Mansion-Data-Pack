@@ -27,6 +27,7 @@ scoreboard objectives add GhostCount dummy
 scoreboard objectives add GhostNr dummy
 scoreboard objectives add GhostGuyCouple dummy
 scoreboard objectives add HallwayNoise dummy
+scoreboard objectives add HallwaySection dummy
 scoreboard objectives add Health dummy
 scoreboard objectives add HideTime dummy
 scoreboard objectives add HomeRot dummy

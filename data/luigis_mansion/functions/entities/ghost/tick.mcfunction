@@ -4,7 +4,8 @@ execute if entity @s[tag=dying,tag=hurt] run function luigis_mansion:animations/
 execute if entity @s[tag=dying,tag=element_death] run function luigis_mansion:animations/ghost/death_element
 execute if entity @s[tag=dying,tag=element_hurt] run function luigis_mansion:animations/ghost/death_element
 scoreboard players operation #temp Move = @s Move
-execute unless score @s Time matches 1.. run tag @s[tag=vanish] add disappear
+execute unless score @s Time matches 1.. run tag @s[tag=disappear,tag=vanish] add disappear
+execute unless score @s Time matches 1.. run tag @s[tag=vanish] add disappear_next_tick
 function #luigis_mansion:entities/ghosts
 
 scoreboard players add @s[scores={StunTime=0}] SpawnTime 1
@@ -18,10 +19,10 @@ scoreboard players reset @s[tag=vanish] HurtTime
 scoreboard players remove @s[tag=!dying,scores={StunTime=1..}] StunTime 1
 execute unless entity @s[tag=portrait_ghost,scores={StunTime=1..}] run scoreboard players remove @s[tag=!dying,scores={VulnerableTime=1..},tag=!hurt] VulnerableTime 1
 execute if entity @s[scores={VulnerableTime=1..},tag=!spawned_heart] run function luigis_mansion:entities/ghost/spawn_heart
-execute if entity @s[scores={StunTime=1..},tag=!spawned_health_display] run function luigis_mansion:entities/ghost/spawn_health_display
-execute if entity @s[tag=hurt,tag=!spawned_health_display] run function luigis_mansion:entities/ghost/spawn_health_display
-execute if entity @s[tag=element_hurt,tag=!spawned_health_display] run function luigis_mansion:entities/ghost/spawn_health_display
-execute if entity @s[tag=boo,tag=!spawned_health_display] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[scores={StunTime=1..},tag=!spawned_health_display,tag=!dialog] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[tag=hurt,tag=!spawned_health_display,tag=!dialog] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[tag=element_hurt,tag=!spawned_health_display,tag=!dialog] run function luigis_mansion:entities/ghost/spawn_health_display
+execute if entity @s[tag=boo,tag=!spawned_health_display,tag=!dialog] run function luigis_mansion:entities/ghost/spawn_health_display
 tag @s[scores={VulnerableTime=0},tag=spawned_heart] remove spawned_heart
 tag @s[scores={VulnerableTime=0},tag=!element_hurt,tag=!boo,tag=spawned_health_display] remove spawned_health_display
 execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying,scores={VulnerableTime=0..}] run function luigis_mansion:entities/ghost/hurt

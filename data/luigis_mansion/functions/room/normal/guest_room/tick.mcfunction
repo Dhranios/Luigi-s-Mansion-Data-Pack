@@ -6,5 +6,6 @@ execute as @a[gamemode=!spectator,x=707,y=111,z=-40,dx=10,dy=6,dz=17] run functi
 function #luigis_mansion:room/normal/guest_room/interactions/room
 
 function luigis_mansion:room/normal/guest_room/ghosts
+execute unless data storage luigis_mansion:data current_state.current_data.rooms.guest_room{cleared:1b} as @e[tag=haunted_clown_doll,scores={Room=57,WaitTime=..60}] run data modify entity @s Pose.Head[2] set value 180.0f
 
 function luigis_mansion:room/normal/door/sitting_room_guest_room

@@ -72,6 +72,9 @@ scoreboard players set @s[x=683,y=120,z=-16,dx=15,dy=6,dz=6] HallwaySection 1
 scoreboard players set @s[x=699,y=120,z=-16,dx=19,dy=6,dz=6] HallwaySection 2
 scoreboard players set @s[x=720,y=120,z=-16,dx=1,dy=6,dz=6] HallwaySection 3
 
+scoreboard players set @s[x=698,y=120,z=-10,dx=19,dy=6,dz=35] HallwaySection 1
+scoreboard players set @s[x=718,y=120,z=-10,dx=4,dy=6,dz=35] HallwaySection 2
+
 scoreboard players set @s[x=706,y=93,z=30,dx=13,dy=6,dz=6] HallwaySection 1
 scoreboard players set @s[x=699,y=93,z=30,dx=6,dy=6,dz=6] HallwaySection 2
 scoreboard players set @s[x=686,y=93,z=30,dx=13,dy=6,dz=6] HallwaySection 3
@@ -259,7 +262,7 @@ tag @s[scores={Room=43,HallwaySection=2}] add right
 tag @s[scores={Room=43,HallwaySection=2}] add left
 tag @s[scores={Room=43,HallwaySection=3}] add up
 tag @s[scores={Room=44}] add up
-tag @s[scores={Room=44}] add right
+tag @s[scores={Room=44,HallwaySection=1}] add right
 tag @s[scores={Room=45}] add right
 tag @s[scores={Room=46}] add right
 tag @s[scores={Room=47,HallwaySection=1}] add up

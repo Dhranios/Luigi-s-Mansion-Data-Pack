@@ -38,4 +38,4 @@ execute as @e[distance=..3,type=minecraft:item] unless entity @s[nbt=!{Item:{tag
 
 execute if entity @s[scores={Shrunk=2..}] run function luigis_mansion:items/poison_mushroom/visual
 
-execute unless entity @s[scores={Room=-3}] if block 771 97 2 minecraft:air if data storage luigis_mansion:data current_state.current_data.rooms run function luigis_mansion:entities/e_gadd/to_portrificationizer
+execute unless entity @s[scores={Room=-3}] in minecraft:overworld if block 771 97 2 minecraft:air if data storage luigis_mansion:data current_state.current_data.rooms run function luigis_mansion:entities/e_gadd/to_portrificationizer

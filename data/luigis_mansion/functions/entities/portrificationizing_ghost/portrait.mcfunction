@@ -21,4 +21,4 @@ execute if entity @s[tag=uncle_grimmly] run function luigis_mansion:entities/por
 execute if entity @s[tag=vincent_van_gore] run function luigis_mansion:entities/portrificationizing_ghost/vincent_van_gore
 execute if entity @s[tag=boolossus] run function luigis_mansion:entities/portrificationizing_ghost/boolossus
 execute if entity @s[tag=king_boo] run function luigis_mansion:entities/portrificationizing_ghost/king_boo
-function #luigis_mansion:portrificationizing_advancements
+function #luigis_mansion:portrificationizing_clear_rooms

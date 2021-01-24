@@ -28,7 +28,7 @@ scoreboard players set @s[scores={HurtTime=1},tag=boo_hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.king_boo.flee hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0}] Sound 40
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run function luigis_mansion:entities/king_boo/collide
+execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/king_boo/collide
 
 execute at @s[tag=warp] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/king_boo/taunt
@@ -42,7 +42,7 @@ tag @s remove disappear
 tag @s remove fleeing
 
 execute if entity @s[tag=warp] run function #luigis_mansion:entities/king_boo/warp
-execute if entity @s[tag=secret_altar] run function #luigis_mansion:entities/king_boo/secret_altar
+execute if entity @s[tag=secret_altar] run function luigis_mansion:entities/king_boo/secret_altar
 execute if entity @s[tag=cutscene] run function luigis_mansion:entities/king_boo/cutscene
 execute if entity @s[tag=battle] run function luigis_mansion:entities/king_boo/battle
 tag @s[tag=vanish] add dead

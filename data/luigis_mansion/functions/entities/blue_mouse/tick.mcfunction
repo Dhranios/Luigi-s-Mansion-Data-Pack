@@ -6,7 +6,7 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
 execute if entity @s[tag=spawn] if predicate luigis_mansion:blue_mouse/start_squeeking run tag @s add squeek
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=spawn] run function luigis_mansion:entities/blue_mouse/collide
+execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=spawn] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/blue_mouse/collide
 
 tag @s[tag=fleeing] remove squeek
 tag @s remove fleeing

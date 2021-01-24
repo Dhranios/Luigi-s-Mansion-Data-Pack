@@ -1,3 +1,6 @@
+scoreboard players operation #temp Room = @s Room
+execute as @a[gamemode=!spectator] if score @s Room = #temp Room run tag @s add same_room
+scoreboard players reset #temp Room
 function luigis_mansion:dialog/try
 function luigis_mansion:other/music
 execute if entity @s[gamemode=!spectator] run function luigis_mansion:entities/player/not_spectator
@@ -36,3 +39,5 @@ scoreboard players set @s Walk 0
 scoreboard players set @s Run 0
 scoreboard players set @s Jump 0
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
+
+tag @a[tag=same_room] remove same_room

@@ -33,7 +33,7 @@ execute if data storage luigis_mansion:data current_state.current_data.boos.tabo
 execute if data storage luigis_mansion:data current_state.current_data.boos.tamboorine{room:17} unless entity @e[tag=tamboorine,scores={Room=17}] run summon minecraft:area_effect_cloud 712 102 -31.0 {Tags:["hidden_boo","tamboorine","new"],Duration:2147483647}
 execute if data storage luigis_mansion:data current_state.current_data.boos.turboo{room:17} unless entity @e[tag=turboo,scores={Room=17}] run summon minecraft:area_effect_cloud 712 102 -31.0 {Tags:["hidden_boo","turboo","new"],Duration:2147483647}
 execute if data storage luigis_mansion:data current_state.current_data.boos.underboo{room:17} unless entity @e[tag=underboo,scores={Room=17}] run summon minecraft:area_effect_cloud 712 102 -31.0 {Tags:["hidden_boo","underboo","new"],Duration:2147483647}
-execute unless data storage luigis_mansion:data current_state.current_data.boos.kung_boo{dead:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{kung_boo_trap:1b} unless entity @e[tag=kung_boo_trap,scores={Room=17}] run summon minecraft:area_effect_cloud 712 102 -31.0 {Tags:["hidden_boo","kung_boo_trap","trap","new"],Duration:2147483647}
+execute unless data storage luigis_mansion:data current_state.current_data.boos.kung_boo{room:-1} unless data storage luigis_mansion:data current_state.current_data.technical_data{kung_boo_trap:1b} unless entity @e[tag=kung_boo_trap,scores={Room=17}] run summon minecraft:area_effect_cloud 712 102 -31.0 {Tags:["hidden_boo","kung_boo_trap","trap","new"],Duration:2147483647}
 scoreboard players set @e[tag=hidden_boo,tag=new] Room 17
 scoreboard players set @e[tag=hidden_boo,tag=new] HideTime 0
 tag @e[tag=hidden_boo,tag=new] remove new 

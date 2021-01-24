@@ -14,6 +14,6 @@ execute if entity @s[tag=!dead] store result entity @s Rotation[0] float 1 run s
 execute if entity @s[tag=!dead] store result entity @s Rotation[1] float 1 run scoreboard players get @s HomeRotY
 execute if entity @s[tag=!dead] store result entity @s Pose.Head[0] float 1 run scoreboard players get @s HomeRotY
 data modify entity @s[tag=!dead] Pose.Head[1] set value 0.0f
-data modify entity @s[tag=!dead] Pose.Head[2] set value 0.01f
+data modify entity @s[tag=!dead] Pose.Head[2] set value 1.01f
 tag @s remove moving
 tag @s remove collision

@@ -4,7 +4,7 @@ execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=spawn] run function luigis_mansion:entities/purple_mouse/collide
+execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=spawn] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/purple_mouse/collide
 
 tag @s[tag=fleeing,tag=walk_up_wall] add walk_on_ceiling
 tag @s[tag=fleeing,tag=walk_up_wall] add walk_down_wall

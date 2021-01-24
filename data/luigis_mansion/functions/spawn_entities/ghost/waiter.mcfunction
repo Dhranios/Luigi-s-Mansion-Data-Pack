@@ -12,4 +12,9 @@ scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 execute store result score @e[tag=this_entity,limit=1] HomeY run data get entity @s Pos[1] 100
+data modify entity @e[tag=this_entity,limit=1] Tags append from entity @s Tags[]
+tag @e[tag=this_entity,limit=1] remove ghost_marker
+tag @e[tag=this_entity,limit=1] remove only_forced_spawn
+tag @e[tag=this_entity,limit=1] remove can_spawn
+tag @e[tag=this_entity,limit=1] remove spawn
 tag @e[tag=this_entity,limit=1] remove this_entity

@@ -5,4 +5,4 @@ title @s[tag=!seen_room_name_2] title {"translate":"luigis_mansion:location.parl
 tag @s add seen_room_name
 tag @s add seen_room_name_2
 
-execute unless data storage luigis_mansion:data {found_e_gadd:1b} unless entity @e[tag=e_gadd,scores={Room=2}] positioned 688 111 15 run function luigis_mansion:spawn_entities/e_gadd
+execute unless data storage luigis_mansion:data {found_e_gadd:1b} unless entity @a[tag=meet_e_gadd,limit=1] run tag @s add meet_e_gadd
