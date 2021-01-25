@@ -8,8 +8,8 @@
             "structures": {
                 "structures": {
 					"minecraft:village": {
-						"spacing": 1,
-						"separation": 0,
+						"spacing": 6,
+						"separation": 3,
 						"salt": 10387312
 					}
 				}
