@@ -1,1 +1,0 @@
-execute if entity @s[tag=vacuumable,tag=!ball] run function luigis_mansion:entities/ghost/vacuumable

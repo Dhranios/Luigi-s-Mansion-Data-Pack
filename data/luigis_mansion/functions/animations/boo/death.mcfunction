@@ -1,4 +1,4 @@
-tag @s remove hurt
+tag @s remove boo_hurt
 tag @s add boo_death
 
 execute facing entity @p[gamemode=!spectator] feet run teleport @s ~ ~ ~ ~-180 ~

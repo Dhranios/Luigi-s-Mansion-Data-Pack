@@ -8,10 +8,12 @@ execute if entity @s[tag=!spit] run scoreboard players set #temp Move 1
 execute if entity @s[tag=spit] run function luigis_mansion:entities/shining_ghost/spit
 execute if entity @s[tag=!in_vacuum,tag=!spit] run function luigis_mansion:entities/shining_ghost/move
 execute if entity @s[tag=collision,tag=spit] run tag @p[gamemode=!spectator] add observatory_explosion
+execute if entity @s[tag=collision,tag=spit] run function luigis_mansion:entities/shining_ghost/capture
 tag @s[tag=collision,tag=spit] add dead
 tag @s[tag=collision] remove spit
 tag @s[tag=collision] remove collision
 execute if entity @s[tag=in_vacuum] at @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ run teleport @s ^ ^ ^0.2 ~ ~
+execute if entity @s[tag=in_vacuum] run scoreboard players operation @s KillerID = @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] ID
 execute if entity @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit
 execute if entity @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] run tag @s[tag=in_vacuum] add can_spit_2
 tag @s[tag=!in_vacuum,tag=can_spit_2] add spit

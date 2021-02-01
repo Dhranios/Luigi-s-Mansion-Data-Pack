@@ -1,4 +1,6 @@
 scoreboard players operation #temp Move = @s Move
+scoreboard players operation #temp ID = @s ID
+tag @s add me
 function luigis_mansion:entities/shot_water/move_forward
 scoreboard players reset #temp Move
 scoreboard players add @s Time 1
@@ -10,3 +12,5 @@ tag @s[tag=hit] add dead
 execute at @s as @e[distance=..0.7,tag=!shot_water] run function luigis_mansion:items/poltergust_3000/effect_on_entity/water
 execute at @s unless block ~ ~ ~ minecraft:air run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
 execute at @s run function luigis_mansion:items/poltergust_3000/interact
+scoreboard players reset #temp ID
+tag @s remove me

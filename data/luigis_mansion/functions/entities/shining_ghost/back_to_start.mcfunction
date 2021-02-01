@@ -17,3 +17,4 @@ tag @s remove in_vacuum
 tag @s remove collision
 tag @s remove played_sound
 scoreboard players reset @s Dialog
+scoreboard players reset @s KillerID

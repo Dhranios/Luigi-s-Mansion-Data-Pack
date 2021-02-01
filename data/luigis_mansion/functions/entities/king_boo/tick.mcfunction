@@ -1,5 +1,5 @@
-execute if entity @s[tag=dying,tag=boo_death] run function luigis_mansion:animations/boo/death
-execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:animations/boo/death
+execute if entity @s[tag=dying,tag=boo_death] run function luigis_mansion:entities/ghost/death
+execute if entity @s[tag=dying,tag=boo_hurt] run function luigis_mansion:entities/ghost/death
 
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.king_boo.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/king_boo

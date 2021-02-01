@@ -1,4 +1,6 @@
 scoreboard players operation #temp Room = @s Room
+scoreboard players operation #temp ID = @s ID
+tag @s add me
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["interact","poltergust"]}
 execute unless entity @s[scores={Element=1..}] unless entity @s[nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] run function luigis_mansion:items/poltergust_3000/no_element
 scoreboard players reset @s[scores={Element=1..},nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}}}] Element
@@ -23,3 +25,5 @@ tag @s remove water
 tag @s remove ice
 kill @e[tag=interact,limit=1,tag=!shot_fire,tag=!shot_water,tag=!shot_ice]
 scoreboard players reset #temp Room
+scoreboard players reset #temp ID
+tag @s remove me

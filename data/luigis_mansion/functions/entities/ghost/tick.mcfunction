@@ -1,8 +1,8 @@
-tag @s[scores={Health=..0}] add dying
-execute if entity @s[tag=dying,tag=normal_death] run function luigis_mansion:animations/ghost/death
-execute if entity @s[tag=dying,tag=hurt] run function luigis_mansion:animations/ghost/death
-execute if entity @s[tag=dying,tag=element_death] run function luigis_mansion:animations/ghost/death_element
-execute if entity @s[tag=dying,tag=element_hurt] run function luigis_mansion:animations/ghost/death_element
+execute unless entity @s[scores={Health=1..}] run tag @s add dying
+execute if entity @s[tag=dying,tag=normal_death] run function luigis_mansion:entities/ghost/death
+execute if entity @s[tag=dying,tag=hurt] run function luigis_mansion:entities/ghost/death
+execute if entity @s[tag=dying,tag=element_death] run function luigis_mansion:entities/ghost/death_element
+execute if entity @s[tag=dying,tag=element_hurt] run function luigis_mansion:entities/ghost/death_element
 scoreboard players operation #temp Move = @s Move
 execute unless score @s Time matches 1.. run tag @s[tag=disappear_next_tick,tag=vanish] add disappear
 execute unless score @s Time matches 1.. run tag @s[tag=vanish] add disappear_next_tick
