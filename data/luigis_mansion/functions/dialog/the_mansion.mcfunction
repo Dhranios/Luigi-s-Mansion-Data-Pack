@@ -25,4 +25,4 @@ execute if entity @s[scores={Dialog=1520}] if score #players Totals matches 2.. 
 execute if entity @s[scores={Dialog=1672}] as @a run function luigis_mansion:entities/e_gadd/to_training
 execute if entity @s[scores={Dialog=1672}] run advancement grant @a only luigis_mansion:lab/lab
 execute if entity @s[scores={Dialog=1672}] run advancement grant @a only luigis_mansion:lab/underground_lab
-execute if entity @s[scores={Dialog=1672}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/lab/underground_lab
+execute if entity @s[scores={Dialog=1672}] if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/lab/underground_lab

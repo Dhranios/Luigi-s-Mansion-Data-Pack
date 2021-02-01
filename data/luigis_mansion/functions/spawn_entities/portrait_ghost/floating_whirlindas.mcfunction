@@ -15,7 +15,7 @@ scoreboard players operation @e[tag=this_entity,limit=1] Health = #temp LastHeal
 scoreboard players reset #temp LastHealth
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevHealth = @s Health
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
-scoreboard players set @e[tag=this_entity,limit=1] Move 4
+scoreboard players set @e[tag=this_entity,limit=1] Move 1
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0

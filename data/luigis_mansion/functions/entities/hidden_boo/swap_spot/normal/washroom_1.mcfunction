@@ -1,22 +1,14 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_1"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_2"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_3"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_4"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_5"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_6"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_7"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_8"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_9"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["choice","option_10"]}
-tag @e[type=minecraft:area_effect_cloud,tag=choice,limit=1,sort=random] add selected
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_1,limit=1] run teleport @s 666 104 32
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_2,limit=1] run teleport @s 670 105 32
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_3,limit=1] run teleport @s 670 104 30
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_4,limit=1] run teleport @s 666 103 34
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_5,limit=1] run teleport @s 668 105 36
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_6,limit=1] run teleport @s 668 102 34
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_7,limit=1] run teleport @s 667 102 30
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_8,limit=1] run teleport @s 666 102 27
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_9,limit=1] run teleport @s 666 105 27
-execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,tag=selected,tag=option_10,limit=1] run teleport @s 666 103 30
+summon minecraft:area_effect_cloud 666 104 32 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 670 105 32 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 670 104 30 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 666 103 34 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 668 105 36 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 668 102 34 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 667 102 30 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 666 102 27 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 666 105 27 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 666 103 30 {Tags:["choice"]}
+execute as @e[type=minecraft:area_effect_cloud,tag=choice] at @s if entity @e[tag=hidden_boo,distance=..1,limit=1] run kill @s
+execute at @e[type=minecraft:area_effect_cloud,tag=choice,limit=1,sort=random] run teleport @s ~ ~ ~
+execute if entity @e[type=minecraft:area_effect_cloud,tag=choice,limit=1] add noticed_by_boo_radar
 kill @e[type=minecraft:area_effect_cloud,tag=choice]

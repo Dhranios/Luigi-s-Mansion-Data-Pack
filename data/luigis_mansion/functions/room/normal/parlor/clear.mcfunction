@@ -1,5 +1,5 @@
 function luigis_mansion:room/normal/parlor/turn_on_lights
-execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/normal/parlor
+execute if entity @a[tag=looking_at_map,limit=1] run function luigis_mansion:items/gameboy_horror/map/display/normal/parlor
 function luigis_mansion:room/normal/parlor/remove_blockade
 playsound luigis_mansion:block.chest.spawn block @a 688 111 7 2
 stopsound @a[scores={Room=2}] music

@@ -9,7 +9,7 @@ tag @s remove me
 # Prevent changing staircases from messing up spawning height
 execute if entity @s[tag=spawn,tag=hallway] unless block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~1 ~
 execute if entity @s[tag=spawn,tag=hallway] if block ~ ~ ~ minecraft:stone_button[powered=true] run teleport @s ~ ~1 ~
-execute if entity @s[tag=spawn,scores={GhostGuyCouple=1..}] run function luigis_mansion:entities/ghost_marker/ghost_guy_couple
-execute at @s[tag=spawn] unless entity @s[scores={GhostGuyCouple=1..}] run function luigis_mansion:entities/ghost_marker/selection
+execute if entity @s[tag=spawn,scores={GhostGuyCouple=-2147483648..}] run function luigis_mansion:entities/ghost_marker/ghost_guy_couple
+execute at @s[tag=spawn] unless entity @s[scores={GhostGuyCouple=-2147483648..}] run function luigis_mansion:entities/ghost_marker/selection
 
 execute unless entity @s[x_rotation=90] run function luigis_mansion:entities/ghost_marker/move

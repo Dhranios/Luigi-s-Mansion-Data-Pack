@@ -1,4 +1,4 @@
-execute if score #butlers_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=19},tag=!optional_ghost] unless entity @e[tag=shivers,limit=1] run function luigis_mansion:room/hidden/butlers_room/clear
+execute if score #butlers_room Wave matches 1 unless entity @e[tag=ghost,scores={Room=19},tag=!optional_ghost] unless entity @e[tag=shivers,limit=1] unless block 668 102 21 minecraft:air{loaded:0b} unless block 668 102 -2 minecraft:air{loaded:0b} unless block 702 102 33 minecraft:air{loaded:0b} run function luigis_mansion:room/hidden/butlers_room/clear
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.butlers_room{cleared:1b} if entity @a[tag=!blackout] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/hidden/butlers_room/wave_1
 execute if entity @a[tag=blackout] unless score #butlers_room Wave matches 1.. run function luigis_mansion:room/hidden/butlers_room/blackout
 

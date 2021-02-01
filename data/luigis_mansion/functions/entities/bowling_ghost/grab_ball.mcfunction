@@ -7,7 +7,7 @@ execute if entity @s[scores={Time=10}] run playsound luigis_mansion:entity.bowli
 execute if entity @s[scores={Time=10}] run summon minecraft:armor_stand ^ ^1.2 ^ {Tags:["bowling_ball","held"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:1}}],Invisible:1b,NoGravity:1b,DisabledSlots:2039583}
 execute if entity @s[scores={Time=10}] positioned ^ ^1.2 ^ as @e[distance=..0.1,tag=bowling_ball] unless entity @s[scores={GhostNr=1..}] positioned ^ ^-1.2 ^ run scoreboard players operation @s GhostNr = @e[tag=bowling_ghost,distance=..0.1] GhostNr
 execute if entity @s[scores={Time=11..20}] if score #mirrored Selected matches 0 run function luigis_mansion:entities/bowling_ghost/ball_position/normal
-execute if entity @s[scores={Time=11..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/bowling_ghost/ball_position/hidden
+execute if entity @s[scores={Time=11..20}] if score #mirrored Selected matches 1 run function luigis_mansion:entities/bowling_ghost/ball_position/mirrored
 tag @s[scores={Time=20}] add grabbed_ball
 data merge entity @s[scores={Time=20..}] {Pose:{RightArm:[0.0f,135.0f,50.0f],LeftArm:[0.0f,-90.0f,-20.0f]}}
 scoreboard players set @s[scores={Time=20..}] AnimationProg 0

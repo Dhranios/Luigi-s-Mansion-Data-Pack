@@ -53,8 +53,8 @@ execute if score @s Wave matches 24 run summon minecraft:area_effect_cloud 695 1
 execute if score @s Wave matches 25 run summon minecraft:area_effect_cloud 694.0 102 47 {Tags:["target"],Duration:1}
 execute if score @s Wave matches 26 run summon minecraft:area_effect_cloud 691.0 102 51 {Tags:["target"],Duration:1}
 execute if score @s Wave matches 27 run summon minecraft:area_effect_cloud 686 102 43 {Tags:["target"],Duration:1}
-scoreboard players set #temp Move 1
+scoreboard players operation #temp Move = @s Move
 execute facing entity @e[tag=target,limit=1] feet as @e[tag=partner,limit=1] positioned as @s run function luigis_mansion:entities/ghost/move_forward
-scoreboard players set #temp Move 1
+scoreboard players operation #temp Move = @s Move
 execute facing entity @e[tag=target,limit=1] feet run function luigis_mansion:entities/ghost/move_forward
 kill @e[tag=target,limit=1,type=minecraft:area_effect_cloud]

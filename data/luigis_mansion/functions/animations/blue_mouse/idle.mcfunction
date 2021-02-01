@@ -1,2 +1,2 @@
 execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/blue_mouse/normal/idle
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/blue_mouse/hidden/idle
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/blue_mouse/mirrored/idle

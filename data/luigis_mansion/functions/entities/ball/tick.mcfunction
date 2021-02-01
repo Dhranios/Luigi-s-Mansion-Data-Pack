@@ -7,7 +7,7 @@ tag @s[tag=collision,tag=chauncey,tag=!spit,tag=vacuumable] add done
 tag @s[tag=collision,tag=chauncey,tag=spit,tag=vacuumable] add dead
 tag @s[tag=collision,tag=chauncey,tag=!done,tag=vacuumable] remove in_vacuum
 tag @s[tag=collision,tag=shadow,tag=spit] add dead
-tag @s[tag=shadow,tag=!spit,tag=!in_vacuum] add dead
+tag @s[tag=shadow,tag=!spit,tag=!in_vacuum,tag=!can_spit_2] add dead
 scoreboard players remove @s[tag=spike_ball] Move 1
 scoreboard players set @s[tag=in_vacuum,tag=spike_ball] Move 0
 tag @s[tag=collision,tag=boo] add dead

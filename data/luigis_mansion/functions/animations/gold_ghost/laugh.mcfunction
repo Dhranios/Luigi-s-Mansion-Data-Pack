@@ -1,2 +1,2 @@
 execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/gold_ghost/normal/laugh
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/gold_ghost/hidden/laugh
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/gold_ghost/mirrored/laugh

@@ -1,3 +1,4 @@
+execute as @a[scores={Room=1..},tag=!looking_at_map] at @s run function luigis_mansion:room/normal/floor_header
 execute if entity @a[scores={Room=0}] run function luigis_mansion:room/normal/door/foyer
 execute if entity @a[gamemode=!spectator,x=706,y=102,z=-2,dx=12,dy=15,dz=19] run function luigis_mansion:room/normal/foyer/tick
 execute unless entity @a[gamemode=!spectator,x=706,y=102,z=-2,dx=12,dy=15,dz=19] if entity @a[gamemode=!spectator,x=699,y=111,z=-2,dx=19,dy=6,dz=19] run function luigis_mansion:room/normal/foyer/tick

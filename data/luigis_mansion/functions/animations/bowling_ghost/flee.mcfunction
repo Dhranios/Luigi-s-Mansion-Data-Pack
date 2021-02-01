@@ -1,2 +1,2 @@
 execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/bowling_ghost/normal/flee
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/bowling_ghost/hidden/flee
+execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/bowling_ghost/mirrored/flee

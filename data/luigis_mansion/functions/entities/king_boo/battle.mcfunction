@@ -1,13 +1,13 @@
 scoreboard players add @s Wave 1
-execute if entity @s[tag=!hurt,tag=fleeing,tag=!dying] run function luigis_mansion:entities/boo/hurt
-execute if entity @s[tag=hurt,tag=!dying] run function luigis_mansion:entities/boo/hurt
+execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_mansion:entities/boo/hurt
+execute if entity @s[tag=boo_hurt,tag=!dying] run function luigis_mansion:entities/boo/hurt
 execute if entity @s[tag=fleeing] run function luigis_mansion:entities/boo/flee
 execute at @s[scores={Wave=1..120}] facing entity @e[tag=bowser_body,limit=1] feet rotated ~-180 0 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={Wave=121..}] facing entity @e[tag=bowser_body,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!hurt] run function luigis_mansion:entities/boo/move_forward
+execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt] run function luigis_mansion:entities/boo/move_forward
 
-scoreboard players set @s[tag=!hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] Time 0
-scoreboard players reset @s[tag=!hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime
+scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] Time 0
+scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime
 tag @s remove vanish
 tag @s remove turned
 tag @s remove rotated

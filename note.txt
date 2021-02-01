@@ -15,7 +15,7 @@ hidden   | 1    | 1     | 3ds_remake   | vanilla/hidden | luigis_mansion_3ds_rem
 original | ?    | ?     | beta_mansion |                | luigis_beta_mansion       | "file/Luigi's Beta Mansion"
 
 == Mansion data variables ==
-Do define a new mansion, you need to set the mansion_type value, mansion_data_index is for saved data, all mansions with the same data index use the same save data.
+To define a new mansion, you need to set the mansion_type value, mansion_data_index is for saved data, all mansions with the same data index use the same save data.
 
 #mansion_type (int): Defines the mansion that is loaded.
 #mansion_data_index (int): Defines the save data ID that is used.

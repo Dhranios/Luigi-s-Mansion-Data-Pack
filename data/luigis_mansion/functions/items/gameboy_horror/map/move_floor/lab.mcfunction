@@ -1,0 +1,1 @@
+execute if entity @s[nbt={Dimension:"minecraft:overworld"}] run function luigis_mansion:items/gameboy_horror/map/move_floor/lab/move
