@@ -14,7 +14,10 @@ scoreboard players add @s[scores={GBHCall=1..},tag=!gameboy_horror_selected] GBH
 execute if entity @s[tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/show_ghost_presence
 
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=hidden_boo] if score @s Room = #temp Room run tag @s add this_room
+execute as @e[tag=hidden_boo] if score @s Room = #temp Room run tag @s add this_room_boo
+execute as @e[tag=boo,tag=!dark_room,tag=ghost] if score @s Room = #temp Room run tag @s add this_room_boo
 scoreboard players reset #temp Room
-execute if entity @e[tag=hidden_boo,tag=this_room,tag=noticed_by_boo_radar] positioned ~ ~0.5 ~ run function luigis_mansion:items/gameboy_horror/boo_radar
-tag @e[tag=hidden_boo] remove this_room
+execute if entity @e[tag=this_room_boo] positioned ~ ~0.5 ~ run function luigis_mansion:items/gameboy_horror/boo_radar
+tag @e[tag=hidden_boo] remove this_room_boo
+tag @e[tag=boo,tag=ghost] remove this_room_boo
+tag @s remove already_radared
