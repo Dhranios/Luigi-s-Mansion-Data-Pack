@@ -18,4 +18,4 @@ scoreboard players set @s[x=672.5,y=102,z=-4.5,distance=..0.7,scores={Time=8}] T
 teleport @s[scores={Time=9}] ~ ~ ~ facing 668 102 -7
 scoreboard players set @s[x=668.5,y=102,z=-6.5,distance=..0.7,scores={Time=9}] Time 10
 teleport @s[scores={Time=10}] ~ ~ ~ facing 665 102 -7
-tag @s[x=665.5,y=102,z=-6.5,distance=..0.7] add disappear
+tag @s[x=665.5,y=102,z=-6.5,distance=..0.7] add remove_from_existence

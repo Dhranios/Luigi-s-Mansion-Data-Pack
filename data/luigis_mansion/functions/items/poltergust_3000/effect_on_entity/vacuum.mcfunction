@@ -20,8 +20,8 @@ execute if entity @s[tag=elemental_ghost,scores={SpawnTime=21..},tag=hurt_elemen
 execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!item] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[tag=me,distance=..1.2,limit=1] run tag @s add normal_death
 execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!item,tag=!ghost] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[tag=me,distance=..1.2,limit=1] run tag @s add dead
 execute if entity @s[tag=vacuumable,tag=!spark,tag=!ball,tag=!boolossus,tag=!item] unless entity @s[tag=haunted_object,tag=!moving,tag=!haunted_music_sheet] positioned as @s if entity @a[tag=me,distance=..1.2,limit=1] run function luigis_mansion:items/poltergust_3000/latch_onto_ghost
-tag @s[tag=ghost,scores={VulnerableTime=2..},tag=!dead,tag=!vanish,tag=!appear] add hurt
-tag @s[tag=ghost,tag=hurt,tag=!vanish] add in_vacuum
+tag @s[tag=ghost,scores={VulnerableTime=2..},tag=!dead,tag=!vanish,tag=!appear,tag=!boo,tag=!boolossus,tag=!king_boo] add hurt
+tag @s[tag=ghost,tag=hurt,tag=!vanish,tag=!boo,tag=!boolossus,tag=!king_boo] add in_vacuum
 tag @s[tag=boo,tag=!dead] add boo_hurt
 tag @s[tag=boo,tag=!dead] add in_vacuum
 tag @s[tag=king_boo,tag=battle,tag=!dead] add boo_hurt

@@ -12,6 +12,7 @@ execute if score #temp LastHealth matches -1 if score #extra_health Selected mat
 scoreboard players operation @e[tag=this_entity,limit=1] Health = #temp LastHealth
 scoreboard players reset #temp LastHealth
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevHealth = @s Health
+scoreboard players set @e[tag=this_entity,limit=1] Room 0
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=this_entity,limit=1] Move 6
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0

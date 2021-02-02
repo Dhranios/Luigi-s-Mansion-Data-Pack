@@ -14,7 +14,7 @@ execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevH
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 7
 scoreboard players set @e[tag=this_entity,limit=1] Move 5
 scoreboard players set @e[tag=this_entity,limit=1] Sound 0
-scoreboard players set @e[tag=this_entity,limit=1] Room 60
+scoreboard players set @e[tag=this_entity,limit=1] Room 0
 scoreboard players set @e[tag=this_entity,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,limit=1] VulnerableTime 0
 tag @e[tag=this_entity,limit=1] remove this_entity

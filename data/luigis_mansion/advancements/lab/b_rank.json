@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:brick",
-			"nbt": "{CustomModelData:25}"
+			"nbt": "{CustomModelData:28}"
         },
         "show_toast": false,
         "title": {
