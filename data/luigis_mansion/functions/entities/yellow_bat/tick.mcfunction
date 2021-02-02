@@ -4,7 +4,7 @@ execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/yellow_bat/collide
+execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/yellow_bat/collide
 
 tag @s[scores={FlyTime=600..}] add turn_back
 tag @s[tag=fleeing] add turn_back

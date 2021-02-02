@@ -3,7 +3,7 @@ execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 tag @s[tag=dead,scores={HurtTime=1..}] add explode
 
-execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] run tag @s[tag=spawn] add explode
+execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[tag=spawn] run function luigis_mansion:entities/spark/collide
 
 execute if entity @s[tag=!spawn,tag=!turned] run function luigis_mansion:entities/spark/initial_rotation
 scoreboard players operation #temp Room = @s Room

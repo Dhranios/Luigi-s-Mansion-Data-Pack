@@ -38,6 +38,7 @@ execute if entity @s[scores={Dialog=1166}] run tellraw @a[tag=same_room] {"trans
 execute if entity @s[scores={Dialog=1166}] run scoreboard players enable @a[tag=same_room] Toad1Choice
 execute if entity @s[scores={Dialog=1168}] as @a[scores={Toad1Choice=1},limit=1] run function luigis_mansion:entities/player/save_mansion
 execute if entity @s[scores={Dialog=1168}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.yes.3"}]}
+execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=2}] run advancement grant @a[scores={Toad1Choice=2}] only luigis_mansion:challenges/go_help_yourself foyer
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=2}] run playsound luigis_mansion:entity.toad.mama_mia neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=946}] if entity @a[scores={Toad1Choice=2}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_1.no.1"}]}
 execute if entity @s[scores={Dialog=978}] if entity @a[scores={Toad1Choice=2}] run scoreboard players set @s Dialog 1216

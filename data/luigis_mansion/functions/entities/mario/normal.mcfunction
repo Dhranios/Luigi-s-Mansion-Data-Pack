@@ -77,6 +77,9 @@ execute if entity @s[scores={Dialog=639}] if score #temp Money matches 50000..59
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 60000..69999 run advancement grant @a only luigis_mansion:lab/c_rank
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 70000..149999 run advancement grant @a only luigis_mansion:lab/b_rank
 execute if entity @s[scores={Dialog=639}] if score #temp Money matches 150000.. run advancement grant @a only luigis_mansion:lab/a_rank
+execute if entity @s[scores={Dialog=639}] if data storage luigis_mansion:data current_state.current_data.money{gold_coin:0,bill:0,gold_bar:0,blue_sapphire:0,green_emerald:0,red_ruby:0,red_diamond:1,blue_diamond:0,gold_diamond:0,small_pearl:0,medium_pearl:0,big_pearl:0} run advancement grant @a only luigis_mansion:challenges/spare_some_change
+execute if entity @s[scores={Dialog=639}] if score #temp Money matches 142390.. run advancement grant @a only luigis_mansion:challenges/making_wario_jealous
+execute if entity @s[scores={Dialog=639}] if score #temp Money matches 186440.. run advancement grant @a only luigis_mansion:challenges/scrooge_mcduck_it_up
 execute if entity @s[scores={Dialog=639}] run scoreboard players reset #temp Money
 execute if entity @s[scores={Dialog=639}] run function #luigis_mansion:cleared_mansion
 execute if entity @s[scores={Dialog=639}] run function luigis_mansion:entities/player/reset_mansion

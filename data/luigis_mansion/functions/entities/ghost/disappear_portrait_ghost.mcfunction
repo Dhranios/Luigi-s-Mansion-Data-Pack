@@ -3,6 +3,7 @@ tag @s remove fleeing
 tag @s remove hurt
 tag @s remove hurt_animation
 tag @s remove vanish
+tag @s remove disappear_next_tick
 tag @s remove disappear
 tag @s remove stunable
 scoreboard players set @s VulnerableTime 0

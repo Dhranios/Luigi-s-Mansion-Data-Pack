@@ -10,6 +10,8 @@ execute if entity @s[tag=dead] store result entity @s Rotation[1] float 1 run sc
 execute if entity @s[tag=dead] store result entity @s Pose.RightArm[0] float 1 run scoreboard players get @s HomeRotY
 execute if entity @s[tag=dead] store result entity @s Pose.LeftArm[0] float 1 run scoreboard players get @s HomeRotY
 execute if entity @s[tag=dead] run scoreboard players set @s WaitTime -60
+execute if entity @e[tag=melody_pianissima,limit=1] run data modify entity @s[tag=dead] ArmorItems[3].tag.attacked_by set value []
+execute if entity @e[tag=melody_pianissima,limit=1] run tag @s[tag=dead] remove normal_death
 execute if entity @e[tag=melody_pianissima,limit=1] run tag @s[tag=dead] remove dead
 
 scoreboard players set #temp Move 5

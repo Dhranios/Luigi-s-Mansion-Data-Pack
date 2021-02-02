@@ -4,3 +4,5 @@ execute store result storage luigis_mansion:data current_state.ghost_caught.caug
 
 execute store result score #temp Time run data get storage luigis_mansion:data current_state.ghost_caught.total
 execute store result storage luigis_mansion:data current_state.ghost_caught.total int 1 run scoreboard players add #temp Time 1
+
+execute as @a[tag=killer,limit=1] run function luigis_mansion:entities/ghost/exterminate

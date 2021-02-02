@@ -23,6 +23,7 @@ execute if entity @s[scores={Dialog=810}] if entity @a[scores={Toad4Choice=1}] i
 execute if entity @s[scores={Dialog=810}] if entity @a[scores={Toad4Choice=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_4.yes.3.more"}]}
 execute if entity @s[scores={Dialog=874}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {toad_4_happy:1b}
 execute if entity @s[scores={Dialog=874}] if entity @a[scores={Toad4Choice=1}] run scoreboard players set @s Dialog 633
+execute if entity @s[scores={Dialog=706}] if entity @a[scores={Toad4Choice=2}] run advancement grant @a[scores={Toad4Choice=2}] only luigis_mansion:challenges/go_help_yourself courtyard
 execute if entity @s[scores={Dialog=706}] if entity @a[scores={Toad4Choice=2}] run playsound luigis_mansion:entity.toad.mama_mia neutral @a[tag=same_room] ~ ~ ~ 1
 execute if entity @s[scores={Dialog=706}] if entity @a[scores={Toad4Choice=2}] run tag @s remove happy
 execute if entity @s[scores={Dialog=706}] if entity @a[scores={Toad4Choice=2}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_4.no.1"}]}

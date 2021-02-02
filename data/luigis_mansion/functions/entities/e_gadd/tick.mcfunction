@@ -1,6 +1,6 @@
 execute if entity @s[scores={Room=0}] run function luigis_mansion:dialog/leaving_the_lab
 execute if entity @s[scores={Room=-1}] if entity @a[advancements={luigis_mansion:lab/underground_lab=false}] run function luigis_mansion:dialog/the_mansion
-execute if entity @s[scores={Room=-1}] if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_call:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_talk:1b} run function luigis_mansion:dialog/released_boos_talk
+execute if entity @s[scores={Room=-1}] if entity @a[scores={Room=-1}] if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_call:1b} unless data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_talk:1b} run function luigis_mansion:dialog/released_boos_talk
 execute if entity @s[scores={Room=-1},tag=talk] if entity @a[advancements={luigis_mansion:lab/underground_lab=true}] unless data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_call:1b} run function luigis_mansion:dialog/underground_lab
 execute if entity @s[scores={Room=-1},tag=talk] if entity @a[advancements={luigis_mansion:lab/underground_lab=true}] if data storage luigis_mansion:data current_state.current_data.technical_data{released_boos_call:1b,released_boos_talk:1b} run function luigis_mansion:dialog/underground_lab
 execute if entity @s[scores={Room=-2}] run function luigis_mansion:dialog/training_room

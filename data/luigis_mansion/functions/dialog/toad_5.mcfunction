@@ -18,6 +18,7 @@ execute if entity @s[scores={Dialog=532,Toad5Choice=1}] if score #players Totals
 execute if entity @s[scores={Dialog=532,Toad5Choice=1}] if score #players Totals matches 2.. run tellraw @a[scores={Room=44}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_5.yes.5.more"}]}
 execute if entity @s[scores={Dialog=692,Toad5Choice=1}] run tellraw @a[scores={Room=44}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_5.yes.6"}]}
 execute if entity @s[scores={Dialog=844,Toad5Choice=1}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {telephone_2:1b}
+execute if entity @s[scores={Dialog=74,Toad5Choice=2}] run advancement grant @a[scores={Toad5Choice=2}] only luigis_mansion:challenges/go_help_yourself telephone_room
 execute if entity @s[scores={Dialog=74,Toad5Choice=2}] run tellraw @a[scores={Room=44}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.unknown","color":"green"},{"translate":"luigis_mansion:dialog.toad_5.no.1"}]}
 execute if entity @s[scores={Dialog=82,Toad5Choice=2}] run scoreboard players set @s Dialog 843
 execute if entity @s[scores={Dialog=844}] run scoreboard players set @a Toad5Choice 0

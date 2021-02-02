@@ -17,6 +17,7 @@ execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=1}] i
 execute if entity @s[scores={Dialog=194}] if entity @a[scores={Toad3Choice=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_3.yes.2"}]}
 execute if entity @s[scores={Dialog=402}] if entity @a[scores={Toad3Choice=1}] if score #mansion_type Selected matches 0 run function luigis_mansion:room/normal/washroom_1/clear
 execute if entity @s[scores={Dialog=402}] if entity @a[scores={Toad3Choice=1}] if score #mansion_type Selected matches 1 run function luigis_mansion:room/hidden/washroom_1/clear
+execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=2}] run advancement grant @a[scores={Toad3Choice=2}] only luigis_mansion:challenges/go_help_yourself washroom_1
 execute if entity @s[scores={Dialog=122}] if entity @a[scores={Toad3Choice=2}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.toad","color":"green"},{"translate":"luigis_mansion:dialog.toad_3.no.1"}]}
 execute if entity @s[scores={Dialog=146}] if entity @a[scores={Toad3Choice=2}] run scoreboard players set @s Dialog 444
 execute if entity @s[scores={Dialog=442}] run scoreboard players set @a Toad3Choice 0

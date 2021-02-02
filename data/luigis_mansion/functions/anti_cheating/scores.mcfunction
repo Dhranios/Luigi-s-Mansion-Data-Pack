@@ -50,6 +50,7 @@ scoreboard objectives add LastTotalDamage dummy
 scoreboard objectives add Loaded dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add PunchingBag dummy
+scoreboard objectives add MansionChoice trigger
 scoreboard objectives add MelodyChoice trigger
 scoreboard objectives add Money dummy
 scoreboard objectives add Move dummy
