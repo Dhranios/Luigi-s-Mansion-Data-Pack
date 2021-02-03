@@ -1,4 +1,5 @@
 execute unless score #telephone_room Ticking matches 1 run function #luigis_mansion:room/hidden/telephone_room/load
+execute as @a[x=698,y=120,z=-10,dx=24,dy=6,dz=35] unless entity @s[scores={Room=44}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=698,y=120,z=-10,dx=24,dy=6,dz=35] run scoreboard players set @s Room 44
 
 execute as @a[gamemode=!spectator,x=700,y=120,z=-8,dx=20,dy=6,dz=31] run function luigis_mansion:room/hidden/telephone_room/tick_per_player

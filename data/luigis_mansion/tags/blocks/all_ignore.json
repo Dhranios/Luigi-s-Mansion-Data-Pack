@@ -48,6 +48,7 @@
         "minecraft:tripwire_hook",
         "minecraft:void_air",
         "minecraft:wall_torch",
-        "minecraft:water"
+        "minecraft:water",
+        "minecraft:glow_lichen"
     ]
 }

@@ -1,4 +1,5 @@
 execute unless score #bottom_of_the_well Ticking matches 1 run function #luigis_mansion:room/normal/bottom_of_the_well/load
+execute as @a[x=645,y=93,z=-10,dx=6,dy=8,dz=11] unless entity @s[scores={Room=27}] run scoreboard players operation @s LastRoom = @s Room
 execute as @e[type=!minecraft:item_frame,x=645,y=93,z=-10,dx=6,dy=8,dz=11] run scoreboard players set @s Room 27
 tag @e[tag=ghost,scores={Room=27}] add hallway
 
