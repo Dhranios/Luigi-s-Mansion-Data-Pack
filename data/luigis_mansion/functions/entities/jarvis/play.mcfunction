@@ -48,7 +48,7 @@ execute if entity @s[scores={Dialog=857}] if score #mansion_type Selected matche
 execute if entity @s[scores={Dialog=857}] if score #mansion_type Selected matches 1 run function luigis_mansion:room/hidden/ceramics_studio/add_blockade
 execute if entity @s[scores={Dialog=857..1511}] as @a[tag=same_room] unless entity @s[scores={MusicType=37}] run function luigis_mansion:other/music/set/mini_game
 tag @s[scores={Dialog=857}] add can_freeze
-scoreboard players set @s[scores={Dialog=857}] Time 0
+scoreboard players set @s[scores={Dialog=857}] Dialog 0
 execute if entity @s[scores={Dialog=976}] run function #luigis_mansion:entities/jarvis/switch_jar
 tag @s[scores={Dialog=976}] add appeared
 scoreboard players set @s[scores={Dialog=976..1106},tag=frozen] Dialog 1106
@@ -78,7 +78,7 @@ tag @s[scores={Dialog=1526}] add appeared
 scoreboard players set @s[scores={Dialog=1526..1566},tag=frozen] Dialog 1566
 tag @s[scores={Dialog=1566}] remove appeared
 tag @s[scores={Dialog=1566}] remove can_freeze
-scoreboard players add @s[tag=frozen] Time 1
+scoreboard players add @s[tag=frozen] Dialog 1
 tag @s[tag=frozen] remove appeared
 tag @s[tag=frozen] remove frozen
 
@@ -92,30 +92,30 @@ tag @s[scores={Dialog=1712}] remove appeared
 tag @s[scores={Dialog=1752}] add appeared
 execute if entity @s[scores={Dialog=1752..2033}] as @a[tag=same_room] unless entity @s[scores={MusicType=23}] run scoreboard players set @s Music 0
 execute if entity @s[scores={Dialog=1752..2033}] as @a[tag=same_room] unless entity @s[scores={MusicType=23}] run scoreboard players set @s MusicType 23
-execute if entity @s[scores={Dialog=1762,Time=0}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.0"}]}
-execute if entity @s[scores={Dialog=1762,Time=0}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.0.more"}]}
-execute if entity @s[scores={Dialog=1762,Time=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.1"}]}
-execute if entity @s[scores={Dialog=1762,Time=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.1.more"}]}
-execute if entity @s[scores={Dialog=1762,Time=2}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.2"}]}
-execute if entity @s[scores={Dialog=1762,Time=2}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.2.more"}]}
-execute if entity @s[scores={Dialog=1762,Time=3}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.3"}]}
-execute if entity @s[scores={Dialog=1762,Time=3}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.3.more"}]}
-execute if entity @s[scores={Dialog=1762,Time=4}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.4"}]}
-execute if entity @s[scores={Dialog=1762,Time=4}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.4.more"}]}
-execute if entity @s[scores={Dialog=1762,Time=5}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.5"}]}
-execute if entity @s[scores={Dialog=1762,Time=5}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.5.more"}]}
-execute if entity @s[scores={Dialog=1762,Time=6}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.6"}]}
-execute if entity @s[scores={Dialog=1762,Time=6}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.6.more"}]}
-execute if entity @s[scores={Dialog=1762,Time=7}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.7"}]}
-execute if entity @s[scores={Dialog=1762,Time=7}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.7.more"}]}
-execute if entity @s[scores={Dialog=1810,Time=0..6}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.no.1"}]}
-execute if entity @s[scores={Dialog=1810,Time=0..6}] if score #players Totals matches 2..3 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.no.1.more"}]}
-execute if entity @s[scores={Dialog=1810,Time=0..6}] if score #players Totals matches 4.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.no.1.even_more"}]}
-execute if entity @s[scores={Dialog=1898,Time=0..6}] if score #mansion_type Selected matches 0 as @a[tag=same_room] run teleport @s 711 120 30 -180 0
-execute if entity @s[scores={Dialog=1898,Time=0..6}] if score #mansion_type Selected matches 1 as @a[tag=same_room] run teleport @s 711 120 -15 0 0
-execute if entity @s[scores={Dialog=1810,Time=7}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.yes.1"}]}
-execute if entity @s[scores={Dialog=1874,Time=7}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.yes.2"}]}
-execute if entity @s[scores={Dialog=1874,Time=7}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.yes.2.more"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=0}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.0"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=0}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.0.more"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=1}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.1"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=1}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.1.more"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=2}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.2"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=2}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.2.more"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=3}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.3"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=3}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.3.more"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=4}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.4"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=4}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.4.more"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=5}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.5"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=5}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.5.more"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=6}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.6"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=6}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.6.more"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=7}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.7"}]}
+execute if entity @s[scores={Dialog=1762,Dialog=7}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.3.7.more"}]}
+execute if entity @s[scores={Dialog=1810,Dialog=0..6}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.no.1"}]}
+execute if entity @s[scores={Dialog=1810,Dialog=0..6}] if score #players Totals matches 2..3 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.no.1.more"}]}
+execute if entity @s[scores={Dialog=1810,Dialog=0..6}] if score #players Totals matches 4.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.no.1.even_more"}]}
+execute if entity @s[scores={Dialog=1898,Dialog=0..6}] if score #mansion_type Selected matches 0 as @a[tag=same_room] run teleport @s 711 120 30 -180 0
+execute if entity @s[scores={Dialog=1898,Dialog=0..6}] if score #mansion_type Selected matches 1 as @a[tag=same_room] run teleport @s 711 120 -15 0 0
+execute if entity @s[scores={Dialog=1810,Dialog=7}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.yes.1"}]}
+execute if entity @s[scores={Dialog=1874,Dialog=7}] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.yes.2"}]}
+execute if entity @s[scores={Dialog=1874,Dialog=7}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.jarvis","color":"green"},{"translate":"luigis_mansion:dialog.jarvis.game.yes.2.more"}]}
 tag @s[scores={Dialog=2034}] remove appeared
 tag @s[scores={Dialog=2034}] add other_4
 execute if entity @s[scores={Dialog=2034}] run tag @e[tag=haunted_jar] add enabled

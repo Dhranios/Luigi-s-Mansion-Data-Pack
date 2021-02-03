@@ -15,7 +15,7 @@ execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run scoreboard players reset #temp Damage
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run data modify storage luigis_mansion:data current_state.current_data.rooms.balcony_2 merge value {cleared:1b}
 execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] run scoreboard players reset #balcony_2 Ticking
-execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] as @a run function luigis_mansion:entities/boolossus/return
+execute if entity @s[tag=normal_death] unless entity @e[tag=boolossus,tag=!dead,limit=1] as @a run function #luigis_mansion:entities/boolossus/return
 
 execute if entity @s[tag=battle] run function luigis_mansion:entities/boolossus/battle
 execute if entity @s[tag=!battle,tag=!split] run function luigis_mansion:entities/boolossus/balcony

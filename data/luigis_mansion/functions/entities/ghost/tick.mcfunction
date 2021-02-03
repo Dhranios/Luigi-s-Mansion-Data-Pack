@@ -4,8 +4,8 @@ execute if entity @s[tag=dying,tag=hurt] run function luigis_mansion:entities/gh
 execute if entity @s[tag=dying,tag=element_death] run function luigis_mansion:entities/ghost/death_element
 execute if entity @s[tag=dying,tag=element_hurt] run function luigis_mansion:entities/ghost/death_element
 scoreboard players operation #temp Move = @s Move
-execute unless score @s Time matches 1.. run tag @s[tag=disappear_next_tick,tag=vanish] add disappear
-execute unless score @s Time matches 1.. run tag @s[tag=vanish] add disappear_next_tick
+execute unless score @s ActionTime matches 1.. run tag @s[tag=disappear_next_tick,tag=vanish] add disappear
+execute unless score @s ActionTime matches 1.. run tag @s[tag=vanish] add disappear_next_tick
 function #luigis_mansion:entities/ghosts
 
 scoreboard players add @s[scores={StunTime=0}] SpawnTime 1

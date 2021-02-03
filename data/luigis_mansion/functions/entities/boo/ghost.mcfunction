@@ -40,7 +40,7 @@ tag @s remove wall
 tag @s[tag=!up,tag=!down,tag=!left,tag=!right] add can_attack
 execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!boo_hurt,tag=!up,tag=!down,tag=!left,tag=!right] run teleport @s ~ ~ ~ ~-2 ~
 
-scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] Time 0
+scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] ActionTime 0
 scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime
 tag @s remove disappear
 tag @s remove fleeing

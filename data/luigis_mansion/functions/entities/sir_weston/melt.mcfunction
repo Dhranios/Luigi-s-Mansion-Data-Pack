@@ -21,11 +21,11 @@ execute if entity @s[scores={Dialog=390}] if score #players Totals matches 1 run
 execute if entity @s[scores={Dialog=390}] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.sir_weston","color":"green"},{"translate":"luigis_mansion:dialog.sir_weston.5.more"}]}
 execute if entity @s[scores={Dialog=422}] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {sir_weston_spoke:1b}
 execute if entity @s[scores={Dialog=422..}] as @a[tag=same_room] unless entity @s[scores={MusicType=36}] run function luigis_mansion:other/music/set/danger
-scoreboard players add @s[scores={Dialog=422..482}] Time 1
-execute if entity @s[scores={Time=20..50,VulnerableTime=0}] facing entity @p[tag=same_room] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[scores={Time=50..60}] run function luigis_mansion:entities/sir_weston/attack
-scoreboard players set @s[scores={Time=80}] Time 0
+scoreboard players add @s[scores={Dialog=422..482}] PathStep 1
+execute if entity @s[scores={PathStep=20..50,VulnerableTime=0}] facing entity @p[tag=same_room] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+execute at @s[scores={PathStep=50..60}] run function luigis_mansion:entities/sir_weston/attack
+scoreboard players set @s[scores={PathStep=80}] PathStep 0
 execute if entity @s[scores={Dialog=483}] run particle minecraft:block minecraft:ice ~ ~1.2 ~ 0.6 0.6 0.6 0 30
 scoreboard players set @s[scores={Dialog=483}] VulnerableTime 40
-scoreboard players set @s[scores={Dialog=483}] Time 0
+scoreboard players set @s[scores={Dialog=483}] PathStep 0
 scoreboard players set @s[scores={Dialog=523}] Dialog 462

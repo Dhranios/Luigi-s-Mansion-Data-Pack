@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/boolossus/return/normal",
-        "luigis_mansion:entities/boolossus/return/hidden"
+		"luigis_mansion:entities/boolossus/normal_return",
+        "luigis_mansion:entities/boolossus/hidden_return"
 	]
 }

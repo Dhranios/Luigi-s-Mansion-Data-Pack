@@ -11,27 +11,27 @@ execute if entity @s[scores={Dialog=101}] run setblock ^ ^1 ^2 minecraft:crimson
 execute if entity @s[scores={Dialog=2..99}] run tag @e[tag=ghost_marker,tag=waiter] add spawn
 execute if entity @s[scores={Dialog=100}] run tag @e[tag=ghost_marker,tag=waiter] add disappear
 
-execute unless entity @s[scores={Dialog=100..}] run scoreboard players add @s Time 1
-execute if entity @s[scores={Time=10}] run particle minecraft:dust 1 0.9 0 1 ^1.3 ^2 ^ 0.3 0.3 0.3 0 5
-execute if entity @s[scores={Time=10}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
-execute if entity @s[scores={Time=20}] run particle minecraft:dust 1 0.9 0 1 ^-1.3 ^2 ^ 0.3 0.3 0.3 0 5
-execute if entity @s[scores={Time=20}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
-execute if entity @s[scores={Time=30}] run particle minecraft:dust 1 0.9 0 1 ^1.3 ^2 ^ 0.3 0.3 0.3 0 5
-execute if entity @s[scores={Time=30}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
-execute if entity @s[scores={Time=40}] run particle minecraft:dust 1 0.9 0 1 ^-1.3 ^2 ^ 0.3 0.3 0.3 0 5
-execute if entity @s[scores={Time=40}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
-execute if entity @s[scores={Time=50}] run particle minecraft:dust 1 0.9 0 1 ^1.3 ^2 ^ 0.3 0.3 0.3 0 5
-execute if entity @s[scores={Time=50}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
-execute if entity @s[scores={Time=60}] run particle minecraft:dust 1 0.9 0 1 ^-1.3 ^2 ^ 0.3 0.3 0.3 0 5
-execute if entity @s[scores={Time=60}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
-execute if entity @s[scores={Time=70}] run particle minecraft:dust 1 0.9 0 1 ^1.3 ^2 ^ 0.3 0.3 0.3 0 5
-execute if entity @s[scores={Time=70}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
-execute if entity @s[scores={Time=80}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ^ ^ ^2 4
-execute if entity @s[scores={Time=100}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ^ ^ ^2 4
-execute if entity @s[scores={Time=120}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ^ ^ ^2 4
-execute if entity @s[scores={Time=140}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ^ ^ ^2 4
-scoreboard players set @s[scores={Time=150}] Time 0
-scoreboard players add @s[scores={Dialog=100}] Time 0
+execute unless entity @s[scores={Dialog=100..}] run scoreboard players add @s ActionTime 1
+execute if entity @s[scores={ActionTime=10}] run particle minecraft:dust 1 0.9 0 1 ^1.3 ^2 ^ 0.3 0.3 0.3 0 5
+execute if entity @s[scores={ActionTime=10}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
+execute if entity @s[scores={ActionTime=20}] run particle minecraft:dust 1 0.9 0 1 ^-1.3 ^2 ^ 0.3 0.3 0.3 0 5
+execute if entity @s[scores={ActionTime=20}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
+execute if entity @s[scores={ActionTime=30}] run particle minecraft:dust 1 0.9 0 1 ^1.3 ^2 ^ 0.3 0.3 0.3 0 5
+execute if entity @s[scores={ActionTime=30}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
+execute if entity @s[scores={ActionTime=40}] run particle minecraft:dust 1 0.9 0 1 ^-1.3 ^2 ^ 0.3 0.3 0.3 0 5
+execute if entity @s[scores={ActionTime=40}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
+execute if entity @s[scores={ActionTime=50}] run particle minecraft:dust 1 0.9 0 1 ^1.3 ^2 ^ 0.3 0.3 0.3 0 5
+execute if entity @s[scores={ActionTime=50}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
+execute if entity @s[scores={ActionTime=60}] run particle minecraft:dust 1 0.9 0 1 ^-1.3 ^2 ^ 0.3 0.3 0.3 0 5
+execute if entity @s[scores={ActionTime=60}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
+execute if entity @s[scores={ActionTime=70}] run particle minecraft:dust 1 0.9 0 1 ^1.3 ^2 ^ 0.3 0.3 0.3 0 5
+execute if entity @s[scores={ActionTime=70}] run playsound luigis_mansion:entity.mr_luggs.eat hostile @a ^ ^1 ^1 4
+execute if entity @s[scores={ActionTime=80}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ^ ^ ^2 4
+execute if entity @s[scores={ActionTime=100}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ^ ^ ^2 4
+execute if entity @s[scores={ActionTime=120}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ^ ^ ^2 4
+execute if entity @s[scores={ActionTime=140}] run playsound luigis_mansion:entity.mr_luggs.hit_table hostile @a ^ ^ ^2 4
+scoreboard players set @s[scores={ActionTime=150}] ActionTime 0
+scoreboard players add @s[scores={Dialog=100}] ActionTime 0
 
 teleport @s[scores={Dialog=100}] ~ ~ ~ ~ 20
 teleport @s[scores={Dialog=120..124}] ~ ~ ~ ~1 ~-1

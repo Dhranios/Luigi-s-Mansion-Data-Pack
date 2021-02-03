@@ -1,1 +1,1 @@
-scoreboard players set @s Time 181
+scoreboard players set @s Dialog 181

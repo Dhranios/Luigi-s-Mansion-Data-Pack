@@ -7,10 +7,10 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 tag @s remove fleeing
 
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=pink_flying_fish,tag=spawn] if score @s Room = #temp Room run scoreboard players add #temp Time 1
-execute unless score #temp Time matches 3.. unless entity @e[tag=pink_flying_fish,tag=spawn,distance=..0.7] if entity @s[tag=!spawn] run playsound luigis_mansion:entity.pink_flying_fish.spawn hostile @a ~ ~ ~ 1
-execute unless score #temp Time matches 3.. unless entity @e[tag=pink_flying_fish,tag=spawn,distance=..0.7] run tag @s add spawn
-scoreboard players reset #temp Time
+execute as @e[tag=pink_flying_fish,tag=spawn] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
+execute unless score #temp ActionTime matches 3.. unless entity @e[tag=pink_flying_fish,tag=spawn,distance=..0.7] if entity @s[tag=!spawn] run playsound luigis_mansion:entity.pink_flying_fish.spawn hostile @a ~ ~ ~ 1
+execute unless score #temp ActionTime matches 3.. unless entity @e[tag=pink_flying_fish,tag=spawn,distance=..0.7] run tag @s add spawn
+scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 
 data merge entity @s[tag=spawn,tag=!vacuumable] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:85}}]}

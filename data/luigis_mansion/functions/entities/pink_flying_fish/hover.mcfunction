@@ -5,4 +5,5 @@ execute at @s run function luigis_mansion:entities/ghost/move_ignore_barrier
 kill @e[tag=target]
 execute if block ~ ~-4 ~ #luigis_mansion:ghosts_ignore if block ~ ~-3 ~ #luigis_mansion:ghosts_ignore if block ~ ~-2 ~ #luigis_mansion:ghosts_ignore if block ~ ~-1 ~ #luigis_mansion:ghosts_ignore run tag @s add at_height
 execute unless block ~ ~1 ~ #luigis_mansion:ghosts_ignore run tag @s add at_height
+execute unless block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~-1 ~
 execute at @s run teleport @s[tag=!at_height] ~ ~0.3 ~ ~ -45

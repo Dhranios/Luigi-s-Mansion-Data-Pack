@@ -7,7 +7,7 @@ execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 tag @s[tag=grab_ball] remove laugh
 tag @s[tag=grab_ball] remove complain
 tag @s[tag=grab_ball] remove attack
-tag @s[tag=grabbed_ball,scores={Time=..5}] remove grab_ball
+tag @s[tag=grabbed_ball,scores={ActionTime=..5}] remove grab_ball
 
 scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=bowling_ball] if score @s GhostNr = #temp GhostNr run tag @s add this_bowling_ball

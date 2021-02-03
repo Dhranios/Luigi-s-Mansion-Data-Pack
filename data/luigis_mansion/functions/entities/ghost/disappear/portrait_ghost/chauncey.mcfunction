@@ -1,2 +1,2 @@
-scoreboard players set @s Time 0
-scoreboard players set @s Wave 1461
+scoreboard players set @s PathStep 0
+scoreboard players set @s Dialog 1461

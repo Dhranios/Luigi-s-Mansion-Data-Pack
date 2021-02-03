@@ -1,7 +1,7 @@
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 
-scoreboard players add @s Time 1
-teleport @s[scores={Time=10}] ~ ~ ~ ~ 0
+scoreboard players add @s ActionTime 1
+teleport @s[scores={ActionTime=10}] ~ ~ ~ ~ 0
 scoreboard players operation #temp Move = @s Move
 data merge entity @s[x_rotation=0] {Pose:{RightArm:[-90.0f,90.0f,0.0f],LeftArm:[-90.0f,-90.0f,0.0f],Head:[0.0f,0.0f,0.0f]}}
 execute unless entity @s[x_rotation=0] run teleport @s ~ ~0.2 ~

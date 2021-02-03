@@ -16,7 +16,7 @@ execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run advancement grant
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run scoreboard players reset #temp Damage
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run data modify storage luigis_mansion:data current_state.current_data.rooms.secret_altar merge value {cleared:1b}
 execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] run scoreboard players reset #secret_altar Ticking
-execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @a run function luigis_mansion:entities/king_boo/return
+execute if entity @s[tag=dead,tag=!warp,tag=!secret_altar] as @a run function #luigis_mansion:entities/king_boo/return
 execute if entity @s[tag=disappear,tag=!warp,tag=!secret_altar] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.king_boo.health int 1 run scoreboard players get @s Health
 
 execute if entity @s[tag=!boo_hurt,tag=fleeing,tag=!dying] run function luigis_mansion:entities/king_boo/hurt
@@ -35,7 +35,7 @@ execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entitie
 execute if entity @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
 execute if entity @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
 
-scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!cutscene] Time 0
+scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!cutscene] ActionTime 0
 scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime
 tag @s remove disappear
 tag @s remove fleeing

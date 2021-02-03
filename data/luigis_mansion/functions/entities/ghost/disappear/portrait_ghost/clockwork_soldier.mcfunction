@@ -5,7 +5,5 @@ execute store result entity @s Rotation[0] float 1 run scoreboard players get @s
 tag @s remove windless
 tag @s remove was_activated
 tag @s remove complain
-scoreboard players set @s Time 0
 scoreboard players set @s Distance 0
 scoreboard players set @s WaitTime 0
-scoreboard players set @s StunTime 0

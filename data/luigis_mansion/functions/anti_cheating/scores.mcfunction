@@ -1,3 +1,4 @@
+scoreboard objectives add ActionTime dummy
 scoreboard objectives add Angle dummy
 scoreboard objectives add AnimationProg dummy
 scoreboard objectives add BannanaDropTime dummy
@@ -57,6 +58,7 @@ scoreboard objectives add Move dummy
 scoreboard objectives add MrBonesNr dummy
 scoreboard objectives add Music dummy
 scoreboard objectives add MusicType dummy
+scoreboard objectives add PathStep dummy
 scoreboard objectives add PosX dummy
 scoreboard objectives add PosY dummy
 scoreboard objectives add PosZ dummy

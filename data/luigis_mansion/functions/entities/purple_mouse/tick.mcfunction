@@ -20,9 +20,9 @@ execute if score #temp HomeY = @s HomeY run tag @s add on_floor
 scoreboard players reset #temp HomeY
 
 scoreboard players operation #temp Room = @s Room
-execute as @e[tag=purple_mouse,tag=spawn] if score @s Room = #temp Room run scoreboard players add #temp Time 1
-execute unless score #temp Time matches 2.. run tag @s add spawn
-scoreboard players reset #temp Time
+execute as @e[tag=purple_mouse,tag=spawn] if score @s Room = #temp Room run scoreboard players add #temp ActionTime 1
+execute unless score #temp ActionTime matches 2.. run tag @s add spawn
+scoreboard players reset #temp ActionTime
 scoreboard players reset #temp Room
 
 data merge entity @s[tag=spawn,tag=!vacuumable] {ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:1,CustomModelData:58}}]}

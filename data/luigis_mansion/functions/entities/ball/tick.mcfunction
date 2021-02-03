@@ -17,12 +17,12 @@ tag @s[tag=collision] remove collision
 execute if entity @s[tag=in_vacuum] at @p[distance=..1.5,gamemode=!spectator,tag=vacuuming] positioned ~ ~0.5 ~ unless block ~ ~ ~ #minecraft:doors run teleport @s ^ ^ ^0.2 ~ ~
 execute if entity @s[tag=!in_vacuum,tag=chauncey] run effect give @a[distance=..1,gamemode=!spectator] minecraft:instant_damage 1 0 true
 execute if entity @s[tag=!in_vacuum,tag=chauncey] run scoreboard players set @a[distance=..1,gamemode=!spectator] ForcedDamage 4
-execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:ghosts_ignore run teleport @s[tag=chauncey,tag=can_spit] ^ ^ ^1
-execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^2 #luigis_mansion:ghosts_ignore run teleport @s[tag=chauncey,tag=can_spit] ^ ^ ^2
-execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:ghosts_ignore run teleport @s[tag=spike_ball,tag=can_spit] ^ ^ ^1
-execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^2 #luigis_mansion:ghosts_ignore run teleport @s[tag=spike_ball,tag=can_spit] ^ ^ ^2
-scoreboard players add @s[tag=spike_ball] Time 1
-tag @s[tag=spike_ball,scores={Time=200}] add explode
+execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:all_ignore run teleport @s[tag=chauncey,tag=can_spit] ^ ^ ^1 ~ ~
+execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^2 #luigis_mansion:all_ignore run teleport @s[tag=chauncey,tag=can_spit] ^ ^ ^2 ~ ~
+execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^1 #luigis_mansion:all_ignore run teleport @s[tag=spike_ball,tag=can_spit] ^ ^ ^1 ~ ~
+execute at @p[gamemode=!spectator,tag=vacuuming] if block ^ ^ ^2 #luigis_mansion:all_ignore run teleport @s[tag=spike_ball,tag=can_spit] ^ ^ ^2 ~ ~
+scoreboard players add @s[tag=spike_ball] ActionTime 1
+tag @s[tag=spike_ball,scores={ActionTime=200}] add explode
 execute if entity @a[gamemode=!spectator,distance=..1,limit=1] run tag @s[tag=spike_ball,tag=!in_vacuum] add explode
 execute if entity @e[tag=bowser,distance=..2,limit=1] run tag @s[tag=spike_ball,tag=!in_vacuum] add explode
 execute if entity @s[tag=explode] run function luigis_mansion:entities/ball/spike_explode
