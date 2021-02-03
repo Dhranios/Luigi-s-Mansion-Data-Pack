@@ -1,5 +1,5 @@
-scoreboard players operation #temp MrBonesNr = @s MrBonesNr
-execute as @e[tag=mr_bones_body] if score @s MrBonesNr = #temp MrBonesNr run tag @s add this_mr_bones_body
+scoreboard players operation #temp GhostNr = @s GhostNr
+execute as @e[tag=mr_bones_body] if score @s GhostNr = #temp GhostNr run tag @s add this_mr_bones_body
 
 execute if entity @s[tag=dying,tag=normal_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_bones.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dying,tag=element_death,scores={HurtTime=1}] run playsound luigis_mansion:entity.mr_bones.element_death hostile @a ~ ~ ~ 1
@@ -34,5 +34,5 @@ execute at @s[tag=fleeing] run function luigis_mansion:animations/mr_bones/flee
 execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/mr_bones/hurt
 execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/mr_bones/hurt
 
-scoreboard players reset #temp MrBonesNr
+scoreboard players reset #temp GhostNr
 tag @e[tag=this_mr_bones_body] remove this_mr_bones_body

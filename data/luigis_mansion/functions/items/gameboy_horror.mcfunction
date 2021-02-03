@@ -1,6 +1,6 @@
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/tick
 execute if entity @s[tag=looking_at_map,scores={UseItem=1},tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/map/close
-execute if entity @s[tag=!looking_at_map,scores={UseItem=1},tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/map/open
+execute if entity @s[tag=!looking_at_map,scores={UseItem=1},tag=gameboy_horror_selected,tag=!warp] run function luigis_mansion:items/gameboy_horror/map/open
 tag @s remove scanning_player
 execute if entity @s[scores={GBHCall=1..},tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/answer
 execute if entity @s[scores={GBHWait=1200}] run function luigis_mansion:items/gameboy_horror/answer

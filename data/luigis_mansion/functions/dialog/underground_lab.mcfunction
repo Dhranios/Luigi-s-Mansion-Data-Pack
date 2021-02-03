@@ -1,6 +1,7 @@
 scoreboard players add @s[scores={Dialog=130}] Dialog 1
 execute if entity @a[scores={EGaddLabChoice=1..},limit=1] run scoreboard players add @s[scores={Dialog=57..}] Dialog 1
-execute unless entity @a[scores={MansionChoice=-1},limit=1] run scoreboard players add @s[scores={Dialog=57..}] Dialog 1
+execute if entity @a[scores={MansionChoice=0..},limit=1] run scoreboard players add @s[scores={Dialog=57..}] Dialog 1
+execute if entity @a[scores={MansionChoice=..-2},limit=1] run scoreboard players add @s[scores={Dialog=57..}] Dialog 1
 scoreboard players add @s[scores={Dialog=..56}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] if score #king_boo LastHealth matches ..0 if score #king_boo OneGoHealth matches -1000000.. run tag @s add no_mansion

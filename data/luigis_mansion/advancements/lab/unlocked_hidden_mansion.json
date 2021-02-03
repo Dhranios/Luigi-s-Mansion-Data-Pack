@@ -5,17 +5,16 @@
         },
         "show_toast": false,
         "hidden": true,
-        "frame": "challenge",
         "title": {
-            "translate": "luigis_mansion:advancements.lab.cleared_hidden_mansion"
+            "translate": "luigis_mansion:advancements.lab.unlocked_hidden_mansion"
         },
         "description": {
-            "translate": "luigis_mansion:advancements.lab.cleared_hidden_mansion.description"
+            "translate": "luigis_mansion:advancements.lab.unlocked_hidden_mansion.description"
         }
     },
-	"parent": "luigis_mansion:lab/unlocked_hidden_mansion",
+	"parent": "luigis_mansion:lab/underground_lab",
     "criteria": {
-        "cleared": {
+        "unlocked": {
             "trigger": "minecraft:impossible"
         }
     }

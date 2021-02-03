@@ -6,7 +6,7 @@ scoreboard players operation @s[scores={Health=1..,Invulnerable=0}] Health -= @s
 scoreboard players operation @s TotalDamage += @s Damage
 particle minecraft:damage_indicator ~ ~0.6 ~ 0.2 0.2 0.2 0 10
 execute store result score #temp ActionTime run data get storage luigis_mansion:data current_state.current_data.money.gold_coin
-execute if entity @s[scores={Health=1..,Invulnerable=0}] if score #temp ActionTime matches 1.. run function luigis_mansion:entities/player/drop_gold_coins
+execute if entity @s[scores={Health=1..,Invulnerable=0,Room=1..}] if score #temp ActionTime matches 1.. run function luigis_mansion:entities/player/drop_gold_coins
 execute store result storage luigis_mansion:data current_state.current_data.money.gold_coin int 1 run scoreboard players get #temp ActionTime
 scoreboard players reset #temp ActionTime
 scoreboard players operation @s LastTotalDamage = @s TotalDamage

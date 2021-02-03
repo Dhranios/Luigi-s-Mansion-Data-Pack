@@ -10,8 +10,8 @@ scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] Sound 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] StunTime 0
 scoreboard players set @e[tag=this_entity,tag=mr_bones,limit=1] VulnerableTime 0
 execute store result score @e[tag=this_entity,tag=mr_bones,limit=1] HomeY run data get entity @s Pos[1] 100
-scoreboard players operation @e[tag=this_entity,tag=mr_bones,limit=1] MrBonesNr > @e[tag=!this_entity,tag=mr_bones] MrBonesNr
-scoreboard players add @e[tag=this_entity,tag=mr_bones,limit=1] MrBonesNr 1
-scoreboard players operation @e[tag=this_entity,tag=mr_bones_body,limit=1] MrBonesNr = @e[tag=this_entity,tag=mr_bones,limit=1] MrBonesNr
+scoreboard players operation @e[tag=this_entity,tag=mr_bones,limit=1] GhostNr > @e[tag=!this_entity,tag=mr_bones] GhostNr
+scoreboard players add @e[tag=this_entity,tag=mr_bones,limit=1] GhostNr 1
+scoreboard players operation @e[tag=this_entity,tag=mr_bones_body,limit=1] GhostNr = @e[tag=this_entity,tag=mr_bones,limit=1] GhostNr
 tag @e[tag=this_entity,tag=mr_bones,limit=1] remove this_entity
 tag @e[tag=this_entity,tag=mr_bones_body,limit=1] remove this_entity
