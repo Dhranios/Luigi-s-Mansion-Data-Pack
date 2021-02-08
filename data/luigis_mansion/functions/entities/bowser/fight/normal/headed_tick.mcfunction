@@ -19,7 +19,7 @@ execute unless entity @s[tag=!walk,tag=!run] positioned ^-1 ^ ^1 unless block ~ 
 
 execute if entity @s[tag=breathe_fire] run function luigis_mansion:entities/bowser/breathe_fire
 execute if entity @s[tag=vacuum] run function luigis_mansion:entities/bowser/vacuum
-execute if entity @s[tag=throw_spikes] run function luigis_mansion:entities/bowser/throw_spikes
+execute if entity @s[tag=throw_spikes] run function luigis_mansion:entities/bowser/fight/normal/throw_spikes
 execute if entity @s[tag=walk] run function luigis_mansion:entities/bowser/walk
 execute if entity @s[tag=run] run function luigis_mansion:entities/bowser/run
 execute if entity @s[tag=jump] run function luigis_mansion:entities/bowser/jump

@@ -11,5 +11,5 @@ execute positioned as @s unless block ~ ~ ~0.3 #luigis_mansion:ghosts_ignore if 
 execute positioned as @s unless block ~ ~ ~-0.3 #luigis_mansion:ghosts_ignore if block ~ ~ ~ #luigis_mansion:ghosts_ignore run teleport @s ~ ~ ~0.1
 execute rotated ~ 0 unless block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore run scoreboard players set @s Move 0
 execute rotated ~ 0 unless block ^ ^0.6 ^0.6 #luigis_mansion:ghosts_ignore run scoreboard players set @s Move 0
-execute if score #temp Move matches 1.. unless block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore rotated ~ 0 if block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore run function luigis_mansion:entities/ball/spike_move
-execute if score #temp Move matches 1.. positioned as @s run function luigis_mansion:entities/ball/spike_move
+execute if score #temp Move matches 1.. unless block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore rotated ~ 0 if block ^ ^ ^0.6 #luigis_mansion:ghosts_ignore run function luigis_mansion:entities/ball/move
+execute if score #temp Move matches 1.. positioned as @s run function luigis_mansion:entities/ball/move

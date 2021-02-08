@@ -11,7 +11,6 @@ scoreboard players set @s Sound 0
 scoreboard players set @s Pull 0
 tag @s remove pulled
 
-effect clear @s minecraft:night_vision
 clear @s minecraft:carved_pumpkin
 
 tellraw @s[scores={ResetChoice=1}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:dialog.reset_mansion.confirm.1"}]}

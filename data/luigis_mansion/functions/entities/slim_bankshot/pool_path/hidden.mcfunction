@@ -15,7 +15,7 @@ teleport @s[scores={PathStep=7}] ~ ~ ~ facing 681 102 -14
 scoreboard players set @s[x=681.5,y=102.5,z=-13.5,distance=..0.7,scores={PathStep=7}] PathStep 8
 teleport @s[scores={PathStep=8}] ~ ~ ~ facing 678 102 -15
 scoreboard players add @s[x=678.5,y=102.5,z=-14.5,distance=..0.7,scores={PathStep=8..100}] PathStep 1
-teleport @s[scores={PathStep=9}] ~ ~ ~ facing 679 103 -12
+teleport @s[scores={PathStep=9}] ~ ~ ~ facing 679 102 -12
 execute if entity @s[scores={PathStep=40}] positioned 679 103 -12 rotated -15 0 run function luigis_mansion:spawn_entities/ball/billiards/white
 execute at @s[scores={PathStep=..8}] run function luigis_mansion:entities/slim_bankshot/move_forward
 execute if entity @s[scores={PathStep=90}] run tag @e[tag=billiards_ball,tag=white,limit=1] add move

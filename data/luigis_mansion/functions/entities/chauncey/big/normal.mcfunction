@@ -2,17 +2,17 @@ execute if data storage luigis_mansion:data current_state.current_data.rooms.nur
 execute if data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} as @a[distance=..80] run function luigis_mansion:entities/chauncey/return
 execute unless data storage luigis_mansion:data current_state.current_data.rooms.nursery{cleared:1b} as @a[distance=80..] run function luigis_mansion:entities/chauncey/to_arena
 execute if entity @s[tag=!intro_done] run function luigis_mansion:entities/chauncey/battle_intro/normal
-scoreboard players add @s[scores={Dialog=1584..}] Dialog 1
-scoreboard players add @s[scores={Dialog=584..1582}] Dialog 1
-scoreboard players add @s[scores={Dialog=382..582}] Dialog 1
-execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:armor_stand,tag=ball,tag=spit,dx=2,dy=2,dz=2] run scoreboard players add @s[scores={Dialog=381}] Dialog 1
-execute unless entity @e[type=minecraft:armor_stand,tag=ball] run scoreboard players set @s[scores={Dialog=381}] Dialog 0
-scoreboard players add @s[scores={Dialog=83,Health=5001..}] Dialog 100
-scoreboard players add @s[scores={Dialog=82..380}] Dialog 1
-execute at @e[tag=rocking_horse] positioned ~-1 ~-3 ~-20 if entity @a[gamemode=!spectator,limit=1,dx=2,dy=3,dz=20] run scoreboard players add @s[scores={Dialog=81}] Dialog 1
-scoreboard players add @s[scores={Dialog=22..80}] Dialog 1
-execute at @e[tag=rocking_horse] positioned ~-1 ~-3 ~-20 if entity @a[gamemode=!spectator,limit=1,dx=2,dy=3,dz=20] run scoreboard players add @s[scores={Dialog=21}] Dialog 1
-scoreboard players add @s[scores={Dialog=..20}] Dialog 1
+scoreboard players add @s[scores={Dialog=1584..},tag=intro_done] Dialog 1
+scoreboard players add @s[scores={Dialog=584..1582},tag=intro_done] Dialog 1
+scoreboard players add @s[scores={Dialog=382..582},tag=intro_done] Dialog 1
+execute positioned ~-1 ~ ~-1 if entity @e[type=minecraft:armor_stand,tag=ball,tag=spit,dx=2,dy=2,dz=2] run scoreboard players add @s[scores={Dialog=381},tag=intro_done] Dialog 1
+execute unless entity @e[type=minecraft:armor_stand,tag=ball] run scoreboard players set @s[scores={Dialog=381},tag=intro_done] Dialog 0
+scoreboard players add @s[scores={Dialog=83,Health=5001..},tag=intro_done] Dialog 100
+scoreboard players add @s[scores={Dialog=82..380},tag=intro_done] Dialog 1
+execute at @e[tag=rocking_horse] positioned ~-1 ~-3 ~-20 if entity @a[gamemode=!spectator,limit=1,dx=2,dy=3,dz=20] run scoreboard players add @s[scores={Dialog=81},tag=intro_done] Dialog 1
+scoreboard players add @s[scores={Dialog=22..80},tag=intro_done] Dialog 1
+execute at @e[tag=rocking_horse] positioned ~-1 ~-3 ~-20 if entity @a[gamemode=!spectator,limit=1,dx=2,dy=3,dz=20] run scoreboard players add @s[scores={Dialog=21},tag=intro_done] Dialog 1
+scoreboard players add @s[scores={Dialog=..20},tag=intro_done] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s[tag=intro_done] Dialog 1
 execute if entity @s[scores={Dialog=1}] run tag @s remove laugh
 scoreboard players set @s[scores={Dialog=1}] ActionTime 0

@@ -1,7 +1,7 @@
 spreadplayers 720.0 -19952.0 0 11 true @s
-execute at @s if block ~ 38 ~ minecraft:lime_wool run summon minecraft:lightning_bolt
+execute at @s if block ~ 38 ~ minecraft:lime_wool run summon minecraft:lightning_bolt ~ ~ ~
 execute at @s if block ~ 38 ~ minecraft:lime_wool run teleport @s ~ 41 ~ 0 0
-execute at @s if block ~ 38 ~ minecraft:lime_wool run scoreboard players set @s ActionTime 0
+execute at @s if block ~ 38 ~ minecraft:lime_wool run scoreboard players set @s Dialog 0
 loot spawn ~ ~ ~ loot luigis_mansion:gameplay/0_90
 data modify entity @s Rotation[0] set from entity @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}},limit=1] Item.tag.Value
 kill @e[distance=..0.7,type=minecraft:item,nbt={Item:{id:"minecraft:carved_pumpkin"}}]

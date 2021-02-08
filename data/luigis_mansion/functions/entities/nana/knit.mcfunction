@@ -1,8 +1,8 @@
-execute if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=22}] Dialog 1
+execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=22}] Dialog 1
 scoreboard players add @s[scores={Dialog=13..21}] Dialog 1
-execute if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=12}] Dialog 1
+execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=12}] Dialog 1
 scoreboard players add @s[scores={Dialog=3..11}] Dialog 1
-execute if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=2}] Dialog 1
+execute positioned ~ ~-1.1875 ~ if entity @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] run scoreboard players add @s[scores={Dialog=2}] Dialog 1
 tag @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] add collision
 execute if entity @e[tag=wool,tag=vacuumable,limit=1] run scoreboard players add @s[scores={Dialog=1}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
@@ -18,6 +18,7 @@ execute if entity @s[scores={Dialog=22}] if entity @e[tag=wool,tag=can_spit,limi
 scoreboard players set @s[scores={Dialog=23}] VulnerableTime 2147483647
 execute if entity @s[scores={Dialog=23,Sound=0}] run playsound luigis_mansion:entity.nana.complain hostile @a ~ ~ ~ 1
 execute if entity @s[scores={Dialog=23,Sound=0}] run scoreboard players set @s Sound 40
+execute positioned ~ ~-1.1875 ~ run tag @e[type=minecraft:armor_stand,tag=wool,tag=spit,distance=..0.7] add dead
 
 execute store result score @s Wave if entity @e[tag=wool]
 execute if entity @s[scores={Dialog=2,Wave=2}] run tag @s add leave

@@ -10,7 +10,7 @@ execute if score #temp GhostCount matches 1.. as @e[tag=ghost,tag=being_vacuumed
 execute unless score #temp GhostCount matches 1.. unless entity @e[tag=ball,distance=..2.5,tag=can_spit,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/default
 execute unless score #temp GhostCount matches 1.. if entity @e[tag=ball,distance=..2.5,tag=can_spit,limit=1] run function luigis_mansion:items/poltergust_3000/vacuuming/clogged
 execute if entity @s[tag=catch_portrait_ghost] unless entity @s[scores={MusicType=29}] run function luigis_mansion:other/music/set/catching_portrait_ghost
-execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] unless entity @s[scores={MusicType=28..29}] run function luigis_mansion:other/music/set/catching_ghost
+execute if entity @s[tag=!catch_portrait_ghost,tag=catch_ghost] unless entity @s[scores={MusicType=28..29}] unless entity @s[scores={MusicType=37}] run function luigis_mansion:other/music/set/catching_ghost
 execute if entity @s[tag=!catch_portrait_ghost,tag=!catch_ghost] if entity @s[scores={MusicType=28..29}] run function luigis_mansion:other/music/set/silence
 scoreboard players reset #temp GhostCount
 scoreboard players reset #temp Room

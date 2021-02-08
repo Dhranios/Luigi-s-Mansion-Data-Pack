@@ -1,6 +1,8 @@
 {
     "values": [
         "minecraft:air",
-        "minecraft:glow_lichen"
+        "minecraft:glow_lichen",
+        "minecraft:barrier",
+        "minecraft:water"
     ]
 }

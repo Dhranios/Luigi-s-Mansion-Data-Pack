@@ -1,2 +1,2 @@
-summon minecraft:armor_stand ~ ~ ~ {Tags:["chauncey","ball","vacuumable"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:3}}],Invisible:1b,DisabledSlots:2039583}
-execute facing entity @p[gamemode=!spectator] feet run teleport @e[tag=ball,distance=..0.1] ~ ~ ~ ~ 0
+summon minecraft:armor_stand ~ ~-0.4 ~ {Pose:{Head:[0.0f,0.0f,0.01f]},Tags:["chauncey","ball","big","real"],ArmorItems:[{},{},{},{id:"minecraft:diamond_pickaxe",Count:1b,tag:{Unbreakable:1b,Damage:4,CustomModelData:3}}],Invisible:1b,DisabledSlots:2039583}
+execute facing entity @p[gamemode=!spectator] feet run teleport @e[tag=ball,distance=..0.1] ~ ~-0.4 ~ ~ 0

@@ -12,5 +12,6 @@ tag @s[tag=hit] add dead
 execute at @s as @e[distance=..0.7,tag=!shot_ice] run function luigis_mansion:items/poltergust_3000/effect_on_entity/ice
 execute at @s unless block ~ ~ ~ minecraft:air run function luigis_mansion:items/poltergust_3000/effect_on_block/vacuum
 execute at @s run function luigis_mansion:items/poltergust_3000/interact
+execute at @s[tag=dead] run particle minecraft:firework ~ ~1 ~ 0.2 0.2 0.2 0 1
 scoreboard players reset #temp ID
 tag @s remove me

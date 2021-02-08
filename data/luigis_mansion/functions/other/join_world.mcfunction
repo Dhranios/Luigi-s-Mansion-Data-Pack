@@ -10,6 +10,7 @@ scoreboard players set @s ForcedDamage -101
 scoreboard players set @s Damage 1
 scoreboard players set @s TotalDamage 0
 scoreboard players set @s LastTotalDamage 0
+scoreboard players set @s Sound 0
 gamemode adventure @s
 tag @s add joined
 function luigis_mansion:other/log_on

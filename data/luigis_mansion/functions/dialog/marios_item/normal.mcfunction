@@ -1,8 +1,8 @@
-execute if entity @s[scores={ClairvoyaSpoke=0}] run function luigis_mansion:dialog/marios_item/item_1
-execute if entity @s[scores={ClairvoyaSpoke=1}] run function luigis_mansion:dialog/marios_item/item_2
-execute if entity @s[scores={ClairvoyaSpoke=2}] run function luigis_mansion:dialog/marios_item/item_3
-execute if entity @s[scores={ClairvoyaSpoke=3}] run function luigis_mansion:dialog/marios_item/item_4
-execute if entity @s[scores={ClairvoyaSpoke=4}] run function luigis_mansion:dialog/marios_item/item_5
+execute if entity @s[scores={ClairvoyaSpoke=0}] run function luigis_mansion:dialog/marios_item/normal/item_1
+execute if entity @s[scores={ClairvoyaSpoke=1}] run function luigis_mansion:dialog/marios_item/normal/item_2
+execute if entity @s[scores={ClairvoyaSpoke=2}] run function luigis_mansion:dialog/marios_item/normal/item_3
+execute if entity @s[scores={ClairvoyaSpoke=3}] run function luigis_mansion:dialog/marios_item/normal/item_4
+execute if entity @s[scores={ClairvoyaSpoke=4}] run function luigis_mansion:dialog/marios_item/normal/item_5
 
 execute if entity @s[tag=!talk,tag=hat] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_hat:1b}
 execute if entity @s[tag=!talk,tag=letter] run data modify storage luigis_mansion:data current_state.current_data.technical_data merge value {shown_marios_letter:1b}

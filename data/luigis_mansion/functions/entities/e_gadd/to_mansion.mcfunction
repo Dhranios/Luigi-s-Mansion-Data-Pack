@@ -2,6 +2,8 @@ execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
 title @s subtitle ""
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 execute unless score #mansion_type Selected matches 0 run function luigis_mansion:entities/e_gadd/load_mansion/normal
+scoreboard players reset @s Element
+execute if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] run function luigis_mansion:items/poltergust_3000/no_element
 execute in minecraft:overworld run teleport @s 760 89.9375 8.0 90 0
 execute in minecraft:overworld positioned 789 90 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd
 scoreboard players set #mansion_type Selected 0
