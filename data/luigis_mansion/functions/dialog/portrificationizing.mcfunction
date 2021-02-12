@@ -5,29 +5,44 @@ execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_r
 execute if entity @s[scores={Dialog=1}] run scoreboard players set @a[tag=same_room] Music 0
 execute if entity @s[scores={Dialog=1}] run function luigis_mansion:spawn_entities/portrificationizing_ghost
 teleport @s[scores={Dialog=1}] ~ ~ ~ facing 771 77 15
+tag @s[scores={Dialog=201}] add jump
 teleport @s[scores={Dialog=201..210}] ~ ~0.05 ~
 teleport @s[scores={Dialog=211..220}] ~ ~-0.05 ~
 teleport @s[scores={Dialog=221..230}] ~ ~0.05 ~
 teleport @s[scores={Dialog=231..240}] ~ ~-0.05 ~
 teleport @s[scores={Dialog=241..250}] ~ ~0.05 ~
 teleport @s[scores={Dialog=251..260}] ~ ~-0.05 ~
+teleport @s[scores={Dialog=261..270}] ~ ~0.05 ~
+teleport @s[scores={Dialog=271..280}] ~ ~-0.05 ~
+tag @s[scores={Dialog=280}] remove jump
+tag @s[scores={Dialog=300}] add walk
 teleport @s[scores={Dialog=300..335}] ~ ~ ~-0.2 -180 0
+tag @s[scores={Dialog=335}] remove walk
 execute if entity @s[scores={Dialog=336..359}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+tag @s[scores={Dialog=360}] add walk
 teleport @s[scores={Dialog=360..395}] ~ ~ ~-0.115 -180 0
+tag @s[scores={Dialog=395}] remove walk
 execute if entity @s[scores={Dialog=396..439}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+tag @s[scores={Dialog=440}] add walk
 teleport @s[scores={Dialog=440..475}] ~ ~ ~-0.171 -180 0
+tag @s[scores={Dialog=475}] remove walk
 execute if entity @s[scores={Dialog=476..519}] facing entity @e[tag=portrificationizing_ghost,sort=nearest,limit=1] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
+tag @s[scores={Dialog=520}] add walk
 teleport @s[scores={Dialog=520..555}] ~ ~ ~-0.228 -180 0
+tag @s[scores={Dialog=555}] remove walk
 teleport @s[scores={Dialog=556..809}] ~ ~ ~ facing 770 77 -12
 execute if entity @s[scores={Dialog=360}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.1"}]}
 execute if entity @s[scores={Dialog=440}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.2"}]}
 execute if entity @s[scores={Dialog=520}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.3"}]}
 execute if entity @s[scores={Dialog=600}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.4"}]}
+tag @s[scores={Dialog=666}] add nod
 execute if entity @s[scores={Dialog=666}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.5"}]}
 execute if entity @s[scores={Dialog=674},tag=!ending] if score #players Totals matches 1 run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.6","with":[{"selector":"@p[gamemode=!spectator]"}]}]}
 execute if entity @s[scores={Dialog=674},tag=!ending] if score #players Totals matches 2.. run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.portrificationizing.6.more"}]}
 execute if entity @s[scores={Dialog=674},tag=ending] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.ghost_portrificationizer_room.ending.5"}]}
 execute if entity @s[scores={Dialog=802},tag=ending] run scoreboard players set @s Dialog 810
+tag @s[scores={Dialog=810}] remove nod
+tag @s[scores={Dialog=810},tag=!ending] add walk
 execute if entity @s[scores={Dialog=810}] run scoreboard players set @a[tag=same_room] MusicType 38
 execute if entity @s[scores={Dialog=810}] run scoreboard players set @a[tag=same_room] Music 0
 execute if entity @s[scores={Dialog=810}] store result score #temp2 Money run data get storage luigis_mansion:data current_state.current_data.money.gold_coin
@@ -101,6 +116,7 @@ execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp Mo
 execute if entity @s[scores={Dialog=1050}] run scoreboard players reset #temp2 Money
 teleport @s[scores={Dialog=810..1068},tag=!ending] ~ ~ ~0.1 0 0
 teleport @s[scores={Dialog=1069},tag=!ending] 774 77 14 0 0
+tag @s[scores={Dialog=1069},tag=!ending] remove walk
 tag @s[scores={Dialog=1070}] remove portrificationizing
 tag @s[scores={Dialog=1070},tag=ending] add mario_to_normal
 tag @s[scores={Dialog=1070}] remove ending

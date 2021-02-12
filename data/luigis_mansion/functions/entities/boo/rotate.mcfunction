@@ -7,4 +7,5 @@ execute if entity @e[tag=random_select,tag=selected,tag=up] run teleport @s ~ ~ 
 execute if entity @e[tag=random_select,tag=selected,tag=down] run teleport @s ~ ~ ~ -90 ~
 execute if entity @e[tag=random_select,tag=selected,tag=left] run teleport @s ~ ~ ~ 0 ~
 execute if entity @e[tag=random_select,tag=selected,tag=right] run teleport @s ~ ~ ~ -180 ~
+execute unless entity @e[tag=random_select,limit=1] run function luigis_mansion:entities/boo/turn
 tag @s add rotated

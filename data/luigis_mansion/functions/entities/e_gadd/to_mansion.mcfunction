@@ -6,6 +6,7 @@ scoreboard players reset @s Element
 execute if entity @a[nbt={Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] run function luigis_mansion:items/poltergust_3000/no_element
 execute in minecraft:overworld run teleport @s 760 89.9375 8.0 90 0
 execute in minecraft:overworld positioned 789 90 14 unless entity @e[distance=..0.7,tag=e_gadd,limit=1] run function luigis_mansion:spawn_entities/e_gadd
+scoreboard objectives setdisplay sidebar Element
 scoreboard players set #mansion_type Selected 0
 execute unless score #mansion_data_index Selected matches 0 run clear @a minecraft:brick
 execute unless score #mansion_data_index Selected matches 0 if data storage luigis_mansion:data current_state.current_data.data_index run function luigis_mansion:entities/e_gadd/save_mansion_data
@@ -14,11 +15,12 @@ scoreboard players operation #previous_mansion_index Selected = #mansion_data_in
 scoreboard players set #mansion_data_index Selected 0
 execute unless score #mansion_data_index Selected = #previous_mansion_index Selected if data storage luigis_mansion:data current_state.mansion_data[-1] run function luigis_mansion:entities/e_gadd/load_mansion_data
 scoreboard players set #mirrored Selected 0
-scoreboard players set #double_damage Selected 0
+scoreboard players set #extra_damage Selected 0
 scoreboard players set #double_hurt Selected 0
 scoreboard players set #extra_health Selected 0
 scoreboard players set #switch_boo_stats Selected 0
 scoreboard players set #can_warp Selected 1
+scoreboard players set #changing_max_health Selected 0
 scoreboard players reset #can_clear_hidden Selected
 scoreboard players set @s Room 0
 stopsound @s music

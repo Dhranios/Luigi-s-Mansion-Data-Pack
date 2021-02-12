@@ -5,5 +5,6 @@ teleport @s[scores={ActionTime=1..15}] ~ ~-0.1 ~
 teleport @s[scores={ActionTime=21..35}] ~ ~0.1 ~
 execute at @s run function luigis_mansion:animations/mr_bones/complain
 tag @s[scores={ActionTime=40}] remove complain
+scoreboard players set @s[scores={ActionTime=40}] Time 60
 scoreboard players set @s[scores={ActionTime=40}] AnimationProg 0
 scoreboard players set @s[scores={ActionTime=40}] ActionTime 0

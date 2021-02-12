@@ -11,6 +11,6 @@ execute store result storage luigis_mansion:data current_state.current_data.mone
 scoreboard players reset #temp ActionTime
 scoreboard players operation @s LastTotalDamage = @s TotalDamage
 scoreboard players set @s Invulnerable 10
-scoreboard players set @s[scores={Health=101..}] Health 100
+execute if score @s Health > @s MaxHealth run scoreboard players operation @s Health = @s MaxHealth
 scoreboard players set @s[scores={ForcedDamage=1..}] ForcedDamage 0
 scoreboard players set @s[scores={ForcedDamage=..-1}] ForcedDamage 0

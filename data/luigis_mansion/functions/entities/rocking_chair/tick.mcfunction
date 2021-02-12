@@ -1,0 +1,1 @@
+execute if entity @s[tag=rock] run function luigis_mansion:animations/rocking_chair

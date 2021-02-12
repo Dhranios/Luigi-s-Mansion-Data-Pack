@@ -7,7 +7,7 @@ summon minecraft:area_effect_cloud 697 111 -5 {Tags:["choice"]}
 summon minecraft:area_effect_cloud 697 111 -21 {Tags:["choice"]}
 summon minecraft:area_effect_cloud 688 111 -8 {Tags:["choice"]}
 summon minecraft:area_effect_cloud 690 111 -9 {Tags:["choice"]}
-summon minecraft:area_effect_cloud 692 111 -19 {Tags:["choice"]}
+summon minecraft:area_effect_cloud 691 111 -17 {Tags:["choice"]}
 summon minecraft:area_effect_cloud 684 115 -14 {Tags:["choice"]}
 execute as @e[type=minecraft:area_effect_cloud,tag=choice] at @s if entity @e[tag=hidden_boo,distance=..1,limit=1] run kill @s
 execute at @e[type=minecraft:area_effect_cloud,tag=choice,limit=1,sort=random] run teleport @s ~ ~ ~

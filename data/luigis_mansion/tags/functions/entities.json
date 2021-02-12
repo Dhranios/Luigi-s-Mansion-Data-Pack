@@ -32,6 +32,7 @@
         "luigis_mansion:entities/gameboy_horror_marker",
         "luigis_mansion:entities/health_display",
         "luigis_mansion:entities/ghost_heart",
-        "luigis_mansion:entities/flashlight"
+        "luigis_mansion:entities/flashlight",
+        "luigis_mansion:entities/rocking_chair"
 	]
 }

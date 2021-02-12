@@ -1,0 +1,1 @@
+execute positioned 691.0 111 32.0 rotated -125 0 run function luigis_mansion:spawn_entities/rocking_chair

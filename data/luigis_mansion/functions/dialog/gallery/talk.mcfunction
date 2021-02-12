@@ -1,4 +1,5 @@
 scoreboard players add @s Dialog 1
+tag @s[scores={Dialog=1}] add nod
 execute if entity @s[scores={Dialog=1}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.gallery.1"}]}
 execute if entity @s[scores={Dialog=32}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.gallery.2"}]}
 execute if entity @s[scores={Dialog=192}] run tellraw @a[tag=same_room] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.e_gadd","color":"green"},{"translate":"luigis_mansion:dialog.gallery.3"}]}
@@ -9,3 +10,4 @@ execute if entity @s[scores={Dialog=360}] if entity @a[tag=looking_at_map,limit=
 tag @s[scores={Dialog=360}] remove talk
 execute unless entity @a[tag=same_room,distance=..7] run tag @s remove talk
 scoreboard players set @s[tag=!talk] Dialog 0
+tag @s[tag=!talk] remove nod

@@ -17,9 +17,9 @@ tag @s[scores={Wave=..30}] add fleeing
 tag @s[scores={Wave=..30}] add fleeing_no_target
 
 execute at @s[tag=!fleeing,tag=laugh,scores={Dialog=0,Wave=..599}] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0,Wave=..599}] run teleport @s ~ ~ ~ ~-2 ~
-execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=move_up] run function luigis_mansion:entities/boolossus/move_up
-execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=!move_up] run function luigis_mansion:entities/boolossus/move_down
+execute if entity @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Time=60..,Dialog=0,Wave=..599}] run function luigis_mansion:entities/boolossus/turn
+execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=move_up] run function luigis_mansion:entities/boolossus/move_up_split
+execute at @s[tag=!fleeing,tag=!attack,tag=!laugh,scores={Dialog=0},tag=!move_up] run function luigis_mansion:entities/boolossus/move_down_split
 tag @s remove wall
 scoreboard players set @s[tag=freeze,scores={Dialog=0,Wave=41..599}] Dialog 100
 scoreboard players remove @s[scores={Dialog=1..}] Dialog 1
