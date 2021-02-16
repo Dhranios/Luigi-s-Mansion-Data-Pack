@@ -4,7 +4,7 @@ execute if entity @s[scores={Dialog=30}] if entity @e[tag=marios_painting,nbt={I
 scoreboard players add @s[scores={Dialog=1..29}] Dialog 1
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s Dialog 1
 execute if entity @s[scores={Dialog=1}] run setblock 770 77 -12 minecraft:light_gray_concrete
-execute if entity @s[scores={Dialog=1}] run summon minecraft:item_frame 771 77 -12 {Facing:5b,ItemRotation:0b,Invulnerable:1b,Item:{},Tags:["marios_painting"]}
+execute if entity @s[scores={Dialog=1}] run summon minecraft:item_frame 771 77 -12 {Facing:5b,ItemRotation:0b,Invulnerable:1b,Item:{},Tags:["marios_painting","portrait"]}
 execute if entity @s[scores={Dialog=10}] run setblock 770 77 -12 minecraft:air
 execute if entity @s[scores={Dialog=10}] run setblock 770 78 -12 minecraft:light_gray_concrete
 execute if entity @s[scores={Dialog=10}] run teleport @e[tag=marios_painting] 771 78 -12

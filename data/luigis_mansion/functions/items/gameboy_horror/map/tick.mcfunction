@@ -1,4 +1,3 @@
-effect give @s minecraft:night_vision 1000000 0 true
 effect give @s minecraft:speed 1000000 8 true
 execute unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run playsound luigis_mansion:item.gameboy_horror.map.move player @s[scores={Sound=0}] ~ ~ ~ 1
 execute unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run scoreboard players set @s[scores={Sound=0}] Sound 7

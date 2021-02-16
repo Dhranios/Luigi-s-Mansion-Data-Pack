@@ -1,4 +1,3 @@
-execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
 title @s subtitle ""
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 give @s[nbt=!{Inventory:[{tag:{luigis_mansion:{id:"luigis_mansion:poltergust_3000"}}}]}] minecraft:carrot_on_a_stick{HideFlags:63,Unbreakable:1b,Damage:1,CustomModelData:2,display:{Name:'{"italic":false,"color":"white","translate":"luigis_mansion:item.poltergust_3000"}',Lore:['{"italic":false,"color":"gray","translate":"luigis_mansion:item.poltergust_3000.element","with":[{"translate":"luigis_mansion:item.poltergust_3000.element.none","color":"gray"}]}']},luigis_mansion:{id:"luigis_mansion:poltergust_3000",element:{type:0b}}}

@@ -1,4 +1,4 @@
-data modify storage luigis_mansion:ghost_list IDs set from entity @s ArmorItems[3].tag.attacked_by
+data modify storage luigis_mansion:data ghost_list set from entity @s ArmorItems[3].tag.attacked_by
 function luigis_mansion:items/poltergust_3000/search_my_id
 scoreboard players reset #temp2 ID
 

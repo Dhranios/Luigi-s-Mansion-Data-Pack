@@ -4,7 +4,7 @@ fill 4719 97 -86 4841 97 68 air
 fill 4719 98 -86 4841 98 68 air
 fill 4719 99 -86 4841 99 68 air
 fill 4719 100 -86 4841 100 68 air
-fill 4719 101 -86 4841 101 68 air
+fill 4719 101 -86 4841 101 68 glow_lichen[north=false,east=false,west=false,south=false,up=false,down=false]
 fill 4719 102 -86 4841 102 68 air
 fill 4719 103 -86 4841 103 68 air
 fill 4719 104 -86 4841 104 68 air

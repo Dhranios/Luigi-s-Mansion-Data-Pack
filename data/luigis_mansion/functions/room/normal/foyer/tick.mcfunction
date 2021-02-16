@@ -5,8 +5,6 @@ execute as @a[x=698,y=111,z=-3,dx=21,dy=6,dz=21] unless entity @s[scores={Room=1
 execute as @e[type=!minecraft:item_frame,x=698,y=111,z=-3,dx=21,dy=6,dz=21] run scoreboard players set @s Room 1
 tag @e[tag=ghost,scores={Room=1}] add hallway
 
-scoreboard players reset @a[gamemode=!spectator,x=719,y=102,z=7,dx=0,dy=1,dz=1] Room
-execute as @a[gamemode=!spectator,x=719,y=102,z=7,dx=0,dy=1,dz=1] unless entity @s[scores={MusicType=0}] run function luigis_mansion:other/music/set/silence
 execute as @a[gamemode=!spectator,x=707,y=102,z=-1,dx=10,dy=15,dz=17] run function luigis_mansion:room/normal/foyer/tick_per_player
 execute as @a[gamemode=!spectator,x=700,y=111,z=-1,dx=17,dy=6,dz=17] unless entity @s[x=707,y=102,z=-1,dx=10,dy=15,dz=17] run function luigis_mansion:room/normal/foyer/tick_per_player
 
@@ -22,7 +20,7 @@ function #luigis_mansion:room/normal/foyer/interactions/room
 
 function luigis_mansion:room/normal/foyer/ghosts
 
-function luigis_mansion:room/normal/door/foyer
+function luigis_mansion:room/normal/door/foyer_outside
 function luigis_mansion:room/normal/door/foyer_parlor
 function luigis_mansion:room/normal/door/foyer_small_hallway
 function luigis_mansion:room/normal/door/foyer_main_hallway

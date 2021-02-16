@@ -4,6 +4,7 @@ execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.2 0.2 1 10
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] run function luigis_mansion:entities/haunted_object/collision
+execute if entity @s[tag=dead] run scoreboard players set @e[tag=chauncey] AnimationProg 0
 execute if entity @s[tag=dead] run tag @e[tag=chauncey] add complain
 
 scoreboard players add @s[tag=enabled] WaitTime 1

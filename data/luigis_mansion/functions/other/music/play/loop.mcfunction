@@ -14,7 +14,7 @@ execute if entity @s[scores={MusicType=8}] run function luigis_mansion:other/mus
 execute if entity @s[scores={MusicType=9}] run function luigis_mansion:other/music/play/loop_mansion_light
 playsound luigis_mansion:music.toad music @s[scores={MusicType=10}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=10}] Music 480
-execute if entity @s[scores={MusicType=11}] run function luigis_mansion:other/music/play/loop_mansion_room_chauncey
+#execute if entity @s[scores={MusicType=11}] run 
 playsound luigis_mansion:music.mansion.room.shy_guys music @s[scores={MusicType=12}] ~ ~ ~ 1000
 scoreboard players set @s[scores={MusicType=12}] Music 320
 playsound luigis_mansion:music.mansion.room.whirlindas music @s[scores={MusicType=13}] ~ ~ ~ 1000

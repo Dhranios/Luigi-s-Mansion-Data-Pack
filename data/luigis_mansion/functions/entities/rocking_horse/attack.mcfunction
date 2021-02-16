@@ -1,3 +1,4 @@
+data modify entity @s Pose.Head[0] set value 0.0f
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=18}] ActionTime 2
 teleport @s[scores={ActionTime=1}] ~ ~ ~ -180 10

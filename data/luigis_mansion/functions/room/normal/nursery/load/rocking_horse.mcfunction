@@ -1,0 +1,1 @@
+execute positioned 716 111 54 rotated -45 0 run function luigis_mansion:spawn_entities/rocking_horse/normal

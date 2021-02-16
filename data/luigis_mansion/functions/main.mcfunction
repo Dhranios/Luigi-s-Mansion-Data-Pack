@@ -2,7 +2,6 @@ function #luigis_mansion:loaded_add_ons
 function #luigis_mansion:post_loaded_add_ons
 execute store result score #players Totals if entity @a[gamemode=!spectator]
 execute store result score #all_players Totals if entity @a
-execute at @a run fill ~-2 ~-2 ~-2 ~2 ~2 ~2 minecraft:air replace minecraft:torch
 execute as @a at @s run function luigis_mansion:main/players
 function luigis_mansion:room/detect
 execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non_players

@@ -3,7 +3,6 @@ execute at @s[tag=!wall,scores={Turn=0}] run function luigis_mansion:entities/gh
 execute at @s[tag=wall] run function luigis_mansion:entities/ghost/flee_wall
 tag @s add me
 function luigis_mansion:entities/ghost/clear_non_vacuumers
-execute as @a[tag=vacuuming] run function luigis_mansion:entities/ghost/find_vacuumers
 function luigis_mansion:entities/ghost/pull
 tag @s remove me
 execute if entity @s[tag=!can_pull] run scoreboard players set #temp Move 4

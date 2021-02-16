@@ -9,5 +9,6 @@ tag @s remove stunable
 scoreboard players set @s VulnerableTime 0
 scoreboard players set @s StunTime 0
 scoreboard players set @s ActionTime 0
+scoreboard players set @s AnimationProg 0
 data modify entity @s ArmorItems[3].tag merge value {attacked_by:[]}
 playsound luigis_mansion:entity.ghost.disappear hostile @a ~ ~ ~ 1

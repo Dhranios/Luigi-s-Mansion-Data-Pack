@@ -1,4 +1,3 @@
-execute at @s run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace minecraft:torch
 title @s subtitle ""
 execute if entity @s[tag=looking_at_map] run function luigis_mansion:items/gameboy_horror/map/close
 execute in minecraft:overworld run teleport @s 775 77 16 150 0
