@@ -1,6 +1,6 @@
 {
 	"values": [
-		"luigis_mansion:entities/floating_whirlindas/dance_normal",
-        "luigis_mansion:entities/floating_whirlindas/dance_hidden"
+		"luigis_mansion:entities/floating_whirlindas/normal",
+        "luigis_mansion:entities/floating_whirlindas/hidden"
 	]
 }
