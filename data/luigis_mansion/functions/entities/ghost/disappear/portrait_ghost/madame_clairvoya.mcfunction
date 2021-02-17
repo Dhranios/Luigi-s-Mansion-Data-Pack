@@ -4,3 +4,4 @@ execute store result entity @s Pos[2] double 0.01 run scoreboard players get @s 
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
 scoreboard players set @s PathStep 0
 scoreboard players set @s Dialog 0
+function luigis_mansion:entities/shivers/turn_visible

@@ -1,1 +1,1 @@
-execute if score #mansion_type Selected matches 0 run function luigis_mansion:entities/madame_clairvoya/normal/talk
+execute if score #mansion_type Selected matches 0 run function luigis_mansion:entities/madame_clairvoya/normal/visible_tick

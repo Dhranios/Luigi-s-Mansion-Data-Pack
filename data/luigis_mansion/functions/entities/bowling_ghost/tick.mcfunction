@@ -12,7 +12,7 @@ tag @s[tag=grabbed_ball,scores={ActionTime=..5}] remove grab_ball
 scoreboard players operation #temp GhostNr = @s GhostNr
 execute as @e[tag=bowling_ball] if score @s GhostNr = #temp GhostNr run tag @s add this_bowling_ball
 
-execute if entity @s[tag=disappear] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
+execute unless entity @s[tag=!disappear,tag=!dead,tag=!vanish,tag=!remove_from_existence] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
 execute if entity @s[scores={HurtTime=1},tag=element_hurt] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
 execute if entity @s[scores={HurtTime=1},tag=hurt] run tag @e[tag=this_bowling_ball,tag=held,limit=1] add drop
 execute if entity @s[scores={HurtTime=1},tag=hurt,tag=!disappear] run playsound luigis_mansion:entity.bowling_ghost.hurt hostile @a ~ ~ ~ 1

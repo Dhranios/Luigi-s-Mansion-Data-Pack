@@ -1,3 +1,6 @@
+scoreboard players operation #temp GhostNr = @s GhostNr
+execute as @e[tag=shivers_body] if score @s GhostNr = #temp GhostNr run tag @s add this_shivers_body
+
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.shivers.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/shivers
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
@@ -11,4 +14,20 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.shivers.flee hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if entity @s[tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function #luigis_mansion:entities/shivers/wander
+execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function #luigis_mansion:entities/shivers/wander
+
+execute if entity @s[tag=vanish] run function luigis_mansion:entities/shivers/vanish
+execute if entity @s[tag=look_around] run function luigis_mansion:animations/shivers/look_around
+execute if entity @s[tag=panic] run function luigis_mansion:animations/shivers/panic
+execute if entity @s[tag=run] run function luigis_mansion:animations/shivers/run
+execute if entity @s[tag=sit_down] run function luigis_mansion:animations/shivers/sit_down
+execute if entity @s[tag=burn,tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function luigis_mansion:animations/shivers/burn
+execute if entity @s[tag=!hurt,tag=!fleeing,tag=!burn,tag=!vanish,tag=!look_around,tag=!panic,tag=!run,tag=!sit_down,scores={StunTime=0}] run function luigis_mansion:animations/shivers/idle
+execute if entity @s[tag=fleeing] run function luigis_mansion:animations/shivers/flee
+execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/shivers/hurt
+
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_shivers_body] ~ -100 ~
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_shivers_body] add dead
+
+scoreboard players reset #temp GhostNr
+tag @e[tag=this_shivers_body,limit=1] remove this_shivers_body

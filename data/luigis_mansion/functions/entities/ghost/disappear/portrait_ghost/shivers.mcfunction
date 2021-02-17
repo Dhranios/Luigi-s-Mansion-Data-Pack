@@ -2,5 +2,8 @@ execute store result entity @s Pos[0] double 0.01 run scoreboard players get @s 
 execute store result entity @s Pos[1] double 0.01 run scoreboard players get @s HomeY
 execute store result entity @s Pos[2] double 0.01 run scoreboard players get @s HomeZ
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s HomeRot
-scoreboard players set @s PathStep 5
+scoreboard players set @s[scores={PathStep=92..}] PathStep 48
+tag @s remove burning
+tag @s remove burn
 function #luigis_mansion:entities/shivers/wander
+function luigis_mansion:entities/shivers/turn_invisible
