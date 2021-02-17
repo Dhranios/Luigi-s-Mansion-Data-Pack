@@ -4,7 +4,7 @@ execute if entity @s[tag=blackout] unless entity @s[scores={MusicType=6}] unless
 
 execute if entity @s[x=655.5,y=102,z=21.5,distance=..4] if data storage luigis_mansion:data current_state.current_data.obtained_keys{courtyard:1b} run function luigis_mansion:room/normal/main_hallway/clear_blockade
 
-execute if entity @s[x=704,y=102,z=-6,distance=..9,tag=!chance_check] unless data storage luigis_mansion:data current_state.current_data.room.main_hallway{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.money_spawned{main_hallway_gold_mouse:1b} unless entity @e[tag=gold_mouse,scores={Room=10},limit=1] run function luigis_mansion:room/normal/main_hallway/gold_mouse
+execute if entity @s[x=704,y=102,z=-6,distance=..9,tag=!chance_check] unless data storage luigis_mansion:data current_state.current_data.rooms.main_hallway{cleared:1b} unless data storage luigis_mansion:data current_state.current_data.money_spawned{main_hallway_gold_mouse:1b} unless entity @e[tag=gold_mouse,scores={Room=10},limit=1] run function luigis_mansion:room/normal/main_hallway/gold_mouse
 execute if entity @s[x=704,y=102,z=-6,distance=..9,tag=!chance_check,tag=blackout] unless data storage luigis_mansion:data current_state.current_data.money_spawned{main_hallway_gold_mouse:1b} unless entity @e[tag=gold_mouse,scores={Room=10},limit=1] run function luigis_mansion:room/normal/main_hallway/gold_mouse
 tag @s[x=704,y=102,z=-6,distance=9..10,tag=chance_check] remove chance_check
 
