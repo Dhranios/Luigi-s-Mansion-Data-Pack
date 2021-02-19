@@ -1,3 +1,6 @@
+scoreboard players operation #temp GhostNr = @s GhostNr
+execute as @e[tag=melody_pianissima_body] if score @s GhostNr = #temp GhostNr run tag @s add this_melody_pianissima_body
+
 execute if entity @s[tag=dying,scores={HurtTime=1}] run playsound luigis_mansion:entity.melody_pianissima.vacuumed hostile @a ~ ~ ~ 1
 execute if entity @s[tag=dead] run loot spawn ~ ~ ~ loot luigis_mansion:entities/ghost/melody_pianissima
 execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.1 0.2 0.6 0.2 1 30
@@ -11,7 +14,22 @@ scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40
 execute if entity @s[scores={Sound=0},tag=fleeing] run playsound luigis_mansion:entity.melody_pianissima.flee hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 
-execute if score #conservatory Wave matches 1..2 unless entity @s[scores={Dialog=1..}] at @a[tag=same_room] positioned ^ ^ ^8 run effect give @s[distance=..8] minecraft:invisibility 1 0 true
-effect clear @s[nbt={ActiveEffects:[{Id:14b,Duration:19}]}] minecraft:invisibility
+execute if entity @s[tag=visible,tag=!talk] run function luigis_mansion:entities/melody_pianissima/turn_invisible
 execute if entity @s[tag=talk] run function #luigis_mansion:entities/melody_pianissima/play
 execute if entity @s[tag=!talk] if entity @a[gamemode=!spectator,distance=..5] run function #luigis_mansion:entities/melody_pianissima/play
+
+execute if entity @s[tag=vanish] run function luigis_mansion:entities/melody_pianissima/vanish
+execute if entity @s[tag=nod] run function luigis_mansion:animations/melody_pianissima/nod
+execute if entity @s[tag=listen] run function luigis_mansion:animations/melody_pianissima/listen
+execute if entity @s[tag=rage] run function luigis_mansion:animations/melody_pianissima/rage
+execute if entity @s[tag=laugh] run function luigis_mansion:animations/melody_pianissima/laugh
+execute if entity @s[tag=complain,tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function luigis_mansion:animations/melody_pianissima/complain
+execute if entity @s[tag=!hurt,tag=!fleeing,tag=!complain,tag=!nod,tag=!listen,tag=!rage,tag=!laugh,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/melody_pianissima/idle
+execute if entity @s[tag=fleeing] run function luigis_mansion:animations/melody_pianissima/flee
+execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/melody_pianissima/hurt
+
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_melody_pianissima_body] ~ -100 ~
+execute unless entity @s[tag=!dead,tag=!remove_from_existence] run tag @e[tag=this_melody_pianissima_body] add dead
+
+scoreboard players reset #temp GhostNr
+tag @e[tag=this_melody_pianissima_body,limit=1] remove this_melody_pianissima_body

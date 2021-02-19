@@ -2,11 +2,12 @@ scoreboard players set @s Music 0
 scoreboard players set @s Offline 0
 scoreboard players set @s PrevMusicType 0
 scoreboard players set @s HallwayNoise 0
-scoreboard players set @s Room 0
-scoreboard players set @s LastRoom 0
+scoreboard players set @s LoadedChunks 0
 scoreboard players reset @s ID
 scoreboard players operation @s ID > @a ID
 scoreboard players add @s ID 1
+tag @s remove seen_room_name_2
+tag @s remove seen_room_name
 
 function #luigis_mansion:load_data
 

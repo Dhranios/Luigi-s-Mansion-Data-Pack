@@ -3,7 +3,7 @@ function #luigis_mansion:post_loaded_add_ons
 execute store result score #players Totals if entity @a[gamemode=!spectator]
 execute store result score #all_players Totals if entity @a
 execute as @a at @s run function luigis_mansion:main/players
-function luigis_mansion:room/detect
+execute unless entity @a[tag=!loaded_chunks,limit=1] if entity @a[tag=loaded_chunks,limit=1] run function luigis_mansion:room/detect
 execute as @e[type=!minecraft:player] at @s run function luigis_mansion:main/non_players
 function luigis_mansion:anti_cheating/scores
 execute unless score #mansion_type Selected matches -1 unless entity @a[tag=blackout_lightning,limit=1] if predicate luigis_mansion:lightning_strike_chance run function luigis_mansion:other/lightning_strike

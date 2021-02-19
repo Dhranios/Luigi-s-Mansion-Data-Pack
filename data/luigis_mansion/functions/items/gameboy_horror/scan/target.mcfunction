@@ -1,4 +1,6 @@
-execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,type=!minecraft:player,type=!minecraft:area_effect_cloud,type=!minecraft:painting,type=!minecraft:item_frame,tag=!scan_ignore] unless entity @s[tag=blue_mouse,tag=!spawn] unless entity @s[tag=purple_mouse,tag=!spawn] unless entity @s[tag=spark,tag=!spawn] run tag @s add target
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,tag=portrait_ghost,tag=!scan_ignore] run tag @s add target
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,tag=toad,tag=!scan_ignore] run tag @s add target
+execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[dx=0,dy=0,dz=0,tag=e_gadd,tag=!scan_ignore] run tag @s add target
 execute unless entity @e[tag=target,limit=1] if block ~ ~ ~ #luigis_mansion:gameboy_horror_warp if score #can_warp Selected matches 1 run tag @s add warp
 execute unless entity @s[tag=warp] unless entity @e[tag=target,limit=1] unless block ~ ~ ~ #luigis_mansion:gameboy_horror_warp unless block ~ ~ ~ #luigis_mansion:gameboy_horror_path run function luigis_mansion:items/gameboy_horror/scan/block
 execute unless entity @s[tag=warp] unless entity @e[tag=target,limit=1] if block ~ ~ ~ minecraft:barrier if entity @e[type=minecraft:armor_stand,distance=..3,limit=1] run function luigis_mansion:items/gameboy_horror/scan/block

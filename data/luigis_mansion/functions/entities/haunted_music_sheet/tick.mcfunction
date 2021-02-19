@@ -16,7 +16,8 @@ execute if entity @e[tag=melody_pianissima,limit=1] run tag @s[tag=dead] remove 
 
 scoreboard players set #temp Move 5
 scoreboard players add @s[scores={WaitTime=..-1}] WaitTime 1
-execute unless entity @e[tag=melody_pianissima,scores={VulnerableTime=1..},limit=1] run scoreboard players add @s[scores={WaitTime=0..}] WaitTime 1
-execute if entity @s[scores={WaitTime=1..59}] run function luigis_mansion:entities/haunted_music_sheet/hover
-execute if entity @s[scores={WaitTime=60..}] run function luigis_mansion:entities/haunted_music_sheet/attack
-execute if entity @s[scores={WaitTime=1..}] run function luigis_mansion:animations/haunted_object/flap
+execute unless entity @e[tag=melody_pianissima,scores={VulnerableTime=1..},tag=!vanish,limit=1] run scoreboard players add @s[scores={WaitTime=0..}] WaitTime 1
+teleport @s[scores={WaitTime=1}] ~ ~1 ~
+execute at @s[scores={WaitTime=1..59}] run function luigis_mansion:entities/haunted_music_sheet/hover
+execute at @s[scores={WaitTime=60..}] run function luigis_mansion:entities/haunted_music_sheet/attack
+execute at @s[scores={WaitTime=1..}] run function luigis_mansion:animations/haunted_object/flap

@@ -49,6 +49,7 @@ scoreboard objectives add LastHealth dummy
 scoreboard objectives add LastRoom dummy
 scoreboard objectives add LastTotalDamage dummy
 scoreboard objectives add Loaded dummy
+scoreboard objectives add LoadedChunks dummy
 scoreboard objectives add Offline minecraft.custom:minecraft.leave_game
 scoreboard objectives add PunchingBag dummy
 scoreboard objectives add MansionChoice trigger

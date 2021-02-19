@@ -1,3 +1,9 @@
+execute unless block ~ ~ ~ minecraft:air{loaded:0b} unless block ~-48 ~ ~ minecraft:air{loaded:0b} unless block ~48 ~ ~ minecraft:air{loaded:0b} unless block ~ ~ ~-48 minecraft:air{loaded:0b} unless block ~ ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~-48 minecraft:air{loaded:0b} unless block ~-48 ~ ~48 minecraft:air{loaded:0b} unless block ~-48 ~ ~-48 minecraft:air{loaded:0b} run function luigis_mansion:main/loaded_chunks
+
+scoreboard players set @s[tag=!loaded_chunk_triggered] LoadedChunks 0
+tag @s[tag=!loaded_chunk_triggered] remove loaded_chunks
+tag @s remove loaded_chunk_triggered
+
 scoreboard players operation #temp Room = @s Room
 execute as @a[gamemode=!spectator] if score @s Room = #temp Room run tag @s add same_room
 scoreboard players reset #temp Room
