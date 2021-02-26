@@ -28,5 +28,5 @@ execute if entity @s[tag=!rotated,tag=spawn] run function luigis_mansion:entitie
 scoreboard players set #temp Move 2
 execute at @s[tag=rotated,tag=!squeek] rotated ~ 0 run function luigis_mansion:entities/blue_mouse/move_forward
 execute if entity @s[tag=disappear,tag=!dead,tag=!squeek] run function luigis_mansion:entities/blue_mouse/back_to_start
-execute if entity @s[tag=spawn,tag=!squeek] run function luigis_mansion:animations/blue_mouse/idle
+execute at @s[tag=spawn,tag=!squeek] run function luigis_mansion:animations/mouse/idle
 execute if entity @s[tag=squeek] run function luigis_mansion:entities/blue_mouse/squeek

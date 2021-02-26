@@ -18,14 +18,14 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 execute if entity @s[tag=!fleeing,tag=!hurt,tag=!remove_from_existence,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/mr_luggs/eat
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/mr_luggs/vanish
-execute if entity @s[tag=hit_table] run function luigis_mansion:animations/mr_luggs/hit_table
-execute if entity @s[tag=complain] run function luigis_mansion:animations/mr_luggs/complain
-execute if entity @s[tag=rage] run function luigis_mansion:animations/mr_luggs/rage
-execute if entity @s[tag=spit] run function luigis_mansion:animations/mr_luggs/spit
-execute if entity @s[tag=sigh,tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function luigis_mansion:animations/mr_luggs/sigh
-execute if entity @s[tag=!hurt,tag=!fleeing,tag=!sigh,tag=!complain,tag=!hit_table,tag=!rage,tag=!spit,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/mr_luggs/idle
-execute if entity @s[tag=fleeing] run function luigis_mansion:animations/mr_luggs/flee
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/mr_luggs/hurt
+execute at @s[tag=hit_table] run function luigis_mansion:animations/mr_luggs/hit_table
+execute at @s[tag=complain] run function luigis_mansion:animations/mr_luggs/complain
+execute at @s[tag=rage] run function luigis_mansion:animations/mr_luggs/rage
+execute at @s[tag=spit] run function luigis_mansion:animations/mr_luggs/spit
+execute at @s[tag=sigh,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/mr_luggs/sigh
+execute at @s[tag=!hurt,tag=!fleeing,tag=!sigh,tag=!complain,tag=!hit_table,tag=!rage,tag=!spit,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/mr_luggs/idle
+execute at @s[tag=fleeing] run function luigis_mansion:animations/mr_luggs/flee
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/mr_luggs/hurt
 
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_mr_luggs_body] ~ -100 ~
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_food] ~ -100 ~

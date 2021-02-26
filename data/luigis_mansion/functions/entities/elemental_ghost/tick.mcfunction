@@ -3,7 +3,7 @@ execute if entity @s[tag=dead,tag=water_elemental_ghost] as @p[gamemode=!spectat
 execute if entity @s[tag=dead,tag=ice_elemental_ghost] as @p[gamemode=!spectator,tag=vacuuming] run function luigis_mansion:items/poltergust_3000/ice_element
 scoreboard players add @s SpawnTime 1
 execute if entity @s[scores={SpawnTime=1}] run function luigis_mansion:entities/elemental_ghost/initial_rotation
-execute if entity @s[scores={SpawnTime=1..20}] run function luigis_mansion:animations/elemental_ghost/spawn
+execute at @s[scores={SpawnTime=1..20}] run function luigis_mansion:animations/elemental_ghost/spawn
 execute at @s[scores={SpawnTime=1..20}] if block ~ ~0.4 ~ #luigis_mansion:item_pull_ignore run teleport @s ~ ~0.1 ~
 execute at @s[scores={SpawnTime=1..20}] if block ^ ^ ^0.3 #luigis_mansion:item_pull_ignore run teleport @s ^ ^ ^0.02
 execute at @s[scores={SpawnTime=21..60}] if block ^ ^ ^0.3 #luigis_mansion:item_pull_ignore run teleport @s ^ ^ ^0.01

@@ -1,2 +1,0 @@
-execute if score #mirrored Selected matches 0 run function luigis_mansion:animations/ceiling_surprise/normal/flee
-execute if score #mirrored Selected matches 1 run function luigis_mansion:animations/ceiling_surprise/mirrored/flee

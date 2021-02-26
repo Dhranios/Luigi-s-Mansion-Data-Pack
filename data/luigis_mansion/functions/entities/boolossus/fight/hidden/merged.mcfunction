@@ -20,4 +20,6 @@ tag @s remove wall
 
 execute if entity @s[tag=fleeing,tag=!laugh,tag=!attack] run function luigis_mansion:entities/boolossus/merged_flee
 
+execute at @s[tag=!fleeing,tag=!laugh] run function luigis_mansion:animations/boo/idle
+
 tag @s[tag=fleeing] remove fleeing

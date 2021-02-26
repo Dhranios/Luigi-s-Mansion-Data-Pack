@@ -32,8 +32,9 @@ execute if entity @a[gamemode=!spectator,distance=..0.7,limit=1] if entity @s[ta
 
 execute at @s[tag=warp] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
 execute if entity @s[tag=!fleeing,tag=taunt] run function luigis_mansion:entities/king_boo/taunt
-execute if entity @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
-execute if entity @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
+execute at @s[tag=fleeing] run function luigis_mansion:animations/boo/flee
+execute at @s[tag=!fleeing,tag=boo_hurt] run function luigis_mansion:animations/boo/hurt
+execute at @s[tag=!fleeing,tag=!boo_hurt,tag=!taunt] run function luigis_mansion:animations/boo/idle
 
 scoreboard players set @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying,tag=!cutscene] ActionTime 0
 scoreboard players reset @s[tag=!boo_hurt,tag=!fleeing,tag=!attack,tag=!laugh,tag=!taunt,tag=!dying] HurtTime

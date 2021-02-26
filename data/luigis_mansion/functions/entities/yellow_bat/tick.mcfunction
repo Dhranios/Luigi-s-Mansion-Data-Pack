@@ -24,5 +24,5 @@ execute if entity @s[tag=returned,tag=!dead] run function luigis_mansion:entitie
 tag @s remove vacuum_in_room
 execute at @s[tag=!attack,tag=!fleeing] facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~-180 ~
 
-execute if entity @s[tag=!attack] run function luigis_mansion:animations/purple_bat/idle
-execute if entity @s[tag=attack] run function luigis_mansion:animations/purple_bat/flying
+execute at @s[tag=!attack] run function luigis_mansion:animations/bat/idle
+execute at @s[tag=attack] run function luigis_mansion:animations/bat/flying

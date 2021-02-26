@@ -5,16 +5,19 @@ execute if entity @s[tag=!intro_done] run function luigis_mansion:entities/bogmi
 execute unless entity @s[scores={Dialog=1..}] run scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0}] Dialog 1
 scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=..179}] Dialog 1
 scoreboard players add @s[tag=intro_done,scores={VulnerableTime=0,Dialog=181..}] Dialog 1
-execute if entity @s[tag=intro_done,scores={Dialog=70}] run teleport @s ~ ~-4 ~
+tag @s[scores={Dialog=2}] remove vanish_flee
+execute if entity @s[tag=intro_done,scores={Dialog=70}] run function luigis_mansion:entities/bogmire/turn_invisible
 execute if entity @s[tag=intro_done,scores={Dialog=110}] run function luigis_mansion:entities/bogmire/warp
-execute if entity @s[tag=intro_done,scores={Dialog=181}] run tag @e[tag=black_bogmire] add dead
-execute if entity @s[tag=intro_done,scores={Dialog=181}] run function luigis_mansion:entities/bogmire/instant_spawn
-execute if entity @s[tag=intro_done,scores={Dialog=201}] run function luigis_mansion:entities/bogmire/instant_spawn
-execute if entity @s[tag=intro_done,scores={Dialog=221}] run function luigis_mansion:entities/bogmire/instant_spawn
-execute if entity @s[tag=intro_done,scores={Dialog=241}] run function luigis_mansion:entities/bogmire/instant_spawn
-execute if entity @s[tag=intro_done,scores={Dialog=261}] run function luigis_mansion:entities/bogmire/instant_spawn
-execute if entity @s[tag=intro_done,scores={Dialog=181..}] run scoreboard players set @e[tag=black_bogmire,limit=1,scores={SpawnDialog=..120}] SpawnDialog 120
-execute if entity @s[tag=intro_done,scores={Dialog=280}] run scoreboard players set @s Dialog 109
+execute if entity @s[tag=intro_done,scores={Dialog=182}] run tag @e[tag=black_bogmire] add dead
+execute if entity @s[tag=intro_done,scores={Dialog=182}] run function luigis_mansion:entities/bogmire/instant_spawn
+execute if entity @s[tag=intro_done,scores={Dialog=202}] run function luigis_mansion:entities/bogmire/instant_spawn
+execute if entity @s[tag=intro_done,scores={Dialog=222}] run function luigis_mansion:entities/bogmire/instant_spawn
+execute if entity @s[tag=intro_done,scores={Dialog=242}] run function luigis_mansion:entities/bogmire/instant_spawn
+execute if entity @s[tag=intro_done,scores={Dialog=262}] run function luigis_mansion:entities/bogmire/instant_spawn
+execute if entity @s[tag=intro_done,scores={Dialog=182..}] run scoreboard players set @e[tag=black_bogmire,limit=1,scores={SpawnTime=..120}] SpawnTime 120
+execute if entity @s[tag=intro_done,scores={Dialog=281}] run scoreboard players set @s Dialog 109
 
-execute if entity @e[distance=..0.7,tag=shadow] run scoreboard players set @s VulnerableTime 280
+execute if entity @e[distance=..0.7,tag=shadow] run tag @s[tag=visible] add shadow_hit
+execute if entity @e[distance=..0.7,tag=shadow] run scoreboard players set @s[tag=visible] VulnerableTime 280
 scoreboard players set @s[scores={VulnerableTime=1}] Dialog 69
+tag @s[scores={VulnerableTime=1}] remove shadow_hit

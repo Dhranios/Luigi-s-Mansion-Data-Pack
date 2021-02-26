@@ -1,9 +1,7 @@
 scoreboard players add @s ActionTime 1
 execute if entity @s[scores={ActionTime=1}] run playsound luigis_mansion:entity.red_grabbing_ghost.laugh hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
-data merge entity @s[scores={ActionTime=1}] {Pose:{RightArm:[-90.0f,0.0f,0.0f],LeftArm:[-90.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f]}}
-function luigis_mansion:animations/grabbing_ghost/laugh
-data merge entity @s[scores={ActionTime=40}] {Pose:{RightArm:[-90.0f,0.0f,0.0f],LeftArm:[-90.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f]}}
+execute at @s run function luigis_mansion:animations/grabbing_ghost/laugh
 execute at @s run teleport @s[scores={ActionTime=1}] ~ ~ ~ ~18 ~
 execute at @s run teleport @s[scores={ActionTime=2}] ~ ~ ~ ~36 ~
 execute at @s run teleport @s[scores={ActionTime=3}] ~ ~ ~ ~54 ~

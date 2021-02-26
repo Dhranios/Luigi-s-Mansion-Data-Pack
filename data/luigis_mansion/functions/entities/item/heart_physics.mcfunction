@@ -24,7 +24,7 @@ execute if entity @s[tag=bounce] store result entity @s Pos[1] double 0.01 run s
 
 execute at @s positioned ~ ~1.4 ~ align y unless block ~ ~ ~ #luigis_mansion:items_ignore unless block ~ ~ ~ #minecraft:slabs at @s run teleport @s ~ ~0.1 ~
 
-function luigis_mansion:animations/money/rotate
+execute at @s run function luigis_mansion:animations/money/rotate
 
 tag @s remove in_wall
 execute at @s unless block ~ ~1.4 ~0.3 #luigis_mansion:items_ignore run teleport @s ~ ~ ~-0.3

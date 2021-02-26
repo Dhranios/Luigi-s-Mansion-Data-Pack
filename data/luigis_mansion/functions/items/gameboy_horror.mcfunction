@@ -13,6 +13,9 @@ execute if entity @s[scores={GBHCall=1..}] unless entity @s[scores={MusicType=2.
 scoreboard players add @s[scores={GBHCall=1..},tag=!gameboy_horror_selected] GBHWait 1
 execute if entity @s[tag=gameboy_horror_selected] run function luigis_mansion:items/gameboy_horror/show_ghost_presence
 
+execute unless entity @s[tag=gameboy_horror_selected,tag=!looking_at_map] run attribute @s minecraft:generic.movement_speed base set 0.10000000149011612
+attribute @s[tag=gameboy_horror_selected,tag=!looking_at_map] minecraft:generic.movement_speed base set 0
+
 scoreboard players operation #temp Room = @s Room
 execute as @e[tag=hidden_boo] if score @s Room = #temp Room run tag @s add this_room_boo
 execute as @e[tag=boo,tag=!dark_room,tag=!cutscene,tag=ghost] if score @s Room = #temp Room run tag @s add this_room_boo

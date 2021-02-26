@@ -21,16 +21,16 @@ execute if entity @s[tag=visible,tag=!fleeing,tag=!hurt] run function #luigis_ma
 tag @s[scores={VulnerableTime=1..},tag=talk] remove talk
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/madame_clairvoya/vanish
-execute if entity @s[tag=nod] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/nod
-execute if entity @s[tag=listen] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/listen
-execute if entity @s[tag=explain] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/explain
-execute if entity @s[tag=power] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/power
-execute if entity @s[tag=power] positioned ^0.4 ^1.4 ^0.5 run particle minecraft:dust 1 0 1 1 ~ ~ ~ 0 0 0 0 1
-execute if entity @s[tag=power] positioned ^-0.4 ^1.4 ^0.5 run particle minecraft:dust 1 0 1 1 ~ ~ ~ 0 0 0 0 1
-execute if entity @s[tag=laugh,tag=!fleeing,tag=!hurt,scores={StunTime=0}] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/laugh
-execute if entity @s[tag=!hurt,tag=!fleeing,tag=!nod,tag=!listen,tag=!explain,tag=!power,tag=!laugh,tag=!vanish,scores={StunTime=0}] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/idle
-execute if entity @s[tag=fleeing] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/flee
-execute if entity @s[tag=!fleeing,tag=hurt] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/hurt
+execute at @s[tag=nod] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/nod
+execute at @s[tag=listen] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/listen
+execute at @s[tag=explain] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/explain
+execute at @s[tag=power] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/power
+execute at @s[tag=power] positioned ^0.4 ^1.4 ^0.5 run particle minecraft:dust 1 0 1 1 ~ ~ ~ 0 0 0 0 1
+execute at @s[tag=power] positioned ^-0.4 ^1.4 ^0.5 run particle minecraft:dust 1 0 1 1 ~ ~ ~ 0 0 0 0 1
+execute at @s[tag=laugh,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/laugh
+execute at @s[tag=!hurt,tag=!fleeing,tag=!nod,tag=!listen,tag=!explain,tag=!power,tag=!laugh,tag=!vanish,scores={StunTime=0}] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/idle
+execute at @s[tag=fleeing] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/flee
+execute at @s[tag=!fleeing,tag=hurt] as @e[tag=this_madame_clairvoya_head,limit=1] run function luigis_mansion:animations/madame_clairvoya/hurt
 
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_madame_clairvoya_head] ~ -100 ~
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_madame_clairvoya_body] ~ -100 ~

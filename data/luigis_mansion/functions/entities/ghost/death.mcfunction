@@ -15,13 +15,14 @@ execute if entity @s[scores={HurtTime=1}] run tag @a remove vacuuming_this_ghost
 scoreboard players operation #temp KillerID = @s KillerID
 execute as @a[gamemode=!spectator] if score @s ID = #temp KillerID run tag @s add killer
 scoreboard players reset #temp KillerID
-execute facing entity @a[tag=killer,limit=1] feet run teleport @s ~ ~ ~ ~-180 ~
+execute at @s facing entity @a[tag=killer,limit=1] feet run teleport @s ~ ~ ~ ~-180 ~
 execute store result score #temp HomeRot run data get entity @s Rotation[1] 100
 scoreboard players operation #temp HomeRot *= #-1 Constants
 execute store result entity @s Rotation[1] float 0.01 run scoreboard players get #temp HomeRot
 scoreboard players reset #temp HomeRot
 
-execute at @s run teleport @s ^ ^ ^-0.6
+scoreboard players set @s Move 0
+execute at @s run teleport @s ^ ^ ^-0.2
 
 execute at @s[scores={HurtTime=1},tag=!gold_dummy_ghost] if entity @a[tag=killer,limit=1,scores={GhostCount=2..}] run function luigis_mansion:spawn_entities/item/small_heart
 execute at @s[scores={HurtTime=1}] run function luigis_mansion:entities/ghost/capture

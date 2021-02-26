@@ -1,6 +1,6 @@
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
-function luigis_mansion:animations/gold_ghost/attack
+execute at @s run function luigis_mansion:animations/ghost/attack
 
 teleport @s[scores={ActionTime=1..39},tag=!dialog] ^ ^ ^0.0125
 execute at @s[scores={ActionTime=1..20},tag=!dialog] positioned ^ ^ ^0.7 unless entity @a[distance=..0.7,gamemode=!spectator] run tag @s add stop_attack
@@ -18,6 +18,5 @@ scoreboard players set @s[scores={ActionTime=60}] ActionTime 0
 
 scoreboard players set @s[tag=stop_attack] ActionTime 0
 scoreboard players set @s[tag=stop_attack] AnimationProg 0
-data merge entity @s[tag=stop_attack] {Pose:{RightArm:[-90.0f,0.0f,0.0f],LeftArm:[-90.0f,0.0f,0.0f]}}
 tag @s[tag=stop_attack] remove attack
 tag @s[tag=stop_attack] remove stop_attack

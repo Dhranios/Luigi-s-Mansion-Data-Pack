@@ -17,11 +17,11 @@ scoreboard players set @s[scores={Sound=0},tag=fleeing] Sound 40
 execute if entity @s[tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:entities/neville/yawn
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/neville/vanish
-execute if entity @s[tag=yawn,tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function luigis_mansion:animations/neville/yawn
-execute if entity @s[tag=!hurt,tag=!fleeing,tag=!yawn,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/neville/idle
-execute if entity @s[tag=fleeing] run function luigis_mansion:animations/neville/flee
+execute at @s[tag=yawn,tag=!fleeing,tag=!hurt,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/neville/yawn
+execute at @s[tag=!hurt,tag=!fleeing,tag=!yawn,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/neville/idle
+execute at @s[tag=fleeing] run function luigis_mansion:animations/neville/flee
 execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:entities/neville/drop_book
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/neville/hurt
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/neville/hurt
 
 execute at @s[scores={StunTime=0}] if entity @e[tag=rocking_chair,distance=..2,scores={AnimationProg=1..20},limit=1] run teleport @s ^ ^ ^0.01
 execute at @s[scores={StunTime=0}] if entity @e[tag=rocking_chair,distance=..2,scores={AnimationProg=21..60},limit=1] run teleport @s ^ ^ ^-0.01

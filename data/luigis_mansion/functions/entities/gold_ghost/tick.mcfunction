@@ -23,7 +23,7 @@ tag @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!l
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/gold_ghost/vanish
 execute if entity @s[tag=appear,tag=!opening_appear] run function luigis_mansion:entities/gold_ghost/appear
 execute if entity @s[tag=appear,tag=opening_appear] run function luigis_mansion:entities/gold_ghost/appear_opening
-execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/gold_ghost/idle
-execute if entity @s[tag=fleeing] run function luigis_mansion:animations/gold_ghost/flee
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/gold_ghost/hurt
-execute if entity @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/gold_ghost/hurt
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,scores={StunTime=0}] run function luigis_mansion:animations/ghost/idle
+execute at @s[tag=fleeing] run function luigis_mansion:animations/ghost/flee
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ghost/hurt
+execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ghost/hurt

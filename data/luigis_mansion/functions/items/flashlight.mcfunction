@@ -1,13 +1,9 @@
-tag @s[tag=flashlight] remove flashlight
-tag @s[gamemode=!spectator,tag=!grabbed,nbt={SelectedItem:{tag:{luigis_mansion:{id:"luigis_mansion:flashlight"}}}}] add flashlight
-tag @s[tag=!flashlight] remove flashlight_off
-tag @s[tag=flashlight,scores={UseItem=1},tag=!flashlight_off] add toggle_flashlight_off
-tag @s[tag=flashlight,tag=toggle_flashlight_off] add flashlight_off
-scoreboard players set @s[tag=flashlight,tag=toggle_flashlight_off] UseItem 0
-tag @s[tag=flashlight,tag=toggle_flashlight_off] remove toggle_flashlight_off
-tag @s[tag=flashlight,scores={UseItem=1},tag=flashlight_off] remove flashlight_off
-scoreboard players set @s[tag=flashlight,scores={UseItem=1},tag=flashlight] UseItem 0
-tag @s[tag=flashlight,tag=flashlight_off] remove flashlight
-function #luigis_mansion:items/flashlight
-tag @s[tag=!flashlight,tag=had_flashlight_on] remove had_flashlight_on
-tag @s[tag=flashlight,tag=!had_flashlight_on] add had_flashlight_on
+tellraw @s[scores={FlashlightType=10}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.flashlight_type.set.always"}]}
+tellraw @s[scores={FlashlightType=11}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.flashlight_type.set.toggle"}]}
+tellraw @s[scores={FlashlightType=12}] {"translate":"chat.type.text","with":[{"translate":"luigis_mansion:entity.mansion","color":"green"},{"translate":"luigis_mansion:message.flashlight_type.set.select"}]}
+scoreboard players remove @s[scores={FlashlightType=10..12}] FlashlightType 10
+execute unless entity @s[scores={FlashlightType=0..2}] run scoreboard players set @s FlashlightType 0
+execute if entity @s[scores={FlashlightType=0}] run function luigis_mansion:items/flashlight/always_shine
+execute if entity @s[scores={FlashlightType=1}] run function luigis_mansion:items/flashlight/toggle_to_shine
+execute if entity @s[scores={FlashlightType=2}] run function luigis_mansion:items/flashlight/select_to_shine
+scoreboard players enable @s FlashlightType

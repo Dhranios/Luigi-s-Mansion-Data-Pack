@@ -1,7 +1,7 @@
 scoreboard players add @s[scores={ActionTime=1..30}] ActionTime 1
 execute unless entity @s[scores={ActionTime=1..}] run scoreboard players set @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
-function luigis_mansion:animations/chauncey/attack
+execute at @s run function luigis_mansion:animations/chauncey/attack
 
 execute if entity @s[scores={ActionTime=1},tag=fight] run tag @e[tag=rocking_horse] add attack
 scoreboard players set @s[scores={ActionTime=1},tag=fight] ActionTime 11

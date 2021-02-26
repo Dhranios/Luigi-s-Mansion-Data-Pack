@@ -11,9 +11,9 @@ execute if entity @s[scores={ActionTime=1..20}] if score #mirrored Selected matc
 execute if entity @s[scores={ActionTime=20..100}] positioned ^ ^ ^0.8 run effect give @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] minecraft:instant_damage 1 0 true
 execute if entity @s[scores={ActionTime=20}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -1
 execute if entity @s[scores={ActionTime=21..100}] positioned ^ ^ ^0.8 run scoreboard players set @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] ForcedDamage -5
-execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 store result entity @s Rotation[0] float 0.01 run data get entity @a[gamemode=!spectator,tag=grabbed,limit=1] Rotation[0] 100
+execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 store result entity @s Rotation[0] float 0.01 run data get entity @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] Rotation[0] 100
 execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 unless entity @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] run scoreboard players set @s ActionTime 110
-execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 positioned as @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 rotated as @s run teleport @s ~ ~ ~ ~ ~
+execute if entity @s[scores={ActionTime=21..110}] positioned ^ ^ ^0.8 positioned as @a[gamemode=!spectator,distance=..0.7,tag=grabbed,limit=1] rotated as @s positioned ^ ^ ^-0.8 run teleport @s ~ ~ ~ ~ ~
 execute at @s[scores={ActionTime=40}] positioned ^ ^ ^0.8 if entity @a[distance=..0.7,gamemode=!spectator,tag=grabbed,limit=1] run tag @s add laugh
 scoreboard players set @s[scores={ActionTime=110}] AnimationProg 0
 execute if entity @s[scores={ActionTime=110..130}] run function luigis_mansion:animations/grabbing_ghost/let_go

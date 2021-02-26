@@ -15,6 +15,6 @@ execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=!collided,tag=laugh,tag=
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,tag=!vanish,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/ceiling_surprise/vanish
 execute if entity @s[tag=appear] run function luigis_mansion:entities/ceiling_surprise/appear
-execute if entity @s[tag=fleeing] run function luigis_mansion:animations/ceiling_surprise/flee
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ceiling_surprise/hurt
-execute if entity @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ceiling_surprise/hurt
+execute at @s[tag=fleeing] run function luigis_mansion:animations/ceiling_ghost/flee
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ceiling_ghost/hurt
+execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ceiling_ghost/hurt

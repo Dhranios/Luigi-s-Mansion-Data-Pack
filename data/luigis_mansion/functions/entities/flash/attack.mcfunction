@@ -1,6 +1,6 @@
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
-function luigis_mansion:animations/purple_puncher/attack
+execute at @s run function luigis_mansion:animations/puncher/attack
 
 scoreboard players set #temp Move 6
 execute if entity @s[scores={ActionTime=41}] run playsound luigis_mansion:entity.ghost.punch hostile @a ~ ~ ~ 1

@@ -1,8 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:player_head",
-			"nbt": "{SkullOwner:\"Mario\"}"
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Unbreakable:1b,Damage:1,CustomModelData:175}"
         },
         "show_toast": false,
         "hidden": true,

@@ -10,4 +10,4 @@ tag @s[tag=!fleeing] remove played_sound
 execute if entity @s[tag=!dead] run function #luigis_mansion:entities/gold_mouse/tick
 scoreboard players set #temp Move 8
 execute at @s[tag=!dead] run function luigis_mansion:entities/gold_mouse/move_forward
-function luigis_mansion:animations/blue_mouse/idle
+execute at @s run function luigis_mansion:animations/mouse/idle

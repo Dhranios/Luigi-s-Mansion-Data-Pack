@@ -20,10 +20,10 @@ execute at @s[tag=!fleeing,scores={StunTime=0}] run function #luigis_mansion:ent
 execute at @s unless entity @s[tag=!fleeing,tag=!hurt] run teleport @e[tag=floating_whirlindas_female,limit=1] ^-0.5 ^ ^1 ~ ~
 
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/floating_whirlindas/vanish
-execute if entity @s[tag=bow,tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function luigis_mansion:animations/floating_whirlindas/bow
-execute if entity @s[tag=!hurt,tag=!fleeing,tag=!bow,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/floating_whirlindas/idle
-execute if entity @s[tag=fleeing] run function luigis_mansion:animations/floating_whirlindas/flee
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/floating_whirlindas/hurt
+execute at @s[tag=bow,tag=!fleeing,tag=!hurt,scores={StunTime=0}] run function luigis_mansion:animations/floating_whirlindas/bow
+execute at @s[tag=!hurt,tag=!fleeing,tag=!bow,tag=!vanish,scores={StunTime=0}] run function luigis_mansion:animations/floating_whirlindas/idle
+execute at @s[tag=fleeing] run function luigis_mansion:animations/floating_whirlindas/flee
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/floating_whirlindas/hurt
 
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_floating_whirlindas_body] ~ -100 ~
 execute unless entity @s[tag=!dead,tag=!remove_from_existence] run teleport @e[tag=this_floating_whirlindas_female] ~ -100 ~

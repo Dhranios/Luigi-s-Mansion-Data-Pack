@@ -1,5 +1,5 @@
 execute facing entity @p[gamemode=!spectator] feet rotated ~ 0 run teleport @s ~ ~ ~ ~ ~
-function luigis_mansion:animations/boo/idle
+execute at @s run function luigis_mansion:animations/boo/idle
 function #luigis_mansion:entities/mysterious_power/dialog
 
 scoreboard players operation #temp Room = @s Room

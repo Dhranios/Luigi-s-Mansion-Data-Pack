@@ -39,6 +39,6 @@ execute at @s[tag=walked_on_ceiling,tag=!rotated] rotated ~ 0 run teleport @s ~ 
 tag @s[tag=walked_on_ceiling,tag=!rotated] add rotated
 execute at @s[tag=walked_on_ceiling] rotated ~ 0 run function luigis_mansion:entities/purple_mouse/move_forward
 execute if entity @s[tag=disappear,tag=!dead] run function luigis_mansion:entities/purple_mouse/back_to_start
-execute if entity @s[tag=spawn] unless entity @s[tag=walk_up_wall,tag=!walk_on_ceiling] unless entity @s[tag=walk_down_wall,tag=!walked_on_ceiling] run function luigis_mansion:animations/blue_mouse/idle
-execute if entity @s[tag=spawn,tag=walk_up_wall,tag=!walk_on_ceiling] run function luigis_mansion:animations/blue_mouse/idle_wall
-execute if entity @s[tag=spawn,tag=walk_down_wall,tag=!walked_on_ceiling] run function luigis_mansion:animations/blue_mouse/idle_wall
+execute at @s[tag=spawn] unless entity @s[tag=walk_up_wall,tag=!walk_on_ceiling] unless entity @s[tag=walk_down_wall,tag=!walked_on_ceiling] run function luigis_mansion:animations/mouse/idle
+execute at @s[tag=spawn,tag=walk_up_wall,tag=!walk_on_ceiling] run function luigis_mansion:animations/mouse/idle_wall
+execute at @s[tag=spawn,tag=walk_down_wall,tag=!walked_on_ceiling] run function luigis_mansion:animations/mouse/idle_wall

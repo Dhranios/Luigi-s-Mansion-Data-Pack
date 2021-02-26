@@ -31,7 +31,7 @@ execute at @s[tag=bounce,scores={ActionTime=4..}] if block ~ ~ ~ #minecraft:stai
 execute at @s[tag=bounce,scores={ActionTime=4..}] if block ~ ~ ~ #minecraft:stairs[half=bottom,facing=west] at @s run teleport @s ~ ~ ~ -90 ~
 execute at @s[tag=bounce,scores={ActionTime=4..}] if block ~ ~ ~ #minecraft:stairs[half=bottom] run scoreboard players set @s ActionTime 2
 
-function luigis_mansion:animations/money/rotate
+execute at @s run function luigis_mansion:animations/money/rotate
 
 tag @s remove in_wall
 execute at @s unless block ~ ~0.1 ~0.3 #luigis_mansion:items_ignore run teleport @s ~ ~ ~-0.3

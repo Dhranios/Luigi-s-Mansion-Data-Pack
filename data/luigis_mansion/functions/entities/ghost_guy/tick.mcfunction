@@ -34,8 +34,8 @@ execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!c
 execute if entity @s[tag=!fleeing,tag=collided,scores={StunTime=0}] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
 execute if entity @s[tag=vanish] run function luigis_mansion:entities/ghost_guy/vanish
 execute if entity @s[tag=appear] run function luigis_mansion:entities/ghost_guy/appear
-execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!dodge,tag=!complain,tag=!appear,tag=stop_dancing,scores={StunTime=0}] run function luigis_mansion:animations/ghost_guy/idle
-execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!dodge,tag=!complain,tag=!appear,tag=!stop_dancing,scores={StunTime=0}] run function luigis_mansion:animations/ghost_guy/dance
-execute if entity @s[tag=fleeing] run function luigis_mansion:animations/ghost_guy/flee
-execute if entity @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ghost_guy/hurt
-execute if entity @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ghost_guy/hurt
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!dodge,tag=!complain,tag=!appear,tag=stop_dancing,scores={StunTime=0}] run function luigis_mansion:animations/ghost_guy/idle
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!dodge,tag=!complain,tag=!appear,tag=!stop_dancing,scores={StunTime=0}] run function luigis_mansion:animations/ghost_guy/dance
+execute at @s[tag=fleeing] run function luigis_mansion:animations/ghost_guy/flee
+execute at @s[tag=!fleeing,tag=hurt] run function luigis_mansion:animations/ghost_guy/hurt
+execute at @s[tag=!hurt,tag=element_hurt] run function luigis_mansion:animations/ghost_guy/hurt

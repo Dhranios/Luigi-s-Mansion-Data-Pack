@@ -1,4 +1,5 @@
 execute unless block ~ ~ ~ minecraft:air{loaded:0b} unless block ~-48 ~ ~ minecraft:air{loaded:0b} unless block ~48 ~ ~ minecraft:air{loaded:0b} unless block ~ ~ ~-48 minecraft:air{loaded:0b} unless block ~ ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~48 minecraft:air{loaded:0b} unless block ~48 ~ ~-48 minecraft:air{loaded:0b} unless block ~-48 ~ ~48 minecraft:air{loaded:0b} unless block ~-48 ~ ~-48 minecraft:air{loaded:0b} run function luigis_mansion:main/loaded_chunks
+#execute if entity @s[scores={Jump=1..}] run function luigis_mansion:main/prevent_jump
 
 scoreboard players set @s[tag=!loaded_chunk_triggered] LoadedChunks 0
 tag @s[tag=!loaded_chunk_triggered] remove loaded_chunks
@@ -30,7 +31,8 @@ scoreboard players remove @s[scores={Invulnerable=1..}] Invulnerable 1
 execute if entity @s[scores={Health=1..}] store result score @s Damage run data get entity @s Health -1
 scoreboard players operation @s[scores={Health=1..}] Damage += #100 Constants
 execute if entity @s[scores={Damage=1..},gamemode=!spectator] run function luigis_mansion:entities/player/take_damage
-effect give @s minecraft:saturation 1000000 0 true
+effect give @s[scores={Food=3..}] minecraft:hunger 1 255 true
+effect give @s[scores={Food=..0}] minecraft:saturation 1 0 true
 
 scoreboard players set @s UseItem 0
 scoreboard players add @s[scores={SneakTime=1..}] SneakTime 1
@@ -45,5 +47,6 @@ scoreboard players set @s Walk 0
 scoreboard players set @s Run 0
 scoreboard players set @s Jump 0
 execute unless entity @s[scores={Room=1..}] run scoreboard players set @s LastFloor -2
+execute store result score @s HallwaySection run data get entity @s Pos[1] 100
 
 tag @a[tag=same_room] remove same_room

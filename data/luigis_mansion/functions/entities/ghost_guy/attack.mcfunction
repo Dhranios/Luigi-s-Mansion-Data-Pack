@@ -1,8 +1,7 @@
 scoreboard players add @s ActionTime 1
 scoreboard players set @s[scores={ActionTime=1}] AnimationProg 0
-data merge entity @s[scores={ActionTime=1}] {Pose:{RightArm:[-90.0f,90.0f,0.0f],LeftArm:[-90.0f,-90.0f,0.0f],Head:[0.0f,0.0f,0.01f]}}
-execute if entity @s[tag=!dancing] run function luigis_mansion:animations/ghost_guy/stab_attack
-execute if entity @s[tag=dancing] run function luigis_mansion:animations/ghost_guy/spin_attack
+execute at @s[tag=!dancing] run function luigis_mansion:animations/ghost_guy/stab_attack
+execute at @s[tag=dancing] run function luigis_mansion:animations/ghost_guy/spin_attack
 
 execute if entity @s[scores={ActionTime=20}] run playsound luigis_mansion:entity.ghost_guy.attack hostile @a ~ ~ ~ 1
 execute if score #mirrored Selected matches 0 run teleport @s[scores={ActionTime=20..29},tag=dancing] ~ ~ ~ ~-36 ~

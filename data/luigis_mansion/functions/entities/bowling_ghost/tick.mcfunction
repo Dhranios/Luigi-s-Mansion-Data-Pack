@@ -33,9 +33,9 @@ execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!c
 execute if entity @s[tag=!element_hurt,tag=!fleeing,tag=collided,scores={StunTime=0},tag=!disappear] if entity @s[tag=!dying,tag=!dead,tag=!removed_from_existence] run function luigis_mansion:entities/ghost/collided
 execute if entity @s[tag=vanish,tag=!disappear] run function luigis_mansion:entities/bowling_ghost/vanish
 execute if entity @s[tag=appear,tag=!disappear] run function luigis_mansion:entities/bowling_ghost/appear
-execute if entity @s[tag=fleeing,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/flee
-execute if entity @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,tag=grabbed_ball,scores={StunTime=0},tag=!disappear] run function luigis_mansion:entities/bowling_ghost/idle
-execute if entity @s[tag=!fleeing,tag=hurt,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/hurt
-execute if entity @s[tag=!hurt,tag=element_hurt,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/hurt
+execute at @s[tag=fleeing,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/flee
+execute at @s[tag=!hurt,tag=!element_hurt,tag=!fleeing,tag=!attack,tag=!collided,tag=!vanish,tag=!laugh,tag=!complain,tag=!appear,tag=grabbed_ball,scores={StunTime=0},tag=!disappear] run function luigis_mansion:entities/bowling_ghost/idle
+execute at @s[tag=!fleeing,tag=hurt,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/hurt
+execute at @s[tag=!hurt,tag=element_hurt,tag=!disappear] run function luigis_mansion:animations/bowling_ghost/hurt
 scoreboard players reset #temp GhostNr
 tag @e[tag=this_bowling_ball] remove this_bowling_ball
