@@ -41,6 +41,9 @@ tag @s[scores={Sneaking=1}] add was_sneaking
 tag @s[scores={Sneaking=0}] remove was_sneaking
 scoreboard players set @s[scores={Sneaking=0,SneakTime=20..}] SneakTime 0
 execute unless entity @s[scores={SneakTime=0..}] run scoreboard players set @s SneakTime 0
+execute unless entity @s[scores={MaxHealth=100}] unless entity @s[scores={Walk=0..2,Run=0..2,Sneak=0}] run scoreboard players add @s MaxHealthTime 1
+scoreboard players add @s[scores={MaxHealthTime=100}] MaxHealth 100
+scoreboard players reset @s[scores={MaxHealthTime=100}] MaxHealthTime
 scoreboard players set @s Sneak 0
 scoreboard players set @s Sneaking 0
 scoreboard players set @s Walk 0

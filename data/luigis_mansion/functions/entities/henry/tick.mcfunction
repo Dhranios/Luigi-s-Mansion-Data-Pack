@@ -4,7 +4,7 @@ execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_health int 1 run scoreboard players set @s Health 0
 execute if entity @s[tag=dead] unless entity @e[tag=orville,limit=1,tag=!dead] run advancement grant @a only luigis_mansion:portrait_ghosts/henry_and_orville
-execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.henry_and_orville.henry_health int 1 run scoreboard players operation @s LastHealth = @s Health
 
 tag @s[tag=remove_hide_and_seek] add dead
 

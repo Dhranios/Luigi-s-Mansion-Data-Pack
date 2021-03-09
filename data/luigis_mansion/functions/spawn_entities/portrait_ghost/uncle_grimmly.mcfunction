@@ -6,11 +6,13 @@ execute as @e[tag=this_entity,limit=1] store result score @s HomeX run data get 
 execute as @e[tag=this_entity,limit=1] store result score @s HomeY run data get entity @s Pos[1] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeZ run data get entity @s Pos[2] 100
 execute as @e[tag=this_entity,limit=1] store result score @s HomeRot run data get entity @s Rotation[0]
-execute store result score #temp LastHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.health
-execute if score #temp LastHealth matches -1 if score #extra_health Selected matches 0 store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.health int 1 run scoreboard players set #temp LastHealth 10000
-execute if score #temp LastHealth matches -1 if score #extra_health Selected matches 1 store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.health int 1 run scoreboard players set #temp LastHealth 15000
-scoreboard players operation @e[tag=this_entity,limit=1] Health = #temp LastHealth
-scoreboard players reset #temp LastHealth
+execute as @e[tag=this_entity,limit=1] store result score @s LastHealth run data get storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.health
+execute as @e[tag=this_entity,limit=1] run scoreboard players set @s MaxHealth 10000
+scoreboard players operation @e[tag=this_entity,limit=1] MaxHealth *= #multiply_health Selected
+scoreboard players operation @e[tag=this_entity,limit=1] MaxHealth /= #100 Constants
+scoreboard players operation @e[tag=this_entity,limit=1] MaxHealth += #extra_health Selected
+execute as @e[tag=this_entity,limit=1] if score @s LastHealth matches -1 store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.health int 1 run scoreboard players operation @s LastHealth = @s MaxHealth
+execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s Health = @s LastHealth
 execute as @e[tag=this_entity,limit=1] run scoreboard players operation @s PrevHealth = @s Health
 scoreboard players set @e[tag=this_entity,limit=1] PullStrength 10
 scoreboard players set @e[tag=this_entity,limit=1] Move 4

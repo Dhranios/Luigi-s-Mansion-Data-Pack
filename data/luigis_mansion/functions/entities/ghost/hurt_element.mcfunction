@@ -1,6 +1,9 @@
 scoreboard players operation #temp LastHealth = @s Health
-execute if score #extra_damage Selected matches 0 run scoreboard players remove @s Health 10
-execute if score #extra_damage Selected matches 1 run scoreboard players remove @s Health 15
+scoreboard players set #temp Health 10
+scoreboard players operation #temp Health *= #multiply_damage Selected
+scoreboard players operation #temp Health /= #100 Constants
+scoreboard players operation @s[scores={Room=1..}] Health -= #temp Health
+scoreboard players remove @s[scores={Room=..0}] Health 10
 scoreboard players operation #temp Health = @s Health
 scoreboard players operation #temp LastHealth /= #100 Constants
 scoreboard players operation #temp Health /= #100 Constants

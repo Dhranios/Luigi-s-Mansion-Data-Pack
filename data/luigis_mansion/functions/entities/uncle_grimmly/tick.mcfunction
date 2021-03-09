@@ -4,7 +4,7 @@ execute if entity @s[tag=dead] run particle minecraft:dust 0.7 1 1 1 ~-0.1 ~ ~0.
 execute if entity @s[tag=dead] run teleport @s ~ -100 ~
 execute if entity @s[tag=dead] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.health int 1 run scoreboard players set @s Health 0
 execute if entity @s[tag=dead] run advancement grant @a only luigis_mansion:portrait_ghosts/uncle_grimmly
-execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.health int 1 run scoreboard players get @s Health
+execute if entity @s[tag=vanish] store result storage luigis_mansion:data current_state.current_data.portrait_ghosts.uncle_grimmly.health int 1 run scoreboard players operation @s LastHealth = @s Health
 
 execute if entity @s[scores={HurtTime=1},tag=hurt] run playsound luigis_mansion:entity.uncle_grimmly.hurt hostile @a ~ ~ ~ 1
 scoreboard players set @s[scores={HurtTime=1},tag=hurt] Sound 40

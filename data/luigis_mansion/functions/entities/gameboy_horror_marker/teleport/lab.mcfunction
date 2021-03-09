@@ -1,7 +1,4 @@
-execute as @a[tag=this_player,tag=!looking_at_map,limit=1] at @s if entity @s[scores={Room=1..},y=0,dy=99] positioned ~3000 11 ~ rotated as @s run teleport @e[tag=me,limit=1] ~ ~ ~ ~ ~
-execute as @a[tag=this_player,tag=!looking_at_map,limit=1] at @s if entity @s[scores={Room=1..},y=102,dy=6] positioned ~3000 61 ~ rotated as @s run teleport @e[tag=me,limit=1] ~ ~ ~ ~ ~
-execute as @a[tag=this_player,tag=!looking_at_map,limit=1] at @s if entity @s[scores={Room=1..},y=111,dy=6] positioned ~3000 111 ~ rotated as @s run teleport @e[tag=me,limit=1] ~ ~ ~ ~ ~
-execute as @a[tag=this_player,tag=!looking_at_map,limit=1] at @s if entity @s[scores={Room=1..},y=120,dy=6] positioned ~3000 161 ~ rotated as @s run teleport @e[tag=me,limit=1] ~ ~ ~ ~ ~
-execute as @a[tag=this_player,tag=!looking_at_map,limit=1] at @s if entity @s[scores={Room=1..},y=131,dy=124] positioned ~3000 211 ~ rotated as @s run teleport @e[tag=me,limit=1] ~ ~ ~ ~ ~
-execute as @a[tag=this_player,tag=!looking_at_map,limit=1] at @s if entity @s[scores={Room=-4..-1}] positioned ~4000 101 ~ rotated as @s run teleport @e[tag=me,limit=1] ~ ~ ~ ~ ~
-execute unless entity @a[tag=this_player,scores={Room=1..},limit=1] unless entity @a[tag=this_player,scores={Room=..-1},limit=1] run tag @s add dead
+execute if entity @s[scores={Room=-1}] run teleport @e[tag=me,limit=1] ~4000 101 ~ ~ ~
+execute if entity @s[scores={Room=-2}] run teleport @e[tag=me,limit=1] ~4000 101 ~ ~ ~
+execute if entity @s[scores={Room=-3}] run teleport @e[tag=me,limit=1] ~4000 101 ~ ~ ~
+execute if entity @s[scores={Room=-4}] run teleport @e[tag=me,limit=1] ~4000 101 ~ ~ ~

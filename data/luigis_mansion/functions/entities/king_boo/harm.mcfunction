@@ -1,6 +1,8 @@
 scoreboard players operation #temp LastHealth = @s Health
-execute if score #extra_damage Selected matches 0 run scoreboard players remove @s Health 24
-execute if score #extra_damage Selected matches 1 run scoreboard players remove @s Health 36
+scoreboard players set #temp Health 25
+scoreboard players operation #temp Health *= #multiply_damage Selected
+scoreboard players operation #temp Health /= #100 Constants
+scoreboard players operation @s Health -= #temp Health
 scoreboard players operation #temp Health = @s Health
 scoreboard players operation #temp LastHealth /= #100 Constants
 scoreboard players operation #temp Health /= #100 Constants

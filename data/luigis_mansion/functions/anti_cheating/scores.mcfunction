@@ -135,8 +135,9 @@ execute unless score #mansion_data_index Selected matches -2147483648.. run data
 execute unless score #mansion_data_index Selected matches -2147483648.. run scoreboard players set #mansion_data_index Selected 0
 execute unless score #previous_mansion_index Selected matches -2147483648.. run scoreboard players set #previous_mansion_index Selected 0
 execute unless score #mirrored Selected matches 0..1 run scoreboard players set #mirrored Selected 0
-execute unless score #extra_damage Selected matches 0..1 run scoreboard players set #extra_damage Selected 0
-execute unless score #double_hurt Selected matches 0..1 run scoreboard players set #double_hurt Selected 0
-execute unless score #extra_health Selected matches 0..1 run scoreboard players set #extra_health Selected 0
+execute unless score #multiply_hurt Selected matches 0.. run scoreboard players set #multiply_hurt Selected 100
+execute unless score #multiply_damage Selected matches 0.. run scoreboard players set #multiply_damage Selected 100
+execute unless score #multiply_health Selected matches 0.. run scoreboard players set #multiply_health Selected 100
+execute unless score #extra_health Selected matches -2147483648.. run scoreboard players set #extra_health Selected 0
 execute unless score #switch_boo_stats Selected matches 0..1 run scoreboard players set #switch_boo_stats Selected 0
 execute unless score #changing_max_health Selected matches 0..1 run scoreboard players set #changing_max_health Selected 0

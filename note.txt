@@ -20,11 +20,12 @@ To define a new mansion, you need to set the mansion_type value, mansion_data_in
 #mansion_type (int): Defines the mansion that is loaded.
 #mansion_data_index (int): Defines the save data ID that is used.
 #mirrored (bool): Whether the ghosts mirror all their animations.
-#double_hurt (bool): Whether the players take twice as much damage.
-#extra_damage (bool): Whether the poltergust deals 1.5x as much damage.
-#extra_health (bool): Whether the ghosts have 1.5x their normal health; portrait ghosts will drop 4 small pearls, 9 medium pearls and 1 big pearl in 1 suction.
-#switch_boo_stats (bool): Whether the normal boos get the health and speed values of the original's hidden mansion; this stacks with extra_health.
-#changing_max_health (bool): Whether the max health can be changed by anything (and as such shows "/<MAX>" after the player's health) (if MaxHealth is changed and player is not hurt or healed, their current health doesn't change; they need to be hurt or healed, which will result in an update of health, afterwards it will make it the MaxHealth, is Health was above it)
+#multiply_hurt (int): Multiplies base damage taken by this value where 100 = 1x.
+#multiply_damage (int): Multiplies base damage dealt by this value where 100 = 1x.
+#multiply_health (int): Multiplies enemy base health by this value where 100 = 1x.
+#extra_health (int): Adds extra health to enemy max health where 100 = 1. (Added after multiplication. Example: base=10,multiply=150,extra=2000 -> 10*1.5+20 = 15+20 = 35)
+#switch_boo_stats (bool): Whether the boos' base health and speed values are that of the original's hidden mansion.
+#changing_max_health (bool): Whether players' max health can be changed by anything (and as such shows "/<MAX>" after the player's health) (if MaxHealth is changed and player is not hurt or healed, their current health doesn't change; they need to be hurt or healed, which will result in an update of health, afterwards it will make it the MaxHealth, is Health was above it)
 
 None of these variables affect non-mansion rooms.
 
@@ -35,7 +36,8 @@ You can also do the same, but for dependencies, eg if you need the 3ds_remake ad
 
 == Other ==
 Ghost behavioral change the 3ds remake add-on applies: Using a flashlight on a temper terror, flash or blue blaze make them "smug", laugh and then disappear, rather than ignore and continue moving/attacking.
-The 3ds remake add-on will always apply itself directly after vanilla, as it has "replace": true on several tags to overwrite the hidden mansion in such a way that other add-ons can modify both seperately; having it any later will result in the add-ons added in between being lost.
+Portrait ghosts drop pearls every health value which ends at a 0, except the max health, and 0 itself.
+Portrait ghosts always drop 4 small pearls before dropping a medium pearl; the last possible small or medium pearl dropped is replaced with a big one if it had not dropped a pearl in any previous suction (eg if max health = 20, the only pearl will always be big; if max health was 500, the 48th one is big if the first didn't drop in a previous suction)
 Room -4 is the gallery, regardless of 3ds remake add-on or not. The 3ds remake add-on will simply teleport players in the old gallery to the new one, and never start ticking the old one.
-Negative Room values are reserved for non-mansion rooms and Room 0 the boo woods, all positive room scores can be used freely; Room 0 is the only room without GBH map
-To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion-Data-Pack into the root of the data pack. Any changes to chunk data will not be stored on github, you'll need to re-download the map for those.
+Negative Room values are reserved for non-mansion rooms and Room 0 the boo woods, all positive room scores can be used freely; the GBH map can have a range of "valid" rooms to open the map in
+To receive development build updates, pull from https://github.com/Dhranios/Luigi-s-Mansion-Data-Pack into the root of the data pack.
